@@ -302,16 +302,16 @@ endif
 " ## custom setting for each file type
 if has("autocmd")
   filetype plugin indent on
-      autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-      autocmd FileType tex setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
-      autocmd FileType ruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-      autocmd FileType make setlocal ts=4 sts=4 sw=4 expandtab textwidth=500
+      autocmd FileType haml       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+      autocmd FileType html       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
       autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab textwidth=500
-      autocmd FileType txt setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-      autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-      autocmd FileType sass setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-      autocmd FileType haml setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-
+      autocmd FileType markdown   setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
+      autocmd FileType make       setlocal ts=4 sts=4 sw=4 expandtab textwidth=500
+      autocmd FileType ruby       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+      autocmd FileType sass       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+      autocmd FileType tex        setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
+      autocmd FileType txt        setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+      autocmd FileType yaml       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
   autocmd BufReadPost *
