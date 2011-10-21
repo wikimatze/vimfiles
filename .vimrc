@@ -101,7 +101,7 @@ let g:NERDTreeWinPos = 'right'        " display the NERDTree on the right
 let g:NERDTreeWinSize =30             " the width of the NERDTree when it opens
 
 " ## notes
-let g:notes_directory = '~/Dropbox/Notes'            " path of main directory
+let g:notes_directory = '~/Dropbox/notes'            " path of main directory
 let g:notes_suffix = '.txt'                          " default file ending of note files
 autocmd BufEnter ~/Dropbox/To-Do/* silent! lcd %:p:h " path of the notes directory
 
