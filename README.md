@@ -1,20 +1,33 @@
-# Vim settings
+# Vim settings #
 
-Here is a list of all the plugins I'm using in [Vim](http://www.vim.org/ "Vim"). It is unusual to post here commands and shortcuts about the plugins because most plugins are well documented. But I decided to provide an overview of all the main settings I got from struggling through each plugin for my own demands. As well, you can have look on my _vimrc_ which contains many hacks.
+Here is a list of all the plugins I'm using in [Vim](http://www.vim.org/ "Vim"). It is unusual to
+post here commands and shortcuts about the plugins because most plugins are well documented. But I
+decided to provide an overview of all the main settings I got from struggling through each plugin
+for my own demands. As well, you can have look on my _vimrc_ which contains many hacks.
 
-I know there is the [janus](https://github.com/carlhuda/janus "janus") package out there which does configure a lot of stuff, but maintain my own set of plugins and settings. Don't hesitate to copy or ask me questions about it.
+I know there is the [janus](https://github.com/carlhuda/janus "janus") package out there which does
+configure a lot of stuff, but maintain my own set of plugins and settings. Don't hesitate to copy or
+ask me questions about it.
 
-The text of each link is the name for the doc you have to type in Vim (never underestimate remember _:help \<name\>_). If after plugin description stands the phrase (_no doc_) it says, that you can not open the documentation in Vim. Feel free to correct me or provide me with additional hints - I'm always eager to learn something new.
+The text of each link is the name for the doc you have to type in Vim (never underestimate remember
+_:help \<name\>_). If after plugin description stands the phrase (_no doc_) it says, that you can
+not open the documentation in Vim. Feel free to correct me or provide me with additional hints - I'm
+always eager to learn something new.
 
-* [AutoClose](http://www.vim.org/scripts/script.php?script_id=2009 "autoclose"): automatically close brackets - it will saves you a lot of finger acrobatic because you don't have to type closing brackets (_no doc_)
-* [autocorrect](https://github.com/panozzaj/vim-autocorrect "autocorrect"): auto correct English spelling mistakes, when typing (_no doc_)
+* [AutoClose](http://www.vim.org/scripts/script.php?script_id=2009 "autoclose"): automatically close
+  brackets - it will saves you a lot of finger acrobatic because you don't have to type closing
+  brackets (_no doc_)
+* [autocorrect](https://github.com/panozzaj/vim-autocorrect "autocorrect"): auto correct English
+  spelling mistakes, when typing (_no doc_)
   * don't forget to put _:source /path/to/the/autocorrect.vim_ in your _.vimrc_
 * [ack.vim](https://github.com/mileszs/ack.vim "ack.vim"): you can perform ack commands in Vim
   * __:Ack {pattern} [{directory}]__ - the basic command to search after words in your project
 * [coffee-script](https://github.com/kchmck/vim-coffee-script "coffe-script"): add coffee script support for Vim (_no doc_)
 * [cucumber](https://github.com/tpope/vim-cucumber "cucumber"): syntax-highlighting for cucumber files (_no doc_)
-* [endwise-ruby](http://www.vim.org/scripts/script.php?script_id=2386 "endwise-ruby"): automatically adds keywords like _end_ to special constructs in ruby (_no doc_)
-* [clojure](http://www.vim.org/scripts/script.php?script_id=2501 "clojure"): clojure support for Vim (_no doc_)
+* [endwise-ruby](http://www.vim.org/scripts/script.php?script_id=2386 "endwise-ruby"): automatically
+  adds keywords like _end_ to special constructs in ruby (_no doc_)
+* [clojure](http://www.vim.org/scripts/script.php?script_id=2501 "clojure"): clojure support for Vim
+  (_no doc_)
 * [command-t](http://www.vim.org/scripts/script.php?script_id=3025 "command-t"): file search in the actual directory
   * __\<Leader\>-t__ - call _:CommandT_ command to open a specified file
       * __:CommandT ../path/to/other/files__ - search in the specified path
