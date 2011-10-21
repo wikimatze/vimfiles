@@ -1,13 +1,17 @@
 snippet h1
-	# ${1:n}
+	# ${1:n} #
 snippet h2
-	## ${1:n}
+	## ${1:n} ##
 snippet h3
-	### ${1:n}
+	### ${1:n} ###
 snippet c
-		${1:n}
+	{% highlight ${1:n} %}
+
+	${2:n}
+
+	{% endhighlight %}
 snippet ic
-	`${1:n}`
+	\`${1:n}\`
 snippet b
 	* ${1:n}
 	* ${2:n}
