@@ -103,7 +103,7 @@ let g:NERDTreeWinSize =30             " the width of the NERDTree when it opens
 " ## notes
 let g:notes_directory = '~/Dropbox/notes'            " path of main directory
 let g:notes_suffix = '.txt'                          " default file ending of note files
-autocmd BufEnter ~/Dropbox/To-Do/* silent! lcd %:p:h " path of the notes directory
+autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h " path of the notes directory
 
 " ## session
 let g:session_autosave = 'no' " disable automatic saving when quitting a session
