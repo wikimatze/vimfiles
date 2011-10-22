@@ -249,6 +249,11 @@ always eager to learn something new.
   * extracting code from the view and insert it into partials
       * __:2,3Rextract post__ will extract lines 2,3 in the partial with the name _post_
       * you didn't need to specify the lines, it is possible to use visual mode: _:'<,'>Rextract juhu_, so the content will be inserted in the partial _juhu_
+* [vis](https://github.com/vim-scripts/vis "vis"): you can execute commands only in the selected section of visual mode
+    * mark a text in visual mode, then press :B and then you can perform any command (Ex command) you want
+    * example: replace all '\*' through '-' => mark the block, press :B (you should have in your
+      commandline :'<,'>:B) now press the typical text replacement commands you want (s/*/-) and you
+      are done
 
 
 ## Colors scheme
