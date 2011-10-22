@@ -24,17 +24,31 @@ snippet l
 	1. ${1:n}
 	1. ${2:n}
 	1. ${3:n}
-snippet blockquote
+snippet bq
 	> ${1:n}
 	> ${2:n}
 	> ${3:n}
 snippet image
 	![${1:text}](${2:url}"${3:alt}")
 snippet bf
-	__${1:n}__
+	**${1:n}**
 snippet it
-	_${1:n}_
+	*${1:n}*
 snippet lk
 	[${1:text}](${2:url} "$1")
 snippet hr
 	***
+
+# these snippets can only be used in jekyll projects with special plugins
+snippet pullquote
+	{% pullquote %}
+	${1:text} {"${2:quote}"}
+	{% endpullquote}
+snippet blockquote
+	{% blockquote ${1:author} ${2:link} %}
+	${3:text}
+	{% endblockquote %}
+snippet img
+	{% img ${1:classname} ${2:/path/to/image} ${3:title} ${4:alt} %}
+snippet gist
+	{% gist ${1:gist_id} ${2:gist_name} %}
