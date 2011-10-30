@@ -256,7 +256,7 @@ always eager to learn something new.
       are done
 
 
-## Colors scheme
+## Colors scheme ##
 
 I have found the following three for my taste - there are tons of other colors out there
 
@@ -266,3 +266,17 @@ I have found the following three for my taste - there are tons of other colors o
 ![railscasts screen shot](https://github.com/matthias-guenther/vim-settings/raw/master/railscasts.png)
 * [vividchalk](https://github.com/tpope/vim-vividchalk.git "vividchalk"): is like railscasts but without the dusty looking and some really fancy colors
 ![vividchalk screen shot](https://github.com/matthias-guenther/vim-settings/raw/master/vividchalk.png)
+
+
+## Contact ##
+
+Feature request, bugs, questions, etc. can be send to <matthias.guenther@wikimatze.de>.
+
+
+## License ##
+
+This software is licensed under the [MIT license][mit].
+
+© 2011 Matthias Guenther <matthias.guenther@wikimatze.de>.
+
+[mit]: http://en.wikipedia.org/wiki/MIT_License
