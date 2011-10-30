@@ -116,7 +116,7 @@ autocmd! BufRead,BufNewFile *.haml set ft=haml
 autocmd! BufRead,BufNewFile *.js set ft=js
 autocmd! BufRead,BufNewFile *.mkd,*.markdown,*.md set ft=markdown
 autocmd! BufRead,BufNewFile *.rb set ft=ruby
-autocmd! BufRead,BufNewFile *.sass,*.scss set ft=sass
+autocmd! BufRead,BufNewFile *.sass,*.scss set ft=scss
 autocmd! BufRead,BufNewFile *.tex,*.latex set ft=tex
 autocmd! BufRead,BufNewFile *.textile set ft=textile
 autocmd! BufRead,BufNewFile *.yml set ft=yaml
@@ -163,6 +163,9 @@ let g:cssColorVimDoNotMessMyUpdatetime = 1 " is used when updatetime value set b
 " ## vim-ruby
 let ruby_operators = 1    " create colors for ruby operators
 let ruby_space_errors = 1 " mark whitespace characters
+
+" ## vim-shell
+let g:shell_verify_urls = 1 " handle special urls with dot at the end
 
 " ## vim-NERDTree tabs
 let g:nerdtree_tabs_open_on_gui_startup = 0
