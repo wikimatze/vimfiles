@@ -310,7 +310,7 @@ if has("autocmd")
       autocmd FileType ruby       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
       autocmd FileType sass       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
       autocmd FileType tex        setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
-      autocmd FileType txt        setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+      autocmd FileType txt        setlocal ts=2 sts=2 sw=2 expandtab textwidth=110
       autocmd FileType yaml       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
