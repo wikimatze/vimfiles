@@ -304,24 +304,9 @@ elseif has("unix")
     set tags=tags
 endif
 
-" ## check, if it can delete (just comment it)
-" don't load delimate plugin
-let loaded_delimitMate = 1
-au FileType mail let b:loaded_delimitMate = 1
-
-
-" Setting up the undo command 'u' when working in Vim
-" ===================================================
-" CTRL-U in insert mode deletes a lot. Use CTRL-G u to first break undo,
-" so that you can undo CTRL-U after inserting a line break.
-inoremap <C-U> <C-G>u<C-U>
 
 " ## turn on syntax highlighting
 if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
 endif
-
-" special fold for the doc commands in Scala
-"set foldmarker=/*,*/
-"set foldmethod=marker " what is the fold-method, instead of marker, indent is possible
