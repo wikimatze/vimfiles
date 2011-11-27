@@ -33,6 +33,7 @@ set showcmd                                 " show (partial) command in the last
 set showmode                                " display in the left corner in which modus you are in vim
 set softtabstop=2                           " how many columns
 set synmaxcol=200                           " better scrolling for long lines
+set spelllang=en_us                         " default language for spellchecker
 set tabstop=2                               " how many columns a tab counts
 set timeout timeoutlen=1000 ttimeoutlen=100 " scroll speed of the editor
 set title                                   " show title in console title
@@ -202,11 +203,6 @@ set list " List mode: Show tabs as CTRL-I, show end of line with $.
 " setting symbols for tabs, trails (whitespaces)
 " extends shows when a file name goes out the view (you have to scroll like in NERDTree)
 set listchars=tab:»\ ,extends:¤,trail:·
-
-" ## toggle spellchecker with ,s
-let mapleader = ","
-nmap <silent> <leader>s :set spell!<CR>
-set spelllang=en_us " default spellchecker language is American English
 
 " ## hack so that grep works with LaTeX-Suite
 set grepprg=grep\ -nH\ $*

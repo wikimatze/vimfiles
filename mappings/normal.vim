@@ -2,4 +2,5 @@
 nnoremap <F5> "=strftime("%F")<CR>P
 inoremap <F5> <C-R>=strftime("%F")<CR>
 
-
+" ## spellchecker: press ,s to toogle between spellchecker
+nmap <silent> <leader>s :set spell!<CR>
