@@ -130,19 +130,6 @@ set statusline+=%#warningmsg#                 " show warning messages
 set statusline+=%{SyntasticStatuslineFlag()}  " show message in quickfix
 let loaded_tex_syntax_checker = 0             " turn of lacheck of the syntastic plugin
 
-" ## tabular
-let mapleader = ","
-nmap <leader>b= :Tabularize /=<CR>
-vmap <leader>b= :Tabularize /=<CR>
-nmap <leader>b: :Tabularize /:<CR>
-vmap <leader>b: :Tabularize /:<CR>
-nmap <leader>b/ :Tabularize /\/\/<CR>
-vmap <leader>b/ :Tabularize /\/\/<CR>
-nmap <leader>b" :Tabularize /"<CR>
-vmap <leader>b" :Tabularize /"<CR>
-nmap <leader>bt :Tabularize /& \\ldots &<CR>
-vmap <leader>bt :Tabularize /& \\ldots &<CR>
-
 " ## Sweet Vim RSpec
 let $SWEET_VIM_RSPEC_SHOW_PASSING="true" " output passes in quickfix window
 
