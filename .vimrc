@@ -1,4 +1,3 @@
-" ## Pathogen (must be set up before file type detection)
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
@@ -280,7 +279,7 @@ if has('mouse')
   set mouse=a " this makes it possible to open links with a mouse in :help Vim files
 endif
 
-" ## colorschemes (can be changed under ~/.vim/colors)
+" ## colorschemes
 colorscheme ir_black
 "colorscheme railscasts
 "colorscheme vividchalk

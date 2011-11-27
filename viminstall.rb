@@ -15,7 +15,6 @@ git_bundles = [
   "https://github.com/mattn/gist-vim.git",
   "https://github.com/mileszs/ack.vim",
   "https://github.com/msanders/snipmate.vim.git",
-  "https://github.com/oscarh/vimerl.git",
   "https://github.com/othree/html5-syntax.vim.git",
   "https://github.com/panozzaj/vim-autocorrect.git",
   "https://github.com/robgleeson/hammer.vim.git",
@@ -47,12 +46,14 @@ git_bundles = [
   "https://github.com/xolox/vim-session.git",
   "https://github.com/xolox/vim-shell.git",
   # document in the README
+    #"https://github.com/2072/PHP-Indenting-for-VIm.git",
   # colorschemes
-    "https://github.com/borgand/ir_black.git",
-    "https://github.com/jpo/vim-railscasts-theme.git",
-    "https://github.com/tpope/vim-vividchalk.git",
+   # "https://github.com/borgand/ir_black.git",
+   # "https://github.com/jpo/vim-railscasts-theme.git",
+   # "https://github.com/tpope/vim-vividchalk.git",
   # to be install and put in the README
     # "https://github.com/kchmck/vim-coffee-script" sett the correct path
+    # "https://github.com/oscarh/vimerl.git",
 ]
 
 vim_org_scripts = [
