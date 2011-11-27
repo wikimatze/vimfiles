@@ -80,26 +80,10 @@ exe join(map(split(glob("~/.vim/plugin-settings/notes.vim"), "\n"), '"source " .
 exe join(map(split(glob("~/.vim/plugin-settings/session.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## snipmate
-let g:snippets_dir = '~/.vim/snippets' " setting of the snipmate directory
-" setting file types for all different files => makes it easier for snipmate
-autocmd! BufRead,BufNewFile *.haml set ft=haml
-autocmd! BufRead,BufNewFile *.js set ft=js
-autocmd! BufRead,BufNewFile *.mkd,*.markdown,*.md set ft=markdown
-autocmd! BufRead,BufNewFile *.rb set ft=ruby
-autocmd! BufRead,BufNewFile *.sass,*.scss set ft=scss
-autocmd! BufRead,BufNewFile *.tex,*.latex set ft=tex
-autocmd! BufRead,BufNewFile *.textile set ft=textile
-autocmd! BufRead,BufNewFile *.yml set ft=yaml
+exe join(map(split(glob("~/.vim/plugin-settings/snipmate.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## syntastic
-let g:syntastic_enable_signs=1                " setting signs for errors (arrows)
-let g:syntastic_auto_loc_list=1               " open/close toc of errors
-let g:syntastic_auto_jump=0                   " don't jump to the first error
-let g:syntastic_disabled_filetypes = ['html'] " disable for this file type
-let tex_no_error=1                            " underscores are not displayed as syntax errors
-set statusline+=%#warningmsg#                 " show warning messages
-set statusline+=%{SyntasticStatuslineFlag()}  " show message in quickfix
-let loaded_tex_syntax_checker = 0             " turn of lacheck of the syntastic plugin
+exe join(map(split(glob("~/.vim/plugin-settings/syntastic.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## Sweet Vim RSpec
 let $SWEET_VIM_RSPEC_SHOW_PASSING="true" " output passes in quickfix window
