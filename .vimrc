@@ -310,16 +310,6 @@ let loaded_delimitMate = 1
 au FileType mail let b:loaded_delimitMate = 1
 
 
-" ## mappings for text replacement in Vim
-nmap <leader>bldots :%s/=/\& \\ldots \&/g<CR>
-vmap <leader>bldots :%s/=/\& \\ldots \&/g<CR>
-nmap <leader>bendbackslashes :%s/$/ \\\\/<CR>
-vmap <leader>bendbackslashes :%s/$/ \\\\/<CR>
-nmap <leader>_ :%s/_//g<CR>
-vmap <leader>_ :%s/_//<CR>
-nmap <leader>rt :%s/\\t/  /g<CR>
-vmap <leader>rt :%s/\\t/  /g<CR>
-
 " Setting up the undo command 'u' when working in Vim
 " ===================================================
 " CTRL-U in insert mode deletes a lot. Use CTRL-G u to first break undo,
