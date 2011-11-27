@@ -15,3 +15,9 @@ nnoremap <silent> <expr> k ScreenMovement("k")
 nnoremap <silent> <expr> 0 ScreenMovement("0")
 nnoremap <silent> <expr> ^ ScreenMovement("^")
 nnoremap <silent> <expr> $ ScreenMovement("$")
+
+" ## movement between split windows in Vim
+map <C-H> <C-w>h
+map <C-K> <C-w>k
+map <C-L> <C-w>l
+

@@ -167,7 +167,7 @@ function! CurDir()
     return curdir
 endfunction
 
-" ## mappings for ruby (F1 compile current file with ruby, F2 compile current file with RSpec
+" ## mappings for ruby (F1 compile current file with ruby, F2 compile current file with RSpec)
 autocmd FileType ruby map <F1> :!ruby "%:p"<CR>
 autocmd FileType ruby map <F2> :!rspec "%:p"<CR>
 
@@ -186,11 +186,6 @@ map Q gq
 " ## CTRL-q will save the file
 nmap <c-q> :w<CR>
 imap <c-q> <Esc>:w<CR>a
-
-" ## movement between split windows in Vim
-map <C-H> <C-w>h
-map <C-K> <C-w>k
-map <C-L> <C-w>l
 
 " ## show invisible symbols for editing
 " turn on with ml and off with ,u
