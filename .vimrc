@@ -61,17 +61,8 @@ set backupcopy=yes          " keep attributes of the original file
 " ## autocorrect
 source $HOME/.vim/bundle/vim-autocorrect/autocorrect.vim " sourcing the file
 
-" ## command-t
-let g:CommandTMaxFiles = 20000                      " the max files that will be considered when scanning current directory
-let g:CommandTMaxDepth = 20                         " number of levels that will be considered when scanning current directory
-let g:CommandTAlwaysShowDotFiles = 1                " also search after matching with dotted files
-let g:CommandTScanDotDirectories = 1                " do not search in dot directory
-let g:CommandTMatchWindowAtTop = 0                  " the match window will appear at the top of the editor window
-let g:CommandTAcceptSelectionMap = '<CR>'           " enter open findings in same window
-let g:CommandTAcceptSelectionSplitMap = '<C-s>'     " CTRL-Enter will makes a horizontal split
-let g:CommandTAcceptSelectionVSplitMap = '<C-v>'    " CTRL-v will make a vertical split
-let g:CommandTAcceptSelectionTabMap = '<C-t>'       " CTRL-t will open the file in a new tab
-set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " which files should not be matched in command-t
+" ## command-t settings
+exe join(map(split(glob("~/.vim/plugin-settings/command_t.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## gist.vim
 let g:github_user = 'matthias-guenther'
