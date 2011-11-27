@@ -74,13 +74,10 @@ exe join(map(split(glob("~/.vim/plugin-settings/index_search.vim"), "\n"), '"sou
 exe join(map(split(glob("~/.vim/plugin-settings/nerdtree.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## notes
-let g:notes_directory = '~/Dropbox/notes'            " path of main directory
-let g:notes_suffix = '.txt'                          " default file ending of note files
-autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h " path of the notes directory
+exe join(map(split(glob("~/.vim/plugin-settings/notes.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## session
-let g:session_autosave = 'no' " disable automatic saving when quitting a session
-let g:session_autoload = 'no' " disable asking to load the previous session
+exe join(map(split(glob("~/.vim/plugin-settings/session.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## snipmate
 let g:snippets_dir = '~/.vim/snippets' " setting of the snipmate directory
