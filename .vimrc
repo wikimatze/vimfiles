@@ -65,19 +65,10 @@ source $HOME/.vim/bundle/vim-autocorrect/autocorrect.vim " sourcing the file
 exe join(map(split(glob("~/.vim/plugin-settings/command_t.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## gist.vim
-let g:github_user = 'matthias-guenther'
-let g:github_token = '6507044b62b3e80e02a9b764b52bdd50'
-let g:gist_detect_filetype = 1 " detecting file type for each gist
-let g:gist_open_browser_after_post = 1 " open the gist after each post
-if has("mac")
-  let g:gist_clip_command = 'pbcopy'
-elseif has("unix")
-  let g:gist_clip_command = 'xclip -selection clipboard'
-endif
+exe join(map(split(glob("~/.vim/plugin-settings/gist.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## IndexSearch
-let g:indexed_search_colors = 1 " turn of colors for messages
-let g:indexed_search_shortmess = 1 " shorer messages
+exe join(map(split(glob("~/.vim/plugin-settings/index_search.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## hammer
 " Mapping for the hammer plugin
