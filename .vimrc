@@ -158,7 +158,6 @@ map t <plug>NERDTreeTabsToggle<CR>
 
 " ## settings for plugins (end)
 
-
 " # better statusline
 set statusline=\CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c " Format the statusline
 
@@ -199,20 +198,35 @@ set listchars=tab:»\ ,extends:¤,trail:·
 " ## hack so that grep works with LaTeX-Suite
 set grepprg=grep\ -nH\ $*
 
-" ## If editing a .txt file then skip line numbers
-au! BufRead,BufNewFile *.txt set nonu
-
 " ## enable Mouse support
 if has('mouse')
   set mouse=a " this makes it possible to open links with a mouse in :help Vim files
 endif
 
-" ## colorschemes
+" ## color schemes
 colorscheme ir_black " [railscasts, vividchalk]
 
 " source mappings
 exe join(map(split(glob("~/.vim/mappings/*.vim"), "\n"), '"source " . v:val'), "\n")
 exe join(map(split(glob("~/.vim/functions/*.vim"), "\n"), '"source " . v:val'), "\n")
+
+" ## If editing a .txt file then skip line numbers
+au! BufRead,BufNewFile *.txt set nonu
+
+" ## function to strip trailing whitespaces
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 " ## distinguish between different operation systems and change the text-size
 if has('mac')
@@ -228,7 +242,6 @@ endif
 if has("gui_macvim")
   let macvim_hig_shift_movement = 1
 endif
-
 
 " ## custom setting for each file type
 if has("autocmd")
@@ -252,7 +265,6 @@ if has("autocmd")
   augroup END
 else
 endif
-
 
 " ## copy and paste in Vim (http://ubuntuforums.org/showthread.php?t=74905&page=2)
 function! Paste(mode)
@@ -285,20 +297,8 @@ au FileType tex let b:comment_leader = '% '
 noremap <silent> ,c :<C-B>sil <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:noh<CR>
 noremap <silent> ,u :<C-B>sil <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:noh<CR>
 
-
-" When saving a file trailing whitespace will automatically removed
-augroup DeleteTrailingWhitespaces
-  autocmd!
-  autocmd BufWritePre * |call DeleteTrailingWhitespaces()|
-augroup END
-
-function! DeleteTrailingWhitespaces()
- let l = line(".")
- let c = col(".")
- execute "%s/\\s\\+$//ge"
- let last_search_removed_from_history = histdel('s', -1)
- call cursor(l, c)
-endfunction
+" when file is saved, call the function to remove trailing whitespace
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 
 " LateX SUITE HACKS
