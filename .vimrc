@@ -226,7 +226,9 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 
+" when file is saved, call the function to remove trailing whitespace
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
 
 " ## distinguish between different operation systems and change the text-size
 if has('mac')
@@ -277,9 +279,6 @@ au FileType tex let b:comment_leader = '% '
 noremap <silent> ,c :<C-B>sil <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:noh<CR>
 noremap <silent> ,u :<C-B>sil <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:noh<CR>
 
-" when file is saved, call the function to remove trailing whitespace
-autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
-
 
 " LateX SUITE HACKS
 " ## autoload dvi after each save in Vim (it runs the latex suite)
@@ -310,9 +309,6 @@ endif
 let loaded_delimitMate = 1
 au FileType mail let b:loaded_delimitMate = 1
 
-" ## copy the current line to the clipboard
-nmap <leader>y "*yy
-nmap <leader>p "*p
 
 " ## mappings for text replacement in Vim
 nmap <leader>bldots :%s/=/\& \\ldots \&/g<CR>
