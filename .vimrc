@@ -184,22 +184,9 @@ endfunction
 " ## mark sting in visual mode and press / to search for it
 vmap / y/<C-R>"<CR>
 
-" ## inserting manual date (press F5 to insert the actual date in the form yyyy-mm-dd
-" nnoremap <F5> "=strftime("%F")<CR>P
-" inoremap <F5> <C-R>=strftime("%F")<CR>
-
-" source mappings
-exe join(map(split(glob("~/.vim/mappings/*.vim"), "\n"), '"source " . v:val'), "\n")
-
 " ## mappings for ruby (F1 compile current file with ruby, F2 compile current file with RSpec
 autocmd FileType ruby map <F1> :!ruby "%:p"<CR>
 autocmd FileType ruby map <F2> :!rspec "%:p"<CR>
-
-" ## mappings for better folding
-" <space> toggles folds opened and closed
-nnoremap <space> za
-" <space> in visual mode creates a fold over the marked range
-vnoremap <space> zf
 
 " ## converting markdown to HTML by pressing ,md
 nmap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <cr>
@@ -284,6 +271,9 @@ endif
 
 " ## colorschemes
 colorscheme ir_black " [railscasts, vividchalk]
+
+" source mappings
+exe join(map(split(glob("~/.vim/mappings/*.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## distinguish between different operation systems and change the text-size
 if has('mac')
