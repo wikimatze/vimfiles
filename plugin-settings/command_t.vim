@@ -7,4 +7,4 @@ let g:CommandTAcceptSelectionMap = '<CR>'           " enter open findings in sam
 let g:CommandTAcceptSelectionSplitMap = '<C-s>'     " CTRL-Enter will makes a horizontal split
 let g:CommandTAcceptSelectionVSplitMap = '<C-v>'    " CTRL-v will make a vertical split
 let g:CommandTAcceptSelectionTabMap = '<C-t>'       " CTRL-t will open the file in a new tab
-set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " which files should not be matched in command-t
+set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " not matching files

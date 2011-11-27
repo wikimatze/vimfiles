@@ -70,17 +70,8 @@ exe join(map(split(glob("~/.vim/plugin-settings/gist.vim"), "\n"), '"source " . 
 " ## IndexSearch
 exe join(map(split(glob("~/.vim/plugin-settings/index_search.vim"), "\n"), '"source " . v:val'), "\n")
 
-" ## hammer
-" Mapping for the hammer plugin
-map <leader>m :Hammer<CR>
-
 " ## NERDTree
-let g:NERDTreeDirArrows = 1           " use arrows for the tree structure
-let g:NERDChristmasTree = 0           " less colorful tree
-let g:NERDTreeHighlightCursorline = 0 " no  cursor highlight in the tree
-let g:NERDTreeMouseMode = 3           " one click will open the (and files)
-let g:NERDTreeWinPos = 'right'        " display the NERDTree on the right
-let g:NERDTreeWinSize =30             " the width of the NERDTree when it opens
+exe join(map(split(glob("~/.vim/plugin-settings/nerdtree.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## notes
 let g:notes_directory = '~/Dropbox/notes'            " path of main directory
