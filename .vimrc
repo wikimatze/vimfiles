@@ -266,26 +266,6 @@ if has("autocmd")
 else
 endif
 
-" ## copy and paste in Vim (http://ubuntuforums.org/showthread.php?t=74905&page=2)
-function! Paste(mode)
-  if a:mode == "v"
-    normal gv
-    normal "+P
-    normal l
-  elseif a:mode == "i"
-    set virtualedit=all
-    normal `^"+gP
-    let &virtualedit = ""
-  endif
-endfunction
-
-vnoremap <C-X> "+d
-vnoremap <C-C> "+y
-nnoremap <C-V> "+gPl
-vnoremap <C-V> :<C-U>call Paste("v")<CR>
-inoremap <C-V> <C-O>:call Paste("i")<CR>
-
-
 " # comment in visual mode press ,c (for uncomment ,u)
 au FileType haskell,vhdl,ada let b:comment_leader = '-- '
 au FileType vim let b:comment_leader = '" '
