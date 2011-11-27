@@ -167,9 +167,6 @@ function! CurDir()
     return curdir
 endfunction
 
-" ## mark sting in visual mode and press / to search for it
-vmap / y/<C-R>"<CR>
-
 " ## mappings for ruby (F1 compile current file with ruby, F2 compile current file with RSpec
 autocmd FileType ruby map <F1> :!ruby "%:p"<CR>
 autocmd FileType ruby map <F2> :!rspec "%:p"<CR>
