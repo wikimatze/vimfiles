@@ -229,12 +229,6 @@ map Q gq
      endif
   endfunction
 
-" ## whitespace jumping: f jumps to the next whitespace and F to the previous
-nnoremap f f<space>
-vnoremap f f<space>
-nnoremap F F<space>
-vnoremap F F<space>
-
 " ## CTRL-q will save the file
 nmap <c-q> :w<CR>
 imap <c-q> <Esc>:w<CR>a
