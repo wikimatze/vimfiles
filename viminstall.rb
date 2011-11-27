@@ -21,7 +21,6 @@ git_bundles = [
   "https://github.com/scrooloose/nerdtree.git",
   "https://github.com/scrooloose/syntastic.git",
   "https://github.com/skammer/vim-css-color.git",
-  "https://github.com/timcharper/textile.vim.git",
   "https://github.com/tpope/vim-cucumber.git",
   "https://github.com/tpope/vim-fugitive.git",
   "https://github.com/tpope/vim-git.git",
@@ -45,6 +44,9 @@ git_bundles = [
   "https://github.com/xolox/vim-open-associated-programs.git",
   "https://github.com/xolox/vim-session.git",
   "https://github.com/xolox/vim-shell.git",
+  # not used
+    # https://github.com/timcharper/textile.vim
+    # "https://github.com/oscarh/vimerl.git",
   # document in the README
     #"https://github.com/2072/PHP-Indenting-for-VIm.git",
   # colorschemes
@@ -53,12 +55,11 @@ git_bundles = [
    # "https://github.com/tpope/vim-vividchalk.git",
   # to be install and put in the README
     # "https://github.com/kchmck/vim-coffee-script" sett the correct path
-    # "https://github.com/oscarh/vimerl.git",
 ]
 
 vim_org_scripts = [
   ["endwise-ruby", "9299",  "plugin"],
-  ["clojure", "13986",  "zip"],
+  # ["clojure", "13986",  "zip"],
   ["yankring", "16536",  "zip"],
   ["bufexplorer", "14208",  "zip"],
   ["jquery", "15752", "syntax"],
