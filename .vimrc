@@ -185,8 +185,11 @@ endfunction
 vmap / y/<C-R>"<CR>
 
 " ## inserting manual date (press F5 to insert the actual date in the form yyyy-mm-dd
-nnoremap <F5> "=strftime("%F")<CR>P
-inoremap <F5> <C-R>=strftime("%F")<CR>
+" nnoremap <F5> "=strftime("%F")<CR>P
+" inoremap <F5> <C-R>=strftime("%F")<CR>
+
+" source mappings
+exe join(map(split(glob("~/.vim/mappings/*.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## mappings for ruby (F1 compile current file with ruby, F2 compile current file with RSpec
 autocmd FileType ruby map <F1> :!ruby "%:p"<CR>
@@ -280,10 +283,7 @@ if has('mouse')
 endif
 
 " ## colorschemes
-colorscheme ir_black
-"colorscheme railscasts
-"colorscheme vividchalk
-
+colorscheme ir_black " [railscasts, vividchalk]
 
 " ## distinguish between different operation systems and change the text-size
 if has('mac')
@@ -360,7 +360,6 @@ noremap <silent> ,u :<C-B>sil <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>/
 " When saving a file trailing whitespace will automatically removed
 augroup DeleteTrailingWhitespaces
   autocmd!
-  " remember the position using ks| |'s
   autocmd BufWritePre * |call DeleteTrailingWhitespaces()|
 augroup END
 
