@@ -95,18 +95,16 @@ exe join(map(split(glob("~/.vim/plugin-settings/tagbar.vim"), "\n"), '"source " 
 exe join(map(split(glob("~/.vim/plugin-settings/yankring.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## vim-css-color
-let g:cssColorVimDoNotMessMyUpdatetime = 1 " is used when updatetime value set by plugin (100ms) is interfering with your configuration.
+exe join(map(split(glob("~/.vim/plugin-settings/vim_css_color.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## vim-ruby
-let ruby_operators = 1    " create colors for ruby operators
-let ruby_space_errors = 1 " mark whitespace characters
+exe join(map(split(glob("~/.vim/plugin-settings/vim_ruby.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## vim-shell
-let g:shell_verify_urls = 1 " handle special urls with dot at the end
+exe join(map(split(glob("~/.vim/plugin-settings/vim_shell.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## vim-NERDTree tabs
-let g:nerdtree_tabs_open_on_gui_startup = 0
-map t <plug>NERDTreeTabsToggle<CR>
+exe join(map(split(glob("~/.vim/plugin-settings/nerdtree_tabs.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## settings for plugins (end)
 
