@@ -134,9 +134,7 @@ let loaded_tex_syntax_checker = 0             " turn of lacheck of the syntastic
 let $SWEET_VIM_RSPEC_SHOW_PASSING="true" " output passes in quickfix window
 
 " ## tagbar
-nnoremap <silent> <F7> :TagbarToggle<CR>
-nnoremap <silent> <F4> :TagbarOpenAutoClose<CR>
-let g:tagbar_compact = 1                        " don't show the help in the tagbar
+let g:tagbar_compact = 1 " don't show the help in the tagbar
 
 " ## yankring
 let g:yankring_max_history = 1000 " save the last 1000 elements
