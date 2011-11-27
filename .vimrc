@@ -195,14 +195,6 @@ set list " List mode: Show tabs as CTRL-I, show end of line with $.
 " extends shows when a file name goes out the view (you have to scroll like in NERDTree)
 set listchars=tab:»\ ,extends:¤,trail:·
 
-" ## hack so that grep works with LaTeX-Suite
-set grepprg=grep\ -nH\ $*
-
-" ## enable Mouse support
-if has('mouse')
-  set mouse=a " this makes it possible to open links with a mouse in :help Vim files
-endif
-
 " ## color schemes
 colorscheme ir_black " [railscasts, vividchalk]
 
@@ -281,6 +273,7 @@ noremap <silent> ,u :<C-B>sil <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>/
 
 
 " LateX SUITE HACKS
+set grepprg=grep\ -nH\ $* " grep works with LaTeX-Suite
 " ## autoload dvi after each save in Vim (it runs the latex suite)
 au BufWritePost *.tex silent call Tex_CompileLatex()
 au BufWritePost *.tex silent !pkill -USR1 xdvi.bin
@@ -302,11 +295,4 @@ elseif has("unix")
     map ,lj :execute '!cd ' . expand(Tex_GetMainFileName(':p:h')) . ' && xdvi -editor "vim --servername 'v:servername' --remote-wait +\%l \%f" -sourceposition ' . line(".") . substitute(expand('%:p'),expand(Tex_GetMainFileName(':p:h')).'\/','','') . " " . expand(Tex_GetMainFileName(':p:r')) . ".dvi &" <CR><CR>
     let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
     set tags=tags
-endif
-
-
-" ## turn on syntax highlighting
-if &t_Co > 2 || has("gui_running")
-  syntax on
-  set hlsearch
 endif
