@@ -86,15 +86,13 @@ exe join(map(split(glob("~/.vim/plugin-settings/snipmate.vim"), "\n"), '"source 
 exe join(map(split(glob("~/.vim/plugin-settings/syntastic.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## Sweet Vim RSpec
-let $SWEET_VIM_RSPEC_SHOW_PASSING="true" " output passes in quickfix window
+exe join(map(split(glob("~/.vim/plugin-settings/sweet_vim_rspec.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## tagbar
 let g:tagbar_compact = 1 " don't show the help in the tagbar
 
 " ## yankring
 let g:yankring_max_history = 1000 " save the last 1000 elements
-nmap <leader>y :YRShow<CR>
-nmap <leader>x :YRClear<CR>
 
 " ## vim-css-color
 let g:cssColorVimDoNotMessMyUpdatetime = 1 " is used when updatetime value set by plugin (100ms) is interfering with your configuration.
