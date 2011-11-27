@@ -188,13 +188,6 @@ nnoremap <silent> <expr> 0 ScreenMovement("0")
 nnoremap <silent> <expr> ^ ScreenMovement("^")
 nnoremap <silent> <expr> $ ScreenMovement("$")
 
-" ## press jj to emulate the ESC button
-ino jj <ESC>
-cno jj <c-c>
-
-" ## press ,v will brings up vimrc for editing
-nmap <leader>v :sp $MYVIMRC<CR>
-
 " ## automatically source the vimrc file after saving it changes appear
 " without restarting vim
 if has("autocmd")
