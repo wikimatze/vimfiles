@@ -260,17 +260,6 @@ if has("autocmd")
 else
 endif
 
-" # comment in visual mode press ,c (for uncomment ,u)
-au FileType haskell,vhdl,ada let b:comment_leader = '-- '
-au FileType vim let b:comment_leader = '" '
-au FileType c,cpp,java,scala,sass,scss let b:comment_leader = '// '
-au FileType sh,make,rb,ruby,php let b:comment_leader = '# '
-au FileType haml let b:comment_leader = '/ '
-au FileType tex let b:comment_leader = '% '
-
-noremap <silent> ,c :<C-B>sil <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:noh<CR>
-noremap <silent> ,u :<C-B>sil <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:noh<CR>
-
 
 " LateX SUITE HACKS
 set grepprg=grep\ -nH\ $* " grep works with LaTeX-Suite
@@ -296,3 +285,12 @@ elseif has("unix")
     let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
     set tags=tags
 endif
+
+
+" ## comment in visual mode press ,c (for uncomment ,u)
+au FileType haskell,vhdl,ada let b:comment_leader = '-- '
+au FileType vim let b:comment_leader = '" '
+au FileType c,cpp,java,scala,sass,scss let b:comment_leader = '// '
+au FileType sh,make,rb,ruby,php let b:comment_leader = '# '
+au FileType haml let b:comment_leader = '/ '
+au FileType tex let b:comment_leader = '% '
