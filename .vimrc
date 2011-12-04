@@ -143,7 +143,11 @@ nmap <leader>u :set list!<CR>
 set list " List mode: Show tabs as CTRL-I, show end of line with $.
 " setting symbols for tabs, trails (whitespaces)
 " extends shows when a file name goes out the view (you have to scroll like in NERDTree)
-set listchars=tab:»\ ,extends:¤,trail:·
+if has('mac')
+  set listchars=tab:»\ ,extends:¤,trail:·
+else
+  set listchars=eol:$,tab:\|\|,extends:>,trail:~
+endif
 
 " ## color schemes
 colorscheme ir_black " [railscasts, vividchalk]
@@ -244,3 +248,4 @@ au FileType c,cpp,java,scala,sass,scss let b:comment_leader = '// '
 au FileType sh,make,rb,ruby,php let b:comment_leader = '# '
 au FileType haml let b:comment_leader = '/ '
 au FileType tex let b:comment_leader = '% '
+
