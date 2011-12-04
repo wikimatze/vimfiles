@@ -154,9 +154,6 @@ colorscheme ir_black " [railscasts, vividchalk]
 exe join(map(split(glob("~/.vim/mappings/*.vim"), "\n"), '"source " . v:val'), "\n")
 exe join(map(split(glob("~/.vim/functions/*.vim"), "\n"), '"source " . v:val'), "\n")
 
-" ## If editing a .txt file then skip line numbers
-au! BufRead,BufNewFile *.txt set nonu
-
 " ## function to strip trailing whitespace
 function! <SID>StripTrailingWhitespaces()
     " Preparation: save last search, and cursor position.
