@@ -1,5 +1,4 @@
 # Original: http://tammersaleh.com/posts/the-modern-vim-config-with-pathogen
-
 git_bundles = [
   "git://git.wincent.com/command-t.git",
   "https://github.com/brian9/vim-padrino.git",
@@ -20,6 +19,7 @@ git_bundles = [
   "https://github.com/robgleeson/hammer.vim.git",
   "https://github.com/scrooloose/nerdtree.git",
   "https://github.com/scrooloose/syntastic.git",
+  "https://github.com/sjl/gundo.vim.git",
   "https://github.com/skammer/vim-css-color.git",
   "https://github.com/tpope/vim-cucumber.git",
   "https://github.com/tpope/vim-fugitive.git",
@@ -44,7 +44,7 @@ git_bundles = [
   "https://github.com/xolox/vim-open-associated-programs.git",
   "https://github.com/xolox/vim-session.git",
   "https://github.com/xolox/vim-shell.git",
-  # not used
+  # not used but is in the README
     # https://github.com/timcharper/textile.vim
     # "https://github.com/oscarh/vimerl.git",
   # document in the README
@@ -60,6 +60,7 @@ git_bundles = [
 vim_org_scripts = [
   ["endwise-ruby", "9299",  "plugin"],
   # ["clojure", "13986",  "zip"],
+  ["grep", "7645",  "plugin"],
   ["yankring", "16536",  "zip"],
   ["bufexplorer", "14208",  "zip"],
   ["jquery", "15752", "syntax"],
