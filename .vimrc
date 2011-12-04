@@ -118,7 +118,6 @@ endfunction
 
 " ## mappings for ruby (F1 compile current file with ruby, F2 compile current file with RSpec)
 autocmd FileType ruby map <F1> :!ruby "%:p"<CR>
-autocmd FileType ruby map <F2> :!rspec "%:p"<CR>
 
 " ## converting markdown to HTML by pressing ,md
 nmap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <cr>
