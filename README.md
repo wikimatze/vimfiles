@@ -67,6 +67,8 @@ always eager to learn something new.
   * __:Ggrep__ - does a _grep_ in the tree
   * __:Gbrowse__ - opens the actual file in the browser (normally its on github)
   * __:Git__ - after this you can perform every other normal git command you want
+* [Grep.vim](http://www.vim.org/scripts/script.php?script_id=311 "Grep.vim"): using grep to search
+  after files - a good alternative to grep (*no doc*)
 * [Gist.vim](https://github.com/mattn/gist-vim "Gist.vim"): upload files directly to github with just one command
   * first setup your git credentials __let g:github_user = 'your-name'__ and __let g:github_token = 'token'__  in your _.vimrc_
       * is the API Token which can be found under Account Settings under Account Admin on [github](https://github.com "github")
@@ -280,3 +282,4 @@ This software is licensed under the [MIT license][mit].
 © 2011 Matthias Guenther <matthias.guenther@wikimatze.de>.
 
 [mit]: http://en.wikipedia.org/wiki/MIT_License
+
