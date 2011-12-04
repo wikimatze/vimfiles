@@ -17,7 +17,7 @@ set expandtab                               " hitting Tab in insert mode will pr
 set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
 set guioptions-=T                           " turning of the tool bar
 set history=5000                            " keep 5000 lines of command line history
-set lines=999 columns=999                   " full screen when starting gvim (it's a hack)
+set lines=999 columns=999                   " full screen when starting Gvim (it's a hack)
 set ls=1                                    " always show status line
 set nocompatible                            " must be the first, because it changes other options as a side effect
 set noerrorbells                            " don't make noise on error messages
@@ -30,10 +30,10 @@ set ruler                                   " show the line and column number of
 set shell=/bin/bash                         " always use sh when executing commands with :!
 set shiftwidth=2                            " how many columns text is indented with the indent operations (<< and >>)
 set showcmd                                 " show (partial) command in the last line of the screen
-set showmode                                " display in the left corner in which modus you are in vim
+set showmode                                " display in the left corner in which modus you are in Vim
 set softtabstop=2                           " how many columns
 set synmaxcol=200                           " better scrolling for long lines
-set spelllang=en_us                         " default language for spellchecker
+set spelllang=en_us                         " default language for spell checker
 set tabstop=2                               " how many columns a tab counts
 set timeout timeoutlen=1000 ttimeoutlen=100 " scroll speed of the editor
 set title                                   " show title in console title
@@ -105,11 +105,10 @@ exe join(map(split(glob("~/.vim/plugin-settings/vim_shell.vim"), "\n"), '"source
 
 " ## vim-NERDTree tabs
 exe join(map(split(glob("~/.vim/plugin-settings/nerdtree_tabs.vim"), "\n"), '"source " . v:val'), "\n")
-
 " ## settings for plugins (end)
 
-" # better statusline
-set statusline=\CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c " Format the statusline
+" # better status line
+set statusline=\CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c " Format the status line
 
 function! CurDir()
     let curdir = substitute(getcwd(), '/Users/amir/', "~/", "g")
@@ -118,12 +117,12 @@ endfunction
 
 " ## mappings for ruby (F1 compile current file with ruby, F2 compile current file with RSpec)
 autocmd FileType ruby map <F1> :!ruby "%:p"<CR>
-
+2011-12-04
 " ## converting markdown to HTML by pressing ,md
 nmap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <cr>
 
 " ## automatically source the vimrc file after saving it changes appear
-" without restarting vim
+" without restarting Vim
 if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
@@ -158,7 +157,7 @@ exe join(map(split(glob("~/.vim/functions/*.vim"), "\n"), '"source " . v:val'), 
 " ## If editing a .txt file then skip line numbers
 au! BufRead,BufNewFile *.txt set nonu
 
-" ## function to strip trailing whitespaces
+" ## function to strip trailing whitespace
 function! <SID>StripTrailingWhitespaces()
     " Preparation: save last search, and cursor position.
     let _s=@/
@@ -185,7 +184,7 @@ elseif has('unix')
   let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 endif
 
-" ## CTRL-SHIFT+arrow nables the mark method for like textmate
+" ## CTRL-SHIFT+arrow nables the mark method for like TextMate
 if has("gui_macvim")
   let macvim_hig_shift_movement = 1
 endif
@@ -214,9 +213,9 @@ else
 endif
 
 
-" LateX SUITE HACKS
+" LaTeX SUITE HACKS
 set grepprg=grep\ -nH\ $* " grep works with LaTeX-Suite
-" ## autoload dvi after each save in Vim (it runs the latex suite)
+" ## auto load dvi after each save in Vim (it runs the latex suite)
 au BufWritePost *.tex silent call Tex_CompileLatex()
 au BufWritePost *.tex silent !pkill -USR1 xdvi.bin
 " settings for determining tex file type
@@ -238,7 +237,6 @@ elseif has("unix")
     let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
     set tags=tags
 endif
-
 
 " ## comment in visual mode press ,c (for uncomment ,u)
 au FileType haskell,vhdl,ada let b:comment_leader = '-- '
