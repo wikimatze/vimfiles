@@ -72,4 +72,24 @@ commands and shortcuts. After a while I will try to translate them  into English
    - **O** - neue Zeile oberhalb vom Cursor
    - :e <Dateiname> - kann man eine Datei editieren
 
+# beenden
+   - :q - exit vim und speichere Änderungen nicht
+   - :x - speichere alle Änderungen, sofern welche existieren und beende das Programm
+   - :w! - überschreibe bereits vorhandene Datei
+   - :q! - beendet vim
+   - :wq - beende vim und speichere Änderungen ab
+
+# löschen und ausschneiden
+   - **x** - einzelnes Zeichen löschen
+   - **dw** - löschen ganzes Wort (z.B. **2dw**)
+   - **d0** - löscht alles, was vor dem Cursor steht
+   - **dd** - ganze Zeile ausschneiden, egal, wo der Cursor ist
+   - **p** - einfügen der ausgeschnittenen Sache da, wo der Cursor ist
+   - **P** - einfügen der ausgeschnitten Sachen nach dem Cursor
+   - **D** - löscht alles bis zum Ende des Cursors
+   - **df** danach das Wort eingeben, bis zu dem gelöscht werden soll
+   - **d-Shift-g** lösche alles, was unterhalb des aktuellen Cursors steht
+   - **dtG** - steht für delete to und löscht alles bis vor dem Buchstaben G steht
+   - ci" - löscht alles, was in den Klammern steht und geht in den editier-Modus; statt " kann man
+     auch alle anderen Klammertypen nehmen
 
