@@ -78,6 +78,20 @@ always eager to learn something new.
   * _own settings_:
       * __let g:gist\_detect\_filetype = 1__ - detecting file type for each gist
       * __let g:gist\_open\_browser\_after_post = 1__ - open the gist after each post
+* [gundo](http://sjl.bitbucket.org/gundo.vim/ "gundo"): graph the changes of your file saves in different a nice tree
+  - **k** - move one step top
+  - **j** - move one step below
+  - **gg** - move to the button
+  - **G** - move to the top
+  - **Enter or double click** - revert the changes of the file to the current file
+  - **p** - will open a preview to show the differences from the selected and the current version
+    (just imagine a `git diff`)
+  - *own settings*:
+      - **let g:gundo_width = 45** - horizontal width
+      - **let g:gundo_preview_height = 15** - vertical height
+      - **let g:gundo_help = 1** - show the help in gundo window
+      - **let g:gundo_close_on_revert = 0** - don't close gundo after a version is selected
+      - **let g:gundo_right = 0** - display gundo on the left site
 * [hammer](https://github.com/robgleeson/hammer.vim "hammer"): displays various markups (markdown, textile, rdoc, asciidoc) with one keystroke in the browser
   * __map <leader>m :Hammer<CR>__ - press ,m to perform this action (depends on how you define _leader_ in your vimrc)
 * [IndexSearch](https://github.com/vim-scripts/IndexedSearch "IndexSearch"): redefines the search (/,?) in Vim and creates custom messages about how many hits there are
