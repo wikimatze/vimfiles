@@ -47,3 +47,29 @@ commands and shortcuts. After a while I will try to translate them  into English
       - :set ignorecase - beachte Groß- und Kleinschreibung
       - :set smartcase** - achte nicht auf Groß- und Kleinschreibung
 
+# editieren
+   - **r** - ist Ersetzen, d.h. da wo der Cursor steht wird das aktuelle Zeichen ergänzt
+   - **R** - bleibe im Ersetzungsmodus und ersetze Wörter weiter
+   - **s** - ersetze das Zeichen (also im Visual-Modus) wo der Cursor gerade ist und geh in den
+     Ersetzungsmodus
+   - **u** - undo letztes geändertes Zeichen rückgängig
+   - **U** - undo alle Änderungen der aktuellen Zeile
+   - **p** - paste nach der aktuellen Cursor-Stelle
+   - **P** - paste vor der aktuellen Cursor-Stelle
+   - **CTRL-r** - redo
+   - **CTRL-d** - entfernt tab -> ist praktisch, wenn man mit Einrückungen arbeitet
+   - **CTRL-w** - löscht alle Buchstaben des Wortes vor dem Cursor unter dem er steht
+   - u und U - machen im Visualmode das ausgewählte Wort oder Phrase klein- bzw. groß
+   - **yw** - einzelnes Wort kopieren
+   - **yy** - Zeile kopieren
+   - **ggVG** - den ganzen Text markieren
+   - %s/old/new/g - alle Vorkommnisse in der ganzen Datei ersetzen
+   - %s/old/new/c - alle Vorkommnisse im interaktiven Modus ersetzen
+   - **gqap** - formatiert den aktuellen Paragraphen (**SHIFT-q** formatiere die Markierung)
+   - **A** - gehe an Zeilenende in den Editiermodus
+   - **I** - gehe an Zeilenanfang in den Editiermodus
+   - **o** - neue Zeile unter dem Cursor
+   - **O** - neue Zeile oberhalb vom Cursor
+   - :e <Dateiname> - kann man eine Datei editieren
+
+
