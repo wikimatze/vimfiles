@@ -32,3 +32,18 @@ commands and shortcuts. After a while I will try to translate them  into English
    - **CTRL-i** - verfolge deine Bewegungen vorwärts (springe zu letzt gemachten Änderungen)
    - **CTRL-d** - springe ans Ende einer Datei
 
+# Suche
+   - / - dann das gesucht Wort eingeben => Top-Down Suche
+   - ? Down-Top Suche
+      - **n** - spring zum nächsten Matching => Richtung **vorne**
+      - **N** - spring zum vorherigen Matching => Richtung **hinten**
+   - **Regex**
+      - /word$ - suche nach Wort am Ende jeder Zeile
+      - /^word - such nach Wort am Anfang jeder Zeile
+      - **h.l** - match alle Wörter, die mit h anfangen, danach kommt ein beliebiger Buchstabe und
+        dann kommt l
+   - \* - sucht nach den aktuellen Wort, unter dem der Cursor steht
+   - **Settings**:
+      - :set ignorecase - beachte Groß- und Kleinschreibung
+      - :set smartcase** - achte nicht auf Groß- und Kleinschreibung
+
