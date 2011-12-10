@@ -101,3 +101,23 @@ commands and shortcuts. After a while I will try to translate them  into English
    - **SPACE** - schließt und öffnet eine Faltung
    - :set foldmethod=indent - setz die Faltmethode auf Einrückung
 
+# Fenster
+   - :help STRG-w hilfe zu allen wichtigen Windowsbefehlen anzeigen
+   - **CTRL-w s** - Fenster **horizontal** splitten
+   - **CTRL-w v** - Fenster **vertikal** splitten
+   - **CTRL-w c** - schließe aktuelles Fenster
+   - *:sp bla.txt* - öffne Datei neu durch horizontalen Split
+   - *:vsp bla.txt* - öffne Datei neu durch vertikalen Split
+   - *:only* - alle Fenster bis auf das aktuelle schließen
+   - Fokus auf Window ändern: CTRL-w w gehe im Uhrzeigersinn zum nächsten Fenster
+   - **CTRL-w [hjkl]** da kann man gezielt auf das entsprechende Fenster gehen
+   - **Fenstergröße anpassen**
+      - **CTRL-w _** -  aktuelles Fenster horizontal max
+      - **CTRL-w |** aktuelles Fenster vertikal max
+      - **CTRL-w [+-]** - um die Größe inkrementel anzupassen
+      - **CTRL-w =** - mache alle Fenster gleichgroß
+   - **Fenster neu anordnen**
+      - **CTRL-w r** mach alles reverse
+      - **CTRL-w x** tausche jeweils die Nachbarn
+
+
