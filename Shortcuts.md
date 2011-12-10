@@ -93,3 +93,11 @@ commands and shortcuts. After a while I will try to translate them  into English
    - ci" - löscht alles, was in den Klammern steht und geht in den editier-Modus; statt " kann man
      auch alle anderen Klammertypen nehmen
 
+# Faltung
+   - **zo** - öffnet eine Faltung
+   - **zc** - schließt eine Faltung
+   - **zr** - öffne erste Stufe der Faltungen => **zR** öffne alle Stufen der Faltung
+   - **zm** - schließe erste Stufe aller Faltungen => **zM** schließe alle Faltungen
+   - **SPACE** - schließt und öffnet eine Faltung
+   - :set foldmethod=indent - setz die Faltmethode auf Einrückung
+
