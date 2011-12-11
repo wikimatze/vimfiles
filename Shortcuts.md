@@ -120,4 +120,23 @@ commands and shortcuts. After a while I will try to translate them  into English
       - **CTRL-w r** mach alles reverse
       - **CTRL-w x** tausche jeweils die Nachbarn
 
+# tabs
+   - *vim -p [filename1] [filename]* öffnet alle Datein in Tabs
+   - *:tabedit filename* - öffnen
+   - *:q* - schließen
+   - *:tabonly* schließt alle anderen Tabs bis auf das aktuelle
+   - **bewegen**
+      -  **gt** gehe nach rechts die Tabs durch (**3gt** geh zum dritten Tab nach rechtsausgehen Tab)
+      - **gT** gehe die Tabs nach Links durch (**3gT** geh zum dritten Tabnach linksausgehen Tab)
+   - **neu anordnen**
+      - *:tabmove* - tab ans Ende
+      - *:tabmove 0* - tab an den Anfang
+
+# marks
+   - *ma* - create a mark with the name a (wird für jede Datei abgespeichert)
+   - *'a* - springt zur Marke a
+   - Marken können von [a-z] gehen und sind lokal für jede Datei
+   - Marken mit [A-Z] sind global, sind also wie Favoriten
+   - *:marks* - gibt alle Marken der aktuellen Datei an
+
 
