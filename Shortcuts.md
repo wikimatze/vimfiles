@@ -139,4 +139,8 @@ commands and shortcuts. After a while I will try to translate them  into English
    - Marken mit [A-Z] sind global, sind also wie Favoriten
    - *:marks* - gibt alle Marken der aktuellen Datei an
 
+# help
+   - :help so kommt man ins Hilfe Menü
+   - Doppelklick mit Maus öffnet Hyperlinks
+
 
