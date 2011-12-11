@@ -203,3 +203,30 @@ commands and shortcuts. After a while I will try to translate them  into English
    - **:retab** will remove all tabs in a file  - Shift-p davor einfügen
    - **:n <file_name>** will open a new file in vim
 
+# Spellchecker
+   - **:set** spell aktiviert spellchecker
+   - **]s** setzt den Cursor auf den nächsten Fehler im Text und **[s** setzt den Cursor auf den
+     vorherigen Fehler
+   - **z=** zeigt zu einem Wort alle möglichen Korrekturen an
+   - **zg** Wort adden
+   - **zw** Wort entfernen
+
+# LaTeX-Suite
+   - **,ll** kompiliere und lv öffne die dvi (Tastenkombi sehr schnell eingeben)
+   - **STRG+SHIFT-j** springt man zu den Platzhaltern in den Dokumenten
+   - **n** - springt man zum nächsten Fehler
+   - **b** - springt man zum vorherigen Fehler
+   - multiple files
+      -  lege eine leere Datei mit den Namen <yourmain>.tex.latexmain an
+      -  dann kann man in jedem Dokument kompilieren
+   - forward search:
+     "http://forum.ubuntuusers.de/topic/vim":http://forum.ubuntuusers.de/topic/vim-vim-latexsuite-vim-gtk
+      - Dokument ganz normal kompiliert
+      - dann mit \ls den Modus starten
+      - und wo gerade der Cursor ist, an dieser Stelle springt man dann im dvi-File auch hin
+   - inverse (reverse) search: http://forum.ubuntuusers.de/topic/vim-vim-latexsuite-vim-gtk
+      - **CTRL-Linke** Maustasteund es wird an der entsprechenden Stelle im Quellcode gesprungen
+   - Links
+      - http://vim":http://vim-latex.sourceforge.net/documentation/latex-suite.html#latex-project-example
+      - http://vim":http://vim-latex.sourceforge.net/documentation/latex-suite-quickstart
+
