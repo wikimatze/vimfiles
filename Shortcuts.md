@@ -143,4 +143,13 @@ commands and shortcuts. After a while I will try to translate them  into English
    - :help so kommt man ins Hilfe Menü
    - Doppelklick mit Maus öffnet Hyperlinks
 
+# markieren
+   - einen ganzen Paragraphen auswählen: in visual mode und *ap*
+   - *Shift-v* - markiert die ganze Zeile im Visual modus
+
+# sortieren
+   -  im _VISUAL_-Mode den Text markieren, nach dem sortiert werden soll
+   - **sort** eingeben (normale Sortierung)
+   - **sort!** eingeben (inverse Sortierung)
+   - **!sort** sortiert alles was im Visual-Modus markiert ist
 
