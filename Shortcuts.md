@@ -172,3 +172,34 @@ commands and shortcuts. After a while I will try to translate them  into English
         rückgängig
       - *:q!*- force vim to quit and discard all changes to the buffers
 
+# sonstiges
+   - **J** - Join zwei Zeilen mit space
+   - **gJ** - join zwei Zeilen ohne space
+   - **gi** - used in vim and open a split horizontal view of the file
+   - **gs** - used in vim to open a new file in the vertical view
+   - **~** macht aus Kleinbuchstaben Großbuchstaben und umgedreht
+   - **.**  - wiederholt die letztgemachte Aktion
+   - **:!** - dann kann man einen externen Befehl ausführen
+   - **ESC** - in Normalenmodus wechseln
+   - **:quit!** beendet eine Datei ohne die gemachten Änderungen abzuspeichern
+   - motions (einfach vor den Befehlen eine Zahl schreiben und dann werden die jeweiligen
+      Aktionen ausgeführt)
+      - **2w** - Cursor zwei Wörter vorwärts an die erste Stelle des zweiten Wortes bewegen
+      - **2e** - Cursor zwei Wörter vorwärts an die letzte Stelle des dritten Wortes
+   - **:map** Übersicht aller mappings der aktuellen Sitzung
+   - **:messages** ist die Historie der Events der aktuellen Session
+   - **Toggle** - automatisches Scrollen der aktuellen Zeilennummer
+   - **zz** - aktuelle Zeile in die Mitte
+   - **zt** - aktuelle Źeile in den Top
+   - **zb** - aktuelle Zeile nach ganz unten setzen
+   - **CTRL-a** und **CTRL-x** erhöhen bzw. senken Zahlen unter dem Cursor
+   - **gf** öffnet die Datei unter dem der Cursor steht
+   - **ZZ** - speichere Datei und beende sie
+   - **ZQ** - beende Datei ohne Änderungen zu speichern
+   - Datein verschlüsseln -  vim -x secret.txt
+   - **:ascii** - gibt ASCII, Hex und Octalzahl des Buchstaben aus, unter dem der Cursor steht
+   - **:retab** => ersetzt alles Tabs in einer Datei durch Spaces
+   - **CTRL-r** redo
+   - **:retab** will remove all tabs in a file  - Shift-p davor einfügen
+   - **:n <file_name>** will open a new file in vim
+
