@@ -153,3 +153,22 @@ commands and shortcuts. After a while I will try to translate them  into English
    - **sort!** eingeben (inverse Sortierung)
    - **!sort** sortiert alles was im Visual-Modus markiert ist
 
+# Einrückung und Formatierung
+   - *==* - wird die aktuelle Zeile eingerückt
+   - *=G* - wird die ganze Datei formatiert
+   - **CTRL-d** - nach links rücken
+   - **CTRL-t** - nach rechts rücken
+
+# Buffer mehrere Datein werden hier angelegt
+   - *:ls* - Liste aller Buffer an
+   - *:bn* - gehe zum nächsten Buffer
+   - *:bp* - gehe zum vorherigen Buffer
+   -  Umgang mit hidden Buffers: entstehen dann, wenn man die gemachten Änderungen an einern Buffer
+      vor beenden des Programms speichert. Man hat dann die folgenden Optionen, um dieses Problem zu
+      beheben:
+      - *:w* -schreibe die Änderungen
+      - *:e!* - stelle die ursprüngliche Datei wieder her
+      - *:bd!* - entferne den Bufffer aus der Bufferliste und mache alle gemachten Änderungen
+        rückgängig
+      - *:q!*- force vim to quit and discard all changes to the buffers
+
