@@ -230,3 +230,8 @@ commands and shortcuts. After a while I will try to translate them  into English
       - http://vim":http://vim-latex.sourceforge.net/documentation/latex-suite.html#latex-project-example
       - http://vim":http://vim-latex.sourceforge.net/documentation/latex-suite-quickstart
 
+# Hacks
+   - das Zeilenende durch \\ ersetzen: :%s/$/ \\\\/
+   - Matching vor und hinter = tauschen: :%s/\(.*\)=\(.*\)/\2=\1
+   - ersetze a = b durch b = a:@ :%s/\(.*\)=\(.*\)/\2=\1
+
