@@ -254,6 +254,10 @@ always eager to learn something new.
       - **nnoremap <silent> <F7> :TagbarToggle<CR>**
       - **nnoremap <silent> <F4> :TagbarOpenAutoClose<CR>**
       - **let g:tagbar_compact = 1** - don't show the help in the tagbar
+- [tocdown](https://github.com/matthias-guenther/tocdown "tocdown"): Display the headlines of a
+  markdown document in an extra window.
+  - *own settings*:
+      - **nnoremap <F2> :TocdownToggle<CR>**
 - [yankring](http://www.vim.org/scripts/script.php?script_id=1234 "yankring"): better register
   management and saves up to 100 buffered lines
   - **:YRShow** - shows the actual buffer

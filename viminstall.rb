@@ -13,6 +13,7 @@ git_bundles = [
   "https://github.com/majutsushi/tagbar.git",
   "https://github.com/mattn/gist-vim.git",
   "https://github.com/mileszs/ack.vim",
+  "https://github.com/matthias-guenther/tocdown.git",
   "https://github.com/msanders/snipmate.vim.git",
   "https://github.com/othree/html5-syntax.vim.git",
   "https://github.com/panozzaj/vim-autocorrect.git",
