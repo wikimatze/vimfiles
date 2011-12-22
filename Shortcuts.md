@@ -208,8 +208,10 @@ commands and shortcuts. After a while I will try to translate them  into English
    - **]s** setzt den Cursor auf den nächsten Fehler im Text und **[s** setzt den Cursor auf den
      vorherigen Fehler
    - **z=** zeigt zu einem Wort alle möglichen Korrekturen an
-   - **zg** Wort adden
+   - **zg** Wort zum Wörterbuch adden
    - **zw** Wort entfernen
+   - **set spelling=de_20** - neue deutsche RS
+   - **set spelling=de_19** - alte deutsche RS
 
 # LaTeX-Suite
    - **,ll** kompiliere und lv öffne die dvi (Tastenkombi sehr schnell eingeben)
@@ -225,7 +227,7 @@ commands and shortcuts. After a while I will try to translate them  into English
       - dann mit \ls den Modus starten
       - und wo gerade der Cursor ist, an dieser Stelle springt man dann im dvi-File auch hin
    - inverse (reverse) search: http://forum.ubuntuusers.de/topic/vim-vim-latexsuite-vim-gtk
-      - **CTRL-Linke** Maustasteund es wird an der entsprechenden Stelle im Quellcode gesprungen
+      - **CTRL-Linke** Maustaste und es wird an der entsprechenden Stelle im Quellcode gesprungen
    - Links
       - http://vim":http://vim-latex.sourceforge.net/documentation/latex-suite.html#latex-project-example
       - http://vim":http://vim-latex.sourceforge.net/documentation/latex-suite-quickstart
