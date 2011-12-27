@@ -331,6 +331,19 @@ always eager to learn something new.
       commandline :'<,'>:B) now press the typical text replacement commands you want (s/-/-) and you
       are done
 
+## Usage ##
+
+I highly not recommend you to copy my *.vimrc* because they may not fit to your working style (see
+**Luca Pettes**
+[article](http://lucapette.com/vim/rails/vim-for-rails-developers-lazy-modern-configuration/ "article")). But
+if you would like to use this repository to get started with Vim, please perform the following
+tasks:
+
+- `mv <path-to-vim-settings-clone>` ~/ # move .vimrc into your home folder
+- `mkdir ~/.vim/.backup` # create the backup folder
+- `mkdir ~/.vim/bundle` # needed for the pathogen script, this is the major
+- `ruby ~/.vim/viminstall.rb` # install the plugins
+
 
 ## Colors scheme ##
 
@@ -338,7 +351,7 @@ I have found the following three for my taste - there are tons of other colors o
 
 - [ir black](https://github.com/borgand/ir*black "ir black"): looks a little bit frosty but the
   overall feeling is very fast
-![ir black screen shot](https://github.com/matthias-guenther/vim-settings/raw/master/ir*black.png)
+![ir black screen shot](https://github.com/matthias-guenther/vim-settings/raw/master/ir_black.png)
 - [railscasts](https://github.com/jpo/vim-railscasts-theme "railscasts"): looks dusty and feels
   after editing
 ![railscasts screen shot](https://github.com/matthias-guenther/vim-settings/raw/master/railscasts.png)
