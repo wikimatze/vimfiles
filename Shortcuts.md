@@ -21,6 +21,7 @@ commands and shortcuts. After a while I will try to translate them  into English
    - **gg** - springt an den Anfang einer Datei
    - **G** - spring an das Ende einer Datei
    - **10G** - springe zur 10 Zeile
+   - **G** - springe ans Zeilenende
    - **H** - höchste Stelle des sichtbaren Bereichs springen
    - **M** - mittlere Stelle des sichtbaren Bereichs springen
    - **L** - ende Stelle des sichtbaren Bereichs springen
@@ -233,7 +234,6 @@ commands and shortcuts. After a while I will try to translate them  into English
       - http://vim":http://vim-latex.sourceforge.net/documentation/latex-suite-quickstart
 
 # Hacks
-   - das Zeilenende durch \\ ersetzen: :%s/$/ \\\\/
+   - das Zeilenende durch \\ ersetzen: `:%s/$/ \\\\/
    - Matching vor und hinter = tauschen: :%s/\(.*\)=\(.*\)/\2=\1
-   - ersetze a = b durch b = a:@ :%s/\(.*\)=\(.*\)/\2=\1
-
+   - ersetze a = b durch b = a: `:%s/\(.*\)=\(.*\)/\2=\1`
