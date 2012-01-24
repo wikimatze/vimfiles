@@ -14,14 +14,25 @@ The text of each link is the name for the doc you have to type in Vim (never und
 not open the documentation in Vim. Feel free to correct me or provide me with additional hints - I'm
 always eager to learn something new.
 
-- [AutoClose](http://www.vim.org/scripts/script.php?script*id=2009 "autoclose"): automatically close
+- [AutoClose](http://www.vim.org/scripts/script.php?script_id=2009 "autoclose"): automatically close
   brackets - it will saves you a lot of finger acrobatic because you don't have to type closing
   brackets (*no doc*)
 - [autocorrect](https://github.com/panozzaj/vim-autocorrect "autocorrect"): auto correct English
   spelling mistakes, when typing (*no doc*)
   - don't forget to put *:source /path/to/the/autocorrect.vim* in your *.vimrc*
 - [ack.vim](https://github.com/mileszs/ack.vim "ack.vim"): you can perform ack commands in Vim
-  - **:Ack {pattern} [{directory}]** - the basic command to search after words in your project
+    - **:Ack {pattern} [{directory}]** - the basic command to search after words in your project
+    - shortcuts for navigation:
+      - **o**    to open (same as enter)
+      - **go**   to preview file (open but maintain focus on ack.vim results)
+      - **t**    to open in new tab
+      - **T**    to open in new tab silently
+      - **v**    to open in vertical split
+      - **gv**   to open in vertical split silently
+      - **q**    to close the quickfix window
+    - *own settings*:
+      - **let g:ackprg="ack-grep -H --nocolor --nogroup --column"** - better handling on Unix
+        machines
 - [coffee-script](https://github.com/kchmck/vim-coffee-script "coffe-script"): add coffee script
   support for Vim (*no doc*)
 - [cucumber](https://github.com/tpope/vim-cucumber "cucumber"): syntax-highlighting for cucumber
