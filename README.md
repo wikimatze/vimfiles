@@ -102,19 +102,20 @@ always eager to learn something new.
       - **let g:gist\*open\*browser\*after*post = 1** - open the gist after each post
 - [gundo](http://sjl.bitbucket.org/gundo.vim/ "gundo"): graph the changes of your file saves in
   different a nice tree
-  - --k-- - move one step top
-  - --j-- - move one step below
-  - --gg-- - move to the button
-  - --G-- - move to the top
-  - --Enter or double click-- - revert the changes of the file to the current file
-  - --p-- - will open a preview to show the differences from the selected and the current version
+
+  - **k** - move one step top
+  - **j** - move one step below
+  - **gg** - move to the button
+  - **G** - move to the top
+  - **Enter or double click** - revert the changes of the file to the current file
+  - **p** - will open a preview to show the differences from the selected and the current version
     (just imagine a `git diff`)
   - -own settings-:
-      - --let g:gundo*width = 45-- - horizontal width
-      - --let g:gundo*preview*height = 15-- - vertical height
-      - --let g:gundo*help = 1-- - show the help in gundo window
-      - --let g:gundo*close*on*revert = 0-- - don't close gundo after a version is selected
-      - --let g:gundo*right = 0-- - display gundo on the left site
+      - **let g:gundo*width = 45** - horizontal width
+      - **let g:gundo*preview*height = 15** - vertical height
+      - **let g:gundo*help = 1** - show the help in gundo window
+      - **let g:gundo*close*on*revert = 0** - don't close gundo after a version is selected
+      - **let g:gundo*right = 0** - display gundo on the left site
 - [hammer](https://github.com/robgleeson/hammer.vim "hammer"): displays various markups (markdown,
   textile, rdoc, asciidoc) with one keystroke in the browser
   - **map <leader>m :Hammer<CR>** - press ,m to perform this action (depends on how you define
