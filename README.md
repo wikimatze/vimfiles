@@ -33,15 +33,12 @@ always eager to learn something new.
     - *own settings*:
       - **let g:ackprg="ack-grep -H --nocolor --nogroup --column"** - better handling on Unix
         machines
-- [coffee-script](https://github.com/kchmck/vim-coffee-script "coffe-script"): add coffee script
-  support for Vim (*no doc*)
+- [coffee-script](https://github.com/kchmck/vim-coffee-script "coffe-script"): coffee script support
 - [cucumber](https://github.com/tpope/vim-cucumber "cucumber"): syntax-highlighting for cucumber
   files (*no doc*)
-- [endwise-ruby](http://www.vim.org/scripts/script.php?script*id=2386 "endwise-ruby"): automatically
-  adds keywords like *end* to special constructs in ruby (*no doc*)
-- [clojure](http://www.vim.org/scripts/script.php?script*id=2501 "clojure"): clojure support for Vim
+- [clojure](http://www.vim.org/scripts/script.php?script_id=2501 "clojure"): clojure support for Vim
   (*no doc*)
-- [command-t](http://www.vim.org/scripts/script.php?script*id=3025 "command-t"): file search in the
+- [command-t](http://www.vim.org/scripts/script.php?script_id=3025 "command-t"): file search in the
   actual directory
   - **\<Leader\>-t** - call *:CommandT* command to open a specified file
       - **:CommandT ../path/to/other/files** - search in the specified path
@@ -73,6 +70,8 @@ always eager to learn something new.
         tab
       - **set wildignore+=-.o,-.obj,.git,.svn,vendor/rails/--** - which files should not be matched
         in command-t
+- [endwise-ruby](https://github.com/tpope/vim-endwise "endwise-ruby"): automatically
+  adds keywords like *end* to special constructs in ruby (*no doc*)
 - [fugitive](http://github.com/tpope/vim-fugitive "vim-fugitive"): git wrapper
   - **:Gstatus** - git status
       - **CTRL-n** - go to the next file
