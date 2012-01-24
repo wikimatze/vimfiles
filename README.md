@@ -86,7 +86,7 @@ always eager to learn something new.
   - **:Ggrep** - does a *grep* in the tree
   - **:Gbrowse** - opens the actual file in the browser (normally its on github)
   - **:Git** - after this you can perform every other normal git command you want
-- [Grep.vim](http://www.vim.org/scripts/script.php?script*id=311 "Grep.vim"): using grep to search
+- [Grep.vim](http://www.vim.org/scripts/script.php?script_id=311 "Grep.vim"): using grep to search
   after files - a good alternative to grep (-no doc-)
 - [Gist.vim](https://github.com/mattn/gist-vim "Gist.vim"): upload files directly to github with just one command
   - first setup your git credentials **let g:github*user = 'your-name'** and **let g:github*token =
@@ -96,6 +96,7 @@ always eager to learn something new.
   - **:Gist** - post whole text to gist
   - **:Gist XXXXX** - get gist XXXXX
   - **:Gist -l** - list all my gist
+  - **:Gist -d** - delete the gist
   - *own settings*:
       - **let g:gist\*detect\*filetype = 1** - detecting file type for each gist
       - **let g:gist\*open\*browser\*after*post = 1** - open the gist after each post

@@ -60,7 +60,6 @@ git_bundles = [
 ]
 
 vim_org_scripts = [
-  ["clojure", "17125",  "zip"],
   ["grep", "7645",  "plugin"],
   ["yankring", "16536",  "zip"],
   ["bufexplorer", "14208",  "zip"],
