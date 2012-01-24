@@ -45,6 +45,7 @@ git_bundles = [
   "git://github.com/xolox/vim-open-associated-programs.git",
   "git://github.com/xolox/vim-session.git",
   "git://github.com/xolox/vim-shell.git",
+  "git://github.com/tpope/vim-endwise.git",
   # not used but is in the README
     # git://github.com/timcharper/textile.vim
     # "git://github.com/oscarh/vimerl.git",
@@ -59,8 +60,7 @@ git_bundles = [
 ]
 
 vim_org_scripts = [
-  ["endwise-ruby", "9299",  "plugin"],
-  # ["clojure", "13986",  "zip"],
+  ["clojure", "17125",  "zip"],
   ["grep", "7645",  "plugin"],
   ["yankring", "16536",  "zip"],
   ["bufexplorer", "14208",  "zip"],
