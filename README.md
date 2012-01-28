@@ -204,8 +204,7 @@ always eager to learn something new.
   - **:SpeedDatingFormat** - shows the regular expression of possible formations
   - **:SpeedDatingFormat {}** - here you can specify the format which can be used to be recognized
     by the program
-- [supertab](https://github.com/ervandew/supertab "supertab"): word auto completion
-  with pressing the tab key
+- [supertab](https://github.com/ervandew/supertab "supertab"): word auto completion with pressing the tab key
 - [syntastic](https://github.com/scrooloose/syntastic "syntastic"): performs syntax check on various
   languages when saving
   - *own settings*:
@@ -230,13 +229,6 @@ always eager to learn something new.
   - how to quote whole string?
       - mark the string in visual mode (either normal mode with *v* or block mode with *V*), then
         press *s* and then the quote ("", (), {}) you want to have and it wraps the string in this
-- [sweet-rspec-vim](https://github.com/duskhacker/sweet-rspec-vim "sweet-rspec-vim"): run only one
-  RSpec file
-  - **:SweetVimRspecRunFile** - runs all specs on the current buffer
-  - **:SweetVimRspecRunFocused** - runs the spec on the current line
-  - **:SweetVimRspecRunPrevios** - runs the last spec again
-  - *own settings*:
-      - **let $SWEET*VIM*RSPEC*SHOW*PASSING="true"** - output the passes spec in quickfix window
 - [tabular](https://github.com/godlygeek/tabular "tabular"): is a plugin to auto indent files
   according to the pattern
   - **:Tabularize / {pattern}**

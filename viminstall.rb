@@ -2,7 +2,6 @@
 git_bundles = [
   "git://git.wincent.com/command-t.git",
   "git://github.com/brian9/vim-padrino.git",
-  "git://github.com/duskhacker/sweet-rspec-vim",
   "git://github.com/gerw/vim-latex-suite.git",
   "git://github.com/godlygeek/tabular.git",
   "git://github.com/groenewege/vim-less.git",

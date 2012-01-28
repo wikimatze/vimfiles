@@ -88,9 +88,6 @@ exe join(map(split(glob("~/.vim/plugin-settings/snipmate.vim"), "\n"), '"source 
 " ## syntastic
 exe join(map(split(glob("~/.vim/plugin-settings/syntastic.vim"), "\n"), '"source " . v:val'), "\n")
 
-" ## Sweet Vim RSpec
-exe join(map(split(glob("~/.vim/plugin-settings/sweet_vim_rspec.vim"), "\n"), '"source " . v:val'), "\n")
-
 " ## tagbar
 exe join(map(split(glob("~/.vim/plugin-settings/tagbar.vim"), "\n"), '"source " . v:val'), "\n")
 
