@@ -36,8 +36,6 @@ always eager to learn something new.
 - [coffee-script](https://github.com/kchmck/vim-coffee-script "coffe-script"): coffee script support
 - [cucumber](https://github.com/tpope/vim-cucumber "cucumber"): syntax-highlighting for cucumber
   files (*no doc*)
-- [clojure](http://www.vim.org/scripts/script.php?script_id=2501 "clojure"): clojure support for Vim
-  (*no doc*)
 - [command-t](http://www.vim.org/scripts/script.php?script_id=3025 "command-t"): file search in the
   actual directory
   - **\<Leader\>-t** - call *:CommandT* command to open a specified file
@@ -110,7 +108,7 @@ always eager to learn something new.
   - **Enter or double click** - revert the changes of the file to the current file
   - **p** - will open a preview to show the differences from the selected and the current version
     (just imagine a `git diff`)
-  - -own settings-:
+  - *own settings*:
       - **let g:gundo*width = 45** - horizontal width
       - **let g:gundo*preview*height = 15** - vertical height
       - **let g:gundo*help = 1** - show the help in gundo window
@@ -125,11 +123,11 @@ always eager to learn something new.
   - *own settings*:
       - **let g:indexed*search*colors = 1** - turn of colors for messages
       - **let g:indexed*search*shortmess = 1** -  shorter messages
-- [jQuery](http://www.vim.org/scripts/script.php?script*id=2416 "jQuery"): pretty colors for the
+- [jQuery](http://www.vim.org/scripts/script.php?script_id=2416 "jQuery"): pretty colors for the
   jQuery syntax (*no doc*)
-- [markdown](https://github.com/tpope/vim-markdown/tree/master/syntax "markdown"): markdown-syntax
+- [markdown](https://github.com/tpope/vim-markdown "markdown"): markdown-syntax
   highlighting (*no doc*)
-- [matchit](http://www.vim.org/scripts/script.php?script*id=39 "matchit"): press % to match tags in
+- [matchit](http://www.vim.org/scripts/script.php?script_id=39 "matchit"): press % to match tags in
   HTML, LaTeX and several other file formats (*no doc*)
 - [NERDTree](https://github.com/scrooloose/nerdtree "NERDTree"): amazing file browser for GUI guys
   - **m** - choose which action to perform (add, move, copy, delete)
@@ -170,6 +168,10 @@ always eager to learn something new.
       - with @tag you can define own tags (they are useful for searching)
       - **:IndexTaggedNotes** creates new tags (for omnicomplete when @ is pressed)
       - **:ShowTaggedNotes** - will show all notes which are specified with a certain tag
+  - *own settings*:
+      - **let g:notes_directory = '~/Dropbox/notes'** - path of main directory
+      - **let g:notes_suffix = '.txt'** - default file ending of note files
+      - **autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h\*** - path of the notes directory
 - [padrino](https://github.com/brian9/vim-padrino "padrino"): adds syntax support for the
   [padrino](http://www.padrinorb.com/ "padrino") framework (*no doc*)
 - [rake](https://github.com/tpope/vim-rake "rake"): run rake commands in vim
