@@ -245,7 +245,7 @@ always eager to learn something new.
       - vmap \<leader\>b" :Tabularize /"\<CR\>
       - nmap \<leader\>bt :Tabularize /& \\ldots &\<CR\>
       - vmap \<leader\>bt :Tabularize /& \\ldots &\<CR\>
-- [tagbar](https://github.com/majutsushi/tagbar "tagbar"): better version of taglist for source
+- [tagbar](http://majutsushi.github.com/tagbar/ "tagbar"): better version of taglist for source
   source files (layout is the same as it is for the NERDTree)
   - [How to install exurberant ctags on mac](http://www.dreamincode.net/forums/blog/164/entry-1479-installing-exuberant-ctags-and-taglist-on-a-mac/ "how to install ctags in mac")
   - **:TagbarOpen** - opens the view tagbar
@@ -276,8 +276,6 @@ always eager to learn something new.
   colors in Vim - very useful when working with CSS (*no docu*)
 - [vim-css3 syntax](https://github.com/hail2u/vim-css3-syntax "vim-css3 syntax"): add syntax support
   for css3 (*no doc*)
-- [vimerl](https://github.com/oscarh/vimerl "vimerl"): erlang file detection and syntax highlighting
-  (*no doc*)
 - [vim-haml](https://github.com/tpope/vim-haml "vim-haml"): file detection and syntax highlighting
   (*no doc*)
 - [vim-less](https://github.com/groenewege/vim-less "vim-less"): syntax highlighting, indenting and

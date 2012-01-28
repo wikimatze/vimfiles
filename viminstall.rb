@@ -45,7 +45,6 @@ git_bundles = [
   "git://github.com/tpope/vim-endwise.git",
   # not used but is in the README
     # git://github.com/timcharper/textile.vim
-    # "git://github.com/oscarh/vimerl.git",
   # document in the README
     #"git://github.com/2072/PHP-Indenting-for-VIm.git",
   # colorschemes
