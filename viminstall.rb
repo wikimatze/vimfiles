@@ -29,7 +29,6 @@ git_bundles = [
   "git://github.com/tpope/vim-liquid.git",
   "git://github.com/tpope/vim-markdown.git",
   "git://github.com/tpope/vim-rails.git",
-  "git://github.com/tpope/vim-rake.git",
   "git://github.com/tpope/vim-repeat.git",
   "git://github.com/tpope/vim-speeddating.git",
   "git://github.com/tpope/vim-surround.git",

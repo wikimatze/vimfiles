@@ -172,11 +172,7 @@ always eager to learn something new.
       - **let g:notes_directory = '~/Dropbox/notes'** - path of main directory
       - **let g:notes_suffix = '.txt'** - default file ending of note files
       - **autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h\*** - path of the notes directory
-- [padrino](https://github.com/brian9/vim-padrino "padrino"): adds syntax support for the
-  [padrino](http://www.padrinorb.com/ "padrino") framework (*no doc*)
-- [rake](https://github.com/tpope/vim-rake "rake"): run rake commands in vim
-  - in the current directory needs to be a *Rakefile* to perform this operation
-  - **:Rake [task]** - just runs the specified task
+- [padrino](https://github.com/brian9/vim-padrino "padrino"): syntax support (*no doc*)
 - [session](https://github.com/xolox/vim-session "session"): save session and to open then later
   - **:SaveSession <name>** - save the current session under the specified name
   - **:OpenSession** - dialog to select the section you want to open
@@ -272,7 +268,7 @@ always eager to learn something new.
   markdown document in an extra window.
   - *own settings*:
       - **nnoremap <F2> :TocdownToggle<CR>**
-- [yankring](http://www.vim.org/scripts/script.php?script*id=1234 "yankring"): better register
+- [yankring](http://www.vim.org/scripts/script.php?script_id=1234 "yankring"): better register
   management and saves up to 100 buffered lines
   - **:YRShow** - shows the actual buffer
   - **:YRClear** - deletes the buffer
