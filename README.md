@@ -177,6 +177,8 @@ always eager to learn something new.
   - **:SaveSession <name>** - save the current session under the specified name
   - **:OpenSession** - dialog to select the section you want to open
       - **:OpenSession <name>** - takes an existing session as input (use tab completion!)
+  - **:CloseSession** - will close the whole session from the actual tab/window and will ask to
+    overwrite the loaded session
   - **:DeleteSession** - choose the session you want to delete
   - **:ViewSession** - information about the loaded session (shows Vim internals - good for debugging)
 - [sinatra](https://github.com/hallison/vim-ruby-sinatra "sinatra"): add syntax support for
