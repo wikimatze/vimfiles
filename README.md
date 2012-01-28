@@ -281,7 +281,7 @@ always eager to learn something new.
 - [vim-less](https://github.com/groenewege/vim-less "vim-less"): syntax highlighting, indenting and
   auto completion for the dynamic style sheet language (*no docu*)
 - [vim-ruby](https://github.com/vim-ruby/vim-ruby "vim-ruby"): ruby omnicompletion and syntax
-  highlighting
+  highlighting (*no doc*)
   - **:let ruby*operators = 1** - create colors for ruby operators
   - **:let ruby\*space\*errors = 1** - mark whitespace characters
 - [vim-liquid](https://github.com/tpope/vim-liquid "vim-liquid"): highlight liquid tags like {% ...
@@ -314,7 +314,8 @@ always eager to learn something new.
         *V* (vertical split), *S* (horizontal split) *T* (tab), for example *:RVview*, *:RSview* or
         *:RTview*  and so on
       - **:Rcontroller** - opens the controller
-      - **:Rfixtures** - opens the fixture file (instead of using fixtures I suggest using [factory girl](https://github.com/thoughtbot/factory*girl "factory girl"))
+      - **:Rfixtures** - opens the fixture file (instead of using fixtures I suggest using
+        [factory girl](https://github.com/thoughtbot/factory*girl "factory girl"))
       - **:Rhelper** - opens the helper file
       - **:Rmodel** - opens the model file
       - **:Rspec** - open the spec file
