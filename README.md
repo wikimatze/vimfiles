@@ -5,6 +5,7 @@ post here commands and shortcuts about the plugins because most plugins are well
 decided to provide an overview of all the main settings I got from struggling through each plugin
 for my own demands. As well, you can have look on my *vimrc* which contains many hacks.
 
+
 I know there is the [janus](https://github.com/carlhuda/janus "janus") package out there which does
 configure a lot of stuff, but maintain my own set of plugins and settings. Don't hesitate to copy or
 ask me questions about it.
@@ -100,7 +101,6 @@ always eager to learn something new.
       - **let g:gist\*open\*browser\*after*post = 1** - open the gist after each post
 - [gundo](http://sjl.bitbucket.org/gundo.vim/ "gundo"): graph the changes of your file saves in
   different a nice tree
-
   - **k** - move one step top
   - **j** - move one step below
   - **gg** - move to the button
@@ -204,7 +204,7 @@ always eager to learn something new.
   - **:SpeedDatingFormat** - shows the regular expression of possible formations
   - **:SpeedDatingFormat {}** - here you can specify the format which can be used to be recognized
     by the program
-- [supertab](https://github.com/vim-scripts/SuperTab-continued. "supertab"): word auto completion
+- [supertab](https://github.com/ervandew/supertab "supertab"): word auto completion
   with pressing the tab key
 - [syntastic](https://github.com/scrooloose/syntastic "syntastic"): performs syntax check on various
   languages when saving

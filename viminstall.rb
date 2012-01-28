@@ -36,7 +36,7 @@ git_bundles = [
   "git://github.com/tsaleh/vim-shoulda.git",
   "git://github.com/vim-ruby/vim-ruby.git",
   "git://github.com/vim-scripts/IndexedSearch.git",
-  "git://github.com/vim-scripts/SuperTab-continued..git",
+  "git://github.com/ervandew/supertab.git",
   "git://github.com/vim-scripts/taglist.vim.git",
   "git://github.com/vim-scripts/vis.git",
   "git://github.com/xolox/vim-notes.git",
