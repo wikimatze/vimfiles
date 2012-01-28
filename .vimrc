@@ -70,6 +70,9 @@ exe join(map(split(glob("~/.vim/plugin-settings/gist.vim"), "\n"), '"source " . 
 " ## IndexSearch
 exe join(map(split(glob("~/.vim/plugin-settings/index_search.vim"), "\n"), '"source " . v:val'), "\n")
 
+" ## jQuery
+exe join(map(split(glob("~/.vim/plugin-settings/jquery.vim"), "\n"), '"source " . v:val'), "\n")
+
 " ## NERDTree
 exe join(map(split(glob("~/.vim/plugin-settings/nerdtree.vim"), "\n"), '"source " . v:val'), "\n")
 
@@ -111,7 +114,7 @@ exe join(map(split(glob("~/.vim/plugin-settings/nerdtree_tabs.vim"), "\n"), '"so
 set statusline=\CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c " Format the status line
 
 function! CurDir()
-    let curdir = substitute(getcwd(), '/Users/amir/', "~/", "g")
+    let curdir = substitute(getcwd(), '/Users/helex/', "~/", "g")
     return curdir
 endfunction
 
@@ -179,6 +182,7 @@ if has('mac')
 elseif has('unix')
   " for the ack.vim plugin
   let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+  let g:Hammerquiet = 1
 endif
 
 " ## CTRL-SHIFT+arrow nables the mark method for like TextMate
@@ -242,4 +246,3 @@ au FileType c,cpp,java,scala,sass,scss let b:comment_leader = '// '
 au FileType sh,make,rb,ruby,php let b:comment_leader = '# '
 au FileType haml let b:comment_leader = '/ '
 au FileType tex let b:comment_leader = '% '
-
