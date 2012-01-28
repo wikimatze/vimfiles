@@ -181,8 +181,6 @@ always eager to learn something new.
     overwrite the loaded session
   - **:DeleteSession** - choose the session you want to delete
   - **:ViewSession** - information about the loaded session (shows Vim internals - good for debugging)
-- [sinatra](https://github.com/hallison/vim-ruby-sinatra "sinatra"): add syntax support for
-  [sinatra](http://www.sinatrarb.com/ "sinatra") project (*no doc*)
 - [snipmate](https://github.com/msanders/snipmate.vim "snipmate"): define your own snippets for faster coding
   - you can define own snippets (each file must have the name of the file type, for example contains
     the file *tex.snippets* all snippets for latex documents)

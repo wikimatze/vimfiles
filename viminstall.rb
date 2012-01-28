@@ -7,7 +7,6 @@ git_bundles = [
   "git://github.com/godlygeek/tabular.git",
   "git://github.com/groenewege/vim-less.git",
   "git://github.com/hail2u/vim-css3-syntax.git",
-  "git://github.com/hallison/vim-ruby-sinatra.git",
   "git://github.com/jistr/vim-nerdtree-tabs.git",
   "git://github.com/kchmck/vim-coffee-script.git",
   "git://github.com/majutsushi/tagbar.git",
