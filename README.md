@@ -1,6 +1,6 @@
 # Vim settings #
 
-Here is a list of all the plugins I'm using in [Vim](http://www.vim.org/ "Vim"). It is unusual to
+This is a list of all the plugins I'm using for [Vim](http://www.vim.org/ "Vim"). It is unusual to
 post here commands and shortcuts about the plugins because most plugins are well documented. But I
 decided to provide an overview of all the main settings I got from struggling through each plugin
 for my own demands. As well, you can have look on my *vimrc* which contains many hacks.
