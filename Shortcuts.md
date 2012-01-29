@@ -4,34 +4,35 @@ This document provides an overview of the shortcuts I'm using in vim. They are b
 German language and I don't want to change this - because this is so easier for me to add new
 commands and shortcuts. After a while I will try to translate them  into English.
 
-# Bewegung
-   - **h** - links
-   - **j** - unten
-   - **k** - oben
-   - **l** - rechts
-   - **w** - vorwärts zum Anfang des nächsten Wortes
-   - **e** - vorwärts zum Ende des nächsten Wortes
-   - **b** - rückwärts zum Anfang des Wortes
-   - **CTRL-b** - bewege Screen backward
-   - **CTRL-f** - bewege Screen forward
-   - % - spring zur passenden Klammer von _(, {, [_
-   - ^ - Anfang einer Zeile gehen (think of anchored to the start)
-      - **0** - als Alternative
-   - $ - ans Ende einer Zeile (the buck ends here)
-   - **gg** - springt an den Anfang einer Datei
-   - **G** - spring an das Ende einer Datei
-   - **10G** - springe zur 10 Zeile
-   - **G** - springe ans Zeilenende
-   - **H** - höchste Stelle des sichtbaren Bereichs springen
-   - **M** - mittlere Stelle des sichtbaren Bereichs springen
-   - **L** - ende Stelle des sichtbaren Bereichs springen
-   - } - zur *nächsten* Leerzeile springen
-   - { - zur *vorherigen* Leerzeile springen
+
+# Movement
+   - **h** - left
+   - **j** - below
+   - **k** - top
+   - **l** - right
+   - **w** - move forward to the next word
+   - **e** - move backwards to the end of the next word
+   - **b** - move backwards to the beginning of the word
+   - **CTRL-b** - move the screen backwards
+   - **CTRL-f** - move the screen forwards
+   - **%** - jump to the fitting  brackets of _(, {, [_ - works with HTML5 tags
+   - **^** - go to the beginning of a line (think of anchored to the start)
+      - **0** - is an alterantiv to **^**
+   - $ - go the end of a row (the buck ends here)
+   - **gg** - go to the beginning of a file
+   - **G** - go to the end of a file
+   - **10G** - jump to line 10
+   - **G** - jump at the end of a line
+   - **H** - jump to the highest visible part
+   - **M** - jump to the middle position of the visible part
+   - **L** - jump to the lowest position of the visible part
+   - } - jump tp the *next* blank line
+   - { - jump to the *previous* blank line
    - ) - move the cursor forward to the *next sentence*
    - ( - move the cursor forward to the *previous sentence*
-   - **CTRL-o** - verfolge deine Bewegungen rückwärts (es springt also zur letzten gemachten Änderung)
-   - **CTRL-i** - verfolge deine Bewegungen vorwärts (springe zu letzt gemachten Änderungen)
-   - **CTRL-d** - springe ans Ende einer Datei
+   - **CTRL-o** - track your movements backward => it jumps to last made changes
+   - **CTRL-i** - track your movements forwards => it jumps to previous made changes
+
 
 # Suche
    - / - dann das gesucht Wort eingeben => Top-Down Suche
