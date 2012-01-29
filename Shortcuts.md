@@ -34,20 +34,18 @@ commands and shortcuts. After a while I will try to translate them  into English
    - **CTRL-i** - track your movements forwards => it jumps to previous made changes
 
 
-# Suche
-   - / - dann das gesucht Wort eingeben => Top-Down Suche
-   - ? Down-Top Suche
-      - **n** - spring zum nächsten Matching => Richtung **vorne**
-      - **N** - spring zum vorherigen Matching => Richtung **hinten**
+# Search
+   - **/** - just type in the searched word => Top-Down search
+   - **?** Down-Top search
+   - **n** - jump to the next matching => direction **forward**
+   - **N** - jump to the previous matching => direction **backwards**
    - **Regex**
-      - /word$ - suche nach Wort am Ende jeder Zeile
-      - /^word - such nach Wort am Anfang jeder Zeile
-      - **h.l** - match alle Wörter, die mit h anfangen, danach kommt ein beliebiger Buchstabe und
-        dann kommt l
-   - \* - sucht nach den aktuellen Wort, unter dem der Cursor steht
+      - **/word$** - search after the word at the end of each line
+      - **/^word** - search after the word at the beginning of each line
+      - **h.l** - match all words, which starts with *h*, then any character and an *l*
+   - **\\\*** - search after the word which stands under the cursor
    - **Settings**:
-      - :set ignorecase - beachte Groß- und Kleinschreibung
-      - :set smartcase** - achte nicht auf Groß- und Kleinschreibung
+
 
 # editieren
    - **r** - ist Ersetzen, d.h. da wo der Cursor steht wird das aktuelle Zeichen ergänzt
