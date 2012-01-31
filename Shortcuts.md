@@ -69,12 +69,13 @@ commands and shortcuts. After a while I will try to translate them  into English
    - **:e <Dateiname>** - edit a file (even possible to create a new file)
 
 
-# beenden
-   - :q - exit vim und speichere Änderungen nicht
-   - :x - speichere alle Änderungen, sofern welche existieren und beende das Programm
-   - :w! - überschreibe bereits vorhandene Datei
-   - :q! - beendet vim
-   - :wq - beende vim und speichere Änderungen ab
+# close
+   - **:q** - exit vim and don't save changes
+   - **:x** - save all changes, if they exists and terminate Vim
+   - **:w!** - overwrites existing file
+   - **:q!** - exit Vim
+   - **:wq** - exit Vim and save changes
+
 
 # löschen und ausschneiden
    - **x** - einzelnes Zeichen löschen
