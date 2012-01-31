@@ -157,11 +157,9 @@ commands and shortcuts. After a while I will try to translate them  into English
    - it so possible to mark the section that should be sorted in visual mode
 
 
-# Einrückung und Formatierung
-   - *==* - wird die aktuelle Zeile eingerückt
-   - *=G* - wird die ganze Datei formatiert
-   - **CTRL-d** - nach links rücken
-   - **CTRL-t** - nach rechts rücken
+# Indentation and Formation
+   - **==** - indent the actual line
+   - **=G** - format the whole file
 
 # Buffer mehrere Datein werden hier angelegt
    - *:ls* - Liste aller Buffer an
