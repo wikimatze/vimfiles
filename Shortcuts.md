@@ -114,23 +114,24 @@ commands and shortcuts. After a while I will try to translate them  into English
    - Fokus auf Window ändern: CTRL-w w gehe im Uhrzeigersinn zum nächsten Fenster
    - **CTRL-w [hjkl]** go to a specific window
    - **adjust windows size**
-      - **CTRL-w _** - make the actual window horizonatl max
+      - **CTRL-w _** - make the actual window horizonat max
       - **CTRL-w |** - make the actual window vertical max
       - **CTRL-w [+-]** - change the size incremental
       - **CTRL-w =** - adjust all windows to the same size
 
 
-# tabs
-   - *vim -p [filename1] [filename]* öffnet alle Datein in Tabs
-   - *:tabedit filename* - öffnen
-   - *:q* - schließen
-   - *:tabonly* schließt alle anderen Tabs bis auf das aktuelle
-   - **bewegen**
-      -  **gt** gehe nach rechts die Tabs durch (**3gt** geh zum dritten Tab nach rechtsausgehen Tab)
-      - **gT** gehe die Tabs nach Links durch (**3gT** geh zum dritten Tabnach linksausgehen Tab)
-   - **neu anordnen**
-      - *:tabmove* - tab ans Ende
-      - *:tabmove 0* - tab an den Anfang
+# Tabs
+   - **vim -p [filename1] [filename2] ...** - open files in tabs
+   - **:tabedit filename** - open file as a tab
+   - **:q** - close tab
+   - **:tabonly** - close all tabs except the actual
+   - **movement**
+      - **gt** - go to the next tab (Motion: *3gt*)
+      - **gT** - go to the preview tab
+   - **reordering**
+      - *:tabmove* - tab at the end
+      - *:tabmove0* - tab at the beginning
+
 
 # marks
    - *ma* - create a mark with the name a (wird für jede Datei abgespeichert)
