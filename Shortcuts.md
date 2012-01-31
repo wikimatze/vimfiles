@@ -93,32 +93,32 @@ commands and shortcuts. After a while I will try to translate them  into English
    - **ci"** - delete everything whats inside the special sign " and go into the edit mode
 
 
-# Faltung
-   - **zo** - öffnet eine Faltung
-   - **zc** - schließt eine Faltung
-   - **zr** - öffne erste Stufe der Faltungen => **zR** öffne alle Stufen der Faltung
-   - **zm** - schließe erste Stufe aller Faltungen => **zM** schließe alle Faltungen
-   - **SPACE** - schließt und öffnet eine Faltung
-   - :set foldmethod=indent - setz die Faltmethode auf Einrückung
+# Folding
+   - **zo** - opens a single folding
+   - **zc** - closes a single folding
+   - **zr** - opens all foldings of the first level
+   - **zR** - opens all foldings of all levels
+   - **zm** - closes all foldings of the first level
+   - **zM** - closses all foldings of all levels
+   - **SPACE** - opens and closes a folding
+   - **:set foldmethod=indent** - change the foldmethod on indendation
 
-# Fenster
-   - :help STRG-w hilfe zu allen wichtigen Windowsbefehlen anzeigen
-   - **CTRL-w s** - Fenster **horizontal** splitten
-   - **CTRL-w v** - Fenster **vertikal** splitten
-   - **CTRL-w c** - schließe aktuelles Fenster
-   - *:sp bla.txt* - öffne Datei neu durch horizontalen Split
-   - *:vsp bla.txt* - öffne Datei neu durch vertikalen Split
-   - *:only* - alle Fenster bis auf das aktuelle schließen
+
+# Windows
+   - **CTRL-w s** - split window *horizontal*
+   - **CTRL-w v** - split window *vertical*
+   - **CTRL-w c** - close actual window
+   - **:sp bla.txt** - open file via horizontal split
+   - **:vsp bla.txt** - open file via vertical split
+   - **:only** - close all windows except the actual one
    - Fokus auf Window ändern: CTRL-w w gehe im Uhrzeigersinn zum nächsten Fenster
-   - **CTRL-w [hjkl]** da kann man gezielt auf das entsprechende Fenster gehen
-   - **Fenstergröße anpassen**
-      - **CTRL-w _** -  aktuelles Fenster horizontal max
-      - **CTRL-w |** aktuelles Fenster vertikal max
-      - **CTRL-w [+-]** - um die Größe inkrementel anzupassen
-      - **CTRL-w =** - mache alle Fenster gleichgroß
-   - **Fenster neu anordnen**
-      - **CTRL-w r** mach alles reverse
-      - **CTRL-w x** tausche jeweils die Nachbarn
+   - **CTRL-w [hjkl]** go to a specific window
+   - **adjust windows size**
+      - **CTRL-w _** - make the actual window horizonatl max
+      - **CTRL-w |** - make the actual window vertical max
+      - **CTRL-w [+-]** - change the size incremental
+      - **CTRL-w =** - adjust all windows to the same size
+
 
 # tabs
    - *vim -p [filename1] [filename]* öffnet alle Datein in Tabs
