@@ -147,15 +147,15 @@ commands and shortcuts. After a while I will try to translate them  into English
    - **:helptags** - will regenerate the helptags
 
 
-# markieren
-   - einen ganzen Paragraphen auswählen: in visual mode und *ap*
-   - *Shift-v* - markiert die ganze Zeile im Visual modus
+# Marking
+   - **Shift-v** - mark a whole line in visual mode
 
-# sortieren
-   -  im _VISUAL_-Mode den Text markieren, nach dem sortiert werden soll
-   - **sort** eingeben (normale Sortierung)
-   - **sort!** eingeben (inverse Sortierung)
-   - **!sort** sortiert alles was im Visual-Modus markiert ist
+
+# Sort
+   - **sort** - normal alphabetical
+   - **sort!** - inverse alphabetical
+   - it so possible to mark the section that should be sorted in visual mode
+
 
 # Einrückung und Formatierung
    - *==* - wird die aktuelle Zeile eingerückt
