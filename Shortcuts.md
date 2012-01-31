@@ -161,18 +161,17 @@ commands and shortcuts. After a while I will try to translate them  into English
    - **==** - indent the actual line
    - **=G** - format the whole file
 
-# Buffer mehrere Datein werden hier angelegt
-   - *:ls* - Liste aller Buffer an
-   - *:bn* - gehe zum nächsten Buffer
-   - *:bp* - gehe zum vorherigen Buffer
-   -  Umgang mit hidden Buffers: entstehen dann, wenn man die gemachten Änderungen an einern Buffer
-      vor beenden des Programms speichert. Man hat dann die folgenden Optionen, um dieses Problem zu
-      beheben:
-      - *:w* -schreibe die Änderungen
-      - *:e!* - stelle die ursprüngliche Datei wieder her
-      - *:bd!* - entferne den Bufffer aus der Bufferliste und mache alle gemachten Änderungen
-        rückgängig
-      - *:q!*- force vim to quit and discard all changes to the buffers
+
+# Buffer
+   - **:ls** - display a list of all buffers
+   - **:bn** - go to the next buffer
+   - **:bp** - go to the previous buffer
+   - **working with hidden buffers** - they occur if you save changes to a buffer before quitting the program.
+        There are the following strategies to get rid of this problem:
+      - **:w** - write the changes
+      - **:e!** - restore the origin file
+      - **:bd!** - remove buffer from the buffer list and revert all made changes
+      - **:q!** - force vim to quit and discard all changes to the buffers
 
 # sonstiges
    - **J** - Join zwei Zeilen mit space
