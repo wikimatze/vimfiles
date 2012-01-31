@@ -133,12 +133,13 @@ commands and shortcuts. After a while I will try to translate them  into English
       - *:tabmove0* - tab at the beginning
 
 
-# marks
-   - *ma* - create a mark with the name a (wird für jede Datei abgespeichert)
-   - *'a* - springt zur Marke a
-   - Marken können von [a-z] gehen und sind lokal für jede Datei
-   - Marken mit [A-Z] sind global, sind also wie Favoriten
-   - *:marks* - gibt alle Marken der aktuellen Datei an
+# Marks
+   - **ma** - create a mark with the name a (marks will be saved for every file)
+   - *'a* - jump to mark a
+   - marks can have a range [a-z] for local files
+   - marks with range from [A-Z] are global - like favorite bookmarks
+   - **:marks** - output marks of the actual file
+
 
 # help
    - :help so kommt man ins Hilfe Menü
