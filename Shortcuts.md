@@ -46,7 +46,7 @@ commands and shortcuts. After a while I will try to translate them  into English
    - `\*` - search after the word which stands under the cursor
 
 
-# edit
+# Edit
    - **r** - replace mode -the actual position of the cursor will be replaced and after that return
      to the previous mode
    - **R** - stay in replace mode
@@ -69,27 +69,29 @@ commands and shortcuts. After a while I will try to translate them  into English
    - **:e <Dateiname>** - edit a file (even possible to create a new file)
 
 
-# close
+# Close
    - **:q** - exit vim and don't save changes
    - **:x** - save all changes, if they exists and terminate Vim
    - **:w!** - overwrites existing file
    - **:q!** - exit Vim
    - **:wq** - exit Vim and save changes
+   - **x** - delete single character
+   - **dw** - delete whole word (Motion: *2dw* will delete two words)
+   - **x** - delete single character
 
 
-# löschen und ausschneiden
-   - **x** - einzelnes Zeichen löschen
-   - **dw** - löschen ganzes Wort (z.B. **2dw**)
-   - **d0** - löscht alles, was vor dem Cursor steht
-   - **dd** - ganze Zeile ausschneiden, egal, wo der Cursor ist
-   - **p** - einfügen der ausgeschnittenen Sache da, wo der Cursor ist
-   - **P** - einfügen der ausgeschnitten Sachen nach dem Cursor
-   - **D** - löscht alles bis zum Ende des Cursors
-   - **df** danach das Wort eingeben, bis zu dem gelöscht werden soll
-   - **d-Shift-g** lösche alles, was unterhalb des aktuellen Cursors steht
-   - **dtG** - steht für delete to und löscht alles bis vor dem Buchstaben G steht
-   - ci" - löscht alles, was in den Klammern steht und geht in den editier-Modus; statt " kann man
-     auch alle anderen Klammertypen nehmen
+# Delete and Cut
+   - **x** - delete single character
+   - **dw** - delete whole word (Motion: *2dw* will delete two words)
+   - **dd** - cut the whole line
+   - **p** - paste below the actual cursor position
+   - **P** - paste before the actual cursor position
+   - **D** - delete all characters after the cursor at the current line
+   - **df<word>** - press the character until which should be deleted (inclusve the word)
+         - **dtG** -same as above but exklusive
+   - **d-Shift-g** - delete all lines below the actual line of the cursors
+   - **ci"** - delete everything whats inside the special sign " and go into the edit mode
+
 
 # Faltung
    - **zo** - öffnet eine Faltung
