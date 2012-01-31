@@ -43,34 +43,31 @@ commands and shortcuts. After a while I will try to translate them  into English
       - **/word$** - search after the word at the end of each line
       - **/^word** - search after the word at the beginning of each line
       - **h.l** - match all words, which starts with *h*, then any character and an *l*
-   - **\\\*** - search after the word which stands under the cursor
-   - **Settings**:
+   - `\*` - search after the word which stands under the cursor
 
 
-# editieren
-   - **r** - ist Ersetzen, d.h. da wo der Cursor steht wird das aktuelle Zeichen ergänzt
-   - **R** - bleibe im Ersetzungsmodus und ersetze Wörter weiter
-   - **s** - ersetze das Zeichen (also im Visual-Modus) wo der Cursor gerade ist und geh in den
-     Ersetzungsmodus
-   - **u** - undo letztes geändertes Zeichen rückgängig
-   - **U** - undo alle Änderungen der aktuellen Zeile
-   - **p** - paste nach der aktuellen Cursor-Stelle
-   - **P** - paste vor der aktuellen Cursor-Stelle
-   - **CTRL-r** - redo
-   - **CTRL-d** - entfernt tab -> ist praktisch, wenn man mit Einrückungen arbeitet
-   - **CTRL-w** - löscht alle Buchstaben des Wortes vor dem Cursor unter dem er steht
-   - u und U - machen im Visualmode das ausgewählte Wort oder Phrase klein- bzw. groß
-   - **yw** - einzelnes Wort kopieren
-   - **yy** - Zeile kopieren
-   - **ggVG** - den ganzen Text markieren
-   - %s/old/new/g - alle Vorkommnisse in der ganzen Datei ersetzen
-   - %s/old/new/c - alle Vorkommnisse im interaktiven Modus ersetzen
-   - **gqap** - formatiert den aktuellen Paragraphen (**SHIFT-q** formatiere die Markierung)
-   - **A** - gehe an Zeilenende in den Editiermodus
-   - **I** - gehe an Zeilenanfang in den Editiermodus
-   - **o** - neue Zeile unter dem Cursor
+# edit
+   - **r** - replace mode -the actual position of the cursor will be replaced and after that return
+     to the previous mode
+   - **R** - stay in replace mode
+   - **s** - delete current char and go into replace mode
+   - **u** - undo last changes
+   - **U** - undo last changes of the last edited line
+   - **p** - paste after the actual cursor position
+   - **P** - paste before the actual cursor position
+   - **u** and **U** - make the selected word or phrase in the visual mode small or big
+   - **yw** - copy single word
+   - **yy** - copy whole line
+   - **ggVG** - mark the whole text
+   - %s/old/new/g - replace occurrences of pattern in the whole document
+   - %s/old/new/c - replace occurrences in the text in interactive modus
+   - **SHIFT-q** - format the actual section (*gqap* is an alternative shortcut)
+   - **A** - go at the end of the line in edit mode
+   - **I** - go at the beginning of the line in edit mode
+   - **o** -go into a new line below the cursor in edit mode
    - **O** - neue Zeile oberhalb vom Cursor
-   - :e <Dateiname> - kann man eine Datei editieren
+   - **:e <Dateiname>** - edit a file (even possible to create a new file)
+
 
 # beenden
    - :q - exit vim und speichere Änderungen nicht
