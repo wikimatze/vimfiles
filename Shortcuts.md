@@ -141,9 +141,11 @@ commands and shortcuts. After a while I will try to translate them  into English
    - **:marks** - output marks of the actual file
 
 
-# help
-   - :help so kommt man ins Hilfe Menü
-   - Doppelklick mit Maus öffnet Hyperlinks
+# Help
+   - **:help** - open the help menu (dopple click on a link will go it)
+   - **:help <plugin-name>.txt** - opens the documentation of a plugin
+   - **:helptags** - will regenerate the helptags
+
 
 # markieren
    - einen ganzen Paragraphen auswählen: in visual mode und *ap*
