@@ -215,23 +215,30 @@ commands and shortcuts. After a while I will try to translate them  into English
 
 
 # LaTeX-Suite
-   - **,ll** kompiliere und lv öffne die dvi (Tastenkombi sehr schnell eingeben)
-   - **STRG+SHIFT-j** springt man zu den Platzhaltern in den Dokumenten
-   - **n** - springt man zum nächsten Fehler
-   - **b** - springt man zum vorherigen Fehler
-   - multiple files
-      -  lege eine leere Datei mit den Namen <yourmain>.tex.latexmain an
-      -  dann kann man in jedem Dokument kompilieren
-   - forward search:
+   - **,ll** - compile the actual document (normally in dvi format)
+   - **,lv** - opens the compiled .dvi file with xdvi
+   - **,lj** - opens the compiled .dvi file just in the place where your cursor is the tex document
+     you are compiling
+   - **STRG+SHIFT-j** - jumps to the placeholder in the document
+   - **n** - jumps to the next error
+   - **b** - jumps to the previous error
+   - **working with multiple files**
+      - create a empt file with the name `<yourmain>.tex`
+      - after that you can normally compile every included other tex document (if you are splitting
+        up your tex-project)
+   - **forward search** (the shortcut for this is `,lv` - the rest is the theoretical explanation of
+     it)
      "http://forum.ubuntuusers.de/topic/vim":http://forum.ubuntuusers.de/topic/vim-vim-latexsuite-vim-gtk
-      - Dokument ganz normal kompiliert
-      - dann mit \ls den Modus starten
-      - und wo gerade der Cursor ist, an dieser Stelle springt man dann im dvi-File auch hin
-   - inverse (reverse) search: http://forum.ubuntuusers.de/topic/vim-vim-latexsuite-vim-gtk
-      - **CTRL-Linke** Maustaste und es wird an der entsprechenden Stelle im Quellcode gesprungen
-   - Links
+      - compile your tex-document normally
+      - start the \ls mode
+      - where the cursor is, this place will be displayed in the .dvi file
+   - **inverse (reverse) search** http://forum.ubuntuusers.de/topic/vim-vim-latexsuite-vim-gtk
+      - **CTRL-Linke** left mouse click in the .dvi file this location will be opend in the source
+        file
+   - **Links**
       - http://vim":http://vim-latex.sourceforge.net/documentation/latex-suite.html#latex-project-example
       - http://vim":http://vim-latex.sourceforge.net/documentation/latex-suite-quickstart
+
 
 # Hacks
    - das Zeilenende durch \\ ersetzen: `:%s/$/ \\\\/
