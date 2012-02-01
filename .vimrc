@@ -22,7 +22,6 @@ set ls=1                                    " always show status line
 set nocompatible                            " must be the first, because it changes other options as a side effect
 set noerrorbells                            " don't make noise on error messages
 set nomodeline                              " frequent security hole
-set noswapfile                              " don't save swap files
 set nowarn                                  " do not warn, when shell command update the file you edit in Vim
 set number                                  " display line numbers
 set numberwidth=1                           " using only 1 column (and 1 space) while possible
