@@ -202,14 +202,17 @@ commands and shortcuts. After a while I will try to translate them  into English
 
 
 # Spellchecker
-   - **:set** spell aktiviert spellchecker
-   - **]s** setzt den Cursor auf den nächsten Fehler im Text und **[s** setzt den Cursor auf den
-     vorherigen Fehler
-   - **z=** zeigt zu einem Wort alle möglichen Korrekturen an
-   - **zg** Wort zum Wörterbuch adden
-   - **zw** Wort entfernen
-   - **set spelling=de_20** - neue deutsche RS
-   - **set spelling=de_19** - alte deutsche RS
+   - **:set** - activate the spell checker
+   - **]s** - place the cursor on the next error
+   - **[s** - place the cursor on the previous error
+   - **z=** - shows all correction to a word
+   - **zg** - add a word to the dictionary (this is good to create your own known words without
+     displaying the wrong annotations
+   - **zw** - remove a word from the dictionary (good if you add a wrong version of a word in the
+     dictionary)
+   - **set spelling=de_20** - setting the spell-language to "neue deutsche Rechtschreibung"
+   - **set spelling=de_19** - setting the spell-language to "alte deutsche Rechtschreibung"
+
 
 # LaTeX-Suite
    - **,ll** kompiliere und lv öffne die dvi (Tastenkombi sehr schnell eingeben)
