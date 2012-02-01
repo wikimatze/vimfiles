@@ -241,6 +241,6 @@ commands and shortcuts. After a while I will try to translate them  into English
 
 
 # Hacks
-   - das Zeilenende durch \\ ersetzen: `:%s/$/ \\\\/
-   - Matching vor und hinter = tauschen: :%s/\(.*\)=\(.*\)/\2=\1
-   - ersetze a = b durch b = a: `:%s/\(.*\)=\(.*\)/\2=\1`
+   - replace line ending through **\\\\:** `:%s/$/ \\\\/`
+   - change matching before and after **=:** `:%s/\(.*\)=\(.*\)/\2=\1`
+   - replace **a = b** to **b = a:** `:%s/\(.*\)=\(.*\)/\2=\1`
