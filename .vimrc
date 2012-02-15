@@ -69,6 +69,9 @@ if has("wildmenu")
 endif
 
 
+" display a list of files in the current directory in insert mode
+inoremap <C-F> <C-X><C-F>
+
 " ## settings for plugins (start)
 
 " ## autocorrect

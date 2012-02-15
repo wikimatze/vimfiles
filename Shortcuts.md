@@ -199,6 +199,8 @@ commands and shortcuts. After a while I will try to translate them  into English
      cursor
    - **:retab** - replace all tabs of a file with spaces
    - **:n <file_name>** - open a new file in vim
+   - **<C-F>** - display a list of files in the current directory in insert mode
+    - **inoremap <C-F> <C-X><C-F>**
 
 
 # Spellchecker
