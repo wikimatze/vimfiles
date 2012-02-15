@@ -206,6 +206,13 @@ commands and shortcuts. After a while I will try to translate them  into English
      this)
 
 
+# ctags
+   - go to the root of the project and perform `ctags -R .` - this will create a tag file
+   - open vim and the generated **tags** file will be automatically selected
+   - **CTRL+]** - will into the class, method or other declaration
+   - **CTRL+t** - will go to the previous declaration of the method
+
+
 # Spellchecker
    - **:set** - activate the spell checker
    - **]s** - place the cursor on the next error
