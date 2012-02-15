@@ -13,8 +13,10 @@ commands and shortcuts. After a while I will try to translate them  into English
    - **w** - move forward to the next word
    - **e** - move backwards to the end of the next word
    - **b** - move backwards to the beginning of the word
-   - **CTRL-b** - move the screen backwards
-   - **CTRL-f** - move the screen forwards
+   - **CTRL+f** - move the screen forwards
+   - **CTRL+b** - move the screen backwards
+   - **}** - move to end of next paragraph or code block
+   - **{** - move to start of previous paragraph or code block
    - **%** - jump to the fitting  brackets of _(, {, [_ - works with HTML5 tags
    - **^** - go to the beginning of a line (think of anchored to the start)
       - **0** - is an alterantiv to **^**
@@ -26,8 +28,6 @@ commands and shortcuts. After a while I will try to translate them  into English
    - **H** - jump to the highest visible part
    - **M** - jump to the middle position of the visible part
    - **L** - jump to the lowest position of the visible part
-   - } - jump tp the *next* blank line
-   - { - jump to the *previous* blank line
    - ) - move the cursor forward to the *next sentence*
    - ( - move the cursor forward to the *previous sentence*
    - **CTRL-o** - track your movements backward => it jumps to last made changes
