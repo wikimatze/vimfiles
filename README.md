@@ -272,6 +272,9 @@ always eager to learn something new.
       - **nmap <leader>y :YRShow<CR>**
       - **nmap <leader>x :YRCLear<CR>**
       - **let g:yankring*max*history = 1000** - save the last 1000 elements
+- [vim-bundler](https://github.com/tpope/vim-bundler "vim-bundler"): wrapper for bundler in Vim
+    - **:Bundle** - wraps bundle after, e.g. `:Bundle install`
+    - **:Bopen** - opens the *Gemfile* for editing
 - [vim-css-color](https://github.com/skammer/vim-css-color "css-color"): display Hex Color with real
   colors in Vim - very useful when working with CSS (*no docu*)
 - [vim-css3 syntax](https://github.com/hail2u/vim-css3-syntax "vim-css3 syntax"): add syntax support
