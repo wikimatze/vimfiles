@@ -69,6 +69,12 @@ if has("wildmenu")
 endif
 
 
+" turn off normal arrow keys for navigation
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+
 " display a list of files in the current directory in insert mode
 inoremap <C-F> <C-X><C-F>
 
