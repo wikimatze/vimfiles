@@ -32,6 +32,7 @@ commands and shortcuts. After a while I will try to translate them  into English
    - ( - move the cursor forward to the *previous sentence*
    - **CTRL-o** - track your movements backward => it jumps to last made changes
    - **CTRL-i** - track your movements forwards => it jumps to previous made changes
+   - **ddp** - will switch two lines
 
 
 # Search
