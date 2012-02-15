@@ -55,13 +55,30 @@ set backupext=~             " backup for is ~
 set backupdir=~/.vim/backup " backups are written to ~/.backup/ if possible.
 set backupcopy=yes          " keep attributes of the original file
 
+" Wildmenu
+if has("wildmenu")
+    set wildmenu " enable command-line completion when pressing :e in a nice window
+    set wildmode=longest,list
+        " longest: match till the common longest string
+        " list: display matches in a list instead of tab separated list of up to four parts
+        " the files on wildignore will not be displayed
+    set wildignore+=*.a,*.o
+    set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png
+    set wildignore+=.DS_Store,.git,.hg,.svn
+    set wildignore+=*~,*.swp,*.tmp
+endif
+
+
 " ## settings for plugins (start)
 
 " ## autocorrect
 source $HOME/.vim/bundle/vim-autocorrect/autocorrect.vim " sourcing the file
 
-" ## command-t settings
+" ## command-t
 exe join(map(split(glob("~/.vim/plugin-settings/command_t.vim"), "\n"), '"source " . v:val'), "\n")
+
+" ## fugitive
+exe join(map(split(glob("~/.vim/plugin-settings/fugitive.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## gist.vim
 exe join(map(split(glob("~/.vim/plugin-settings/gist.vim"), "\n"), '"source " . v:val'), "\n")
