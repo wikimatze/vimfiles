@@ -202,6 +202,8 @@ commands and shortcuts. After a while I will try to translate them  into English
    - **:n <file_name>** - open a new file in vim
    - **<C-F>** - display a list of files in the current directory in insert mode
     - **inoremap <C-F> <C-X><C-F>**
+   - **:.!** - execute bash command and insert output in Vim file (press !! very fast to shortcut
+     this)
 
 
 # Spellchecker
