@@ -75,8 +75,15 @@ noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
 
+
 " display a list of files in the current directory in insert mode
 inoremap <C-F> <C-X><C-F>
+
+
+" turn on Omni completion
+filetype plugin on
+set ofu=syntaxcomplete#Complete
+
 
 " ## settings for plugins (start)
 
