@@ -180,7 +180,7 @@ else
 endif
 
 " ## color schemes
-colorscheme ir_black " [railscasts, vividchalk]
+colorscheme ir_black " [ir_black, railscasts, badwolf, vividchalk]
 
 " source mappings
 exe join(map(split(glob("~/.vim/mappings/*.vim"), "\n"), '"source " . v:val'), "\n")
