@@ -48,6 +48,8 @@ commands and shortcuts. After a while I will try to translate them  into English
 
 
 # Edit
+   - **I** - go at the beginning of the line in edit mode
+   - **A** - go at the end of the line in edit mode
    - **r** - replace mode -the actual position of the cursor will be replaced and after that return
      to the previous mode
    - **R** - stay in replace mode
@@ -63,8 +65,6 @@ commands and shortcuts. After a while I will try to translate them  into English
    - %s/old/new/g - replace occurrences of pattern in the whole document
    - %s/old/new/c - replace occurrences in the text in interactive modus
    - **SHIFT-q** - format the actual section (*gqap* is an alternative shortcut)
-   - **A** - go at the end of the line in edit mode
-   - **I** - go at the beginning of the line in edit mode
    - **o** -go into a new line below the cursor in edit mode
    - **O** - neue Zeile oberhalb vom Cursor
    - **:e <Dateiname>** - edit a file (even possible to create a new file)
