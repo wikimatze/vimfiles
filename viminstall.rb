@@ -49,6 +49,7 @@ git_bundles = [
   # document in the README
     #"git://github.com/2072/PHP-Indenting-for-VIm.git",
   # colorschemes
+   # "git://github.com/sjl/badwolf.git",
    # "git://github.com/borgand/ir_black.git",
    # "git://github.com/jpo/vim-railscasts-theme.git",
    # "git://github.com/tpope/vim-vividchalk.git",
@@ -63,6 +64,8 @@ vim_org_scripts = [
   ["jquery", "15752", "syntax"],
   ["calender", "14880", "plugin"],
   ["autoclose", "9223", "plugin"],
+  ["l9", "13948", "zip"],
+  ["fuzzyfinder", "13961", "zip"],
 ]
 
 require 'fileutils'
@@ -105,4 +108,3 @@ vim_org_scripts.each do |name, script_id, script_type|
     %x(unzip -d #{name} #{local_file})
   end
 end
-
