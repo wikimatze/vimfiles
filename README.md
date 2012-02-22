@@ -211,6 +211,8 @@ always eager to learn something new.
       - **let g:syntastic\*enable\*signs=1** - setting signs for errors (arrows)
       - **let g:syntastic\*auto\*loc\*list=1** - open/close toc of errors
       - **let g:syntastic\*auto\*jump=1**  - jump to the place where the first error occurs
+      - **let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['haml', 'javascript', 'ruby', 'css', 'sass'], 'passive_filetypes': ['php'] }**q
+          - which files are active and which are not handled by the plugin
       - **let g:syntastic\*disabled\*filetypes = ['html']** - disable for this filetype
       - **set statusline+=%#warningmsg#**  - show warning messages
       - **set statusline+=%{SyntasticStatuslineFlag()}**  - show message in quickfix
