@@ -1,9 +1,15 @@
-" ## press jj to emulate the ESC button
-ino jj <ESC>
-cno jj <c-c>
+" ## press jk to emulate the ESC button
+inoremap jk <ESC>
+cnoremap jk <c-c>
+inoremap jj <nop> " prevent the old mapping for escaping
+
+" prevent pressing ESC to go into escape mode
+inoremap <ESC> <nop>
 
 " ## press ,v will brings up vimrc for editing
-nmap <leader>v :sp $MYVIMRC<CR>
+nmap <leader>v :vsplit $MYVIMRC<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>
+
 
 " ## better copy/paste
 vnoremap <C-X> "+d
