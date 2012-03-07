@@ -270,9 +270,12 @@ elseif has("unix")
 endif
 
 " ## comment in visual mode press ,c (for uncomment ,u)
-au FileType haskell,vhdl,ada let b:comment_leader = '-- '
-au FileType vim let b:comment_leader = '" '
-au FileType c,cpp,java,scala,sass,scss let b:comment_leader = '// '
-au FileType sh,make,rb,ruby,php let b:comment_leader = '# '
-au FileType haml let b:comment_leader = '/ '
-au FileType tex let b:comment_leader = '% '
+augroup commentgroup
+  au FileType haskell,vhdl,ada let b:comment_leader = '-- '
+  au FileType vim let b:comment_leader = '" '
+  au FileType c,cpp,java,scala,sass,scss let b:comment_leader = '// '
+  au FileType sh,make,rb,ruby,php let b:comment_leader = '# '
+  au FileType haml let b:comment_leader = '/ '
+  au FileType tex let b:comment_leader = '% '
+  "au FileType ruby nnoremap <buffer> <localleader>c I#
+augroup END
