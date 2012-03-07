@@ -134,27 +134,58 @@ exe join(map(split(glob("~/.vim/plugin-settings/vim_shell.vim"), "\n"), '"source
 
 " ## vim-NERDTree tabs
 exe join(map(split(glob("~/.vim/plugin-settings/nerdtree_tabs.vim"), "\n"), '"source " . v:val'), "\n")
+
+" ## fuzzyfinder
+map <leader>f :FufFile **/<CR>
+
 " ## settings for plugins (end)
 
 " # better status line
-set statusline=\CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c " Format the status line
+" set statusline=\CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c " Format the status line
+set statusline=%t " name of the current file
+set statusline+=\ -\ " separator
+set statusline+=Line:" label
+set statusline+=\ %4l " current line is always 4 pixels long
+set statusline+=/ " separator
+set statusline+=%L " total lines of the file
+set statusline+=\ -\ " separator
+set statusline+=FileType: " label
+set statusline+=%y " Filetype of the file
+set statusline+=\ CWD: " label
+set statusline+=\ %r%{CurDir()} " pwd of vim
 
 function! CurDir()
     let curdir = substitute(getcwd(), '/Users/helex/', "~/", "g")
     return curdir
 endfunction
 
+" Vimscript file settings ---------------------- {{{
+augroup filetype_vim
+  au!
+  au FileType vim setlocal foldmethod=marker
+augroup END
+" }}}
+
+" Vimscript ruby settings ---------------------- {{{
+augroup filetype_ruby
+  autocmd!
+  " press F1 to compile the current file with ruby
+  autocmd FileType ruby map <F1> :!ruby "%:p"<CR>
+  autocmd FileType ruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+augroup END
+" }}}
+
 " ## mappings for ruby (F1 compile current file with ruby, F2 compile current file with RSpec)
-autocmd FileType ruby map <F1> :!ruby "%:p"<CR>
 autocmd FileType php map <F1> :!php "%:p"<CR>
 " ## converting markdown to HTML by pressing ,md
 nmap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <cr>
 
+
 " ## automatically source the vimrc file after saving it changes appear
 " without restarting Vim
-if has("autocmd")
-  autocmd bufwritepost .vimrc source $MYVIMRC
-endif
+" if has("autocmd")
+"   autocmd bufwritepost .vimrc source $MYVIMRC
+" endif
 
 " ## press SHIFT-q to reformat the selected text
 map Q gq
@@ -220,16 +251,17 @@ endif
 " ## custom setting for each file type
 if has("autocmd")
   filetype plugin indent on
+  augroup filesintendationgroup
       autocmd FileType haml       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
       autocmd FileType html       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
       autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab textwidth=500
       autocmd FileType markdown   setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
       autocmd FileType make       setlocal ts=4 sts=4 sw=4 expandtab textwidth=500
-      autocmd FileType ruby       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
       autocmd FileType sass       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
       autocmd FileType tex        setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
       autocmd FileType txt        setlocal ts=2 sts=2 sw=2 expandtab textwidth=110
       autocmd FileType yaml       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+  augroup END
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
   autocmd BufReadPost *
