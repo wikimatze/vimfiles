@@ -44,6 +44,7 @@ git_bundles = [
   "git://github.com/xolox/vim-session.git",
   "git://github.com/xolox/vim-shell.git",
   "git://github.com/tpope/vim-endwise.git",
+  "https://github.com/Lokaltog/vim-powerline.git", # new
   # not used but is in the README
     # git://github.com/timcharper/textile.vim
   # document in the README
