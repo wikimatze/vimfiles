@@ -202,16 +202,17 @@ endfunction
 " when file is saved, call the function to remove trailing whitespace
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
-
 " ## distinguish between different operation systems and change the text-size
 if has('mac')
+  " pretty nice font, if working under Mac
   set gfn=Menlo:h14
   " 2. Change the key equivalent to cycle through tabs to CMD-Left/Right: >
   nmap <D-lt> :maca _cycleWindows:<CR>
 elseif has('unix')
   " for the ack.vim plugin
   let g:ackprg="ack-grep -H --nocolor --nogroup --column"
-  let g:Hammerquiet = 1
+  let g:HAMMER_SILENCE_WARNINGS = 1
+"   let g:Hammerquiet = 1
 endif
 
 " ## CTRL-SHIFT+arrow nables the mark method for like TextMate
