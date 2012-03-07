@@ -24,7 +24,7 @@ set noerrorbells                            " don't make noise on error messages
 set nomodeline                              " frequent security hole
 set nowarn                                  " do not warn, when shell command update the file you edit in Vim
 set number                                  " display line numbers
-set numberwidth=1                           " using only 1 column (and 1 space) while possible
+set numberwidth=2                           " using only 2 column for numberline presentation
 set ruler                                   " show the line and column number of the cursor position
 set shell=/bin/bash                         " always use sh when executing commands with :!
 set shiftwidth=2                            " how many columns text is indented with the indent operations (<< and >>)
@@ -37,7 +37,7 @@ set tabstop=2                               " how many columns a tab counts
 set timeout timeoutlen=1000 ttimeoutlen=100 " scroll speed of the editor
 set title                                   " show title in console title
 set ttyfast                                 " smooth changes and better scrolling
-let mapleader = ","                         " change the leader to be a comma vs slash
+let mapleader = ","                         " change the leader to be a comma vs. backslash if not given
 set laststatus=2                            " always hide the status line
 set scrolloff=4 " minimal number of screen lines to keep above and below the cursor
 set viminfo='1000000,f1 "save marks for 1 million files ('1000000), save global marks
@@ -68,17 +68,14 @@ if has("wildmenu")
     set wildignore+=*~,*.swp,*.tmp
 endif
 
-
 " turn off normal arrow keys for navigation
 noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
 
-
 " display a list of files in the current directory in insert mode
 inoremap <C-F> <C-X><C-F>
-
 
 " turn on Omni completion
 filetype plugin on
