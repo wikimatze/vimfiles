@@ -247,8 +247,12 @@ endif
 " LaTeX SUITE HACKS
 set grepprg=grep\ -nH\ $* " grep works with LaTeX-Suite
 " ## auto load dvi after each save in Vim (it runs the latex suite)
-au BufWritePost *.tex silent call Tex_CompileLatex()
-au BufWritePost *.tex silent !pkill -USR1 xdvi.bin
+augroup latexgroup
+  au!
+  au BufWritePost *.tex silent call Tex_CompileLatex()
+  au BufWritePost *.tex silent !pkill -USR1 xdvi.bin
+augroup END
+
 " settings for determining tex file type
 :let g:tex_flavor = "latex"
 " default output of compiling (pressing ,lj) is dvi
