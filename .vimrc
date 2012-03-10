@@ -309,5 +309,5 @@ augroup commentgroup
   au FileType c,cpp,java,scala,sass,scss let b:comment_leader = '// '
   au FileType sh,make,rb,ruby,php,yaml let b:comment_leader = '# '
   au FileType haml let b:comment_leader = '/ '
-  au FileType tex let b:comment_leader = '% '
+  au FileType apache,tex let b:comment_leader = '% '
 augroup END
