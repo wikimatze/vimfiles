@@ -1,3 +1,6 @@
+" vundle bundle script has to be puts here
+exe join(map(split(glob("~/.vim/plugin-settings/vundle_install.vim"), "\n"), '"source " . v:val'), "\n")
+
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
@@ -19,7 +22,6 @@ set guioptions-=T                           " turning of the tool bar
 set history=5000                            " keep 5000 lines of command line history
 set lines=999 columns=999                   " full screen when starting Gvim (it's a hack)
 set ls=1                                    " always show status line
-set nocompatible                            " must be the first, because it changes other options as a side effect
 set noerrorbells                            " don't make noise on error messages
 set nomodeline                              " frequent security hole
 set nowarn                                  " do not warn, when shell command update the file you edit in Vim

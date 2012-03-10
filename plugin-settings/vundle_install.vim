@@ -1,0 +1,58 @@
+set nocompatible " be iMproved
+filetype off     " required!
+
+set runtimepath+=~/.vim/bundle/vundle/ " add vundle to runtime path
+call vundle#rc()
+
+let g:vundle_default_git_proto = 'git' " `git` instead default `https` when building absolute repo URIs
+
+" original repos on github
+Bundle 'Townk/vim-autoclose'
+Bundle 'ervandew/supertab'
+Bundle 'gerardc/vim-padrino'
+Bundle 'gerw/vim-latex-suite'
+Bundle 'gmarik/vundle'
+Bundle 'godlygeek/tabular'
+Bundle 'groenewege/vim-less'
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'majutsushi/tagbar'
+Bundle 'matthias-guenther/tocdown'
+Bundle 'mattn/gist-vim'
+Bundle 'mileszs/ack.vim'
+Bundle 'msanders/snipmate.vim'
+Bundle 'othree/html5-syntax.vim'
+Bundle 'panozzaj/vim-autocorrect'
+Bundle 'robgleeson/hammer.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'sjl/gundo.vim'
+Bundle 'skammer/vim-css-color'
+Bundle 'tpope/vim-bundler'
+Bundle 'tpope/vim-cucumber'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-liquid'
+Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-speeddating'
+Bundle 'tpope/vim-surround'
+Bundle 'tsaleh/vim-align'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'vim-scripts/FuzzyFinder'
+Bundle 'vim-scripts/IndexedSearch'
+Bundle 'vim-scripts/L9'
+Bundle 'vim-scripts/grep.vim'
+Bundle 'vim-scripts/jQuery'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'vim-scripts/vis'
+Bundle 'wincent/Command-T.git'
+Bundle 'xolox/vim-notes'
+Bundle 'xolox/vim-open-associated-programs'
+Bundle 'xolox/vim-session'
+Bundle 'xolox/vim-shell'
+

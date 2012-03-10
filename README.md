@@ -336,6 +336,14 @@ always eager to learn something new.
     - example: replace all '\-' through '-' => mark the block, press :B (you should have in your
       commandline :'<,'>:B) now press the typical text replacement commands you want (s/-/-) and you
       are done
+- [vundle](https://github.com/gmarik/vundle "vundle"): is a Vim plugin manager
+    - **:BundleInstall** - opens a extra window and show the files that will be installed
+    - **:BundleInstall!** - installs or updates installed bundles
+    - **:BundleSearch <foo>** - opens a window to display the matches in an extra window
+    - **:BundleClean** - confirms removal of unused script-dirs from `.vim/bundle/`.
+    - *own settings*:
+          - **let g:vundle_default_git_proto = 'git'** - `git` instead default `https` when building absolute repo URIs
+
 
 ## Usage ##
 
