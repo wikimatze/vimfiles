@@ -1,6 +1,6 @@
 # Vim settings #
 
-This is a list of all the plugins I'm using for [Vim](http://www.vim.org/ "Vim"). It is unusual to
+Taahis is a list of all the plugins I'm using for [Vim](http://www.vim.org/ "Vim"). It is unusual to
 post here commands and shortcuts about the plugins because most plugins are well documented. But I
 decided to provide an overview of all the main settings I got from struggling through each plugin
 for my own demands. As well, you can have look on my *vimrc* which contains many hacks.
@@ -17,7 +17,7 @@ always eager to learn something new.
 
 - [AutoClose](http://www.vim.org/scripts/script.php?script_id=2009 "autoclose"): automatically close
   brackets - it will saves you a lot of finger acrobatic because you don't have to type closing
-  brackets (*no doc*)
+  brackets
 - [autocorrect](https://github.com/panozzaj/vim-autocorrect "autocorrect"): auto correct English
   spelling mistakes, when typing (*no doc*)
   - don't forget to put *:source /path/to/the/autocorrect.vim* in your *.vimrc*
@@ -85,7 +85,7 @@ always eager to learn something new.
   - **:Ggrep** - does a *grep* in the tree
   - **:Gbrowse** - opens the actual file in the browser (normally its on github)
   - **:Git** - after this you can perform every other normal git command you want
-- [Grep.vim](http://www.vim.org/scripts/script.php?script_id=311 "Grep.vim"): using grep to search
+- [Grep.vim](https://github.com/vim-scripts/grep.vim "Grep.vim"): using grep to search
   after files - a good alternative to grep (-no doc-)
 - [Gist.vim](https://github.com/mattn/gist-vim "Gist.vim"): upload files directly to github with just one command
   - first setup your git credentials **let g:github*user = 'your-name'** and **let g:github*token =
@@ -123,7 +123,7 @@ always eager to learn something new.
   - *own settings*:
       - **let g:indexed*search*colors = 1** - turn of colors for messages
       - **let g:indexed*search*shortmess = 1** -  shorter messages
-- [jQuery](http://www.vim.org/scripts/script.php?script_id=2416 "jQuery"): pretty colors for the
+- [jQuery](https://github.com/vim-scripts/jQuery "jQuery"): pretty colors for the
   jQuery syntax (*no doc*)
 - [markdown](https://github.com/tpope/vim-markdown "markdown"): markdown-syntax
   highlighting (*no doc*)
@@ -262,7 +262,7 @@ always eager to learn something new.
   markdown document in an extra window.
   - *own settings*:
       - **nnoremap <F2> :TocdownToggle<CR>**
-- [yankring](http://www.vim.org/scripts/script.php?script_id=1234 "yankring"): better register
+- [yankring](https://github.com/vim-scripts/YankRing.vim "yankring"): better register
   management and saves up to 100 buffered lines
   - **:YRShow** - shows the actual buffer
   - **:YRClear** - deletes the buffer
