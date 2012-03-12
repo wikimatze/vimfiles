@@ -1,23 +1,27 @@
 # Vim settings #
 
-Taahis is a list of all the plugins I'm using for [Vim](http://www.vim.org/ "Vim"). It is unusual to
-post here commands and shortcuts about the plugins because most plugins are well documented. But I
-decided to provide an overview of all the main settings I got from struggling through each plugin
-for my own demands. As well, you can have look on my *vimrc* which contains many hacks.
+This is a list of all the plugins I'm using for [Vim]. It is unusual to post here commands and
+shortcuts about the plugins because most plugins are well documented. But I decided to provide an
+overview of all the main settings I got from struggling through each plugin for my own demands. As
+well, you can have look on my *vimrc* which contains many hacks.
 
 
-I know there is the [janus](https://github.com/carlhuda/janus "janus") package out there which does
-configure a lot of stuff, but maintain my own set of plugins and settings. Don't hesitate to copy or
-ask me questions about it.
+I know there is the [janus] package out there which does configure a lot of stuff, but maintain my
+own set of plugins and settings. Don't hesitate to copy or ask me questions about it.
 
-The text of each link is the name for the doc you have to type in Vim (never underestimate remember
-*:help \<name\>*). If after plugin description stands the phrase (*no doc*) it says, that you can
-not open the documentation in Vim. Feel free to correct me or provide me with additional hints - I'm
-always eager to learn something new.
 
-- [AutoClose](http://www.vim.org/scripts/script.php?script_id=2009 "autoclose"): automatically close
-  brackets - it will saves you a lot of finger acrobatic because you don't have to type closing
+The text of each link is the name for the doc you have to type in [Vim] (remember to use *:help
+\<name\>*). If after plugin description stands the phrase (*no doc*) it says, that you can not open
+the documentation in Vim. Feel free to correct me or provide me with additional hints - I'm always
+eager to learn something new.
+
+[janus]: https://github.com/carlhuda/janus "janus"
+[Vim]: http://www.vim.org/ "Vim"
+
+- [AutoClose](https://github.com/Townk/vim-autoclose "autoclose"): automatically close
   brackets
+    - *own settings*:
+      - **let g:AutoClosePairs_del = "'"** - don't close apostrophes (use them often in norml text)
 - [autocorrect](https://github.com/panozzaj/vim-autocorrect "autocorrect"): auto correct English
   spelling mistakes, when typing (*no doc*)
   - don't forget to put *:source /path/to/the/autocorrect.vim* in your *.vimrc*

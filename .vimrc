@@ -86,6 +86,9 @@ set ofu=syntaxcomplete#Complete
 
 " ## settings for plugins (start)
 
+" # autoclose
+exe join(map(split(glob("~/.vim/plugin-settings/autoclose.vim"), "\n"), '"source " . v:val'), "\n")
+
 " ## autocorrect
 source $HOME/.vim/bundle/vim-autocorrect/autocorrect.vim " sourcing the file
 
