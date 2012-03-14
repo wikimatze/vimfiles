@@ -10,6 +10,7 @@ let g:vundle_default_git_proto = 'git' " `git` instead default `https` when buil
 Bundle 'vim-scripts/AutoClose'
 Bundle 'ervandew/supertab'
 Bundle 'gerardc/vim-padrino'
+Bundle 'vim-scripts/JSON.vim'
 Bundle 'gerw/vim-latex-suite'
 Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'

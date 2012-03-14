@@ -127,6 +127,7 @@ eager to learn something new.
   - *own settings*:
       - **let g:indexed*search*colors = 1** - turn of colors for messages
       - **let g:indexed*search*shortmess = 1** -  shorter messages
+- [json](https://github.com/vim-scripts/JSON.vim "json"): json detection and syntax-highlighting (*no doc*)
 - [jQuery](https://github.com/vim-scripts/jQuery "jQuery"): pretty colors for the
   jQuery syntax (*no doc*)
 - [l9](https://github.com/vim-scripts/L9 "l9"): Vim-script library, add functionality to program vim-files
