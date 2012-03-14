@@ -129,6 +129,8 @@ eager to learn something new.
       - **let g:indexed*search*shortmess = 1** -  shorter messages
 - [jQuery](https://github.com/vim-scripts/jQuery "jQuery"): pretty colors for the
   jQuery syntax (*no doc*)
+- [l9](https://github.com/vim-scripts/L9 "l9"): Vim-script library, add functionality to program vim-files
+  (mainly needed for fuzzyfinder plugin)
 - [markdown](https://github.com/tpope/vim-markdown "markdown"): markdown-syntax
   highlighting (*no doc*)
 - [matchit](http://www.vim.org/scripts/script.php?script_id=39 "matchit"): press % to match tags in
