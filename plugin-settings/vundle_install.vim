@@ -7,7 +7,7 @@ call vundle#rc()
 let g:vundle_default_git_proto = 'git' " `git` instead default `https` when building absolute repo URIs
 
 " original repos on github
-Bundle 'Townk/vim-autoclose'
+Bundle 'vim-scripts/AutoClose'
 Bundle 'ervandew/supertab'
 Bundle 'gerardc/vim-padrino'
 Bundle 'gerw/vim-latex-suite'
