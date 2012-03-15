@@ -55,4 +55,5 @@ Bundle 'xolox/vim-notes'
 Bundle 'xolox/vim-open-associated-programs'
 Bundle 'xolox/vim-session'
 Bundle 'xolox/vim-shell'
+Bundle 'Rykka/ColorV'
 

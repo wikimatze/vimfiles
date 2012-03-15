@@ -39,6 +39,8 @@ eager to learn something new.
       - **let g:ackprg="ack-grep -H --nocolor --nogroup --column"** - better handling on Unix
         machines
 - [coffee-script](https://github.com/kchmck/vim-coffee-script "coffe-script"): coffee script support
+- [colorv](https://github.com/Rykka/ColorV "colorv"): display Hex Color with real colors in Vim -
+  very useful when working with CSS
 - [cucumber](https://github.com/tpope/vim-cucumber "cucumber"): syntax-highlighting for cucumber
   files (*no doc*)
 - [command-t](http://www.vim.org/scripts/script.php?script_id=3025 "command-t"): file search in the
@@ -284,8 +286,6 @@ eager to learn something new.
 - [vim-bundler](https://github.com/tpope/vim-bundler "vim-bundler"): wrapper for bundler in Vim
     - **:Bundle** - wraps bundle after, e.g. `:Bundle install`
     - **:Bopen** - opens the *Gemfile* for editing
-- [vim-css-color](https://github.com/skammer/vim-css-color "css-color"): display Hex Color with real
-  colors in Vim - very useful when working with CSS (*no docu*)
 - [vim-css3 syntax](https://github.com/hail2u/vim-css3-syntax "vim-css3 syntax"): add syntax support
   for css3 (*no doc*)
 - [vim-haml](https://github.com/tpope/vim-haml "vim-haml"): file detection and syntax highlighting
