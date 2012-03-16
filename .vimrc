@@ -152,20 +152,6 @@ map <leader>f :FufFile **/<CR>
 
 " ## settings for plugins (end)
 
-" # better status line
-" set statusline=\CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c " Format the status line
-set statusline=%t " name of the current file
-set statusline+=\ -\ " separator
-set statusline+=Line:" label
-set statusline+=\ %4l " current line is always 4 pixels long
-set statusline+=/ " separator
-set statusline+=%L " total lines of the file
-set statusline+=\ -\ " separator
-set statusline+=FileType: " label
-set statusline+=%y " Filetype of the file
-set statusline+=\ CWD: " label
-set statusline+=\ %r%{CurDir()} " pwd of vim
-
 function! CurDir()
     let curdir = substitute(getcwd(), '/Users/helex/', "~/", "g")
     return curdir
