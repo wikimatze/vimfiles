@@ -57,4 +57,5 @@ Bundle 'xolox/vim-session'
 Bundle 'xolox/vim-shell'
 Bundle 'Rykka/ColorV'
 Bundle 'ecomba/vim-ruby-refactoring'
+Bundle 'Lokaltog/vim-powerline'
 

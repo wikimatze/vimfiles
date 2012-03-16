@@ -181,7 +181,9 @@ eager to learn something new.
       - **let g:notes_directory = '~/Dropbox/notes'** - path of main directory
       - **let g:notes_suffix = '.txt'** - default file ending of note files
       - **autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h\*** - path of the notes directory
-- [padrino](https://github.com/brian9/vim-padrino "padrino"): syntax support (*no doc*)
+- [padrino](https://github.com/gerardc/vim-padrino "padrino"): works like rails.vim plugin
+- [powerline](https://github.com/Lokaltog/vim-powerline "powerline"): candy statusline which is high
+  configurable
 - [rubyrefactoring](https://github.com/ecomba/vim-ruby-refactoring "rubyrefactoring"): cool when
   working with ruby
   - **,rap**: Refactor Add Parameter => adds a parameter to a function (cursor must be somewhere in the
