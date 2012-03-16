@@ -57,6 +57,8 @@ set backupext=~             " backup for is ~
 set backupdir=~/.vim/backup " backups are written to ~/.backup/ if possible.
 set backupcopy=yes          " keep attributes of the original file
 
+au FocusLost * :wa " when switching between windows, automatically save the file, if they have changes
+
 " Wildmenu
 if has("wildmenu")
     set wildmenu " enable command-line completion when pressing :e in a nice window
@@ -98,7 +100,6 @@ exe join(map(split(glob("~/.vim/plugin-settings/colorv.vim"), "\n"), '"source " 
 " ## command-t
 exe join(map(split(glob("~/.vim/plugin-settings/command_t.vim"), "\n"), '"source " . v:val'), "\n")
 
-"
 " ## fugitive
 exe join(map(split(glob("~/.vim/plugin-settings/fugitive.vim"), "\n"), '"source " . v:val'), "\n")
 
@@ -279,3 +280,4 @@ augroup commentgroup
   au FileType haml let b:comment_leader = '/ '
   au FileType tex let b:comment_leader = '% '
 augroup END
+
