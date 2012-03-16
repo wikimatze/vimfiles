@@ -182,6 +182,17 @@ eager to learn something new.
       - **let g:notes_suffix = '.txt'** - default file ending of note files
       - **autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h\*** - path of the notes directory
 - [padrino](https://github.com/brian9/vim-padrino "padrino"): syntax support (*no doc*)
+- [rubyrefactoring](https://github.com/ecomba/vim-ruby-refactoring "rubyrefactoring"): cool when
+  working with ruby
+  - **,rap**: Refactor Add Parameter => adds a parameter to a function (cursor must be somewhere in the
+    function)
+  - **,rec**: Refactor Extract Constant => mark a number in visual mode and the one will be moved on
+    the top of a class or module
+  - **,relv**: Refactor Extract Local Variable => if you have a longer if statement and wants to
+    export some expression into a tmp variable, you can use any selection you want
+  - **,rrlv**: Refactor Rename Local Variable => mark the name you want to change and the scope
+    within the method
+  - **,rriv**: Refactor Rename Instance Variable => mark the instance variable within a class
 - [session](https://github.com/xolox/vim-session "session"): save session and to open then later
   - **:SaveSession <name>** - save the current session under the specified name
   - **:OpenSession** - dialog to select the section you want to open
