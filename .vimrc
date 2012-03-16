@@ -92,9 +92,13 @@ exe join(map(split(glob("~/.vim/plugin-settings/autoclose.vim"), "\n"), '"source
 " ## autocorrect
 source $HOME/.vim/bundle/vim-autocorrect/autocorrect.vim " sourcing the file
 
+" ## colorv
+exe join(map(split(glob("~/.vim/plugin-settings/colorv.vim"), "\n"), '"source " . v:val'), "\n")
+
 " ## command-t
 exe join(map(split(glob("~/.vim/plugin-settings/command_t.vim"), "\n"), '"source " . v:val'), "\n")
 
+"
 " ## fugitive
 exe join(map(split(glob("~/.vim/plugin-settings/fugitive.vim"), "\n"), '"source " . v:val'), "\n")
 
