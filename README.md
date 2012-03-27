@@ -171,6 +171,9 @@ eager to learn something new.
 - [padrino](https://github.com/gerardc/vim-padrino "padrino"): works like rails.vim plugin
 - [powerline](https://github.com/Lokaltog/vim-powerline "powerline"): candy statusline which is high
   configurable
+- [rainbow_paranthesis](https://github.com/kien/rainbow_parentheses.vim "rainbow_paranthesis"): colorize nested
+  brackets (*no doc*)
+  - **:RainbowParenthesesToggle** - Toggle it on/off
 - [rubyrefactoring](https://github.com/ecomba/vim-ruby-refactoring "rubyrefactoring"): cool when
   working with ruby
   - **,rap**: Refactor Add Parameter => adds a parameter to a function (cursor must be somewhere in the
