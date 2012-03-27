@@ -18,10 +18,6 @@ eager to learn something new.
 [janus]: https://github.com/carlhuda/janus "janus"
 [Vim]: http://www.vim.org/ "Vim"
 
-- [AutoClose](https://github.com/Townk/vim-autoclose "autoclose"): automatically close
-  brackets
-    - *own settings*:
-      - **let g:AutoClosePairs_del = "'"** - don't close apostrophes (use them often in norml text)
 - [autocorrect](https://github.com/panozzaj/vim-autocorrect "autocorrect"): auto correct English
   spelling mistakes, when typing (*no doc*)
   - don't forget to put *:source /path/to/the/autocorrect.vim* in your *.vimrc*
@@ -75,6 +71,7 @@ eager to learn something new.
         tab
       - **set wildignore+=-.o,-.obj,.git,.svn,vendor/rails/--** - which files should not be matched
         in command-t
+- [delimitMate](https://github.com/Raimondi/delimitMate/ "delimitMate"): semantic autoclose brackets
 - [endwise-ruby](https://github.com/tpope/vim-endwise "endwise-ruby"): automatically
   adds keywords like *end* to special constructs in ruby (*no doc*)
 - [fugitive](http://github.com/tpope/vim-fugitive "vim-fugitive"): git wrapper
