@@ -138,28 +138,6 @@ eager to learn something new.
   highlighting (*no doc*)
 - [matchit](http://www.vim.org/scripts/script.php?script_id=39 "matchit"): press % to match tags in
   HTML, LaTeX and several other file formats (*no doc*)
-- [NERDTree](https://github.com/scrooloose/nerdtree "NERDTree"): amazing file browser for GUI guys
-  - **m** - choose which action to perform (add, move, copy, delete)
-      - add / at the end to create a new directory
-  - **r** - refresh the view
-  - **O** - opens the node recursive from the parent node
-  - **t** - opens th file in a new tab
-  - **p** - jumps to the root tree
-  - **T** - opens the file in a new tab and the focus will stay in the current window
-  - **x** - closed the parent node, but leave the nodes above the node open (visual close)
-  - **X** - closed all nodes which are under the actual node (physical close)
-  - **R** - update the view
-  - press **?** in the NERDTree window
-  - **:NERDTreeFind** - open the current file in the NERDTree and expand the tree to this file
-    location
-  - *own settings*:
-      - **let g:NERDTreeDirArrows = 1** - display nice arrows instead of bars and lines for the tree
-        structure
-      - **let g:NERDChristmasTree = 0** - less colorful tree (save performance)
-      - **let g:NERDTreeHighlightCursorline = 0** - do not highlight line of cursor in NERDTree
-      - **let g:NERDTreeMouseMode = 3** - one click will open the files
-      - **let g:NERDTreeWinPos = 'right'** - NERDTree will opens on the right site of the window
-      - **let g:NERDTreeWinSize = 30** - the width of the NERDTree when it opens
 - [notes](https://github.com/xolox/vim-notes "notes"): note taking - perfect for *getting things
   done*
   - **:Note** - starts a new note => you can specify the name of the note in the header
@@ -311,10 +289,6 @@ eager to learn something new.
   - **:let ruby\*space\*errors = 1** - mark whitespace characters
 - [vim-liquid](https://github.com/tpope/vim-liquid "vim-liquid"): highlight liquid tags like {% ...
   %} (*no doc*)
-- [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs "vim-nerdtree-tabs"): opens one
-  NERDTree which is the same in every tab
-  - *own settings*:
-      - **map t <plug>NERDTreeTabsToggle<CR>**  - press t to toggle the NERDTree
 - [vim-open-associated-programs](https://github.com/xolox/vim-open-associated-programs "vim-open-associated-programs"):
   open files and web pages in associated programs out of Vim (useful when you want to open links out of Vim)
   - has generally no mappings and just defines the programs which opens the specified file according
