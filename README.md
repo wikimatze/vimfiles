@@ -138,6 +138,18 @@ eager to learn something new.
   highlighting (*no doc*)
 - [matchit](http://www.vim.org/scripts/script.php?script_id=39 "matchit"): press % to match tags in
   HTML, LaTeX and several other file formats (*no doc*)
+- [netrw](http://www.vim.org/scripts/script.php?script_id=1075 "netrw"): build in filebrowser
+  - **:edit .** - take the current directory and opens fileexplorer
+  - **:split .** - vertical split at current working directory
+  - **:vsplit .** - horizontal split at current working directory
+  - **:Explore .** - open the directory relative to the current file
+  - **:Sexplore ** - horizontal split the current file in a new window
+  - **:Vexplore ** - vertical split the current file in a new window
+  - file creation:
+      - **%** - creates a new file
+      - **d** - create a directory
+      - **D** - delete directory/file
+      - **R** - rename directory/file
 - [notes](https://github.com/xolox/vim-notes "notes"): note taking - perfect for *getting things
   done*
   - **:Note** - starts a new note => you can specify the name of the note in the header
