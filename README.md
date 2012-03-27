@@ -135,6 +135,9 @@ eager to learn something new.
   highlighting (*no doc*)
 - [matchit](http://www.vim.org/scripts/script.php?script_id=39 "matchit"): press % to match tags in
   HTML, LaTeX and several other file formats (*no doc*)
+- [MRU](https://github.com/vim-scripts/mru.vim "MRU"): opens a quickfix windows which shows the last
+  opens files (*no doc*)
+  - **:MRU** - opens the window
 - [netrw](http://www.vim.org/scripts/script.php?script_id=1075 "netrw"): build in filebrowser
   - **:edit .** - take the current directory and opens fileexplorer
   - **:split .** - vertical split at current working directory

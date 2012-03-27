@@ -10,6 +10,7 @@ let g:vundle_default_git_proto = 'git' " `git` instead default `https` when buil
 Bundle 'Raimondi/delimitMate'
 Bundle 'ervandew/supertab'
 Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'vim-scripts/mru.vim'
 Bundle 'gerardc/vim-padrino'
 Bundle 'vim-scripts/JSON.vim'
 Bundle 'gerw/vim-latex-suite'
