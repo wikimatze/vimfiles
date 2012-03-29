@@ -30,6 +30,7 @@ set undofile                                " save the names for the undo file
 set undoreload=10000                        " save the whole buffer for undo when reloading it
 set shell=/bin/bash                         " defines the Shell I want to use for external commands
 set lazyredraw                              " don't redraw the screen while executing macros, registers, and other commands
+set showbreak=↪                             " show the symbol for wrapped lines
 set expandtab                               " hitting Tab in insert mode will produce umber in spaces tabs instead of tabs
 set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
 set guioptions-=T                           " turning of the tool bar
