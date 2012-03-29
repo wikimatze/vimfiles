@@ -157,18 +157,11 @@ exe join(map(split(glob("~/.vim/plugin-settings/vim_ruby.vim"), "\n"), '"source 
 " ## vim-shell
 exe join(map(split(glob("~/.vim/plugin-settings/vim_shell.vim"), "\n"), '"source " . v:val'), "\n")
 
-" ## vim-NERDTree tabs
-exe join(map(split(glob("~/.vim/plugin-settings/nerdtree_tabs.vim"), "\n"), '"source " . v:val'), "\n")
-
 " ## fuzzyfinder
 map <leader>f :FufFile **/<CR>
 
 " ## settings for plugins (end)
 
-function! CurDir()
-    let curdir = substitute(getcwd(), '/Users/helex/', "~/", "g")
-    return curdir
-endfunction
 
 " Vimscript file settings ---------------------- {{{
 augroup filetype_vim
