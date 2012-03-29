@@ -23,11 +23,12 @@ set ruler                                   " show the line and column number of
 set backspace=indent,eol,start              " allow backspacing over everything in insert mode
 set nonumber                                " don't display line numbers (takes too much space)
 set numberwidth=2                           " using only 2 column for numberline presentation
-set ch=2                                    " height of the command line at the bottom
+set ch=1                                    " height of the command line at the bottom
+set history=5000                            " keep 5000 lines of command line history
+set undofile                                " save the names for the undo file
 set expandtab                               " hitting Tab in insert mode will produce umber in spaces tabs instead of tabs
 set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
 set guioptions-=T                           " turning of the tool bar
-set history=5000                            " keep 5000 lines of command line history
 set lines=999 columns=999                   " full screen when starting Gvim (it's a hack)
 set ls=1                                    " always show status line
 set nomodeline                              " frequent security hole
