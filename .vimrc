@@ -106,6 +106,16 @@ set writebackup             " make a backup of the original file when writing
 set noswapfile              " don't save swap files
 set updatetime=2000         " Write swap files after 2 seconds of inactivity.
 " }}}
+" Line return {{{
+" When editing a file, always jump to the last known cursor position.
+augroup line_return
+    au!
+    au BufReadPost *
+        \ if line("'\"") > 0 && line("'\"") <= line("$") |
+        \     execute 'normal! g`"zvzz' |
+        \ endif
+augroup END
+" }}}
 " -------------------------------------------------------- }}}
 
 
@@ -294,14 +304,6 @@ if has("autocmd")
       autocmd FileType txt        setlocal ts=2 sts=2 sw=2 expandtab textwidth=110
       autocmd FileType yaml       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
   augroup END
-  " When editing a file, always jump to the last known cursor position.
-  " Don't do it when the position is invalid or when inside an event handler
-  autocmd BufReadPost *
-    \ if line("'\"") > 1 && line("'\"") <= line("$") |
-    \   exe "normal! g`\"" |
-    \ endif
-  augroup END
-else
 endif
 
 " ## comment in visual mode press ,c (for uncomment ,u)
