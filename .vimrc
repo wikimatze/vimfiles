@@ -89,10 +89,12 @@ if has("wildmenu")
         " longest: match till the common longest string
         " list: display matches in a list instead of tab separated list of up to four parts
         " the files on wildignore will not be displayed
-    set wildignore+=*.a,*.o
-    set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png
-    set wildignore+=.DS_Store,.git,.hg,.svn
-    set wildignore+=*~,*.swp,*.tmp
+
+    set wildignore+=.git,.hg,.svn                 " version control
+    set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png " images
+    set wildignore+=*.aux,*.out,*.toc             " LaTeX intermediate files
+    set wildignore+=.DS_Store                     " fucking Mac-Stuff
+    set wildignore+=*~,*.swp,*.tmp                " tmp and backup files
 endif
 " }}}
 " backups {{{
