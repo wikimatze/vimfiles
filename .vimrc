@@ -31,6 +31,7 @@ set undoreload=10000                        " save the whole buffer for undo whe
 set shell=/bin/bash                         " defines the Shell I want to use for external commands
 set lazyredraw                              " don't redraw the screen while executing macros, registers, and other commands
 set showbreak=↪                             " show the symbol for wrapped lines
+set splitbelow                              " splitting a window will put the new window below the current one
 set expandtab                               " hitting Tab in insert mode will produce umber in spaces tabs instead of tabs
 set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
 set guioptions-=T                           " turning of the tool bar
@@ -203,7 +204,7 @@ map Q gq
 nmap <c-q> :w<CR>
 imap <c-q> <Esc>:w<CR>a
 
-" ## show invisible symbols for editing
+" lischar settings {{{
 " turn on with ml and off with ,u
 nmap <leader>l :set list<CR>
 nmap <leader>u :set list!<CR>
@@ -211,13 +212,16 @@ set list " List mode: Show tabs as CTRL-I, show end of line with $.
 " setting symbols for tabs, trails (whitespaces)
 " extends shows when a file name goes out the view (you have to scroll like in NERDTree)
 if has('mac')
-  set listchars=tab:»\ ,extends:¤,trail:·
+"   set listchars=tab:»\ ,extends:¤,trail:·
+    set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
 else
-  set listchars=eol:$,tab:\|\|,extends:>,trail:~
+"   set listchars=eol:$,tab:\|\|,extends:>,trail:~
+  set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
 endif
+" }}}
 
 " ## color schemes
-colorscheme ir_black " [ir_black, railscasts, badwolf, vividchalk]
+"colorscheme ir_black " [ir_black, railscasts, badwolf, vividchalk]
 
 " source mappings
 exe join(map(split(glob("~/.vim/mappings/*.vim"), "\n"), '"source " . v:val'), "\n")
@@ -291,3 +295,16 @@ augroup commentgroup
   au FileType tex let b:comment_leader = '% '
 augroup END
 
+" press Controll and arrow keys to switch between open windows
+noremap <C-Down>  <C-W>j
+noremap <C-Up>    <C-W>k
+noremap <C-Left>  <C-W>h
+noremap <C-Right> <C-W>l
+
+" detect javascript
+autocmd BufRead,BufNewFile *.js set filetype=javascript
+" detect json
+autocmd BufNewFile,BufRead *.json set filetype=json
+
+" don't use the autoclose plugin for vim files
+au FileType vim let b:loaded_delimitMate = 0
