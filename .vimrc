@@ -46,7 +46,6 @@ set softtabstop=2                           " how many columns
 set synmaxcol=200                           " better scrolling for long lines
 set spelllang=en_us                         " default language for spell checker
 set tabstop=2                               " how many columns a tab counts
-set timeout timeoutlen=1000 ttimeoutlen=100 " scroll speed of the editor
 set title                                   " show title in console title
 let mapleader = ","                         " change the leader to be a comma vs. backslash if not given
 set scrolloff=4 " minimal number of screen lines to keep above and below the cursor
@@ -56,7 +55,9 @@ set ignorecase " ignore upper- and lowercase letters during a search
 set hlsearch   " highlight all finding for a search
 set incsearch  " do incremental searching, that means search after the string when you begin writing
 
+au FocusLost * :silent! wall " when switching between windows, automatically write all buffers
 " }}}
+
 
 " backups {{{
 set backupext=~             " backup file extension
@@ -70,7 +71,6 @@ set noswapfile              " don't save swap files
 set updatetime=2000         " Write swap files after 2 seconds of inactivity.
 " }}}
 
-au FocusLost * :wa " when switching between windows, automatically save the file, if they have changes
 " Wildmenu
 if has("wildmenu")
     set wildmenu " enable command-line completion when pressing :e in a nice window
