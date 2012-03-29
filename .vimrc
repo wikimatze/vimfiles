@@ -7,14 +7,22 @@ syntax on          " Enable syntax highlighting
 filetype on        " Enable file type detection
 filetype indent on " Enable file type-specific indenting
 filetype plugin on " Enable file type-specific plugins
+
 " }}}
 " General settings -------------------------------------------------------- {{{
 
 set encoding=utf-8                          " the terminal encoding
-
-set autoindent                              " following lines should also be intended
-set autoread                                " re-read files that changed on disk without asking
+set modeline                                " don't look how many lines are the beginning and the end of the file
+set autoindent                              " Copy indent from current line when starting a new line
+set autoread                                " re-read files that changed outside of Vim
+set showmode                                " display in the left corner in which modus you are in Vim
+set showcmd                                 " show (partial) command in the last line of the screen
+set noerrorbells                            " don't make noise on error messages
+set ttyfast                                 " fast terminal connection, more characters will be sent to the screen
+set ruler                                   " show the line and column number of the cursor position
 set backspace=indent,eol,start              " allow backspacing over everything in insert mode
+set nonumber                                " don't display line numbers (takes too much space)
+set numberwidth=2                           " using only 2 column for numberline presentation
 set ch=2                                    " height of the command line at the bottom
 set expandtab                               " hitting Tab in insert mode will produce umber in spaces tabs instead of tabs
 set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
@@ -22,23 +30,16 @@ set guioptions-=T                           " turning of the tool bar
 set history=5000                            " keep 5000 lines of command line history
 set lines=999 columns=999                   " full screen when starting Gvim (it's a hack)
 set ls=1                                    " always show status line
-set noerrorbells                            " don't make noise on error messages
 set nomodeline                              " frequent security hole
 set nowarn                                  " do not warn, when shell command update the file you edit in Vim
-set number                                  " display line numbers
-set numberwidth=2                           " using only 2 column for numberline presentation
-set ruler                                   " show the line and column number of the cursor position
 set shell=/bin/bash                         " always use sh when executing commands with :!
 set shiftwidth=2                            " how many columns text is indented with the indent operations (<< and >>)
-set showcmd                                 " show (partial) command in the last line of the screen
-set showmode                                " display in the left corner in which modus you are in Vim
 set softtabstop=2                           " how many columns
 set synmaxcol=200                           " better scrolling for long lines
 set spelllang=en_us                         " default language for spell checker
 set tabstop=2                               " how many columns a tab counts
 set timeout timeoutlen=1000 ttimeoutlen=100 " scroll speed of the editor
 set title                                   " show title in console title
-set ttyfast                                 " smooth changes and better scrolling
 let mapleader = ","                         " change the leader to be a comma vs. backslash if not given
 set laststatus=2                            " always hide the status line
 set scrolloff=4 " minimal number of screen lines to keep above and below the cursor
