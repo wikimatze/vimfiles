@@ -1,8 +1,8 @@
-" Preamble ---------------------------------------------------------------- {{{
+" Preamble --- {{{
 exe join(map(split(glob("~/.vim/plugin-settings/vundle_install.vim"), "\n"), '"source " . v:val'), "\n")
 
 " }}}
-" File type detection ----------------------------------------------------- {{{
+" File type detection --- {{{
 
 syntax on          " Enable syntax highlighting
 filetype on        " Enable file type detection
@@ -55,8 +55,13 @@ set ignorecase " ignore upper- and lowercase letters during a search
 set hlsearch   " highlight all finding for a search
 set incsearch  " do incremental searching, that means search after the string when you begin writing
 
-au FocusLost * :silent! wall " when switching between windows, automatically write all buffers
-" }}}
+" when switching between windows, automatically write all buffers
+au FocusLost * :silent! wall
+
+" Resize splits when the window is resized
+au VimResized * :wincmd =
+
+" -------------------------------------------------------- }}}
 
 
 " backups {{{
