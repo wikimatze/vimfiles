@@ -1,5 +1,6 @@
 " Preamble ---------------------------------------------------------------- {{{
 exe join(map(split(glob("~/.vim/plugin-settings/vundle_install.vim"), "\n"), '"source " . v:val'), "\n")
+
 " }}}
 " File type detection ----------------------------------------------------- {{{
 
@@ -27,6 +28,7 @@ set ch=1                                    " height of the command line at the 
 set history=5000                            " keep 5000 lines of command line history
 set undofile                                " save the names for the undo file
 set undoreload=10000                        " save the whole buffer for undo when reloading it
+set shell=/bin/bash                         " defines the Shell I want to use for external commands
 set expandtab                               " hitting Tab in insert mode will produce umber in spaces tabs instead of tabs
 set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
 set guioptions-=T                           " turning of the tool bar
