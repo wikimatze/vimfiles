@@ -1,16 +1,16 @@
 " vundle bundle script has to be puts here
+" Preamble ---------------------------------------------------------------- {{{
 exe join(map(split(glob("~/.vim/plugin-settings/vundle_install.vim"), "\n"), '"source " . v:val'), "\n")
+" }}}
 
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
-" ## File type detection
+" File type detection ---------------------- {{{
 syntax on          " Enable syntax highlighting
 filetype on        " Enable file type detection
 filetype indent on " Enable file type-specific indenting
 filetype plugin on " Enable file type-specific plugins
+" }}}
 
-" ## General settings
+" General settings ---------------------- {{{
 set autoindent                              " following lines should also be intended
 set autoread                                " re-read files that changed on disk without asking
 set backspace=indent,eol,start              " allow backspacing over everything in insert mode
