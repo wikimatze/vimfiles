@@ -73,6 +73,16 @@ augroup cline
     au InsertLeave * set cursorline
 augroup END
 " }}}
+" Trailing whitespace {{{
+" only shown when not in insert mode
+
+augroup trailing
+    au!
+    au InsertEnter * :set listchars-=trail:⌴
+    au InsertLeave * :set listchars+=trail:⌴
+augroup END
+" }}}
+
 " -------------------------------------------------------- }}}
 
 
