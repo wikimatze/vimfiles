@@ -1,21 +1,21 @@
-" vundle bundle script has to be puts here
 " Preamble ---------------------------------------------------------------- {{{
 exe join(map(split(glob("~/.vim/plugin-settings/vundle_install.vim"), "\n"), '"source " . v:val'), "\n")
 " }}}
+" File type detection ----------------------------------------------------- {{{
 
-" File type detection ---------------------- {{{
 syntax on          " Enable syntax highlighting
 filetype on        " Enable file type detection
 filetype indent on " Enable file type-specific indenting
 filetype plugin on " Enable file type-specific plugins
 " }}}
+" General settings -------------------------------------------------------- {{{
 
-" General settings ---------------------- {{{
+set encoding=utf-8                          " the terminal encoding
+
 set autoindent                              " following lines should also be intended
 set autoread                                " re-read files that changed on disk without asking
 set backspace=indent,eol,start              " allow backspacing over everything in insert mode
 set ch=2                                    " height of the command line at the bottom
-set encoding=utf-8                          " the terminal encoding
 set expandtab                               " hitting Tab in insert mode will produce umber in spaces tabs instead of tabs
 set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
 set guioptions-=T                           " turning of the tool bar
@@ -47,8 +47,9 @@ autocmd BufNew * if winnr('$') == 1 | tabmove99 | endif " move tabs to the end f
 set ignorecase " ignore upper- and lowercase letters during a search
 set hlsearch   " highlight all finding for a search
 set incsearch  " do incremental searching, that means search after the string when you begin writing
+" }}}
 
-" ## backup setting
+" backup setting ---------------------- {{{
 set backup                  " save files after close
 set writebackup             " make a backup of the original file when writing
 set noswapfile              " don't save swap files
@@ -56,6 +57,7 @@ set updatetime=2000         " Write swap files after 2 seconds of inactivity.
 set backupext=~             " backup for is ~
 set backupdir=~/.vim/backup " backups are written to ~/.backup/ if possible.
 set backupcopy=yes          " keep attributes of the original file
+" }}}
 
 au FocusLost * :wa " when switching between windows, automatically save the file, if they have changes
 
