@@ -82,23 +82,7 @@ augroup trailing
     au InsertLeave * :set listchars+=trail:⌴
 augroup END
 " }}}
-
-" -------------------------------------------------------- }}}
-
-
-" backups {{{
-set backupext=~             " backup file extension
-set undodir=~/.vim/undo     "
-set backupdir=~/.vim/backup " backups are written to ~/.backup/ if possible.
-set backupcopy=yes          " keep attributes of the original file
-
-set backup                  " save files after close
-set writebackup             " make a backup of the original file when writing
-set noswapfile              " don't save swap files
-set updatetime=2000         " Write swap files after 2 seconds of inactivity.
-" }}}
-
-" Wildmenu
+" Wildmenu completion {{{
 if has("wildmenu")
     set wildmenu " enable command-line completion when pressing :e in a nice window
     set wildmode=longest,list
@@ -110,6 +94,20 @@ if has("wildmenu")
     set wildignore+=.DS_Store,.git,.hg,.svn
     set wildignore+=*~,*.swp,*.tmp
 endif
+" }}}
+" backups {{{
+set backupext=~             " backup file extension
+set undodir=~/.vim/undo     "
+set backupdir=~/.vim/backup " backups are written to ~/.backup/ if possible.
+set backupcopy=yes          " keep attributes of the original file
+
+set backup                  " save files after close
+set writebackup             " make a backup of the original file when writing
+set noswapfile              " don't save swap files
+set updatetime=2000         " Write swap files after 2 seconds of inactivity.
+" }}}
+" -------------------------------------------------------- }}}
+
 
 " turn off normal arrow keys for navigation
 noremap <Up> <nop>
