@@ -41,27 +41,28 @@ set tabstop=2                               " how many columns a tab counts
 set timeout timeoutlen=1000 ttimeoutlen=100 " scroll speed of the editor
 set title                                   " show title in console title
 let mapleader = ","                         " change the leader to be a comma vs. backslash if not given
-set laststatus=2                            " always hide the status line
 set scrolloff=4 " minimal number of screen lines to keep above and below the cursor
 set viminfo='1000000,f1 "save marks for 1 million files ('1000000), save global marks
 autocmd BufNew * if winnr('$') == 1 | tabmove99 | endif " move tabs to the end for new, single buffers (exclude splits)
 set ignorecase " ignore upper- and lowercase letters during a search
 set hlsearch   " highlight all finding for a search
 set incsearch  " do incremental searching, that means search after the string when you begin writing
+
 " }}}
 
-" backup setting ---------------------- {{{
+" backups {{{
+set backupext=~             " backup file extension
+set undodir=~/.vim/undo     "
+set backupdir=~/.vim/backup " backups are written to ~/.backup/ if possible.
+set backupcopy=yes          " keep attributes of the original file
+
 set backup                  " save files after close
 set writebackup             " make a backup of the original file when writing
 set noswapfile              " don't save swap files
 set updatetime=2000         " Write swap files after 2 seconds of inactivity.
-set backupext=~             " backup for is ~
-set backupdir=~/.vim/backup " backups are written to ~/.backup/ if possible.
-set backupcopy=yes          " keep attributes of the original file
 " }}}
 
 au FocusLost * :wa " when switching between windows, automatically save the file, if they have changes
-
 " Wildmenu
 if has("wildmenu")
     set wildmenu " enable command-line completion when pressing :e in a nice window
