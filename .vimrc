@@ -32,6 +32,7 @@ set shell=/bin/bash                         " defines the Shell I want to use fo
 set lazyredraw                              " don't redraw the screen while executing macros, registers, and other commands
 set showbreak=↪                             " show the symbol for wrapped lines
 set splitbelow                              " splitting a window will put the new window below the current one
+set splitright                              " splitting a window will put the new window right the current one
 set expandtab                               " hitting Tab in insert mode will produce umber in spaces tabs instead of tabs
 set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
 set guioptions-=T                           " turning of the tool bar
