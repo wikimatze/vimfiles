@@ -43,7 +43,6 @@ set shell=/bin/bash                         " always use sh when executing comma
 set synmaxcol=200                           " better scrolling for long lines
 set spelllang=en_us                         " default language for spell checker
 set title                                   " show title in console title
-let mapleader = ","                         " change the leader to be a comma vs. backslash if not given
 set scrolloff=4 " minimal number of screen lines to keep above and below the cursor
 set viminfo='1000000,f1 "save marks for 1 million files ('1000000), save global marks
 autocmd BufNew * if winnr('$') == 1 | tabmove99 | endif " move tabs to the end for new, single buffers (exclude splits)
@@ -68,6 +67,7 @@ augroup cline
     au InsertEnter * set nocursorline
     au InsertLeave * set cursorline
 augroup END
+
 " }}}
 " Trailing whitespace {{{
 " only shown when not in insert mode
@@ -77,6 +77,7 @@ augroup trailing
     au InsertEnter * :set listchars-=trail:⌴
     au InsertLeave * :set listchars+=trail:⌴
 augroup END
+
 " }}}
 " Wildmenu completion {{{
 if has("wildmenu")
@@ -92,6 +93,7 @@ if has("wildmenu")
     set wildignore+=.DS_Store                     " fucking Mac-Stuff
     set wildignore+=*~,*.swp,*.tmp                " tmp and backup files
 endif
+
 " }}}
 " backups {{{
 set backupext=~             " backup file extension
@@ -103,6 +105,7 @@ set backup                  " save files after close
 set writebackup             " make a backup of the original file when writing
 set noswapfile              " don't save swap files
 set updatetime=2000         " Write swap files after 2 seconds of inactivity.
+
 " }}}
 " Line return {{{
 " When editing a file, always jump to the last known cursor position.
@@ -113,15 +116,24 @@ augroup line_return
         \     execute 'normal! g`"zvzz' |
         \ endif
 augroup END
+
 " }}}
 " Tabs, wraps, spacing {{{
+
 set tabstop=2      " how many columns a tab counts
 set shiftwidth=2   " how many columns text is indented with the indent operations (<< and >>)
 set softtabstop=2  " how many columns
 set expandtab      " hitting tab in insert mode will produce number in spaces instead of tabs
 set wrap           " when lines are longer the the width of the window they will wrapped
 set textwidth=100  " maximum of text that is being inserted
+
 " }}}
+" Leader {{{
+
+let mapleader = "," " change the leader to be a comma vs. backslash if not given
+
+" }}}
+
 " -------------------------------------------------------- }}}
 
 
