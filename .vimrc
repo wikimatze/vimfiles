@@ -33,7 +33,6 @@ set lazyredraw                              " don't redraw the screen while exec
 set showbreak=↪                             " show the symbol for wrapped lines
 set splitbelow                              " splitting a window will put the new window below the current one
 set splitright                              " splitting a window will put the new window right the current one
-set expandtab                               " hitting Tab in insert mode will produce umber in spaces tabs instead of tabs
 set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
 set guioptions-=T                           " turning of the tool bar
 set lines=999 columns=999                   " full screen when starting Gvim (it's a hack)
@@ -41,11 +40,8 @@ set ls=1                                    " always show status line
 set nomodeline                              " frequent security hole
 set nowarn                                  " do not warn, when shell command update the file you edit in Vim
 set shell=/bin/bash                         " always use sh when executing commands with :!
-set shiftwidth=2                            " how many columns text is indented with the indent operations (<< and >>)
-set softtabstop=2                           " how many columns
 set synmaxcol=200                           " better scrolling for long lines
 set spelllang=en_us                         " default language for spell checker
-set tabstop=2                               " how many columns a tab counts
 set title                                   " show title in console title
 let mapleader = ","                         " change the leader to be a comma vs. backslash if not given
 set scrolloff=4 " minimal number of screen lines to keep above and below the cursor
@@ -117,6 +113,14 @@ augroup line_return
         \     execute 'normal! g`"zvzz' |
         \ endif
 augroup END
+" }}}
+" Tabs, wraps, spacing {{{
+set tabstop=2      " how many columns a tab counts
+set shiftwidth=2   " how many columns text is indented with the indent operations (<< and >>)
+set softtabstop=2  " how many columns
+set expandtab      " hitting tab in insert mode will produce number in spaces instead of tabs
+set wrap           " when lines are longer the the width of the window they will wrapped
+set textwidth=100  " maximum of text that is being inserted
 " }}}
 " -------------------------------------------------------- }}}
 
