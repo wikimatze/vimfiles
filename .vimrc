@@ -133,6 +133,11 @@ set textwidth=100  " maximum of text that is being inserted
 let mapleader = "," " change the leader to be a comma vs. backslash if not given
 
 " }}}
+" Color scheme
+set background=dark
+colorscheme badwolf
+
+" }}}
 
 " -------------------------------------------------------- }}}
 
@@ -266,9 +271,6 @@ else
   set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
 endif
 " }}}
-
-" ## color schemes
-"colorscheme ir_black " [ir_black, railscasts, badwolf, vividchalk]
 
 " source mappings
 exe join(map(split(glob("~/.vim/mappings/*.vim"), "\n"), '"source " . v:val'), "\n")
