@@ -140,6 +140,13 @@ colorscheme badwolf
 " }}}
 
 " -------------------------------------------------------- }}}
+" Convenience mappings ----------------------------------- {{{
+" Get rid of help key
+noremap  <F1> :set invfullscreen<CR>
+inoremap <F1> <ESC>:set invfullscreen<CR>
+
+
+" -------------------------------------------------------- {{{
 
 
 " turn off normal arrow keys for navigation
