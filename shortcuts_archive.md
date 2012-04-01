@@ -3,7 +3,8 @@
 Here is a list of plugins I used in the past and removed them because I found a new method to use
 it.
 
-
+- [jQuery](https://github.com/vim-scripts/jQuery "jQuery"): pretty colors for the
+  jQuery syntax (*no doc*)
 - [NERDTree](https://github.com/scrooloose/nerdtree "NERDTree"): amazing file browser for GUI guys
   - **m** - choose which action to perform (add, move, copy, delete)
       - add / at the end to create a new directory
