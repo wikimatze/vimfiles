@@ -137,14 +137,14 @@ let mapleader = "," " change the leader to be a comma vs. backslash if not given
 set background=dark
 colorscheme badwolf
 
-" }}}
-
 " -------------------------------------------------------- }}}
 " Convenience mappings ----------------------------------- {{{
 " Get rid of help key
 noremap  <F1> :set invfullscreen<CR>
 inoremap <F1> <ESC>:set invfullscreen<CR>
 
+" kill the window
+nnoremap K :q<CR>
 
 " -------------------------------------------------------- {{{
 
@@ -236,18 +236,18 @@ augroup END
 " }}}
 
 " Vimscript ruby settings ---------------------- {{{
-augroup filetype_ruby
-  autocmd!
-  " press F1 to compile the current file with ruby
-  autocmd FileType ruby map <F1> :!ruby "%:p"<CR>
-  autocmd FileType ruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-augroup END
-" }}}
-
-" ## mappings for ruby (F1 compile current file with ruby, F2 compile current file with RSpec)
-autocmd FileType php map <F1> :!php "%:p"<CR>
-" ## converting markdown to HTML by pressing ,md
-nmap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <cr>
+" augroup filetype_ruby
+"   autocmd!
+"   " press F1 to compile the current file with ruby
+"   autocmd FileType ruby map <F1> :!ruby "%:p"<CR>
+"   autocmd FileType ruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+" augroup END
+" " }}}
+"
+" " ## mappings for ruby (F1 compile current file with ruby, F2 compile current file with RSpec)
+" autocmd FileType php map <F1> :!php "%:p"<CR>
+" " ## converting markdown to HTML by pressing ,md
+" nmap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <cr>
 
 
 " ## automatically source the vimrc file after saving it changes appear
