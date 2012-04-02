@@ -157,6 +157,9 @@ vnoremap Q gq
 " Keep the cursor in place while joining lines
 nnoremap J mzJ`z
 
+" turn on/off showing list chars
+noremap <leader>l :set list!<CR>
+
 
 
 " -------------------------------------------------------- {{{
@@ -273,10 +276,7 @@ augroup END
 nmap <c-q> :w<CR>
 imap <c-q> <Esc>:w<CR>a
 
-" lischar settings {{{
-" turn on with ml and off with ,u
-nmap <leader>l :set list<CR>
-nmap <leader>u :set list!<CR>
+" list char settings {{{
 set list " List mode: Show tabs as CTRL-I, show end of line with $.
 " setting symbols for tabs, trails (whitespaces)
 " extends shows when a file name goes out the view (you have to scroll like in NERDTree)
