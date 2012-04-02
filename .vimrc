@@ -170,6 +170,12 @@ noremap <Right> <nop>
 noremap <C-q> :w<CR>
 inoremap <C-q> <Esc>:w<CR>a
 
+" press controll and arrow keys to switch between splits
+noremap <C-Down>  <C-W>j
+noremap <C-Up>    <C-W>k
+noremap <C-Left>  <C-W>h
+noremap <C-Right> <C-W>l
+
 
 " -------------------------------------------------------- {{{
 
@@ -351,12 +357,6 @@ augroup commentgroup
   au FileType haml let b:comment_leader = '/ '
   au FileType tex let b:comment_leader = '% '
 augroup END
-
-" press Controll and arrow keys to switch between open windows
-noremap <C-Down>  <C-W>j
-noremap <C-Up>    <C-W>k
-noremap <C-Left>  <C-W>h
-noremap <C-Right> <C-W>l
 
 " detect javascript
 autocmd BufRead,BufNewFile *.js set filetype=javascript
