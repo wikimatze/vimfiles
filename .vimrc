@@ -150,6 +150,8 @@ nnoremap K :q<CR>
 noremap Q gUiw
 vnoremap Q gq
 
+" Keep the cursor in place while joining lines
+nnoremap J mzJ`z
 
 " -------------------------------------------------------- {{{
 
