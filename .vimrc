@@ -146,6 +146,11 @@ inoremap <F1> <ESC>:set invfullscreen<CR>
 " kill the window
 nnoremap K :q<CR>
 
+" Textmate style formatting
+noremap Q gUiw
+vnoremap Q gq
+
+
 " -------------------------------------------------------- {{{
 
 
@@ -255,9 +260,6 @@ augroup END
 " if has("autocmd")
 "   autocmd bufwritepost .vimrc source $MYVIMRC
 " endif
-
-" ## press SHIFT-q to reformat the selected text
-map Q gq
 
 " ## CTRL-q will save the file
 nmap <c-q> :w<CR>
