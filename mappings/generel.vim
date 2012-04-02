@@ -1,7 +1,3 @@
-" ## press jk to emulate the ESC button
-inoremap jk <ESC>
-cnoremap jk <c-c>
-inoremap jj <nop> " prevent the old mapping for escaping
 
 " prevent pressing ESC to go into escape mode
 inoremap <ESC> <nop>

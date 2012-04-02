@@ -176,12 +176,17 @@ noremap <C-Up>    <C-W>k
 noremap <C-Left>  <C-W>h
 noremap <C-Right> <C-W>l
 
+" display a list of files in the current directory in insert mode
+inoremap <C-F> <C-X><C-F>
+
+" emulate ESC with jk
+inoremap jk <ESC>
+cnoremap jk <C-C>
+inoremap jj <nop>
+
 
 " -------------------------------------------------------- {{{
 
-
-" display a list of files in the current directory in insert mode
-inoremap <C-F> <C-X><C-F>
 
 " turn on Omni completion
 filetype plugin on
