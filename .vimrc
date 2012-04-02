@@ -160,16 +160,19 @@ nnoremap J mzJ`z
 " turn on/off showing list chars
 noremap <leader>l :set list!<CR>
 
-
-
-" -------------------------------------------------------- {{{
-
-
 " turn off normal arrow keys for navigation
 noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
+
+" CTRL-q will save the file
+noremap <C-q> :w<CR>
+inoremap <C-q> <Esc>:w<CR>a
+
+
+" -------------------------------------------------------- {{{
+
 
 " display a list of files in the current directory in insert mode
 inoremap <C-F> <C-X><C-F>
@@ -271,10 +274,6 @@ augroup END
 " if has("autocmd")
 "   autocmd bufwritepost .vimrc source $MYVIMRC
 " endif
-
-" ## CTRL-q will save the file
-nmap <c-q> :w<CR>
-imap <c-q> <Esc>:w<CR>a
 
 " list char settings {{{
 set list " List mode: Show tabs as CTRL-I, show end of line with $.
