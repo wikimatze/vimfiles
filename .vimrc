@@ -95,6 +95,10 @@ if has("wildmenu")
 endif
 
 " }}}
+" Insert mode completion {{{
+set completeopt=longest,menuone,preview
+
+" }}}
 " backups {{{
 set backupext=~             " backup file extension
 set undodir=~/.vim/undo     "
@@ -152,6 +156,8 @@ vnoremap Q gq
 
 " Keep the cursor in place while joining lines
 nnoremap J mzJ`z
+
+
 
 " -------------------------------------------------------- {{{
 
