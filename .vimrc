@@ -10,7 +10,7 @@ filetype indent on " Enable file type-specific indenting
 filetype plugin on " Enable file type-specific plugins
 
 " }}}
-" General settings -------------------------------------------------------- {{{
+" General settings --------------------------------------------------------{{{
 
 set encoding=utf-8                          " the terminal encoding
 set modeline                                " don't look how many lines are the beginning and the end of the file
@@ -184,8 +184,21 @@ inoremap jk <ESC>
 cnoremap jk <C-C>
 inoremap jj <nop>
 
+" prevent pressing ESC to go into escape mode
+inoremap <ESC> <nop>
 
-" -------------------------------------------------------- {{{
+" Sourcing vimrc file with ,sv
+nnoremap <leader>sv :source $MYVIMRC<CR>
+
+" Quickediting
+nmap <leader>v :vsplit $MYVIMRC<CR> " press ,v will brings up vimrc for editing
+
+" comment in visual mode press ,c (for uncomment ,u)
+noremap <silent> ,c :<C-B>sil <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:noh<CR>
+noremap <silent> ,u :<C-B>sil <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:noh<CR>
+
+
+" -------------------------------------------------------- }}}
 
 
 " turn on Omni completion
