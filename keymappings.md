@@ -1,10 +1,3 @@
-# Shortcuts #
-
-This document provides an overview of the shortcuts I'm using in vim. They are based in the the
-German language and I don't want to change this - because this is so easier for me to add new
-commands and shortcuts. After a while I will try to translate them  into English.
-
-
 # Movement
 - **h** - left
 - **j** - below
@@ -260,4 +253,5 @@ commands and shortcuts. After a while I will try to translate them  into English
 - replace line ending through **\\\\:** `:%s/$/ \\\\/`
 - change matching before and after **=:** `:%s/\(.*\)=\(.*\)/\2=\1`
 - replace **a = b** to **b = a:** `:%s/\(.*\)=\(.*\)/\2=\1`
+
 
