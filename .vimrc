@@ -209,6 +209,13 @@ nnoremap <silent> <expr> 0 ScreenMovement("0")
 nnoremap <silent> <expr> ^ ScreenMovement("^")
 nnoremap <silent> <expr> $ ScreenMovement("$")
 
+" Insert date in the form yyyy-mm-dd
+nnoremap <F5> "=strftime("%F")<CR>P
+inoremap <F5> <C-R>=strftime("%F")<CR>
+
+" Spellchecker: press ,s to toogle between spellchecker
+nnoremap <silent> <leader>s :set spell!<CR>
+
 
 " -------------------------------------------------------- }}}
 
