@@ -142,10 +142,10 @@ set background=dark
 colorscheme badwolf
 
 " -------------------------------------------------------- }}}
-" Convenience mappings ----------------------------------- {{{
+" Convenience mappings -----------------------------------{{{
 " Get rid of help key
-noremap  <F1> :set invfullscreen<CR>
-inoremap <F1> <ESC>:set invfullscreen<CR>
+noremap  <F1> :set fullscreen<CR>
+inoremap <F1> <ESC>:set fullscreen<CR>
 
 " kill the window
 nnoremap K :q<CR>
