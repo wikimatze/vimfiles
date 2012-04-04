@@ -223,6 +223,12 @@ nnoremap <silent> <leader>s :set spell!<CR>
 nnoremap <leader>f f<space>
 nnoremap <leader>F F<space>
 
+" Folding Toggling with <space>
+nnoremap <space> za
+
+" Mark string in visual mode and press / to search for it
+vmap / y/<C-R>"<CR>
+
 
 " -------------------------------------------------------- }}}
 
