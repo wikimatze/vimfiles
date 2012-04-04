@@ -4,3 +4,4 @@ bundle/
 sessions/
 spell/
 undo/
+credentials.vim
