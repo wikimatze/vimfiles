@@ -347,8 +347,10 @@ let ruby_operators = 1    " create colors for ruby operators
 let ruby_space_errors = 1 " mark whitespace characters
 
 " }}}
-" ## vim-shell
-exe join(map(split(glob("~/.vim/plugin-settings/vim_shell.vim"), "\n"), '"source " . v:val'), "\n")
+" Vim-shell {{{
+
+let g:shell_verify_urls = 1 " handle special URLs with dot at the end
+" }}}
 " Yankring {{{
 
 let g:yankring_max_history = 1000 " save the last 1000 elements
