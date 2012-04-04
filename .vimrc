@@ -267,6 +267,12 @@ elseif has("unix")
 endif
 
 " }}}
+" Hammer {{{
+
+" press ,m and it will render markdown in a browser
+noremap <leader>m :Hammer<CR>
+
+" }}}
 " Index Search {{{
 
 let g:indexed_search_colors    = 1 " turn of colors for messages
