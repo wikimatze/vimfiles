@@ -310,14 +310,12 @@ elseif has("unix")
     set tags=tags
 endif
 " }}}
+" Notes {{{
 
-
-" ## NERDTree
-exe join(map(split(glob("~/.vim/plugin-settings/nerdtree.vim"), "\n"), '"source " . v:val'), "\n")
-
-" ## notes
-exe join(map(split(glob("~/.vim/plugin-settings/notes.vim"), "\n"), '"source " . v:val'), "\n")
-
+let g:notes_directory = '~/Dropbox/notes'            " path of main directory
+let g:notes_suffix = '.txt'                          " default file ending of note files
+autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h " path of the notes directory
+" }}}
 " ## session
 exe join(map(split(glob("~/.vim/plugin-settings/session.vim"), "\n"), '"source " . v:val'), "\n")
 
