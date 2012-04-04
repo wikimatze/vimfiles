@@ -374,6 +374,10 @@ vmap <leader>b" :Tabularize /"<CR>
 nmap <leader>bt :Tabularize /& \\ldots &<CR>
 vmap <leader>bt :Tabularize /& \\ldots &<CR>
 
+" }}}
+" Tocdown {{{
+
+nnoremap <F2> :TocdownToggle<CR>
 
 " }}}
 " Vim-ruby {{{
