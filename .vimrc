@@ -321,9 +321,10 @@ autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h " path of the notes directo
 let g:session_autosave = 'no' " disable automatic saving when quitting a session
 let g:session_autoload = 'no' " disable asking to load the previous session
 " }}}
+" Snipmate {{{
+let g:snippets_dir = '~/.vim/snippets' " setting of the snipmate directory
 
-" ## snipmate
-exe join(map(split(glob("~/.vim/plugin-settings/snipmate.vim"), "\n"), '"source " . v:val'), "\n")
+" }}}
 
 " ## syntastic
 exe join(map(split(glob("~/.vim/plugin-settings/syntastic.vim"), "\n"), '"source " . v:val'), "\n")
