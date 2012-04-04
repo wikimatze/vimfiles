@@ -341,10 +341,6 @@ let loaded_tex_syntax_checker = 0             " turn of lacheck of the syntastic
 let g:tagbar_compact = 1 " don't show the help in the tagbar
 
 " }}}
-
-" ## yankring
-exe join(map(split(glob("~/.vim/plugin-settings/yankring.vim"), "\n"), '"source " . v:val'), "\n")
-
 " ## vim-css-color
 exe join(map(split(glob("~/.vim/plugin-settings/vim_css_color.vim"), "\n"), '"source " . v:val'), "\n")
 
@@ -353,9 +349,13 @@ exe join(map(split(glob("~/.vim/plugin-settings/vim_ruby.vim"), "\n"), '"source 
 
 " ## vim-shell
 exe join(map(split(glob("~/.vim/plugin-settings/vim_shell.vim"), "\n"), '"source " . v:val'), "\n")
+" Yankring {{{
+
+let g:yankring_max_history = 1000 " save the last 1000 elements
+" }}}
 
 
-" ----------------------------------------------------------------{{{
+" ----------------------------------------------------------------}}}
 " ## fuzzyfinder
 map <leader>f :FufFile **/<CR>
 
