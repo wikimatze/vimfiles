@@ -272,6 +272,15 @@ endif
 let g:indexed_search_colors    = 1 " turn of colors for messages
 let g:indexed_search_shortmess = 1 " shorter messages
 " }}}
+" Gundo {{{
+
+let g:gundo_width = 45          " horizontal width
+let g:gundo_preview_height = 15 " vertical height
+let g:gundo_help = 1            " show the help in gundo window
+let g:gundo_close_on_revert = 0 " don't close gundo after a version is selected
+let g:gundo_right = 0           " display gundo on the left site
+" }}}
+
 
 exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), "\n")
 
