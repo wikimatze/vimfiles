@@ -235,6 +235,14 @@ noremap <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of eac
 noremap <leader>_ :%s/_//g<CR>                   " delete all _
 noremap <leader>rt :%s/\\t/  /g<CR>
 
+" Better copy/paste mappings - yeah, I need this old stuff from old editor times :)
+vnoremap <C-X> "+d
+vnoremap <C-C> "+y
+nnoremap <C-V> "+gPl
+vnoremap <C-V> :<C-U>call Paste("v")<CR>
+inoremap <C-V> <C-O>:call Paste("i")<CR>
+
+
 
 " -------------------------------------------------------- }}}
 
