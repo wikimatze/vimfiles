@@ -230,9 +230,6 @@ set ofu=syntaxcomplete#Complete
 
 " Plugins ----------------------------------------------------------------{{{
 
-" ## colorv
-exe join(map(split(glob("~/.vim/plugin-settings/colorv.vim"), "\n"), '"source " . v:val'), "\n")
-
 " ## command-t
 exe join(map(split(glob("~/.vim/plugin-settings/command_t.vim"), "\n"), '"source " . v:val'), "\n")
 
