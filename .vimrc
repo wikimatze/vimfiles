@@ -393,6 +393,10 @@ let g:shell_verify_urls = 1 " handle special URLs with dot at the end
 " Yankring {{{
 
 let g:yankring_max_history = 1000 " save the last 1000 elements
+
+noremap <leader>y :YRShow<CR>
+noremap <leader>x :YRClear<CR>
+
 " }}}
 
 
