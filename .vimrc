@@ -257,9 +257,19 @@ nnoremap <leader>gr :Gremove<CR>
 nnoremap <leader>gp :! git push<CR>
 
 " }}}
+" Gist
+let g:gist_detect_filetype = 1         " detecting file type for each gist
+let g:gist_open_browser_after_post = 1 " open the gist after each post
+if has("mac")
+  let g:gist_clip_command = 'pbcopy'
+elseif has("unix")
+  let g:gist_clip_command = 'xclip -selection clipboard'
+endif
 
-" ## gist.vim
-exe join(map(split(glob("~/.vim/plugin-settings/gist.vim"), "\n"), '"source " . v:val'), "\n")
+
+exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), "\n")
+
+
 
 " ## IndexSearch
 exe join(map(split(glob("~/.vim/plugin-settings/index_search.vim"), "\n"), '"source " . v:val'), "\n")
