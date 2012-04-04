@@ -335,13 +335,12 @@ let tex_no_error=1                            " underscores are not displayed as
 set statusline+=%#warningmsg#                 " show warning messages
 set statusline+=%{SyntasticStatuslineFlag()}  " show message in quick fix
 let loaded_tex_syntax_checker = 0             " turn of lacheck of the syntastic plugin
+" }}}
+" Tagbar {{{
+
+let g:tagbar_compact = 1 " don't show the help in the tagbar
 
 " }}}
-" ## syntastic
-exe join(map(split(glob("~/.vim/plugin-settings/syntastic.vim"), "\n"), '"source " . v:val'), "\n")
-
-" ## tagbar
-exe join(map(split(glob("~/.vim/plugin-settings/tagbar.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## yankring
 exe join(map(split(glob("~/.vim/plugin-settings/yankring.vim"), "\n"), '"source " . v:val'), "\n")
