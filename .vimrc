@@ -227,7 +227,13 @@ nnoremap <leader>F F<space>
 nnoremap <space> za
 
 " Mark string in visual mode and press / to search for it
-vmap / y/<C-R>"<CR>
+vnoremap / y/<C-R>"<CR>
+
+" Char replacement (good for creating vocabularly)
+noremap <leader>bldots :%s/=/\& \\ldots \&/g<CR> " replace = through & \ldots &
+noremap <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of each line
+noremap <leader>_ :%s/_//g<CR>                   " delete all _
+noremap <leader>rt :%s/\\t/  /g<CR>
 
 
 " -------------------------------------------------------- }}}
