@@ -194,7 +194,7 @@ nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>v :vsplit $MYVIMRC<CR>
 nnoremap <leader>br :vsplit ~/.vim/README.md<CR>
 nnoremap <leader>bs :vsplit ~/.vim/README.md<CR>
-
+"
 
 " comment in visual mode press ,c (for uncomment ,u)
 noremap <silent> ,c :<C-B>sil <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:noh<CR>
@@ -244,9 +244,19 @@ let g:CommandTAcceptSelectionTabMap = '<C-t>'       " CTRL-t will open the file 
 set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " not matching files
 
 " }}}
+" Fugitive {{{
+nnoremap <leader>gd :Gdiff<CR>
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gw :Gwrite<CR>
+nnoremap <leader>ga :Gadd<CR>
+nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gco :Gcheckout<CR>
+nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gm :Gmove<CR>
+nnoremap <leader>gr :Gremove<CR>
+nnoremap <leader>gp :! git push<CR>
 
-" Fugitive
-exe join(map(split(glob("~/.vim/plugin-settings/fugitive.vim"), "\n"), '"source " . v:val'), "\n")
+" }}}
 
 " ## gist.vim
 exe join(map(split(glob("~/.vim/plugin-settings/gist.vim"), "\n"), '"source " . v:val'), "\n")
