@@ -219,6 +219,10 @@ inoremap <F5> <C-R>=strftime("%F")<CR>
 " Spellchecker: press ,s to toogle between spellchecker
 nnoremap <silent> <leader>s :set spell!<CR>
 
+" whitespace jumping
+nnoremap <leader>f f<space>
+nnoremap <leader>F F<space>
+
 
 " -------------------------------------------------------- }}}
 
@@ -401,8 +405,6 @@ noremap <leader>x :YRClear<CR>
 
 
 " ----------------------------------------------------------------}}}
-" ## fuzzyfinder
-map <leader>f :FufFile **/<CR>
 
 " ## settings for plugins (end)
 
