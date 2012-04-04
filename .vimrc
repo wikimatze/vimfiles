@@ -316,8 +316,11 @@ let g:notes_directory = '~/Dropbox/notes'            " path of main directory
 let g:notes_suffix = '.txt'                          " default file ending of note files
 autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h " path of the notes directory
 " }}}
-" ## session
-exe join(map(split(glob("~/.vim/plugin-settings/session.vim"), "\n"), '"source " . v:val'), "\n")
+" Session {{{
+
+let g:session_autosave = 'no' " disable automatic saving when quitting a session
+let g:session_autoload = 'no' " disable asking to load the previous session
+" }}}
 
 " ## snipmate
 exe join(map(split(glob("~/.vim/plugin-settings/snipmate.vim"), "\n"), '"source " . v:val'), "\n")
