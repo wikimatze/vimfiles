@@ -191,7 +191,10 @@ inoremap <ESC> <nop>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 
 " Quickediting
-nmap <leader>v :vsplit $MYVIMRC<CR> " press ,v will brings up vimrc for editing
+nnoremap <leader>v :vsplit $MYVIMRC<CR>
+nnoremap <leader>br :vsplit ~/.vim/README.md<CR>
+nnoremap <leader>bs :vsplit ~/.vim/README.md<CR>
+
 
 " comment in visual mode press ,c (for uncomment ,u)
 noremap <silent> ,c :<C-B>sil <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:noh<CR>
@@ -225,13 +228,7 @@ filetype plugin on
 set ofu=syntaxcomplete#Complete
 
 
-" ## settings for plugins (start)
-
-" # autoclose
-exe join(map(split(glob("~/.vim/plugin-settings/autoclose.vim"), "\n"), '"source " . v:val'), "\n")
-
-" ## autocorrect
-source $HOME/.vim/bundle/vim-autocorrect/autocorrect.vim " sourcing the file
+" Plugins ----------------------------------------------------------------{{{
 
 " ## colorv
 exe join(map(split(glob("~/.vim/plugin-settings/colorv.vim"), "\n"), '"source " . v:val'), "\n")
@@ -284,6 +281,8 @@ exe join(map(split(glob("~/.vim/plugin-settings/vim_ruby.vim"), "\n"), '"source 
 " ## vim-shell
 exe join(map(split(glob("~/.vim/plugin-settings/vim_shell.vim"), "\n"), '"source " . v:val'), "\n")
 
+
+" ----------------------------------------------------------------{{{
 " ## fuzzyfinder
 map <leader>f :FufFile **/<CR>
 

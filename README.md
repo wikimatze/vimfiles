@@ -18,9 +18,6 @@ eager to learn something new.
 [janus]: https://github.com/carlhuda/janus "janus"
 [Vim]: http://www.vim.org/ "Vim"
 
-- [autocorrect](https://github.com/panozzaj/vim-autocorrect "autocorrect"): auto correct English
-  spelling mistakes, when typing (*no doc*)
-  - don't forget to put *:source /path/to/the/autocorrect.vim* in your *.vimrc*
 - [ack.vim](https://github.com/mileszs/ack.vim "ack.vim"): you can perform ack commands in Vim
     - **:Ack {pattern} [{directory}]** - the basic command to search after words in your project
     - shortcuts for navigation:
