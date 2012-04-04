@@ -341,12 +341,12 @@ let loaded_tex_syntax_checker = 0             " turn of lacheck of the syntastic
 let g:tagbar_compact = 1 " don't show the help in the tagbar
 
 " }}}
-" ## vim-css-color
-exe join(map(split(glob("~/.vim/plugin-settings/vim_css_color.vim"), "\n"), '"source " . v:val'), "\n")
+" Vim-ruby {{{
 
-" ## vim-ruby
-exe join(map(split(glob("~/.vim/plugin-settings/vim_ruby.vim"), "\n"), '"source " . v:val'), "\n")
+let ruby_operators = 1    " create colors for ruby operators
+let ruby_space_errors = 1 " mark whitespace characters
 
+" }}}
 " ## vim-shell
 exe join(map(split(glob("~/.vim/plugin-settings/vim_shell.vim"), "\n"), '"source " . v:val'), "\n")
 " Yankring {{{
