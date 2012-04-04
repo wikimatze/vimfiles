@@ -325,7 +325,18 @@ let g:session_autoload = 'no' " disable asking to load the previous session
 let g:snippets_dir = '~/.vim/snippets' " setting of the snipmate directory
 
 " }}}
+" Syntastic {{{
+let g:syntastic_enable_signs=1                " setting signs for errors (arrows)
+let g:syntastic_auto_loc_list=1               " open/close toc of errors
+let g:syntastic_auto_jump=0                   " don't jump to the first error
+let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['haml', 'javascript', 'ruby', 'css', 'sass'], 'passive_filetypes': ['php', 'html'] }
+let g:syntastic_disabled_filetypes = ['rb']   " disable for this file type
+let tex_no_error=1                            " underscores are not displayed as syntax errors
+set statusline+=%#warningmsg#                 " show warning messages
+set statusline+=%{SyntasticStatuslineFlag()}  " show message in quick fix
+let loaded_tex_syntax_checker = 0             " turn of lacheck of the syntastic plugin
 
+" }}}
 " ## syntastic
 exe join(map(split(glob("~/.vim/plugin-settings/syntastic.vim"), "\n"), '"source " . v:val'), "\n")
 
@@ -461,6 +472,17 @@ augroup END
 autocmd BufRead,BufNewFile *.js set filetype=javascript
 " detect json
 autocmd BufNewFile,BufRead *.json set filetype=json
+
+" setting file types for all different files => makes it easier for snipmate
+autocmd! BufRead,BufNewFile *.haml set ft=haml
+autocmd! BufRead,BufNewFile *.js set ft=js
+autocmd! BufRead,BufNewFile *.mkd,*.markdown,*.md set ft=markdown
+autocmd! BufRead,BufNewFile *.rb set ft=ruby
+autocmd! BufRead,BufNewFile *.sass,*.scss set ft=scss
+autocmd! BufRead,BufNewFile *.tex,*.latex set ft=tex
+autocmd! BufRead,BufNewFile *.textile set ft=textile
+autocmd! BufRead,BufNewFile *.yml set ft=yaml
+
 
 " don't use the autoclose plugin for vim files
 au FileType vim let b:loaded_delimitMate = 0
