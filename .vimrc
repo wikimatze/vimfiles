@@ -521,6 +521,13 @@ augroup filetype_javascript
   au FileType javascript setlocal ts=4 sts=4 sw=4 expandtab textwidth=500
 augroup END
 " }}}
+" Html {{{
+
+augroup filetype_html
+  au!
+  au FileType html       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+augroup END
+" }}}
 
 " ----------------------------------------------------------------}}}
 
@@ -593,7 +600,6 @@ if has("autocmd")
   filetype plugin indent on
   augroup filesintendationgroup
       autocmd FileType haml       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-      autocmd FileType html       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
       autocmd FileType markdown   setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
       autocmd FileType make       setlocal ts=4 sts=4 sw=4 expandtab textwidth=500
       autocmd FileType sass       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
