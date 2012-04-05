@@ -446,7 +446,7 @@ let loaded_tex_syntax_checker = 0             " turn of lacheck of the syntastic
 
 let g:tagbar_compact = 1 " don't show the help in the tagbar
 
-nnoremap <silent> <F7> :TagbarToggle<CR>
+nnoremap <silent> <F4> :TagbarToggle<CR>
 
 " }}}
 " Tabularize {{{
@@ -506,6 +506,7 @@ augroup filetype_vim
 augroup END
 
 " }}}
+
 " ----------------------------------------------------------------}}}
 
 
