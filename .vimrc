@@ -196,10 +196,25 @@ set textwidth=100  " maximum of text that is being inserted
 let mapleader = "," " change the leader to be a comma vs. backslash if not given
 
 " }}}
-" Color scheme
+" Color scheme {{{
+
 set background=dark
 colorscheme badwolf
+" }}}
+" Statusline {{{
+set statusline=%t " name of the current file
+set statusline+=\ -\ " separator
+set statusline+=Line:" label
+set statusline+=\ %4l " current line is always 4 pixels long
+set statusline+=/ " separator
+set statusline+=%L " total lines of the file
+set statusline+=\ -\ " separator
+set statusline+=FileType: " label
+set statusline+=%y " Filetype of the file
+set statusline+=\ CWD: " label
+set statusline+=\ %r%{CurDir()} " pwd of vim
 
+" }}}
 " -------------------------------------------------------- }}}
 " Convenience mappings -----------------------------------{{{
 " Get rid of help key
@@ -309,7 +324,6 @@ inoremap <C-V> <C-O>:call Paste("i")<CR>
 " turn on Omni completion
 filetype plugin on
 set ofu=syntaxcomplete#Complete
-
 
 " Plugins ----------------------------------------------------------------{{{
 
@@ -481,19 +495,20 @@ noremap <leader>y :YRShow<CR>
 noremap <leader>x :YRClear<CR>
 
 " }}}
-
-
 " ----------------------------------------------------------------}}}
+" Filetype-specify -----------------------------------------------{{{
 
-" ## settings for plugins (end)
+" Vimscript {{{
 
-
-" Vimscript file settings ---------------------- {{{
 augroup filetype_vim
   au!
   au FileType vim setlocal foldmethod=marker
 augroup END
+
 " }}}
+" ----------------------------------------------------------------}}}
+
+
 
 " Vimscript ruby settings ---------------------- {{{
 " augroup filetype_ruby
