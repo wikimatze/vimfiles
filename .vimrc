@@ -509,10 +509,19 @@ augroup END
 
 augroup filetype_ruby
   au!
-  au FileType ruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+  au FileType ruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=50
   " Press F11 to compile the actual file
   au FileType ruby map <F11> :!ruby "%:p"<CR>
+augroup END
 " }}}
+" Javascript {{{
+
+augroup filetype_javascript
+  au!
+  au FileType javascript setlocal ts=4 sts=4 sw=4 expandtab textwidth=500
+augroup END
+" }}}
+
 " ----------------------------------------------------------------}}}
 
 "
@@ -585,7 +594,6 @@ if has("autocmd")
   augroup filesintendationgroup
       autocmd FileType haml       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
       autocmd FileType html       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-      autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab textwidth=500
       autocmd FileType markdown   setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
       autocmd FileType make       setlocal ts=4 sts=4 sw=4 expandtab textwidth=500
       autocmd FileType sass       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
