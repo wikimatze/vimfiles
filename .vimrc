@@ -504,21 +504,17 @@ augroup filetype_vim
   au!
   au FileType vim setlocal foldmethod=marker
 augroup END
-
 " }}}
+" Ruby {{{
 
+augroup filetype_ruby
+  au!
+  au FileType ruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+  " Press F11 to compile the actual file
+  au FileType ruby map <F11> :!ruby "%:p"<CR>
+" }}}
 " ----------------------------------------------------------------}}}
 
-
-
-" Vimscript ruby settings ---------------------- {{{
-" augroup filetype_ruby
-"   autocmd!
-"   " press F1 to compile the current file with ruby
-"   autocmd FileType ruby map <F1> :!ruby "%:p"<CR>
-"   autocmd FileType ruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-" augroup END
-" " }}}
 "
 " " ## mappings for ruby (F1 compile current file with ruby, F2 compile current file with RSpec)
 " autocmd FileType php map <F1> :!php "%:p"<CR>
