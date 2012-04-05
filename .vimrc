@@ -341,6 +341,12 @@ let g:CommandTAcceptSelectionTabMap = '<C-t>'       " CTRL-t will open the file 
 set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " not matching files
 
 " }}}
+" Delimate {{{
+
+" don't use the autoclose plugin for vim files
+au FileType vim let b:loaded_delimitMate = 0
+
+" }}}
 " Fugitive {{{
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gs :Gstatus<CR>
@@ -389,7 +395,7 @@ nnoremap <F3> :GundoToggle<CR>
 " LaTeX-Suite {{{
 
 set grepprg=grep\ -nH\ $* " grep works with LaTeX-Suite
-" ## auto load dvi after each save in Vim (it runs the latex suite)
+" auto load dvi after each save in Vim (it runs the latex suite)
 augroup latexgroup
   au!
   au BufWritePost *.tex silent call Tex_CompileLatex()
@@ -654,9 +660,6 @@ if has("gui_macvim")
   let macvim_hig_shift_movement = 1
 endif
 
-
-" don't use the autoclose plugin for vim files
-au FileType vim let b:loaded_delimitMate = 0
 
 
 exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), "\n")
