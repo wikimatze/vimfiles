@@ -575,10 +575,22 @@ augroup filetype_yaml
   au FileType yaml let b:comment_leader = '# '
 augroup END
 " }}}
-
 " ----------------------------------------------------------------}}}
 
+" Filetype detecion ----------------------------------------------{{{
+
+au! BufRead,BufNewFile *.js set filetype=javascript
+au! BufRead,BufNewFile *.json set filetype=json
+au! BufRead,BufNewFile *.haml set ft=haml
+au! BufRead,BufNewFile *.mkd,*.markdown,*.md set ft=markdown
+au! BufRead,BufNewFile *.rb set ft=ruby
+au! BufRead,BufNewFile *.sass,*.scss set ft=scss
+au! BufRead,BufNewFile *.tex,*.latex set ft=tex
+au! BufRead,BufNewFile *.textile set ft=textile
+au! BufRead,BufNewFile *.yml set ft=yaml
+" ----------------------------------------------------------------}}}
 "
+
 " " ## mappings for ruby (F1 compile current file with ruby, F2 compile current file with RSpec)
 " autocmd FileType php map <F1> :!php "%:p"<CR>
 " " ## converting markdown to HTML by pressing ,md
@@ -641,20 +653,6 @@ endif
 if has("gui_macvim")
   let macvim_hig_shift_movement = 1
 endif
-
-" detect javascript
-autocmd BufRead,BufNewFile *.js set filetype=javascript
-" detect json
-autocmd BufNewFile,BufRead *.json set filetype=json
-
-" setting file types for all different files => makes it easier for snipmate
-autocmd! BufRead,BufNewFile *.haml set ft=haml
-autocmd! BufRead,BufNewFile *.mkd,*.markdown,*.md set ft=markdown
-autocmd! BufRead,BufNewFile *.rb set ft=ruby
-autocmd! BufRead,BufNewFile *.sass,*.scss set ft=scss
-autocmd! BufRead,BufNewFile *.tex,*.latex set ft=tex
-autocmd! BufRead,BufNewFile *.textile set ft=textile
-autocmd! BufRead,BufNewFile *.yml set ft=yaml
 
 
 " don't use the autoclose plugin for vim files
