@@ -542,6 +542,20 @@ augroup filetype_txt
   au FileType txt setlocal ts=2 sts=2 sw=2 expandtab textwidth=110
 augroup END
 " }}}
+" Tex {{{
+
+augroup filetype_tex
+  au!
+  autocmd FileType tex setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
+augroup END
+" }}}
+" Yaml {{{
+
+augroup filetype_yaml
+  au!
+  au FileType yaml setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+augroup END
+" }}}
 
 " ----------------------------------------------------------------}}}
 
@@ -614,10 +628,7 @@ if has("autocmd")
   filetype plugin indent on
   augroup filesintendationgroup
       autocmd FileType markdown   setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
-      autocmd FileType make       setlocal ts=4 sts=4 sw=4 expandtab textwidth=500
       autocmd FileType sass       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-      autocmd FileType tex        setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
-      autocmd FileType yaml       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
   augroup END
 endif
 
