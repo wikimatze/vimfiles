@@ -268,7 +268,6 @@ nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>v :vsplit $MYVIMRC<CR>
 nnoremap <leader>br :vsplit ~/.vim/README.md<CR>
 nnoremap <leader>bs :vsplit ~/.vim/README.md<CR>
-"
 
 " comment in visual mode press ,c (for uncomment ,u)
 noremap <silent> ,c :<C-B>sil <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:noh<CR>
@@ -285,6 +284,15 @@ nnoremap <silent> <expr> k ScreenMovement("k")
 nnoremap <silent> <expr> 0 ScreenMovement("0")
 nnoremap <silent> <expr> ^ ScreenMovement("^")
 nnoremap <silent> <expr> $ ScreenMovement("$")
+
+" needed by for files with wrapped-lines
+function! ScreenMovement(movement)
+  if &wrap
+    return "g" . a:movement
+  else
+    return a:movement
+  endif
+endfunction
 
 " Insert date in the form yyyy-mm-dd
 nnoremap <F5> "=strftime("%F")<CR>P
@@ -316,6 +324,18 @@ nnoremap <C-V> "+gPl
 vnoremap <C-V> :<C-U>call Paste("v")<CR>
 inoremap <C-V> <C-O>:call Paste("i")<CR>
 
+" Paste function in Vim (http://ubuntuforums.org/showthread.php?t=74905&page=2)
+function! Paste(mode)
+  if a:mode == "v"
+    normal gv
+    normal "+P
+    normal l
+  elseif a:mode == "i"
+    set virtualedit=all
+    normal `^"+gP
+    let &virtualedit = ""
+  endif
+endfunction
 
 
 " -------------------------------------------------------- }}}
@@ -643,10 +663,6 @@ else
   set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
 endif
 " }}}
-
-" source mappings
-exe join(map(split(glob("~/.vim/mappings/*.vim"), "\n"), '"source " . v:val'), "\n")
-exe join(map(split(glob("~/.vim/functions/*.vim"), "\n"), '"source " . v:val'), "\n")
 
 " ## function to strip trailing whitespace
 function! <SID>StripTrailingWhitespaces()
