@@ -535,6 +535,13 @@ augroup filetype_html
   au FileType html setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
 augroup END
 " }}}
+" Mardown {{{
+
+augroup filetype_markdown
+  au!
+  au FileType markdown setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
+augroup END
+" }}}
 " Text {{{
 
 augroup filetype_txt
@@ -627,7 +634,6 @@ endif
 if has("autocmd")
   filetype plugin indent on
   augroup filesintendationgroup
-      autocmd FileType markdown   setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
       autocmd FileType sass       setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
   augroup END
 endif
