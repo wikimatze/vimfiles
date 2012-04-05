@@ -595,10 +595,32 @@ au! BufRead,BufNewFile *.tex,*.latex set ft=tex
 au! BufRead,BufNewFile *.textile set ft=textile
 au! BufRead,BufNewFile *.yml set ft=yaml
 " ----------------------------------------------------------------}}}
-"
+" Mac-Settings -------------------------------{{{
+" Font {{{
 
-" " ## mappings for ruby (F1 compile current file with ruby, F2 compile current file with RSpec)
-" autocmd FileType php map <F1> :!php "%:p"<CR>
+if has('mac')
+  " pretty nice font, if working under Mac
+  set gfn=Menlo:h14 " love this font
+  " 2. Change the key equivalent to cycle through tabs to CMD-Left/Right: >
+endif
+
+" }}}
+" Cycle between different open MacVim windows {{{
+
+if has('mac')
+ " press Apple-< key to cycle
+  noremap <D-lt> :maca _cycleWindows:<CR>
+
+endif
+
+" }}}
+" Nabble marks with TextMate style {{{
+if has("gui_macvim")
+  let macvim_hig_shift_movement = 1
+endif
+" }}}
+" -------------------------------------------- }}}
+
 " " ## converting markdown to HTML by pressing ,md
 " nmap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <cr>
 
@@ -642,24 +664,11 @@ endfunction
 " when file is saved, call the function to remove trailing whitespace
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
-" ## distinguish between different operation systems and change the text-size
-if has('mac')
-  " pretty nice font, if working under Mac
-  set gfn=Menlo:h14
-  " 2. Change the key equivalent to cycle through tabs to CMD-Left/Right: >
-  nmap <D-lt> :maca _cycleWindows:<CR>
-elseif has('unix')
+if has('unix')
   " for the ack.vim plugin
   let g:ackprg="ack-grep -H --nocolor --nogroup --column"
   let g:HAMMER_SILENCE_WARNINGS = 1
 "   let g:Hammerquiet = 1
 endif
-
-" ## CTRL-SHIFT+arrow nables the mark method for like TextMate
-if has("gui_macvim")
-  let macvim_hig_shift_movement = 1
-endif
-
-
 
 exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), "\n")
