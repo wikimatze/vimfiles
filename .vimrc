@@ -503,6 +503,7 @@ noremap <leader>x :YRClear<CR>
 augroup filetype_vim
   au!
   au FileType vim setlocal foldmethod=marker
+  au FileType vim let b:comment_leader = '" '
 augroup END
 " }}}
 " Ruby {{{
@@ -512,6 +513,7 @@ augroup filetype_ruby
   au FileType ruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=50
   " Press F11 to compile the actual file
   au FileType ruby map <F11> :!ruby "%:p"<CR>
+  au FileType ruby let b:comment_leader = '# '
 augroup END
 " }}}
 " Javascript {{{
@@ -519,6 +521,7 @@ augroup END
 augroup filetype_javascript
   au!
   au FileType javascript setlocal ts=4 sts=4 sw=4 expandtab textwidth=500
+  au FileType javascript let b:comment_leader = '/ '
 augroup END
 " }}}
 " Haml {{{
@@ -526,6 +529,7 @@ augroup END
 augroup filetype_haml
   au!
   au FileType haml setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+  au FileType haml let b:comment_leader = '// '
 augroup END
 " }}}
 " Html {{{
@@ -546,6 +550,7 @@ augroup END
 augroup filetype_sass
   au!
   au FileType sass setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+  au FileType sass let b:comment_leader = '// '
 augroup END
 " Text {{{
 
@@ -559,6 +564,7 @@ augroup END
 augroup filetype_tex
   au!
   autocmd FileType tex setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
+  au FileType tex let b:comment_leader = '% '
 augroup END
 " }}}
 " Yaml {{{
@@ -566,6 +572,7 @@ augroup END
 augroup filetype_yaml
   au!
   au FileType yaml setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+  au FileType yaml let b:comment_leader = '# '
 augroup END
 " }}}
 
@@ -635,23 +642,6 @@ if has("gui_macvim")
   let macvim_hig_shift_movement = 1
 endif
 
-" ## custom setting for each file type
-if has("autocmd")
-  filetype plugin indent on
-  augroup filesintendationgroup
-  augroup END
-endif
-
-" ## comment in visual mode press ,c (for uncomment ,u)
-augroup commentgroup
-  au FileType haskell,vhdl,ada let b:comment_leader = '-- '
-  au FileType vim let b:comment_leader = '" '
-  au FileType c,cpp,java,scala,sass,scss let b:comment_leader = '// '
-  au FileType apache,sh,make,rb,ruby,php,yaml let b:comment_leader = '# '
-  au FileType haml let b:comment_leader = '/ '
-  au FileType tex let b:comment_leader = '% '
-augroup END
-
 " detect javascript
 autocmd BufRead,BufNewFile *.js set filetype=javascript
 " detect json
@@ -659,7 +649,6 @@ autocmd BufNewFile,BufRead *.json set filetype=json
 
 " setting file types for all different files => makes it easier for snipmate
 autocmd! BufRead,BufNewFile *.haml set ft=haml
-autocmd! BufRead,BufNewFile *.js set ft=js
 autocmd! BufRead,BufNewFile *.mkd,*.markdown,*.md set ft=markdown
 autocmd! BufRead,BufNewFile *.rb set ft=ruby
 autocmd! BufRead,BufNewFile *.sass,*.scss set ft=scss
