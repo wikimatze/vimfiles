@@ -224,6 +224,13 @@ set list " enable list mode - symbols for tabs, trails, ...
 set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮,trail:·
 
 " }}}
+" Omnicomplete {{{
+
+" turn on Omni completion
+filetype plugin on
+set ofu=syntaxcomplete#Complete
+
+" }}}
 " -------------------------------------------------------- }}}
 " Convenience mappings -----------------------------------{{{
 " Get rid of help key
@@ -348,10 +355,6 @@ endfunction
 
 " -------------------------------------------------------- }}}
 
-
-" turn on Omni completion
-filetype plugin on
-set ofu=syntaxcomplete#Complete
 
 " Plugins ----------------------------------------------------------------{{{
 
@@ -658,8 +661,6 @@ endif
 
 " ------------------------------------------------}}}
 
-
-
 " " ## converting markdown to HTML by pressing ,md
 " nmap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <cr>
 
@@ -683,7 +684,6 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 
-" when file is saved, call the function to remove trailing whitespace
-autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+" when file is saved, call the function to remove trailing whitespace autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), "\n")
