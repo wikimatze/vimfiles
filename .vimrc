@@ -607,13 +607,13 @@ augroup END
 
 au! BufRead,BufNewFile *.js set filetype=javascript
 au! BufRead,BufNewFile *.json set filetype=json
-au! BufRead,BufNewFile *.haml set ft=haml
-au! BufRead,BufNewFile *.mkd,*.markdown,*.md set ft=markdown
-au! BufRead,BufNewFile *.rb set ft=ruby
-au! BufRead,BufNewFile *.sass,*.scss set ft=scss
-au! BufRead,BufNewFile *.tex,*.latex set ft=tex
-au! BufRead,BufNewFile *.textile set ft=textile
-au! BufRead,BufNewFile *.yml set ft=yaml
+au! BufRead,BufNewFile *.haml set filetype=haml
+au! BufRead,BufNewFile *.mkd,*.markdown,*.md set filetype=markdown
+au! BufRead,BufNewFile *.rb set filetype=ruby
+au! BufRead,BufNewFile *.sass,*.scss set filetype=scss
+au! BufRead,BufNewFile *.tex,*.latex set filetype=tex
+au! BufRead,BufNewFile *.textile set filetype=textile
+au! BufRead,BufNewFile *.yml set filetype=yaml
 " ----------------------------------------------------------------}}}
 " Mac-Settings -------------------------------{{{
 " Font {{{
