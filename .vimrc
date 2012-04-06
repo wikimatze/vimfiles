@@ -641,6 +641,16 @@ endif
 " }}}
 " -------------------------------------------- }}}
 
+" Unix-Settings ---------------------------------{{{
+
+if has('unix')
+  " for the ack.vim plugin
+  let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+endif
+
+" ------------------------------------------------}}}
+
+
 " " ## converting markdown to HTML by pressing ,md
 " nmap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <cr>
 
@@ -679,12 +689,5 @@ endfunction
 
 " when file is saved, call the function to remove trailing whitespace
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
-
-if has('unix')
-  " for the ack.vim plugin
-  let g:ackprg="ack-grep -H --nocolor --nogroup --column"
-  let g:HAMMER_SILENCE_WARNINGS = 1
-"   let g:Hammerquiet = 1
-endif
 
 exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), "\n")
