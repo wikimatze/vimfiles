@@ -6,7 +6,7 @@ filetype off     " required!
 set runtimepath+=~/.vim/bundle/vundle/ " add vundle to runtime path
 call vundle#rc()
 
-let g:vundle_default_git_proto = 'git' " `git` instead default `https` when building absolute repo URIs
+let g:vundle_default_git_proto = 'git' " use git protocol instead of https when building absolute repo URIs
 
 " original repos on github
 Bundle 'Raimondi/delimitMate'
@@ -115,7 +115,6 @@ au FocusLost * :silent! wall
 " Resize splits when the window is resized
 au VimResized * :wincmd =
 
-
 " Cursorline {{{
 " Only show cursorline in the current window and in normal mode.
 
@@ -129,8 +128,8 @@ augroup END
 
 " }}}
 " Trailing whitespace {{{
-" only shown when not in insert mode
 
+" only shown when not in insert mode
 augroup trailing
     au!
     au InsertEnter * :set listchars-=trail:⌴
@@ -139,13 +138,12 @@ augroup END
 
 " }}}
 " Wildmenu completion {{{
+
 if has("wildmenu")
     set wildmenu " enable command-line completion when pressing :e in a nice window
     set wildmode=longest,list
         " longest: match till the common longest string
         " list: display matches in a list instead of tab separated list of up to four parts
-        " the files on wildignore will not be displayed
-
     set wildignore+=.git,.hg,.svn                 " version control
     set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png " images
     set wildignore+=*.aux,*.out,*.toc             " LaTeX intermediate files
@@ -155,15 +153,16 @@ endif
 
 " }}}
 " Insert mode completion {{{
+
 set completeopt=longest,menuone,preview
 
 " }}}
 " backups {{{
+
 set backupext=~             " backup file extension
-set undodir=~/.vim/undo     "
+set undodir=~/.vim/undo     " directory to save undo files
 set backupdir=~/.vim/backup " backups are written to ~/.backup/ if possible.
 set backupcopy=yes          " keep attributes of the original file
-
 set backup                  " save files after close
 set writebackup             " make a backup of the original file when writing
 set noswapfile              " don't save swap files
@@ -200,8 +199,10 @@ let mapleader = "," " change the leader to be a comma vs. backslash if not given
 
 set background=dark
 colorscheme badwolf
+
 " }}}
 " Statusline {{{
+
 set statusline=%t " name of the current file
 set statusline+=\ -\ " separator
 set statusline+=Line:" label
@@ -213,6 +214,14 @@ set statusline+=FileType: " label
 set statusline+=%y " Filetype of the file
 set statusline+=\ CWD: " label
 set statusline+=\ %r%{CurDir()} " pwd of vim
+
+" }}}
+" List char {{{
+
+set list " enable list mode - symbols for tabs, trails, ...
+" extends shows when a file name goes out the view (you have to scroll like in NERDTree)
+" trails - whitespaces
+set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮,trail:·
 
 " }}}
 " -------------------------------------------------------- }}}
@@ -336,7 +345,6 @@ function! Paste(mode)
     let &virtualedit = ""
   endif
 endfunction
-
 
 " -------------------------------------------------------- }}}
 
@@ -651,6 +659,7 @@ endif
 " ------------------------------------------------}}}
 
 
+
 " " ## converting markdown to HTML by pressing ,md
 " nmap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <cr>
 
@@ -660,19 +669,6 @@ endif
 " if has("autocmd")
 "   autocmd bufwritepost .vimrc source $MYVIMRC
 " endif
-
-" list char settings {{{
-set list " List mode: Show tabs as CTRL-I, show end of line with $.
-" setting symbols for tabs, trails (whitespaces)
-" extends shows when a file name goes out the view (you have to scroll like in NERDTree)
-if has('mac')
-"   set listchars=tab:»\ ,extends:¤,trail:·
-    set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
-else
-"   set listchars=eol:$,tab:\|\|,extends:>,trail:~
-  set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
-endif
-" }}}
 
 " ## function to strip trailing whitespace
 function! <SID>StripTrailingWhitespaces()
