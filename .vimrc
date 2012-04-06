@@ -534,14 +534,15 @@ noremap <leader>x :YRClear<CR>
 " }}}
 " ----------------------------------------------------------------}}}
 " Filetype-specify -----------------------------------------------{{{
-
 " Vimscript {{{
 
 augroup filetype_vim
   au!
   au FileType vim setlocal foldmethod=marker
   au FileType vim let b:comment_leader = '" '
+  au BufWritePost .vimrc source $MYVIMRC " Source vimrc after saving changes
 augroup END
+
 " }}}
 " Ruby {{{
 
@@ -552,6 +553,7 @@ augroup filetype_ruby
   au FileType ruby map <F11> :!ruby "%:p"<CR>
   au FileType ruby let b:comment_leader = '# '
 augroup END
+
 " }}}
 " Javascript {{{
 
@@ -560,6 +562,7 @@ augroup filetype_javascript
   au FileType javascript setlocal ts=4 sts=4 sw=4 expandtab textwidth=500
   au FileType javascript let b:comment_leader = '/ '
 augroup END
+
 " }}}
 " Haml {{{
 
@@ -568,6 +571,7 @@ augroup filetype_haml
   au FileType haml setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
   au FileType haml let b:comment_leader = '// '
 augroup END
+
 " }}}
 " Html {{{
 
@@ -575,6 +579,7 @@ augroup filetype_html
   au!
   au FileType html setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
 augroup END
+
 " }}}
 " Mardown {{{
 
@@ -582,19 +587,24 @@ augroup filetype_markdown
   au!
   au FileType markdown setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
 augroup END
+
 " }}}
 " Sass {{{
+
 augroup filetype_sass
   au!
   au FileType sass setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
   au FileType sass let b:comment_leader = '// '
 augroup END
+
+" }}}
 " Text {{{
 
 augroup filetype_txt
   au!
   au FileType txt setlocal ts=2 sts=2 sw=2 expandtab textwidth=110
 augroup END
+
 " }}}
 " Tex {{{
 
@@ -603,6 +613,7 @@ augroup filetype_tex
   autocmd FileType tex setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
   au FileType tex let b:comment_leader = '% '
 augroup END
+
 " }}}
 " Yaml {{{
 
@@ -611,6 +622,7 @@ augroup filetype_yaml
   au FileType yaml setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
   au FileType yaml let b:comment_leader = '# '
 augroup END
+
 " }}}
 " ----------------------------------------------------------------}}}
 
@@ -625,6 +637,7 @@ au! BufRead,BufNewFile *.sass,*.scss set filetype=scss
 au! BufRead,BufNewFile *.tex,*.latex set filetype=tex
 au! BufRead,BufNewFile *.textile set filetype=textile
 au! BufRead,BufNewFile *.yml set filetype=yaml
+
 " ----------------------------------------------------------------}}}
 " Mac-Settings -------------------------------{{{
 " Font {{{
@@ -641,7 +654,6 @@ endif
 if has('mac')
  " press Apple-< key to cycle
   noremap <D-lt> :maca _cycleWindows:<CR>
-
 endif
 
 " }}}
@@ -664,13 +676,6 @@ endif
 " " ## converting markdown to HTML by pressing ,md
 " nmap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <cr>
 
-
-" ## automatically source the vimrc file after saving it changes appear
-" without restarting Vim
-" if has("autocmd")
-"   autocmd bufwritepost .vimrc source $MYVIMRC
-" endif
-
 " ## function to strip trailing whitespace
 function! <SID>StripTrailingWhitespaces()
     " Preparation: save last search, and cursor position.
@@ -684,6 +689,7 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 
-" when file is saved, call the function to remove trailing whitespace autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+" when file is saved, call the function to remove trailing whitespace
+" autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), "\n")
