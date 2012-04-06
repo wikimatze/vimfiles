@@ -354,10 +354,7 @@ function! Paste(mode)
 endfunction
 
 " -------------------------------------------------------- }}}
-
-
 " Plugins ----------------------------------------------------------------{{{
-
 " Command-t {{{
 
 let g:CommandTMaxFiles = 20000                      " the max files that will be considered when scanning current directory
@@ -532,7 +529,7 @@ noremap <leader>y :YRShow<CR>
 noremap <leader>x :YRClear<CR>
 
 " }}}
-" ----------------------------------------------------------------}}}
+" ------------------------------------------------------------------------}}}
 " Filetype-specify -----------------------------------------------{{{
 " Vimscript {{{
 
@@ -625,7 +622,6 @@ augroup END
 
 " }}}
 " ----------------------------------------------------------------}}}
-
 " Filetype detecion ----------------------------------------------{{{
 
 au! BufRead,BufNewFile *.js set filetype=javascript
@@ -663,7 +659,6 @@ if has("gui_macvim")
 endif
 " }}}
 " -------------------------------------------- }}}
-
 " Unix-Settings ---------------------------------{{{
 
 if has('unix')
@@ -672,11 +667,8 @@ if has('unix')
 endif
 
 " ------------------------------------------------}}}
+" Removal of trailing whitespace -----------------{{{
 
-" " ## converting markdown to HTML by pressing ,md
-" nmap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <cr>
-
-" ## function to strip trailing whitespace
 function! <SID>StripTrailingWhitespaces()
     " Preparation: save last search, and cursor position.
     let _s=@/
@@ -690,6 +682,10 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 
 " when file is saved, call the function to remove trailing whitespace
-" autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
+" ------------------------------------------------}}}
+" " ## converting markdown to HTML by pressing ,md
+" nmap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <cr>
 
 exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), "\n")
