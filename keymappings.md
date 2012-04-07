@@ -79,7 +79,6 @@
 - **V** - mark the whole line in visual mode
 
 
-
 # Close
 - **:q** - exit vim and don't save changes
 - **:x** - save all changes, if they exists and terminate Vim
@@ -101,6 +100,8 @@
 - **df<word>** - press the character until which should be deleted (inclusve the word)
   - **dtG** -same as above but exklusive
 - **d-Shift-g** - delete all lines below the actual line of the cursors
+- **c** - acts like d except that it leaves you in insert mode
+- **C** - deletes all characters afther the cursor position and will go in insert mode
 - **ci"** - delete everything whats inside the special sign " and go into the edit mode
 
 
