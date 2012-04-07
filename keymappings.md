@@ -27,6 +27,8 @@
 - **CTRL-o** - track your movements backward => it jumps to last made changes
 - **CTRL-i** - track your movements forwards => it jumps to previous made changes
 - **ddp** - will switch two lines
+- **CTRL-u** - scroll up half of the screen
+- **CTRL-d** - scroll down half of the screen
 
 
 # Search
