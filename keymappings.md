@@ -74,8 +74,10 @@
 - **O** - neue Zeile oberhalb vom Cursor
 - **:e <Dateiname>** - edit a file (even possible to create a new file)
 - **xp** - character twiddeling change the characters of two successive chars
-. **ce** - change until end of word and delete the stuff -> go into insert mode
+- **ce** - change until end of word and delete the stuff -> go into insert mode
 - **d$** - delete till the EOL
+- **V** - mark the whole line in visual mode
+
 
 
 # Close
@@ -207,7 +209,7 @@
 - **:ascii** - displays the ASCII, Hex und Octal representation of the character under the actual
  cursor
 - **:retab** - replace all tabs of a file with spaces
-- **:n <file_name>** - open a new file in vim
+- **:n <file_name>** - open a new file in Vim
 - **<C-F>** - display a list of files in the current directory in insert mode
 - **inoremap <C-F> <C-X><C-F>**
 - **:.!** - execute bash command and insert output in Vim file (press !! very fast to shortcut
