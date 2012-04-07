@@ -77,6 +77,7 @@
 - **ce** - change until end of word and delete the stuff -> go into insert mode
 - **d$** - delete till the EOL
 - **V** - mark the whole line in visual mode
+- **:wall** - write all changes
 
 
 # Close
@@ -88,6 +89,7 @@
 - **x** - delete single character
 - **dw** - delete whole word (Motion: *2dw* will delete two words)
 - **x** - delete single character
+- **:qall** - quite all windows and will ask for unmodified changes
 
 
 # Delete and Cut
