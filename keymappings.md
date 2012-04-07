@@ -233,8 +233,7 @@
 - **daw** - deletes a words and uses text objects
 - **:saveas <filename>** - save the changes you made on the new textfile
 - **:close** - will close the actual window
-
-
+- **g Ctrg-G** - count the words of a file and gives extensive overview of words and chars
 
 
 # ctags
