@@ -29,7 +29,6 @@
 - **ddp** - will switch two lines
 
 
-
 # Search
 - **/** - just type in the searched word => Top-Down search
 - **?** Down-Top search
@@ -40,6 +39,11 @@
   - **/^word** - search after the word at the beginning of each line
   - **h.l** - match all words, which starts with *h*, then any character and an *l*
 - `\*` - search after the word which stands under the cursor
+- **single-character search**
+    - **fx** - move forward to character x
+    - **Fx** - move backward to character x
+    - **tx** - move forward to character x but stops one sign before it
+    - **Tx** - move backward to character x but stops one sign before it
 
 
 # Edit
