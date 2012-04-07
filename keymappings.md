@@ -24,11 +24,9 @@
 - **L** - jump to the lowest position of the visible part
 - ) - move the cursor forward to the *next sentence*
 - ( - move the cursor forward to the *previous sentence*
-- **CTRL-o** - track your movements backward => it jumps to last made changes
-- **CTRL-i** - track your movements forwards => it jumps to previous made changes
+- **Ctrl-o** - track your movements backward => it jumps to last made changes
+- **Ctrl-i** - track your movements forwards => it jumps to previous made changes
 - **ddp** - will switch two lines
-- **CTRL-u** - scroll up half of the screen
-- **CTRL-d** - scroll down half of the screen
 
 
 # Search
@@ -67,7 +65,7 @@
 - **ggVG** - mark the whole text
 - %s/old/new/g - replace occurrences of pattern in the whole document
 - %s/old/new/c - replace occurrences in the text in interactive modus
-- **SHIFT-q** - format the actual section (*gqap* is an alternative shortcut)
+- **Shift-q** - format the actual section (*gqap* is an alternative shortcut)
 - **o** -go into a new line below the cursor in edit mode
 - **O** - neue Zeile oberhalb vom Cursor
 - **:e <Dateiname>** - edit a file (even possible to create a new file)
@@ -93,7 +91,7 @@
 - **dd** - cut the whole line
 - **p** - paste below the actual cursor position
 - **P** - paste before the actual cursor position
-- **D** - delete all characters after the cursor at the current line
+- **D** - delete all characters after the cursor till EOL
 - **df<word>** - press the character until which should be deleted (inclusve the word)
   - **dtG** -same as above but exklusive
 - **d-Shift-g** - delete all lines below the actual line of the cursors
@@ -107,24 +105,24 @@
   - **zR** - opens all foldings of all levels
   - **zm** - closes all foldings of the first level
   - **zM** - closses all foldings of all levels
-  - **SPACE** - opens and closes a folding
+  - **Space** - opens and closes a folding
   - **:set foldmethod=indent** - change the foldmethod on indendation
 
 
 # Windows
-- **CTRL-w s** - split window *horizontal*
-- **CTRL-w v** - split window *vertical*
-- **CTRL-w c** - close actual window
+- **Ctrl-w s** - split window *horizontal*
+- **Ctrl-w v** - split window *vertical*
+- **Ctrl-w c** - close actual window
 - **:sp bla.txt** - open file via horizontal split
 - **:vsp bla.txt** - open file via vertical split
 - **:only** - close all windows except the actual one
 - Fokus auf Window ändern: CTRL-w w gehe im Uhrzeigersinn zum nächsten Fenster
-- **CTRL-w [hjkl]** go to a specific window
+- **Ctrl-w [hjkl]** go to a specific window
 - **adjust windows size**
-  - **CTRL-w _** - make the actual window horizonat max
-  - **CTRL-w |** - make the actual window vertical max
-  - **CTRL-w [+-]** - change the size incremental
-  - **CTRL-w =** - adjust all windows to the same size
+  - **Ctrl-w _** - make the actual window horizonat max
+  - **Ctrl-w |** - make the actual window vertical max
+  - **Ctrl-w [+-]** - change the size incremental
+  - **Ctrl-w =** - adjust all windows to the same size
 
 
 # Tabs
@@ -216,8 +214,8 @@
 # ctags
 - go to the root of the project and perform `ctags -R .` - this will create a tag file
 - open vim and the generated **tags** file will be automatically selected
-- **CTRL+]** - will into the class, method or other declaration
-- **CTRL+t** - will go to the previous declaration of the method
+- **Ctrl+]** - will into the class, method or other declaration
+- **Ctrl+t** - will go to the previous declaration of the method
 
 
 # Spellchecker
@@ -238,7 +236,7 @@
 - **,lv** - opens the compiled .dvi file with xdvi
 - **,lj** - opens the compiled .dvi file just in the place where your cursor is the tex document
  you are compiling
-- **STRG+SHIFT-j** - jumps to the placeholder in the document
+- **Ctrl+Shift-j** - jumps to the placeholder in the document
 - **n** - jumps to the next error
 - **b** - jumps to the previous error
 - **working with multiple files**
@@ -252,7 +250,7 @@
   - start the \ls mode
   - where the cursor is, this place will be displayed in the .dvi file
 - **inverse (reverse) search** http://forum.ubuntuusers.de/topic/vim-vim-latexsuite-vim-gtk
-  - **CTRL-Linke** left mouse click in the .dvi file this location will be opend in the source
+  - **Ctrl-Linke** left mouse click in the .dvi file this location will be opend in the source
     file
 - **Links**
   - http://vim":http://vim-latex.sourceforge.net/documentation/latex-suite.html#latex-project-example
