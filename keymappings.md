@@ -215,7 +215,8 @@
 - **inoremap <C-F> <C-X><C-F>**
 - **:.!** - execute bash command and insert output in Vim file (press !! very fast to shortcut
  this)
-- **Ctrl-g**
+- **:options** - opens a new window with all specified options you can set in Vim (even with nice
+  explanations)
 
 
 # ctags
