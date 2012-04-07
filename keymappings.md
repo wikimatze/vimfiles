@@ -31,14 +31,15 @@
 
 # Search
 - **/** - just type in the searched word => Top-Down search
-- **?** Down-Top search
+- **?** bottom-up search
 - **n** - jump to the next matching => direction **forward**
 - **N** - jump to the previous matching => direction **backwards**
 - **Regex**
   - **/word$** - search after the word at the end of each line
   - **/^word** - search after the word at the beginning of each line
   - **h.l** - match all words, which starts with *h*, then any character and an *l*
-- `\*` - search after the word which stands under the cursor
+- **`*`** - search after the word which stands under the cursor from *top-down*
+- **`#`** - search after the word which stands under the cursor from *bottom-up*
 - **single-character search**
     - **fx** - move forward to character x
     - **Fx** - move backward to character x
