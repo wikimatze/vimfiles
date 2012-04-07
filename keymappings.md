@@ -224,7 +224,10 @@
   explanations)
 - **:args** - prints a list of all opened files
 - **daw** - deletes a words and uses text objects
-. **:saveas <filename>** - save the changes you made on the new textfile
+- **:saveas <filename>** - save the changes you made on the new textfile
+- **:close** - will close the actual window
+
+
 
 
 # ctags
