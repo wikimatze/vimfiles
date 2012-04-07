@@ -65,6 +65,8 @@
 - **O** - neue Zeile oberhalb vom Cursor
 - **:e <Dateiname>** - edit a file (even possible to create a new file)
 - **xp** - character twiddeling change the characters of two successive chars
+. **ce** - change until end of word and delete the stuff -> go into insert mode
+- **d$** - delete till the EOL
 
 
 # Close
@@ -201,6 +203,7 @@
 - **inoremap <C-F> <C-X><C-F>**
 - **:.!** - execute bash command and insert output in Vim file (press !! very fast to shortcut
  this)
+- **Ctrl-g**
 
 
 # ctags
@@ -253,5 +256,4 @@
 - replace line ending through **\\\\:** `:%s/$/ \\\\/`
 - change matching before and after **=:** `:%s/\(.*\)=\(.*\)/\2=\1`
 - replace **a = b** to **b = a:** `:%s/\(.*\)=\(.*\)/\2=\1`
-
 
