@@ -45,6 +45,10 @@
     - **Fx** - move backward to character x
     - **tx** - move forward to character x but stops one sign before it
     - **Tx** - move backward to character x but stops one sign before it
+- **/<word>\>** - matching only words which ends on <word>
+- **/\<<word>** - matching only words which starts with <word>
+- **/\<<word>\>** - matching only the word which stands alone with <word> - no other words in front
+  or after the word
 
 
 # Edit
