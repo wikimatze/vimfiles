@@ -685,7 +685,11 @@ endfunction
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 " ------------------------------------------------}}}
-" " ## converting markdown to HTML by pressing ,md
-" nmap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <cr>
+" Converting markdown to HTML --------------------{{{
+
+noremap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <Cr>
+
+" ------------------------------------------------}}}
 
 exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), "\n")
+
