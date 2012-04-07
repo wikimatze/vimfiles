@@ -29,7 +29,7 @@
 - **ddp** - will switch two lines
 
 
-# Search
+# Search and Replace
 - **/** - just type in the searched word => Top-Down search
 - **?** bottom-up search
 - **n** - jump to the next matching => direction **forward**
@@ -49,6 +49,11 @@
 - **/\<<word>** - matching only words which starts with <word>
 - **/\<<word>\>** - matching only the word which stands alone with <word> - no other words in front
   or after the word
+- **%s/.../<options>** - will start the substitute function
+    - with range: 1,5s/this/that/g - will replace this through that in lines 1-5
+    - /g - will replace all matchings at a line
+    - /c - makes prompt for each replacement
+    - /e - no finding a match is no error
 
 
 # Edit
@@ -136,7 +141,7 @@
 
 # Tabs
 - **vim -p [filename1] [filename2] ...** - open files in tabs
-- **:tabedit filename** - open file as a tab
+- **:tabedit <name>** - opens a new tab with the specified file name
 - **:q** - close tab
 - **:tabonly** - close all tabs except the actual
 - **movement**
