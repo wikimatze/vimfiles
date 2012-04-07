@@ -186,6 +186,11 @@
   - **:q!** - force vim to quit and discard all changes to the buffers
 
 
+# Register
+- **"f3Y** - yanking the next three lines in register f
+- **"fp** - paste the contents of register f
+
+
 # Different Stuff
 - **J** - join two lines
 - **gi** - used in vim and open a split horizontal view of the file
