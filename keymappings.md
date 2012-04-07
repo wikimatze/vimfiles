@@ -217,6 +217,7 @@
  this)
 - **:options** - opens a new window with all specified options you can set in Vim (even with nice
   explanations)
+- **:args** - prints a list of all opened files
 
 
 # ctags
