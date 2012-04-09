@@ -178,6 +178,7 @@
 
 # Marking
 - **Shift-v** - mark a whole line in visual mode
+- **gV** - reselect the text which was marked in visual mode before
 
 
 # Sort
