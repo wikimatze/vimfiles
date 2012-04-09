@@ -92,6 +92,8 @@
 - **d$** - delete till the EOL
 - **V** - mark the whole line in visual mode
 - **:wall** - write all changes
+- **'0** - when opening Vim and pressing this command will bring you back to last file you changed -
+  handy if you have to shutdown and start the work again
 
 
 # Close
