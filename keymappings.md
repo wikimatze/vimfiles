@@ -240,6 +240,7 @@
 - **:saveas <filename>** - save the changes you made on the new textfile
 - **:close** - will close the actual window
 - **g Ctrg-G** - count the words of a file and gives extensive overview of words and chars
+- **:history** - print the last commands for the command-line
 
 
 # ctags
