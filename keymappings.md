@@ -245,12 +245,14 @@
 - **:history** - print the last commands for the command-line
 - **digraphs** - will display list of characters that are not on the keyboard (still don't know how
   to use them)
+- **:map** - print all the mappings
 
 
 # ctags
 - go to the root of the project and perform `ctags -R .` - this will create a tag file
 - open vim and the generated **tags** file will be automatically selected
-- **Ctrl+]** - will into the class, method or other declaration
+- **:tags** - show the list of tags you traversed through
+- **Ctrl+]** - jump into the tag (will into the class, method or other declaration)
 - **Ctrl+t** - will go to the previous declaration of the method
 
 
