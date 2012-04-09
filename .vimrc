@@ -691,7 +691,6 @@ noremap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <Cr>
 " Environments (Mac/Unix/GUI/Console ---------------------------------------------{{{
 " We have Gui running
 if has ('gui_running')
-
   " remove all the UI crap
   set guioptions-=T " remove tool bar
   set guioptions-=b " remove horizontal scroll bar
@@ -711,6 +710,9 @@ if has ('gui_running')
   if has('mac')
     set gfn=Menlo:h14
 
+    " Fullscreen means FULL screen
+    set fuoptions=maxvert, maxhorz
+
     " Cycle between different open MacVim windows
     noremap <D-lt> :maca _cycleWindows:<CR>
 
@@ -718,14 +720,14 @@ if has ('gui_running')
     let macvim_hig_shift_movement = 1
   endif
   " }}}
-
+else
+  " Console Vim
+  if has('unix')
+    " for the ack.vim plugin
+    let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+  endif
 endif
 " Unix-Settings ------------------------------------------------------------------{{{
-
-if has('unix')
-  " for the ack.vim plugin
-  let g:ackprg="ack-grep -H --nocolor --nogroup --column"
-endif
 
 " --------------------------------------------------------------------------------}}}
 " --------------------------------------------------------------------------------}}}
