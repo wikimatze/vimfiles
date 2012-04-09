@@ -93,8 +93,6 @@ set showbreak=↪                             " show the symbol for wrapped line
 set splitbelow                              " splitting a window will put the new window below the current one
 set splitright                              " splitting a window will put the new window right the current one
 set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
-set guioptions-=T                           " turning of the tool bar
-set guioptions+=b                           " enable horizontal scroll bar
 set lines=999 columns=999                   " full screen when starting Gvim (it's a hack)
 set ls=1                                    " always show status line
 set nomodeline                              " frequent security hole
@@ -667,6 +665,50 @@ vnoremap ir i[
 vnoremap ir i[
 
 " --------------------------------------------------------------------------------}}}
+" Removal of trailing whitespace -------------------------------------------------{{{
+
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+
+" when file is saved, call the function to remove trailing whitespace
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
+" --------------------------------------------------------------------------------}}}
+" Converting markdown to HTML ----------------------------------------------------{{{
+
+noremap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <Cr>
+
+" --------------------------------------------------------------------------------}}}
+" Environments (Mac/Unix/GUI/Console ---------------------------------------------{{{
+" We have Gui running
+if has ('gui_running')
+
+  " remove all the UI crap
+  set guioptions-=T " remove tool bar
+  set guioptions-=b " remove horizontal scroll bar
+  set guioptions-=l " remove left-hand scrollbar
+  set guioptions-=L " remove left-hand if there is a vertical present
+  set guioptions-=r " remove right-hand scrollbar
+  set guioptions-=R " remove right-hand if there is a vertical present
+
+endif
+" Unix-Settings ------------------------------------------------------------------{{{
+
+if has('unix')
+  " for the ack.vim plugin
+  let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+endif
+
+" --------------------------------------------------------------------------------}}}
 " Mac-Settings -------------------------------------------------------------------{{{
 " Font {{{
 
@@ -691,36 +733,6 @@ if has("gui_macvim")
 endif
 " }}}
 " --------------------------------------------------------------------------------}}}
-" Unix-Settings ------------------------------------------------------------------{{{
-
-if has('unix')
-  " for the ack.vim plugin
-  let g:ackprg="ack-grep -H --nocolor --nogroup --column"
-endif
-
-" --------------------------------------------------------------------------------}}}
-" Removal of trailing whitespace -------------------------------------------------{{{
-
-function! <SID>StripTrailingWhitespaces()
-    " Preparation: save last search, and cursor position.
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-    " Do the business:
-    %s/\s\+$//e
-    " Clean up: restore previous search history, and cursor position
-    let @/=_s
-    call cursor(l, c)
-endfunction
-
-" when file is saved, call the function to remove trailing whitespace
-autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
-
-" --------------------------------------------------------------------------------}}}
-" Converting markdown to HTML ----------------------------------------------------{{{
-
-noremap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <Cr>
-
 " --------------------------------------------------------------------------------}}}
 " Credentials --------------------------------------------------------------------{{{
 
