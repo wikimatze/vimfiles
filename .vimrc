@@ -700,6 +700,9 @@ if has ('gui_running')
   set guioptions-=r " remove right-hand scrollbar
   set guioptions-=R " remove right-hand if there is a vertical present
 
+  " Spellchecker
+  highlight Spellbad term=underline gui=undercurl guisp=Orange
+
 endif
 " Unix-Settings ------------------------------------------------------------------{{{
 
