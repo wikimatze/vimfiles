@@ -584,10 +584,11 @@ augroup filetype_html
 augroup END
 
 " }}}
-" Mardown {{{
+" Markdown {{{
 
 augroup filetype_markdown
   au!
+  au BufNewFile,BufRead *.m*down setlocal filetype=markdown
   au FileType markdown setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
 augroup END
 
@@ -633,7 +634,6 @@ augroup END
 au! BufRead,BufNewFile *.js set filetype=javascript
 au! BufRead,BufNewFile *.json set filetype=json
 au! BufRead,BufNewFile *.haml set filetype=haml
-au! BufRead,BufNewFile *.mkd,*.markdown,*.md set filetype=markdown
 au! BufRead,BufNewFile *.rb set filetype=ruby
 au! BufRead,BufNewFile *.sass,*.scss set filetype=scss
 au! BufRead,BufNewFile *.tex,*.latex set filetype=tex
