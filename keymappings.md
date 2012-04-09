@@ -119,15 +119,15 @@
 - **c** - acts like d except that it leaves you in insert mode
 - **C** - deletes all characters afther the cursor position and will go in insert mode
 - **ci"** - delete everything whats inside the special sign " and go into the edit mode
-aaa aaaa aaa
+
 
 # Folding
 - **zo** - opens a single folding
 - **zc** - closes a single folding
 - **zr** - opens all foldings of the first level
-- **zR** - opens all foldings of all levels
-- **zm** - closes all foldings of the first level
-- **zM** - closses all foldings of all levels
+- **zR** - reduce all folding (opens all foldings)
+- **zM** - folds more (closse all foldings of all levels)
+- **zm** - close all foldings of the first level
 - **Space** - opens and closes a folding
 - **:set foldmethod=indent** - change the foldmethod on indendation
 
