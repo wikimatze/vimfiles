@@ -61,7 +61,7 @@ Bundle 'https://bitbucket.org/sjl/badwolf'
 Bundle 'vim-scripts/YankRing.vim'
 
 " }}}
-" File type detection --- {{{
+" File type detection ---{{{
 
 syntax on          " Enable syntax highlighting
 filetype on        " Enable file type detection
@@ -94,6 +94,7 @@ set splitbelow                              " splitting a window will put the ne
 set splitright                              " splitting a window will put the new window right the current one
 set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
 set guioptions-=T                           " turning of the tool bar
+set guioptions+=b                           " enable horizontal scroll bar
 set lines=999 columns=999                   " full screen when starting Gvim (it's a hack)
 set ls=1                                    " always show status line
 set nomodeline                              " frequent security hole
@@ -214,6 +215,11 @@ set statusline+=FileType: " label
 set statusline+=%y " Filetype of the file
 set statusline+=\ CWD: " label
 set statusline+=\ %r%{CurDir()} " pwd of vim
+
+function! CurDir()
+    let curdir = substitute(getcwd(), '/Users/helex/', "~/", "g")
+    return curdir
+endfunction
 
 " }}}
 " List char {{{
