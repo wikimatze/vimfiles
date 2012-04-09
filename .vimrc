@@ -551,7 +551,8 @@ augroup END
 
 augroup filetype_ruby
   au!
-  au FileType ruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=50
+  au FileType ruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=50 foldmethod=syntax
+
   " Press F11 to compile the actual file
   au FileType ruby map <F11> :!ruby "%:p"<CR>
   au FileType ruby let b:comment_leader = '# '
