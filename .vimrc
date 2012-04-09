@@ -1,4 +1,4 @@
-" Preamble --- {{{
+" Preamble -----------------------------------------------------------------------{{{
 
 set nocompatible " be iMproved
 filetype off     " required!
@@ -60,16 +60,16 @@ Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'https://bitbucket.org/sjl/badwolf'
 Bundle 'vim-scripts/YankRing.vim'
 
-" }}}
-" File type detection ---{{{
+" --------------------------------------------------------------------------------}}}
+" File type detection ------------------------------------------------------------{{{
 
 syntax on          " Enable syntax highlighting
 filetype on        " Enable file type detection
 filetype indent on " Enable file type-specific indenting
 filetype plugin on " Enable file type-specific plugins
 
-" }}}
-" General settings --------------------------------------------------------{{{
+" -------------------------------------------------------------------------------}}}
+" General settings ---------------------------------------------------------------{{{
 
 set encoding=utf-8                          " the terminal encoding
 set modeline                                " don't look how many lines are the beginning and the end of the file
@@ -237,8 +237,8 @@ filetype plugin on
 set ofu=syntaxcomplete#Complete
 
 " }}}
-" -------------------------------------------------------- }}}
-" Convenience mappings -----------------------------------{{{
+" --------------------------------------------------------------------------------}}}
+" Convenience mappings -----------------------------------------------------------{{{
 " Get rid of help key
 noremap  <F1> :Fullscreen<CR>
 inoremap <F1> <ESC>:Fullscreen<CR>
@@ -359,8 +359,123 @@ function! Paste(mode)
   endif
 endfunction
 
-" -------------------------------------------------------- }}}
-" Plugins ----------------------------------------------------------------{{{
+" ---------------------------------------------------------------------------------}}}
+" Filetype detecion --------------------------------------------------------------{{{
+
+au! BufRead,BufNewFile *.js set filetype=javascript
+au! BufRead,BufNewFile *.json set filetype=json
+au! BufRead,BufNewFile *.haml set filetype=haml
+au! BufRead,BufNewFile *.rb set filetype=ruby
+au! BufRead,BufNewFile *.sass,*.scss set filetype=scss
+au! BufRead,BufNewFile *.tex,*.latex set filetype=tex
+au! BufRead,BufNewFile *.textile set filetype=textile
+au! BufRead,BufNewFile *.yml set filetype=yaml
+
+" --------------------------------------------------------------------------------}}}
+" Filetype specific --------------------------------------------------------------{{{
+" Vim {{{
+
+augroup filetype_vim
+  au!
+  au FileType vim setlocal foldmethod=marker
+  au Filetype help setlocal textwidth=78
+  au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
+  au FileType vim let b:comment_leader = '" '
+  au BufWritePost .vimrc source $MYVIMRC " Source vimrc after saving changes
+augroup END
+
+" }}}
+" Ruby {{{
+
+augroup filetype_ruby
+  au!
+  au FileType ruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=50 foldmethod=syntax
+
+  " Press F11 to compile the actual file
+  au FileType ruby map <F11> :!ruby "%:p"<CR>
+  au FileType ruby let b:comment_leader = '# '
+augroup END
+
+" }}}
+" Javascript {{{
+
+augroup filetype_javascript
+  au!
+  au FileType javascript setlocal ts=4 sts=4 sw=4 expandtab textwidth=500
+  au FileType javascript let b:comment_leader = '/ '
+augroup END
+
+" }}}
+" Haml {{{
+
+augroup filetype_haml
+  au!
+  au FileType haml setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+  au FileType haml let b:comment_leader = '// '
+augroup END
+
+" }}}
+" Html {{{
+
+augroup filetype_html
+  au!
+  au FileType html setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+augroup END
+
+" }}}
+" Markdown {{{
+
+augroup filetype_markdown
+  au!
+  au BufNewFile,BufRead *.m*down setlocal filetype=markdown
+  au FileType markdown setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
+augroup END
+
+" }}}
+" Sass {{{
+
+augroup filetype_sass
+  au!
+  au FileType sass setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+  au FileType sass let b:comment_leader = '// '
+augroup END
+
+" }}}
+" Text {{{
+
+augroup filetype_txt
+  au!
+  au FileType txt setlocal ts=2 sts=2 sw=2 expandtab textwidth=110
+augroup END
+
+" }}}
+" Tex {{{
+
+augroup filetype_tex
+  au!
+  autocmd FileType tex setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
+  au FileType tex let b:comment_leader = '% '
+augroup END
+
+" }}}
+" Quickfix {{{
+
+augroup filetype_quickfix
+  au!
+  au Filetype qf setlocal colorcolumn=0 nolist nocursorline nowrap tw=0
+
+" }}}
+" Yaml {{{
+
+augroup filetype_yaml
+  au!
+  au FileType yaml setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+  au FileType yaml let b:comment_leader = '# '
+augroup END
+
+" }}}
+" --------------------------------------------------------------------------------}}}
+" Plugin settings ----------------------------------------------------------------{{{
 " Command-t {{{
 
 let g:CommandTMaxFiles = 20000                      " the max files that will be considered when scanning current directory
@@ -535,123 +650,8 @@ noremap <leader>y :YRShow<CR>
 noremap <leader>x :YRClear<CR>
 
 " }}}
-" ------------------------------------------------------------------------}}}
-" Filetype-specify -----------------------------------------------{{{
-" Vim {{{
-
-augroup filetype_vim
-  au!
-  au FileType vim setlocal foldmethod=marker
-  au Filetype help setlocal textwidth=78
-  au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
-  au FileType vim let b:comment_leader = '" '
-  au BufWritePost .vimrc source $MYVIMRC " Source vimrc after saving changes
-augroup END
-
-" }}}
-" Ruby {{{
-
-augroup filetype_ruby
-  au!
-  au FileType ruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=50 foldmethod=syntax
-
-  " Press F11 to compile the actual file
-  au FileType ruby map <F11> :!ruby "%:p"<CR>
-  au FileType ruby let b:comment_leader = '# '
-augroup END
-
-" }}}
-" Javascript {{{
-
-augroup filetype_javascript
-  au!
-  au FileType javascript setlocal ts=4 sts=4 sw=4 expandtab textwidth=500
-  au FileType javascript let b:comment_leader = '/ '
-augroup END
-
-" }}}
-" Haml {{{
-
-augroup filetype_haml
-  au!
-  au FileType haml setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-  au FileType haml let b:comment_leader = '// '
-augroup END
-
-" }}}
-" Html {{{
-
-augroup filetype_html
-  au!
-  au FileType html setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-augroup END
-
-" }}}
-" Markdown {{{
-
-augroup filetype_markdown
-  au!
-  au BufNewFile,BufRead *.m*down setlocal filetype=markdown
-  au FileType markdown setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
-augroup END
-
-" }}}
-" Sass {{{
-
-augroup filetype_sass
-  au!
-  au FileType sass setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-  au FileType sass let b:comment_leader = '// '
-augroup END
-
-" }}}
-" Text {{{
-
-augroup filetype_txt
-  au!
-  au FileType txt setlocal ts=2 sts=2 sw=2 expandtab textwidth=110
-augroup END
-
-" }}}
-" Tex {{{
-
-augroup filetype_tex
-  au!
-  autocmd FileType tex setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
-  au FileType tex let b:comment_leader = '% '
-augroup END
-
-" }}}
-" Quickfix {{{
-
-augroup filetype_quickfix
-  au!
-  au Filetype qf setlocal colorcolumn=0 nolist nocursorline nowrap tw=0
-
-" }}}
-" Yaml {{{
-
-augroup filetype_yaml
-  au!
-  au FileType yaml setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-  au FileType yaml let b:comment_leader = '# '
-augroup END
-
-" }}}
-" ----------------------------------------------------------------}}}
-" Filetype detecion ----------------------------------------------{{{
-
-au! BufRead,BufNewFile *.js set filetype=javascript
-au! BufRead,BufNewFile *.json set filetype=json
-au! BufRead,BufNewFile *.haml set filetype=haml
-au! BufRead,BufNewFile *.rb set filetype=ruby
-au! BufRead,BufNewFile *.sass,*.scss set filetype=scss
-au! BufRead,BufNewFile *.tex,*.latex set filetype=tex
-au! BufRead,BufNewFile *.textile set filetype=textile
-au! BufRead,BufNewFile *.yml set filetype=yaml
-
-" ----------------------------------------------------------------}}}
-" Mac-Settings -------------------------------{{{
+" --------------------------------------------------------------------------------}}}
+" Mac-Settings -------------------------------------------------------------------{{{
 " Font {{{
 
 if has('mac')
@@ -674,16 +674,16 @@ if has("gui_macvim")
   let macvim_hig_shift_movement = 1
 endif
 " }}}
-" -------------------------------------------- }}}
-" Unix-Settings ---------------------------------{{{
+" --------------------------------------------------------------------------------}}}
+" Unix-Settings ------------------------------------------------------------------{{{
 
 if has('unix')
   " for the ack.vim plugin
   let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 endif
 
-" ------------------------------------------------}}}
-" Removal of trailing whitespace -----------------{{{
+" --------------------------------------------------------------------------------}}}
+" Removal of trailing whitespace -------------------------------------------------{{{
 
 function! <SID>StripTrailingWhitespaces()
     " Preparation: save last search, and cursor position.
@@ -700,12 +700,15 @@ endfunction
 " when file is saved, call the function to remove trailing whitespace
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
-" ------------------------------------------------}}}
-" Converting markdown to HTML --------------------{{{
+" --------------------------------------------------------------------------------}}}
+" Converting markdown to HTML ----------------------------------------------------{{{
 
 noremap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <Cr>
 
-" ------------------------------------------------}}}
+" --------------------------------------------------------------------------------}}}
+" Credentials --------------------------------------------------------------------{{{
 
 exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), "\n")
+
+" --------------------------------------------------------------------------------}}}
 
