@@ -208,6 +208,7 @@
 
 # Different Stuff
 - **J** - join two lines
+- **gJ** - join lines without changing whitespace
 - **gi** - used in vim and open a split horizontal view of the file
 - **gs** - used in vim to open a new file in the vertical view
 - **~** - makes upper- and lowercase of the character where the actual cursor is
