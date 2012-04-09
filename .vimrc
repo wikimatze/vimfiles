@@ -586,6 +586,12 @@ let g:session_autoload = 'no' " disable asking to load the previous session
 let g:snippets_dir = '~/.vim/snippets' " setting of the snipmate directory
 
 " }}}
+" Supertab {{{
+
+let g:SuperTabDefaultCompletionType = "<c-n>"
+let g:SuperTabLongestHighlight = 1
+
+" }}}
 " Syntastic {{{
 let g:syntastic_enable_signs=1                " setting signs for errors (arrows)
 let g:syntastic_auto_loc_list=1               " open/close toc of errors
