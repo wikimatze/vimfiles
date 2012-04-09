@@ -707,6 +707,17 @@ if has ('gui_running')
   set guicursor=n-c:block-Cursor-blinkon0
   set guicursor+=v:block-vCursor-blinkon0
   set guicursor+=i-ci:ver20-iCursor
+  " Mac {{{
+  if has('mac')
+    set gfn=Menlo:h14
+
+    " Cycle between different open MacVim windows
+    noremap <D-lt> :maca _cycleWindows:<CR>
+
+    " Nabble marks with TextMate style
+    let macvim_hig_shift_movement = 1
+  endif
+  " }}}
 
 endif
 " Unix-Settings ------------------------------------------------------------------{{{
@@ -716,30 +727,6 @@ if has('unix')
   let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 endif
 
-" --------------------------------------------------------------------------------}}}
-" Mac-Settings -------------------------------------------------------------------{{{
-" Font {{{
-
-if has('mac')
-  " pretty nice font, if working under Mac
-  set gfn=Menlo:h14 " love this font
-  " 2. Change the key equivalent to cycle through tabs to CMD-Left/Right: >
-endif
-
-" }}}
-" Cycle between different open MacVim windows {{{
-
-if has('mac')
- " press Apple-< key to cycle
-  noremap <D-lt> :maca _cycleWindows:<CR>
-endif
-
-" }}}
-" Nabble marks with TextMate style {{{
-if has("gui_macvim")
-  let macvim_hig_shift_movement = 1
-endif
-" }}}
 " --------------------------------------------------------------------------------}}}
 " --------------------------------------------------------------------------------}}}
 " Credentials --------------------------------------------------------------------{{{
