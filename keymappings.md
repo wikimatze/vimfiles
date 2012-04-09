@@ -29,7 +29,7 @@
 - **ddp** - will switch two lines
 
 
-#Movement in the Command-Line
+# Movement in the Command-Line
 - **Ctrl-Left** - move one word back
 - **Ctrl-Right** - move one word forward
 - **Ctrl-c** - exit the command-line
@@ -119,7 +119,7 @@
 - **c** - acts like d except that it leaves you in insert mode
 - **C** - deletes all characters afther the cursor position and will go in insert mode
 - **ci"** - delete everything whats inside the special sign " and go into the edit mode
-
+aaa aaaa aaa
 
 # Folding
 - **zo** - opens a single folding
@@ -243,6 +243,8 @@
 - **:close** - will close the actual window
 - **g Ctrg-G** - count the words of a file and gives extensive overview of words and chars
 - **:history** - print the last commands for the command-line
+- **digraphs** - will display list of characters that are not on the keyboard (still don't know how
+  to use them)
 
 
 # ctags
@@ -263,6 +265,7 @@
   dictionary)
 - **set spelling=de_20** - setting the spell-language to "neue deutsche Rechtschreibung"
 - **set spelling=de_19** - setting the spell-language to "alte deutsche Rechtschreibung"
+
 
 
 # LaTeX-Suite
