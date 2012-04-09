@@ -619,6 +619,13 @@ augroup filetype_tex
 augroup END
 
 " }}}
+" Quickfix {{{
+
+augroup filetype_quickfix
+  au!
+  au Filetype qf setlocal colorcolumn=0 nolist nocursorline nowrap tw=0
+
+" }}}
 " Yaml {{{
 
 augroup filetype_yaml
