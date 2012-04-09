@@ -22,11 +22,17 @@
 - **H** - jump to the highest visible part
 - **M** - jump to the middle position of the visible part
 - **L** - jump to the lowest position of the visible part
-- ) - move the cursor forward to the *next sentence*
-- ( - move the cursor forward to the *previous sentence*
+- **)**- move the cursor forward to the *next sentence*
+- **(** - move the cursor forward to the *previous sentence*
 - **Ctrl-o** - track your movements backward => it jumps to last made changes
 - **Ctrl-i** - track your movements forwards => it jumps to previous made changes
 - **ddp** - will switch two lines
+
+
+#Movement in the Command-Line
+- **Ctrl-Left** - move one word back
+- **Ctrl-Right** - move one word forward
+- **Ctrl-c** - exit the command-line
 
 
 # Search and Replace
@@ -113,14 +119,14 @@
 
 
 # Folding
-  - **zo** - opens a single folding
-  - **zc** - closes a single folding
-  - **zr** - opens all foldings of the first level
-  - **zR** - opens all foldings of all levels
-  - **zm** - closes all foldings of the first level
-  - **zM** - closses all foldings of all levels
-  - **Space** - opens and closes a folding
-  - **:set foldmethod=indent** - change the foldmethod on indendation
+- **zo** - opens a single folding
+- **zc** - closes a single folding
+- **zr** - opens all foldings of the first level
+- **zR** - opens all foldings of all levels
+- **zm** - closes all foldings of the first level
+- **zM** - closses all foldings of all levels
+- **Space** - opens and closes a folding
+- **:set foldmethod=indent** - change the foldmethod on indendation
 
 
 # Windows
