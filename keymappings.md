@@ -33,6 +33,9 @@
 - **Ctrl-Left** - move one word back
 - **Ctrl-Right** - move one word forward
 - **Ctrl-c** - exit the command-line
+- **Ctrl-b** - move to the beginning
+- **Ctrl-e** - move to the end
+- **Ctrl-c** - exit the command-line
 
 
 # Search and Replace
@@ -156,7 +159,6 @@
 - **reordering**
   - *:tabmove* - tab at the end
   - *:tabmove0* - tab at the beginning
-
 
 # Marks
 - **ma** - create a mark with the name a (marks will be saved for every file)
