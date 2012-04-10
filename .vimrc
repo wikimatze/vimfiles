@@ -20,6 +20,7 @@ Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
 Bundle 'groenewege/vim-less'
 Bundle 'hail2u/vim-css3-syntax'
+Bundle 'xolox/vim-easytags'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'majutsushi/tagbar'
 Bundle 'matthias-guenther/tocdown'
@@ -44,9 +45,9 @@ Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-surround'
 Bundle 'tsaleh/vim-align'
 Bundle 'tsaleh/vim-matchit'
-Bundle 'vim-scripts/FuzzyFinder'
+" Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'vim-scripts/IndexedSearch'
-Bundle 'vim-scripts/L9'
+" Bundle 'vim-scripts/L9'
 Bundle 'vim-scripts/grep.vim'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'vim-scripts/vis'
@@ -57,7 +58,7 @@ Bundle 'xolox/vim-session'
 Bundle 'xolox/vim-shell'
 Bundle 'Rykka/ColorV'
 Bundle 'ecomba/vim-ruby-refactoring'
-Bundle 'https://bitbucket.org/sjl/badwolf'
+" Bundle 'https://bitbucket.org/sjl/badwolf'
 Bundle 'vim-scripts/YankRing.vim'
 
 " --------------------------------------------------------------------------------}}}
@@ -71,36 +72,35 @@ filetype plugin on " Enable file type-specific plugins
 " -------------------------------------------------------------------------------}}}
 " General settings ---------------------------------------------------------------{{{
 
-set encoding=utf-8                          " the terminal encoding
-set modeline                                " don't look how many lines are the beginning and the end of the file
-set autoindent                              " Copy indent from current line when starting a new line
-set autoread                                " re-read files that changed outside of Vim
-set showmode                                " display in the left corner in which modus you are in Vim
-set showcmd                                 " show (partial) command in the last line of the screen
-set noerrorbells                            " don't make noise on error messages
-set ttyfast                                 " fast terminal connection, more characters will be sent to the screen
-set ruler                                   " show the line and column number of the cursor position
-set backspace=indent,eol,start              " allow backspacing over everything in insert mode
-set nonumber                                " don't display line numbers (takes too much space)
-set numberwidth=2                           " using only 2 column for numberline presentation
-set ch=1                                    " height of the command line at the bottom
-set history=5000                            " keep 5000 lines of command line history
-set undofile                                " save the names for the undo file
-set undoreload=10000                        " save the whole buffer for undo when reloading it
-set shell=/bin/bash                         " defines the Shell I want to use for external commands
-set lazyredraw                              " don't redraw the screen while executing macros, registers, and other commands
-set showbreak=↪                             " show the symbol for wrapped lines
-set splitbelow                              " splitting a window will put the new window below the current one
-set splitright                              " splitting a window will put the new window right the current one
-set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
-set lines=999 columns=999                   " full screen when starting Gvim (it's a hack)
-set ls=1                                    " always show status line
-set nomodeline                              " frequent security hole
-set nowarn                                  " do not warn, when shell command update the file you edit in Vim
-set shell=/bin/bash                         " always use sh when executing commands with :!
-set synmaxcol=200                           " better scrolling for long lines
-set spelllang=en_us                         " default language for spell checker
-set title                                   " show title in console title
+set encoding=utf-8                     " terminal encoding
+set modeline                           " don't look how many lines are the beginning and the end of the file
+set autoindent                         " Copy indent from current line when starting a new line
+set autoread                           " re-read files that changed outside of Vim
+set showmode                           " display in the left corner in which modus you are in Vim
+set showcmd                            " show (partial) command in the last line of the screen
+set noerrorbells                       " don't make noise on error messages
+set ttyfast                            " fast terminal connection, more characters will be sent to the screen
+set ruler                              " show the line and column number of the cursor position
+set backspace=indent,eol,start         " allow backspacing over everything in insert mode
+set nonumber                           " don't display line numbers (takes too much space)
+set numberwidth=2                      " using only 2 column for numberline presentation
+set ch=1                               " height of the command line at the bottom
+set history=5000                       " keep 5000 lines of command line history
+set undofile                           " save the names for the undo file
+set undoreload=10000                   " save the whole buffer for undo when reloading it
+set shell=/bin/bash                    " defines the Shell I want to use for external commands
+set lazyredraw                         " don't redraw the screen while executing macros, registers, and other commands
+set showbreak=↪                        " show the symbol for wrapped lines
+set splitbelow                         " splitting a window will put the new window below the current one
+set splitright                         " splitting a window will put the new window right the current one
+set fileencodings=utf-8,default,latin1 " the order of file encodings to try.
+set lines=999 columns=999              " full screen when starting Gvim (it's a hack)
+set nomodeline                         " frequent security hole
+set nowarn                             " do not warn, when shell command update the file you edit in Vim
+set shell=/bin/bash                    " always use sh when executing commands with :!
+set synmaxcol=200                      " better scrolling for long lines
+set spelllang=en_us                    " default language for spell checker
+set title                              " show title in console title
 set scrolloff=4 " minimal number of screen lines to keep above and below the cursor
 set viminfo='1000000,f1 "save marks for 1 million files ('1000000), save global marks
 autocmd BufNew * if winnr('$') == 1 | tabmove99 | endif " move tabs to the end for new, single buffers (exclude splits)
@@ -489,6 +489,12 @@ let g:CommandTAcceptSelectionTabMap = '<C-t>'       " CTRL-t will open the file 
 set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " not matching files
 
 " }}}
+" Easytags {{{
+
+set tags=./tags;                 " name of the tags files which is relative to the project
+let g:easytags_dynamic_files = 1 " write first existing seen tag file by Vim (refer to echo &tags)
+
+" }}}
 " Delimate {{{
 
 " don't use the autoclose plugin for vim files
@@ -737,4 +743,7 @@ endif
 exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), "\n")
 
 " --------------------------------------------------------------------------------}}}
+
+
+
 
