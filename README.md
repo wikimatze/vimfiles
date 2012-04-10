@@ -1,4 +1,4 @@
-# Vim settings #
+# Vim settings
 
 This is a list of all the plugins I'm using for [Vim]. It is unusual to post here commands and
 shortcuts about the plugins because most plugins are well documented. But I decided to provide an
@@ -7,13 +7,14 @@ well, you can have look on my *vimrc* which contains many hacks.
 
 
 I know there is the [janus] package out there which does configure a lot of stuff, but maintain my
-own set of plugins and settings. Don't hesitate to copy or ask me questions about it.
+own set of plugins and settings. Feel free to correct me or provide me with additional hints - I'm always
+eager to learn something new.
 
 
 The text of each link is the name for the doc you have to type in [Vim] (remember to use *:help
-\<name\>*). If after plugin description stands the phrase (*no doc*) it says, that you can not open
-the documentation in Vim. Feel free to correct me or provide me with additional hints - I'm always
-eager to learn something new.
+\<name\>*). If after plugin description stands the phrase (*no doc*) - well you know what that
+means.
+
 
 [janus]: https://github.com/carlhuda/janus "janus"
 [Vim]: http://www.vim.org/ "Vim"
@@ -29,8 +30,7 @@ eager to learn something new.
       - **gv**   to open in vertical split silently
       - **q**    to close the quickfix window
     - *own settings*:
-      - **let g:ackprg="ack-grep -H --nocolor --nogroup --column"** - better handling on Unix
-        machines
+      - **let g:ackprg="ack-grep -H --nocolor --nogroup --column"**
 - [coffee-script](https://github.com/kchmck/vim-coffee-script "coffe-script"): coffee script support
 - [colorv](https://github.com/Rykka/ColorV "colorv"): display Hex Color with real colors in Vim -
   very useful when working with CSS
@@ -51,24 +51,8 @@ eager to learn something new.
       - **ESC or CTRL-c** - closing the open dialog
       - **CTRL-u** - clean the matching window
       - **CTRL-ENTER** - opens the file under the cursor in a new window
-  - *own settings*:
-      - **let g:CommandTMaxFiles = 20000** - max files that will be considered when scanning current
-        directory
-      - **let g:CommandTMaxDepth = 20** - number of levels that will be considered when scanning
-        current directory
-      - **let g:CommandTAlwaysShowDotFiles = 1** - also search after matching with dotted files
-      - **let g:CommandTScanDotDirectories = 1** - do not search in dot directory
-      - **let g:CommandTMatchWindowAtTop = 0** - the match window will appear at the top of the
-        editor window
-      - **let g:CommandTAcceptSelectionMap = '\<CR\>'** - enter open findings in same window
-      - **let g:CommandTAcceptSelectionSplitMap = '\<C-s\>'** - *CTRL-Enter* will makes a horizontal
-        split
-      - **let g:CommandTAcceptSelectionVSplitMap = '\<C-v\>'** - *CTRL-v* will make a vertical split
-      - **let g:CommandTAcceptSelectionTabMap = '\<C-t\>'** - *CTRL-t* will open the file in a new
-        tab
-      - **set wildignore+=-.o,-.obj,.git,.svn,vendor/rails/--** - which files should not be matched
-        in command-t
 - [delimitMate](https://github.com/Raimondi/delimitMate/ "delimitMate"): semantic autoclose brackets
+- [easytags](https://github.com/xolox/vim-easytags "easytags"): automated tag generation for vim
 - [endwise-ruby](https://github.com/tpope/vim-endwise "endwise-ruby"): automatically
   adds keywords like *end* to special constructs in ruby (*no doc*)
 - [fugitive](http://github.com/tpope/vim-fugitive "vim-fugitive"): git wrapper
@@ -96,9 +80,6 @@ eager to learn something new.
   - **:Gist XXXXX** - get gist XXXXX
   - **:Gist -l** - list all my gist
   - **:Gist -d** - delete the gist
-  - *own settings*:
-      - **let g:gist\*detect\*filetype = 1** - detecting file type for each gist
-      - **let g:gist\*open\*browser\*after*post = 1** - open the gist after each post
 - [gundo](http://sjl.bitbucket.org/gundo.vim/ "gundo"): graph the changes of your file saves in
   different a nice tree
   - **k** - move one step top
@@ -108,21 +89,12 @@ eager to learn something new.
   - **Enter or double click** - revert the changes of the file to the current file
   - **p** - will open a preview to show the differences from the selected and the current version
     (just imagine a `git diff`)
-  - *own settings*:
-      - **let g:gundo*width = 45** - horizontal width
-      - **let g:gundo*preview*height = 15** - vertical height
-      - **let g:gundo*help = 1** - show the help in gundo window
-      - **let g:gundo*close*on*revert = 0** - don't close gundo after a version is selected
-      - **let g:gundo*right = 0** - display gundo on the left site
 - [hammer](https://github.com/robgleeson/hammer.vim "hammer"): displays various markups (markdown,
   textile, rdoc, asciidoc) with one keystroke in the browser
   - **map <leader>m :Hammer<CR>** - press ,m to perform this action (depends on how you define
     *leader* in your vimrc)
 - [IndexSearch](https://github.com/vim-scripts/IndexedSearch "IndexSearch"): redefines the search
   (/,?) in Vim and creates custom messages about how many hits there are
-  - *own settings*:
-      - **let g:indexed*search*colors = 1** - turn of colors for messages
-      - **let g:indexed*search*shortmess = 1** -  shorter messages
 - [json](https://github.com/vim-scripts/JSON.vim "json"): json detection and syntax-highlighting (*no doc*)
 - [l9](https://github.com/vim-scripts/L9 "l9"): Vim-script library, add functionality to program vim-files
   (mainly needed for fuzzyfinder plugin)
@@ -162,9 +134,6 @@ eager to learn something new.
       - with @tag you can define own tags (they are useful for searching)
       - **:IndexTaggedNotes** creates new tags (for omnicomplete when @ is pressed)
       - **:ShowTaggedNotes** - will show all notes which are specified with a certain tag
-  - *own settings*:
-      - **let g:notes_directory = '~/Dropbox/notes'** - path of main directory
-      - **let g:notes_suffix = '.txt'** - default file ending of note files
       - **autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h\*** - path of the notes directory
 - [padrino](https://github.com/gerardc/vim-padrino "padrino"): works like rails.vim plugin
 - [powerline](https://github.com/Lokaltog/vim-powerline "powerline"): candy statusline which is high
@@ -196,17 +165,6 @@ eager to learn something new.
     the file *tex.snippets* all snippets for latex documents)
   - better set the file type explicit for each type to load all snippets (*autocmd!
     BufRead,BufNewFile \-.haml set ft=haml*)
-  - *own settings*:
-      - **let g:snippets\*dir = '~/.vim/snippets'** - specify the snippet directory
-      - the following settings are pushed in my vimrc:
-          - autocmd! BufRead,BufNewFile -.haml set ft=haml
-          - autocmd! BufRead,BufNewFile -.js set ft=js
-          - autocmd! BufRead,BufNewFile -.mkd,-.markdown,-.md set ft=markdown
-          - autocmd! BufRead,BufNewFile -.rb set ft=ruby
-          - autocmd! BufRead,BufNewFile -.sass,-.scss set ft=sass
-          - autocmd! BufRead,BufNewFile -.tex,-.latex set ft=tex
-          - autocmd! BufRead,BufNewFile -.textile set ft=textile
-          - autocmd! BufRead,BufNewFile -.yml set ft=yaml
 - [speedating](https://github.com/tpope/vim-speeddating "speeddating"): a faster way to increment
   all kind of numbers
   - **CTRL-a** - ++ number
@@ -217,16 +175,6 @@ eager to learn something new.
 - [supertab](https://github.com/ervandew/supertab "supertab"): word auto completion with pressing the tab key
 - [syntastic](https://github.com/scrooloose/syntastic "syntastic"): performs syntax check on various
   languages when saving
-  - *own settings*:
-      - **let g:syntastic\*enable\*signs=1** - setting signs for errors (arrows)
-      - **let g:syntastic\*auto\*loc\*list=1** - open/close toc of errors
-      - **let g:syntastic\*auto\*jump=1**  - jump to the place where the first error occurs
-      - **let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['haml', 'javascript', 'ruby', 'css', 'sass'], 'passive_filetypes': ['php'] }**q
-          - which files are active and which are not handled by the plugin
-      - **let g:syntastic\*disabled\*filetypes = ['html']** - disable for this filetype
-      - **set statusline+=%#warningmsg#**  - show warning messages
-      - **set statusline+=%{SyntasticStatuslineFlag()}**  - show message in quickfix
-      - **set statusline+=%-**  - set line (good for split windows
 - [surround](https://github.com/tpope/vim-surround "surround")
   - **ds"** - stands for delete surround and will delete the surrounds - place the cursor in in the
     string with the surroundings
@@ -244,19 +192,6 @@ eager to learn something new.
 - [tabular](https://github.com/godlygeek/tabular "tabular"): is a plugin to auto indent files
   according to the pattern
   - **:Tabularize / {pattern}**
-  - *own settings*:
-      - the following mappings are if you use the plugin several times on common cases
-      - let mapleader = ","
-      - nmap \<leader\>b= :Tabularize /=\<CR\>
-      - vmap \<leader\>b= :Tabularize /=\<CR\>
-      - nmap \<leader\>b: :Tabularize /:\<CR\>
-      - vmap \<leader\>b: :Tabularize /:\<CR\>
-      - nmap \<leader\>b/ :Tabularize /\/\/\<CR\>
-      - vmap \<leader\>b/ :Tabularize /\/\/\<CR\>
-      - nmap \<leader\>b" :Tabularize /"\<CR\>
-      - vmap \<leader\>b" :Tabularize /"\<CR\>
-      - nmap \<leader\>bt :Tabularize /& \\ldots &\<CR\>
-      - vmap \<leader\>bt :Tabularize /& \\ldots &\<CR\>
 - [tagbar](http://majutsushi.github.com/tagbar/ "tagbar"): better version of taglist for source
   source files (layout is the same as it is for the NERDTree)
   - [How to install exurberant ctags on mac](http://www.dreamincode.net/forums/blog/164/entry-1479-installing-exuberant-ctags-and-taglist-on-a-mac/ "how to install ctags in mac")
@@ -264,10 +199,6 @@ eager to learn something new.
   - **:TagbarToggle** - opens or close the tagbar whether it was closed or open
   - **:TagbarOpenAutoClose** - opens the tagbar and close it after a tag was selected - the cursor
     jumps to it
-  - *own settings*:
-      - **nnoremap <silent> <F7> :TagbarToggle<CR>**
-      - **nnoremap <silent> <F4> :TagbarOpenAutoClose<CR>**
-      - **let g:tagbar*compact = 1** - don't show the help in the tagbar
 - [tocdown](https://github.com/matthias-guenther/tocdown "tocdown"): Display the headlines of a
   markdown document in an extra window.
   - *own settings*:
@@ -280,10 +211,6 @@ eager to learn something new.
   - with **j** and **k** you can navigate between the different hits and with <enter> you can chose your entry
   - **d** delete an entry from from the yankring buffer - but you barely need this function
   - in the **YRShow** window you can use the visual buttons to select more than one setting
-  - *own settings*:
-      - **nmap <leader>y :YRShow<CR>**
-      - **nmap <leader>x :YRCLear<CR>**
-      - **let g:yankring*max*history = 1000** - save the last 1000 elements
 - [vim-bundler](https://github.com/tpope/vim-bundler "vim-bundler"): wrapper for bundler in Vim
     - **:Bundle** - wraps bundle after, e.g. `:Bundle install`
     - **:Bopen** - opens the *Gemfile* for editing
@@ -345,11 +272,9 @@ eager to learn something new.
     - **:BundleInstall!** - installs or updates installed bundles
     - **:BundleSearch <foo>** - opens a window to display the matches in an extra window
     - **:BundleClean** - confirms removal of unused script-dirs from `.vim/bundle/`.
-    - *own settings*:
-          - **let g:vundle_default_git_proto = 'git'** - `git` instead default `https` when building absolute repo URIs
 
 
-## Usage ##
+## Usage
 
 I highly not recommend you to copy my *.vimrc* because they may not fit to your working style (see
 **Luca Pettes**
@@ -363,7 +288,7 @@ tasks:
 - `ruby ~/.vim/viminstall.rb` # install the plugins
 
 
-## Colors scheme ##
+## Colors scheme
 
 I have found the following three for my taste - there are tons of other colors out there
 
@@ -378,16 +303,16 @@ I have found the following three for my taste - there are tons of other colors o
 ![vividchalk screen shot](https://github.com/matthias-guenther/vim-settings/raw/master/vividchalk.png)
 
 
-## Contact ##
+## Contact
 
 Feature request, bugs, questions, etc. can be send to <matthias.guenther@wikimatze.de>.
 
 
-## License ##
+## License
 
 This software is licensed under the [MIT license][mit].
 
-© 2011 Matthias Guenther <matthias.guenther@wikimatze.de>.
+© 2011-2012 Matthias Guenther <matthias.guenther@wikimatze.de>.
 
 [mit]: http://en.wikipedia.org/wiki/MIT*License
 
