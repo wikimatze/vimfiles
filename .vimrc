@@ -202,17 +202,18 @@ colorscheme badwolf
 " }}}
 " Statusline {{{
 
-set statusline=%t " name of the current file
-set statusline+=\ -\ " separator
-set statusline+=Line:" label
-set statusline+=\ %4l " current line is always 4 pixels long
-set statusline+=/ " separator
-set statusline+=%L " total lines of the file
-set statusline+=\ -\ " separator
-set statusline+=FileType: " label
-set statusline+=%y " Filetype of the file
-set statusline+=\ CWD: " label
-set statusline+=\ %r%{CurDir()} " pwd of vim
+set statusline=%t              " name of the current file
+set statusline+=\ -\           " separator
+set statusline+=Line:          " label
+set statusline+=\ %4l          " current line is always 4 pixels long
+set statusline+=/              " separator
+set statusline+=%L             " total lines of the file
+set statusline+=\ -\           " separator
+set statusline+=%y             " Filetype of the file
+set statusline+=\ -\           " label
+set statusline+=\%r%{CurDir()} " pwd of vim
+
+set laststatus=2 " always display the statusline - it consumes some place, but that doesn't matter
 
 function! CurDir()
     let curdir = substitute(getcwd(), '/Users/helex/', "~/", "g")
