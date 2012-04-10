@@ -491,8 +491,13 @@ set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " not matching files
 " }}}
 " Easytags {{{
 
-set tags=./tags;                 " name of the tags files which is relative to the project
-let g:easytags_dynamic_files = 1 " write first existing seen tag file by Vim (refer to echo &tags)
+set tags=./tags;                  " name of the tags files which is relative to the project
+let g:easytags_dynamic_files = 1  " write first existing seen tag file by Vim (refer to echo &tags)
+let g:easytags_on_cursorhold = 0  " disable automatic update
+let g:easytags_auto_update = 0    " don't update the text, when stop working
+let g:easytags_auto_highlight = 0 " don't highlight the text, when stop working
+let g:easytags_resolve_links = 1  " resolve symbolic links with pathnames
+let g:easytags_python_enabled = 1 " use Python script for dynamic syntax highlighting (is faster)
 
 " }}}
 " Delimate {{{
