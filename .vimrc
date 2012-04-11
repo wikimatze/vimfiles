@@ -719,9 +719,11 @@ if has ('gui_running')
   set guicursor=n-c:block-Cursor-blinkon0
   set guicursor+=v:block-vCursor-blinkon0
   set guicursor+=i-ci:ver20-iCursor
+
   " Mac {{{
   if has('mac')
     set gfn=Menlo:h14
+    " set guifont=Menlo\ Regular:h12
 
     " Fullscreen means FULL screen
     set fuoptions=maxvert, maxhorz
@@ -733,23 +735,21 @@ if has ('gui_running')
     let macvim_hig_shift_movement = 1
   endif
   " }}}
-else
-  " Console Vim
+  " Unix {{{
   if has('unix')
     " for the ack.vim plugin
     let g:ackprg="ack-grep -H --nocolor --nogroup --column"
-  endif
-endif
-" Unix-Settings ------------------------------------------------------------------{{{
 
-" --------------------------------------------------------------------------------}}}
+    set guifont=Inconsolata\ 11
+  endif
+  " }}}
+else
+  " Console Vim
+endif
 " --------------------------------------------------------------------------------}}}
 " Credentials --------------------------------------------------------------------{{{
 
 exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), "\n")
 
 " --------------------------------------------------------------------------------}}}
-
-
-
 
