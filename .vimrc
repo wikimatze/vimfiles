@@ -212,6 +212,7 @@ set statusline+=\ -\           " separator
 set statusline+=%y             " Filetype of the file
 set statusline+=\ -\           " label
 set statusline+=\%r%{CurDir()} " pwd of vim
+set statusline+=\ \%<%h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P " show git branch
 
 set laststatus=2 " always display the statusline - it consumes some place, but that doesn't matter
 
