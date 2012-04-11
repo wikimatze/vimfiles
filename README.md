@@ -267,6 +267,7 @@ means.
     - example: replace all '\-' through '-' => mark the block, press :B (you should have in your
       commandline :'<,'>:B) now press the typical text replacement commands you want (s/-/-) and you
       are done
+- [vspec](https://github.com/kana/vim-vspec "vspec"): Testing framework for Vimscript
 - [vundle](https://github.com/gmarik/vundle "vundle"): is a Vim plugin manager
     - **:BundleInstall** - opens a extra window and show the files that will be installed
     - **:BundleInstall!** - installs or updates installed bundles
