@@ -190,8 +190,10 @@ means.
   - **:TagbarOpen** - opens the view tagbar
   - **:TagbarToggle** - opens or close the tagbar whether it was closed or open
   - **:TagbarOpenAutoClose** - opens the tagbar and close it after a tag was selected - the cursor jumps to it
+  - *mappings:*
+      - **nnoremap \<silent\> \<F4\> :TagbarToggle\<CR\>**
   - [How to install exurberant ctags on mac](http://www.dreamincode.net/forums/blog/164/entry-1479-installing-exuberant-ctags-and-taglist-on-a-mac/ "how to install ctags in mac")
-  - [tocdown](https://github.com/matthias-guenther/tocdown "tocdown"): display the headlines of a markdown document in an extra window.
+- [tocdown](https://github.com/matthias-guenther/tocdown "tocdown"): display the headlines of a markdown document in an extra window.
 - [yankring](https://github.com/vim-scripts/YankRing.vim "yankring"): better register management and saves up to 100 buffered lines
   - **:YRShow** - shows the actual buffer (you can use visual buttons to select more)
   - **:YRClear** - deletes the buffer
