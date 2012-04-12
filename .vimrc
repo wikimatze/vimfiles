@@ -727,17 +727,16 @@ if has ('gui_running')
     " set guifont=Menlo\ Regular:h12
 
     " Fullscreen means FULL screen
-    set fuoptions=maxvert, maxhorz
+    set fuoptions=maxhorz,maxvert
 
     " Cycle between different open MacVim windows
     noremap <D-lt> :maca _cycleWindows:<CR>
 
     " Nabble marks with TextMate style
     let macvim_hig_shift_movement = 1
-  endif
   " }}}
   " Unix {{{
-  if has('unix')
+  elseif has('unix')
     " for the ack.vim plugin
     let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
