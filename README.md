@@ -29,13 +29,8 @@ means.
       - **v**    to open in vertical split
       - **gv**   to open in vertical split silently
       - **q**    to close the quickfix window
-    - *own settings*:
-      - **let g:ackprg="ack-grep -H --nocolor --nogroup --column"**
-- [coffee-script](https://github.com/kchmck/vim-coffee-script "coffe-script"): coffee script support
 - [colorv](https://github.com/Rykka/ColorV "colorv"): display Hex Color with real colors in Vim -
   very useful when working with CSS
-- [cucumber](https://github.com/tpope/vim-cucumber "cucumber"): syntax-highlighting for cucumber
-  files (*no doc*)
 - [command-t](https://github.com/wincent/Command-T "command-t"): file search in the
   actual directory
   - **\<Leader\>t** - call *:CommandT* command to open a specified file
@@ -49,7 +44,7 @@ means.
       - **Ctrl-t** - opens the file in a new tab
       - **Ctrl-s** - opens the file under the cursor with a *horizontal* split
       - **Ctrl-v** - opens the file under the cursor with a *vertcial* split
-      - **ESC or CTRL-c** - closing the open dialog
+      - **ESC or Ctrl-c** - closing the open dialog
       - **Ctrl-u** - clean the matching window
       - **Ctrl-ENTER** - opens the file under the cursor in a new window
 - [delimitMate](https://github.com/Raimondi/delimitMate/ "delimitMate"): semantic autoclose brackets
@@ -61,8 +56,8 @@ means.
   adds keywords like *end* to special constructs in ruby (*no doc*)
 - [fugitive](http://github.com/tpope/vim-fugitive "vim-fugitive"): git wrapper
   - **:Gstatus** - git status
-      - **CTRL-n** - go to the next file
-      - **CTRL-p** - go to the preview file
+      - **Ctrl-n** - go to the next file
+      - **Ctrl-p** - go to the preview file
   - **:Gwrite** - git add
   - **:Gcommit** - git commit (press *wq* for send)
   - **:Gblame** - git blame
@@ -98,10 +93,7 @@ means.
 - [IndexSearch](https://github.com/vim-scripts/IndexedSearch "IndexSearch"): redefines the search
   (/,?) in Vim and creates custom messages about how many hits there are
 - [json](https://github.com/vim-scripts/JSON.vim "json"): json detection and syntax-highlighting (*no doc*)
-- [l9](https://github.com/vim-scripts/L9 "l9"): Vim-script library, add functionality to program vim-files
-  (mainly needed for fuzzyfinder plugin)
-- [markdown](https://github.com/tpope/vim-markdown "markdown"): markdown-syntax
-  highlighting (*no doc*)
+- [markdown](https://github.com/tpope/vim-markdown "markdown"): markdown-syntax highlighting (*no doc*)
 - [matchit](http://www.vim.org/scripts/script.php?script_id=39 "matchit"): press % to match tags in
   HTML, LaTeX and several other file formats (*no doc*)
 - [MRU](https://github.com/vim-scripts/mru.vim "MRU"): opens a quickfix windows which shows the last
@@ -137,12 +129,6 @@ means.
       - **:IndexTaggedNotes** creates new tags (for omnicomplete when @ is pressed)
       - **:ShowTaggedNotes** - will show all notes which are specified with a certain tag
       - **autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h\*** - path of the notes directory
-- [padrino](https://github.com/gerardc/vim-padrino "padrino"): works like rails.vim plugin
-- [powerline](https://github.com/Lokaltog/vim-powerline "powerline"): candy statusline which is high
-  configurable
-- [rainbow_paranthesis](https://github.com/kien/rainbow_parentheses.vim "rainbow_paranthesis"): colorize nested
-  brackets (*no doc*)
-  - **:RainbowParenthesesToggle** - Toggle it on/off
 - [rubyrefactoring](https://github.com/ecomba/vim-ruby-refactoring "rubyrefactoring"): cool when
   working with ruby
   - **,rap**: Refactor Add Parameter => adds a parameter to a function (cursor must be somewhere in the
@@ -194,25 +180,18 @@ means.
 - [tabular](https://github.com/godlygeek/tabular "tabular"): is a plugin to auto indent files
   according to the pattern
   - **:Tabularize / {pattern}**
-- [tagbar](http://majutsushi.github.com/tagbar/ "tagbar"): better version of taglist for source
-  source files (layout is the same as it is for the NERDTree)
-  - [How to install exurberant ctags on mac](http://www.dreamincode.net/forums/blog/164/entry-1479-installing-exuberant-ctags-and-taglist-on-a-mac/ "how to install ctags in mac")
+- [tagbar](http://majutsushi.github.com/tagbar/ "tagbar"): display the structure of the code
   - **:TagbarOpen** - opens the view tagbar
   - **:TagbarToggle** - opens or close the tagbar whether it was closed or open
-  - **:TagbarOpenAutoClose** - opens the tagbar and close it after a tag was selected - the cursor
-    jumps to it
-- [tocdown](https://github.com/matthias-guenther/tocdown "tocdown"): Display the headlines of a
-  markdown document in an extra window.
-  - *own settings*:
-      - **nnoremap <F2> :TocdownToggle<CR>**
-- [yankring](https://github.com/vim-scripts/YankRing.vim "yankring"): better register
-  management and saves up to 100 buffered lines
-  - **:YRShow** - shows the actual buffer
+  - **:TagbarOpenAutoClose** - opens the tagbar and close it after a tag was selected - the cursor jumps to it
+  - [How to install exurberant ctags on mac](http://www.dreamincode.net/forums/blog/164/entry-1479-installing-exuberant-ctags-and-taglist-on-a-mac/ "how to install ctags in mac")
+  - [tocdown](https://github.com/matthias-guenther/tocdown "tocdown"): display the headlines of a markdown document in an extra window.
+- [yankring](https://github.com/vim-scripts/YankRing.vim "yankring"): better register management and saves up to 100 buffered lines
+  - **:YRShow** - shows the actual buffer (you can use visual buttons to select more)
   - **:YRClear** - deletes the buffer
   - **:YRSearch** - type in a word or regular expression to search the yankring after it
-  - with **j** and **k** you can navigate between the different hits and with <enter> you can chose your entry
+  - **j**, **k** for navigation and <Enter> chose your entry
   - **d** delete an entry from from the yankring buffer - but you barely need this function
-  - in the **YRShow** window you can use the visual buttons to select more than one setting
 - [vim-bundler](https://github.com/tpope/vim-bundler "vim-bundler"): wrapper for bundler in Vim
     - **:Bundle** - wraps bundle after, e.g. `:Bundle install`
     - **:Bopen** - opens the *Gemfile* for editing
@@ -220,8 +199,6 @@ means.
   for css3 (*no doc*)
 - [vim-haml](https://github.com/tpope/vim-haml "vim-haml"): file detection and syntax highlighting
   (*no doc*)
-- [vim-less](https://github.com/groenewege/vim-less "vim-less"): syntax highlighting, indenting and
-  auto completion for the dynamic style sheet language (*no docu*)
 - [vim-ruby](https://github.com/vim-ruby/vim-ruby "vim-ruby"): ruby omnicompletion and syntax
   highlighting (*no doc*)
   - **:let ruby*operators = 1** - create colors for ruby operators
@@ -229,39 +206,12 @@ means.
 - [vim-liquid](https://github.com/tpope/vim-liquid "vim-liquid"): highlight liquid tags like {% ...
   %} (*no doc*)
 - [vim-open-associated-programs](https://github.com/xolox/vim-open-associated-programs "vim-open-associated-programs"):
-  open files and web pages in associated programs out of Vim (useful when you want to open links out of Vim)
+  open files and web pages in associated programs out of Vim
   - has generally no mappings and just defines the programs which opens the specified file according
     to the file ending
   - mappings come from the bundle [vim-shell](https://github.com/xolox/vim-shell "vim-shell"):
       - **F6** open file and directory names, URLs and e-mail addresses under the cursor
           - **:Open http://wikimatze.de** alternate syntax
-      - **F11** fullscreen in vim (works only under linux and not under mac because of the
-        keybindings)
-          - **:Fullscreen** alternate syntax for this command
-- [vim-rails](http://github.com/tpope/vim-rails "vim-rails"): rails support in Vim (with some really
-  great features)
-  - **:RDoc** - browse the rails api
-  - **:Rrefresh** - clear some cache settings in Rails
-  - **:Rlog** - splits the actual window and opens the log-file
-  - **:Rpreview [{path}]**  - opens the url *http://localhost:3000/path* for the specified path
-  - **:Rscript** - opens the rails console in a beautiful quickfix window
-  - **gf** - will open models, views, controllers, partials and so on under which the cursor stands
-      - *belongs\*to :projects* - and if the cursor is below *:project* it will open the model *Project*
-  - jump to certain files according to the actual file
-      - each command will open the finding in the actual window, you can modify each command with
-        *V* (vertical split), *S* (horizontal split) *T* (tab), for example *:RVview*, *:RSview* or
-        *:RTview*  and so on
-      - **:Rcontroller** - opens the controller
-      - **:Rfixtures** - opens the fixture file (instead of using fixtures I suggest using
-        [factory girl](https://github.com/thoughtbot/factory*girl "factory girl"))
-      - **:Rhelper** - opens the helper file
-      - **:Rmodel** - opens the model file
-      - **:Rspec** - open the spec file
-      - **:Rview** - opens the view file
-  - extracting code from the view and insert it into partials
-      - **:2,3Rextract post** will extract lines 2,3 in the partial with the name *post*
-      - you didn't need to specify the lines, it is possible to use visual mode: *:'<,'>Rextract
-        juhu*, so the content will be inserted in the partial *juhu*
 - [vis](https://github.com/vim-scripts/vis "vis"): you can execute commands only in the selected
   section of visual mode
     - mark a text in visual mode, then press :B and then you can perform any command (Ex command)
