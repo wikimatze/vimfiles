@@ -133,6 +133,8 @@ means.
       - **:IndexTaggedNotes** creates new tags (for omnicomplete when @ is pressed)
       - **:ShowTaggedNotes** - will show all notes which are specified with a certain tag
       - **autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h\*** - path of the notes directory
+- *mappings:*
+      - **nnoremap \<F7\> :Note collect\<CR\>**
 - [rubyrefactoring](https://github.com/ecomba/vim-ruby-refactoring "rubyrefactoring"): cool when
   working with ruby
   - **,rap**: Refactor Add Parameter => adds a parameter to a function (cursor must be somewhere in the
