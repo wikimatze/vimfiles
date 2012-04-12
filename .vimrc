@@ -40,7 +40,6 @@ Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-surround'
 Bundle 'tsaleh/vim-align'
 Bundle 'tsaleh/vim-matchit'
-" Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'vim-scripts/IndexedSearch'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'vim-scripts/vis'
@@ -94,6 +93,7 @@ set nowarn                             " do not warn, when shell command update 
 set shell=/bin/bash                    " always use sh when executing commands with :!
 set synmaxcol=200                      " better scrolling for long lines
 set spelllang=en_us                    " default language for spell checker
+set spellfile=~/.vim/spell/en.utf-8.add
 set title                              " show title in console title
 set scrolloff=4 " minimal number of screen lines to keep above and below the cursor
 set viminfo='1000000,f1 "save marks for 1 million files ('1000000), save global marks
@@ -745,4 +745,5 @@ endif
 exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), "\n")
 
 " --------------------------------------------------------------------------------}}}
+
 
