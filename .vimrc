@@ -498,7 +498,7 @@ let g:easytags_python_enabled = 1 " use Python script for dynamic syntax highlig
 " }}}
 " Delimate {{{
 
-" don't use the autoclose plugin for vim files
+" don't use autoclose for vim files
 au FileType vim let b:loaded_delimitMate = 0
 
 " }}}
@@ -508,7 +508,7 @@ nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gw :Gwrite<CR>
 nnoremap <leader>ga :Gadd<CR>
 nnoremap <leader>gb :Gblame<CR>
-nnoremap <leader>gco :Gcheckout<CR>
+nnoremap <leader>gl :Glog<CR>
 nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gm :Gmove<CR>
 nnoremap <leader>gr :Gremove<CR>
@@ -527,7 +527,6 @@ endif
 " }}}
 " Hammer {{{
 
-" press ,m and it will render markdown in a browser
 noremap <leader>m :Hammer<CR>
 
 " }}}

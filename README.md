@@ -53,6 +53,7 @@ means.
   motions
     - **<mapleader><mapleader>** and then any motion key like *w, e, j* and so on
 - [easytags](https://github.com/xolox/vim-easytags "easytags"): automated tag generation for vim
+    - **:UpdateTags** - will update the tags
 - [endwise-ruby](https://github.com/tpope/vim-endwise "endwise-ruby"): automatically
   adds keywords like *end* to special constructs in ruby (*no doc*)
 - [fugitive](http://github.com/tpope/vim-fugitive "vim-fugitive"): git wrapper
@@ -89,8 +90,8 @@ means.
     (just imagine a `git diff`)
 - [hammer](https://github.com/robgleeson/hammer.vim "hammer"): displays various markups (markdown,
   textile, rdoc, asciidoc) with one keystroke in the browser
-  - **map <leader>m :Hammer<CR>** - press ,m to perform this action (depends on how you define
-    *leader* in your vimrc)
+  - *mappings:*
+      - **noremap \<leader\>m :Hammer\<CR\>**
 - [IndexSearch](https://github.com/vim-scripts/IndexedSearch "IndexSearch"): redefines the search
   (/,?) in Vim and creates custom messages about how many hits there are
 - [json](https://github.com/vim-scripts/JSON.vim "json"): json detection and syntax-highlighting (*no doc*)
