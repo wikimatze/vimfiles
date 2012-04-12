@@ -52,6 +52,9 @@ means.
       - **CTRL-u** - clean the matching window
       - **CTRL-ENTER** - opens the file under the cursor in a new window
 - [delimitMate](https://github.com/Raimondi/delimitMate/ "delimitMate"): semantic autoclose brackets
+- [easymotion](https://github.com/Lokaltog/vim-easymotion "easymotion"): easier and faster use of
+  motions
+    - **<mapleader><mapleader>** and then any motion key like *w, e, j* and so on
 - [easytags](https://github.com/xolox/vim-easytags "easytags"): automated tag generation for vim
 - [endwise-ruby](https://github.com/tpope/vim-endwise "endwise-ruby"): automatically
   adds keywords like *end* to special constructs in ruby (*no doc*)
