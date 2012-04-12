@@ -234,6 +234,7 @@ set ofu=syntaxcomplete#Complete
 " }}}
 " --------------------------------------------------------------------------------}}}
 " Convenience mappings -----------------------------------------------------------{{{
+
 " Get rid of help key
 noremap  <F1> :Fullscreen<CR>
 inoremap <F1> <ESC>:Fullscreen<CR>
@@ -503,6 +504,7 @@ au FileType vim let b:loaded_delimitMate = 0
 
 " }}}
 " Fugitive {{{
+
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gw :Gwrite<CR>
@@ -522,6 +524,7 @@ let g:indexed_search_shortmess = 1 " shorter messages
 
 " }}}
 " Gist {{{
+
 let g:gist_detect_filetype         = 1 " detecting file type for each gist
 let g:gist_open_browser_after_post = 1 " open the gist after each post
 if has("mac")
@@ -654,13 +657,14 @@ nnoremap <F2> :TocdownToggle<CR>
 " }}}
 " Vim-ruby {{{
 
-let ruby_operators = 1    " create colors for ruby operators
+let ruby_operators    = 1 " create colors for ruby operators
 let ruby_space_errors = 1 " mark whitespace characters
 
 " }}}
 " Vim-shell {{{
 
 let g:shell_verify_urls = 1 " handle special URLs with dot at the end
+
 " }}}
 " Yankring {{{
 
@@ -703,6 +707,7 @@ noremap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <Cr>
 
 " --------------------------------------------------------------------------------}}}
 " Environments (Mac/Unix/GUI/Console ---------------------------------------------{{{
+
 " We have Gui running
 if has ('gui_running')
   " remove all the UI crap
