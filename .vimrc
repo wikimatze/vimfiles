@@ -515,8 +515,14 @@ nnoremap <leader>gr :Gremove<CR>
 nnoremap <leader>gp :! git push<CR>
 
 " }}}
+" Index Search {{{
+
+let g:indexed_search_colors    = 1 " turn of colors for messages
+let g:indexed_search_shortmess = 1 " shorter messages
+
+" }}}
 " Gist {{{
-let g:gist_detect_filetype = 1         " detecting file type for each gist
+let g:gist_detect_filetype         = 1 " detecting file type for each gist
 let g:gist_open_browser_after_post = 1 " open the gist after each post
 if has("mac")
   let g:gist_clip_command = 'pbcopy'
@@ -525,26 +531,21 @@ elseif has("unix")
 endif
 
 " }}}
+" Gundo {{{
+
+let g:gundo_width           = 45 " horizontal width
+let g:gundo_preview_height  = 15 " vertical height
+let g:gundo_help            = 1  " show the help in gundo window
+let g:gundo_close_on_revert = 0  " don't close gundo after a version is selected
+let g:gundo_right           = 0  " display gundo on the left site
+
+nnoremap <F3> :GundoToggle<CR>
+
+" }}}
 " Hammer {{{
 
 noremap <leader>m :Hammer<CR>
 
-" }}}
-" Index Search {{{
-
-let g:indexed_search_colors    = 1 " turn of colors for messages
-let g:indexed_search_shortmess = 1 " shorter messages
-" }}}
-" Gundo {{{
-
-let g:gundo_width = 45          " horizontal width
-let g:gundo_preview_height = 15 " vertical height
-let g:gundo_help = 1            " show the help in gundo window
-let g:gundo_close_on_revert = 0 " don't close gundo after a version is selected
-let g:gundo_right = 0           " display gundo on the left site
-
-" F3 call GundoToggle
-nnoremap <F3> :GundoToggle<CR>
 " }}}
 " LaTeX-Suite {{{
 

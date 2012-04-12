@@ -88,6 +88,8 @@ means.
   - **Enter or double click** - revert the changes of the file to the current file
   - **p** - will open a preview to show the differences from the selected and the current version
     (just imagine a `git diff`)
+  - *mappings:*
+      - **nnoremap \<F3\> :GundoToggle\<CR\>**
 - [hammer](https://github.com/robgleeson/hammer.vim "hammer"): displays various markups (markdown,
   textile, rdoc, asciidoc) with one keystroke in the browser
   - *mappings:*
