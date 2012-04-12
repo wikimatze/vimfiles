@@ -202,6 +202,9 @@ means.
   - **:YRSearch** - type in a word or regular expression to search the yankring after it
   - **j**, **k** for navigation and <Enter> chose your entry
   - **d** delete an entry from from the yankring buffer - but you barely need this function
+  - *mappings:*
+      - **noremap \<leader\>y :YRShow\<CR\>
+      - **noremap \<leader\>x :YRClear\<CR\>
 - [vim-bundler](https://github.com/tpope/vim-bundler "vim-bundler"): wrapper for bundler in Vim
     - **:Bundle** - wraps bundle after, e.g. `:Bundle install`
     - **:Bopen** - opens the *Gemfile* for editing
