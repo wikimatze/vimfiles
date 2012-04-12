@@ -73,8 +73,6 @@ means.
   - **:Ggrep** - does a *grep* in the tree
   - **:Gbrowse** - opens the actual file in the browser (normally its on github)
   - **:Git** - after this you can perform every other normal git command you want
-- [Grep.vim](https://github.com/vim-scripts/grep.vim "Grep.vim"): using grep to search
-  after files - a good alternative to grep (-no doc-)
 - [Gist.vim](https://github.com/mattn/gist-vim "Gist.vim"): upload files directly to github with just one command
   - first setup your git credentials **let g:github*user = 'your-name'** and **let g:github*token =
     'token'**  in your *.vimrc*
