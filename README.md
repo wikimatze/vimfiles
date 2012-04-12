@@ -194,6 +194,8 @@ means.
       - **nnoremap \<silent\> \<F4\> :TagbarToggle\<CR\>**
   - [How to install exurberant ctags on mac](http://www.dreamincode.net/forums/blog/164/entry-1479-installing-exuberant-ctags-and-taglist-on-a-mac/ "how to install ctags in mac")
 - [tocdown](https://github.com/matthias-guenther/tocdown "tocdown"): display the headlines of a markdown document in an extra window.
+- *mappings:*
+      - **nnoremap \<F2\> :TocdownToggle\<CR\>**
 - [yankring](https://github.com/vim-scripts/YankRing.vim "yankring"): better register management and saves up to 100 buffered lines
   - **:YRShow** - shows the actual buffer (you can use visual buttons to select more)
   - **:YRClear** - deletes the buffer
