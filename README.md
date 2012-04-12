@@ -33,12 +33,9 @@ means.
   very useful when working with CSS
 - [command-t](https://github.com/wincent/Command-T "command-t"): file search in the
   actual directory
-  - **\<Leader\>t** - call *:CommandT* command to open a specified file
-      - **:CommandT ../path/to/other/files** - search in the specified path
-  - **\<Leader\>b** - opens the buffer for this files after which were searched in the past
   - **:CommandTFlush** - update the path cache and also include new and deleted files
   - **Installation**: $ ~/.vim/bundle/Command-t; rake make
-  - shortcuts:
+  - *shortcuts:*
       - **Ctrl-j** - go down
       - **Ctrl-k** - go up
       - **Ctrl-t** - opens the file in a new tab
@@ -47,6 +44,10 @@ means.
       - **ESC or Ctrl-c** - closing the open dialog
       - **Ctrl-u** - clean the matching window
       - **Ctrl-ENTER** - opens the file under the cursor in a new window
+  - *mappings:*
+      - **\<Leader\>t** - call *:CommandT* command to open a specified file
+          - **:CommandT ../path/to/other/files** - search in the specified path
+      - **\<Leader\>b** - opens the buffer for this files after which were searched in the past
 - [delimitMate](https://github.com/Raimondi/delimitMate/ "delimitMate"): semantic autoclose brackets
 - [easymotion](https://github.com/Lokaltog/vim-easymotion "easymotion"): easier and faster use of
   motions
