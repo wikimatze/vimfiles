@@ -590,21 +590,24 @@ nnoremap <F7> :Note collect<CR>
 
 let g:session_autosave = 'no' " disable automatic saving when quitting a session
 let g:session_autoload = 'no' " disable asking to load the previous session
+
 " }}}
 " Snipmate {{{
+
 let g:snippets_dir = '~/.vim/snippets' " setting of the snipmate directory
 
 " }}}
 " Supertab {{{
 
-let g:SuperTabDefaultCompletionType = "<c-n>"
-let g:SuperTabLongestHighlight = 1
+let g:SuperTabDefaultCompletionType = "<C-n>"
+let g:SuperTabLongestHighlight      = 1
 
 " }}}
 " Syntastic {{{
-let g:syntastic_enable_signs = 1                " setting signs for errors (arrows)
-let g:syntastic_auto_loc_list = 1               " open/close toc of errors
-let g:syntastic_auto_jump = 0                   " don't jump to the first error
+
+let g:syntastic_enable_signs  = 1 " setting signs for errors (arrows)
+let g:syntastic_auto_loc_list = 1 " open/close toc of errors
+let g:syntastic_auto_jump     = 0 " don't jump to the first error
 let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['haml', 'javascript', 'ruby', 'css', 'sass'], 'passive_filetypes': ['php', 'html'] }
 let g:syntastic_disabled_filetypes = ['html']   " disable for this file type
 let tex_no_error = 1                            " underscores are not displayed as syntax errors
@@ -632,16 +635,16 @@ nnoremap <silent> <F4> :TagbarToggle<CR>
 "  ab  = cd
 "  abc = def
 " works for all specified chars below
-nmap <leader>b= :Tabularize /=<CR>
-vmap <leader>b= :Tabularize /=<CR>
-nmap <leader>b: :Tabularize /:<CR>
-vmap <leader>b: :Tabularize /:<CR>
-nmap <leader>b/ :Tabularize /\/\/<CR>
-vmap <leader>b/ :Tabularize /\/\/<CR>
-nmap <leader>b" :Tabularize /"<CR>
-vmap <leader>b" :Tabularize /"<CR>
-nmap <leader>bt :Tabularize /& \\ldots &<CR>
-vmap <leader>bt :Tabularize /& \\ldots &<CR>
+noremap <leader>b= :Tabularize /=<CR>
+vnoremap <leader>b= :Tabularize /=<CR>
+nnoremap <leader>b: :Tabularize /:<CR>
+vnoremap <leader>b: :Tabularize /:<CR>
+nnoremap <leader>b/ :Tabularize /\/\/<CR>
+vnoremap <leader>b/ :Tabularize /\/\/<CR>
+nnoremap <leader>b" :Tabularize /"<CR>
+vnoremap <leader>b" :Tabularize /"<CR>
+nnoremap <leader>bt :Tabularize /& \\ldots &<CR>
+vnoremap <leader>bt :Tabularize /& \\ldots &<CR>
 
 " }}}
 " Tocdown {{{
