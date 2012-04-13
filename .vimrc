@@ -96,12 +96,13 @@ set spelllang=en_us                    " default language for spell checker
 set spellfile=~/.vim/spell/en.utf-8.add
 set spellsuggest=best,10 " only display the 10 best suggestions
 set title                              " show title in console title
-set scrolloff=4 " minimal number of screen lines to keep above and below the cursor
 set viminfo='1000000,f1 "save marks for 1 million files ('1000000), save global marks
 autocmd BufNew * if winnr('$') == 1 | tabmove99 | endif " move tabs to the end for new, single buffers (exclude splits)
 set ignorecase " ignore upper- and lowercase letters during a search
 set hlsearch   " highlight all finding for a search
 set incsearch  " do incremental searching, that means search after the string when you begin writing
+
+let &scrolloff=999-&scrolloff " current view is always centered
 
 " when switching between windows, automatically write all buffers
 au FocusLost * :silent! wall
