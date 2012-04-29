@@ -94,6 +94,8 @@
 - **:wall** - write all changes
 - **'0** - when opening Vim and pressing this command will bring you back to last file you changed -
   handy if you have to shutdown and start the work again
+- **"+y** - copy to clipboard (you have to be in visual mode)
+- **"+p** - paste from clopboard
 
 
 # Close
