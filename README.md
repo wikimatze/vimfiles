@@ -22,13 +22,11 @@ means.
 - [ack.vim](https://github.com/mileszs/ack.vim "ack.vim"): you can perform ack commands in Vim
     - **:Ack {pattern} [{directory}]** - the basic command to search after words in your project
     - shortcuts for navigation:
-      - **o**    to open (same as enter)
-      - **go**   to preview file (open but maintain focus on ack.vim results)
-      - **t**    to open in new tab
-      - **T**    to open in new tab silently
-      - **v**    to open in vertical split
-      - **gv**   to open in vertical split silently
-      - **q**    to close the quickfix window
+      - :o → open the selected file in the current window
+      - :go → open preview but will stay in the quickfix preview window
+      - :t → open the selected file in a new tab
+      - :v → vertical split
+      - :q → quit the Ack window
 - [colorv](https://github.com/Rykka/ColorV "colorv"): display Hex Color with real colors in Vim -
   very useful when working with CSS
 - [command-t](https://github.com/wincent/Command-T "command-t"): file search in the
