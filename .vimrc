@@ -538,7 +538,7 @@ let g:gundo_help            = 1  " show the help in gundo window
 let g:gundo_close_on_revert = 0  " don't close gundo after a version is selected
 let g:gundo_right           = 0  " display gundo on the left site
 
-nnoremap <F3> :GundoToggle<CR>
+nnoremap <F2> :GundoToggle<CR>
 
 " }}}
 " Hammer {{{
@@ -582,7 +582,7 @@ let g:notes_directory = '~/Dropbox/notes'            " path of main directory
 let g:notes_suffix = '.txt'                          " default file ending of note files
 autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h " path of the notes directory
 
-nnoremap <F7> :Note collect<CR>
+nnoremap <F7> :Note! collect<CR>
 
 " }}}
 " Session {{{
@@ -617,10 +617,9 @@ set statusline+=%{SyntasticStatuslineFlag()}  " show message in quick fix
 
 " }}}
 " Tagbar {{{
-
 let g:tagbar_compact = 1 " don't show the help in the tagbar
 
-nnoremap <silent> <F4> :TagbarToggle<CR>
+nnoremap <silent> <F3> :TagbarToggle<CR>
 
 " }}}
 " Tabularize {{{
@@ -648,7 +647,7 @@ vnoremap <leader>bt :Tabularize /& \\ldots &<CR>
 " }}}
 " Tocdown {{{
 
-nnoremap <F2> :TocdownToggle<CR>
+nnoremap <F4> :TocdownToggle<CR>
 
 " }}}
 " Vim-ruby {{{
