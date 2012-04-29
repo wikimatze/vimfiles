@@ -157,6 +157,7 @@
 - **:tabedit <name>** - opens a new tab with the specified file name
 - **:q** - close tab
 - **:tabonly** - close all tabs except the actual
+- **:tabcloseN** - will close the N-th tab
 - **movement**
   - **gt** - go to the next tab (Motion: *3gt*)
   - **gT** - go to the preview tab
@@ -252,6 +253,8 @@
 - **digraphs** - will display list of characters that are not on the keyboard (still don't know how
   to use them)
 - **:map** - print all the mappings
+- **C-V** - opens Visual Block select
+- **<C-X><C-F>** - display a list of files in the current directory in insert mode
 
 
 # ctags
