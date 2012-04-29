@@ -49,7 +49,8 @@ means.
 - [delimitMate](https://github.com/Raimondi/delimitMate/ "delimitMate"): semantic autoclose brackets
 - [easymotion](https://github.com/Lokaltog/vim-easymotion "easymotion"): easier and faster use of
   motions
-    - **<mapleader><mapleader>** and then any motion key like *w, e, j* and so on
+    - **<leader><leader>** and then any motion key like *w, e, j* and so on
+    - **<leader><leader>t | T** - search after the target character forward (t) and backward (T)
 - [easytags](https://github.com/xolox/vim-easytags "easytags"): automated tag generation for vim
     - **:UpdateTags** - will update the tags
 - [endwise-ruby](https://github.com/tpope/vim-endwise "endwise-ruby"): automatically
@@ -236,7 +237,6 @@ means.
     - **:BundleInstall!** - installs or updates installed bundles
     - **:BundleSearch <foo>** - opens a window to display the matches in an extra window
     - **:BundleClean** - confirms removal of unused script-dirs from `.vim/bundle/`.
-
 
 ## Usage
 
