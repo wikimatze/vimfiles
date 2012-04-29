@@ -309,4 +309,21 @@
 - replace line ending through **\\\\:** `:%s/$/ \\\\/`
 - change matching before and after **=:** `:%s/\(.*\)=\(.*\)/\2=\1`
 - replace **a = b** to **b = a:** `:%s/\(.*\)=\(.*\)/\2=\1`
+- vim --remote-silent: start only on window of vim even if you are in a different directory and
+  wants to open that file
 
+
+# help
+- CTRG-] => jump into the hyperlink
+- CTRG-T => jump back in your search history
+- helpgrep <searchterm> => search all doc after the specified term (press :cwindow to see all
+  matchings)
+- :help ins-completion  => overview of commands to start autocompletion
+- :help ‘complete’ =>
+- :help i_CTRL-N
+- :help i_CTRL-P
+- :help :vglobal shows us how to perform an operation on all lines that don’t match the given
+  pattern. In this case we delete lines that don’t match what we’re looking for.
+- :help :global is how we can run a given command (in this case a :normal command) for each line that
+  matches a pattern.  example :g/def/normal Ai -> will insert at the end of each line containing the
+  def word a 'i'
