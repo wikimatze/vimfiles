@@ -753,4 +753,17 @@ exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), 
 
 " --------------------------------------------------------------------------------}}}
 " nnoremap <C-X> "+p
+"
+nnoremap \r :e ~/.vim/README.md <CR>
+nnoremap \k :e ~/.vim/keymappings.md <CR>
+" Press \cd to change the pwd to the current file you are in
+nnoremap \cd :lcd %:h <CR>
+"
+" :Explore will look like NERDTree
+let g:netrw_liststyle=3
+"
+" Make the 'cw' and like commands put a $ at the end instead of just deleting
+" the text and replacing it
+set cpoptions+=$
+
 
