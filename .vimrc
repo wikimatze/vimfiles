@@ -336,25 +336,8 @@ noremap <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of eac
 noremap <leader>_ :%s/_//g<CR>                   " delete all _
 noremap <leader>rt :%s/\\t/  /g<CR>
 
-" Better copy/paste mappings - yeah, I need this old stuff from old editor times :)
-vnoremap <C-X> "+d
+" copy to clipboard
 vnoremap <C-C> "+y
-nnoremap <C-V> "+gPl
-vnoremap <C-V> :<C-U>call Paste("v")<CR>
-inoremap <C-V> <C-O>:call Paste("i")<CR>
-
-" Paste function in Vim (http://ubuntuforums.org/showthread.php?t=74905&page=2)
-function! Paste(mode)
-  if a:mode == "v"
-    normal gv
-    normal "+P
-    normal l
-  elseif a:mode == "i"
-    set virtualedit=all
-    normal `^"+gP
-    let &virtualedit = ""
-  endif
-endfunction
 
 " ---------------------------------------------------------------------------------}}}
 " Filetype detecion --------------------------------------------------------------{{{
@@ -370,6 +353,24 @@ au! BufRead,BufNewFile *.yml set filetype=yaml
 
 " --------------------------------------------------------------------------------}}}
 " Filetype specific --------------------------------------------------------------{{{
+
+" Bash {{{
+
+augroup filetype_bash
+  au!
+  au FileType sh setlocal ts=2 sts=2 sw=2 expandtab textwidth=5000 foldmethod=syntax
+augroup END
+
+" }}}
+" Notes {{{
+
+augroup filetype_notes
+  au!
+  au FileType notes setlocal ts=2 sts=2 sw=2 expandtab textwidth=5000
+augroup END
+
+" }}}
+
 " Vim {{{
 
 augroup filetype_vim
@@ -386,7 +387,7 @@ augroup END
 
 augroup filetype_ruby
   au!
-  au FileType ruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=50 foldmethod=syntax
+  au FileType ruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=500 foldmethod=syntax
 
   " Press F11 to compile the actual file
   au FileType ruby map <F11> :!ruby "%:p"<CR>
@@ -442,7 +443,7 @@ augroup END
 
 augroup filetype_txt
   au!
-  au FileType txt setlocal ts=2 sts=2 sw=2 expandtab textwidth=110
+  au FileType txt setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
 augroup END
 
 " }}}
@@ -758,5 +759,5 @@ endif
 exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), "\n")
 
 " --------------------------------------------------------------------------------}}}
-
+" nnoremap <C-X> "+p
 
