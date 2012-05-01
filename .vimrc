@@ -79,8 +79,6 @@ set nonumber                           " don't display line numbers (takes too m
 set numberwidth=2                      " using only 2 column for numberline presentation
 set ch=1                               " height of the command line at the bottom
 set history=5000                       " keep 5000 lines of command line history
-set undofile                           " save the names for the undo file
-set undoreload=10000                   " save the whole buffer for undo when reloading it
 set shell=/bin/bash                    " defines the Shell I want to use for external commands
 set lazyredraw                         " don't redraw the screen while executing macros, registers, and other commands
 set showbreak=↪                        " show the symbol for wrapped lines
@@ -155,7 +153,6 @@ set completeopt=longest,menuone,preview
 " backups {{{
 
 set backupext=~             " backup file extension
-set undodir=~/.vim/undo     " directory to save undo files
 set backupdir=~/.vim/backup " backups are written to ~/.backup/ if possible.
 set backupcopy=yes          " keep attributes of the original file
 set backup                  " save files after close
@@ -164,6 +161,16 @@ set noswapfile              " don't save swap files
 set updatetime=2000         " Write swap files after 2 seconds of inactivity.
 
 " }}}
+" Undo stuff {{{
+
+if has('gui_running')
+  set undofile            " save the names for the undo file
+  set undoreload=10000    " save the whole buffer for undo when reloading it
+  set undodir=~/.vim/undo " directory to save undo files
+endif
+
+" }}}
+
 " Line return {{{
 " When editing a file, always jump to the last known cursor position.
 augroup line_return
