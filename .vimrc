@@ -1,5 +1,4 @@
 " Preamble -----------------------------------------------------------------------{{{
-
 set nocompatible " be iMproved
 filetype off     " required!
 
@@ -65,51 +64,51 @@ filetype plugin on " Enable file type-specific plugins
 " -------------------------------------------------------------------------------}}}
 " General settings ---------------------------------------------------------------{{{
 
-set encoding=utf-8                     " terminal encoding
-set modeline                           " don't look how many lines are the beginning and the end of the file
-set autoindent                         " Copy indent from current line when starting a new line
-set autoread                           " automatically read a file that has changed on disk
-set showmode                           " show the current modal mode
-set showcmd                            " show (partial) command in the last line of the screen
-set noerrorbells                       " don't make noise on error messages
-set ttyfast                            " fast terminal connection, more characters will be sent to the screen
-set ruler                              " show the line and column number of the cursor position
-set backspace=indent,eol,start         " allow backspacing over everything in insert mode
-set nonumber                           " don't display line numbers (takes too much space)
-set numberwidth=2                      " using only 2 column for numberline presentation
-set ch=1                               " height of the command line at the bottom
-set history=5000                       " keep 5000 lines of command line history
-set shell=/bin/bash                    " defines the Shell I want to use for external commands
-set lazyredraw                         " don't update the display while executing macros, registers, etc.
-set showbreak=↪                        " show the symbol for wrapped lines
-set splitbelow                         " splitting a window will put the new window below the current one
-set splitright                         " splitting a window will put the new window right the current one
-set fileencodings=utf-8,default,latin1 " the order of file encodings to try.
-set lines=999 columns=999              " full screen when starting Gvim (it's a hack)
-set nomodeline                         " frequent security hole
-set nowarn                             " do not warn, when shell command update the file you edit in Vim
-set shell=/bin/bash                    " always use sh when executing commands with :!
-set synmaxcol=200                      " better scrolling for long lines
-set spelllang=en_us                    " default language for spell checker
-set spellfile=~/.vim/spell/en.utf-8.add
-set spellsuggest=best,10 " only display the 10 best suggestions
-set title                              " show title in console title
-set viminfo='1000000,f1 "save marks for 1 million files ('1000000), save global marks
-set ignorecase " ignore upper- and lowercase letters during a search
-set hlsearch   " highlight all finding for a search
-set incsearch  " do incremental searching, that means search after the string when you begin writing
+set encoding=utf-8                      " terminal encoding
+set modeline                            " don't look how many lines are the beginning and the end of the file
+set autoindent                          " Copy indent from current line when starting a new line
+set autoread                            " automatically read a file that has changed on disk
+set showmode                            " show the current modal mode
+set showcmd                             " show (partial) command in the last line of the screen
+set noerrorbells                        " don't make noise on error messages
+set ttyfast                             " fast terminal connection, more characters will be sent to the screen
+set ruler                               " show the line and column number of the cursor position
+set backspace=indent,eol,start          " allow backspacing over everything in insert mode
+set nonumber                            " don't display line numbers (takes too much space)
+set numberwidth=2                       " using only 2 column for numberline presentation
+set ch=1                                " height of the command line at the bottom
+set history=5000                        " keep 5000 lines of command line history
+set shell=/bin/bash                     " defines the Shell I want to use for external commands
+set lazyredraw                          " don't update the display while executing macros, registers, etc.
+set showbreak=↪                         " show the symbol for wrapped lines
+set splitbelow                          " splitting a window will put the new window below the current one
+set splitright                          " splitting a window will put the new window right the current one
+set fileencodings=utf-8,default,latin1  " the order of file encodings to try.
+set lines=999 columns=999               " full screen when starting Gvim (it's a hack)
+set nomodeline                          " frequent security hole
+set nowarn                              " do not warn, when shell command update the file you edit in Vim
+set shell=/bin/bash                     " always use sh when executing commands with :!
+set synmaxcol=200                       " better scrolling for long lines
+set spelllang=en_us                     " default language for spell checker
+set spellfile=~/.vim/spell/en.utf-8.add " spellfile for additional correct english words
+set spellsuggest=best,10                " only display the 10 best suggestions
+set title                               " show title in console title
+set viminfo='1000000,f1                 " save marks for 1 million files ('1000000), save global marks
+set ignorecase                          " ignore upper- and lowercase letters during a search
+set hlsearch                            " highlight all finding for a search
+set incsearch                           " do incremental searching, that means search after the string when you begin writing
 
 let &scrolloff=999-&scrolloff " current view is always centered
 
-set fillchars="" " get rid of silly characters in separators in the CMD
 
 " when switching between windows, automatically write all buffers
 autocmd FocusLost * :silent! wall
 
 " Resize splits when the window is resized
 autocmd VimResized * :wincmd =
-
 autocmd BufNew * if winnr('$') == 1 | tabmove99 | endif " move tabs to the end for new, single buffers (exclude splits)
+
+set fillchars="" " get rid of silly characters in separators in the CMD
 
 " Cursorline {{{
 " Only show cursorline in the current window and in normal mode.
