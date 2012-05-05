@@ -352,6 +352,8 @@ noremap <leader>rt :%s/\\t/  /g<CR>
 vnoremap <C-C> "+y
 nnoremap <C-A> "+p
 
+" Turn off that stupid highlight search
+nnoremap <silent> \n :nohls<CR>
 
 " ---------------------------------------------------------------------------------}}}
 " Command line mappings -----------------------------------------------------------{{{
