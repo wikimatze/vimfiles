@@ -817,7 +817,7 @@ if has ('gui_running')
 
   " Mac {{{
   if has('mac')
-    set gfn=Menlo:h14
+    set gfn=Menlo:h15
     " set guifont=Menlo\ Regular:h12
 
     " Fullscreen means FULL screen
