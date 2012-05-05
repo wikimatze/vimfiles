@@ -304,6 +304,9 @@ nnoremap \k :e ~/.vim/keymappings.md<CR>
 noremap <silent> ,c :<C-B>sil <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:noh<CR>
 noremap <silent> ,u :<C-B>sil <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:noh<CR>
 
+" Press \cd to change the pwd to the current file you are in
+nnoremap \cd :lcd %:h<CR>
+
 " Use hjkl in wrapped-lined files
 onoremap <silent> <expr> j ScreenMovement("j")
 onoremap <silent> <expr> k ScreenMovement("k")
@@ -834,9 +837,7 @@ exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), 
 
 " --------------------------------------------------------------------------------}}}
 
-" Press \cd to change the pwd to the current file you are in
-nnoremap \cd :lcd %:h <CR>
-"
+
 " :Explore will look like NERDTree
 let g:netrw_liststyle=3
 "
