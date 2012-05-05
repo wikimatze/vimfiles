@@ -414,7 +414,6 @@ augroup filetype_vim
   au Filetype help setlocal textwidth=78
   au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
   au FileType vim let b:comment_leader = '" '
-  au BufWritePost .vimrc source $MYVIMRC " Source vimrc after saving changes
 augroup END
 
 " }}}
