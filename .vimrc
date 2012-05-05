@@ -673,6 +673,12 @@ autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h " path of the notes directo
 nnoremap <F7> :Note! collect<CR>
 
 " }}}
+" Netrw {{{
+
+" :Explore will look like NERDTree
+let g:netrw_liststyle=3
+
+" }}}
 " Session {{{
 
 let g:session_autosave = 'no' " disable automatic saving when quitting a session
@@ -841,7 +847,3 @@ exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), 
 
 " --------------------------------------------------------------------------------}}}
 
-
-" :Explore will look like NERDTree
-let g:netrw_liststyle=3
-"
