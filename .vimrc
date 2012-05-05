@@ -354,6 +354,21 @@ nnoremap <C-A> "+p
 
 
 " ---------------------------------------------------------------------------------}}}
+" Command line mappings -----------------------------------------------------------{{{
+" go to the beginning of the line
+cnoremap <C-A> <Home>
+" go to the end of the command line
+cnoremap <C-E> <End>
+" go one word to the left
+cnoremap <C-H> <Left>
+" go one word to the right
+cnoremap <C-L> <Right>
+" move back in the command history
+cnoremap <C-P> <Up>
+" move forward in the command history
+cnoremap <C-N> <Down>
+
+" --------------------------------------------------------------------------------}}}
 " Timeout setting ----------------------------------------------------------------{{{
 
 " This is the timeout used while waiting for user input on a multi-keyed macro
