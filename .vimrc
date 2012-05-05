@@ -288,9 +288,11 @@ inoremap jj <nop>
 nnoremap <silent>,sv :source $MYVIMRC <CR>
 
 " Quickediting
-nnoremap <silent>,ev :tabedit $MYVIMRC <CR>
+nnoremap <silent>,ev :tabedit $MYVIMRC<CR>
 nnoremap <leader>br :vsplit ~/.vim/README.md<CR>
 nnoremap <leader>bs :vsplit ~/.vim/README.md<CR>
+nnoremap \r :e ~/.vim/README.md<CR>
+nnoremap \k :e ~/.vim/keymappings.md<CR>
 
 " comment in visual mode press ,c (for uncomment ,u)
 noremap <silent> ,c :<C-B>sil <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:noh<CR>
@@ -802,10 +804,7 @@ endif
 exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), "\n")
 
 " --------------------------------------------------------------------------------}}}
-" nnoremap <C-X> "+p
-"
-nnoremap \r :e ~/.vim/README.md <CR>
-nnoremap \k :e ~/.vim/keymappings.md <CR>
+
 " Press \cd to change the pwd to the current file you are in
 nnoremap \cd :lcd %:h <CR>
 "
