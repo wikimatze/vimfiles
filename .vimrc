@@ -175,8 +175,8 @@ if has('gui_running')
 endif
 
 " }}}
-
 " Line return {{{
+
 " When editing a file, always jump to the last known cursor position.
 augroup line_return
     au!
@@ -561,6 +561,12 @@ let g:CommandTAcceptSelectionTabMap = '<C-t>'       " Ctrl-t will open the file 
 set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " not matching files
 
 " }}}
+" Delimate {{{
+
+" don't use autoclose for vim files
+au FileType vim let b:loaded_delimitMate = 0
+
+" }}}
 " Easytags {{{
 
 set tags=./tags;                  " name of the tags files which is relative to the project
@@ -570,12 +576,6 @@ let g:easytags_auto_update = 0    " don't update the text, when stop working
 let g:easytags_auto_highlight = 0 " don't highlight the text, when stop working
 let g:easytags_resolve_links = 1  " resolve symbolic links with pathnames
 let g:easytags_python_enabled = 1 " use Python script for dynamic syntax highlighting (is faster)
-
-" }}}
-" Delimate {{{
-
-" don't use autoclose for vim files
-au FileType vim let b:loaded_delimitMate = 0
 
 " }}}
 " Fugitive {{{
@@ -590,12 +590,6 @@ nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gm :Gmove<CR>
 nnoremap <leader>gr :Gremove<CR>
 nnoremap <leader>gp :! git push<CR>
-
-" }}}
-" Index Search {{{
-
-let g:indexed_search_colors    = 1 " turn of colors for messages
-let g:indexed_search_shortmess = 1 " shorter messages
 
 " }}}
 " Gist {{{
@@ -623,6 +617,12 @@ nnoremap <F2> :GundoToggle<CR>
 " Hammer {{{
 
 noremap <leader>m :Hammer<CR>
+
+" }}}
+" Index Search {{{
+
+let g:indexed_search_colors    = 1 " turn of colors for messages
+let g:indexed_search_shortmess = 1 " shorter messages
 
 " }}}
 " LaTeX-Suite {{{
@@ -831,6 +831,7 @@ if has ('gui_running')
 else
   " Console Vim
 endif
+
 " --------------------------------------------------------------------------------}}}
 " Credentials --------------------------------------------------------------------{{{
 
