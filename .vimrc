@@ -285,10 +285,10 @@ cnoremap jk <C-C>
 inoremap jj <nop>
 
 " Sourcing vimrc file with ,sv
-nnoremap <leader>sv :source $MYVIMRC<CR>
+nnoremap <silent>,sv :source $MYVIMRC <CR>
 
 " Quickediting
-nnoremap <leader>v :vsplit $MYVIMRC<CR>
+nnoremap <silent>,ev :tabedit $MYVIMRC <CR>
 nnoremap <leader>br :vsplit ~/.vim/README.md<CR>
 nnoremap <leader>bs :vsplit ~/.vim/README.md<CR>
 
