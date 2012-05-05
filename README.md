@@ -217,11 +217,11 @@ means.
   - **:let ruby\*space\*errors = 1** - mark whitespace characters
 - [vim-liquid](https://github.com/tpope/vim-liquid "vim-liquid"): highlight liquid tags like {% ...
   %} (*no doc*)
-- [vim-open-associated-programs](https://github.com/xolox/vim-open-associated-programs "vim-open-associated-programs"):
+- [vim-shell](https://github.com/xolox/vim-shell "vim-shell"):
   open files and web pages in associated programs out of Vim
   - has generally no mappings and just defines the programs which opens the specified file according
     to the file ending
-  - mappings come from the bundle [vim-shell](https://github.com/xolox/vim-shell "vim-shell"):
+  - *mappings:*
       - **F6** open file and directory names, URLs and e-mail addresses under the cursor
           - **:Open http://wikimatze.de** alternate syntax
 - [vis](https://github.com/vim-scripts/vis "vis"): you can execute commands only in the selected
