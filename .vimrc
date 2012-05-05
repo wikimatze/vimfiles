@@ -1,4 +1,5 @@
 " Preamble -----------------------------------------------------------------------{{{
+
 set nocompatible " be iMproved
 filetype off     " required!
 
@@ -49,6 +50,7 @@ Bundle 'xolox/vim-session'
 Bundle 'xolox/vim-shell'
 Bundle 'Rykka/ColorV'
 Bundle 'ecomba/vim-ruby-refactoring'
+Bundle 'rodjek/vim-puppet'
 " Bundle 'https://bitbucket.org/sjl/badwolf'
 Bundle 'vim-scripts/YankRing.vim'
 
