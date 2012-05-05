@@ -110,9 +110,13 @@ autocmd BufNew * if winnr('$') == 1 | tabmove99 | endif " move tabs to the end f
 
 set fillchars="" " get rid of silly characters in separators in the CMD
 
-" Cursorline {{{
-" Only show cursorline in the current window and in normal mode.
+" Make the 'cw' and like commands put a $ at the end instead of just deleting
+" the text and replacing it
+set cpoptions+=$
 
+" Cursorline {{{
+
+" Only show cursorline in the current window and in normal mode.
 augroup cline
     au!
     au WinLeave * set nocursorline
@@ -841,8 +845,3 @@ exe join(map(split(glob("~/.vim/credentials.vim"), "\n"), '"source " . v:val'), 
 " :Explore will look like NERDTree
 let g:netrw_liststyle=3
 "
-" Make the 'cw' and like commands put a $ at the end instead of just deleting
-" the text and replacing it
-set cpoptions+=$
-
-
