@@ -250,9 +250,13 @@ inoremap <F1> <ESC>:Fullscreen<CR>
 " kill the window
 nnoremap K :q<CR>
 
-" Textmate style formatting
-noremap Q gUiw
-vnoremap Q gq
+" reformat current paragraph
+noremap Q gqap
+
+" Tab/Shift+Tab indent/unindent the highlighted block
+" <Tab> perform > and <Shift-Tab> performs <
+vnoremap <Tab>	>gv
+vnoremap <S-Tab> <gv
 
 " Keep the cursor in place while joining lines
 nnoremap J mzJ`z
@@ -344,10 +348,8 @@ noremap <leader>rt :%s/\\t/  /g<CR>
 
 " copy to clipboard
 vnoremap <C-C> "+y
+nnoremap <C-A> "+p
 
-" Tab/Shift+Tab indent/unindent the highlighted block
-vnoremap <Tab> >gv
-vnoremap <S-Tab> <gv
 
 " ---------------------------------------------------------------------------------}}}
 " Timeout setting ----------------------------------------------------------------{{{
