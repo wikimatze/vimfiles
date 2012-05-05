@@ -261,10 +261,13 @@ nnoremap J mzJ`z
 noremap <leader>l :set list!<CR>
 
 " turn off normal arrow keys for navigation
-noremap <Up> <nop>
-noremap <Down> <nop>
-noremap <Left> <nop>
-noremap <Right> <nop>
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+" disable paste-on-middle-click
+inoremap <MiddleMouse> <Nop>
 
 " CTRL-q will save the file
 noremap <C-q> :w<CR>
