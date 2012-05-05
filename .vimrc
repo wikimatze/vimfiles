@@ -211,24 +211,16 @@ colorscheme badwolf
 " }}}
 " Statusline {{{
 
-set statusline=%t              " name of the current file
-set statusline+=\ -\           " separator
-set statusline+=Line:          " label
-set statusline+=\ %4l          " current line is always 4 pixels long
-set statusline+=/              " separator
-set statusline+=%L             " total lines of the file
-set statusline+=\ -\           " separator
-set statusline+=%y             " Filetype of the file
-set statusline+=\ -\           " label
-set statusline+=\%r%{CurDir()} " pwd of vim
-set statusline+=\ \%<%h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P " show git branch
+" always display the statusline
+set laststatus=2
 
-set laststatus=2 " always display the statusline - it consumes some place, but that doesn't matter
-
-function! CurDir()
-    let curdir = substitute(getcwd(), '/Users/helex/', "~/", "g")
-    return curdir
-endfunction
+"Set the status line the way i like it
+set statusline=%f                              " name of the current file
+set statusline+=\ %m                         " show, if the file was modified
+set statusline+=\ %r%{fugitive#statusline()} " show the current git branch
+set statusline+=\ Line:%l/%L[%p%%]           " l .. show the current line, L .. total line number, p ..  percentage
+set statusline+=\ Col:%v                     " show the current column
+set statusline+=\ Buf:#%n                      " show the current buffer
 
 " }}}
 " List char {{{
