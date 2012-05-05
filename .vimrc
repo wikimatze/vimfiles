@@ -348,7 +348,8 @@ vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
 " ---------------------------------------------------------------------------------}}}
-" Timeout setting {---------------------------------------------------------------{{{
+" Timeout setting ----------------------------------------------------------------{{{
+
 " This is the timeout used while waiting for user input on a multi-keyed macro
 " or while just sitting and waiting for another key to be pressed measured
 " in milliseconds.
@@ -358,12 +359,11 @@ vnoremap <S-Tab> <gv
 " timeout expires, one of two things happens: The "," command is executed
 " if there is one (which there isn't) or the command aborts.
 set timeoutlen=500
-" --------------------------------------------------------------------------------}}}
-" C-Up/C-Down to move selected lines up and down {{{
-" Based on http://vim.wikia.com/wiki/VimTip646
-"
 
-"
+" --------------------------------------------------------------------------------}}}
+" C-Up/C-Down to move selected lines up and down ---------------------------------{{{
+
+" Based on http://vim.wikia.com/wiki/VimTip646
 " Define maps for Normal and Visual modes, then re-use
 " them for Insert and Select.
 "
@@ -384,8 +384,7 @@ imap <silent> <C-Down> <C-O><C-Down>
 smap <silent> <C-Up> <C-G><C-Up><C-G>
 smap <silent> <C-Down> <C-G><C-Down><C-G>
 
-" end map_line_block_mover_keys.vim
-" }}}
+" --------------------------------------------------------------------------------}}}
 " Filetype detecion --------------------------------------------------------------{{{
 
 au! BufRead,BufNewFile *.js set filetype=javascript
