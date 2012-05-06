@@ -26,9 +26,12 @@
 - **L** - jump to the lowest position of the visible part
 - **)**- move the cursor forward to the *next sentence*
 - **(** - move the cursor forward to the *previous sentence*
-- **Ctrl-o** - track your movements backward => it jumps to last made changes
-- **Ctrl-i** - track your movements forwards => it jumps to previous made changes
 - **ddp** - will switch two lines
+- **W** - jumps to next word with whitespace separation and no words are counted
+- **B** - jumps to previous word with whitespace separation and no words are counted
+- **E** - jump to the previous word with whitespace and no words are counted
+- **ge** - go to the end of the previous word
+- **gE** - go to the end of the previous word with whitespace and no words are counted
 
 
 # Movement in the Command-Line
