@@ -50,6 +50,7 @@
 - `u` | `U` → make the selected text in visual mode small or big
 - `xp` → character twiddeling change the characters of two successive chars
 - `V` → mark the whole line in visual mode
+- `gV` → reselect the text which was marked in visual mode before
 - `:wall` → write all changes in all open buffers
 - `'0` →   when opening Vim and pressing this command will bring you back to last file you changed -
   handy if you have to shutdown and start the work again
@@ -162,11 +163,6 @@
 - **:help** - open the help menu (dopple click on a link will go it)
 - **:help <plugin-name>.txt** - opens the documentation of a plugin
 - **:helptags** - will regenerate the helptags
-
-
-# Marking
-- **Shift-v** - mark a whole line in visual mode
-- **gV** - reselect the text which was marked in visual mode before
 
 
 # Sort
