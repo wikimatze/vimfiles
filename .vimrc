@@ -362,7 +362,7 @@ nnoremap <silent> \n :nohls<CR>
 inoremap <C-F> <C-X><C-F>
 
 " ---------------------------------------------------------------------------------}}}
-" Command line mappings -----------------------------------------------------------{{{
+" Command line mappings ----------------------------------------------------------{{{
 " go to the beginning of the line
 cnoremap <C-A> <Home>
 " go to the end of the command line
@@ -435,24 +435,22 @@ au! BufRead,BufNewFile *.yml set filetype=yaml
 
 " --------------------------------------------------------------------------------}}}
 " Filetype specific --------------------------------------------------------------{{{
-
 " Bash {{{
 
 augroup filetype_bash
   au!
-  au FileType sh setlocal ts=2 sts=2 sw=2 expandtab textwidth=5000 foldmethod=syntax
+  au FileType sh setlocal foldmethod=marker
+  au FileType sh setlocal ts=2 sts=2 sw=2 expandtab textwidth=5000
 augroup END
 
 " }}}
 " Notes {{{
-
 augroup filetype_notes
   au!
   au FileType notes setlocal ts=2 sts=2 sw=2 expandtab textwidth=5000
 augroup END
 
 " }}}
-
 " Vim {{{
 
 augroup filetype_vim
@@ -662,6 +660,7 @@ elseif has("unix")
     let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
     set tags=tags
 endif
+
 " }}}
 " Notes {{{
 
