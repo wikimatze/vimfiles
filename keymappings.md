@@ -7,8 +7,10 @@
 - **e** - move backwards to the end of the next word
 - **b** - move backwards to the beginning of the word
 -   - **ge** - move to the end of the previous word
-- **Ctrl+u** - upper (as a picture: scroll down half of the screen)
-- **Ctrl+d** - down (as a picture: scroll up half of the screen)
+- **Ctrl+u** - scroll upper (as a picture: scroll down half of the screen)
+- **Ctrl+d** - scroll down (as a picture: scroll up half of the screen)
+- **Ctrl-o** - track your movements backward => it jumps to last made changes
+- **Ctrl-i** - track your movements forwards => it jumps to previous made changes
 - **}** - move to end of next paragraph or code block
 - **{** - move to start of previous paragraph or code block
 - **%** - jump to the fitting  brackets of _(, {, [_ - works with HTML5 tags
