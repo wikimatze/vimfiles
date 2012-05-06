@@ -151,11 +151,11 @@
 
 
 # Marks
-- **ma** - create a mark with the name a (marks will be saved for every file)
-- *'a* - jump to mark a
-- marks can have a range [a-z] for local files
-- marks with range from [A-Z] are global - like favorite bookmarks
-- **:marks** - output marks of the actual file
+- `ma` → create a mark with the name a (marks will be saved for every file)
+- `'a` → jump to mark a
+- `local marks` → range from `[a-z]` (volatile)
+- `global marks` → range from `[A-Z]` (not volatile)
+- `:marks` → output marks of the actual file
 
 
 # Help
