@@ -252,9 +252,6 @@ elseif has('unix')
   inoremap <F1> <ESC>:Fullscreen<CR>
 endif
 
-" kill the window
-nnoremap K :q<CR>
-
 " reformat current paragraph
 noremap Q gqap
 
