@@ -80,11 +80,12 @@
 - **u** - undo last changes
 - **Ctrl-R** - redo the last change
 - **U** - undo last changes of the last edited line
-- **p** - paste after the actual cursor position
-- **P** - paste before the actual cursor position
+- **p** - *put* after the cursor
+- **P** - *put *before the cursor
 - **u** and **U** - make the selected word or phrase in the visual mode small or big
-- **yw** - copy single word
+- **yw** - yank whole word
 - **yy** - copy whole line
+- **Y** - means the same as *yy*
 - **ggVG** - mark the whole text
 - %s/old/new/g - replace occurrences of pattern in the whole document
 - %s/old/new/c - replace occurrences in the text in interactive modus
@@ -227,7 +228,7 @@
 
 # Different Stuff
 - **J** - join two lines
-- **gJ** - join lines without changing whitespace
+- **gJ** - join lines without whitespace
 - **gi** - used in vim and open a split horizontal view of the file
 - **gs** - used in vim to open a new file in the vertical view
 - **~** - makes upper- and lowercase of the character where the actual cursor is
