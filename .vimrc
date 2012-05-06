@@ -358,6 +358,9 @@ nnoremap <C-A> "+p
 " Turn off that stupid highlight search
 nnoremap <silent> \n :nohls<CR>
 
+" Insert file names of the current directory
+inoremap <C-F> <C-X><C-F>
+
 " ---------------------------------------------------------------------------------}}}
 " Command line mappings -----------------------------------------------------------{{{
 " go to the beginning of the line
@@ -652,7 +655,7 @@ if has("mac")
   map ,lj :execute '!cd ' . expand(Tex_GetMainFileName(':p:h')) . ' && xdvi -editor "' . g:vimPath . ' --servername 'v:servername' --remote-wait +\%l \%f" -sourceposition ' . line(".") . substitute(expand('%:p'),expand(Tex_GetMainFileName(':p:h')).'\/','','') . " " . expand(Tex_GetMainFileName(':p:r')) . ".dvi &" <CR><CR>
 elseif has("unix")
   " inverse | forward search (http://forum.ubuntuusers.de/topic/vim-vim-latexsuite-vim-gtk)
-  " her are the forward search
+  " here is the forward search
     let g:Tex_ViewRule_dvi = 'xdvi -editor "vim --servername xdvi --remote +\%l \%f" $* &'
     let g:Tex_ViewRuleComplete_dvi = 'xdvi -editor "vim --servername xdiv --remote +\%l \%f" $* &'
     map ,lj :execute '!cd ' . expand(Tex_GetMainFileName(':p:h')) . ' && xdvi -editor "vim --servername 'v:servername' --remote-wait +\%l \%f" -sourceposition ' . line(".") . substitute(expand('%:p'),expand(Tex_GetMainFileName(':p:h')).'\/','','') . " " . expand(Tex_GetMainFileName(':p:r')) . ".dvi &" <CR><CR>
