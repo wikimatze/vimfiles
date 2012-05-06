@@ -66,6 +66,9 @@
 - `sort!` → inverse alphabetical
 - `==` → indent the actual line
 - `=G` → format the whole file
+- `"f3Y` → yanking the next three lines in register f
+- `"fp` → paste the contents of register f
+
 
 
 # Search and Replace
@@ -187,11 +190,6 @@
   - `:e!` - restore the origin file
   - `:bd!` - remove buffer from the buffer list and revert all made changes
   - `:q!` - force vim to quit and discard all changes to the buffers
-
-
-# Register
-- **"f3Y** - yanking the next three lines in register f
-- **"fp** - paste the contents of register f
 
 
 # Different Stuff
