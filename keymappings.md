@@ -87,15 +87,12 @@
 
 
 # Close
-- **:q** - exit vim and don't save changes
-- **:x** - save all changes, if they exists and terminate Vim
-- **:w!** - overwrites existing file
-- **:q!** - exit Vim
-- **:wq** - exit Vim and save changes
-- **x** - delete single character
-- **dw** - delete whole word (Motion: *2dw* will delete two words)
-- **x** - delete single character
-- **:qall** - quite all windows and will ask for unmodified changes
+- `:q` → exit vim and don't save changes
+- `:w!` → overwrites existing file
+- `:q!` → exit Vim
+- `:wq` → exit Vim and save changes
+- `:x` → save all changes and terminate Vim
+- `:qall` → quite all windows and will ask for unmodified changes
 
 
 # Delete and Cut
