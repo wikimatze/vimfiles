@@ -34,6 +34,31 @@
 - `Ctrl→c` → exit the command-line
 
 
+# Edit
+- `I` → go to the beginning of line in edit mode
+- `A` → go at the end of line in edit mode
+- `r` → the actual position of the cursor will be replaced and go back into normal mode
+- `R` → stay in replace mode
+- `o` → go into a new line below the cursor in edit mode
+- `O` → neue Zeile oberhalb vom Cursor
+- `yy` → copy whole line (`Y` means the same)
+- `yw` → yank whole word
+- `u` → undo last changes (`U` undo last changes of the last edited line)
+- `Ctrl→R` → redo the last change
+- `p` → *put* after the cursor
+- `P` → *put *before the cursor
+- `u` | `U` → make the selected text in visual mode small or big
+- `xp` → character twiddeling change the characters of two successive chars
+- `V` → mark the whole line in visual mode
+- `:wall` → write all changes in all open buffers
+- `'0` →   when opening Vim and pressing this command will bring you back to last file you changed -
+  handy if you have to shutdown and start the work again
+- `"+y` → copy to clipboard (you have to be in visual mode)
+- `"+p` → paste from clopboard
+- `cw` → change word (very effective in combination with with *Visual Block* select)
+- `ggVG` → mark the whole text
+
+
 # Search and Replace
 - **/** - just type in the searched word => Top-Down search
 - **?** bottom-up search
@@ -59,41 +84,6 @@
     - /g - will replace all matchings at a line
     - /c - makes prompt for each replacement
     - /e - no finding a match is no error
-
-
-# Edit
-- **I** - go at the beginning of the line in edit mode
-- **A** - go at the end of the line in edit mode
-- **r** - replace mode -the actual position of the cursor will be replaced and after that return
- to the previous mode
-- **R** - stay in replace mode
-- **s** - delete current char and go into replace mode
-- **u** - undo last changes
-- **Ctrl-R** - redo the last change
-- **U** - undo last changes of the last edited line
-- **p** - *put* after the cursor
-- **P** - *put *before the cursor
-- **u** and **U** - make the selected word or phrase in the visual mode small or big
-- **yw** - yank whole word
-- **yy** - copy whole line
-- **Y** - means the same as *yy*
-- **ggVG** - mark the whole text
-- %s/old/new/g - replace occurrences of pattern in the whole document
-- %s/old/new/c - replace occurrences in the text in interactive modus
-- **Shift-q** - format the actual section (*gqap* is an alternative shortcut)
-- **o** -go into a new line below the cursor in edit mode
-- **O** - neue Zeile oberhalb vom Cursor
-- **:e <Dateiname>** - edit a file (even possible to create a new file)
-- **xp** - character twiddeling change the characters of two successive chars
-- **ce** - change until end of word and delete the stuff -> go into insert mode
-- **d$** - delete till the EOL
-- **V** - mark the whole line in visual mode
-- **:wall** - write all changes
-- **'0** - when opening Vim and pressing this command will bring you back to last file you changed -
-  handy if you have to shutdown and start the work again
-- **"+y** - copy to clipboard (you have to be in visual mode)
-- **"+p** - paste from clopboard
-- **cw** - change word (very effective in combination with with *Visual Block* select)
 
 
 # Close
