@@ -198,15 +198,23 @@
 
 
 # Buffer
-- **:ls** - display a list of all buffers
-- **:bn** - go to the next buffer
-- **:bp** - go to the previous buffer
-- **working with hidden buffers** - they occur if you save changes to a buffer before quitting
+- `:ls` → list all buffers
+  - `#a` → stands for a no name buffer
+  - `%a` → stands for the current buffer
+  - `#` → stands for the previous buffer
+- `:b` <number>|<name> → will open the buffer of the specified number or name
+- `:bn` → go to the next buffer
+- `:bp` → go to the previous buffer
+- `:b#` → jump to the previous buffer (toggle function)
+- `:bd` <number>|<name> (stands for *buffer delete*)
+- `:bufdo` → performs the following command for each opened buffer
+  - :bufdo echo “bla” → will print “bla” in the amount of the opened buffers
+- *working with hidden buffers* - they occur if you save changes to a buffer before quitting
  the program.  There are the following strategies to get rid of this problem:
-  - **:w** - write the changes
-  - **:e!** - restore the origin file
-  - **:bd!** - remove buffer from the buffer list and revert all made changes
-  - **:q!** - force vim to quit and discard all changes to the buffers
+  - `:w` - write the changes
+  - `:e!` - restore the origin file
+  - `:bd!` - remove buffer from the buffer list and revert all made changes
+  - `:q!` - force vim to quit and discard all changes to the buffers
 
 
 # Register
