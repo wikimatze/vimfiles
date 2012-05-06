@@ -57,6 +57,10 @@
 - `"+p` → paste from clopboard
 - `cw` → change word (very effective in combination with with *Visual Block* select)
 - `ggVG` → mark the whole text
+- `p` → paste below the actual cursor position
+- `P` → paste before the actual cursor position
+- `ci"` → delete everything whats inside the special sign " (others are `"", '', (), {}, []` ) and go into the edit mode
+- `d-Shift-g` → delete all lines below the actual line of the cursors
 
 
 # Search and Replace
@@ -95,19 +99,19 @@
 - `:qall` → quite all windows and will ask for unmodified changes
 
 
-# Delete and Cut
-- **x** - delete single character
-- **dw** - delete whole word (Motion: *2dw* will delete two words)
-- **dd** - cut the whole line
-- **p** - paste below the actual cursor position
-- **P** - paste before the actual cursor position
-- **D** - delete all characters after the cursor till EOL
-- **df<word>** - press the character until which should be deleted (inclusve the word)
-  - **dtG** -same as above but exklusive
-- **d-Shift-g** - delete all lines below the actual line of the cursors
-- **c** - acts like d except that it leaves you in insert mode
-- **C** - deletes all characters afther the cursor position and will go in insert mode
-- **ci"** - delete everything whats inside the special sign " and go into the edit mode
+# Delete/Cut
+- `x` → delete single character
+- `dw` → delete whole word (Motion: *2dw* will delete two words)
+- `dd` → cut the whole line
+- `ce` → delete the word and go into insert word
+- `cE` → delete the word and go into insert word via whitespace separation (no words are counted)
+- `D` → delete all characters after the cursor till EOL
+- `df<word>` → press the character until which should be deleted (inclusve the word)
+  - `dtG` → same as above but exklusive
+- `c` → acts like d except that it leaves you in insert mode
+- `C` → deletes all characters after the cursor position and will go in insert mode
+- `d$` → delete till the EOL
+- `s` → delete current char and go into insert mode
 
 
 # Folding
