@@ -62,8 +62,10 @@
 - `P` → paste before the actual cursor position
 - `ci"` → delete everything whats inside the special sign " (others are `"", '', (), {}, []` ) and go into the edit mode
 - `d-Shift-g` → delete all lines below the actual line of the cursors
-- `sort` - normal alphabetical
-- `sort!` - inverse alphabetical
+- `sort` → normal alphabetical
+- `sort!` → inverse alphabetical
+- `==` → indent the actual line
+- `=G` → format the whole file
 
 
 # Search and Replace
@@ -165,11 +167,6 @@
 - **:help** - open the help menu (dopple click on a link will go it)
 - **:help <plugin-name>.txt** - opens the documentation of a plugin
 - **:helptags** - will regenerate the helptags
-
-
-# Indentation and Formation
-- **==** - indent the actual line
-- **=G** - format the whole file
 
 
 # Buffer
