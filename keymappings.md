@@ -31,6 +31,7 @@
 - `<C-b>` → move to the beginning
 - `<C-e>` → move to the end
 - `<C-c>` → exit the command-line
+- `20|` → go to column 20 of the current line
 
 
 # Edit
