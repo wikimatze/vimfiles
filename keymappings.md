@@ -26,15 +26,12 @@
 - `H` → jump to the highest visible part
 - `M` → jump to the middle position of the visible part
 - `L` → jump to the lowest position of the visible part
-
-
-# Movement in the Command-Line
-- **Ctrl-Left** - move one word back
-- **Ctrl-Right** - move one word forward
-- **Ctrl-c** - exit the command-line
-- **Ctrl-b** - move to the beginning
-- **Ctrl-e** - move to the end
-- **Ctrl-c** - exit the command-line
+- `Ctrl→Left` → move one word back
+- `Ctrl→Right` → move one word forward
+- `Ctrl→c` → exit the command-line
+- `Ctrl→b` → move to the beginning
+- `Ctrl→e` → move to the end
+- `Ctrl→c` → exit the command-line
 
 
 # Search and Replace
