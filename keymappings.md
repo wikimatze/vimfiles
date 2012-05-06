@@ -1,37 +1,31 @@
 # Movement
-- **h** - left
-- **j** - below
-- **k** - top
-- **l** - right
-- **w** - move forward to the next word
-- **e** - move backwards to the end of the next word
-- **b** - move backwards to the beginning of the word
--   - **ge** - move to the end of the previous word
-- **Ctrl+u** - scroll upper (as a picture: scroll down half of the screen)
-- **Ctrl+d** - scroll down (as a picture: scroll up half of the screen)
-- **Ctrl-o** - track your movements backward => it jumps to last made changes
-- **Ctrl-i** - track your movements forwards => it jumps to previous made changes
-- **}** - move to end of next paragraph or code block
-- **{** - move to start of previous paragraph or code block
-- **%** - jump to the fitting  brackets of _(, {, [_ - works with HTML5 tags
-- **^** - go to the beginning of a line (think of anchored to the start)
-  - **0** - is an alterantiv to **^**
-- $ - go the end of a row (the buck ends here)
-- **gg** - go to the beginning of a file
-- **G** - go to the end of a file
-- **10G** - jump to line 10
-- **G** - jump at the end of a line
-- **H** - jump to the highest visible part
-- **M** - jump to the middle position of the visible part
-- **L** - jump to the lowest position of the visible part
-- **)**- move the cursor forward to the *next sentence*
-- **(** - move the cursor forward to the *previous sentence*
-- **ddp** - will switch two lines
-- **W** - jumps to next word with whitespace separation and no words are counted
-- **B** - jumps to previous word with whitespace separation and no words are counted
-- **E** - jump to the previous word with whitespace and no words are counted
-- **ge** - go to the end of the previous word
-- **gE** - go to the end of the previous word with whitespace and no words are counted
+- `h`, `j`, `k`, `l` →  left, below, top, right
+- `w` → go forward to the next word
+- `W` → go forward to the next word via whitespace separation (no words are counted)
+- `e` → go backwards to the end of the next word
+- `E` → go to the previous word via whitespace separation (no words are counted)
+- `ge` → go to the end of the previous word
+- `gE` → go to the end of the previous word via whitespace separation (no words are counted)
+- `b` → move backwards to the beginning of the word
+- `B` → jump to previous word via whitespace separation (no words are counted)
+- `}` → move to end of next paragraph or code block
+- `{` → move to start of previous paragraph or code block
+- `)`→ move the cursor forward to the *next sentence*
+- `(` → move the cursor forward to the *previous sentence*
+- `%` → jump to the fitting  brackets of _(, {, [_
+- `10G` → jump to line 10
+- `$` → go the end of a row (the buck ends here)
+- `G` → go to the end of a file
+- `gg` → go to the beginning of a file
+- `^`| `0` → go to the beginning of a line (think of anchored to the start)
+- `ddp` → will switch two lines
+- `Ctrl-U` → scroll upper (as a picture: scroll down half of the screen)
+- `Ctrl-D` → scroll down (as a picture: scroll up half of the screen)
+- `Ctrl-I` → track your movements forwards => it jumps to previous made changes
+- `Ctrl-O` → track your movements backward => it jumps to last made changes
+- `H` → jump to the highest visible part
+- `M` → jump to the middle position of the visible part
+- `L` → jump to the lowest position of the visible part
 
 
 # Movement in the Command-Line
