@@ -77,6 +77,9 @@
 - `.`  → repeat the last made action
 - `:!` → execute any extern command (like `ls`)
 - `:r!` → read the output of a command-line command and paste this in the text (e.g. `:r! ls`)
+- `tabcompletion`
+    - `<C-N>` → go to the next matching
+    - `<C-P>` → go the previous matching
 
 
 # Search and Replace
