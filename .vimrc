@@ -243,9 +243,14 @@ set ofu=syntaxcomplete#Complete
 " --------------------------------------------------------------------------------}}}
 " Convenience mappings -----------------------------------------------------------{{{
 
-" Get rid of help key
-noremap  <F1> :Fullscreen<CR>
-inoremap <F1> <ESC>:Fullscreen<CR>
+" Instead of using help F1 will toogle between fullscreen
+if has('mac')
+  noremap  <F1> :set invfullscreen<CR>
+  inoremap  <F1> :set invfullscreen<CR>
+elseif has('unix')
+  noremap  <F1> :Fullscreen<CR>
+  inoremap <F1> <ESC>:Fullscreen<CR>
+endif
 
 " kill the window
 nnoremap K :q<CR>
