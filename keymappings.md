@@ -60,30 +60,30 @@
 
 
 # Search and Replace
-- **/** - just type in the searched word => Top-Down search
-- **?** bottom-up search
-- **n** - jump to the next matching => direction **forward**
-- **N** - jump to the previous matching => direction **backwards**
-- **Regex**
-  - **/word$** - search after the word at the end of each line
-  - **/^word** - search after the word at the beginning of each line
-  - **h.l** - match all words, which starts with *h*, then any character and an *l*
-- **`*`** - search after the word which stands under the cursor from *top-down*
-- **`#`** - search after the word which stands under the cursor from *bottom-up*
-- **single-character search**
-    - **fx** - move forward to character x
-    - **Fx** - move backward to character x
-    - **tx** - move forward to character x but stops one sign before it
-    - **Tx** - move backward to character x but stops one sign before it
-- **/<word>\>** - matching only words which ends on <word>
-- **/\<<word>** - matching only words which starts with <word>
-- **/\<<word>\>** - matching only the word which stands alone with <word> - no other words in front
+- `/` → just type in the searched word (`top-down`)
+- `?` bottom-up search
+- `*` → search after the word under the cursor (`top-down`)
+- `#` → search after the word under the cursor (`bottom-up`)
+- `n` → jump to the next matching (direction `forward`)
+- `N` → jump to the previous matching (direction `backwards`)
+- single-character search:
+    - `fx` → move forward to character x
+    - `Fx` → move backward to character x
+    - `tx` → move forward to character x but stops one sign before it
+    - `Tx` → move backward to character x but stops one sign before it
+- `/<word\>` → matching only words which ends on <word>
+- `/\<word\>` → matching only words which starts with <word>
+- `/\<word\>` → matching only the word which stands alone with <word> - no other words in front
   or after the word
-- **%s/.../<options>** - will start the substitute function
-    - with range: 1,5s/this/that/g - will replace this through that in lines 1-5
-    - /g - will replace all matchings at a line
-    - /c - makes prompt for each replacement
-    - /e - no finding a match is no error
+- `%s/.../<options>` → will start the substitute function
+    - with range: `1,5s/this/that/g`
+    - `/g` → will replace all matchings at a line
+    - `/c` → makes prompt for each replacement
+    - `/e` → no finding a match is no error
+- Regex:
+  - `/word$` → search after the word at the end of each line
+  - `/^word` → search after the word at the beginning of each line
+  - `h.l` → match all words, which starts with `h`, then any character and an `l`
 
 
 # Close
