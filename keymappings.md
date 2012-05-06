@@ -44,7 +44,7 @@
 - `yy` → copy whole line (`Y` means the same)
 - `yw` → yank whole word
 - `u` → undo last changes (`U` undo last changes of the last edited line)
-- `Ctrl→R` → redo the last change
+- `<C-R>` → redo the last change
 - `p` → *put* after the cursor
 - `P` → *put *before the cursor
 - `u` | `U` → make the selected text in visual mode small or big
@@ -68,7 +68,15 @@
 - `=G` → format the whole file
 - `"f3Y` → yanking the next three lines in register f
 - `"fp` → paste the contents of register f
-
+- `J` → join two lines
+- `gJ` → join lines without whitespace
+- `gf` → open the file which is under the cursor
+- `~` → makes upper- and lowercase of the character where the actual cursor is
+- `<C-V>` → opens Visual Block select
+- `<C-X><C-F>` → display a list of files in the current directory in insert mode
+- `.`  → repeat the last made action
+- `:!` → execute any extern command (like `ls`)
+- `:r!` → read the output of a command-line command and paste this in the text (e.g. `:r! ls`)
 
 
 # Search and Replace
@@ -105,6 +113,9 @@
 - `:wq` → exit Vim and save changes
 - `:x` → save all changes and terminate Vim
 - `:qall` → quite all windows and will ask for unmodified changes
+- `ZZ` → save file with changes and quit
+- `ZQ` → save file without changes and quit
+
 
 
 # Delete/Cut
@@ -193,48 +204,23 @@
 
 
 # Different Stuff
-- **J** - join two lines
-- **gJ** - join lines without whitespace
-- **gi** - used in vim and open a split horizontal view of the file
-- **gs** - used in vim to open a new file in the vertical view
-- **~** - makes upper- and lowercase of the character where the actual cursor is
-- **.**  - repeat the last made action
-- **:!** - execute any extern command (like `ls`)
-- **ESC** - change in the *normal* mode
-- **:quit!** - close the actual file without saving the changes
-- **motions** - basically just insert a number which indicates how often the following command
- should be executed
-  - **2w** - move cursor two words forwards at the beginning of the second word
-  - **2e** - move cursor two words forwards at the end of the second word
-- **:map** - overview of all mappings of the current session
-- **:messages** - history of all events of the current session
-- **zt** - scroll current line at the top
-- **zz** - scroll current line the middle
-- **zb** - scroll current line at the bottom
-- **gf** - open the file which is under the cursor
-- **ZZ** - save file with changes and quit
-- **ZQ** - save file without changes and quit
-- **:ascii** - displays the ASCII, Hex und Octal representation of the character under the actual
+- `:map` → over view of all mappings of the current session
+- `:messages` →  history of all events of the current session
+- `:ascii` → di splays the ASCII, Hex und Octal representation of the character under the actual
  cursor
-- **:retab** - replace all tabs of a file with spaces
-- **:n <file_name>** - open a new file in Vim
-- **<C-F>** - display a list of files in the current directory in insert mode
-- **inoremap <C-F> <C-X><C-F>**
-- **:.!** - execute bash command and insert output in Vim file (press !! very fast to shortcut
- this)
-- **:options** - opens a new window with all specified options you can set in Vim (even with nice
+- `:retab` → re place all tabs of a file with spaces
+- `:options` →  opens a new window with all specified options you can set in Vim (even with nice
   explanations)
-- **:args** - prints a list of all opened files
-- **daw** - deletes a words and uses text objects
-- **:saveas <filename>** - save the changes you made on the new textfile
-- **:close** - will close the actual window
-- **g Ctrg-G** - count the words of a file and gives extensive overview of words and chars
-- **:history** - print the last commands for the command-line
-- **digraphs** - will display list of characters that are not on the keyboard (still don't know how
+- `:args` → pri nts a list of all opened files
+- `:saveas <filename>` - save the changes you made on the new textfile
+- `:history` →  print the last commands for the command-line
+- `g <C-G>` →  count the words of a file and gives extensive overview of words and chars
+- `digraphs` →  will display list of characters that are not on the keyboard (still don't know how
   to use them)
-- **:map** - print all the mappings
-- **C-V** - opens Visual Block select
-- **<C-X><C-F>** - display a list of files in the current directory in insert mode
+- `:redir @a> <CMD> redir END` → will put the `<CMD>` in the register `a`
+- `v/` is the opposite of `g/` → “I want to match what I want to keep and delete the rest
+- `:history` print the last commands -> usefull when writing a script
+   `:history :-20,` will print the last 20 commands
 
 
 # ctags
