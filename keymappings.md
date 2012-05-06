@@ -231,17 +231,14 @@
 
 
 # Spellchecker
-- **:set** - activate the spell checker
-- **]s** - place the cursor on the next error
-- **[s** - place the cursor on the previous error
-- **z=** - shows all correction to a word
-- **zg** - add a word to the dictionary (this is good to create your own known words without
-  displaying the wrong annotations
-- **zw** - remove a word from the dictionary (good if you add a wrong version of a word in the
-  dictionary)
-- **set spelling=de_20** - setting the spell-language to "neue deutsche Rechtschreibung"
-- **set spelling=de_19** - setting the spell-language to "alte deutsche Rechtschreibung"
-
+- `]s` → place the cursor on the next error
+- `[s` → place the cursor on the previous error
+- `z=` → shows all correction to a word
+- `zg` → add a word to the dictionary
+- `zw` → remove a word from the dictionary
+- `:set spelllang` → activate the spell checker
+- `set spelling=de_20` → setting the spell-language to 'neue deutsche Rechtschreibung'
+- `set spelling=de_19` → setting the spell-language to 'alte deutsche Rechtschreibung'
 
 
 # LaTeX-Suite
