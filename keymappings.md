@@ -102,6 +102,7 @@
   handy if you have to shutdown and start the work again
 - **"+y** - copy to clipboard (you have to be in visual mode)
 - **"+p** - paste from clopboard
+- **cw** - change word (very effective in combination with with *Visual Block* select)
 
 
 # Close
