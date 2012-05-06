@@ -62,6 +62,8 @@
 - `P` → paste before the actual cursor position
 - `ci"` → delete everything whats inside the special sign " (others are `"", '', (), {}, []` ) and go into the edit mode
 - `d-Shift-g` → delete all lines below the actual line of the cursors
+- `sort` - normal alphabetical
+- `sort!` - inverse alphabetical
 
 
 # Search and Replace
@@ -163,12 +165,6 @@
 - **:help** - open the help menu (dopple click on a link will go it)
 - **:help <plugin-name>.txt** - opens the documentation of a plugin
 - **:helptags** - will regenerate the helptags
-
-
-# Sort
-- **sort** - normal alphabetical
-- **sort!** - inverse alphabetical
-- it so possible to mark the section that should be sorted in visual mode
 
 
 # Indentation and Formation
