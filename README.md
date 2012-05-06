@@ -89,7 +89,7 @@ means.
     (just imagine a `git diff`)
   - *mappings:*
       - **nnoremap \<F3\> :GundoToggle\<CR\>**
-- [hammer](https://github.com/robgleeson/hammer.vim): displays various markups (markdown,
+- [hammer](https://github.com/matthias-guenther/hammer.vim): displays various markups (markdown,
   textile, rdoc, asciidoc) with one keystroke in the browser
   - *mappings:*
       - **noremap \<leader\>m :Hammer\<CR\>**
@@ -238,6 +238,7 @@ means.
     - **:BundleInstall!** - installs or updates installed bundles
     - **:BundleSearch <foo>** - opens a window to display the matches in an extra window
     - **:BundleClean** - confirms removal of unused script-dirs from `.vim/bundle/`.
+
 
 ## Usage
 
