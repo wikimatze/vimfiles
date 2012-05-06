@@ -122,19 +122,18 @@
 
 
 # Windows
-- **Ctrl-w s** - split window *horizontal*
-- **Ctrl-w v** - split window *vertical*
-- **Ctrl-w c** - close actual window
-- **:sp bla.txt** - open file via horizontal split
-- **:vsp bla.txt** - open file via vertical split
-- **:only** - close all windows except the actual one
-- Fokus auf Window ändern: CTRL-w w gehe im Uhrzeigersinn zum nächsten Fenster
-- **Ctrl-w [hjkl]** go to a specific window
-- **adjust windows size**
-  - **Ctrl-w _** - make the actual window horizonat max
-  - **Ctrl-w |** - make the actual window vertical max
-  - **Ctrl-w [+-]** - change the size incremental
-  - **Ctrl-w =** - adjust all windows to the same size
+- `Ctrl-W s` → split window `horizontal`
+- `Ctrl-W v` → split window `vertical`
+- `Ctrl-W c` → close actual window
+- `Ctrl-W [hjkl]` go to a specific window
+- `:only` → close all windows except the actual one
+- `adjust windows size`
+  → `Ctrl-w _` → make the actual window horizonat max
+  → `Ctrl-w |` → make the actual window vertical max
+  → `Ctrl-w [+→]` → change the size incremental
+  → `Ctrl-w =` → adjust all windows to the same size
+- `:sp bla.txt` → open file via horizontal split
+- `:vsp bla.txt` → open file via vertical split
 
 
 # Tabs
