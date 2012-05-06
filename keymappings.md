@@ -223,12 +223,11 @@
    `:history :-20,` will print the last 20 commands
 
 
-# ctags
+# Ctags
+- `:tags` → show the list of tags you traversed through
+- `Ctrl+]` → jump into the tag (will into the class, method or other declaration)
+- `Ctrl+t` → will go to the previous declaration of the method
 - go to the root of the project and perform `ctags -R .` - this will create a tag file
-- open vim and the generated **tags** file will be automatically selected
-- **:tags** - show the list of tags you traversed through
-- **Ctrl+]** - jump into the tag (will into the class, method or other declaration)
-- **Ctrl+t** - will go to the previous declaration of the method
 
 
 # Spellchecker
