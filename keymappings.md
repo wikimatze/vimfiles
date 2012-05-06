@@ -19,19 +19,18 @@
 - `gg` → go to the beginning of a file
 - `^`| `0` → go to the beginning of a line (think of anchored to the start)
 - `ddp` → will switch two lines
-- `Ctrl-U` → scroll upper (as a picture: scroll down half of the screen)
-- `Ctrl-D` → scroll down (as a picture: scroll up half of the screen)
-- `Ctrl-I` → track your movements forwards => it jumps to previous made changes
-- `Ctrl-O` → track your movements backward => it jumps to last made changes
+- `<C-U>` → scroll upper (as a picture: scroll down half of the screen)
+- `<C-D>` → scroll down (as a picture: scroll up half of the screen)
+- `<C-I>` → track your movements forwards => it jumps to previous made changes
+- `<C-O>` → track your movements backward => it jumps to last made changes
 - `H` → jump to the highest visible part
 - `M` → jump to the middle position of the visible part
 - `L` → jump to the lowest position of the visible part
-- `Ctrl→Left` → move one word back
-- `Ctrl→Right` → move one word forward
-- `Ctrl→c` → exit the command-line
-- `Ctrl→b` → move to the beginning
-- `Ctrl→e` → move to the end
-- `Ctrl→c` → exit the command-line
+- `<C-Left>` → move one word back
+- `<C-Right>` → move one word forward
+- `<C-b>` → move to the beginning
+- `<C-e>` → move to the end
+- `<C-c>` → exit the command-line
 
 
 # Edit
