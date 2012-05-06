@@ -20,64 +20,62 @@ means.
 [Vim]: http://www.vim.org/
 
 - [ack.vim](https://github.com/mileszs/ack.vim): you can perform ack commands in Vim
-    - **:Ack {pattern} [{directory}]** - the basic command to search after words in your project
+    - `:Ack {pattern} [{directory}]` - the basic command to search after words in your project
     - shortcuts for navigation:
-      - :o → open the selected file in the current window
-      - :go → open preview but will stay in the quickfix preview window
-      - :t → open the selected file in a new tab
-      - :v → vertical split
-      - :q → quit the Ack window
+      - `:o` → open the selected file in the current window
+      - `:go` → open preview but will stay in the quickfix preview window
+      - `:t` → open the selected file in a new tab
+      - `:v` → vertical split
+      - `:q` → quit the Ack window
 - [colorv](https://github.com/Rykka/ColorV): display Hex Color with real colors in Vim -
   very useful when working with CSS
 - [command-t](https://github.com/wincent/Command-T): file search in the
   actual directory
-  - **:CommandTFlush** - update the path cache and also include new and deleted files
-  - **Installation**: $ ~/.vim/bundle/Command-t; rake make
-  - *shortcuts:*
-      - **Ctrl-j** - go down
-      - **Ctrl-k** - go up
-      - **Ctrl-t** - opens the file in a new tab
-      - **Ctrl-s** - opens the file under the cursor with a *horizontal* split
-      - **Ctrl-v** - opens the file under the cursor with a *vertcial* split
-      - **ESC or Ctrl-c** - closing the open dialog
-      - **Ctrl-u** - clean the matching window
-      - **Ctrl-ENTER** - opens the file under the cursor in a new window
-  - *mappings:*
-      - **\<Leader\>t** - call *:CommandT* command to open a specified file
-          - **:CommandT ../path/to/other/files** - search in the specified path
-      - **\<Leader\>b** - opens the buffer for this files after which were searched in the past
+  - `:CommandTFlush` - update the path cache and also include new and deleted files
+  - `Installation`: $ ~/.vim/bundle/Command-t; rake make
+  - shortcuts:
+      - `<C-j>` → go down
+      - `<C-k>` → go up
+      - `<C-t>` → opens the file in a new tab
+      - `<C-s>` → opens the file under the cursor with a *horizontal* split
+      - `<C-v>` → opens the file under the cursor with a *vertcial* split
+      - `ESC` or `<C-c>` → closing the open dialog
+      - `<C-u>` → clean the matching window
+      - `<C-ENTER>` → opens the file under the cursor in a new window
+  - mappings:
+      - `\<Leader\>t`  → call *:CommandT* command to open a specified file
+          - `:CommandT ../path/to/other/files` → search in the specified path
+      - `\<Leader\>b`  → opens the buffer for this files after which were searched in the past
 - [delimitMate](https://github.com/Raimondi/delimitMate): semantic autoclose brackets
 - [easymotion](https://github.com/Lokaltog/vim-easymotion): easier and faster use of
   motions
-    - **<leader><leader>** and then any motion key like *w, e, j* and so on
-    - **<leader><leader>t | T** - search after the target character forward (t) and backward (T)
+    - `<leader><leader>w | e | j | ..` → jump to the matching words on the screen
+    - `<leader><leader>t | T` → search after the target character forward (`t`) and backward (`T`)
 - [easytags](https://github.com/xolox/vim-easytags): automated tag generation for vim
-    - **:UpdateTags** - will update the tags
-- [endwise-ruby](https://github.com/tpope/vim-endwise): automatically
-  adds keywords like *end* to special constructs in ruby (*no doc*)
+    - `:UpdateTags` → will update the tags
+- [endwise-ruby](https://github.com/tpope/vim-endwise): automatically adds keywords like
+  *end* to special constructs in ruby (*no doc*)
 - [fugitive](http://github.com/tpope/vim-fugitive): git wrapper
-  - **:Gstatus** - git status
-      - **Ctrl-n** - go to the next file
-      - **Ctrl-p** - go to the preview file
-  - **:Gwrite** - git add
-  - **:Gcommit** - git commit (press *wq* for send)
-  - **:Gblame** - git blame
-  - **:Gmove** - git mv
-  - **:Gremove** - git rm
-  - **:Glog** - git log
-  - **:Gdiff** - split the window and display the changes
-  - **:Ggrep** - does a *grep* in the tree
-  - **:Gbrowse** - opens the actual file in the browser (normally its on github)
-  - **:Git** - after this you can perform every other normal git command you want
-- [Gist.vim](https://github.com/mattn/gist-vim ): upload files directly to github with just one command
-  - first setup your git credentials **let g:github*user = 'your-name'** and **let g:github*token =
-    'token'**  in your *.vimrc*
-      - is the API Token which can be found under Account Settings under Account Admin on
-        [github](https://github.com)
-  - **:Gist** - post whole text to gist
-  - **:Gist XXXXX** - get gist XXXXX
-  - **:Gist -l** - list all my gist
-  - **:Gist -d** - delete the gist
+  - `:Gstatus` → git status
+      → `Ctrl→n` → go to the next file
+      → `Ctrl→p` → go to the preview file
+  - `:Gwrite` → git add
+  - `:Gcommit` → git commit (press *wq* for send)
+  - `:Gblame` → git blame
+  - `:Gmove` → git mv
+  - `:Gremove` → git rm
+  - `:Glog` → git log
+  - `:Gdiff` → split the window and display the changes
+  - `:Ggrep` → does a *grep* in the tree
+  - `:Gbrowse` → opens the actual file in the browser (normally its on github)
+  - `:Git` → after this you can perform every other normal git command you want
+- [Gist.vim](https://github.com/mattn/gist-vim ): upload files directly as gists to github
+  - first setup your git credentials `let g:github_user = 'your-name'` and `let g:github*token = 'token'`  in your *.vimrc*
+      - the API Token can be found under Account Settings under Account Admin on [github](https://github.com)
+  - `:Gist` → post whole text to gist
+  - `:Gist XXXXX` → get gist XXXXX
+  - `:Gist -l` → list all my gist
+  - `:Gist -d` → delete the gist
 - [gundo](http://sjl.bitbucket.org/gundo.vim): graph the changes of your file saves in
   different a nice tree
   - **k** - move one step top
@@ -114,8 +112,7 @@ means.
       - **d** - create a directory
       - **D** - delete directory/file
       - **R** - rename directory/file
-- [notes](https://github.com/xolox/vim-notes): note taking - perfect for *getting things
-  done*
+- [notes](https://github.com/xolox/vim-notes): note taking - perfect for GTD
   - **:Note** - starts a new note => you can specify the name of the note in the header
   - **:write or :update** save the notes
   - **:RecentNotes** - overview of the last created changes
@@ -134,8 +131,7 @@ means.
       - **autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h\*** - path of the notes directory
 - *mappings:*
       - **nnoremap \<F7\> :Note collect\<CR\>**
-- [rubyrefactoring](https://github.com/ecomba/vim-ruby-refactoring): cool when
-  working with ruby
+- [rubyrefactoring](https://github.com/ecomba/vim-ruby-refactoring): cool when working with ruby
   - **,rap**: Refactor Add Parameter => adds a parameter to a function (cursor must be somewhere in the
     function)
   - **,rec**: Refactor Extract Constant => mark a number in visual mode and the one will be moved on
