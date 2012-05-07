@@ -145,8 +145,8 @@ means.
 - [snipmate](https://github.com/msanders/snipmate.vim): snippets for faster coding
 - [speedating](https://github.com/tpope/vim-speeddating): a faster way to increment
   all kind of numbers
-  - `<CTRL-a>` → ++ number
-  - `<CTRL-x>` → -- number
+  - `<C-a>` → ++ number
+  - `<C-x>` → -- number
   - `:SpeedDatingFormat` → shows the regular expression of possible formations
   - `:SpeedDatingFormat {}` → here you can specify the format which can be used to be recognized
     by the program
@@ -154,8 +154,7 @@ means.
 - [syntastic](https://github.com/scrooloose/syntastic): performs syntax check on various
   languages when saving
 - [surround](https://github.com/tpope/vim-surround)
-  - `ds"` → stands for delete surround and will delete the surrounds - place the cursor in the
-    string with the surroundings
+  - `ds"` → stands for delete surround and will delete the surrounds
       - example: `{ :a => 1 }` after pressing `ds{` you will get `:a => 1`
   - `cs("` → change surroundings and will replace the first surrounding argument with the second
     surrounding
@@ -170,56 +169,40 @@ means.
 - [tabular](https://github.com/godlygeek/tabular): is a plugin to auto indent files according to the pattern
   - `:Tabularize / {pattern}`
 - [tagbar](http://majutsushi.github.com/tagbar): display the structure of the code
-  - **:TagbarOpen** - opens the view tagbar
-  - **:TagbarToggle** - opens or close the tagbar whether it was closed or open
-  - **:TagbarOpenAutoClose** - opens the tagbar and close it after a tag was selected - the cursor jumps to it
-  - [How to install exurberant ctags on mac](http://www.dreamincode.net/forums/blog/164/entry-1479-installing-exuberant-ctags-and-taglist-on-a-mac)
+  - `:TagbarOpen` → open view tagbar
+  - `:TagbarToggle` → opens or close the tagbar whether it was closed or open
+  - `:TagbarOpenAutoClose` → opens the tagbar and close it after a tag was selected
+  - `s` → search for specified regex
+  - `q` → quit yankring window
+  - [Install exurberant ctags on Mac](http://www.dreamincode.net/forums/blog/164/entry-1479-installing-exuberant-ctags-and-taglist-on-a-mac)
 - [tocdown](https://github.com/matthias-guenther/tocdown): display the headlines of a markdown document in an extra window.
-- *mappings:*
-      - **nnoremap \<F2\> :TocdownToggle\<CR\>**
 - [yankring](https://github.com/vim-scripts/YankRing.vim): better register management and saves up to 100 buffered lines
-  - **:YRShow** - shows the actual buffer (you can use visual buttons to select more)
-  - **:YRClear** - deletes the buffer
-  - **:YRSearch** - type in a word or regular expression to search the yankring after it
-  - **j**, **k** for navigation and <Enter> chose your entry
-  - **d** delete an entry from from the yankring buffer - but you barely need this function
-  - *mappings:*
-      - **noremap \<leader\>y :YRShow\<CR\>
-      - **noremap \<leader\>x :YRClear\<CR\>
+  - `:YRShow` → shows the actual buffer (you can use visual buttons to select more)
+  - `:YRClear` → deletes the buffer
+  - `:YRSearch` → type in a word or regular expression to search the yankring after it
+  - `j`, `k` for navigation and <Enter> chose your entry
+  - `d` delete an entry from from the yankring buffer - but you barely need this function
 - [vim-bundler](https://github.com/tpope/vim-bundler): wrapper for bundler in Vim
-    - **:Bundle** - wraps bundle after, e.g. `:Bundle install`
-    - **:Bopen** - opens the *Gemfile* for editing
-- [vim-css3 syntax](https://github.com/hail2u/vim-css3-syntax): add syntax support
-  for css3 (*no doc*)
-- [vim-haml](https://github.com/tpope/vim-haml): file detection and syntax highlighting
-  (*no doc*)
-- [vim-ruby](https://github.com/vim-ruby/vim-ruby): ruby omnicompletion and syntax
-  highlighting (*no doc*)
-  - **:let ruby*operators = 1** - create colors for ruby operators
-  - **:let ruby\*space\*errors = 1** - mark whitespace characters
-- [vim-liquid](https://github.com/tpope/vim-liquid): highlight liquid tags like {% ...
-  %} (*no doc*)
+    - `:Bundle` → wraps bundle after, e.g. `:Bundle install`
+    - `:Bopen` → opens the Gemfile for editing
+- [vim-css3 syntax](https://github.com/hail2u/vim-css3-syntax): add syntax support for css3 (*no doc*)
+- [vim-haml](https://github.com/tpope/vim-haml): file detection and syntax highlighting (*no doc*)
+- [vim-ruby](https://github.com/vim-ruby/vim-ruby): ruby omnicompletion and syntax highlighting (*no doc*)
+- [vim-liquid](https://github.com/tpope/vim-liquid): highlight liquid tags (*no doc*)
 - [vim-shell](https://github.com/xolox/vim-shell): open files and web pages in associated programs out of Vim
-  - has generally no mappings and just defines the programs which opens the specified file according
-    to the file ending
-  - *mappings:*
-      - **F6** open file and directory names, URLs and e-mail addresses under the cursor
-          - **:Open http://wikimatze.de** alternate syntax
-- [vim-puppet](https://github.com/rodjek/vim-puppet): syntax file for puppet files (*no
-  docu*)
+- [vim-puppet](https://github.com/rodjek/vim-puppet): syntax file for puppet files (*no docu*)
 - [vis](https://github.com/vim-scripts/vis): you can execute commands only in the selected
   section of visual mode
-    - mark a text in visual mode, then press :B and then you can perform any command (Ex command)
-      you want
+    - mark a text in visual mode, then press `:B` and then you can perform any command
     - example: replace all '\-' through '-' => mark the block, press :B (you should have in your
       commandline :'<,'>:B) now press the typical text replacement commands you want (s/-/-) and you
       are done
 - [vspec](https://github.com/kana/vim-vspec): Testing framework for Vimscript
 - [vundle](https://github.com/gmarik/vundle): is a Vim plugin manager
-    - **:BundleInstall** - opens a extra window and show the files that will be installed
-    - **:BundleInstall!** - installs or updates installed bundles
-    - **:BundleSearch <foo>** - opens a window to display the matches in an extra window
-    - **:BundleClean** - confirms removal of unused script-dirs from `.vim/bundle/`.
+    - `:BundleInstall` → opens a extra window and show the files that will be installed
+    - `:BundleInstall!` → installs or updates installed bundles
+    - `:BundleSearch <foo>` → opens a window to display the matches in an extra window
+    - `:BundleClean` → confirms removal of unused script-dirs from `.vim/bundle/`.
 
 
 ## Usage
@@ -230,15 +213,15 @@ I highly not recommend you to copy my *.vimrc* because they may not fit to your 
 if you would like to use this repository to get started with Vim, please perform the following
 tasks:
 
-- `mv <path-to-vim-settings-clone>` ~/ # move .vimrc into your home folder
-- `mkdir ~/.vim/.backup` # create the backup folder
-- `mkdir ~/.vim/bundle` # needed for the pathogen script, this is the major
-- `ruby ~/.vim/viminstall.rb` # install the plugins
+- `mv <path-to-vim-settings-clone>` ~/
+- `mkdir ~/.vim/.backup`
+- `mkdir ~/.vim/bundle`
+- Start Vim and type `:BundleInstall`
 
 
 ## Colors scheme
 
-I have found the following three for my taste - there are tons of other colors out there
+I have found the following three for my taste - there are tons of other colors out there:
 
 - [ir black](https://github.com/borgand/ir*black): looks a little bit frosty but the
   overall feeling is very fast
