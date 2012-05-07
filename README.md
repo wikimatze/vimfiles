@@ -43,9 +43,9 @@ means.
       - `<C-u>` → clean the matching window
       - `<C-ENTER>` → opens the file under the cursor in a new window
   - mappings:
-      - `\<Leader\>t`  → call *:CommandT* command to open a specified file
+      - `<Leader>t`  → call *:CommandT* command to open a specified file
           - `:CommandT ../path/to/other/files` → search in the specified path
-      - `\<Leader\>b`  → opens the buffer for this files after which were searched in the past
+      - `<Leader>b`  → opens the buffer for this files after which were searched in the past
 - [delimitMate](https://github.com/Raimondi/delimitMate): semantic autoclose brackets
 - [easymotion](https://github.com/Lokaltog/vim-easymotion): easier and faster use of
   motions
@@ -76,117 +76,103 @@ means.
   - `:Gist XXXXX` → get gist XXXXX
   - `:Gist -l` → list all my gist
   - `:Gist -d` → delete the gist
-- [gundo](http://sjl.bitbucket.org/gundo.vim): graph the changes of your file saves in
-  different a nice tree
-  - **k** - move one step top
-  - **j** - move one step below
-  - **gg** - move to the button
-  - **G** - move to the top
-  - **Enter or double click** - revert the changes of the file to the current file
-  - **p** - will open a preview to show the differences from the selected and the current version
+- [gundo](http://sjl.bitbucket.org/gundo.vim): graph the changes of your file saves in different a nice tree
+  - `k` → move one step top
+  - `j` → move one step below
+  - `gg` → move to the button
+  - `G` → move to the top
+  - `Enter or double click` → revert the changes of the file to the current file
+  - `p` → will open a preview to show the differences from the selected and the current version
     (just imagine a `git diff`)
-  - *mappings:*
-      - **nnoremap \<F3\> :GundoToggle\<CR\>**
 - [hammer](https://github.com/matthias-guenther/hammer.vim): displays various markups (markdown,
   textile, rdoc, asciidoc) with one keystroke in the browser
-  - *mappings:*
-      - **noremap \<leader\>m :Hammer\<CR\>**
-- [IndexSearch](https://github.com/vim-scripts/IndexedSearch): redefines the search
-  (/,?) in Vim and creates custom messages about how many hits there are
+- [IndexSearch](https://github.com/vim-scripts/IndexedSearch): redefines the search `(/,?)` and creates
+  custom messages about how many hits there are
 - [json](https://github.com/vim-scripts/JSON.vim ): json detection and syntax-highlighting (*no doc*)
 - [markdown](https://github.com/tpope/vim-markdown): markdown-syntax highlighting (*no doc*)
-- [matchit](http://www.vim.org/scripts/script.php?script_id=39): press % to match tags in
+- [matchit](http://www.vim.org/scripts/script.php?script_id=39): press `%` to match tags in
   HTML, LaTeX and several other file formats (*no doc*)
 - [MRU](https://github.com/vim-scripts/mru.vim): opens a quickfix windows which shows the last
   opens files (*no doc*)
-  - **:MRU** - opens the window
+  - `:MRU` → opens the window
 - [netrw](http://www.vim.org/scripts/script.php?script_id=1075): build in filebrowser
-  - **:edit .** - take the current directory and opens fileexplorer
-  - **:split .** - vertical split at current working directory
-  - **:vsplit .** - horizontal split at current working directory
-  - **:Explore .** - open the directory relative to the current file
-  - **:Sexplore ** - horizontal split the current file in a new window
-  - **:Vexplore ** - vertical split the current file in a new window
+  - `:edit .` → take the current directory and open the fileexplorer
+  - `:split .` → vertical split at current working directory
+  - `:vsplit .` → horizontal split at current working directory
+  - `:Explore .` → open the directory relative to the current file
+  - `:Sexplore ` → horizontal split the current file in a new window
+  - `:Vexplore ` → vertical split the current file in a new window
   - file creation:
-      - **%** - creates a new file
-      - **d** - create a directory
-      - **D** - delete directory/file
-      - **R** - rename directory/file
+      - `%` → creates a new file
+      - `d` → create a directory
+      - `D` → delete directory/file
+      - `R` → rename directory/file
 - [notes](https://github.com/xolox/vim-notes): note taking - perfect for GTD
-  - **:Note** - starts a new note => you can specify the name of the note in the header
-  - **:write or :update** save the notes
-  - **:RecentNotes** - overview of the last created changes
-  - **:RelatedNotes** - shows all notes according to actual heading in the note
-  - **:SearchNotes <pattern>** - search after all notes containing the specified pattern/word
-  - **:edit note:<name-of-note>** - you can edit notes (other commands: *:split*, *:tabedit*)
-  - **:NoteFromSelectedText** - create a new node from the selected text
-  - **:DeleteNote** - deletes the actual note
-  - **let g:notes*directory = '~/Documents/Notes'** - define the directory where files should be
+  - `:Note` → starts a new note (you can specify the name of the note in the header)
+  - `:write or :update` save the notes
+  - `:RecentNotes` → overview of the last created changes
+  - `:RelatedNotes` → shows all notes according to actual heading in the note
+  - `:SearchNotes <pattern>` → search after all notes containing the specified pattern/word
+  - `:edit note:<name-of-note>` → you can edit notes (other commands: `:split`, `:tabedit`)
+  - `:NoteFromSelectedText` → create a new node from the selected text
+  - `:DeleteNote` → deletes the actual note
+  - `let g:notes_directory = '~/Documents/Notes'` → define the directory where files should be
     saved
   - it is possible to open notes directly from the command-line with **vim notes:collect**
-  - *tags*
+  - tags:
       - with @tag you can define own tags (they are useful for searching)
-      - **:IndexTaggedNotes** creates new tags (for omnicomplete when @ is pressed)
-      - **:ShowTaggedNotes** - will show all notes which are specified with a certain tag
-      - **autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h\*** - path of the notes directory
-- *mappings:*
-      - **nnoremap \<F7\> :Note collect\<CR\>**
-- [rubyrefactoring](https://github.com/ecomba/vim-ruby-refactoring): cool when working with ruby
-  - **,rap**: Refactor Add Parameter => adds a parameter to a function (cursor must be somewhere in the
+      - `:IndexTaggedNotes` → creates new tags (for omnicomplete when @ is pressed)
+      - `:ShowTaggedNotes` → will show all notes which are specified with a certain tag
+      - `autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h\*` → path of the notes directory
+- [rubyrefactoring](https://github.com/ecomba/vim-ruby-refactoring): crazy shit for ruby
+  - `,rap`: Refactor Add Parameter → adds a parameter to a function (cursor must be somewhere in the
     function)
-  - **,rec**: Refactor Extract Constant => mark a number in visual mode and the one will be moved on
+  - `,rec`: Refactor Extract Constant → mark a number in visual mode and the one will be moved on
     the top of a class or module
-  - **,relv**: Refactor Extract Local Variable => if you have a longer if statement and wants to
+  - `,relv`: Refactor Extract Local Variable → if you have a longer if statement and wants to
     export some expression into a tmp variable, you can use any selection you want
-  - **,rrlv**: Refactor Rename Local Variable => mark the name you want to change and the scope
+  - `,rrlv`: Refactor Rename Local Variable → mark the name you want to change and the scope
     within the method
-  - **,rriv**: Refactor Rename Instance Variable => mark the instance variable within a class
+  - `,rriv`: Refactor Rename Instance Variable → mark the instance variable within a class
 - [session](https://github.com/xolox/vim-session): save session and to open then later
-  - **:SaveSession <name>** - save the current session under the specified name
-  - **:OpenSession** - dialog to select the section you want to open
-      - **:OpenSession <name>** - takes an existing session as input (use tab completion!)
-  - **:CloseSession** - will close the whole session from the actual tab/window and will ask to
+  - `:SaveSession <name>` → save the current session under the specified name
+  - `:OpenSession` → dialog to select the section you want to open
+      - `:OpenSession <name>` → takes an existing session as input (use tab completion!)
+  - `:CloseSession` → will close the whole session from the actual tab/window and will ask to
     overwrite the loaded session
-  - **:DeleteSession** - choose the session you want to delete
-  - **:ViewSession** - information about the loaded session (shows Vim internals - good for debugging)
-- [snipmate](https://github.com/msanders/snipmate.vim): define your own snippets for faster coding
-  - you can define own snippets (each file must have the name of the file type, for example contains
-    the file *tex.snippets* all snippets for latex documents)
-  - better set the file type explicit for each type to load all snippets (*autocmd!
-    BufRead,BufNewFile \-.haml set ft=haml*)
+  - `:DeleteSession` → choose the session you want to delete
+  - `:ViewSession` → information about the loaded session (shows Vim internals - good for debugging)
+- [snipmate](https://github.com/msanders/snipmate.vim): snippets for faster coding
 - [speedating](https://github.com/tpope/vim-speeddating): a faster way to increment
   all kind of numbers
-  - **CTRL-a** - ++ number
-  - **CTRL-x** - -- number
-  - **:SpeedDatingFormat** - shows the regular expression of possible formations
-  - **:SpeedDatingFormat {}** - here you can specify the format which can be used to be recognized
+  - `<CTRL-a>` → ++ number
+  - `<CTRL-x>` → -- number
+  - `:SpeedDatingFormat` → shows the regular expression of possible formations
+  - `:SpeedDatingFormat {}` → here you can specify the format which can be used to be recognized
     by the program
 - [supertab](https://github.com/ervandew/supertab): word auto completion with pressing the tab key
 - [syntastic](https://github.com/scrooloose/syntastic): performs syntax check on various
   languages when saving
 - [surround](https://github.com/tpope/vim-surround)
-  - **ds"** - stands for delete surround and will delete the surrounds - place the cursor in in the
+  - `ds"` → stands for delete surround and will delete the surrounds - place the cursor in the
     string with the surroundings
-      - **example**: { :a => 1 } after pressing *ds{* :a => 1
-  - **cs("** - change surroundings and will replace the first surrounding argument with the second
+      - example: `{ :a => 1 }` after pressing `ds{` you will get `:a => 1`
+  - `cs("` → change surroundings and will replace the first surrounding argument with the second
     surrounding
-      - **example**: (:a => 1) after pressing *cs({* { :a => 1 }
-  - **ys** - stands for "you surround" and the first argument specifies the scope and the second
+      - example: `(:a => 1)` after pressing `cs({` you will get `{ :a => 1 }`
+  - `ys` → stands for "you surround" and the first argument specifies the scope and the second
     makes the replacement and the second using for wrapping up the first argument with the quotes
-      - **ys2w\***: will wrapp two following words (2w) with underscores (\*)
-      - **yss{** - wraps the whole line
+      - `ys2w\` → will wrapp two following words (`2w`) with underscores (`\*`)
+      - `yss{` → wraps the whole line
   - how to quote whole string?
-      - mark the string in visual mode (either normal mode with *v* or block mode with *V*), then
-        press *s* and then the quote ("", (), {}) you want to have and it wraps the string in this
-- [tabular](https://github.com/godlygeek/tabular): is a plugin to auto indent files
-  according to the pattern
-  - **:Tabularize / {pattern}**
+      - mark the string in visual mode (either normal mode with *v* or block mode with `V`), then
+        press `s` and then the quote (`"", (), {}`) you want to have and it wraps the string in this
+- [tabular](https://github.com/godlygeek/tabular): is a plugin to auto indent files according to the pattern
+  - `:Tabularize / {pattern}`
 - [tagbar](http://majutsushi.github.com/tagbar): display the structure of the code
   - **:TagbarOpen** - opens the view tagbar
   - **:TagbarToggle** - opens or close the tagbar whether it was closed or open
   - **:TagbarOpenAutoClose** - opens the tagbar and close it after a tag was selected - the cursor jumps to it
-  - *mappings:*
-      - **nnoremap \<silent\> \<F4\> :TagbarToggle\<CR\>**
   - [How to install exurberant ctags on mac](http://www.dreamincode.net/forums/blog/164/entry-1479-installing-exuberant-ctags-and-taglist-on-a-mac)
 - [tocdown](https://github.com/matthias-guenther/tocdown): display the headlines of a markdown document in an extra window.
 - *mappings:*
