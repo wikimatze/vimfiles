@@ -205,7 +205,7 @@ means.
     - `:BundleClean` → confirms removal of unused script-dirs from `.vim/bundle/`.
 
 
-## Usage
+# Usage
 
 I highly not recommend you to copy my *.vimrc* because they may not fit to your working style (see
 **Luca Pettes**
@@ -219,7 +219,7 @@ tasks:
 - Start Vim and type `:BundleInstall`
 
 
-## Colors scheme
+# Colors scheme
 
 I have found the following three for my taste - there are tons of other colors out there:
 
@@ -234,12 +234,12 @@ I have found the following three for my taste - there are tons of other colors o
 ![vividchalk screen shot](https://github.com/matthias-guenther/vim-settings/raw/master/vividchalk.png)
 
 
-## Contact
+# Contact
 
 Feature request, bugs, questions, etc. can be send to <matthias.guenther@wikimatze.de>.
 
 
-## License
+# License
 
 This software is licensed under the [MIT license][mit].
 
