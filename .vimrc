@@ -522,8 +522,8 @@ augroup END
 
 augroup filetype_txt
   au!
-  au FileType sh setlocal foldmethod=marker
-  au FileType txt setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+  au FileType text setlocal foldmethod=marker
+  au FileType text setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
 augroup END
 
 " }}}
