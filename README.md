@@ -92,9 +92,15 @@ means.
 - [markdown](https://github.com/tpope/vim-markdown): markdown-syntax highlighting (*no doc*)
 - [matchit](http://www.vim.org/scripts/script.php?script_id=39): press `%` to match tags in
   HTML, LaTeX and several other file formats (*no doc*)
+- [minibufexpl](https://github.com/fholgado/minibufexpl.vim): Highlighting the current active buffer
+  in an extra window
+    - `:MiniBufExplorer` → opens the Minibuffer window
+    - `:CMiniBufExplorer` → close the Minibuffer window
+    - `:TMiniBufExplorer` → toggle Minibuffer window
 - [MRU](https://github.com/vim-scripts/mru.vim): opens a quickfix windows which shows the last
   opens files (*no doc*)
   - `:MRU` → opens the window
+
 - [netrw](http://www.vim.org/scripts/script.php?script_id=1075): build in filebrowser
   - `:edit .` → take the current directory and open the fileexplorer
   - `:split .` → vertical split at current working directory

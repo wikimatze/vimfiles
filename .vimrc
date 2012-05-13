@@ -53,6 +53,7 @@ Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'rodjek/vim-puppet'
 " Bundle 'https://bitbucket.org/sjl/badwolf'
 Bundle 'vim-scripts/YankRing.vim'
+Bundle 'fholgado/minibufexpl.vim'
 
 " --------------------------------------------------------------------------------}}}
 " File type detection ------------------------------------------------------------{{{
@@ -661,6 +662,15 @@ elseif has("unix")
     let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
     set tags=tags
 endif
+
+" }}}
+" MinibufExplorer {{{
+"
+" open the Minibufer and go into the window
+noremap <Leader>b :MiniBufExplorer<cr>
+let g:miniBufExplCloseOnSelect = 1 " close MBE if I have selected a buffer
+" use <C-TAB> and <C-S-TAB> to mappings that will move to the next and previous buffer
+let g:miniBufExplMapCTabSwitchWindows = 1
 
 " }}}
 " Notes {{{
