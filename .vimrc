@@ -258,7 +258,7 @@ noremap Q gqap
 
 " Tab/Shift+Tab indent/unindent the highlighted block
 " <Tab> perform > and <Shift-Tab> performs <
-vnoremap <Tab>	>gv
+vnoremap <Tab>  >gv
 vnoremap <S-Tab> <gv
 
 " Keep the cursor in place while joining lines
@@ -563,7 +563,7 @@ let g:CommandTAlwaysShowDotFiles = 1      " include dot files for scanning
 let g:CommandTScanDotDirectories = 1      " don't search in dot directory
 let g:CommandTMatchWindowAtTop = 0        " the match window will appear at the top of the editor window
 let g:CommandTAcceptSelectionMap = '<CR>' " enter open findings in same window
-let g:CommandTAcceptSelectionSplitMap = '<C-s>'     " Ctrl-Enter will makes a horizontal split
+let g:CommandTAcceptSelectionSplitMap = '<C-s>'     " Ctrl-s will makes a horizontal split
 let g:CommandTAcceptSelectionVSplitMap = '<C-v>'    " Ctrl-v will make a vertical split
 let g:CommandTAcceptSelectionTabMap = '<C-t>'       " Ctrl-t will open the file in a new tab
 set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " not matching files
