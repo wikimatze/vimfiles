@@ -308,6 +308,7 @@ noremap <silent> ,u :<C-B>sil <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>/
 " Press \cd to change the pwd to the current file you are in
 nnoremap \cd :lcd %:h<CR>
 
+
 " Use hjkl in wrapped-lined files
 onoremap <silent> <expr> j ScreenMovement("j")
 onoremap <silent> <expr> k ScreenMovement("k")
@@ -329,14 +330,22 @@ function! ScreenMovement(movement)
   endif
 endfunction
 
-" Insert date in the form yyyy-mm-dd
-nnoremap <F5> "=strftime("%F")<CR>P
-inoremap <F5> <C-R>=strftime("%F")<CR>
+
+" Insert date in the form yyyy-mm-dd at the end of a line
+function! InsertSpaceDate()
+  let @x = " "
+  let @x = @x . strftime("%Y-%m-%d")
+  normal! "xp
+endfunction
+
+" Press F5 to insert the current date at the end of the line
+noremap <silent> <F5> $:call InsertSpaceDate()<CR>
+
 
 " Spellchecker: press ,s to toogle between spellchecker
 nnoremap <silent> <leader>s :set spell!<CR>
 
-" whitespace jumping
+" Whitespace jumping
 nnoremap <leader>f f<space>
 nnoremap <leader>F F<space>
 
