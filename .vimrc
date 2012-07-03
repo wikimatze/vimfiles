@@ -255,7 +255,7 @@ elseif has('unix')
 endif
 
 " reformat current paragraph
-noremap Q gqap
+noremap Q gq
 
 " Tab/Shift+Tab indent/unindent the highlighted block
 " <Tab> perform > and <Shift-Tab> performs <
