@@ -165,6 +165,8 @@ means.
   - `s` → search for specified regex
   - `q` → quit yankring window
   - [Install exurberant ctags on Mac](http://www.dreamincode.net/forums/blog/164/entry-1479-installing-exuberant-ctags-and-taglist-on-a-mac)
+- [tmux.vim](https://github.com/zaiste/tmux.vim): syntax detection for tmux files and
+  highlighting
 - [tocdown](https://github.com/matthias-guenther/tocdown): display the headlines of a markdown document in an extra window.
 - [yankring](https://github.com/vim-scripts/YankRing.vim): better register management and saves up to 100 buffered lines
   - `:YRShow` → shows the actual buffer (you can use visual buttons to select more)

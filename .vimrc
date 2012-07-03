@@ -52,6 +52,7 @@ Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'rodjek/vim-puppet'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'fholgado/minibufexpl.vim'
+Bundle 'zaiste/tmux.vim'
 Bundle 'vim-scripts/L9'
 Bundle 'vim-scripts/FuzzyFinder'
 
