@@ -82,6 +82,14 @@
     - `<C-P>` → go the previous matching
 
 
+# Insert mode
+- `CTRG-w` → delete the previous word
+- `CTRG-t` → add shift
+- `CTRG-d` → remove shift
+- `CTRG-n` → autocompletion
+- `CTRG-x-CTRG-l` → complete a whole line (good for matching complete function calls
+- `CTRG-x-CTRG-f` → browse current directory and display file names
+
 # Search and Replace
 - `/` → just type in the searched word (`top-down`)
 - `?` bottom-up search
