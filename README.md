@@ -49,6 +49,10 @@ means.
   - `:Ggrep` → does a *grep* in the tree
   - `:Gbrowse` → opens the actual file in the browser (normally its on github)
   - `:Git` → after this you can perform every other normal git command you want
+- [fuf](https://github.com/vim-scripts/FuzzyFinder): fuzzy matching to find files recursivley in the current directory
+  - `<C-l>` - opens in a new tab page
+  - `<C-j>` - opens in a horizontal split
+  - `<C-k>` - opens in a vertical-split window.
 - [Gist.vim](https://github.com/mattn/gist-vim ): upload files directly as gists to github
   - first setup your git credentials `let g:github_user = 'your-name'` and `let g:github*token = 'token'`  in your *.vimrc*
       - the API Token can be found under Account Settings under Account Admin on [github](https://github.com)

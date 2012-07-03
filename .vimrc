@@ -50,9 +50,11 @@ Bundle 'xolox/vim-shell'
 Bundle 'Rykka/ColorV'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'rodjek/vim-puppet'
-" Bundle 'https://bitbucket.org/sjl/badwolf'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'fholgado/minibufexpl.vim'
+Bundle 'vim-scripts/L9'
+Bundle 'vim-scripts/FuzzyFinder'
+
 
 " --------------------------------------------------------------------------------}}}
 " File type detection ------------------------------------------------------------{{{
@@ -592,6 +594,19 @@ let g:easytags_auto_update = 0    " don't update the text, when stop working
 let g:easytags_auto_highlight = 0 " don't highlight the text, when stop working
 let g:easytags_resolve_links = 1  " resolve symbolic links with pathnames
 let g:easytags_python_enabled = 1 " use Python script for dynamic syntax highlighting (is faster)
+
+" }}}
+" FuzzyFinder {{{
+
+let g:fuf_coveragefile_globPattern = ['**/*'] " List of glob pattern to get file paths to be searched
+nnoremap <Leader>t :FufCoverageFile <CR>
+
+" regex for stuff to ignore for searching files
+let g:fuf_coveragefile_exclude = '\v\~$'
+      \ . '|\.(gitignore|dropbox|.DS\_Store|exe|bak|orig|swp)$' " many different dot-files
+      \ . '|(^|[/\\])\.(hg|git|bzr|svn)($|[/\\])' " exclude .hg, .git files
+      \ . '|(^|[/\\])_site[/\\]' " exclude _site/* stuff (mainly from jekyll
+      \ . '|(^|[/\\])assets[/\\]' " exlude the assets stuff by rails
 
 " }}}
 " Fugitive {{{
