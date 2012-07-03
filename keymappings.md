@@ -98,10 +98,8 @@
 - `n` → jump to the next matching (direction `forward`)
 - `N` → jump to the previous matching (direction `backwards`)
 - single-character search:
-    - `fx` → move forward to character x
-    - `Fx` → move backward to character x
-    - `tx` → move forward to character x but stops one sign before it
-    - `Tx` → move backward to character x but stops one sign before it
+    - `fx` → move forward to *first* character x inclusive (`Fx` move backwards)
+    - `tx` → move forward to *til* character x but stops left before the sign (`Tx` move backwards)
 - `/<word\>` → matching only words which ends on <word>
 - `/\<word\>` → matching only words which starts with <word>
 - `/\<word\>` → matching only the word which stands alone with <word> - no other words in front
