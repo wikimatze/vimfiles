@@ -292,3 +292,30 @@
   matches a pattern.  example :g/def/normal Ai -> will insert at the end of each line containing the
   def word a 'i' to
 
+
+# Text object selection
+- `as` → a sentence (example `vas` select the current sentence inclusive leading and trailing
+  whitespaces)
+- `is` → inner sentence (example `vis` select the only the whole text no trailing whitespaces)
+- `ap` → a paragraph (example `dap` select a whole text paragraph between \n separaters)
+- `ab` → a block so only ( and ) parts and all whats between these delimiters
+- `ib` → inner block, so only the parts within ( and ) delimiter
+- `aB` → a block so only { and } parts and all whats between these delimiters
+- `iB` → inner block, so only the parts within { and } delimiter
+- `at` → a tag select everything between HTML tag (inclusive the tags)
+- `it` → inner tag select only what within a HTML tag
+- `a"` → a quote, select a complete quote of ""
+- `i"` → inner quote, select only the inner quote of ""
+- `a'` → a quote, select a complete quote of ''
+- `i'` → inner quote, select only the inner quote of ''
+
+
+# Speak editor sentences
+- `cis` (change inside sentence): change current sentence
+- `ci"` (change inside quote): change a string inside quotes
+- `vap` (visual around paragraph): visually select this paragraph
+- `yaw` (yank around word): copy the current word, no matter where your cursor is inside the current
+  word
+- `ctX` change till X (any character)
+
+
