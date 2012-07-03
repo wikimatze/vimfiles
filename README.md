@@ -26,23 +26,6 @@ means.
       - `:q` → quit the Ack window
 - [colorv](https://github.com/Rykka/ColorV): display Hex Color with real colors in Vim -
   very useful when working with CSS
-- [command-t](https://github.com/wincent/Command-T): file search in the
-  actual directory
-  - `:CommandTFlush` - update the path cache and also include new and deleted files
-  - `Installation`: $ ~/.vim/bundle/Command-t; rake make
-  - shortcuts:
-      - `<C-j>` → go down
-      - `<C-k>` → go up
-      - `<C-t>` → opens the file in a new tab
-      - `<C-s>` → opens the file under the cursor with a *horizontal* split
-      - `<C-v>` → opens the file under the cursor with a *vertcial* split
-      - `ESC` or `<C-c>` → closing the open dialog
-      - `<C-u>` → clean the matching window
-      - `<C-ENTER>` → opens the file under the cursor in a new window
-  - mappings:
-      - `<Leader>t`  → call *:CommandT* command to open a specified file
-          - `:CommandT ../path/to/other/files` → search in the specified path
-      - `<Leader>b`  → opens the buffer for this files after which were searched in the past
 - [delimitMate](https://github.com/Raimondi/delimitMate): semantic autoclose brackets
 - [easymotion](https://github.com/Lokaltog/vim-easymotion): easier and faster use of
   motions

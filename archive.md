@@ -3,6 +3,38 @@
 Here is a list of plugins I used in the past and removed them because I found a new method to use
 it.
 
+
+
+- [command-t](https://github.com/wincent/Command-T): file search in the
+  actual directory
+  - `:CommandTFlush` - update the path cache and also include new and deleted files
+  - `Installation`: $ ~/.vim/bundle/Command-t; rake make
+  - shortcuts:
+      - `<C-j>` → go down
+      - `<C-k>` → go up
+      - `<C-t>` → opens the file in a new tab
+      - `<C-s>` → opens the file under the cursor with a *horizontal* split
+      - `<C-v>` → opens the file under the cursor with a *vertcial* split
+      - `ESC` or `<C-c>` → closing the open dialog
+      - `<C-u>` → clean the matching window
+      - `<C-ENTER>` → opens the file under the cursor in a new window
+  - mappings:
+      - `<Leader>t`  → call *:CommandT* command to open a specified file
+          - `:CommandT ../path/to/other/files` → search in the specified path
+      - `<Leader>b`  → opens the buffer for this files after which were searched in the past
+  - custom settings:
+<pre>
+      let g:CommandTMaxFiles = 20000            " max files for scanning the directory
+      let g:CommandTMaxDepth = 20               " number of folder levels for searching
+      let g:CommandTAlwaysShowDotFiles = 1      " include dot files for scanning
+      let g:CommandTScanDotDirectories = 1      " don't search in dot directory
+      let g:CommandTMatchWindowAtTop = 0        " the match window will appear at the top of the editor window
+      let g:CommandTAcceptSelectionMap = '<CR>' " enter open findings in same window
+      let g:CommandTAcceptSelectionSplitMap = '<C-s>'     " Ctrl-s will makes a horizontal split
+      let g:CommandTAcceptSelectionVSplitMap = '<C-v>'    " Ctrl-v will make a vertical split
+      let g:CommandTAcceptSelectionTabMap = '<C-t>'       " Ctrl-t will open the file in a new tab
+      set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " not matching files</pre>
+
 - [jQuery](https://github.com/vim-scripts/jQuery "jQuery"): pretty colors for the
   jQuery syntax (*no doc*)
 - [NERDTree](https://github.com/scrooloose/nerdtree "NERDTree"): amazing file browser for GUI guys
