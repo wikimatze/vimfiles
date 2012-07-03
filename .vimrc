@@ -565,20 +565,6 @@ augroup END
 " }}}
 " --------------------------------------------------------------------------------}}}
 " Plugin settings ----------------------------------------------------------------{{{
-" Command-t {{{
-
-let g:CommandTMaxFiles = 20000            " max files for scanning the directory
-let g:CommandTMaxDepth = 20               " number of folder levels for searching
-let g:CommandTAlwaysShowDotFiles = 1      " include dot files for scanning
-let g:CommandTScanDotDirectories = 1      " don't search in dot directory
-let g:CommandTMatchWindowAtTop = 0        " the match window will appear at the top of the editor window
-let g:CommandTAcceptSelectionMap = '<CR>' " enter open findings in same window
-let g:CommandTAcceptSelectionSplitMap = '<C-s>'     " Ctrl-s will makes a horizontal split
-let g:CommandTAcceptSelectionVSplitMap = '<C-v>'    " Ctrl-v will make a vertical split
-let g:CommandTAcceptSelectionTabMap = '<C-t>'       " Ctrl-t will open the file in a new tab
-set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " not matching files
-
-" }}}
 " Delimate {{{
 
 " don't use autoclose for vim files
