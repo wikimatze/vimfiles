@@ -685,8 +685,9 @@ let g:miniBufExplMapCTabSwitchWindows = 1
 " Notes {{{
 
 let g:notes_directory = '~/Dropbox/notes'            " path of main directory
+let g:notes_shadowdir = '~/.vim/shadow'              " path for templates creating new notes
 let g:notes_suffix = '.txt'                          " default file ending of note files
-autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h " path of the notes directory
+let g:notes_smart_quotes = 0                         " Don't use special symbols
 
 nnoremap <F7> :Note! collect<CR>
 
