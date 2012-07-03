@@ -51,6 +51,7 @@
 - `xp` → character twiddeling change the characters of two successive chars
 - `V` → mark the whole line in visual mode
 - `gV` → reselect the text which was marked in visual mode before
+  - `o` → will go to the other end of the visual selection
 - `:wall` → write all changes in all open buffers
 - `'0` →   when opening Vim and pressing this command will bring you back to last file you changed -
   handy if you have to shutdown and start the work again
