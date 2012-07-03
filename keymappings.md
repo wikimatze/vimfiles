@@ -230,7 +230,8 @@
 - `v/` is the opposite of `g/` → “I want to match what I want to keep and delete the rest
 - `:history` print the last commands -> usefull when writing a script
    `:history :-20,` will print the last 20 commands
-
+- `CTRL-i` - trace movements forward in files
+- `CTRL-o` - trace movements backwards in files
 
 # Ctags
 - `:tags` → show the list of tags you traversed through
