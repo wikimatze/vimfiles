@@ -51,18 +51,32 @@ snippet it
 snippet lk
 	[${1:text}](${2:url})
 snippet hr
-	***
+	---
+snippet table
+	<table>
+		<tr>
+			<th></th>
+			<th></th>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
 
 # these snippets can only be used in jekyll projects with special plugins
 snippet pullquote
-	{% pullquote %}
-	${1:text} {"${2:quote}"}
-	{% endpullquote %}
-snippet blockquote
-	{% blockquote ${1:author} ${2:link} %}
-	${3:text}
-	{% endblockquote %}
+	<blockquote>
+	 <p>${1:text}</p>
+	 <strong>${2:text}</strong>
+	</blockquote>
 snippet img
 	{% img ${1:classname} ${2:/path/to/image} ${3:title} ${4:alt} %}
 snippet gist
 	{% gist ${1:gist_id} ${2:gist_name} %}
+snippet fancy1
+	<a href="${1:big_image}" title="${2:title}" class="fancybox"><img src="${3:small_image}" class="center" alt="$2"/></a>
+
+	<div class="caption"></div>
+snippet fancy2
+	<a href="${1:big_image}" title="${2:title}" class="fancybox"><img src="${3:small_image}" class="center" alt="$2"/></a>
