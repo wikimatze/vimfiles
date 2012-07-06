@@ -55,7 +55,7 @@ Bundle 'fholgado/minibufexpl.vim'
 Bundle 'zaiste/tmux.vim'
 Bundle 'vim-scripts/L9'
 Bundle 'vim-scripts/FuzzyFinder'
-
+Bundle 'jpalardy/vim-slime'
 
 " --------------------------------------------------------------------------------}}}
 " File type detection ------------------------------------------------------------{{{
@@ -773,6 +773,11 @@ let ruby_space_errors = 1 " mark whitespace characters
 " Vim-shell {{{
 
 let g:shell_verify_urls = 1 " handle special URLs with dot at the end
+
+" }}}
+" Vim-slime {{{
+"
+let g:slime_target = "tmux"
 
 " }}}
 " Yankring {{{

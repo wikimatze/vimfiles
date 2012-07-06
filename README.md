@@ -84,7 +84,6 @@ means.
 - [MRU](https://github.com/vim-scripts/mru.vim): opens a quickfix windows which shows the last
   opens files (*no doc*)
   - `:MRU` → opens the window
-
 - [netrw](http://www.vim.org/scripts/script.php?script_id=1075): build in filebrowser
   - `:edit .` → take the current directory and open the fileexplorer
   - `:split .` → vertical split at current working directory
@@ -132,6 +131,10 @@ means.
     overwrite the loaded session
   - `:DeleteSession` → choose the session you want to delete
   - `:ViewSession` → information about the loaded session (shows Vim internals - good for debugging)
+- [slime](https://github.com/jpalardy/vim-slime): Sending selection in vim directly into a tmux session
+  - `let g:slime_target = "tmux"`
+  - `C-c C-`: press Ctrl-c-c to put the actual paragraph (vip) in the tmux session (visual select
+    works also)
 - [snipmate](https://github.com/msanders/snipmate.vim): snippets for faster coding
 - [speedating](https://github.com/tpope/vim-speeddating): a faster way to increment
   all kind of numbers
@@ -196,7 +199,6 @@ means.
     - `:BundleSearch <foo>` → opens a window to display the matches in an extra window
     - `:BundleClean` → confirms removal of unused script-dirs from `.vim/bundle/`.
 
-
 # Usage
 
 I highly not recommend you to copy my *.vimrc* because they may not fit to your working style (see
@@ -209,7 +211,6 @@ tasks:
 - `mkdir ~/.vim/.backup`
 - `mkdir ~/.vim/bundle`
 - Start Vim and type `:BundleInstall`
-
 
 # Colors scheme
 
@@ -225,11 +226,9 @@ I have found the following three for my taste - there are tons of other colors o
   without the dusty looking and some really fancy colors
 ![vividchalk screen shot](https://github.com/matthias-guenther/vim-settings/raw/master/vividchalk.png)
 
-
 # Contact
 
 Feature request, bugs, questions, etc. can be send to <matthias.guenther@wikimatze.de>.
-
 
 # License
 
