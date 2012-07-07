@@ -165,20 +165,6 @@
 - `:vsp bla.txt` → open file via vertical split
 
 
-# Tabs
-- `vim →p [filename1] [filename2] ...` → open files in tabs
-- `:tabedit <name>` → opens a new tab with the specified file name
-- `:q` → close tab
-- `:tabonly` → close all tabs except the actual
-- `:tabcloseN` → will close the N-th tab
-- `movement`
-  - `gt` → go to the next tab (Motion: *3gt*)
-  - `gT` → go to the preview tab
-- `reordering`
-  - `:tabmove` → tab at the end
-  - `:tabmove0` → tab at the beginning
-
-
 # Marks
 - `ma` → create a mark with the name a (marks will be saved for every file)
 - `'a` → jump to mark a
@@ -235,13 +221,6 @@
 - `<C-o>` - trace movements backwards in files
 
 
-# Ctags
-- `:tags` → show the list of tags you traversed through
-- `<C-]>` → jump into the tag (will into the class, method or other declaration)
-- `<C-t>` → will go to the previous declaration of the method
-- go to the root of the project and perform `ctags -R .` - this will create a tag file
-
-
 # Spellchecker
 - `]s` → place the cursor on the next error
 - `[s` → place the cursor on the previous error
@@ -251,25 +230,6 @@
 - `:set spelllang` → activate the spell checker
 - `set spelling=de_20` → setting the spell-language to 'neue deutsche Rechtschreibung'
 - `set spelling=de_19` → setting the spell-language to 'alte deutsche Rechtschreibung'
-
-
-# Hacks
-- replace line ending through **\\\\:** `:%s/$/ \\\\/`
-- change matching before and after **=:** `:%s/\(.*\)=\(.*\)/\2=\1`
-- replace **a = b** to **b = a:** `:%s/\(.*\)=\(.*\)/\2=\1`
-
-
-# Help
-- `<C-]>` → jump into the hyperlink
-- `<C-T>` → jump back in your search history
-- `:helpgrep <searchterm>` → search all doc after the specified term (press :cwindow to see all matchings)
-- `:help ins-completion` overview of commands to start autocompletion
-- `:help 'complete'` → specifies how keyword completion works
-- `:help :vglobal` → shows us how to perform an operation on all lines that don’t match the given
-  pattern. In this case we delete lines that don’t match what we’re looking for.
-- `:help :global` → is how we can run a given command (in this case a :normal command) for each line that
-  matches a pattern.  example :g/def/normal Ai -> will insert at the end of each line containing the
-  def word a 'i' to
 
 
 # Text object selection
@@ -296,4 +256,30 @@
 - `yaw` (yank around word): copy the current word, no matter where your cursor is inside the current
   word
 - `ctX` change till X (any character)
+
+
+# Ctags
+- `:tags` → show the list of tags you traversed through
+- `<C-]>` → jump into the tag (will into the class, method or other declaration)
+- `<C-t>` → will go to the previous declaration of the method
+- go to the root of the project and perform `ctags -R .` - this will create a tag file
+
+
+# Help
+- `<C-]>` → jump into the hyperlink
+- `<C-T>` → jump back in your search history
+- `:helpgrep <searchterm>` → search all doc after the specified term (press :cwindow to see all matchings)
+- `:help ins-completion` overview of commands to start autocompletion
+- `:help 'complete'` → specifies how keyword completion works
+- `:help :vglobal` → shows us how to perform an operation on all lines that don’t match the given
+  pattern. In this case we delete lines that don’t match what we’re looking for.
+- `:help :global` → is how we can run a given command (in this case a :normal command) for each line that
+  matches a pattern.  example :g/def/normal Ai -> will insert at the end of each line containing the
+  def word a 'i' to
+
+
+# Hacks
+- replace line ending through **\\\\:** `:%s/$/ \\\\/`
+- change matching before and after **=:** `:%s/\(.*\)=\(.*\)/\2=\1`
+- replace **a = b** to **b = a:** `:%s/\(.*\)=\(.*\)/\2=\1`
 

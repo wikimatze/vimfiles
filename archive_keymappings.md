@@ -21,3 +21,16 @@
   - http://vim":http://vim→latex.sourceforge.net/documentation/latex-suite-quickstart
 
 
+# Tabs
+- `vim -p [filename1] [filename2] ...` → open files in tabs
+- `:tabedit <name>` → opens a new tab with the specified file name
+- `:q` → close tab
+- `:tabonly` → close all tabs except the actual
+- `:tabcloseN` → will close the N-th tab
+- `movement`
+  - `gt` → go to the next tab (Motion: *3gt*)
+  - `gT` → go to the preview tab
+- `reordering`
+  - `:tabmove` → tab at the end
+  - `:tabmove0` → tab at the beginning
+
