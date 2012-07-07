@@ -1,7 +1,7 @@
 " Preamble -----------------------------------------------------------------------{{{
 
 set nocompatible " be iMproved
-filetype off     " required!
+filetype off     " required! for vundle
 
 set runtimepath+=~/.vim/bundle/vundle/ " add vundle to runtime path
 call vundle#rc()
@@ -65,6 +65,10 @@ filetype on        " Enable file type detection
 filetype indent on " Enable file type-specific indenting
 filetype plugin on " Enable file type-specific plugins
 
+" turn on Omni completion - this option file specific completion {{{
+set omnifunc=syntaxcomplete#Complete
+
+" }}}
 " -------------------------------------------------------------------------------}}}
 " General settings ---------------------------------------------------------------{{{
 
@@ -234,13 +238,6 @@ set list " enable list mode - symbols for tabs, trails, ...
 " extends shows when a file name goes out the view (you have to scroll like in NERDTree)
 " trails - whitespaces
 set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮,trail:·
-
-" }}}
-" Omnicomplete {{{
-
-" turn on Omni completion
-filetype plugin on
-set ofu=syntaxcomplete#Complete
 
 " }}}
 " --------------------------------------------------------------------------------}}}
