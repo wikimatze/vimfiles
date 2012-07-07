@@ -84,13 +84,13 @@
 
 
 # Insert mode + completion
-- `CTRG-w` → delete the previous word
-- `CTRG-t` → add shift
-- `CTRG-d` → remove shift
-- `CTRG-n` → autocompletion
-- `CTRG-x-CTRG-l` → complete a whole line (good for matching complete function calls
-- `CTRG-x-CTRG-f` → browse current directory and display file names
-- `CTRG-x-CTRG-o` → omnicomplete based completion
+- `<C-w>` → delete the previous word
+- `<C-t>` → add shift
+- `<C-d>` → remove shift
+- `<C-n>` → autocompletion
+- `<C-x-C-l>` → complete a whole line (good for matching complete function calls
+- `<C-x-C-f>` → browse current directory and display file names
+- `<C-x-C-o>` → omnicomplete based completion
 
 # Search and Replace
 - `/` → just type in the searched word (`top-down`)
@@ -128,7 +128,6 @@
 - `ZQ` → save file without changes and quit
 
 
-
 # Delete/Cut
 - `x` → delete single character
 - `dw` → delete whole word (Motion: *2dw* will delete two words)
@@ -152,16 +151,16 @@
 
 
 # Windows
-- `Ctrl-W s` → split window `horizontal`
-- `Ctrl-W v` → split window `vertical`
-- `Ctrl-W c` → close actual window
-- `Ctrl-W [hjkl]` go to a specific window
+- `<C-W s>` → split window `horizontal`
+- `<C-W v>` → split window `vertical`
+- `<C-W c>` → close actual window
+- `<C-W [hjkl]>` go to a specific window
 - `:only` → close all windows except the actual one
 - `adjust windows size`
-  → `Ctrl-w _` → make the actual window horizonat max
-  → `Ctrl-w |` → make the actual window vertical max
-  → `Ctrl-w [+→]` → change the size incremental
-  → `Ctrl-w =` → adjust all windows to the same size
+  → `<C-w _>` → make the actual window horizonat max
+  → `<C-w |>` → make the actual window vertical max
+  → `<C-w [+→]>` → change the size incremental
+  → `<C-w =>` → adjust all windows to the same size
 - `:sp bla.txt` → open file via horizontal split
 - `:vsp bla.txt` → open file via vertical split
 
@@ -232,13 +231,14 @@
 - `v/` is the opposite of `g/` → “I want to match what I want to keep and delete the rest
 - `:history` print the last commands -> usefull when writing a script
    `:history :-20,` will print the last 20 commands
-- `CTRL-i` - trace movements forward in files
-- `CTRL-o` - trace movements backwards in files
+- `<C-i>` - trace movements forward in files
+- `<C-o>` - trace movements backwards in files
+
 
 # Ctags
 - `:tags` → show the list of tags you traversed through
-- `Ctrl+]` → jump into the tag (will into the class, method or other declaration)
-- `Ctrl+t` → will go to the previous declaration of the method
+- `<C-]>` → jump into the tag (will into the class, method or other declaration)
+- `<C-t>` → will go to the previous declaration of the method
 - go to the root of the project and perform `ctags -R .` - this will create a tag file
 
 
@@ -319,5 +319,4 @@
 - `yaw` (yank around word): copy the current word, no matter where your cursor is inside the current
   word
 - `ctX` change till X (any character)
-
 
