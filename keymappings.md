@@ -21,8 +21,8 @@
 - `ddp` → will switch two lines
 - `<C-U>` → scroll upper (as a picture: scroll down half of the screen)
 - `<C-D>` → scroll down (as a picture: scroll up half of the screen)
-- `<C-I>` → track your movements forwards => it jumps to previous made changes
-- `<C-O>` → track your movements backward => it jumps to last made changes
+- `<C-i>` → trace movements forward in files
+- `<C-o>` → trace movements backwards in files
 - `H` → jump to the highest visible part
 - `M` → jump to the middle position of the visible part
 - `L` → jump to the lowest position of the visible part
@@ -91,6 +91,7 @@
 - `<C-x-C-l>` → complete a whole line (good for matching complete function calls
 - `<C-x-C-f>` → browse current directory and display file names
 - `<C-x-C-o>` → omnicomplete based completion
+
 
 # Search and Replace
 - `/` → just type in the searched word (`top-down`)
@@ -217,8 +218,6 @@
 - `v/` is the opposite of `g/` → “I want to match what I want to keep and delete the rest
 - `:history` print the last commands -> usefull when writing a script
    `:history :-20,` will print the last 20 commands
-- `<C-i>` - trace movements forward in files
-- `<C-o>` - trace movements backwards in files
 
 
 # Spellchecker
