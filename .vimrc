@@ -56,6 +56,7 @@ Bundle 'zaiste/tmux.vim'
 Bundle 'vim-scripts/L9'
 Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'jpalardy/vim-slime'
+Bundle 'vim-ruby/vim-ruby'
 
 " --------------------------------------------------------------------------------}}}
 " File type detection ------------------------------------------------------------{{{

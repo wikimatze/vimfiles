@@ -182,7 +182,18 @@ means.
     - `:Bopen` → opens the Gemfile for editing
 - [vim-css3 syntax](https://github.com/hail2u/vim-css3-syntax): add syntax support for css3 (*no doc*)
 - [vim-haml](https://github.com/tpope/vim-haml): file detection and syntax highlighting (*no doc*)
-- [vim-ruby](https://github.com/vim-ruby/vim-ruby): ruby omnicompletion and syntax highlighting (*no doc*)
+- [vim-ruby](https://github.com/vim-ruby/vim-ruby): configuration files for editing and compiling Ruby -
+  it even adds custom text-objects only for vim
+  - following commands can performed in *visual mode*
+    - `am` → "a method" select from 'def' till 'end'
+    - `im` → "inner method" select all inside the method exclude 'def' and 'end'
+    - `aM` → "a class" select from 'class' till 'end'
+    - `iM` → "inner class" select all inside the class exclude 'class' and 'end'
+  - the following commands can only performed *normal mode*
+    - `]m` → move to the beginning of the *next method*
+    - `[m` → move to the beginning of the *previous method*
+    - `]]` → move to the beginning of the **next** *module* or *class* definition
+    - `[[` → move to the beginning of the **previous** *module* or *class* definition
 - [vim-liquid](https://github.com/tpope/vim-liquid): highlight liquid tags (*no doc*)
 - [vim-shell](https://github.com/xolox/vim-shell): open files and web pages in associated programs out of Vim
 - [vim-puppet](https://github.com/rodjek/vim-puppet): syntax file for puppet files (*no docu*)
