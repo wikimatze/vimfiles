@@ -100,6 +100,7 @@ set synmaxcol=200                       " better scrolling for long lines
 set spelllang=en_us                     " default language for spell checker
 set spellfile=~/.vim/spell/en.utf-8.add " spellfile for additional correct english words
 set spellsuggest=best,10                " only display the 10 best suggestions
+set suffixesadd=.rb                     " are used when searching for files to open with 'gf'
 set title                               " show title in console title
 set viminfo='1000000,f1                 " save marks for 1 million files ('1000000), save global marks
 set ignorecase                          " ignore upper- and lowercase letters during a search
