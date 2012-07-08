@@ -24,8 +24,6 @@ means.
       - `:t` → open the selected file in a new tab
       - `:v` → vertical split
       - `:q` → quit the Ack window
-- [colorv](https://github.com/Rykka/ColorV): display Hex Color with real colors in Vim -
-  very useful when working with CSS
 - [delimitMate](https://github.com/Raimondi/delimitMate): semantic autoclose brackets
 - [easymotion](https://github.com/Lokaltog/vim-easymotion): easier and faster use of
   motions

@@ -4,7 +4,8 @@ Here is a list of plugins I used in the past and removed them because I found a 
 it.
 
 
-
+- [colorv](https://github.com/Rykka/ColorV): display Hex Color with real colors in Vim -
+  very useful when working with CSS
 - [command-t](https://github.com/wincent/Command-T): file search in the
   actual directory
   - `:CommandTFlush` - update the path cache and also include new and deleted files
@@ -34,7 +35,6 @@ it.
       let g:CommandTAcceptSelectionVSplitMap = '<C-v>'    " Ctrl-v will make a vertical split
       let g:CommandTAcceptSelectionTabMap = '<C-t>'       " Ctrl-t will open the file in a new tab
       set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " not matching files</pre>
-
 - [jQuery](https://github.com/vim-scripts/jQuery "jQuery"): pretty colors for the
   jQuery syntax (*no doc*)
 - [NERDTree](https://github.com/scrooloose/nerdtree "NERDTree"): amazing file browser for GUI guys
