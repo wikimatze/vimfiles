@@ -136,9 +136,9 @@
 - `ce` → delete the word and go into insert word
 - `cE` → delete the word and go into insert word via whitespace separation (no words are counted)
 - `D` → delete all characters after the cursor till EOL
-- `df<word>` → press the character until which should be deleted (inclusve the word)
-  - `dtG` → same as above but exklusive
-- `c` → acts like d except that it leaves you in insert mode
+- `df<char>` → press the character until which should be deleted (**inclusve** the char)
+  - `dt<char>` → delete till a char at start right in front of it (**exclusive** the char)
+  - `d` is an operator pending operator
 - `C` → deletes all characters after the cursor position and will go in insert mode
 - `d$` → delete till the EOL
 - `s` → delete current char and go into insert mode
