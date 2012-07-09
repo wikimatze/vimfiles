@@ -20,7 +20,6 @@ Bundle 'hail2u/vim-css3-syntax'
 Bundle 'xolox/vim-easytags'
 Bundle 'majutsushi/tagbar'
 Bundle 'matthias-guenther/tocdown'
-Bundle 'mattn/gist-vim'
 Bundle 'kana/vim-vspec'
 Bundle 'mileszs/ack.vim'
 Bundle 'msanders/snipmate.vim'
@@ -606,17 +605,6 @@ nnoremap <leader>gc :Gcommit<CR>
 nnoremap <leader>gm :Gmove<CR>
 nnoremap <leader>gr :Gremove<CR>
 nnoremap <leader>gp :! git push<CR>
-
-" }}}
-" Gist {{{
-
-let g:gist_detect_filetype         = 1 " detecting file type for each gist
-let g:gist_open_browser_after_post = 1 " open the gist after each post
-if has("mac")
-  let g:gist_clip_command = 'pbcopy'
-elseif has("unix")
-  let g:gist_clip_command = 'xclip -selection clipboard'
-endif
 
 " }}}
 " Gundo {{{

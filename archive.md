@@ -35,6 +35,22 @@ it.
       let g:CommandTAcceptSelectionVSplitMap = '<C-v>'    " Ctrl-v will make a vertical split
       let g:CommandTAcceptSelectionTabMap = '<C-t>'       " Ctrl-t will open the file in a new tab
       set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " not matching files</pre>
+- [Gist.vim](https://github.com/mattn/gist-vim ): upload files directly as gists to github
+  - first setup your git credentials `let g:github_user = 'your-name'` and `let g:github*token = 'token'`  in your *.vimrc*
+      - the API Token can be found under Account Settings under Account Admin on [github](https://github.com)
+  - `:Gist` → post whole text to gist
+  - `:Gist XXXXX` → get gist XXXXX
+  - `:Gist -l` → list all my gist
+  - `:Gist -d` → delete the gist
+  - custom settings:
+<pre>
+      let g:gist_detect_filetype         = 1 " detecting file type for each gist
+      let g:gist_open_browser_after_post = 1 " open the gist after each post
+      if has("mac")
+        let g:gist_clip_command = 'pbcopy'
+      elseif has("unix")
+        let g:gist_clip_command = 'xclip -selection clipboard'
+      endif</pre>
 - [jQuery](https://github.com/vim-scripts/jQuery "jQuery"): pretty colors for the
   jQuery syntax (*no doc*)
 - [NERDTree](https://github.com/scrooloose/nerdtree "NERDTree"): amazing file browser for GUI guys
