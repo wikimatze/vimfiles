@@ -140,3 +140,4 @@ it.
       - you didn't need to specify the lines, it is possible to use visual mode: `:'<,'>Rextract
         juhu`, so the content will be inserted in the partial `juhu`
 - [vim-haml](https://github.com/tpope/vim-haml): file detection and syntax highlighting (*no doc*)
+- [tmux.vim](https://github.com/zaiste/tmux.vim): Syntax detection for tmux files and highlighting
