@@ -80,6 +80,14 @@ it.
       - `let g:NERDTreeMouseMode = 3` - o ne click will open the file
       - `let g:NERDTreeWinPos = 'right'`  - display Tree in the right
       - `let g:NERDTreeWinSize = 30` - th e width of the NERDTree when it opens
+- [session](https://github.com/xolox/vim-session): save session and to open then later
+  - `:SaveSession <name>` → save the current session under the specified name
+  - `:OpenSession` → dialog to select the section you want to open
+      - `:OpenSession <name>` → takes an existing session as input (use tab completion!)
+  - `:CloseSession` → will close the whole session from the actual tab/window and will ask to
+    overwrite the loaded session
+  - `:DeleteSession` → choose the session you want to delete
+  - `:ViewSession` → information about the loaded session (shows Vim internals - good for debugging)
 - [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs "vim-nerdtree-tabs"): opens one
   NERDTree which is the same in every tab
   - own settings:

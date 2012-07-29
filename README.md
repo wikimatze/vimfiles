@@ -103,15 +103,7 @@ means.
   - `,rrlv`: Refactor Rename Local Variable → mark the name you want to change and the scope
     within the method
   - `,rriv`: Refactor Rename Instance Variable → mark the instance variable within a class
-- [session](https://github.com/xolox/vim-session): save session and to open then later
-  - `:SaveSession <name>` → save the current session under the specified name
-  - `:OpenSession` → dialog to select the section you want to open
-      - `:OpenSession <name>` → takes an existing session as input (use tab completion!)
-  - `:CloseSession` → will close the whole session from the actual tab/window and will ask to
-    overwrite the loaded session
-  - `:DeleteSession` → choose the session you want to delete
-  - `:ViewSession` → information about the loaded session (shows Vim internals - good for debugging)
-- [slime](https://github.com/jpalardy/vim-slime): Sending selection in vim directly into a tmux session
+- [slime](https://github.com/jpalardy/vim-slime): Sending selection in Vim directly into a tmux session
   - `let g:slime_target = "tmux"`
   - `C-c C-`: press Ctrl-c-c to put the actual paragraph (vip) in the tmux session (visual select
     works also)
