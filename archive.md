@@ -95,6 +95,13 @@ it.
       - `let g:nerdtree\_tabs\_open\_on\_gui\_startup = 1` - open NERDTree on gvim/MacVim startup
       - `let g:nerdtree\_tabs\_open\_on\_console\_startup = 0` - don't openNERDTree on vi
       - `let g:nerdtree\_tabs\_autoclose = 1` - close current tab if there is only the NERDTree left - nice
+- [tagbar](http://majutsushi.github.com/tagbar): display the structure of the code
+  - `:TagbarOpen` → open view tagbar
+  - `:TagbarToggle` → opens or close the tagbar whether it was closed or open
+  - `:TagbarOpenAutoClose` → opens the tagbar and close it after a tag was selected
+  - `s` → search for specified regex
+  - `q` → quit yankring window
+  - [Install exurberant ctags on Mac](http://www.dreamincode.net/forums/blog/164/entry-1479-installing-exuberant-ctags-and-taglist-on-a-mac)
 - [cucumber](https://github.com/tpope/vim-cucumber "cucumber"): syntax-highlighting for cucumber
   files (*no doc*)
 - [coffee-script](https://github.com/kchmck/vim-coffee-script "coffe-script"): coffee script support

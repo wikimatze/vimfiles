@@ -133,13 +133,6 @@ means.
         press `s` and then the quote (`"", (), {}`) you want to have and it wraps the string in this
 - [tabular](https://github.com/godlygeek/tabular): is a plugin to auto indent files according to the pattern
   - `:Tabularize / {pattern}`
-- [tagbar](http://majutsushi.github.com/tagbar): display the structure of the code
-  - `:TagbarOpen` → open view tagbar
-  - `:TagbarToggle` → opens or close the tagbar whether it was closed or open
-  - `:TagbarOpenAutoClose` → opens the tagbar and close it after a tag was selected
-  - `s` → search for specified regex
-  - `q` → quit yankring window
-  - [Install exurberant ctags on Mac](http://www.dreamincode.net/forums/blog/164/entry-1479-installing-exuberant-ctags-and-taglist-on-a-mac)
 - [tmux.vim](https://github.com/zaiste/tmux.vim): syntax detection for tmux files and
   highlighting
 - [tocdown](https://github.com/matthias-guenther/tocdown): display the headlines of a markdown document in an extra window.
