@@ -712,6 +712,7 @@ let loaded_tex_syntax_checker = 0             " turn of lacheck of the syntastic
 let g:syntastic_stl_format = '[%E{%e Errors} %B{, }%W{%w Warnings}]'
 set statusline+=%#warningmsg#                 " show warning messages
 set statusline+=%{SyntasticStatuslineFlag()}  " show message in quick fix
+let g:syntastic_ruby_exec = '/home/helex/.rbenv/shims/ruby' " take the current ruby version specified by rbenv
 
 " }}}
 " Tagbar {{{
