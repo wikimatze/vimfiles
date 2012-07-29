@@ -41,7 +41,6 @@ Bundle 'vim-scripts/IndexedSearch'
 Bundle 'vim-scripts/JSON.vim'
 Bundle 'vim-scripts/L9'
 Bundle 'vim-scripts/YankRing.vim'
-Bundle 'vim-scripts/taglist.vim'
 Bundle 'vim-scripts/vis'
 Bundle 'xolox/vim-easytags'
 Bundle 'xolox/vim-notes'
@@ -143,6 +142,7 @@ if has("wildmenu")
     set wildmode=longest,list
         " longest: match till the common longest string
         " list: display matches in a list instead of tab separated list of up to four parts
+    " A file that matches with one of these patterns is ignored when completing file or directory names
     set wildignore+=.git,.hg,.svn                 " version control
     set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png " images
     set wildignore+=*.aux,*.out,*.toc             " LaTeX intermediate files
