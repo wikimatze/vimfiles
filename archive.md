@@ -56,6 +56,9 @@ it.
       endif</pre>
 - [jQuery](https://github.com/vim-scripts/jQuery "jQuery"): pretty colors for the
   jQuery syntax (*no doc*)
+- [MRU](https://github.com/vim-scripts/mru.vim): opens a quickfix windows which shows the last
+  opens files (*no doc*)
+  - `:MRU` → opens the window
 - [NERDTree](https://github.com/scrooloose/nerdtree "NERDTree"): amazing file browser for GUI guys
   - `m` - choose whi  ch action to perform (add, move, copy, delete)
       - add / at the end to create a new directory

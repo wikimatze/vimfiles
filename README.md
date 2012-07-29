@@ -64,9 +64,6 @@ means.
     - `:MiniBufExplorer` → opens the Minibuffer window
     - `:CMiniBufExplorer` → close the Minibuffer window
     - `:TMiniBufExplorer` → toggle Minibuffer window
-- [MRU](https://github.com/vim-scripts/mru.vim): opens a quickfix windows which shows the last
-  opens files (*no doc*)
-  - `:MRU` → opens the window
 - [netrw](http://www.vim.org/scripts/script.php?script_id=1075): build in filebrowser
   - `:edit .` → take the current directory and open the fileexplorer
   - `:split .` → vertical split at current working directory

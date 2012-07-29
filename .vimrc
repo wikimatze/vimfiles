@@ -11,7 +11,6 @@ let g:vundle_default_git_proto = 'git' " use git protocol instead of https when 
 " original repos on github
 Bundle 'Raimondi/delimitMate'
 Bundle 'ervandew/supertab'
-Bundle 'vim-scripts/mru.vim'
 Bundle 'vim-scripts/JSON.vim'
 Bundle 'gerw/vim-latex-suite'
 Bundle 'gmarik/vundle'
