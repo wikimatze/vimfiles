@@ -258,10 +258,10 @@
 
 
 # Ctags
+- go to the root of the project and perform `ctags -R .` - this will create a tag file
 - `:tags` → show the list of tags you traversed through
 - `<C-]>` → jump into the tag (will into the class, method or other declaration)
 - `<C-t>` → will go to the previous declaration of the method
-- go to the root of the project and perform `ctags -R .` - this will create a tag file
 
 
 # Help

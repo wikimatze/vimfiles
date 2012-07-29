@@ -18,6 +18,7 @@ Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
 Bundle 'jpalardy/vim-slime'
 Bundle 'kana/vim-vspec'
+Bundle 'kien/ctrlp.vim'
 Bundle 'matthias-guenther/hammer.vim'
 Bundle 'matthias-guenther/tocdown'
 Bundle 'mileszs/ack.vim'
@@ -139,8 +140,7 @@ if has("wildmenu")
     set wildmode=longest,list
         " longest: match till the common longest string
         " list: display matches in a list instead of tab separated list of up to four parts
-    " A file that matches with one of these
-	patterns is ignored when completing file or directory names
+    " A file that matches with one of these patterns is ignored when completing file or directory names
     set wildignore+=.git,.hg,.svn                 " version control
     set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png " images
     set wildignore+=*.aux,*.out,*.toc             " LaTeX intermediate files
@@ -553,6 +553,22 @@ augroup END
 " }}}
 " --------------------------------------------------------------------------------}}}
 " Plugin settings ----------------------------------------------------------------{{{
+" CtrlP {{{
+
+let g:ctrlp_working_path_mode     = 2 " the nearest ancestor containing .git, .hg, .svn for searching
+let g:ctrlp_extensions            = ['tag'] " specifiy extensions for further search paths
+let g:ctrlp_map                   = '<C-t>' " press Ctrl-t to open the search option
+let g:ctrlp_match_window_bottom   = 1 " show the match window at the bottom
+let g:ctrlp_match_window_reversed = 0 " show matching files from top to bottom
+let g:ctrlp_max_height            = 8 " Specify the height of the match window
+let g:ctrlp_max_files             = 0 " scan an unlimited amount of files
+let g:ctrlp_dotfiles              = 0 " Don't search for dotfiles and dotdirectories
+let g:ctrlp_custom_ignore         = {
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|_site$\|assets$',
+  \ 'file': '\.exe$\|\.so$\|\.dll$\|\.DS$\|\.bak$\|\.orig$\|\.swp$\|\.jpg$\|\.JPG$\|\.png$\|\.PNG$'
+  \ }
+
+" }}}
 " Delimate {{{
 
 " don't use autoclose for vim files

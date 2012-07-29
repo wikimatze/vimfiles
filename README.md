@@ -19,6 +19,10 @@ If after plugin description stands the phrase (*no doc*) - well you know what th
       - `:t` → open the selected file in a new tab
       - `:v` → vertical split
       - `:q` → quit the Ack window
+- [ctrlp](http://kien.github.com/ctrlp.vim/): Full path fuzzy file, MRU, tag, and a tons of options
+  - `<C-t>` → will open the finding match in a tab
+  - `<C-v>` → will open the finding match in a vertical split
+  - `<C-h>` → will open the finding match in a horizontal split
 - [delimitMate](https://github.com/Raimondi/delimitMate): Semantic autoclose brackets
 - [fugitive](http://github.com/tpope/vim-fugitive): Git wrapper
   - `:Gstatus` → git status
