@@ -104,6 +104,9 @@ it.
   configurable
 - [vim-less](https://github.com/groenewege/vim-less "vim-less"): syntax highlighting, indenting and
   auto completion for the dynamic style sheet language (*no docu*)
+- [vim-bundler](https://github.com/tpope/vim-bundler): wrapper for bundler in Vim
+    - `:Bundle` → wraps bundle after, e.g. `:Bundle install`
+    - `:Bopen` → opens the Gemfile for editing
 - [vim-rails](http://github.com/tpope/vim-rails "vim-rails"): rails support in Vim (with some really
   great features)
   - `:RDoc` - browse the rails api
