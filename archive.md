@@ -88,6 +88,10 @@ it.
     overwrite the loaded session
   - `:DeleteSession` → choose the session you want to delete
   - `:ViewSession` → information about the loaded session (shows Vim internals - good for debugging)
+  - custom settings:
+<pre>
+    let g:session_autosave = 'no' " disable automatic saving when quitting a session
+    let g:session_autoload = 'no' " disable asking to load the previous session</pre>
 - [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs "vim-nerdtree-tabs"): opens one
   NERDTree which is the same in every tab
   - own settings:
@@ -102,6 +106,11 @@ it.
   - `s` → search for specified regex
   - `q` → quit yankring window
   - [Install exurberant ctags on Mac](http://www.dreamincode.net/forums/blog/164/entry-1479-installing-exuberant-ctags-and-taglist-on-a-mac)
+
+  - custom settings:
+<pre>
+    let g:tagbar_compact = 1 " don't show the help in the tagbar
+    nnoremap <silent> <F3> :TagbarToggle<CR></pre>
 - [vim-css3 syntax](https://github.com/hail2u/vim-css3-syntax): add syntax support for css3 (*no doc*)
 - [cucumber](https://github.com/tpope/vim-cucumber "cucumber"): syntax-highlighting for cucumber
   files (*no doc*)
@@ -141,3 +150,18 @@ it.
         juhu`, so the content will be inserted in the partial `juhu`
 - [vim-haml](https://github.com/tpope/vim-haml): file detection and syntax highlighting (*no doc*)
 - [tmux.vim](https://github.com/zaiste/tmux.vim): Syntax detection for tmux files and highlighting
+- [fuf](https://github.com/vim-scripts/FuzzyFinder): Fuzzy matching to find files recursively in the current directory
+  - `<C-l>` - opens in a new tab page
+  - `<C-j>` - opens in a horizontal split
+  - `<C-k>` - opens in a vertical-split window.
+  - custom settings:
+<pre>
+    let g:fuf_coveragefile_globPattern = ['**/*'] " List of glob pattern to get file paths to be searched
+    nnoremap <Leader>t :FufCoverageFile <CR>
+
+    " regex for stuff to ignore for searching files
+    let g:fuf_coveragefile_exclude = '\v\~$'
+          \ . '|\.(gitignore|dropbox|.DS\_Store|exe|bak|orig|swp)$' " many different dot-files
+          \ . '|(^|[/\\])\.(hg|git|bzr|svn)($|[/\\])' " exclude .hg, .git files
+          \ . '|(^|[/\\])_site[/\\]' " exclude _site/* stuff (mainly from jekyll
+          \ . '|(^|[/\\])assets[/\\]' " exlude the assets stuff by rails</pre>

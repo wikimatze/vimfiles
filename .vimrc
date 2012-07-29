@@ -36,16 +36,13 @@ Bundle 'tpope/vim-surround'
 Bundle 'tsaleh/vim-align'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'vim-ruby/vim-ruby'
-Bundle 'vim-scripts/FuzzyFinder'
 Bundle 'vim-scripts/IndexedSearch'
 Bundle 'vim-scripts/JSON.vim'
-Bundle 'vim-scripts/L9'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'vim-scripts/vis'
 Bundle 'xolox/vim-easytags'
 Bundle 'xolox/vim-notes'
 Bundle 'xolox/vim-shell'
-
 
 " --------------------------------------------------------------------------------}}}
 " File type detection ------------------------------------------------------------{{{
@@ -142,7 +139,8 @@ if has("wildmenu")
     set wildmode=longest,list
         " longest: match till the common longest string
         " list: display matches in a list instead of tab separated list of up to four parts
-    " A file that matches with one of these patterns is ignored when completing file or directory names
+    " A file that matches with one of these
+	patterns is ignored when completing file or directory names
     set wildignore+=.git,.hg,.svn                 " version control
     set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png " images
     set wildignore+=*.aux,*.out,*.toc             " LaTeX intermediate files
@@ -572,19 +570,6 @@ let g:easytags_resolve_links = 1  " resolve symbolic links with pathnames
 let g:easytags_python_enabled = 1 " use Python script for dynamic syntax highlighting (is faster)
 
 " }}}
-" FuzzyFinder {{{
-
-let g:fuf_coveragefile_globPattern = ['**/*'] " List of glob pattern to get file paths to be searched
-nnoremap <Leader>t :FufCoverageFile <CR>
-
-" regex for stuff to ignore for searching files
-let g:fuf_coveragefile_exclude = '\v\~$'
-      \ . '|\.(gitignore|dropbox|.DS\_Store|exe|bak|orig|swp)$' " many different dot-files
-      \ . '|(^|[/\\])\.(hg|git|bzr|svn)($|[/\\])' " exclude .hg, .git files
-      \ . '|(^|[/\\])_site[/\\]' " exclude _site/* stuff (mainly from jekyll
-      \ . '|(^|[/\\])assets[/\\]' " exlude the assets stuff by rails
-
-" }}}
 " Fugitive {{{
 
 nnoremap <leader>gd :Gdiff<CR>
@@ -675,12 +660,6 @@ nnoremap <F7> :Note! collect<CR>
 
 " :Explore will look like NERDTree
 let g:netrw_liststyle=3
-
-" }}}
-" Session {{{
-
-let g:session_autosave = 'no' " disable automatic saving when quitting a session
-let g:session_autoload = 'no' " disable asking to load the previous session
 
 " }}}
 " Snipmate {{{
