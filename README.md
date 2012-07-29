@@ -166,25 +166,13 @@ repository to get started with Vim, please perform the following tasks:
 - `mkdir ~/.vim/bundle`
 - Start Vim and type `:BundleInstall`
 
-# Colors scheme
-
-I have found the following three for my taste - there are tons of other colors out there:
-
-- [ir black](https://github.com/borgand/ir*black): looks a little bit frosty but the overall feeling is very fast
-![ir black screen shot](https://github.com/matthias-guenther/vim-settings/raw/master/ir_black.png)
-- [railscasts](https://github.com/jpo/vim-railscasts-theme): looks dusty and feels after editing
-![railscasts screen shot](https://github.com/matthias-guenther/vim-settings/raw/master/railscasts.png)
-- [vividchalk](https://github.com/tpope/vim-vividchalk.git): is like railscasts but without the dusty looking and some really
-  fancy colors
-![vividchalk screen shot](https://github.com/matthias-guenther/vim-settings/raw/master/vividchalk.png)
-
 # Contact
 
 Feature request, bugs, questions, etc. can be send to <matthias.guenther@wikimatze.de>.
 
 # License
 
-This software is licensed under the [MIT license](http://en.wikipedia.org/wiki/MIT*License).
+This software is licensed under the [MIT license](http://en.wikipedia.org/wiki/MIT_License).
 
-© 2011-2012 Matthias Guenther <matthias.guenther@wikimatze.de>
+© 2011-2012 Matthias Günther <matthias.guenther@wikimatze.de>
 
