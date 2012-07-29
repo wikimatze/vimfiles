@@ -142,7 +142,6 @@ means.
   - `:YRSearch` → type in a word or regular expression to search the yankring after it
   - `j`, `k` for navigation and <Enter> chose your entry
   - `d` delete an entry from from the yankring buffer - but you barely need this function
-- [vim-css3 syntax](https://github.com/hail2u/vim-css3-syntax): add syntax support for css3 (*no doc*)
 - [vim-endwise](https://github.com/tpope/vim-endwise): automatically adds keywords like *end* to special constructs in ruby (*no
   doc*)
 - [vim-haml](https://github.com/tpope/vim-haml): file detection and syntax highlighting (*no doc*)

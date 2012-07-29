@@ -102,6 +102,7 @@ it.
   - `s` → search for specified regex
   - `q` → quit yankring window
   - [Install exurberant ctags on Mac](http://www.dreamincode.net/forums/blog/164/entry-1479-installing-exuberant-ctags-and-taglist-on-a-mac)
+- [vim-css3 syntax](https://github.com/hail2u/vim-css3-syntax): add syntax support for css3 (*no doc*)
 - [cucumber](https://github.com/tpope/vim-cucumber "cucumber"): syntax-highlighting for cucumber
   files (*no doc*)
 - [coffee-script](https://github.com/kchmck/vim-coffee-script "coffe-script"): coffee script support
