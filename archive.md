@@ -139,4 +139,4 @@ it.
       - `:2,3Rextract post` will extract lines 2,3 in the partial with the name `post`
       - you didn't need to specify the lines, it is possible to use visual mode: `:'<,'>Rextract
         juhu`, so the content will be inserted in the partial `juhu`
-
+- [vim-haml](https://github.com/tpope/vim-haml): file detection and syntax highlighting (*no doc*)

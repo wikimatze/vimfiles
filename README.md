@@ -144,7 +144,6 @@ means.
   - `d` delete an entry from from the yankring buffer - but you barely need this function
 - [vim-endwise](https://github.com/tpope/vim-endwise): automatically adds keywords like *end* to special constructs in ruby (*no
   doc*)
-- [vim-haml](https://github.com/tpope/vim-haml): file detection and syntax highlighting (*no doc*)
 - [vim-ruby](https://github.com/vim-ruby/vim-ruby): configuration files for editing and compiling Ruby -
   it even adds custom text-objects only for vim
   - following commands can performed in *visual mode*
