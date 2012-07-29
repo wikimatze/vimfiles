@@ -25,12 +25,6 @@ means.
       - `:v` → vertical split
       - `:q` → quit the Ack window
 - [delimitMate](https://github.com/Raimondi/delimitMate): semantic autoclose brackets
-- [easymotion](https://github.com/Lokaltog/vim-easymotion): easier and faster use of
-  motions
-    - `<leader><leader>w | e | j | ..` → jump to the matching words on the screen
-    - `<leader><leader>t | T` → search after the target character forward (`t`) and backward (`T`)
-- [easytags](https://github.com/xolox/vim-easytags): automated tag generation for vim
-    - `:UpdateTags` → will update the tags
 - [endwise-ruby](https://github.com/tpope/vim-endwise): automatically adds keywords like
   *end* to special constructs in ruby (*no doc*)
 - [fugitive](http://github.com/tpope/vim-fugitive): git wrapper

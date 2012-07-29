@@ -42,7 +42,6 @@ Bundle 'tsaleh/vim-matchit'
 Bundle 'vim-scripts/IndexedSearch'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'vim-scripts/vis'
-Bundle 'Lokaltog/vim-easymotion'
 Bundle 'xolox/vim-notes'
 Bundle 'xolox/vim-session'
 Bundle 'xolox/vim-shell'
@@ -514,7 +513,7 @@ augroup END
 augroup filetype_markdown
   au!
   au BufNewFile,BufRead *.m*down setlocal filetype=markdown
-  au FileType markdown setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
+  au FileType markdown setlocal ts=2 sts=2 sw=2 expandtab textwidth=130
 augroup END
 
 " }}}

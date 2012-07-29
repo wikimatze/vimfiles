@@ -35,6 +35,9 @@ it.
       let g:CommandTAcceptSelectionVSplitMap = '<C-v>'    " Ctrl-v will make a vertical split
       let g:CommandTAcceptSelectionTabMap = '<C-t>'       " Ctrl-t will open the file in a new tab
       set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " not matching files</pre>
+- [easymotion](https://github.com/Lokaltog/vim-easymotion): easier and faster use of motions
+    - `<leader><leader>w | e | j | ..` → jump to the matching words on the screen
+    - `<leader><leader>t | T` → search after the target character forward (`t`) and backward (`T`)
 - [Gist.vim](https://github.com/mattn/gist-vim ): upload files directly as gists to github
   - first setup your git credentials `let g:github_user = 'your-name'` and `let g:github*token = 'token'`  in your *.vimrc*
       - the API Token can be found under Account Settings under Account Admin on [github](https://github.com)
