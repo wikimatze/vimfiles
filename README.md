@@ -25,8 +25,6 @@ means.
       - `:v` → vertical split
       - `:q` → quit the Ack window
 - [delimitMate](https://github.com/Raimondi/delimitMate): semantic autoclose brackets
-- [endwise-ruby](https://github.com/tpope/vim-endwise): automatically adds keywords like
-  *end* to special constructs in ruby (*no doc*)
 - [fugitive](http://github.com/tpope/vim-fugitive): git wrapper
   - `:Gstatus` → git status
       → `Ctrl→n` → go to the next file
@@ -166,6 +164,8 @@ means.
     - `:Bundle` → wraps bundle after, e.g. `:Bundle install`
     - `:Bopen` → opens the Gemfile for editing
 - [vim-css3 syntax](https://github.com/hail2u/vim-css3-syntax): add syntax support for css3 (*no doc*)
+- [vim-endwise](https://github.com/tpope/vim-endwise): automatically adds keywords like *end* to special constructs in ruby (*no
+  doc*)
 - [vim-haml](https://github.com/tpope/vim-haml): file detection and syntax highlighting (*no doc*)
 - [vim-ruby](https://github.com/vim-ruby/vim-ruby): configuration files for editing and compiling Ruby -
   it even adds custom text-objects only for vim
