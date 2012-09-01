@@ -125,8 +125,8 @@
 - `:wq` → exit Vim and save changes
 - `:x` → save all changes and terminate Vim
 - `:qall` → quite all windows and will ask for unmodified changes
-- `ZZ` → save file with changes and quit
-- `ZQ` → save file without changes and quit
+- `ZZ` → shortcut for :wq
+- `ZQ` → shortcut for :wq!
 
 
 # Delete/Cut
