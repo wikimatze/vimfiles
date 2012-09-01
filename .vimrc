@@ -60,41 +60,41 @@ set omnifunc=syntaxcomplete#Complete
 " -------------------------------------------------------------------------------}}}
 " General settings ---------------------------------------------------------------{{{
 
-set encoding=utf-8                      " terminal encoding
-set modeline                            " don't look how many lines are the beginning and the end of the file
-set autoindent                          " Copy indent from current line when starting a new line
-set autoread                            " automatically read a file that has changed on disk
-set showmode                            " show the current modal mode
-set showcmd                             " show (partial) command in the last line of the screen
-set noerrorbells                        " don't make noise on error messages
-set ttyfast                             " fast terminal connection, more characters will be sent to the screen
-set ruler                               " show the line and column number of the cursor position
-set backspace=indent,eol,start          " allow backspacing over everything in insert mode
-set nonumber                            " don't display line numbers (takes too much space)
-set numberwidth=2                       " using only 2 column for numberline presentation
-set ch=1                                " height of the command line at the bottom
-set history=5000                        " keep 5000 lines of command line history
-set shell=/bin/bash                     " defines the Shell I want to use for external commands
-set lazyredraw                          " don't update the display while executing macros, registers, etc.
-set showbreak=↪                         " show the symbol for wrapped lines
-set splitbelow                          " splitting a window will put the new window below the current one
-set splitright                          " splitting a window will put the new window right the current one
-set fileencodings=utf-8,default,latin1  " the order of file encodings to try.
-set lines=999 columns=999               " full screen when starting Gvim (it's a hack)
-set nomodeline                          " frequent security hole
-set nowarn                              " do not warn, when shell command update the file you edit in Vim
-set shell=/bin/bash                     " always use sh when executing commands with :!
-set synmaxcol=200                       " better scrolling for long lines
-set spelllang=en_us                     " default language for spell checker
-set spellfile=~/.vim/spell/en.utf-8.add " spellfile for additional correct english words
-set spellsuggest=best,10                " only display the 10 best suggestions
-set suffixesadd=.rb                     " are used when searching for files to open with 'gf'
-set title                               " show title in console title
-set viminfo='1000000,f1                 " save marks for 1 million files ('1000000), save global marks
-set ignorecase                          " ignore upper- and lowercase letters during a search
-set hlsearch                            " highlight all finding for a search
-set incsearch                           " do incremental searching, that means search after the string when you begin writing
-set shortmess+=I                        " don't show startup message when opening vim without a file
+set encoding=utf-8                          " terminal encoding
+set modeline                                " don't look how many lines are the beginning and the end of the file
+set autoindent                              " Copy indent from current line when starting a new line
+set autoread                                " automatically read a file that has changed on disk
+set showmode                                " show the current modal mode
+set showcmd                                 " show (partial) command in the last line of the screen
+set noerrorbells                            " don't make noise on error messages
+set ttyfast                                 " fast terminal connection, more characters will be sent to the screen
+set ruler                                   " show the line and column number of the cursor position
+set backspace=indent,eol,start              " allow backspacing over everything in insert mode
+set nonumber                                " don't display line numbers (takes too much space)
+set numberwidth=2                           " using only 2 column for numberline presentation
+set ch=1                                    " height of the command line at the bottom
+set history=5000                            " keep 5000 lines of command line history
+set shell=/bin/bash                         " defines the Shell I want to use for external commands
+set lazyredraw                              " don't update the display while executing macros, registers, etc.
+set showbreak=↪                             " show the symbol for wrapped lines
+set splitbelow                              " splitting a window will put the new window below the current one
+set splitright                              " splitting a window will put the new window right the current one
+set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
+set lines=999 columns=999                   " full screen when starting Gvim (it's a hack)
+set nomodeline                              " frequent security hole
+set nowarn                                  " do not warn, when shell command update the file you edit in Vim
+set shell=/bin/bash                         " always use sh when executing commands with :!
+set synmaxcol=200                           " better scrolling for long lines
+set spelllang=en_us                         " default language for spell checker
+set spellfile=$HOME/.vim/spell/en.utf-8.add " spell file for additional correct English words
+set spellsuggest=best,10                    " only display the 10 best suggestions
+set suffixesadd=.rb                         " are used when searching for files to open with 'gf'
+set title                                   " show title in console title
+set viminfo='1000000,f1                     " save marks for 1 million files ('1000000), save global marks
+set ignorecase                              " ignore upper- and lowercase letters during a search
+set hlsearch                                " highlight all finding for a search
+set incsearch                               " do incremental searching, that means search after the string when you begin writing
+set shortmess+=I                            " don't show startup message when opening Vim without a file
 
 let &scrolloff=999-&scrolloff " current view is always centered
 
@@ -157,21 +157,21 @@ set completeopt=longest,menuone,preview
 " }}}
 " backups {{{
 
-set backupext=~             " backup file extension
-set backupdir=~/.vim/backup " backups are written to ~/.backup
-set backupcopy=yes          " keep attributes of the original file
-set backup                  " save files after close
-set writebackup             " make a backup of the original file when writing
-set noswapfile              " don't save swap files
-set updatetime=2000         " Write swap files after 2 seconds of inactivity.
+set backupext=~                 " backup file extension
+set backupdir=$HOME/.vim/backup " backups are written to $HOME/.backup
+set backupcopy=yes              " keep attributes of the original file
+set backup                      " save files after close
+set writebackup                 " make a backup of the original file when writing
+set noswapfile                  " don't save swap files
+set updatetime=2000             " Write swap files after 2 seconds of inactivity.
 
 " }}}
 " Undo stuff {{{
 
 if has('gui_running')
-  set undofile            " save the names for the undo file
-  set undoreload=10000    " save the whole buffer for undo when reloading it
-  set undodir=~/.vim/undo " directory to save undo files
+  set undofile                " save the names for the undo file
+  set undoreload=10000        " save the whole buffer for undo when reloading it
+  set undodir=$HOME/.vim/undo " directory to save undo files
 endif
 
 " }}}
