@@ -94,6 +94,7 @@ set viminfo='1000000,f1                 " save marks for 1 million files ('10000
 set ignorecase                          " ignore upper- and lowercase letters during a search
 set hlsearch                            " highlight all finding for a search
 set incsearch                           " do incremental searching, that means search after the string when you begin writing
+set shortmess+=I                        " don't show startup message when opening vim without a file
 
 let &scrolloff=999-&scrolloff " current view is always centered
 
@@ -157,7 +158,7 @@ set completeopt=longest,menuone,preview
 " backups {{{
 
 set backupext=~             " backup file extension
-set backupdir=~/.vim/backup " backups are written to ~/.backup/ if possible.
+set backupdir=~/.vim/backup " backups are written to ~/.backup
 set backupcopy=yes          " keep attributes of the original file
 set backup                  " save files after close
 set writebackup             " make a backup of the original file when writing
@@ -297,7 +298,6 @@ noremap <silent> ,u :<C-B>sil <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>/
 " Press \cd to change the pwd to the current file you are in
 nnoremap \cd :lcd %:h<CR>
 
-
 " Use hjkl in wrapped-lined files
 onoremap <silent> <expr> j ScreenMovement("j")
 onoremap <silent> <expr> k ScreenMovement("k")
@@ -319,7 +319,6 @@ function! ScreenMovement(movement)
   endif
 endfunction
 
-
 " Insert date in the form yyyy-mm-dd at the end of a line
 function! InsertSpaceDate()
   let @x = " "
@@ -329,7 +328,6 @@ endfunction
 
 " Press F5 to insert the current date at the end of the line
 noremap <silent> <F5> $:call InsertSpaceDate()<CR>
-
 
 " Spellchecker: press ,s to toogle between spellchecker
 nnoremap <silent> <leader>s :set spell!<CR>
