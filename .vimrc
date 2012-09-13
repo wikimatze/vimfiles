@@ -441,45 +441,6 @@ augroup filetype_bash
 augroup END
 
 " }}}
-" Notes {{{
-augroup filetype_notes
-  au!
-  au FileType notes setlocal ts=2 sts=2 sw=2 expandtab textwidth=5000
-augroup END
-
-" }}}
-" Vim {{{
-
-augroup filetype_vim
-  au!
-  au FileType vim setlocal foldmethod=marker
-  au Filetype help setlocal textwidth=78
-  au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
-  au FileType vim let b:comment_leader = '" '
-augroup END
-
-" }}}
-" Ruby {{{
-
-augroup filetype_ruby
-  au!
-  au FileType ruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=500 foldmethod=syntax
-
-  " Press F11 to compile the actual file
-  au FileType ruby map <F11> :!ruby "%:p"<CR>
-  au FileType ruby let b:comment_leader = '# '
-augroup END
-
-" }}}
-" Javascript {{{
-
-augroup filetype_javascript
-  au!
-  au FileType javascript setlocal ts=4 sts=4 sw=4 expandtab textwidth=500
-  au FileType javascript let b:comment_leader = '/ '
-augroup END
-
-" }}}
 " Haml {{{
 
 augroup filetype_haml
@@ -497,12 +458,47 @@ augroup filetype_html
 augroup END
 
 " }}}
+" Javascript {{{
+
+augroup filetype_javascript
+  au!
+  au FileType javascript setlocal ts=4 sts=4 sw=4 expandtab textwidth=500
+  au FileType javascript let b:comment_leader = '/ '
+augroup END
+
+" }}}
 " Markdown {{{
 
 augroup filetype_markdown
   au!
   au BufNewFile,BufRead *.m*down setlocal filetype=markdown
   au FileType markdown setlocal ts=2 sts=2 sw=2 expandtab textwidth=130
+augroup END
+
+" }}}
+" Notes {{{
+augroup filetype_notes
+  au!
+  au FileType notes setlocal ts=2 sts=2 sw=2 expandtab textwidth=5000
+augroup END
+
+" }}}
+" Quickfix {{{
+
+augroup filetype_quickfix
+  au!
+  au Filetype qf setlocal colorcolumn=0 nolist nocursorline nowrap tw=0
+
+" }}}
+" Ruby {{{
+
+augroup filetype_ruby
+  au!
+  au FileType ruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=500 foldmethod=syntax
+
+  " Press F11 to compile the actual file
+  au FileType ruby map <F11> :!ruby "%:p"<CR>
+  au FileType ruby let b:comment_leader = '# '
 augroup END
 
 " }}}
@@ -533,11 +529,15 @@ augroup filetype_tex
 augroup END
 
 " }}}
-" Quickfix {{{
+" Vim {{{
 
-augroup filetype_quickfix
+augroup filetype_vim
   au!
-  au Filetype qf setlocal colorcolumn=0 nolist nocursorline nowrap tw=0
+  au FileType vim setlocal foldmethod=marker
+  au Filetype help setlocal textwidth=78
+  au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
+  au FileType vim let b:comment_leader = '" '
+augroup END
 
 " }}}
 " Yaml {{{
