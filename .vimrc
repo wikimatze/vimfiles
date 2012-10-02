@@ -228,11 +228,11 @@ set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮,trail:·
 
 " Instead of using help F1 will toogle between fullscreen
 if has('mac')
-  noremap  <F1> :set invfullscreen<CR>
-  inoremap  <F1> :set invfullscreen<CR>
+  noremap  <F12> :set invfullscreen<CR>
+  inoremap  <F12> :set invfullscreen<CR>
 elseif has('unix')
-  noremap  <F1> :Fullscreen<CR>
-  inoremap <F1> <ESC>:Fullscreen<CR>
+  noremap  <F12> :Fullscreen<CR>
+  inoremap <F12> <ESC>:Fullscreen<CR>
 endif
 
 " reformat current paragraph
@@ -715,7 +715,7 @@ let g:syntastic_ruby_exec = '/home/helex/.rbenv/shims/ruby' " take the current r
 "  ab  = cd
 "  abc = def
 " works for all specified chars below
-noremap <leader>b= :Tabularize /=<CR>
+nnoremap <leader>b= :Tabularize /=<CR>
 vnoremap <leader>b= :Tabularize /=<CR>
 nnoremap <leader>b: :Tabularize /:<CR>
 vnoremap <leader>b: :Tabularize /:<CR>
