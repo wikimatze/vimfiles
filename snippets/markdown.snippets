@@ -43,13 +43,13 @@ snippet bq
 	> ${2:n}
 	> ${3:n}
 snippet image
-	![${1:text}](${2:url}"${3:alt}")
+	![${1:n}](${2:u}"${3:a}")
 snippet bf
 	**${1:n}**
 snippet it
 	*${1:n}*
 snippet lk
-	[${1:text}](${2:url})
+	[${1:}](${2:})
 snippet hr
 	---
 snippet table
@@ -65,10 +65,10 @@ snippet table
 	</table>
 
 # these snippets can only be used in jekyll projects with special plugins
-snippet pullquote
+snippet blockquote
 	<blockquote>
-	 <p>${1:text}</p>
-	 <strong>${2:text}</strong>
+		<p>${1:n}</p>
+		<strong>${2:n}</strong>
 	</blockquote>
 snippet img
 	{% img ${1:classname} ${2:/path/to/image} ${3:title} ${4:alt} %}
@@ -76,7 +76,6 @@ snippet gist
 	{% gist ${1:gist_id} ${2:gist_name} %}
 snippet fancy1
 	<a href="${1:big_image}" title="${2:title}" class="fancybox"><img src="${3:small_image}" class="center" alt="$2"/></a>
-
 	<div class="caption"></div>
 snippet fancy2
 	<a href="${1:big_image}" title="${2:title}" class="fancybox"><img src="${3:small_image}" class="center" alt="$2"/></a>
