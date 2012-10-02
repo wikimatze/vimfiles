@@ -279,6 +279,5 @@
 
 # Hacks
 - replace line ending through **\\\\:** `:%s/$/ \\\\/`
-- change matching before and after **=:** `:%s/\(.*\)=\(.*\)/\2=\1`
 - replace **a = b** to **b = a:** `:%s/\(.*\)=\(.*\)/\2=\1`
 
