@@ -261,9 +261,6 @@ inoremap jk <ESC>
 cnoremap jk <C-C>
 inoremap jj <nop>
 
-" Sourcing vimrc file with ,sv
-nnoremap <silent>,sv :source $MYVIMRC <CR>
-
 " Quickediting
 nnoremap <silent>,ev :split $MYVIMRC<CR>
 nnoremap <leader>ba :split ~/.vim/archive.md<CR>
