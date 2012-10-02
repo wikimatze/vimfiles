@@ -579,20 +579,6 @@ let g:easytags_resolve_links = 1  " resolve symbolic links with pathnames
 let g:easytags_python_enabled = 1 " use Python script for dynamic syntax highlighting (is faster)
 
 " }}}
-" Fugitive {{{
-
-nnoremap <leader>gd :Gdiff<CR>
-nnoremap <leader>gs :Gstatus<CR>
-nnoremap <leader>gw :Gwrite<CR>
-nnoremap <leader>ga :Gadd<CR>
-nnoremap <leader>gb :Gblame<CR>
-nnoremap <leader>gl :Glog<CR>
-nnoremap <leader>gc :Gcommit<CR>
-nnoremap <leader>gm :Gmove<CR>
-nnoremap <leader>gr :Gremove<CR>
-nnoremap <leader>gp :! git push<CR>
-
-" }}}
 " Gundo {{{
 
 let g:gundo_width           = 45 " horizontal width
