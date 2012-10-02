@@ -322,9 +322,19 @@ noremap <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of eac
 noremap <leader>_ :%s/_//g<CR>                   " delete all _
 noremap <leader>rt :%s/\\t/  /g<CR>
 
-" copy to clipboard
-vnoremap <C-C> "+y
-nnoremap <C-A> "+p
+" Copy/paste clipboard {{{
+
+if has('unix')
+  " On ubuntu (running Vim in gnome-terminal)
+  " The reason for the double-command on <C-c> is due to some weirdness with the X clipboard system.
+  vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
+  nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
+elseif has('mac')
+  vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
+  nmap <C-v> :call setreg("\"",system("pbpaste"))<CR>p
+endif
+
+" }}}
 
 " Turn off that stupid highlight search
 nnoremap <silent> \n :nohls<CR>
