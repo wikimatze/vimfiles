@@ -54,6 +54,7 @@ filetype indent on " Enable file type-specific indenting
 filetype plugin on " Enable file type-specific plugins
 
 " turn on Omni completion - this option file specific completion {{{
+
 set omnifunc=syntaxcomplete#Complete
 
 " }}}
@@ -164,15 +165,6 @@ set backup                      " save files after close
 set writebackup                 " make a backup of the original file when writing
 set noswapfile                  " don't save swap files
 set updatetime=2000             " Write swap files after 2 seconds of inactivity.
-
-" }}}
-" Undo stuff {{{
-
-if has('gui_running')
-  set undofile                " save the names for the undo file
-  set undoreload=10000        " save the whole buffer for undo when reloading it
-  set undodir=$HOME/.vim/undo " directory to save undo files
-endif
 
 " }}}
 " Line return {{{
@@ -758,8 +750,9 @@ let g:shell_verify_urls = 1 " handle special URLs with dot at the end
 
 " }}}
 " Vim-slime {{{
-"
+
 let g:slime_target = "tmux"
+let g:slime_paste_file = "$HOME/.slime_paste"
 
 " }}}
 " Yankring {{{
