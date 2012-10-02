@@ -69,10 +69,16 @@ If after plugin description stands the phrase (*no doc*) - well you know what th
   - `:Explore .` → open the directory relative to the current file
   - `:Sexplore ` → horizontal split the current file in a new window
   - `:Vexplore ` → vertical split the current file in a new window
+  - inside the netrw window
+      - `v` ... vertical split of file in a new window
+      - `p` ... preview the selected file and staying in the tree-browser
+      - `P` ... preview the selected file in a big view and minimze the tree-browser to a minimum
+      - `r` ... reverse order of the file listings
+      - `<C-l>` ... refresh the view
   - file creation:
       - `%` → creates a new file
-      - `d` → create a directory
       - `D` → delete directory/file
+      - `d` → create a directory
       - `R` → rename directory/file
 - [notes](https://github.com/xolox/vim-notes): Perfect and easy note taking
   - `:Note` → starts a new note (you can specify the name of the note in the header)
