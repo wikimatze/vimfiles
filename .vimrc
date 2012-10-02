@@ -562,9 +562,8 @@ let g:ctrlp_custom_ignore         = {
 
 " }}}
 " Delimate {{{
-
-" don't use autoclose for vim files
-au FileType vim let b:loaded_delimitMate = 0
+"
+au FileType vim let b:loaded_delimitMate = 0 "no autoclose brackets for Vim files
 
 " }}}
 " Easytags {{{
@@ -633,12 +632,12 @@ endif
 
 " }}}
 " MinibufExplorer {{{
-"
 " open the Minibufer and go into the window
 noremap <Leader>b :MiniBufExplorer<cr>
 let g:miniBufExplCloseOnSelect = 1 " close MBE if I have selected a buffer
 " use <C-TAB> and <C-S-TAB> to mappings that will move to the next and previous buffer
 let g:miniBufExplMapCTabSwitchWindows = 1
+let g:miniBufExplorerMoreThanOne=3 " Minibufexplorer will shows op, when 3 buffers are open
 
 " }}}
 " Notes {{{
