@@ -241,16 +241,16 @@ noremap Q gq
 
 " Tab/Shift+Tab indent/unindent the highlighted block
 " <Tab> perform > and <Shift-Tab> performs <
-vnoremap <Tab>  >gv
+vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
 " Keep the cursor in place while joining lines
 nnoremap J mzJ`z
 
 " turn off normal arrow keys for navigation
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
+noremap <Up>    <Nop>
+noremap <Down>  <Nop>
+noremap <Left>  <Nop>
 noremap <Right> <Nop>
 
 " disable paste-on-middle-click
@@ -315,9 +315,6 @@ nnoremap <leader>F F<space>
 
 " Folding Toggling with <space>
 nnoremap <space> za
-
-" Mark string in visual mode and press / to search for it
-vnoremap / y/<C-R>"<CR>
 
 " Char replacement (good for creating vocabularly)
 noremap <leader>bldots :%s/=/\& \\ldots \&/g<CR> " replace = through & \ldots &
