@@ -264,11 +264,10 @@ inoremap jj <nop>
 nnoremap <silent>,sv :source $MYVIMRC <CR>
 
 " Quickediting
-nnoremap <silent>,ev :tabedit $MYVIMRC<CR>
-nnoremap <leader>br :vsplit ~/.vim/README.md<CR>
-nnoremap <leader>bs :vsplit ~/.vim/README.md<CR>
-nnoremap \r :e ~/.vim/README.md<CR>
-nnoremap \k :e ~/.vim/keymappings.md<CR>
+nnoremap <silent>,ev :split $MYVIMRC<CR>
+nnoremap <leader>ba :split ~/.vim/archive.md<CR>
+nnoremap <leader>bm :split ~/.vim/mappings.md<CR>
+nnoremap <leader>br :split ~/.vim/README.md<CR>
 
 " comment in visual mode press ,c (for uncomment ,u)
 noremap <silent> ,c :<C-B>sil <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:noh<CR>
@@ -288,6 +287,7 @@ nnoremap <silent> <expr> k ScreenMovement("k")
 nnoremap <silent> <expr> 0 ScreenMovement("0")
 nnoremap <silent> <expr> ^ ScreenMovement("^")
 nnoremap <silent> <expr> $ ScreenMovement("$")
+
 
 " needed by for files with wrapped-lines
 function! ScreenMovement(movement)
