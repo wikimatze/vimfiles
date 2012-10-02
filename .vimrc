@@ -704,12 +704,6 @@ set statusline+=%{SyntasticStatuslineFlag()}  " show message in quick fix
 let g:syntastic_ruby_exec = '/home/helex/.rbenv/shims/ruby' " take the current ruby version specified by rbenv
 
 " }}}
-" Tagbar {{{
-let g:tagbar_compact = 1 " don't show the help in the tagbar
-
-nnoremap <silent> <F3> :TagbarToggle<CR>
-
-" }}}
 " Tabularize {{{
 
 " tabular: press ,b= to order indenting = separated terms with different spaces
