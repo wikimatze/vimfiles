@@ -759,7 +759,6 @@ let g:slime_paste_file = "$HOME/.slime_paste"
 let g:yankring_max_history = 1000 " save the last 1000 elements
 
 noremap <leader>y :YRShow<CR>
-noremap <leader>x :YRClear<CR>
 
 " }}}
 " --------------------------------------------------------------------------------}}}
