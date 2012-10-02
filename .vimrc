@@ -255,12 +255,6 @@ noremap <Right> <Nop>
 " disable paste-on-middle-click
 inoremap <MiddleMouse> <Nop>
 
-" press controll and arrow keys to switch between splits
-noremap <C-Down>  <C-W>j
-noremap <C-Up>    <C-W>k
-noremap <C-Left>  <C-W>h
-noremap <C-Right> <C-W>l
-
 " emulate ESC with jk
 inoremap jk <ESC>
 cnoremap jk <C-C>
