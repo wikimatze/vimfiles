@@ -120,6 +120,7 @@ If after plugin description stands the phrase (*no doc*) - well you know what th
         press `s` and then the quote (`"", (), {}`) you want to have and it wraps the string in this
 - [tabular](https://github.com/godlygeek/tabular): Auto indent files according to the pattern
   - `:Tabularize / {pattern}`
+- [tmux.vim](https://github.com/zaiste/tmux.vim): Syntax detection for tmux files and highlighting
 - [tocdown](https://github.com/matthias-guenther/tocdown): Display the headlines of a markdown document in an extra window.
 - [yankring](https://github.com/vim-scripts/YankRing.vim): Better register management and saves up to 100 buffered lines
   - `:YRShow` → shows the actual buffer (you can use visual buttons to select more)

@@ -1,7 +1,6 @@
 # Archive
 
-Here is a list of plugins I used in the past and removed them because I found a new method to use
-it.
+Here is a list of plugins I used in the past and removed them because I found a new method to use it.
 
 
 - [colorv](https://github.com/Rykka/ColorV): display Hex Color with real colors in Vim -
@@ -149,7 +148,6 @@ it.
       - you didn't need to specify the lines, it is possible to use visual mode: `:'<,'>Rextract
         juhu`, so the content will be inserted in the partial `juhu`
 - [vim-haml](https://github.com/tpope/vim-haml): file detection and syntax highlighting (*no doc*)
-- [tmux.vim](https://github.com/zaiste/tmux.vim): Syntax detection for tmux files and highlighting
 - [fuf](https://github.com/vim-scripts/FuzzyFinder): Fuzzy matching to find files recursively in the current directory
   - `<C-l>` - opens in a new tab page
   - `<C-j>` - opens in a horizontal split
