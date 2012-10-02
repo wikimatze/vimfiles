@@ -23,7 +23,11 @@ If after plugin description stands the phrase (*no doc*) - well you know what th
   - `<C-t>` → will open the finding match in a tab
   - `<C-v>` → will open the finding match in a vertical split
   - `<C-h>` → will open the finding match in a horizontal split
+
 - [delimitMate](https://github.com/Raimondi/delimitMate): Semantic autoclose brackets
+- [easytags](https://github.com/xolox/vim-easytags): Call exuberant Ctags within vim
+  - `:UpdateTags` ... will run `ctags -R .` for the current directory but you can pass the directory you want as an argument
+  - `:HighlightTags` ... will mark the relevant tags in the current file
 - [fugitive](http://github.com/tpope/vim-fugitive): Git wrapper
   - `:Gstatus` → git status
       → `Ctrl→n` → go to the next file
