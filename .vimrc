@@ -246,9 +246,6 @@ vnoremap <S-Tab> <gv
 " Keep the cursor in place while joining lines
 nnoremap J mzJ`z
 
-" turn on/off showing list chars
-noremap <leader>l :set list!<CR>
-
 " turn off normal arrow keys for navigation
 noremap <Up> <Nop>
 noremap <Down> <Nop>
