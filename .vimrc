@@ -258,10 +258,6 @@ noremap <Right> <Nop>
 " disable paste-on-middle-click
 inoremap <MiddleMouse> <Nop>
 
-" CTRL-q will save the file
-noremap <C-q> :w<CR>
-inoremap <C-q> <Esc>:w<CR>a
-
 " press controll and arrow keys to switch between splits
 noremap <C-Down>  <C-W>j
 noremap <C-Up>    <C-W>k
