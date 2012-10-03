@@ -426,6 +426,14 @@ augroup filetype_bash
 augroup END
 
 " }}}
+" Conf {{{
+
+augroup filetype_conf
+  au!
+  au FileType conf setlocal foldmethod=marker
+augroup END
+
+" }}}
 " Haml {{{
 
 augroup filetype_haml
