@@ -57,6 +57,8 @@
   handy if you have to shutdown and start the work again
 - `"+y` → copy to clipboard (you have to be in visual mode)
 - `"+p` → paste from clopboard
+- `"%p` → insert the current filename in normal mode
+- `<C-r>%` → insert the current filename in insert mode
 - `cw` → change word (very effective in combination with with *Visual Block* select)
 - `ggVG` → mark the whole text
 - `p` → paste below the actual cursor position
