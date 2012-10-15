@@ -47,7 +47,6 @@ most important commands and settings for each plugin.
 - [IndexSearch](https://github.com/vim-scripts/IndexedSearch): Redefines the search `(/,?)` and creates custom messages about how
   many hits there are
 - [json](https://github.com/vim-scripts/JSON.vim): JSON detection and syntax-highlighting (*no doc*)
-- [markdown](https://github.com/tpope/vim-markdown): Markdown-syntax highlighting (*no doc*)
 - [matchit](http://www.vim.org/scripts/script.php?script_id=39): Press `%` to match tags in HTML, LaTeX and several other file
   formats (*no doc*)
 - [minibufexpl](https://github.com/fholgado/minibufexpl.vim): Highlighting the current active buffer in an extra window
@@ -132,6 +131,8 @@ most important commands and settings for each plugin.
   - `d` delete an entry from from the yankring buffer - but you barely need this function
 - [vim-endwise](https://github.com/tpope/vim-endwise): Automatically adds keywords like *end* to special constructs in ruby (*no
   doc*)
+- [vim-liquid](https://github.com/tpope/vim-liquid): Highlight liquid tags used for jekyll (*no doc*)
+- [vim-markdown](https://github.com/tpope/vim-markdown): Markdown-syntax highlighting (*no doc*)
 - [vim-ruby](https://github.com/vim-ruby/vim-ruby): Configuration files for editing and compiling Ruby - it even adds custom
   text-objects only for Vim
   - following commands can performed in *visual mode*
@@ -144,7 +145,6 @@ most important commands and settings for each plugin.
     - `[m` → move to the beginning of the *previous method*
     - `]]` → move to the beginning of the **next** *module* or *class* definition
     - `[[` → move to the beginning of the **previous** *module* or *class* definition
-- [vim-liquid](https://github.com/tpope/vim-liquid): Highlight liquid tags used for jekyll (*no doc*)
 - [vim-shell](https://github.com/xolox/vim-shell): Open files and web pages in associated programs out of Vim
 - [vim-puppet](https://github.com/rodjek/vim-puppet): Syntax file for puppet files (*no docu*)
 - [vis](https://github.com/vim-scripts/vis): Execute commands only in the selected section of visual mode
