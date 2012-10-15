@@ -1,15 +1,7 @@
 # Vim settings
 
-This is a list of all the plugins I'm using for [Vim]. It is unusual to post here commands and shortcuts about the plugins because
-most plugins are well documented. But I decided to provide an overview of all the main settings I got from struggling through each
-plugin for my own demands. As well, you can have look on my *vimrc* which contains many hacks.
-
-I know there is the [janus](https://github.com/carlhuda/janus) package out there which does configure a lot of stuff, but maintain
-my own set of plugins and settings. Feel free to correct me or provide me with additional hints - I'm always eager to learn
-something new.
-
-The text of each link is the name for the doc you have to type in [Vim](http://www.vim.org/) (remember to use *:help \<name\>*).
-If after plugin description stands the phrase (*no doc*) - well you know what that means.
+I'm always eager to learn, but I can't remember everything. Here is the list of the plugins I'm using - it is a reminder of the
+most important commands and settings for each plugin.
 
 - [ack.vim](https://github.com/mileszs/ack.vim): You can perform ack commands in Vim
     - `:Ack {pattern} [{directory}]` - the basic command to search after words in your project
@@ -23,7 +15,6 @@ If after plugin description stands the phrase (*no doc*) - well you know what th
   - `<C-t>` → will open the finding match in a tab
   - `<C-v>` → will open the finding match in a vertical split
   - `<C-h>` → will open the finding match in a horizontal split
-
 - [delimitMate](https://github.com/Raimondi/delimitMate): Semantic autoclose brackets
 - [easytags](https://github.com/xolox/vim-easytags): Call exuberant Ctags within vim
   - `:UpdateTags` ... will run `ctags -R .` for the current directory but you can pass the directory you want as an argument
