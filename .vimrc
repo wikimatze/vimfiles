@@ -31,7 +31,7 @@ Bundle 'tpope/vim-liquid'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-surround'
-Bundle 'tsaleh/vim-matchit'
+Bundle 'edsono/vim-matchit'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/IndexedSearch'
 Bundle 'vim-scripts/JSON.vim'
@@ -613,6 +613,11 @@ noremap <leader>m :Hammer<CR>
 
 let g:indexed_search_colors    = 1 " turn of colors for messages
 let g:indexed_search_shortmess = 1 " shorter messages
+
+" }}}
+" Matchit {{{
+
+let b:match_ignorecase = 1 " end and END will be the same when using %
 
 " }}}
 " MinibufExplorer {{{

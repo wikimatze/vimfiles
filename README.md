@@ -48,11 +48,11 @@ most important commands and settings for each plugin.
   many hits there are
 - [json](https://github.com/vim-scripts/JSON.vim): JSON detection and syntax-highlighting (*no doc*)
 - [matchit](http://www.vim.org/scripts/script.php?script_id=39): Press `%` to match tags in HTML, LaTeX and several other file
-  formats (*no doc*)
+  formats
 - [minibufexpl](https://github.com/fholgado/minibufexpl.vim): Highlighting the current active buffer in an extra window
-    - `:MiniBufExplorer` → opens the Minibuffer window
-    - `:CMiniBufExplorer` → close the Minibuffer window
-    - `:TMiniBufExplorer` → toggle Minibuffer window
+  - `:MiniBufExplorer` → opens the Minibuffer window
+  - `:CMiniBufExplorer` → close the Minibuffer window
+  - `:TMiniBufExplorer` → toggle Minibuffer window
 - [netrw](http://www.vim.org/scripts/script.php?script_id=1075): Build in file browser
   - `:edit .` → take the current directory and open the file explorer
   - `:split .` → vertical split at current working directory
