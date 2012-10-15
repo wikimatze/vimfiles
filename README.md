@@ -15,6 +15,9 @@ most important commands and settings for each plugin.
   - `<C-t>` → will open the finding match in a tab
   - `<C-v>` → will open the finding match in a vertical split
   - `<C-h>` → will open the finding match in a horizontal split
+- [dbext](http://www.vim.org/scripts/script.php?script_id=356): Connect to your database to perform custom queries
+  - `<leader>sel` ... execute the query
+  - `:DBResultsClose` ... close the result window
 - [delimitMate](https://github.com/Raimondi/delimitMate): Semantic autoclose brackets
 - [easytags](https://github.com/xolox/vim-easytags): Call exuberant Ctags within vim
   - `:UpdateTags` ... will run `ctags -R .` for the current directory but you can pass the directory you want as an argument

@@ -42,7 +42,7 @@ Bundle 'xolox/vim-notes'
 Bundle 'xolox/vim-shell'
 Bundle 'zaiste/tmux.vim'
 Bundle 'benmills/vimux'
-
+Bundle 'vim-scripts/dbext.vim'
 
 " --------------------------------------------------------------------------------}}}
 " File type detection ------------------------------------------------------------{{{
@@ -575,6 +575,11 @@ let g:ctrlp_custom_ignore         = {
   \ 'dir':  '\.git$\|\.hg$\|\.svn$\|_site$\|assets$',
   \ 'file': '\.exe$\|\.so$\|\.dll$\|\.DS$\|\.bak$\|\.orig$\|\.swp$\|\.jpg$\|\.JPG$\|\.png$\|\.PNG$'
   \ }
+
+" }}}
+" Dbext {{{
+
+let g:dbext_default_profile_sqlite0='type=SQLITE:SQLITE_bin=/usr/bin/sqlite3:dbname=$HOME/Downloads/sqlite.db'
 
 " }}}
 " Delimate {{{
