@@ -43,6 +43,7 @@ most important commands and settings for each plugin.
     (just imagine a `git diff`)
 - [hammer](https://github.com/matthias-guenther/hammer.vim): Displays various markups (markdown, textile, rdoc, asciidoc) with one
   keystroke in the browser
+- [html5-syntax](https://github.com/othree/html5-syntax.vim): HTML5 elements syntax highlighing (*no doc*)
 - [IndexSearch](https://github.com/vim-scripts/IndexedSearch): Redefines the search `(/,?)` and creates custom messages about how
   many hits there are
 - [json](https://github.com/vim-scripts/JSON.vim): JSON detection and syntax-highlighting (*no doc*)
