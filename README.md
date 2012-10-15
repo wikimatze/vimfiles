@@ -44,8 +44,7 @@ most important commands and settings for each plugin.
 - [hammer](https://github.com/matthias-guenther/hammer.vim): Displays various markups (markdown, textile, rdoc, asciidoc) with one
   keystroke in the browser
 - [html5-syntax](https://github.com/othree/html5-syntax.vim): HTML5 elements syntax highlighing (*no doc*)
-- [IndexSearch](https://github.com/vim-scripts/IndexedSearch): Redefines the search `(/,?)` and creates custom messages about how
-  many hits there are
+- [IndexSearch](https://github.com/vim-scripts/IndexedSearch): Redefines the search `(/,?)` and creates custom messages about how many hits there are
 - [json](https://github.com/vim-scripts/JSON.vim): JSON detection and syntax-highlighting (*no doc*)
 - [matchit](http://www.vim.org/scripts/script.php?script_id=39): Press `%` to match tags in HTML, LaTeX and several other file
   formats
@@ -121,7 +120,7 @@ most important commands and settings for each plugin.
         press `s` and then the quote (`"", (), {}`) you want to have and it wraps the string in this
 - [tabular](https://github.com/godlygeek/tabular): Auto indent files according to the pattern
   - `:Tabularize / {pattern}`
-- [tmux.vim](https://github.com/zaiste/tmux.vim): Syntax detection for tmux files and highlighting
+- [tmux.vim](https://github.com/zaiste/tmux.vim): Syntax detection for tmux files and highlighting (*no doc*)
 - [tocdown](https://github.com/matthias-guenther/tocdown): Display the headlines of a markdown document in an extra window.
 - [yankring](https://github.com/vim-scripts/YankRing.vim): Better register management and saves up to 100 buffered lines
   - `:YRShow` → shows the actual buffer (you can use visual buttons to select more)
@@ -151,7 +150,6 @@ most important commands and settings for each plugin.
     - mark a text in visual mode, then press `:B` and then you can perform any command
     - example: replace all '\-' through '-' => mark the block, press :B (you should
       have in your commandline :'<,'>:B) now press the typical text replacement commands you want (s/-/-) and you are done
-- [vspec](https://github.com/kana/vim-vspec): Testing framework for Vimscript
 - [vundle](https://github.com/gmarik/vundle): Plugin manager for Vim
     - `:BundleInstall` → opens a extra window and show the files that will be installed
     - `:BundleInstall!` → installs or updates installed bundles
