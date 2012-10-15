@@ -41,6 +41,7 @@ Bundle 'xolox/vim-easytags'
 Bundle 'xolox/vim-notes'
 Bundle 'xolox/vim-shell'
 Bundle 'zaiste/tmux.vim'
+Bundle 'benmills/vimux'
 
 
 " --------------------------------------------------------------------------------}}}

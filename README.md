@@ -146,6 +146,10 @@ most important commands and settings for each plugin.
     - `[[` → move to the beginning of the **previous** *module* or *class* definition
 - [vim-shell](https://github.com/xolox/vim-shell): Open files and web pages in associated programs out of Vim
 - [vim-puppet](https://github.com/rodjek/vim-puppet): Syntax file for puppet files (*no docu*)
+- [vimux](https://github.com/benmills/vimux): Easily interact with tmux from vim
+  - `:call VimuxRunCommand("ls")` ... open a split pane without losing focus of Vim
+  - `:VimuxRunLastCommand` ... runs the last command
+  - `:VimuxClosePanes` ... close all other tmux panes in the current window
 - [vis](https://github.com/vim-scripts/vis): Execute commands only in the selected section of visual mode
     - mark a text in visual mode, then press `:B` and then you can perform any command
     - example: replace all '\-' through '-' => mark the block, press :B (you should
@@ -156,10 +160,11 @@ most important commands and settings for each plugin.
     - `:BundleSearch <foo>` → opens a window to display the matches in an extra window
     - `:BundleClean` → confirms removal of unused script-dirs from `.vim/bundle/`.
 
+
 # Usage
 
 I highly not recommend you to copy my *.vimrc* because they may not fit to your working style (see **Luca Pettes**
-[article](http://lucapette.com/vim/rails/vim-for-rails-developers-lazy-modern-configuration)). But if you would like to use this
+[wonderful article](http://lucapette.com/vim/rails/vim-for-rails-developers-lazy-modern-configuration)). But if you would like to use this
 repository to get started with Vim, please perform the following tasks:
 
 - `mv <path-to-vim-settings-clone>` ~/
