@@ -10,18 +10,18 @@ Here is a list of plugins I used in the past and removed them because I found a 
   - `:CommandTFlush` - update the path cache and also include new and deleted files
   - `Installation`: $ ~/.vim/bundle/Command-t; rake make
   - shortcuts:
-      - `<C-j>` → go down
-      - `<C-k>` → go up
-      - `<C-t>` → opens the file in a new tab
-      - `<C-s>` → opens the file under the cursor with a *horizontal* split
-      - `<C-v>` → opens the file under the cursor with a *vertcial* split
-      - `ESC` or `<C-c>` → closing the open dialog
-      - `<C-u>` → clean the matching window
-      - `<C-ENTER>` → opens the file under the cursor in a new window
+      - `<C-j>` ... go down
+      - `<C-k>` ... go up
+      - `<C-t>` ... opens the file in a new tab
+      - `<C-s>` ... opens the file under the cursor with a *horizontal* split
+      - `<C-v>` ... opens the file under the cursor with a *vertcial* split
+      - `ESC` or `<C-c>` ... closing the open dialog
+      - `<C-u>` ... clean the matching window
+      - `<C-ENTER>` ... opens the file under the cursor in a new window
   - mappings:
-      - `<Leader>t`  → call *:CommandT* command to open a specified file
-          - `:CommandT ../path/to/other/files` → search in the specified path
-      - `<Leader>b`  → opens the buffer for this files after which were searched in the past
+      - `<Leader>t`  ... call *:CommandT* command to open a specified file
+          - `:CommandT ../path/to/other/files` ... search in the specified path
+      - `<Leader>b`  ... opens the buffer for this files after which were searched in the past
   - custom settings:
 <pre>
       let g:CommandTMaxFiles = 20000            " max files for scanning the directory
@@ -35,15 +35,15 @@ Here is a list of plugins I used in the past and removed them because I found a 
       let g:CommandTAcceptSelectionTabMap = '<C-t>'       " Ctrl-t will open the file in a new tab
       set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " not matching files</pre>
 - [easymotion](https://github.com/Lokaltog/vim-easymotion): easier and faster use of motions
-    - `<leader><leader>w | e | j | ..` → jump to the matching words on the screen
-    - `<leader><leader>t | T` → search after the target character forward (`t`) and backward (`T`)
+    - `<leader><leader>w | e | j | ..` ... jump to the matching words on the screen
+    - `<leader><leader>t | T` ... search after the target character forward (`t`) and backward (`T`)
 - [Gist.vim](https://github.com/mattn/gist-vim ): upload files directly as gists to github
   - first setup your git credentials `let g:github_user = 'your-name'` and `let g:github*token = 'token'`  in your *.vimrc*
       - the API Token can be found under Account Settings under Account Admin on [github](https://github.com)
-  - `:Gist` → post whole text to gist
-  - `:Gist XXXXX` → get gist XXXXX
-  - `:Gist -l` → list all my gist
-  - `:Gist -d` → delete the gist
+  - `:Gist` ... post whole text to gist
+  - `:Gist XXXXX` ... get gist XXXXX
+  - `:Gist -l` ... list all my gist
+  - `:Gist -d` ... delete the gist
   - custom settings:
 <pre>
       let g:gist_detect_filetype         = 1 " detecting file type for each gist
@@ -57,7 +57,7 @@ Here is a list of plugins I used in the past and removed them because I found a 
   jQuery syntax (*no doc*)
 - [MRU](https://github.com/vim-scripts/mru.vim): opens a quickfix windows which shows the last
   opens files (*no doc*)
-  - `:MRU` → opens the window
+  - `:MRU` ... opens the window
 - [NERDTree](https://github.com/scrooloose/nerdtree "NERDTree"): amazing file browser for GUI guys
   - `m` - choose whi  ch action to perform (add, move, copy, delete)
       - add / at the end to create a new directory
@@ -80,13 +80,13 @@ Here is a list of plugins I used in the past and removed them because I found a 
       - `let g:NERDTreeWinPos = 'right'`  - display Tree in the right
       - `let g:NERDTreeWinSize = 30` - th e width of the NERDTree when it opens
 - [session](https://github.com/xolox/vim-session): save session and to open then later
-  - `:SaveSession <name>` → save the current session under the specified name
-  - `:OpenSession` → dialog to select the section you want to open
-      - `:OpenSession <name>` → takes an existing session as input (use tab completion!)
-  - `:CloseSession` → will close the whole session from the actual tab/window and will ask to
+  - `:SaveSession <name>` ... save the current session under the specified name
+  - `:OpenSession` ... dialog to select the section you want to open
+      - `:OpenSession <name>` ... takes an existing session as input (use tab completion!)
+  - `:CloseSession` ... will close the whole session from the actual tab/window and will ask to
     overwrite the loaded session
-  - `:DeleteSession` → choose the session you want to delete
-  - `:ViewSession` → information about the loaded session (shows Vim internals - good for debugging)
+  - `:DeleteSession` ... choose the session you want to delete
+  - `:ViewSession` ... information about the loaded session (shows Vim internals - good for debugging)
   - custom settings:
 <pre>
     let g:session_autosave = 'no' " disable automatic saving when quitting a session
@@ -99,11 +99,11 @@ Here is a list of plugins I used in the past and removed them because I found a 
       - `let g:nerdtree\_tabs\_open\_on\_console\_startup = 0` - don't openNERDTree on vi
       - `let g:nerdtree\_tabs\_autoclose = 1` - close current tab if there is only the NERDTree left - nice
 - [tagbar](http://majutsushi.github.com/tagbar): display the structure of the code
-  - `:TagbarOpen` → open view tagbar
-  - `:TagbarToggle` → opens or close the tagbar whether it was closed or open
-  - `:TagbarOpenAutoClose` → opens the tagbar and close it after a tag was selected
-  - `s` → search for specified regex
-  - `q` → quit yankring window
+  - `:TagbarOpen` ... open view tagbar
+  - `:TagbarToggle` ... opens or close the tagbar whether it was closed or open
+  - `:TagbarOpenAutoClose` ... opens the tagbar and close it after a tag was selected
+  - `s` ... search for specified regex
+  - `q` ... quit yankring window
   - [Install exurberant ctags on Mac](http://www.dreamincode.net/forums/blog/164/entry-1479-installing-exuberant-ctags-and-taglist-on-a-mac)
 
   - custom settings:
@@ -121,8 +121,8 @@ Here is a list of plugins I used in the past and removed them because I found a 
 - [vim-less](https://github.com/groenewege/vim-less "vim-less"): syntax highlighting, indenting and
   auto completion for the dynamic style sheet language (*no docu*)
 - [vim-bundler](https://github.com/tpope/vim-bundler): wrapper for bundler in Vim
-    - `:Bundle` → wraps bundle after, e.g. `:Bundle install`
-    - `:Bopen` → opens the Gemfile for editing
+    - `:Bundle` ... wraps bundle after, e.g. `:Bundle install`
+    - `:Bopen` ... opens the Gemfile for editing
 - [vim-rails](http://github.com/tpope/vim-rails "vim-rails"): rails support in Vim (with some really
   great features)
   - `:RDoc` - browse the rails api
