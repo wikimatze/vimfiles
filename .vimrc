@@ -403,9 +403,10 @@ set showfulltag " when completing by tag, show the whole tag, not just the funct
 " --------------------------------------------------------------------------------}}}
 " Filetype detecion --------------------------------------------------------------{{{
 
+au! BufRead,BufNewFile *.erb set filetype=eruby
+au! BufRead,BufNewFile *.haml set filetype=haml
 au! BufRead,BufNewFile *.js set filetype=javascript
 au! BufRead,BufNewFile *.json set filetype=json
-au! BufRead,BufNewFile *.haml set filetype=haml
 au! BufRead,BufNewFile *.rb set filetype=ruby
 au! BufRead,BufNewFile *.sass,*.scss set filetype=scss
 au! BufRead,BufNewFile *.tex,*.latex set filetype=tex
@@ -430,6 +431,14 @@ augroup filetype_conf
   au!
   au FileType conf setlocal foldmethod=marker
   au FileType conf let b:comment_leader = '# '
+augroup END
+
+" }}}
+" Eruby {{{
+
+augroup filetype_eruby
+  au!
+  au FileType eruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
 augroup END
 
 " }}}
