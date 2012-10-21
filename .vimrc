@@ -641,7 +641,7 @@ noremap <Leader>b :MiniBufExplorer<cr>
 let g:miniBufExplCloseOnSelect = 1 " close MBE if I have selected a buffer
 " use <C-TAB> and <C-S-TAB> to mappings that will move to the next and previous buffer
 let g:miniBufExplMapCTabSwitchWindows = 1
-let g:miniBufExplorerMoreThanOne=3 " Minibufexplorer will shows op, when 3 buffers are open
+let g:miniBufExplorerMoreThanOne=10 " Minibufexplorer will shows op, when 10 buffers are open
 
 " }}}
 " Notes {{{
