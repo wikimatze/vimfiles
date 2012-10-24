@@ -1,57 +1,57 @@
 snippet h1
-	# ${1:n}
+	# ${1:}
 snippet h2
-	## ${1:n}
+	## ${1:}
 snippet h3
-	### ${1:n}
+	### ${1:}
 snippet h4
-	#### ${1:n}
+	#### ${1:}
 snippet c
 	{% highlight ${1:n} %}
 
-	${2:n}
+	${2:}
 
 	{% endhighlight %}
 snippet ic
-	\`${1:n}\`
+	\`${1:}\`
 snippet sl
 	!SLIDE
 
 	${1:}
 snippet b
-	- ${1:n}
-	- ${2:n}
-	- ${3:n}
+	- ${1:}
+	- ${2:}
+	- ${3:}
 snippet bb
-		- ${1:n}
-		- ${2:n}
-		- ${3:n}
+		- ${1:}
+		- ${2:}
+		- ${3:}
 snippet bbb
-			- ${1:n}
-			- ${2:n}
-			- ${3:n}
+			- ${1:}
+			- ${2:}
+			- ${3:}
 snippet l
-	1. ${1:n}
-	2. ${2:n}
-	3. ${3:n}
+	1. ${1:}
+	2. ${2:}
+	3. ${3:}
 snippet ll
-		1. ${1:n}
-		2. ${2:n}
-		3. ${3:n}
+		1. ${1:}
+		2. ${2:}
+		3. ${3:}
 snippet lll
-			1. ${1:n}
-			2. ${2:n}
-			3. ${3:n}
+			1. ${1:}
+			2. ${2:}
+			3. ${3:}
 snippet bq
-	> ${1:n}
-	> ${2:n}
-	> ${3:n}
+	> ${1:}
+	> ${2:}
+	> ${3:}
 snippet image
 	![${1:n}](${2:u}"${3:a}")
 snippet bf
-	**${1:n}**
+	**${1:}**
 snippet it
-	*${1:n}*
+	*${1:}*
 snippet lk
 	[${1:}](${2:})
 snippet hr
@@ -74,12 +74,10 @@ snippet blockquote
 		<p>${1:n}</p>
 		<strong>${2:n}</strong>
 	</blockquote>
-snippet img
-	{% img ${1:classname} ${2:/path/to/image} ${3:title} ${4:alt} %}
 snippet gist
 	{% gist ${1:gist_id} ${2:gist_name} %}
-snippet fancy1
+snippet fancycaption
 	<a href="${1:big_image}" title="${2:title}" class="fancybox"><img src="${3:small_image}" class="center" alt="$2"/></a>
 	<div class="caption"></div>
-snippet fancy2
+snippet fancy
 	<a href="${1:big_image}" title="${2:title}" class="fancybox"><img src="${3:small_image}" class="center" alt="$2"/></a>
