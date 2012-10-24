@@ -95,6 +95,7 @@ set ignorecase                              " ignore upper- and lowercase letter
 set hlsearch                                " highlight all finding for a search
 set incsearch                               " do incremental searching, that means search after the string when you begin writing
 set shortmess+=I                            " don't show startup message when opening Vim without a file
+set noautochdir                             " don't change the current working directory when opening a new file
 
 let &scrolloff=999-&scrolloff " current view is always centered
 
