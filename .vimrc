@@ -98,7 +98,6 @@ set shortmess+=I                            " don't show startup message when op
 
 let &scrolloff=999-&scrolloff " current view is always centered
 
-
 " when switching between windows, automatically write all buffers
 autocmd FocusLost * :silent! wall
 
@@ -509,6 +508,15 @@ augroup filetype_sass
   au!
   au FileType sass setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
   au FileType sass let b:comment_leader = '// '
+augroup END
+
+" }}}
+" Shell {{{
+
+augroup filetype_sh
+  au!
+  au FileType sh setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
+  au FileType sh let b:comment_leader = '# '
 augroup END
 
 " }}}
