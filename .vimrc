@@ -12,7 +12,6 @@ let g:vundle_default_git_proto = 'git' " use git protocol instead of https when 
 Bundle 'Raimondi/delimitMate'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'ervandew/supertab'
-Bundle 'fholgado/minibufexpl.vim'
 Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
 Bundle 'jpalardy/vim-slime'
@@ -643,15 +642,6 @@ let g:indexed_search_shortmess = 1 " shorter messages
 " Matchit {{{
 
 let b:match_ignorecase = 1 " end and END will be the same when using %
-
-" }}}
-" MinibufExplorer {{{
-" open the Minibufer and go into the window
-noremap <Leader>b :MiniBufExplorer<cr>
-let g:miniBufExplCloseOnSelect = 1 " close MBE if I have selected a buffer
-" use <C-TAB> and <C-S-TAB> to mappings that will move to the next and previous buffer
-let g:miniBufExplMapCTabSwitchWindows = 1
-let g:miniBufExplorerMoreThanOne=10 " Minibufexplorer will shows op, when 10 buffers are open
 
 " }}}
 " Notes {{{

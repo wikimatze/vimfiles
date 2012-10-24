@@ -55,6 +55,19 @@ Here is a list of plugins I used in the past and removed them because I found a 
       endif</pre>
 - [jQuery](https://github.com/vim-scripts/jQuery "jQuery"): pretty colors for the
   jQuery syntax (*no doc*)
+- [minibufexpl](https://github.com/fholgado/minibufexpl.vim): Highlighting the current active buffer in an extra window
+  - `:MiniBufExplorer` ... opens the Minibuffer window
+  - `:CMiniBufExplorer` ... close the Minibuffer window
+  - `:TMiniBufExplorer` ... toggle Minibuffer window
+  - custom settings
+<pre>
+      " open the Minibufer and go into the window
+      noremap <Leader>b :MiniBufExplorer<cr>
+      let g:miniBufExplCloseOnSelect = 1 " close MBE if I have selected a buffer
+      " use <C-TAB> and <C-S-TAB> to mappings that will move to the next and previous buffer
+      let g:miniBufExplMapCTabSwitchWindows = 1
+      let g:miniBufExplorerMoreThanOne=10 " Minibufexplorer will shows op, when 10 buffers are open</pre>
+
 - [MRU](https://github.com/vim-scripts/mru.vim): opens a quickfix windows which shows the last
   opens files (*no doc*)
   - `:MRU` ... opens the window
