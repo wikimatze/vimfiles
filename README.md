@@ -15,6 +15,8 @@ most important commands and settings for each plugin.
   - `<C-t>` ... will open the finding match in a tab
   - `<C-v>` ... will open the finding match in a vertical split
   - `<C-h>` ... will open the finding match in a horizontal split
+  - `<C-f>` + `<C-b>` ... cycle between search modes (buffer, files, MRU, tags)
+  - `<C-z>` ... to mark multiple files and `<C-o>` to open them
 - [dbext](http://www.vim.org/scripts/script.php?script_id=356): Connect to your database to perform custom queries
   - `<leader>sel` ... execute the query
   - `:DBResultsClose` ... close the result window
