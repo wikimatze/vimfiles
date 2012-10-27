@@ -1,10 +1,10 @@
 # Archive
 
-Here is a list of plugins I used in the past and removed them because I found a new method to use it.
+Here is a list of plugins I used in the past and removed them due the lack of usage.
 
 
-- [colorv](https://github.com/Rykka/ColorV): display Hex Color with real colors in Vim -
-  very useful when working with CSS
+- [coffee-script](https://github.com/kchmck/vim-coffee-script "coffe-script"): coffee script support
+- [colorv](https://github.com/Rykka/ColorV): display Hex Color with real colors in Vim
 - [command-t](https://github.com/wincent/Command-T): file search in the
   actual directory
   - `:CommandTFlush` - update the path cache and also include new and deleted files
@@ -34,9 +34,25 @@ Here is a list of plugins I used in the past and removed them because I found a 
       let g:CommandTAcceptSelectionVSplitMap = '<C-v>'    " Ctrl-v will make a vertical split
       let g:CommandTAcceptSelectionTabMap = '<C-t>'       " Ctrl-t will open the file in a new tab
       set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " not matching files</pre>
+- [cucumber](https://github.com/tpope/vim-cucumber "cucumber"): syntax-highlighting for cucumber files (*no doc*)
 - [easymotion](https://github.com/Lokaltog/vim-easymotion): easier and faster use of motions
     - `<leader><leader>w | e | j | ..` ... jump to the matching words on the screen
     - `<leader><leader>t | T` ... search after the target character forward (`t`) and backward (`T`)
+- [fuf](https://github.com/vim-scripts/FuzzyFinder): Fuzzy matching to find files recursively in the current directory
+  - `<C-l>` - opens in a new tab page
+  - `<C-j>` - opens in a horizontal split
+  - `<C-k>` - opens in a vertical-split window.
+  - custom settings:
+<pre>
+    let g:fuf_coveragefile_globPattern = ['**/*'] " List of glob pattern to get file paths to be searched
+    nnoremap <Leader>t :FufCoverageFile <CR>
+
+    " regex for stuff to ignore for searching files
+    let g:fuf_coveragefile_exclude = '\v\~$'
+          \ . '|\.(gitignore|dropbox|.DS\_Store|exe|bak|orig|swp)$' " many different dot-files
+          \ . '|(^|[/\\])\.(hg|git|bzr|svn)($|[/\\])' " exclude .hg, .git files
+          \ . '|(^|[/\\])_site[/\\]' " exclude _site/* stuff (mainly from jekyll
+          \ . '|(^|[/\\])assets[/\\]' " exlude the assets stuff by rails</pre>
 - [Gist.vim](https://github.com/mattn/gist-vim ): upload files directly as gists to github
   - first setup your git credentials `let g:github_user = 'your-name'` and `let g:github*token = 'token'`  in your *.vimrc*
       - the API Token can be found under Account Settings under Account Admin on [github](https://github.com)
@@ -55,6 +71,8 @@ Here is a list of plugins I used in the past and removed them because I found a 
       endif</pre>
 - [jQuery](https://github.com/vim-scripts/jQuery "jQuery"): pretty colors for the
   jQuery syntax (*no doc*)
+- [l9](https://github.com/vim-scripts/L9 "l9"): Vim-script library, add functionality to program vim-files (mainly needed for
+  fuzzyfinder plugin)
 - [minibufexpl](https://github.com/fholgado/minibufexpl.vim): Highlighting the current active buffer in an extra window
   - `:MiniBufExplorer` ... opens the Minibuffer window
   - `:CMiniBufExplorer` ... close the Minibuffer window
@@ -92,6 +110,7 @@ Here is a list of plugins I used in the past and removed them because I found a 
       - `let g:NERDTreeMouseMode = 3` - o ne click will open the file
       - `let g:NERDTreeWinPos = 'right'`  - display Tree in the right
       - `let g:NERDTreeWinSize = 30` - th e width of the NERDTree when it opens
+- [powerline](https://github.com/Lokaltog/vim-powerline "powerline"): candy statusline which is high configurable
 - [session](https://github.com/xolox/vim-session): save session and to open then later
   - `:SaveSession <name>` ... save the current session under the specified name
   - `:OpenSession` ... dialog to select the section you want to open
@@ -104,13 +123,6 @@ Here is a list of plugins I used in the past and removed them because I found a 
 <pre>
     let g:session_autosave = 'no' " disable automatic saving when quitting a session
     let g:session_autoload = 'no' " disable asking to load the previous session</pre>
-- [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs "vim-nerdtree-tabs"): opens one
-  NERDTree which is the same in every tab
-  - own settings:
-      - `map t \<plug\>NERDTreeTabsToggle\<CR\>`  - press t to toggle the NERDTree
-      - `let g:nerdtree\_tabs\_open\_on\_gui\_startup = 1` - open NERDTree on gvim/MacVim startup
-      - `let g:nerdtree\_tabs\_open\_on\_console\_startup = 0` - don't openNERDTree on vi
-      - `let g:nerdtree\_tabs\_autoclose = 1` - close current tab if there is only the NERDTree left - nice
 - [tagbar](http://majutsushi.github.com/tagbar): display the structure of the code
   - `:TagbarOpen` ... open view tagbar
   - `:TagbarToggle` ... opens or close the tagbar whether it was closed or open
@@ -123,16 +135,16 @@ Here is a list of plugins I used in the past and removed them because I found a 
 <pre>
     let g:tagbar_compact = 1 " don't show the help in the tagbar
     nnoremap <silent> <F3> :TagbarToggle<CR></pre>
+- [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs "vim-nerdtree-tabs"): opens one NERDTree which is the same in
+  every tab
+  - own settings:
+      - `map t \<plug\>NERDTreeTabsToggle\<CR\>`  - press t to toggle the NERDTree
+      - `let g:nerdtree\_tabs\_open\_on\_gui\_startup = 1` - open NERDTree on gvim/MacVim startup
+      - `let g:nerdtree\_tabs\_open\_on\_console\_startup = 0` - don't openNERDTree on vi
+      - `let g:nerdtree\_tabs\_autoclose = 1` - close current tab if there is only the NERDTree left - nice
 - [vim-css3 syntax](https://github.com/hail2u/vim-css3-syntax): add syntax support for css3 (*no doc*)
-- [cucumber](https://github.com/tpope/vim-cucumber "cucumber"): syntax-highlighting for cucumber
-  files (*no doc*)
-- [coffee-script](https://github.com/kchmck/vim-coffee-script "coffe-script"): coffee script support
-- [l9](https://github.com/vim-scripts/L9 "l9"): Vim-script library, add functionality to program vim-files
-  (mainly needed for fuzzyfinder plugin)
-- [powerline](https://github.com/Lokaltog/vim-powerline "powerline"): candy statusline which is high
-  configurable
-- [vim-less](https://github.com/groenewege/vim-less "vim-less"): syntax highlighting, indenting and
-  auto completion for the dynamic style sheet language (*no docu*)
+- [vim-less](https://github.com/groenewege/vim-less "vim-less"): syntax highlighting, indenting and auto completion for the
+  dynamic style sheet language (*no docu*)
 - [vim-bundler](https://github.com/tpope/vim-bundler): wrapper for bundler in Vim
     - `:Bundle` ... wraps bundle after, e.g. `:Bundle install`
     - `:Bopen` ... opens the Gemfile for editing
@@ -161,21 +173,6 @@ Here is a list of plugins I used in the past and removed them because I found a 
       - you didn't need to specify the lines, it is possible to use visual mode: `:'<,'>Rextract
         juhu`, so the content will be inserted in the partial `juhu`
 - [vim-haml](https://github.com/tpope/vim-haml): file detection and syntax highlighting (*no doc*)
-- [fuf](https://github.com/vim-scripts/FuzzyFinder): Fuzzy matching to find files recursively in the current directory
-  - `<C-l>` - opens in a new tab page
-  - `<C-j>` - opens in a horizontal split
-  - `<C-k>` - opens in a vertical-split window.
-  - custom settings:
-<pre>
-    let g:fuf_coveragefile_globPattern = ['**/*'] " List of glob pattern to get file paths to be searched
-    nnoremap <Leader>t :FufCoverageFile <CR>
-
-    " regex for stuff to ignore for searching files
-    let g:fuf_coveragefile_exclude = '\v\~$'
-          \ . '|\.(gitignore|dropbox|.DS\_Store|exe|bak|orig|swp)$' " many different dot-files
-          \ . '|(^|[/\\])\.(hg|git|bzr|svn)($|[/\\])' " exclude .hg, .git files
-          \ . '|(^|[/\\])_site[/\\]' " exclude _site/* stuff (mainly from jekyll
-          \ . '|(^|[/\\])assets[/\\]' " exlude the assets stuff by rails</pre>
 - [vim-latex](https://github.com/jcf/vim-latex)
 <pre>
     set grepprg=grep\ -nH\ $* " grep works with LaTeX-Suite
