@@ -173,14 +173,16 @@ I highly not recommend you to copy my *.vimrc* because they may not fit to your 
 [wonderful article](http://lucapette.com/vim/rails/vim-for-rails-developers-lazy-modern-configuration)). But if you would like to use this
 repository to get started with Vim, please perform the following tasks:
 
-- `mv <path-to-vim-settings-clone>` ~/
-- `mkdir ~/.vim/.backup`
+- `git clone git@github.com:matthias-guenther/vim-settings.git`
 - `mkdir ~/.vim/bundle`
+- install [Vundle](https://github.com/gmarik/vundle)
 - Start Vim and type `:BundleInstall`
+
 
 # Contact
 
 Feature request, bugs, questions, etc. can be send to <matthias.guenther@wikimatze.de>.
+
 
 # License
 
