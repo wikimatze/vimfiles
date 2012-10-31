@@ -15,9 +15,9 @@
 - `%` ... jump to the fitting  brackets of _(, {, [_
 - `10G` ... jump to line 10
 - `$` ... go the end of a row (the buck ends here)
-- `G` ... go to the end of a file
 - `gg` ... go to the beginning of a file
-- `^`| `0` ... go to the beginning of a line (think of anchored to the start)
+- `G` ... go to the end of a file
+- `^`| `0` | `_` ... go to the beginning of a line (think of anchored to the start)
 - `ddp` ... will switch two lines
 - `<C-U>` ... scroll upper (as a picture: scroll down half of the screen)
 - `<C-D>` ... scroll down (as a picture: scroll up half of the screen)
