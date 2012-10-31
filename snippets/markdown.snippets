@@ -56,6 +56,8 @@ snippet lk
 	[${1:}](${2:})
 snippet hr
 	---
+
+	${1:}
 snippet table
 	<table>
 		<tr>
@@ -78,6 +80,6 @@ snippet gist
 	{% gist ${1:gist_id} ${2:gist_name} %}
 snippet fancycaption
 	<a href="${1:big_image}" title="${2:title}" class="fancybox"><img src="${3:small_image}" class="center" alt="$2"/></a>
-	<div class="caption"></div>
+	<div class="$2"></div>
 snippet fancy
 	<a href="${1:big_image}" title="${2:title}" class="fancybox"><img src="${3:small_image}" class="center" alt="$2"/></a>
