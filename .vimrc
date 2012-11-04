@@ -246,12 +246,6 @@ vnoremap <S-Tab> <gv
 " Keep the cursor in place while joining lines
 nnoremap J mzJ`z
 
-" turn off normal arrow keys for navigation
-noremap <Up>    <Nop>
-noremap <Down>  <Nop>
-noremap <Left>  <Nop>
-noremap <Right> <Nop>
-
 " disable paste-on-middle-click
 inoremap <MiddleMouse> <Nop>
 
