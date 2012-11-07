@@ -63,6 +63,9 @@
 - `P` ... paste before the actual cursor position
 - `ci"` ... delete everything whats inside the special sign " (others are `"", '', (), {}, []` ) and go into the edit mode
 - `d-Shift-g` ... delete all lines below the actual line of the cursors
+- `<` ... shift right
+- `>` ... shift left
+- `=` ... autoindent line
 - `==` ... indent the actual line
 - `=G` ... format the whole file
 - `J` ... join two lines
