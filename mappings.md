@@ -97,6 +97,7 @@
 - `<C-x-C-l>` ... complete a whole line (good for matching complete function calls
 - `<C-x-C-f>` ... browse current directory and display file names
 - `<C-x-C-o>` ... omnicomplete based completion
+- `<C-k>{char1}{char2}` ... will insert digraphs (`:h digraph-table-mbyte`)
 
 
 # Search and Replace
@@ -217,7 +218,7 @@
 # Different Stuff
 - `:map` ... over view of all mappings of the current session
 - `:messages` ...  history of all events of the current session
-- `:ascii` ... di splays the ASCII, Hex and Octal representation of the character under the actual
+- `:ascii | ga` ... displays the ASCII, Hex and Octal representation of the character under the actual
  cursor
 - `:retab` ... re place all tabs of a file with spaces
 - `:options` ...  opens a new window with all specified options you can set in Vim (even with nice
