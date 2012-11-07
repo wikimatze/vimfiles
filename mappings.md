@@ -33,14 +33,15 @@
 - `<C-c>` ... exit the command-line
 - `20|` ... go to column 20 of the current line
 
-
+aaa
 # Edit
+- `s` ... replace the current character and stay in insert mode
 - `I` ... go to the beginning of line in edit mode
 - `A` ... go at the end of line in edit mode
 - `r` ... the actual position of the cursor will be replaced and go back into normal mode
 - `R` ... stay in replace mode
 - `o` ... go into a new line below the cursor in edit mode
-- `O` ... neue Zeile oberhalb vom Cursor
+- `O` ... insert new line in front of the current cursor position
 - `yy` ... copy whole line (`Y` means the same)
 - `yw` ... yank whole word
 - `u` ... undo last changes (`U` undo last changes of the last edited line)
@@ -56,17 +57,15 @@
 - `'0` ...   when opening Vim and pressing this command will bring you back to last file you changed -
   handy if you have to shutdown and start the work again
 - `"+y` ... copy to clipboard (you have to be in visual mode)
-- `"+p` ... paste from clopboard
+- `"+p` ... paste from clipboard
 - `"%p` ... insert the current filename in normal mode
 - `<C-r>%` ... insert the current filename in insert mode
-- `cw` ... change word (very effective in combination with *Visual Block* select)
+- `cw` ... change word
 - `ggVG` ... mark the whole text
 - `p` ... paste below the actual cursor position
 - `P` ... paste before the actual cursor position
 - `ci"` ... delete everything whats inside the special sign " (others are `"", '', (), {}, []` ) and go into the edit mode
 - `d-Shift-g` ... delete all lines below the actual line of the cursors
-- `sort` ... normal alphabetical
-- `sort!` ... inverse alphabetical
 - `==` ... indent the actual line
 - `=G` ... format the whole file
 - `"f3Y` ... yanking the next three lines in register f
@@ -80,6 +79,8 @@
 - `.`  ... repeat the last made action
 - `:!` ... execute any extern command (like `ls`)
 - `:r!` ... read the output of a command-line command and paste this in the text (e.g. `:r! ls`)
+- `sort` ... normal alphabetical
+- `sort!` ... inverse alphabetical
 - `tabcompletion`
     - `<C-N>` ... go to the next matching
     - `<C-P>` ... go the previous matching
