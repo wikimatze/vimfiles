@@ -87,8 +87,10 @@
     - `<C-P>` ... go the previous matching
 
 
-# Insert mode + completion
+# Insert mode
+- `<C-h>` ... delete back one character
 - `<C-w>` ... delete the previous word
+- `<C-o>` ... go to Insert Normal mode, means that you run one normal command and after that go into insert mode
 - `<C-t>` ... add shift
 - `<C-d>` ... remove shift
 - `<C-n>` ... autocompletion
