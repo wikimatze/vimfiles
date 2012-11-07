@@ -73,8 +73,9 @@
 - `gf` ... open the file which is under the cursor
 - `@:` ... repeat any last Ex command
 - `~` ... makes upper- and lowercase of the character where the actual cursor is
-- `<C-V>` ... opens Visual Block select
-- `<C-X><C-F>` ... display a list of files in the current directory in insert mode
+- `<C-v>` ... opens Visual Block select (when pressing `c` the selected text disappears and we go into insert mode)
+- `<C-x><C-f>` ... display a list of files in the current directory in insert mode
+
 - `<C-a>` ... will increment number by one (you can use motions, e.g. `10<C-a>`)
 - `<C-x>` ... will increment number by one
 - `.`  ... repeat the last made action
@@ -97,7 +98,7 @@
 - `<C-x-C-l>` ... complete a whole line (good for matching complete function calls
 - `<C-x-C-f>` ... browse current directory and display file names
 - `<C-x-C-o>` ... omnicomplete based completion
-- `<C-k>{char1}{char2}` ... will insert digraphs (`:h digraph-table-mbyte`)
+- `<C-k>{char1}{char2}` ... will insert digraphs (`:h digraphs`)
 
 
 # Search and Replace
