@@ -238,7 +238,8 @@
 - `set spelling=de_19` ... setting the spell-language to 'alte deutsche Rechtschreibung'
 
 
-# Text object selection
+# Text object
+- `aw` ... a word
 - `as` ... a sentence (example `vas` select the current sentence inclusive leading and trailing whitespaces)
 - `is` ... inner sentence (example `vis` select the only the whole text no trailing whitespaces)
 - `ap` ... a paragraph (example `dap` select a whole text paragraph between \n separaters)
