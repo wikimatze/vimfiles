@@ -42,6 +42,7 @@
 - `o` ... go into a new line below the cursor in edit mode
 - `O` ... insert new line in front of the current cursor position
 - `s` ... replace the current character and stay in insert mode
+- `C` ... replace the current character till the rest of the line with characters -> press ESC to go into normal mode
 - `u` ... undo last changes (`U` undo last changes of the last edited line)
 - `<C-R>` ... redo the last change
 - `p` ... *put* after the cursor
@@ -92,8 +93,8 @@
 
 # Search and Replace
 - `/` ... just type in the searched word (`top-down`)
-- `?` bottom-up search
 - `*` ... search after the word under the cursor (`top-down`)
+- `?` bottom-up search
 - `#` ... search after the word under the cursor (`bottom-up`)
 - `n` ... jump to the next matching (direction `forward`)
 - `N` ... jump to the previous matching (direction `backwards`)
@@ -200,26 +201,26 @@
   - `:w` - write the changes
   - `:e!` - restore the origin file
   - `:bd!` - remove buffer from the buffer list and revert all made changes
-  - `:q!` - force vim to quit and discard all changes to the buffers
+  - `:q!` - force Vim to quit and discard all changes to the buffers
 
 
 # Different Stuff
 - `:map` ... over view of all mappings of the current session
 - `:messages` ...  history of all events of the current session
-- `:ascii` ... di splays the ASCII, Hex und Octal representation of the character under the actual
+- `:ascii` ... di splays the ASCII, Hex and Octal representation of the character under the actual
  cursor
 - `:retab` ... re place all tabs of a file with spaces
 - `:options` ...  opens a new window with all specified options you can set in Vim (even with nice
   explanations)
-- `:args` ... pri nts a list of all opened files
-- `:saveas <filename>` - save the changes you made on the new textfile
+- `:args` ... prints a list of all opened files
+- `:saveas <filename>` - save the changes you made on the new text file
 - `:history` ...  print the last commands for the command-line
 - `g <C-G>` ...  count the words of a file and gives extensive overview of words and chars
 - `digraphs` ...  will display list of characters that are not on the keyboard (still don't know how
   to use them)
 - `:redir @a> <CMD> redir END` ... will put the `<CMD>` in the register `a`
 - `v/` is the opposite of `g/` ... “I want to match what I want to keep and delete the rest
-- `:history` print the last commands -> usefull when writing a script
+- `:history` print the last commands -> useful when writing a script
    `:history :-20,` will print the last 20 commands
 
 
@@ -235,8 +236,7 @@
 
 
 # Text object selection
-- `as` ... a sentence (example `vas` select the current sentence inclusive leading and trailing
-  whitespaces)
+- `as` ... a sentence (example `vas` select the current sentence inclusive leading and trailing whitespaces)
 - `is` ... inner sentence (example `vis` select the only the whole text no trailing whitespaces)
 - `ap` ... a paragraph (example `dap` select a whole text paragraph between \n separaters)
 - `ab` ... a block so only ( and ) parts and all whats between these delimiters
@@ -255,8 +255,7 @@
 - `cis` (change inside sentence): change current sentence
 - `ci"` (change inside quote): change a string inside quotes
 - `vap` (visual around paragraph): visually select this paragraph
-- `yaw` (yank around word): copy the current word, no matter where your cursor is inside the current
-  word
+- `yaw` (yank around word): copy the current word, no matter where your cursor is inside the current word
 - `ctX` change till X (any character)
 
 
@@ -288,6 +287,8 @@
 - `Links`
   - http://vim":http://vim...latex.sourceforge.net/documentation/latex-suite.html#latex-project-example
   - http://vim":http://vim...latex.sourceforge.net/documentation/latex-suite-quickstart
+
+
 # Help
 - `<C-]>` ... jump into the hyperlink
 - `<C-T>` ... jump back in your search history
