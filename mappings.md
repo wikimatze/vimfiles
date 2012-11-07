@@ -72,6 +72,8 @@
 - `~` ... makes upper- and lowercase of the character where the actual cursor is
 - `<C-V>` ... opens Visual Block select
 - `<C-X><C-F>` ... display a list of files in the current directory in insert mode
+- `<C-a>` ... will increment number by one (you can use motions, e.g. `10<C-a>`)
+- `<C-x>` ... will increment number by one
 - `.`  ... repeat the last made action
 - `:!` ... execute any extern command (like `ls`)
 - `:r!` ... read the output of a command-line command and paste this in the text (e.g. `:r! ls`)
@@ -255,7 +257,11 @@
 - `i'` ... inner quote, select only the inner quote of ''
 
 
-# Speak editor sentences
+# Operator and motions -> speak editor sentences
+- operators
+  - `c` ... change
+  - `d` ... delete
+  - `y` ... yank into register
 - `cis` (change inside sentence): change current sentence
 - `ci"` (change inside quote): change a string inside quotes
 - `vap` (visual around paragraph): visually select this paragraph
