@@ -33,17 +33,15 @@
 - `<C-c>` ... exit the command-line
 - `20|` ... go to column 20 of the current line
 
-aaa
+
 # Edit
-- `s` ... replace the current character and stay in insert mode
 - `I` ... go to the beginning of line in edit mode
 - `A` ... go at the end of line in edit mode
 - `r` ... the actual position of the cursor will be replaced and go back into normal mode
 - `R` ... stay in replace mode
 - `o` ... go into a new line below the cursor in edit mode
 - `O` ... insert new line in front of the current cursor position
-- `yy` ... copy whole line (`Y` means the same)
-- `yw` ... yank whole word
+- `s` ... replace the current character and stay in insert mode
 - `u` ... undo last changes (`U` undo last changes of the last edited line)
 - `<C-R>` ... redo the last change
 - `p` ... *put* after the cursor
@@ -56,8 +54,6 @@ aaa
 - `:wall` ... write all changes in all open buffers
 - `'0` ...   when opening Vim and pressing this command will bring you back to last file you changed -
   handy if you have to shutdown and start the work again
-- `"+y` ... copy to clipboard (you have to be in visual mode)
-- `"+p` ... paste from clipboard
 - `"%p` ... insert the current filename in normal mode
 - `<C-r>%` ... insert the current filename in insert mode
 - `cw` ... change word
@@ -68,8 +64,6 @@ aaa
 - `d-Shift-g` ... delete all lines below the actual line of the cursors
 - `==` ... indent the actual line
 - `=G` ... format the whole file
-- `"f3Y` ... yanking the next three lines in register f
-- `"fp` ... paste the contents of register f
 - `J` ... join two lines
 - `gJ` ... join lines without whitespace
 - `gf` ... open the file which is under the cursor
@@ -122,7 +116,7 @@ aaa
 
 
 # Close
-- `:q` ... exit vim and don't save changes
+- `:q` ... exit Vim and don't save changes
 - `:w!` ... overwrites existing file
 - `:q!` ... exit Vim
 - `:wq` ... exit Vim and save changes
@@ -132,7 +126,7 @@ aaa
 - `ZQ` ... shortcut for :wq!
 
 
-# Delete/Cut
+# Delete, Cut, and copy
 - `x` ... delete single character
 - `dw` ... delete whole word (Motion: *2dw* will delete two words)
 - `dd` ... cut the whole line
@@ -145,6 +139,12 @@ aaa
 - `C` ... deletes all characters after the cursor position and will go in insert mode
 - `d$` ... delete till the EOL
 - `s` ... delete current char and go into insert mode
+- `yy` ... copy whole line (`Y` means the same)
+- `yw` ... yank whole word
+- `"+y` ... copy to clipboard (you have to be in visual mode)
+- `"+p` ... paste from clipboard
+- `"f3Y` ... yanking the next three lines in register f
+- `"fp` ... paste the contents of register f
 
 
 # Folding
