@@ -98,6 +98,8 @@
 - `#` ... search after the word under the cursor (`bottom-up`)
 - `n` ... jump to the next matching (direction `forward`)
 - `N` ... jump to the previous matching (direction `backwards`)
+- `;` ... will run the last search command forward
+- `,` ... will run the last search command backward
 - single-character search:
     - `fx` ... move forward to *first* character x inclusive (`Fx` move backwards)
     - `tx` ... move forward to *til* character x but stops left before the sign (`Tx` move backwards)
