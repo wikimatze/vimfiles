@@ -68,6 +68,7 @@
 - `J` ... join two lines
 - `gJ` ... join lines without whitespace
 - `gf` ... open the file which is under the cursor
+- `@:` ... repeat any last Ex command
 - `~` ... makes upper- and lowercase of the character where the actual cursor is
 - `<C-V>` ... opens Visual Block select
 - `<C-X><C-F>` ... display a list of files in the current directory in insert mode
@@ -105,8 +106,7 @@
 - `,` ... will run the last search command backward
 - `/<word\>` ... matching only words which ends on <word>
 - `/\<word\>` ... matching only words which starts with <word>
-- `/\<word\>` ... matching only the word which stands alone with <word> - no other words in front
-  or after the word
+- `/\<word\>` ... matching only the word which stands alone with <word> - no other words in front or after the word
 - `%s/.../<options>` ... will start the substitute function
     - with range: `1,5s/this/that/g`
     - `/g` ... will replace all matchings at a line
