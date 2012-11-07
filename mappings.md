@@ -98,11 +98,11 @@
 - `#` ... search after the word under the cursor (`bottom-up`)
 - `n` ... jump to the next matching (direction `forward`)
 - `N` ... jump to the previous matching (direction `backwards`)
-- `;` ... will run the last search command forward
-- `,` ... will run the last search command backward
 - single-character search:
     - `fx` ... move forward to *first* character x inclusive (`Fx` move backwards)
     - `tx` ... move forward to *til* character x but stops left before the sign (`Tx` move backwards)
+- `;` ... will run the last search command forward
+- `,` ... will run the last search command backward
 - `/<word\>` ... matching only words which ends on <word>
 - `/\<word\>` ... matching only words which starts with <word>
 - `/\<word\>` ... matching only the word which stands alone with <word> - no other words in front
@@ -112,6 +112,7 @@
     - `/g` ... will replace all matchings at a line
     - `/c` ... makes prompt for each replacement
     - `/e` ... no finding a match is no error
+- `&` ... repeats the last substitution command `%s/.../<options>`
 - Regex:
   - `/word$` ... search after the word at the end of each line
   - `/^word` ... search after the word at the beginning of each line
