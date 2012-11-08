@@ -256,6 +256,12 @@
 
 # Text object
 - `aw` ... a word
+- `a) | ab` ... a pair of parentheses
+- `i) | ib` ... inside of parentheses
+- `a} | aB` ... a pair of braces
+- `i} | aB` ... inside of braces
+- `a]` ... a pair of brackets
+- `i]` ... inside of brackets
 - `as` ... a sentence (example `vas` select the current sentence inclusive leading and trailing whitespaces)
 - `is` ... inner sentence (example `vis` select the only the whole text no trailing whitespaces)
 - `ap` ... a paragraph (example `dap` select a whole text paragraph between \n separaters)
@@ -281,6 +287,8 @@
 - `vap` (visual around paragraph): visually select this paragraph
 - `yaw` (yank around word): copy the current word, no matter where your cursor is inside the current word
 - `ctX` change till X (any character)
+- `daw` ... deletes a word
+- `vi}` ... select visual the content inside the `}` delimiter (works as well with `),]`)
 
 
 # Ctags
