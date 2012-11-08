@@ -101,6 +101,12 @@
 
 
 # Search and Replace
+- `f{char}` ... forward to next occurrence of {char}
+- `F{char}` ... backward to next occurrence of {char}
+- `t{char}` ... forward to the character before next occurrence of {char}
+- `T{char}` ... backward to the character after the previous occurrence of {char}
+- `;` ... will run the last search command forward
+- `,` ... will run the last search command backward
 - `/` ... just type in the searched word (`top-down`)
 - `*` ... search after the word under the cursor (`top-down`)
 - `?` bottom-up search
@@ -110,8 +116,6 @@
 - single-character search:
     - `fx` ... move forward to *first* character x inclusive (`Fx` move backwards)
     - `tx` ... move forward to *til* character x but stops left before the sign (`Tx` move backwards)
-- `;` ... will run the last search command forward
-- `,` ... will run the last search command backward
 - `/<word\>` ... matching only words which ends on <word>
 - `/\<word\>` ... matching only words which starts with <word>
 - `/\<word\>` ... matching only the word which stands alone with <word> - no other words in front or after the word
