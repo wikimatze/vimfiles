@@ -312,6 +312,14 @@ noremap <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of eac
 noremap <leader>_ :%s/_//g<CR>                   " delete all _
 noremap <leader>rt :%s/\\t/  /g<CR>
 
+" Buffer changing
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
+
+
+
 " Copy/paste clipboard {{{
 
 if has('unix')
