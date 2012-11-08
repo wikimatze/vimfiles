@@ -243,13 +243,9 @@ vnoremap <S-Tab> <gv
 " Keep the cursor in place while joining lines
 nnoremap J mzJ`z
 
-" disable paste-on-middle-click
-inoremap <MiddleMouse> <Nop>
-
 " emulate ESC with jk
 inoremap jk <ESC>
 cnoremap jk <C-C>
-inoremap jj <nop>
 
 " Quickediting
 nnoremap <silent>,ev :split $MYVIMRC<CR>
