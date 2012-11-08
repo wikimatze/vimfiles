@@ -262,6 +262,8 @@
 - `i} | aB` ... inside of braces
 - `a], a>, a', a"` ... a pair of brackets, a pair of angle brackets, a pair of single quotes, a pair of double quotes
 - `i], i>, i', i"` ... inside of brackets, inside of angle brackets, inside of single quotes, inside of double quotes
+- `at` ... a pair of <xml>tags</xml>
+- `it` ... inside of <xml>tags</xml>
 - `as` ... a sentence (example `vas` select the current sentence inclusive leading and trailing whitespaces)
 - `is` ... inner sentence (example `vis` select the only the whole text no trailing whitespaces)
 - `ap` ... a paragraph (example `dap` select a whole text paragraph between \n separaters)
@@ -278,17 +280,17 @@
 
 
 # Operator and motions -> speak editor sentences
-- operators
-  - `c` ... change
-  - `d` ... delete
-  - `y` ... yank into register
+- operators => motions are text objects
+  - `c{motion}` ... change
+  - `d{motion}` ... delete
+  - `y{motion}` ... yank into register
 - `cis` (change inside sentence): change current sentence
 - `ci"` (change inside quote): change a string inside quotes
 - `vap` (visual around paragraph): visually select this paragraph
 - `yaw` (yank around word): copy the current word, no matter where your cursor is inside the current word
 - `ctX` change till X (any character)
 - `daw` ... deletes a word
-- `vi}` ... select visual the content inside the `}` delimiter (works as well with `),]`)
+- `vi}` ... select visual the content inside the `}` delimiter
 
 
 # Ctags
