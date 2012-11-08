@@ -236,6 +236,7 @@
 - `q/` ... opens the command-line with history of searches
 - `q:` ... opens the command-line with history of Ex commands
 - `C-z` ... will background the terminal Vim session and return to bash; `fg` resume the suspended job
+- `:nohls` ... turns of highlighting words of pattern search
 
 
 # Spellchecker

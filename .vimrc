@@ -318,13 +318,9 @@ nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
 
-
-
 " Copy/paste clipboard {{{
 
 if has('unix')
-  " On ubuntu (running Vim in gnome-terminal)
-  " The reason for the double-command on <C-c> is due to some weirdness with the X clipboard system.
   vnoremap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
   noremap <leader><C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 elseif has('mac')
@@ -334,11 +330,8 @@ endif
 
 " }}}
 
-" Turn off that stupid highlight search
-nnoremap <silent> \n :nohls<CR>
-
 " Insert file names of the current directory when you are in insert mode
-inoremap <C-F> <C-X><C-F>
+inoremap <C-f> <C-x><C-f>
 
 " ---------------------------------------------------------------------------------}}}
 " Command line mappings ----------------------------------------------------------{{{
