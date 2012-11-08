@@ -260,8 +260,8 @@
 - `i) | ib` ... inside of parentheses
 - `a} | aB` ... a pair of braces
 - `i} | aB` ... inside of braces
-- `a]` ... a pair of brackets
-- `i]` ... inside of brackets
+- `a], a>, a', a"` ... a pair of brackets, a pair of angle brackets, a pair of single quotes, a pair of double quotes
+- `i], i>, i', i"` ... inside of brackets, inside of angle brackets, inside of single quotes, inside of double quotes
 - `as` ... a sentence (example `vas` select the current sentence inclusive leading and trailing whitespaces)
 - `is` ... inner sentence (example `vis` select the only the whole text no trailing whitespaces)
 - `ap` ... a paragraph (example `dap` select a whole text paragraph between \n separaters)
