@@ -159,11 +159,6 @@
 - `"fp` ... paste the contents of register f
 
 
-# Command-Line mode
--
--
--
-
 # Folding
 - `zR` ... `reduce` all folding (opens all foldings)
 - `zM` ... `folds more` (closes all foldings of all levels)
@@ -238,6 +233,9 @@
 - `v/` is the opposite of `g/` ... “I want to match what I want to keep and delete the rest
 - `:history` print the last commands -> useful when writing a script
    `:history :-20,` will print the last 20 commands
+- `q/` ... opens the command-line with history of searches
+- `q:` ... opens the command-line with history of Ex commands
+- `C-z` ... will background the terminal Vim session and return to bash; `fg` resume the suspended job
 
 
 # Spellchecker
