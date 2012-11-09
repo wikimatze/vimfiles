@@ -42,7 +42,6 @@ Bundle 'vim-scripts/JSON.vim'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'vim-scripts/dbext.vim'
 Bundle 'vim-scripts/vis'
-Bundle 'xolox/vim-easytags'
 Bundle 'xolox/vim-notes'
 Bundle 'xolox/vim-shell'
 Bundle 'zaiste/tmux.vim'
@@ -593,18 +592,6 @@ let g:dbext_default_profile_sqlite0='type=SQLITE:SQLITE_bin=/usr/bin/sqlite3:dbn
 " Delimate {{{
 "
 au FileType vim let b:loaded_delimitMate = 0 "no autoclose brackets for Vim files
-
-" }}}
-" Easytags {{{
-
-set tags=./tags;                  " name of the tags files which is relative to the project
-let g:easytags_dynamic_files = 1  " write first existing seen tag file by Vim (refer to echo &tags)
-let g:easytags_on_cursorhold = 0  " disable automatic update
-let g:easytags_auto_update = 0    " don't update the text, when stop working
-let g:easytags_auto_highlight = 0 " don't highlight the text, when stop working
-let g:easytags_autorecurse = 1    " updating files below all directories of the current one
-let g:easytags_resolve_links = 1  " resolve symbolic links with pathnames
-let g:easytags_python_enabled = 1 " use Python script for dynamic syntax highlighting (is faster)
 
 " }}}
 " Gundo {{{

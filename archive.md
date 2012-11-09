@@ -38,6 +38,19 @@ Here is a list of plugins I used in the past and removed them due the lack of us
 - [easymotion](https://github.com/Lokaltog/vim-easymotion): easier and faster use of motions
     - `<leader><leader>w | e | j | ..` ... jump to the matching words on the screen
     - `<leader><leader>t | T` ... search after the target character forward (`t`) and backward (`T`)
+- [easytags](https://github.com/xolox/vim-easytags): Call exuberant Ctags within vim
+  - `:UpdateTags` ... will run `ctags -R .` for the current directory but you can pass the directory you want as an argument
+  - `:HighlightTags` ... will mark the relevant tags in the current file
+  - custom settings:
+<pre>
+    set tags=./tags;                  " name of the tags files which is relative to the project
+    let g:easytags_dynamic_files = 1  " write first existing seen tag file by Vim (refer to echo &tags)
+    let g:easytags_on_cursorhold = 0  " disable automatic update
+    let g:easytags_auto_update = 0    " don't update the text, when stop working
+    let g:easytags_auto_highlight = 0 " don't highlight the text, when stop working
+    let g:easytags_autorecurse = 1    " updating files below all directories of the current one
+    let g:easytags_resolve_links = 1  " resolve symbolic links with pathnames
+    let g:easytags_python_enabled = 1 " use Python script for dynamic syntax highlighting (is faster)</pre>
 - [fuf](https://github.com/vim-scripts/FuzzyFinder): Fuzzy matching to find files recursively in the current directory
   - `<C-l>` - opens in a new tab page
   - `<C-j>` - opens in a horizontal split
