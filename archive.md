@@ -73,6 +73,8 @@ Here is a list of plugins I used in the past and removed them due the lack of us
   jQuery syntax (*no doc*)
 - [l9](https://github.com/vim-scripts/L9 "l9"): Vim-script library, add functionality to program vim-files (mainly needed for
   fuzzyfinder plugin)
+- [matchit](http://www.vim.org/scripts/script.php?script_id=39): Press `%` to match tags in HTML, LaTeX and several other file
+  formats
 - [minibufexpl](https://github.com/fholgado/minibufexpl.vim): Highlighting the current active buffer in an extra window
   - `:MiniBufExplorer` ... opens the Minibuffer window
   - `:CMiniBufExplorer` ... close the Minibuffer window

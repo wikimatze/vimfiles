@@ -52,8 +52,6 @@ most important commands and settings for each plugin.
 - [IndexSearch](https://github.com/vim-scripts/IndexedSearch): Redefines the search `(/,?)` and creates custom messages about how many hits there are
 - [json](https://github.com/vim-scripts/JSON.vim): JSON detection and syntax-highlighting (*no doc*)
 - [markdown-folding](https://github.com/nelstrom/vim-markdown-folding): Folding by section headings
-- [matchit](http://www.vim.org/scripts/script.php?script_id=39): Press `%` to match tags in HTML, LaTeX and several other file
-  formats
 - [minibufexpl](https://github.com/fholgado/minibufexpl.vim): Highlighting the current active buffer in an extra window
   - `:MiniBufExplorer` ... opens the Minibuffer window
   - `:CMiniBufExplorer` ... close the Minibuffer window

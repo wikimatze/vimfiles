@@ -2,6 +2,9 @@
 
 set nocompatible " be iMproved
 filetype off     " required! for vundle
+filetype plugin on " Enable file type-specific plugins
+
+runtime macros/matchit.vim " enable better matching for % command
 
 set runtimepath+=~/.vim/bundle/vundle/ " add vundle to runtime path
 call vundle#rc()
@@ -12,7 +15,6 @@ let g:vundle_default_git_proto = 'git' " use git protocol instead of https when 
 Bundle 'Raimondi/delimitMate'
 Bundle 'benmills/vimux'
 Bundle 'ecomba/vim-ruby-refactoring'
-Bundle 'edsono/vim-matchit'
 Bundle 'ervandew/supertab'
 Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
@@ -51,7 +53,6 @@ Bundle 'zaiste/tmux.vim'
 syntax on          " Enable syntax highlighting
 filetype on        " Enable file type detection
 filetype indent on " Enable file type-specific indenting
-filetype plugin on " Enable file type-specific plugins
 
 " turn on Omni completion - this option file specific completion {{{
 
@@ -627,11 +628,6 @@ noremap <leader>m :Hammer<CR>
 
 let g:indexed_search_colors    = 1 " turn of colors for messages
 let g:indexed_search_shortmess = 1 " shorter messages
-
-" }}}
-" Matchit {{{
-
-let b:match_ignorecase = 1 " end and END will be the same when using %
 
 " }}}
 " Notes {{{
