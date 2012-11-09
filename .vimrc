@@ -29,7 +29,6 @@ Bundle 'nelstrom/vim-markdown-folding'
 Bundle 'othree/html5-syntax.vim'
 Bundle 'rodjek/vim-puppet'
 Bundle 'scrooloose/syntastic'
-Bundle 'sjl/gundo.vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-liquid'
@@ -594,14 +593,6 @@ au FileType vim let b:loaded_delimitMate = 0 "no autoclose brackets for Vim file
 
 " }}}
 " Gundo {{{
-
-let g:gundo_width           = 45 " horizontal width
-let g:gundo_preview_height  = 15 " vertical height
-let g:gundo_help            = 1  " show the help in gundo window
-let g:gundo_close_on_revert = 0  " don't close gundo after a version is selected
-let g:gundo_right           = 0  " display gundo on the left site
-
-nnoremap <F3> :GundoToggle<CR>
 
 " }}}
 " Hammer {{{

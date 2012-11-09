@@ -66,6 +66,22 @@ Here is a list of plugins I used in the past and removed them due the lack of us
           \ . '|(^|[/\\])\.(hg|git|bzr|svn)($|[/\\])' " exclude .hg, .git files
           \ . '|(^|[/\\])_site[/\\]' " exclude _site/* stuff (mainly from jekyll
           \ . '|(^|[/\\])assets[/\\]' " exlude the assets stuff by rails</pre>
+- [gundo](http://sjl.bitbucket.org/gundo.vim): Graph the changes of your file saves in different a nice tree
+  - `k` ... move one step top
+  - `j` ... move one step below
+  - `gg` ... move to the button
+  - `G` ... move to the top
+  - `Enter or double click` ... revert the changes of the file to the current file
+  - `p` ... will open a preview to show the differences from the selected and the current version
+    (just imagine a `git diff`)
+<pre>
+    let g:gundo_width           = 45 " horizontal width
+    let g:gundo_preview_height  = 15 " vertical height
+    let g:gundo_help            = 1  " show the help in gundo window
+    let g:gundo_close_on_revert = 0  " don't close gundo after a version is selected
+    let g:gundo_right           = 0  " display gundo on the left site
+
+    nnoremap <F3> :GundoToggle<CR></pre>
 - [Gist.vim](https://github.com/mattn/gist-vim ): upload files directly as gists to github
   - first setup your git credentials `let g:github_user = 'your-name'` and `let g:github*token = 'token'`  in your *.vimrc*
       - the API Token can be found under Account Settings under Account Admin on [github](https://github.com)

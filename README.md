@@ -35,14 +35,6 @@ most important commands and settings for each plugin.
   - `:Ggrep` ... does a *grep* in the tree
   - `:Gbrowse` ... opens the actual file in the browser (normally its on github)
   - `:Git` ... after this you can perform every other normal git command you want
-- [gundo](http://sjl.bitbucket.org/gundo.vim): Graph the changes of your file saves in different a nice tree
-  - `k` ... move one step top
-  - `j` ... move one step below
-  - `gg` ... move to the button
-  - `G` ... move to the top
-  - `Enter or double click` ... revert the changes of the file to the current file
-  - `p` ... will open a preview to show the differences from the selected and the current version
-    (just imagine a `git diff`)
 - [hammer](https://github.com/matthias-guenther/hammer.vim): Displays various markups (markdown, textile, rdoc, asciidoc) with one
   keystroke in the browser
 - [html5-syntax](https://github.com/othree/html5-syntax.vim): HTML5 elements syntax highlighing (*no doc*)
