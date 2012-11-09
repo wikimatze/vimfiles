@@ -255,7 +255,6 @@
 
 
 # Text object
-- `aw` ... a word
 - `a) | ab` ... a pair of parentheses
 - `i) | ib` ... inside of parentheses
 - `a} | aB` ... a pair of braces
@@ -264,19 +263,13 @@
 - `i], i>, i', i"` ... inside of brackets, inside of angle brackets, inside of single quotes, inside of double quotes
 - `at` ... a pair of <xml>tags</xml>
 - `it` ... inside of <xml>tags</xml>
-- `as` ... a sentence (example `vas` select the current sentence inclusive leading and trailing whitespaces)
-- `is` ... inner sentence (example `vis` select the only the whole text no trailing whitespaces)
-- `ap` ... a paragraph (example `dap` select a whole text paragraph between \n separaters)
+- `iw | iW` ... current word|WORD
+- `aw | aW` ... current word|WORD plus one space
+- `is` ... current sentence
+- `as` ... current sentence plus one space
+- `ip` ... current paragraph (paragraph between newline separater)
+- `ap` ... current paragraph plus one blank line (paragraph between newline separater)
 - `ab` ... a block so only ( and ) parts and all whats between these delimiters
-- `ib` ... inner block, so only the parts within ( and ) delimiter
-- `aB` ... a block so only { and } parts and all whats between these delimiters
-- `iB` ... inner block, so only the parts within { and } delimiter
-- `at` ... a tag select everything between HTML tag (inclusive the tags)
-- `it` ... inner tag select only what within a HTML tag
-- `a"` ... a quote, select a complete quote of ""
-- `i"` ... inner quote, select only the inner quote of ""
-- `a'` ... a quote, select a complete quote of ''
-- `i'` ... inner quote, select only the inner quote of ''
 
 
 # Operator and motions -> speak editor sentences
