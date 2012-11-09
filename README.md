@@ -21,9 +21,6 @@ most important commands and settings for each plugin.
   - `<leader>sel` ... execute the query
   - `:DBResultsClose` ... close the result window
 - [delimitMate](https://github.com/Raimondi/delimitMate): Semantic autoclose brackets
-- [easytags](https://github.com/xolox/vim-easytags): Call exuberant Ctags within vim
-  - `:UpdateTags` ... will run `ctags -R .` for the current directory but you can pass the directory you want as an argument
-  - `:HighlightTags` ... will mark the relevant tags in the current file
 - [fugitive](http://github.com/tpope/vim-fugitive): Git wrapper
   - `:Gstatus` ... git status
       ... `Ctrl...n` ... go to the next file

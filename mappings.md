@@ -48,7 +48,7 @@
 - `p` ... *put* after the cursor
 - `P` ... *put *before the cursor
 - `u` | `U` ... make the selected text in visual mode small or big
-- `xp` ... character twiddeling change the characters of two successive chars
+- `xp` ... transpore the next two characters ("character twiddeling")
 - `V` ... mark the whole line in visual mode
 - `gV` ... reselect the text which was marked in visual mode before
   - `o` ... will go to the other end of the visual selection
