@@ -81,7 +81,6 @@ set showbreak=↪                             " show the symbol for wrapped line
 set splitbelow                              " splitting a window will put the new window below the current one
 set splitright                              " splitting a window will put the new window right the current one
 set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
-set lines=999 columns=999                   " full screen when starting Gvim (it's a hack)
 set nomodeline                              " frequent security hole
 set nowarn                                  " do not warn, when shell command update the file you edit in Vim
 set shell=/bin/bash                         " always use sh when executing commands with :!
