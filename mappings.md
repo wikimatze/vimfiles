@@ -1,5 +1,7 @@
 # Movement
 - `h`, `j`, `k`, `l` ...  left, below, top, right
+- `<C-o>` ... trace movements backwards in files
+- `<C-i>` ... trace movements forward in files
 - `w` ... go forward to the next word
 - `W` ... go forward to the next word via whitespace separation (no words are counted)
 - `e` ... go backwards to the end of the next word
@@ -21,8 +23,6 @@
 - `ddp` ... will switch two lines
 - `<C-U>` ... scroll upper (as a picture: scroll down half of the screen)
 - `<C-D>` ... scroll down (as a picture: scroll up half of the screen)
-- `<C-i>` ... trace movements forward in files
-- `<C-o>` ... trace movements backwards in files
 - `H` ... jump to the highest visible part
 - `M` ... jump to the middle position of the visible part
 - `L` ... jump to the lowest position of the visible part
@@ -224,6 +224,7 @@
 
 
 # Different Stuff
+- `:changes` ... shows all the changes to a local buffer
 - `:map` ... over view of all mappings of the current session
 - `:messages` ...  history of all events of the current session
 - `:ascii | ga` ... displays the ASCII, Hex and Octal representation of the character under the actual
@@ -303,8 +304,6 @@
 - `,lj` ... opens the compiled .dvi file just in the place where your cursor is the tex document
  you are compiling
 - `Ctrl+Shift...j` ... jumps to the placeholder in the document
-- `n` ... jumps to the next error
-- `b` ... jumps to the previous error
 - `working with multiple files`
   - create a empty file with the name `<yourmain>.tex`
   - after that you can normally compile every included other tex document (if you are splitting up your tex...project)
@@ -315,9 +314,6 @@
   - where the cursor is, this place will be displayed in the .dvi file
 - `inverse (reverse) search`
   - `<C-Left>` left mouse click in the .dvi file this location will be opend in the source file
-- `Links`
-  - http://vim":http://vim...latex.sourceforge.net/documentation/latex-suite.html#latex-project-example
-  - http://vim":http://vim...latex.sourceforge.net/documentation/latex-suite-quickstart
 
 
 # Help
