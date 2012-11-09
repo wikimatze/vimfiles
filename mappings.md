@@ -186,11 +186,15 @@
 
 
 # Marks
-- `ma` ... create a mark with the name a (marks will be saved for every file)
-- `'a` ... jump to mark a
+- `m{a-zA-Z}` ... create a mark with the name a (marks will be saved for every file)
+- `'a` ... jump to mark `a`
 - `local marks` ... range from `[a-z]` (volatile)
 - `global marks` ... range from `[A-Z]` (not volatile)
 - `:marks` ... output marks of the actual file
+- automatic marks - `.` ... location of last change
+  - `^` ... location of last insertion
+  - `<` ... start of last visual selection
+  - `>` ... end of last visual selection
 
 
 # Help
