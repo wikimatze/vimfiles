@@ -573,7 +573,6 @@ augroup END
 
 let g:ctrlp_working_path_mode     = 2 " the nearest ancestor containing .git, .hg, .svn for searching
 let g:ctrlp_extensions            = ['tag'] " specifiy extensions for further search paths
-let g:ctrlp_map                   = '<C-t>' " press Ctrl-t to open the search option
 let g:ctrlp_match_window_bottom   = 1 " show the match window at the bottom
 let g:ctrlp_match_window_reversed = 0 " show matching files from top to bottom
 let g:ctrlp_working_path_mode     = 'a' " local start directory is where the .git, .hg, .svn, .bzr is
@@ -746,6 +745,10 @@ let g:slime_paste_file = "$HOME/.slime_paste"
 " Yankring {{{
 
 let g:yankring_max_history = 1000 " save the last 1000 elements
+let g:yankring_max_element_length = 0 " no limit for storing entries
+let g:yankring_history_dir = '$HOME/.vim' " put the yankring history file in the vim-directory
+let g:yankring_history_file = 'yankring_file' " name of the yankring file
+let g:yankring_replace_n_pkey = 0 " the <C-p> is used by the ctrlp-plugin
 
 noremap <leader>y :YRShow<CR>
 
