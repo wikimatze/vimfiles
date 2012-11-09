@@ -158,7 +158,8 @@
 - `yy` ... copy whole line (`Y` means the same)
 - `yw` ... yank whole word
 - `"+y` ... copy to clipboard (you have to be in visual mode)
-- `"+p` ... paste from clipboard
+- `"+p` ... paste from clipboard when being in normal mode
+- `<C-r>+` ... paste from clipboard when being in insert mode
 - `"f3Y` ... yanking the next three lines in register f
 - `"fp` ... paste the contents of register f
 
