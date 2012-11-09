@@ -74,7 +74,7 @@ set nonumber                                " don't display line numbers (takes 
 set numberwidth=2                           " using only 2 column for numberline presentation
 set ch=1                                    " height of the command line at the bottom
 set history=5000                            " keep 5000 lines of command line history
-set shell=/bin/bash                         " defines the Shell I want to use for external commands
+set shell=/usr/bin/zsh                      " using zsh for running Ex commands
 set lazyredraw                              " don't update the display while executing macros, registers, etc.
 set showbreak=↪                             " show the symbol for wrapped lines
 set splitbelow                              " splitting a window will put the new window below the current one

@@ -297,7 +297,7 @@
 - `:tags` ... show the list of tags you traversed through
 - `<C-]>` ... jump into the tag
 - `g<C-]>` ... opens a a dialog for chosing the jump into the tag
-- `<C-t>` ... will go to the previous declaration of the method
+- `<C-t>` ... reverse through tag history
 
 
 # LaTeX-Suite
