@@ -82,9 +82,6 @@
 - `:r!` ... read the output of a command-line command and paste this in the text (e.g. `:r! ls`)
 - `sort` ... normal alphabetical
 - `sort!` ... inverse alphabetical
-- `tabcompletion`
-    - `<C-n>` ... go to the next matching
-    - `<C-p>` ... go the previous matching
 
 
 # Insert mode
@@ -93,11 +90,18 @@
 - `<C-o>` ... go to Insert Normal mode, means that you run one normal command and after that go into insert mode
 - `<C-t>` ... add shift
 - `<C-d>` ... remove shift
-- `<C-n>` ... autocompletion
-- `<C-x-C-l>` ... complete a whole line (good for matching complete function calls
-- `<C-x-C-f>` ... browse current directory and display file names
-- `<C-x-C-o>` ... omnicomplete based completion
 - `<C-k>{char1}{char2}` ... will insert digraphs (`:h digraphs`)
+
+
+# Autocompletion
+- `<C-n> | <C-p>` ... autocompletion for next|previous matching
+- `<C-x><C-n>` ... current buffer keywords
+- `<C-x><C-i>` ... include file keywords
+- `<C-x><C-]>` ... tags file keywords
+- `<C-x><C-k>` ... dictionary lookup
+- `<C-x-C-l>` ... complete a whole line (good for matching complete function calls
+- `<C-x-C-f>` ... filename completion
+- `<C-x-C-o>` ... omnicomplete based completion
 
 
 # Search and Replace
