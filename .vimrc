@@ -325,9 +325,6 @@ endif
 
 " }}}
 
-" Insert file names of the current directory when you are in insert mode
-inoremap <C-f> <C-x><C-f>
-
 " ---------------------------------------------------------------------------------}}}
 " Command line mappings ----------------------------------------------------------{{{
 " go to the beginning of the line

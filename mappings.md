@@ -100,8 +100,10 @@
 - `<C-x><C-]>` ... tags file keywords
 - `<C-x><C-k>` ... dictionary lookup
 - `<C-x-C-l>` ... complete a whole line (good for matching complete function calls
-- `<C-x-C-f>` ... filename completion
+- `<C-x-C-f>` ... filename completion for the current directory
 - `<C-x-C-o>` ... omnicomplete based completion
+- `<C-e>` ... exit from autocompletion popup
+
 
 
 # Search and Replace
