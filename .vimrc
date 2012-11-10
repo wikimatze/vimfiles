@@ -90,7 +90,8 @@ set spellsuggest=best,10                    " only display the 10 best suggestio
 set suffixesadd=.rb                         " are used when searching for files to open with 'gf'
 set title                                   " show title in console title
 set viminfo='1000000,f1                     " save marks for 1 million files ('1000000), save global marks
-set ignorecase                              " ignore upper- and lowercase letters during a search
+set ignorecase                              " case insensitive search
+set infercase                               " autocomplete in Insert Mode is not case insensitve
 set hlsearch                                " highlight all finding for a search
 set incsearch                               " do incremental searching, that means search after the string when you begin writing
 set shortmess+=I                            " don't show startup message when opening Vim without a file
