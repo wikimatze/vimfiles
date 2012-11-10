@@ -51,7 +51,17 @@ syntax on          " Enable syntax highlighting
 filetype on        " Enable file type detection
 filetype indent on " Enable file type-specific indenting
 
-" -------------------------------------------------------------------------------}}}
+" -------------------------------------------------------------------------------}}} "
+" Omnicompletion-----------------------------------------------------------------{{{
+
+" set omnicomplete only if a specific plugin does not exist for this filetype
+if has("autocmd") && exists("+omnifunc")
+autocmd Filetype *
+    \	if &omnifunc == "" |
+    \		setlocal omnifunc=syntaxcomplete#Complete |
+    \	endif
+endif
+" --------------------------------------------------------------------------------}}}
 " General settings ---------------------------------------------------------------{{{
 
 set encoding=utf-8                          " terminal encoding
@@ -105,6 +115,7 @@ set fillchars="" " get rid of silly characters in separators in the CMD
 " Make the 'cw' and like commands put a $ at the end instead of just deleting
 " the text and replacing it
 set cpoptions+=$
+
 
 " Cursorline {{{
 
