@@ -15,7 +15,6 @@ let g:vundle_default_git_proto = 'git' " use git protocol instead of https when 
 Bundle 'Raimondi/delimitMate'
 Bundle 'benmills/vimux'
 Bundle 'ecomba/vim-ruby-refactoring'
-Bundle 'ervandew/supertab'
 Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
 Bundle 'jpalardy/vim-slime'
@@ -480,6 +479,9 @@ augroup filetype_ruby
   " Press F11 to compile the actual file
   au FileType ruby map <F11> :!ruby "%:p"<CR>
   au FileType ruby let b:comment_leader = '# '
+
+  let g:rubycomplete_buffer_loading = 1 " load/evaluate ruby for completion
+  let g:rubycomplete_classes_in_global = 1 " parse the entire buffer for autocompletion
 augroup END
 
 " }}}
