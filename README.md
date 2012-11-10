@@ -96,7 +96,6 @@ most important commands and settings for each plugin.
   - `<C-x>` ... -- number
   - `:SpeedDatingFormat` ... shows the regular expression of possible formations
   - `:SpeedDatingFormat {}` ... here you can specify the format which can be used to be recognized by the program
-- [supertab](https://github.com/ervandew/supertab): Word auto completion with pressing the tab key
 - [syntastic](https://github.com/scrooloose/syntastic): Performs syntax check on various languages when saving
 - [surround](https://github.com/tpope/vim-surround): Change quotes and all other delimiters
   - `ds"` ... stands for delete surround and will delete the surrounds

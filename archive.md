@@ -166,6 +166,11 @@ Here is a list of plugins I used in the past and removed them due the lack of us
 <pre>
     let g:tagbar_compact = 1 " don't show the help in the tagbar
     nnoremap <silent> <F3> :TagbarToggle<CR></pre>
+- [supertab](https://github.com/ervandew/supertab): Word auto completion with pressing the tab key
+  - custom settings:
+<pre>
+    let g:SuperTabDefaultCompletionType = "<C-n>"
+    let g:SuperTabLongestHighlight      = 1</pre>
 - [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs "vim-nerdtree-tabs"): opens one NERDTree which is the same in
   every tab
   - own settings:

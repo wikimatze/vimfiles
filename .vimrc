@@ -593,9 +593,6 @@ let g:dbext_default_profile_sqlite0='type=SQLITE:SQLITE_bin=/usr/bin/sqlite3:dbn
 au FileType vim let b:loaded_delimitMate = 0 "no autoclose brackets for Vim files
 
 " }}}
-" Gundo {{{
-
-" }}}
 " Hammer {{{
 
 noremap <leader>m :Hammer<CR>
@@ -653,12 +650,6 @@ nnoremap <F2> :call ToggleVExplorer()<CR>
 " Snipmate {{{
 
 let g:snippets_dir = '~/.vim/snippets' " setting of the snipmate directory
-
-" }}}
-" Supertab {{{
-
-let g:SuperTabDefaultCompletionType = "<C-n>"
-let g:SuperTabLongestHighlight      = 1
 
 " }}}
 " Syntastic {{{
