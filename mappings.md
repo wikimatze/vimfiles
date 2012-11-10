@@ -101,9 +101,8 @@
 - `<C-x><C-k>` ... dictionary lookup
 - `<C-x-C-l>` ... complete a whole line (good for matching complete function calls
 - `<C-x-C-f>` ... filename completion for the current directory
-- `<C-x-C-o>` ... omnicomplete based completion
+- `<C-x-C-o>` ... omnicomplete with context awareness
 - `<C-e>` ... exit from autocompletion popup
-
 
 
 # Search and Replace

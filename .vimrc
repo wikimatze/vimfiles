@@ -52,11 +52,6 @@ syntax on          " Enable syntax highlighting
 filetype on        " Enable file type detection
 filetype indent on " Enable file type-specific indenting
 
-" turn on Omni completion - this option file specific completion {{{
-
-set omnifunc=syntaxcomplete#Complete
-
-" }}}
 " -------------------------------------------------------------------------------}}}
 " General settings ---------------------------------------------------------------{{{
 
