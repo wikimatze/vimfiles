@@ -260,6 +260,7 @@
 - `z=` ... shows all correction to a word
 - `zg` ... add a word to the dictionary
 - `zw` ... remove a word from the dictionary
+- `<C-x>s` ... scan backwards from current cursor position in insert mode for errors
 - `:set spelllang` ... activate the spell checker
 - `set spelling=de_20` ... setting the spell-language to 'neue deutsche Rechtschreibung'
 - `set spelling=de_19` ... setting the spell-language to 'alte deutsche Rechtschreibung'
