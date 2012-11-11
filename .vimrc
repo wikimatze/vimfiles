@@ -407,26 +407,6 @@ au! BufRead,BufNewFile *.yml set filetype=yaml
 au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
 
 " --------------------------------------------------------------------------------}}}
-" Filetype specific --------------------------------------------------------------{{{
-" Yaml {{{
-
-augroup filetype_yaml
-  au!
-  au FileType yaml setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-  au FileType yaml let b:comment_leader = '# '
-augroup END
-
-" }}}
-" Zsh {{{
-
-augroup filetype_zsh
-  au!
-  au FileType zsh setlocal foldmethod=marker
-  au FileType zsh let b:comment_leader = '# '
-augroup END
-
-" }}}
-" --------------------------------------------------------------------------------}}}
 " Plugin settings ----------------------------------------------------------------{{{
 " CtrlP {{{
 
