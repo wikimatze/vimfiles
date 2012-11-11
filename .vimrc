@@ -406,40 +406,6 @@ au! BufRead,BufNewFile *.yml set filetype=yaml
 
 " --------------------------------------------------------------------------------}}}
 " Filetype specific --------------------------------------------------------------{{{
-" Conf {{{
-
-augroup filetype_conf
-  au!
-  au FileType conf setlocal foldmethod=marker
-  au FileType conf let b:comment_leader = '# '
-augroup END
-
-" }}}
-" Eruby {{{
-
-augroup filetype_eruby
-  au!
-  au FileType eruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-augroup END
-
-" }}}
-" Haml {{{
-
-augroup filetype_haml
-  au!
-  au FileType haml setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-  au FileType haml let b:comment_leader = '// '
-augroup END
-
-" }}}
-" Html {{{
-
-augroup filetype_html
-  au!
-  au FileType html setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-augroup END
-
-" }}}
 " Javascript {{{
 
 augroup filetype_javascript
