@@ -404,38 +404,10 @@ au! BufRead,BufNewFile *.tex,*.latex set filetype=tex
 au! BufRead,BufNewFile *.textile set filetype=textile
 au! BufRead,BufNewFile *.tmux.conf set filetype=tmux
 au! BufRead,BufNewFile *.yml set filetype=yaml
+au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
 
 " --------------------------------------------------------------------------------}}}
 " Filetype specific --------------------------------------------------------------{{{
-" Tex {{{
-
-augroup filetype_tex
-  au!
-  autocmd FileType tex setlocal ts=2 sts=2 sw=2 expandtab textwidth=100
-  au FileType tex let b:comment_leader = '% '
-augroup END
-
-" }}}
-" Tmux {{{
-
-augroup filetype_tmux
-  au!
-  au FileType tmux setlocal foldmethod=marker ts=2 sts=2 sw=2 expandtab textwidth=500
-  au FileType tmux let b:comment_leader = '# '
-augroup END
-
-" }}}
-" Vim {{{
-
-augroup filetype_vim
-  au!
-  au FileType vim setlocal foldmethod=marker
-  au Filetype help setlocal textwidth=78
-  au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
-  au FileType vim let b:comment_leader = '" '
-augroup END
-
-" }}}
 " Yaml {{{
 
 augroup filetype_yaml
