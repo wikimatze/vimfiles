@@ -395,6 +395,7 @@ set showfulltag " when completing by tag, show the whole tag, not just the funct
 
 au! BufRead,BufNewFile *.erb set filetype=eruby
 au! BufRead,BufNewFile *.haml set filetype=haml
+au! BufNewFile,BufRead *.m*down setlocal filetype=markdown
 au! BufRead,BufNewFile *.js set filetype=javascript
 au! BufRead,BufNewFile *.json set filetype=json
 au! BufRead,BufNewFile *.rb set filetype=ruby
@@ -406,24 +407,6 @@ au! BufRead,BufNewFile *.yml set filetype=yaml
 
 " --------------------------------------------------------------------------------}}}
 " Filetype specific --------------------------------------------------------------{{{
-" Javascript {{{
-
-augroup filetype_javascript
-  au!
-  au FileType javascript setlocal ts=4 sts=4 sw=4 expandtab textwidth=500
-  au FileType javascript let b:comment_leader = '/ '
-augroup END
-
-" }}}
-" Markdown {{{
-
-augroup filetype_markdown
-  au!
-  au BufNewFile,BufRead *.m*down setlocal filetype=markdown
-  au FileType markdown setlocal ts=2 sts=2 sw=2 expandtab textwidth=130
-augroup END
-
-" }}}
 " Notes {{{
 augroup filetype_notes
   au!
