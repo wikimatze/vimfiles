@@ -407,35 +407,6 @@ au! BufRead,BufNewFile *.yml set filetype=yaml
 
 " --------------------------------------------------------------------------------}}}
 " Filetype specific --------------------------------------------------------------{{{
-" Notes {{{
-augroup filetype_notes
-  au!
-  au FileType notes setlocal ts=2 sts=2 sw=2 expandtab textwidth=5000
-augroup END
-
-" }}}
-" Quickfix {{{
-
-augroup filetype_quickfix
-  au!
-  au Filetype qf setlocal colorcolumn=0 nolist nocursorline nowrap tw=0
-
-" }}}
-" Ruby {{{
-
-augroup filetype_ruby
-  au!
-  au FileType ruby setlocal ts=2 sts=2 sw=2 expandtab textwidth=500 foldmethod=syntax
-
-  " Press F11 to compile the actual file
-  au FileType ruby map <F11> :!ruby "%:p"<CR>
-  au FileType ruby let b:comment_leader = '# '
-
-  let g:rubycomplete_buffer_loading = 1 " load/evaluate ruby for completion
-  let g:rubycomplete_classes_in_global = 1 " parse the entire buffer for autocompletion
-augroup END
-
-" }}}
 " Sass {{{
 
 augroup filetype_sass
