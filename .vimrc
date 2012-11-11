@@ -406,15 +406,6 @@ au! BufRead,BufNewFile *.yml set filetype=yaml
 
 " --------------------------------------------------------------------------------}}}
 " Filetype specific --------------------------------------------------------------{{{
-" Bash {{{
-
-augroup filetype_bash
-  au!
-  au FileType sh setlocal foldmethod=marker
-  au FileType sh setlocal ts=2 sts=2 sw=2 expandtab textwidth=5000
-augroup END
-
-" }}}
 " Conf {{{
 
 augroup filetype_conf
