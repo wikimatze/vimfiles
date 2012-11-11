@@ -407,33 +407,6 @@ au! BufRead,BufNewFile *.yml set filetype=yaml
 
 " --------------------------------------------------------------------------------}}}
 " Filetype specific --------------------------------------------------------------{{{
-" Sass {{{
-
-augroup filetype_sass
-  au!
-  au FileType sass setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-  au FileType sass let b:comment_leader = '// '
-augroup END
-
-" }}}
-" Shell {{{
-
-augroup filetype_sh
-  au!
-  au FileType sh setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-  au FileType sh let b:comment_leader = '# '
-augroup END
-
-" }}}
-" Text {{{
-
-augroup filetype_txt
-  au!
-  au FileType text setlocal foldmethod=marker
-  au FileType text setlocal ts=2 sts=2 sw=2 expandtab textwidth=500
-augroup END
-
-" }}}
 " Tex {{{
 
 augroup filetype_tex
