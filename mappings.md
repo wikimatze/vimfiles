@@ -90,6 +90,8 @@
 - `<C-t>` ... add shift
 - `<C-d>` ... remove shift
 - `<C-k>{char1}{char2}` ... will insert digraphs (`:h digraphs`)
+- `<C-r>+` ... paste from clipboard
+- `<C-r>u` ... paste from register `u` -> perfect when inserting long text for searching
 
 
 # Autocompletion
@@ -160,7 +162,6 @@
 - `yw` ... yank whole word
 - `"+y` ... copy to clipboard (you have to be in visual mode)
 - `"+p` ... paste from clipboard when being in normal mode
-- `<C-r>+` ... paste from clipboard when being in insert mode
 - `"f3Y` ... yanking the next three lines in register f
 - `"fp` ... paste the contents of register f
 
