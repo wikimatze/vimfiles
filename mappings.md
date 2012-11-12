@@ -337,6 +337,11 @@
   def word a 'i' to
 
 
+# Matching Patterns and literals
+- `\v` ... enables very magic search, means that in the pattern after it all ASCII characters except
+  '0'-'9', 'a'-'z', 'A'-'Z' and '_' have a special meaning.
+
+
 # Hacks
 - replace line ending through **\\\\:** `:%s/$/ \\\\/`
 - replace **a = b** to **b = a:** `:%s/\(.*\)=\(.*\)/\2=\1`
