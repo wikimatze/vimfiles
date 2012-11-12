@@ -95,6 +95,7 @@ set suffixesadd=.rb                         " are used when searching for files 
 set title                                   " show title in console title
 set viminfo='1000000,f1                     " save marks for 1 million files ('1000000), save global marks
 set ignorecase                              " case insensitive search
+set smartcase                               " canceling out ignorecase setting that we include an uppercase (\C) letter in the search
 set infercase                               " autocomplete in Insert Mode is not case insensitve
 set hlsearch                                " highlight all finding for a search
 set incsearch                               " do incremental searching, that means search after the string when you begin writing
