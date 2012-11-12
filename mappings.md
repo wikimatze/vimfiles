@@ -74,7 +74,6 @@
 - `@:` ... repeat any last Ex command
 - `~` ... makes upper- and lowercase of the character where the actual cursor is
 - `<C-v>` ... opens Visual Block select (when pressing `c` the selected text disappears and we go into insert mode)
-- `<C-x><C-f>` ... display a list of files in the current directory in insert mode
 - `<C-a>` ... will increment number by one (you can use motions, e.g. `10<C-a>`)
 - `<C-x>` ... will increment number by one
 - `.`  ... repeat the last made action
@@ -345,6 +344,8 @@
   `backward`
 - `\x` ... is a shortcut for the pattern `[0-9A-Fa-f]` -> you can learn more about them under `:h
   character-classes`
+- use parentheses to match pattern and use them later with reference: example `/\v<(\w+)\_s+\1>`
+  with `\1` we are referencing to the first match
 
 
 # Hacks
