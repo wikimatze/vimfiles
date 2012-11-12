@@ -111,9 +111,10 @@
 - `/<CR>` ... jump forward to next match of same pattern
 - `?<pattern>` ... bottom-up search
 - `?<CR>` ... jump backward to next match of same pattern
+- `<C-r><C-w>` ... autocomplete when searching for words
 - `f{char}` ... forward to next occurrence of {char}
-- `F{char}` ... backward to next occurrence of {char}
 - `t{char}` ... forward to the character before next occurrence of {char}
+- `F{char}` ... backward to next occurrence of {char}
 - `T{char}` ... backward to the character after the previous occurrence of {char}
 - `;` ... will run the last search command forward
 - `,` ... will run the last search command backward
