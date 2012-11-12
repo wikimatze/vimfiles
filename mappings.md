@@ -120,9 +120,6 @@
 - single-character search:
     - `fx` ... move forward to *first* character x inclusive (`Fx` move backwards)
     - `tx` ... move forward to *til* character x but stops left before the sign (`Tx` move backwards)
-- `/<word\>` ... matching only words which ends on <word>
-- `/\<word\>` ... matching only words which starts with <word>
-- `/\<word\>` ... matching only the word which stands alone with <word> - no other words in front or after the word
 - `%s/.../<options>` ... will start the substitute function
     - with range: `1,5s/this/that/g`
     - `/g` ... will replace all matchings at a line
@@ -346,6 +343,10 @@
   character-classes`
 - use parentheses to match pattern and use them later with reference: example `/\v<(\w+)\_s+\1>`
   with `\1` we are referencing to the first match
+- searching with word boundaries: you can use `<` for the beginning and `>` for the end
+  - `/\<word\>` ... matching only the word which stands alone with <word> - no other words in front or after the word
+  - `/<word\>` ... matching only words which ends on <word>
+  - `/\<word\>` ... matching only words which starts with <word>
 
 
 # Hacks
