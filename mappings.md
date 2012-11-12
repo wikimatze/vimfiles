@@ -340,6 +340,9 @@
 # Matching Patterns and literals
 - `\v` ... enables very magic search, means that in the pattern after it all ASCII characters except
   '0'-'9', 'a'-'z', 'A'-'Z' and '_' have a special meaning.
+- `\V` ... cancel special meanings of words for pattern matching (e.g. `., *, }, ...`) -> this kind
+  of search is called verbatim searches, example: `/\Va.k.a` will match only `a.k.a` and no
+  `backward`
 - `\x` ... is a shortcut for the pattern `[0-9A-Fa-f]` -> you can learn more about them under `:h
   character-classes`
 
