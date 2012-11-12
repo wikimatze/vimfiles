@@ -91,7 +91,7 @@
 - `<C-d>` ... remove shift
 - `<C-k>{char1}{char2}` ... will insert digraphs (`:h digraphs`)
 - `<C-r>+` ... paste from clipboard
-- `<C-r>u` ... paste from register `u` -> perfect when inserting long text for searching
+- `<C-r>u` ... paste from register `u`
 
 
 # Autocompletion
@@ -107,15 +107,17 @@
 
 
 # Search and Replace
+- `/<pattern>` ... top-down search
+- `/<CR>` ... jump forward to next match of same pattern
+- `?<pattern>` ... bottom-up search
+- `?<CR>` ... jump backward to next match of same pattern
 - `f{char}` ... forward to next occurrence of {char}
 - `F{char}` ... backward to next occurrence of {char}
 - `t{char}` ... forward to the character before next occurrence of {char}
 - `T{char}` ... backward to the character after the previous occurrence of {char}
 - `;` ... will run the last search command forward
 - `,` ... will run the last search command backward
-- `/` ... just type in the searched word (`top-down`)
 - `*` ... search after the word under the cursor (`top-down`)
-- `?` bottom-up search
 - `#` ... search after the word under the cursor (`bottom-up`)
 - `n` ... jump to the next matching (direction `forward`)
 - `N` ... jump to the previous matching (direction `backwards`)
