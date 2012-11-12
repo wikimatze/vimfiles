@@ -340,6 +340,8 @@
 # Matching Patterns and literals
 - `\v` ... enables very magic search, means that in the pattern after it all ASCII characters except
   '0'-'9', 'a'-'z', 'A'-'Z' and '_' have a special meaning.
+- `\x` ... is a shortcut for the pattern `[0-9A-Fa-f]` -> you can learn more about them under `:h
+  character-classes`
 
 
 # Hacks
