@@ -437,20 +437,12 @@ endfunction
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 " --------------------------------------------------------------------------------}}}
-" Search for current selection ---------------------------------------------------{{{
-" This Hack is from "Practical Vim"
-xnoremap * :<C-u>call <SID>VSetSearch()<CR>/<C-R>=@/<CR><CR>
-xnoremap # :<C-u>call <SID>VSetSearch()<CR>?<C-R>=@/<CR><CR>
 
-function! s:VSetSearch()
-  let temp = @s
-  norm! gv"sy
-  let @/ = '\V' . substitute(escape(@s, '/\'), '\n', '\\n', 'g')
-  let @s = temp
-endfunction
+" Functions {{{
+" Search for current selection
+runtime functions/search_for_current_selection.vim
 
-" --------------------------------------------------------------------------------}}}
-
+" }}}
 " Mappings {{{
 " Converting markdown to HTML (<leader>md)
 runtime mappings/markdown_to_html.vim
