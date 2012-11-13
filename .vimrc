@@ -412,32 +412,10 @@ au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
 
 " --------------------------------------------------------------------------------}}}
 " Plugin settings ----------------------------------------------------------------{{{
-" CtrlP {{{
+runtime settings/ctrlp.vim
+runtime settings/dbext.vim
+runtime settings/delimate.vim
 
-let g:ctrlp_working_path_mode     = 2 " the nearest ancestor containing .git, .hg, .svn for searching
-let g:ctrlp_extensions            = ['tag'] " specifiy extensions for further search paths
-let g:ctrlp_match_window_bottom   = 1 " show the match window at the bottom
-let g:ctrlp_match_window_reversed = 0 " show matching files from top to bottom
-let g:ctrlp_working_path_mode     = 'a' " local start directory is where the .git, .hg, .svn, .bzr is
-let g:ctrlp_max_height            = 10 " Specify the height of the match window
-let g:ctrlp_max_files             = 0 " scan an unlimited amount of files
-let g:ctrlp_dotfiles              = 0 " Don't search for dotfiles and dotdirectories
-let g:ctrlp_custom_ignore         = {
-  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|_site$\|assets$',
-  \ 'file': '\.exe$\|\.so$\|\.dll$\|\.DS$\|\.bak$\|\.orig$\|\.swp$\|\.jpg$\|\.JPG$\|\.png$\|\.PNG$'
-  \ }
-
-" }}}
-" Dbext {{{
-
-let g:dbext_default_profile_sqlite0='type=SQLITE:SQLITE_bin=/usr/bin/sqlite3:dbname=$HOME/Downloads/sqlite.db'
-
-" }}}
-" Delimate {{{
-"
-au FileType vim let b:loaded_delimitMate = 0 "no autoclose brackets for Vim files
-
-" }}}
 " Hammer {{{
 
 noremap <leader>m :Hammer<CR>
