@@ -140,6 +140,10 @@
   - alternatively, you can insert the contents of a register with `<C-r>{register}` -> remember that
     `0` stands for the last yanked line
 - `&` ... repeats the last substitution command `%s/.../<options>`
+- `&&` ... the first `&` forms the Ex command which repeats the last :substitute command, the second
+  `&` indicates, that the flags from the previous :substitute command should be reused
+
+
 - Regex:
   - `/word$` ... search after the word at the end of each line
   - `/^word` ... search after the word at the beginning of each line
@@ -259,7 +263,7 @@
    `:history :-20,` will print the last 20 commands
 - `q/` ... opens the command-line with history of searches
 - `q:` ... opens the command-line with history of Ex commands
-- `C-z` ... will background the terminal Vim session and return to bash; `fg` resume the suspended job
+- `<C-z>` ... will background the terminal Vim session and return to bash; `fg` resume the suspended job
 - `:nohls` ... turns of highlighting words of pattern search
 
 
