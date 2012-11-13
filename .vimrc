@@ -450,12 +450,12 @@ function! s:VSetSearch()
 endfunction
 
 " --------------------------------------------------------------------------------}}}
-" Converting markdown to HTML ----------------------------------------------------{{{
 
-noremap <leader>md :%!$HOME/Dropbox/bin/Markdown.pl --html4tags <Cr>
+" Mappings {{{
+" Converting markdown to HTML (<leader>md)
+runtime mappings/markdown_to_html.vim
 
-" --------------------------------------------------------------------------------}}}
-
+" }}}
 " Runtime settings {{{
 
 " Plugin settings and mappings
