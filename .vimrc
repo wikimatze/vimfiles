@@ -228,15 +228,6 @@ set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮,trail:·
 " --------------------------------------------------------------------------------}}}
 " Convenience mappings -----------------------------------------------------------{{{
 
-" Instead of using help F1 will toogle between fullscreen
-if has('mac')
-  noremap  <F12> :set invfullscreen<CR>
-  inoremap  <F12> :set invfullscreen<CR>
-elseif has('unix')
-  noremap  <F12> :Fullscreen<CR>
-  inoremap <F12> <ESC>:Fullscreen<CR>
-endif
-
 " reformat current paragraph
 noremap Q gq
 
@@ -266,25 +257,6 @@ noremap <silent> ,u :<C-B>sil <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>/
 nnoremap \cd :lcd %:h<CR>
 
 " Use hjkl in wrapped-lined files
-onoremap <silent> <expr> j ScreenMovement("j")
-onoremap <silent> <expr> k ScreenMovement("k")
-onoremap <silent> <expr> 0 ScreenMovement("0")
-onoremap <silent> <expr> ^ ScreenMovement("^")
-onoremap <silent> <expr> $ ScreenMovement("$")
-nnoremap <silent> <expr> j ScreenMovement("j")
-nnoremap <silent> <expr> k ScreenMovement("k")
-nnoremap <silent> <expr> 0 ScreenMovement("0")
-nnoremap <silent> <expr> ^ ScreenMovement("^")
-nnoremap <silent> <expr> $ ScreenMovement("$")
-
-" needed by for files with wrapped-lines
-function! ScreenMovement(movement)
-  if &wrap
-    return "g" . a:movement
-  else
-    return a:movement
-  endif
-endfunction
 
 " Insert date in the form yyyy-mm-dd at the end of a line
 function! InsertSpaceDate()
@@ -355,6 +327,12 @@ runtime mappings/c_up_c_down_to_move_text.vim
 
 runtime mappings/commandline.vim
 runtime mappings/copy_paste_from_clipboard.vim
+
+" <F12> Fullscreen-Toggle
+runtime mappings/fullscreentoggle.vim
+
+" Use hjkl in wrapped-lined files
+runtime mappings/moving_wrapped_lines.vim
 
 " }}}
 " Runtime settings {{{
