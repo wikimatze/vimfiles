@@ -350,19 +350,6 @@ cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 
 " --------------------------------------------------------------------------------}}}
-" Timeout setting ----------------------------------------------------------------{{{
-
-" This is the timeout used while waiting for user input on a multi-keyed macro
-" or while just sitting and waiting for another key to be pressed measured
-" in milliseconds.
-"
-" i.e. for the ",d" command, there is a "timeoutlen" wait period between the
-" "," key and the "d" key. If the "d" key isn't pressed before the
-" timeout expires, one of two things happens: The "," command is executed
-" if there is one (which there isn't) or the command aborts.
-set timeoutlen=500
-
-" --------------------------------------------------------------------------------}}}
 " Filetype detecion --------------------------------------------------------------{{{
 
 au! BufRead,BufNewFile *.erb set filetype=eruby
