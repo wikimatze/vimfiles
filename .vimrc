@@ -387,14 +387,6 @@ smap <silent> <C-Up> <C-G><C-Up><C-G>
 smap <silent> <C-Down> <C-G><C-Down><C-G>
 
 " --------------------------------------------------------------------------------}}}
-" Keyword completion -------------------------------------------------------------{{{
-
-set complete=. " the current buffer set complete+=w " scan the buffer from other windows
-set complete+=b " scan other loaded buffers that are in the buffer list
-set complete+=t " tag completion
-set showfulltag " when completing by tag, show the whole tag, not just the function name
-
-" --------------------------------------------------------------------------------}}}
 " Filetype detecion --------------------------------------------------------------{{{
 
 au! BufRead,BufNewFile *.erb set filetype=eruby
@@ -441,6 +433,9 @@ runtime settings/yankring.vim
 
 " Environments (Mac/Unix/GUI/Console)
 runtime settings/environmens.vim
+
+" Keyword completion
+runtime settings/keyword_completion.vim
 
 " }}}
 
