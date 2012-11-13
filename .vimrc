@@ -411,14 +411,6 @@ au! BufRead,BufNewFile *.yml set filetype=yaml
 au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
 
 " --------------------------------------------------------------------------------}}}
-" Text objects -------------------------------------------------------------------{{{
-
-onoremap ir i[
-onoremap ar i[
-vnoremap ir i[
-vnoremap ir i[
-
-" --------------------------------------------------------------------------------}}}
 " Functions {{{
 
 runtime functions/search_for_current_selection.vim
