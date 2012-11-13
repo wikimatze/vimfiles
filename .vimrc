@@ -412,35 +412,21 @@ au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
 
 " --------------------------------------------------------------------------------}}}
 " Plugin settings ----------------------------------------------------------------{{{
+
 runtime settings/ctrlp.vim
 runtime settings/dbext.vim
 runtime settings/delimate.vim
 runtime settings/index_search.vim
-runtime settings/notes.vim
 runtime settings/netrw.vim
+runtime settings/notes.vim
 runtime settings/snipmate.vim
 runtime settings/syntastic.vim
 runtime settings/tabularize.vim
 runtime settings/vim_ruby.vim
+runtime settings/vim_shell.vim
 runtime settings/vim_slime.vim
 runtime settings/yankring.vim
 
-" Vim-shell {{{
-
-let g:shell_verify_urls = 1 " handle special URLs with dot at the end
-
-" }}}
-" Yankring {{{
-
-let g:yankring_max_history = 1000 " save the last 1000 elements
-let g:yankring_max_element_length = 0 " no limit for storing entries
-let g:yankring_history_dir = '$HOME/.vim' " put the yankring history file in the vim-directory
-let g:yankring_history_file = 'yankring_file' " name of the yankring file
-let g:yankring_replace_n_pkey = 0 " the <C-p> is used by the ctrlp-plugin
-
-noremap <leader>y :YRShow<CR>
-
-" }}}
 " --------------------------------------------------------------------------------}}}
 " Text objects -------------------------------------------------------------------{{{
 
