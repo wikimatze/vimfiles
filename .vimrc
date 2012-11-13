@@ -277,7 +277,6 @@ nnoremap <silent> <expr> 0 ScreenMovement("0")
 nnoremap <silent> <expr> ^ ScreenMovement("^")
 nnoremap <silent> <expr> $ ScreenMovement("$")
 
-
 " needed by for files with wrapped-lines
 function! ScreenMovement(movement)
   if &wrap
@@ -318,6 +317,10 @@ nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
+
+" Fixing the & command to save the flags of last substitution
+noremap & :&&<CR>
+xnoremap & :&&<CR>
 
 " Copy/paste clipboard {{{
 
