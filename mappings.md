@@ -92,6 +92,7 @@
 - `<C-k>{char1}{char2}` ... will insert digraphs (`:h digraphs`)
 - `<C-r>+` ... paste from clipboard
 - `<C-r>u` ... paste from register `u`
+- `<C-r>/` ... insert the pattern of last search
 
 
 # Autocompletion
@@ -125,11 +126,19 @@
 - single-character search:
     - `fx` ... move forward to *first* character x inclusive (`Fx` move backwards)
     - `tx` ... move forward to *til* character x but stops left before the sign (`Tx` move backwards)
-- `%s/.../<options>` ... will start the substitute function
-    - with range: `1,5s/this/that/g`
-    - `/g` ... will replace all matchings at a line
-    - `/c` ... makes prompt for each replacement
-    - `/e` ... no finding a match is no error
+- `%s/.../<options>` ... will start the substitute function, `%` says to run substitute through the
+  whole file
+  - with range: `1,5s/this/that/g`
+  - `/g` ... stands for **global** and will replace all matchings at a line
+  - `/c` ... stands for **confirm** and makes prompt for each replacement
+  - `/n` ... stands for **number** and will print the number of replacements without performing the
+    substitution
+  - `/e` ... stands for **error** no finding a match is no error
+- Lazy searching:
+  - mark the string in visual selection and press `*`
+  - run `%s/<C-r>//g` -> the `<C-r>/` will place the last search pattern
+  - alternatively, you can insert the contents of a register with `<C-r>{register}` -> remember that
+    `0` stands for the last yanked line
 - `&` ... repeats the last substitution command `%s/.../<options>`
 - Regex:
   - `/word$` ... search after the word at the end of each line
