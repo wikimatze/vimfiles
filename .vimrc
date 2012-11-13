@@ -421,22 +421,13 @@ runtime settings/netrw.vim
 runtime settings/snipmate.vim
 runtime settings/syntastic.vim
 runtime settings/tabularize.vim
+runtime settings/vim_ruby.vim
+runtime settings/vim_slime.vim
+runtime settings/yankring.vim
 
-" Vim-ruby {{{
-
-let ruby_operators    = 1 " create colors for ruby operators
-let ruby_space_errors = 1 " mark whitespace characters
-
-" }}}
 " Vim-shell {{{
 
 let g:shell_verify_urls = 1 " handle special URLs with dot at the end
-
-" }}}
-" Vim-slime {{{
-
-let g:slime_target = "tmux"
-let g:slime_paste_file = "$HOME/.slime_paste"
 
 " }}}
 " Yankring {{{
