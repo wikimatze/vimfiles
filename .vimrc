@@ -322,34 +322,7 @@ nnoremap <silent> ]B :blast<CR>
 noremap & :&&<CR>
 xnoremap & :&&<CR>
 
-" Copy/paste clipboard {{{
-
-if has('unix')
-  vnoremap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
-  noremap <leader><C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
-elseif has('mac')
-  vnoremap <C-c> y:call system("pbcopy", getreg("\""))<CR>
-  noremap <leader><C-v> :call setreg("\"",system("pbpaste"))<CR>p
-endif
-
-" }}}
-
 " ---------------------------------------------------------------------------------}}}
-" Command line mappings ----------------------------------------------------------{{{
-" go to the beginning of the line
-cnoremap <C-a> <Home>
-" go to the end of the command line
-cnoremap <C-e> <End>
-" go one word to the left
-cnoremap <C-b> <Left>
-" go one word to the right
-cnoremap <C-f> <Right>
-" move back in the command history
-cnoremap <C-p> <Up>
-" move forward in the command history
-cnoremap <C-n> <Down>
-
-" --------------------------------------------------------------------------------}}}
 " Filetype detecion --------------------------------------------------------------{{{
 
 au! BufRead,BufNewFile *.erb set filetype=eruby
@@ -379,6 +352,9 @@ runtime mappings/markdown_to_html.vim
 
 " <C-Up> and <C-Down> to move selected lines up and down
 runtime mappings/c_up_c_down_to_move_text.vim
+
+runtime mappings/commandline.vim
+runtime mappings/copy_paste_from_clipboard.vim
 
 " }}}
 " Runtime settings {{{
