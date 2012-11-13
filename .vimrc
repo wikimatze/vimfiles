@@ -417,54 +417,11 @@ runtime settings/dbext.vim
 runtime settings/delimate.vim
 runtime settings/index_search.vim
 runtime settings/notes.vim
+runtime settings/netrw.vim
+runtime settings/snipmate.vim
+runtime settings/syntastic.vim
+runtime settings/tabularize.vim
 
-" Snipmate {{{
-
-let g:snippets_dir = '~/.vim/snippets' " setting of the snipmate directory
-
-" }}}
-" Syntastic {{{
-
-let g:syntastic_enable_signs  = 1 " setting signs for errors (arrows)
-let g:syntastic_auto_loc_list = 1 " open/close toc of errors
-let g:syntastic_auto_jump     = 0 " don't jump to the first error
-let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['haml', 'javascript', 'ruby', 'css', 'sass'], 'passive_filetypes': ['eruby', 'html', 'php'] }
-let tex_no_error = 1                            " underscores are not displayed as syntax errors
-let loaded_tex_syntax_checker = 0             " turn of lacheck of the syntastic plugin
-let g:syntastic_stl_format = '[%E{%e Errors} %B{, }%W{%w Warnings}]'
-set statusline+=%#warningmsg#                 " show warning messages
-set statusline+=%{SyntasticStatuslineFlag()}  " show message in quick fix
-let g:syntastic_ruby_exec = '/home/helex/.rbenv/shims/ruby' " take the current ruby version specified by rbenv
-
-" }}}
-" Tabularize {{{
-
-" tabular: press ,b= to order indenting = separated terms with different spaces
-" example:
-"   ab = cd
-"   abc = def
-" mark the lines in visual mode, then press ,b=
-" result:
-"  ab  = cd
-"  abc = def
-" works for all specified chars below
-nnoremap <leader>b= :Tabularize /=<CR>
-vnoremap <leader>b= :Tabularize /=<CR>
-nnoremap <leader>b: :Tabularize /:<CR>
-vnoremap <leader>b: :Tabularize /:<CR>
-nnoremap <leader>b/ :Tabularize /\/\/<CR>
-vnoremap <leader>b/ :Tabularize /\/\/<CR>
-nnoremap <leader>b" :Tabularize /"<CR>
-vnoremap <leader>b" :Tabularize /"<CR>
-nnoremap <leader>bt :Tabularize /& \\ldots &<CR>
-vnoremap <leader>bt :Tabularize /& \\ldots &<CR>
-
-" }}}
-" Tocdown {{{
-
-nnoremap <F4> :TocdownToggle<CR>
-
-" }}}
 " Vim-ruby {{{
 
 let ruby_operators    = 1 " create colors for ruby operators
