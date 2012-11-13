@@ -363,30 +363,6 @@ cnoremap <C-n> <Down>
 set timeoutlen=500
 
 " --------------------------------------------------------------------------------}}}
-" C-Up/C-Down to move selected lines up and down ---------------------------------{{{
-
-" Based on http://vim.wikia.com/wiki/VimTip646
-" Define maps for Normal and Visual modes, then re-use
-" them for Insert and Select.
-"
-
-" Normal mode
-nnoremap <silent> <C-Up> :move -2<CR>
-nnoremap <silent> <C-Down> :move +<CR>
-
-" Visual mode (only; does not include Select mode)
-xnoremap <silent> <C-Up> :move '<-2<CR>gv
-xnoremap <silent> <C-Down> :move '>+<CR>gv
-
-" Insert mode
-imap <silent> <C-Up> <C-O><C-Up>
-imap <silent> <C-Down> <C-O><C-Down>
-
-" Select mode
-smap <silent> <C-Up> <C-G><C-Up><C-G>
-smap <silent> <C-Down> <C-G><C-Down><C-G>
-
-" --------------------------------------------------------------------------------}}}
 " Filetype detecion --------------------------------------------------------------{{{
 
 au! BufRead,BufNewFile *.erb set filetype=eruby
@@ -400,6 +376,7 @@ au! BufRead,BufNewFile *.tex,*.latex set filetype=tex
 au! BufRead,BufNewFile *.textile set filetype=textile
 au! BufRead,BufNewFile *.tmux.conf set filetype=tmux
 au! BufRead,BufNewFile *.yml set filetype=yaml
+
 au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
 
 " --------------------------------------------------------------------------------}}}
@@ -412,6 +389,9 @@ runtime functions/trailing_whitespaces_removal.vim
 " Mappings {{{
 " Converting markdown to HTML (<leader>md)
 runtime mappings/markdown_to_html.vim
+
+" <C-Up> and <C-Down> to move selected lines up and down
+runtime mappings/c_up_c_down_to_move_text.vim
 
 " }}}
 " Runtime settings {{{
