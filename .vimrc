@@ -228,40 +228,16 @@ set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮,trail:·
 " --------------------------------------------------------------------------------}}}
 " Convenience mappings -----------------------------------------------------------{{{
 
-" reformat current paragraph
-noremap Q gq
-
 " Tab/Shift+Tab indent/unindent the highlighted block
 " <Tab> perform > and <Shift-Tab> performs <
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
-
-" Quickediting
-nnoremap <silent>,ev :split $MYVIMRC<CR>
-nnoremap <leader>ba :split ~/.vim/archive.md<CR>
-nnoremap <leader>bm :split ~/.vim/mappings.md<CR>
-nnoremap <leader>br :split ~/.vim/README.md<CR>
-
-
-" Press \cd to change the pwd to the current file you are in
-nnoremap \cd :lcd %:h<CR>
-
-" Spellchecker: press ,s to toogle between spellchecker
-nnoremap <silent> <leader>s :set spell!<CR>
-
-" Folding Toggling with <space>
-nnoremap <space> za
 
 " Char replacement (good for creating vocabularly)
 noremap <leader>bldots :%s/=/\& \\ldots \&/g<CR> " replace = through & \ldots &
 noremap <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of each line
 noremap <leader>_ :%s/_//g<CR>                   " delete all _
 noremap <leader>rt :%s/\\t/  /g<CR>
-
-
-" Fixing the & command to save the flags of last substitution
-noremap & :&&<CR>
-xnoremap & :&&<CR>
 
 " ---------------------------------------------------------------------------------}}}
 " Filetype detecion --------------------------------------------------------------{{{
@@ -289,18 +265,34 @@ runtime functions/insert_spacedate.vim " <F5> will insert current date (yyyy-mm-
 
 " }}}
 " Mappings {{{
+
 runtime mappings/buffer_movement.vim             " Buffer movement (common [b, ]b, [B, ]B)
 runtime mappings/c_up_c_down_to_move_text.vim    " <C-Up> and <C-Down> to move selected lines up and down
+runtime mappings/commenting_and_uncommenting.vim " in visual mode press ,c (comment) and  ,u (uncomment)
 runtime mappings/esc_with_jk.vim                 " emulare ESC with jk
 runtime mappings/fullscreentoggle.vim            " <F12> Fullscreen-Toggle
 runtime mappings/markdown_to_html.vim            " Converting markdown to HTML (<leader>md)
 runtime mappings/moving_wrapped_lines.vim        " Use hjkl in wrapped-lined files
+runtime mappings/quickediting.vim                " ,ba; ,bm; ,br; ,ev to edit files of vim repos
 runtime mappings/whitespace_jumping.vim          " Whitespace jumping with f|F<space>
-runtime mappings/commenting_and_uncommenting.vim " in visual mode press ,c (comment) and  ,u (uncomment)
+
+" Press \cd to change the pwd to the current file you are in
+nnoremap \cd :lcd %:h<CR>
+
+" Spellchecker: press ,s to toogle between spellchecker
+nnoremap <silent> <leader>s :set spell!<CR>
+
+" Folding Toggling with <space>
+nnoremap <space> za
+
+" Fixing the & command to save the flags of last substitution
+noremap & :&&<CR>
+xnoremap & :&&<CR>
 
 runtime mappings/commandline.vim
 runtime mappings/copy_paste_from_clipboard.vim
 runtime mappings/keep_cursor_joining_lines.vim
+
 
 " }}}
 " Runtime settings {{{
