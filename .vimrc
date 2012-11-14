@@ -268,9 +268,6 @@ noremap <silent> <F5> $:call InsertSpaceDate()<CR>
 " Spellchecker: press ,s to toogle between spellchecker
 nnoremap <silent> <leader>s :set spell!<CR>
 
-" Whitespace jumping
-nnoremap <leader>f f<space>
-nnoremap <leader>F F<space>
 
 " Folding Toggling with <space>
 nnoremap <space> za
@@ -313,10 +310,11 @@ runtime functions/trailing_whitespaces_removal.vim
 " Mappings {{{
 runtime mappings/buffer_movement.vim          " Buffer movement (common [b, ]b, [B, ]B)
 runtime mappings/c_up_c_down_to_move_text.vim " <C-Up> and <C-Down> to move selected lines up and down
+runtime mappings/esc_with_jk.vim              " emulare ESC with jk
 runtime mappings/fullscreentoggle.vim         " <F12> Fullscreen-Toggle
 runtime mappings/markdown_to_html.vim         " Converting markdown to HTML (<leader>md)
 runtime mappings/moving_wrapped_lines.vim     " Use hjkl in wrapped-lined files
-runtime mappings/esc_with_jk.vim  " emulare ESC with jk
+runtime mappings/whitespace_jumping.vim       " Whitespace jumping with f|F<space>
 
 runtime mappings/commandline.vim
 runtime mappings/copy_paste_from_clipboard.vim
