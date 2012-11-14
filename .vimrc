@@ -1,17 +1,15 @@
 " Preamble -----------------------------------------------------------------------{{{
 
-set nocompatible " be iMproved
-filetype off     " required! for vundle
+set nocompatible   " be iMproved
+filetype off       " required! for vundle
 filetype plugin on " Enable file type-specific plugins
-
-runtime macros/matchit.vim " enable better matching for % command
 
 set runtimepath+=~/.vim/bundle/vundle/ " add vundle to runtime path
 call vundle#rc()
 
 let g:vundle_default_git_proto = 'git' " use git protocol instead of https when building absolute repo URIs
 
-" My bundles
+" bundles
 Bundle 'Raimondi/delimitMate'
 Bundle 'benmills/vimux'
 Bundle 'ecomba/vim-ruby-refactoring'
@@ -20,7 +18,6 @@ Bundle 'godlygeek/tabular'
 Bundle 'jpalardy/vim-slime'
 Bundle 'kien/ctrlp.vim'
 Bundle 'matthias-guenther/hammer.vim'
-Bundle 'matthias-guenther/tocdown'
 Bundle 'matthias-guenther/tocdown'
 Bundle 'mileszs/ack.vim'
 Bundle 'msanders/snipmate.vim'
@@ -226,15 +223,6 @@ set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮,trail:·
 
 " }}}
 " --------------------------------------------------------------------------------}}}
-" Convenience mappings -----------------------------------------------------------{{{
-
-" Char replacement (good for creating vocabularly)
-noremap <leader>bldots :%s/=/\& \\ldots \&/g<CR> " replace = through & \ldots &
-noremap <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of each line
-noremap <leader>_ :%s/_//g<CR>                   " delete all _
-noremap <leader>rt :%s/\\t/  /g<CR>
-
-" ---------------------------------------------------------------------------------}}}
 " Filetype detecion --------------------------------------------------------------{{{
 
 au! BufRead,BufNewFile *.erb set filetype=eruby
@@ -285,11 +273,16 @@ nnoremap <space> za
 noremap & :&&<CR>
 xnoremap & :&&<CR>
 
+
+" Char replacement (good for creating vocabularly)
+noremap <leader>bldots :%s/=/\& \\ldots \&/g<CR> " replace = through & \ldots &
+noremap <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of each line
+noremap <leader>_ :%s/_//g<CR>                   " delete all _
+noremap <leader>rt :%s/\\t/  /g<CR>
+
 runtime mappings/commandline.vim
 runtime mappings/copy_paste_from_clipboard.vim
 runtime mappings/keep_cursor_joining_lines.vim
-
-
 
 " }}}
 " Runtime settings {{{
@@ -315,5 +308,6 @@ runtime settings/environmens.vim
 " Keyword completion
 runtime settings/keyword_completion.vim
 
+runtime macros/matchit.vim " enable better matching for % command
 " }}}
 
