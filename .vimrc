@@ -236,10 +236,6 @@ noremap Q gq
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
-" Keep the cursor in place while joining lines
-nnoremap J mzJ`z
-
-
 " Quickediting
 nnoremap <silent>,ev :split $MYVIMRC<CR>
 nnoremap <leader>ba :split ~/.vim/archive.md<CR>
@@ -293,17 +289,18 @@ runtime functions/insert_spacedate.vim " <F5> will insert current date (yyyy-mm-
 
 " }}}
 " Mappings {{{
-runtime mappings/buffer_movement.vim          " Buffer movement (common [b, ]b, [B, ]B)
-runtime mappings/c_up_c_down_to_move_text.vim " <C-Up> and <C-Down> to move selected lines up and down
-runtime mappings/esc_with_jk.vim              " emulare ESC with jk
-runtime mappings/fullscreentoggle.vim         " <F12> Fullscreen-Toggle
-runtime mappings/markdown_to_html.vim         " Converting markdown to HTML (<leader>md)
-runtime mappings/moving_wrapped_lines.vim     " Use hjkl in wrapped-lined files
-runtime mappings/whitespace_jumping.vim       " Whitespace jumping with f|F<space>
+runtime mappings/buffer_movement.vim             " Buffer movement (common [b, ]b, [B, ]B)
+runtime mappings/c_up_c_down_to_move_text.vim    " <C-Up> and <C-Down> to move selected lines up and down
+runtime mappings/esc_with_jk.vim                 " emulare ESC with jk
+runtime mappings/fullscreentoggle.vim            " <F12> Fullscreen-Toggle
+runtime mappings/markdown_to_html.vim            " Converting markdown to HTML (<leader>md)
+runtime mappings/moving_wrapped_lines.vim        " Use hjkl in wrapped-lined files
+runtime mappings/whitespace_jumping.vim          " Whitespace jumping with f|F<space>
 runtime mappings/commenting_and_uncommenting.vim " in visual mode press ,c (comment) and  ,u (uncomment)
 
 runtime mappings/commandline.vim
 runtime mappings/copy_paste_from_clipboard.vim
+runtime mappings/keep_cursor_joining_lines.vim
 
 " }}}
 " Runtime settings {{{
