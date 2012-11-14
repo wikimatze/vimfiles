@@ -239,9 +239,6 @@ vnoremap <S-Tab> <gv
 " Keep the cursor in place while joining lines
 nnoremap J mzJ`z
 
-" emulate ESC with jk
-inoremap jk <ESC>
-cnoremap jk <C-C>
 
 " Quickediting
 nnoremap <silent>,ev :split $MYVIMRC<CR>
@@ -284,11 +281,6 @@ noremap <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of eac
 noremap <leader>_ :%s/_//g<CR>                   " delete all _
 noremap <leader>rt :%s/\\t/  /g<CR>
 
-" Buffer changing
-nnoremap <silent> [b :bprevious<CR>
-nnoremap <silent> ]b :bnext<CR>
-nnoremap <silent> [B :bfirst<CR>
-nnoremap <silent> ]B :blast<CR>
 
 " Fixing the & command to save the flags of last substitution
 noremap & :&&<CR>
@@ -319,20 +311,15 @@ runtime functions/trailing_whitespaces_removal.vim
 
 " }}}
 " Mappings {{{
-" Converting markdown to HTML (<leader>md)
-runtime mappings/markdown_to_html.vim
-
-" <C-Up> and <C-Down> to move selected lines up and down
-runtime mappings/c_up_c_down_to_move_text.vim
+runtime mappings/buffer_movement.vim          " Buffer movement (common [b, ]b, [B, ]B)
+runtime mappings/c_up_c_down_to_move_text.vim " <C-Up> and <C-Down> to move selected lines up and down
+runtime mappings/fullscreentoggle.vim         " <F12> Fullscreen-Toggle
+runtime mappings/markdown_to_html.vim         " Converting markdown to HTML (<leader>md)
+runtime mappings/moving_wrapped_lines.vim     " Use hjkl in wrapped-lined files
+runtime mappings/esc_with_jk.vim  " emulare ESC with jk
 
 runtime mappings/commandline.vim
 runtime mappings/copy_paste_from_clipboard.vim
-
-" <F12> Fullscreen-Toggle
-runtime mappings/fullscreentoggle.vim
-
-" Use hjkl in wrapped-lined files
-runtime mappings/moving_wrapped_lines.vim
 
 " }}}
 " Runtime settings {{{
