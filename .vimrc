@@ -228,11 +228,6 @@ set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮,trail:·
 " --------------------------------------------------------------------------------}}}
 " Convenience mappings -----------------------------------------------------------{{{
 
-" Tab/Shift+Tab indent/unindent the highlighted block
-" <Tab> perform > and <Shift-Tab> performs <
-vnoremap <Tab> >gv
-vnoremap <S-Tab> <gv
-
 " Char replacement (good for creating vocabularly)
 noremap <leader>bldots :%s/=/\& \\ldots \&/g<CR> " replace = through & \ldots &
 noremap <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of each line
@@ -275,6 +270,7 @@ runtime mappings/markdown_to_html.vim            " Converting markdown to HTML (
 runtime mappings/moving_wrapped_lines.vim        " Use hjkl in wrapped-lined files
 runtime mappings/quickediting.vim                " ,ba; ,bm; ,br; ,ev to edit files of vim repos
 runtime mappings/whitespace_jumping.vim          " Whitespace jumping with f|F<space>
+runtime mappings/tab_shifting.vim                " <Tab>|<S-Tab> in visual to tab indent right|left
 
 " Press \cd to change the pwd to the current file you are in
 nnoremap \cd :lcd %:h<CR>
@@ -292,6 +288,7 @@ xnoremap & :&&<CR>
 runtime mappings/commandline.vim
 runtime mappings/copy_paste_from_clipboard.vim
 runtime mappings/keep_cursor_joining_lines.vim
+
 
 
 " }}}
