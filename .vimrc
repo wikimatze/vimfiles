@@ -253,21 +253,8 @@ noremap <silent> ,u :<C-B>sil <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>/
 " Press \cd to change the pwd to the current file you are in
 nnoremap \cd :lcd %:h<CR>
 
-" Use hjkl in wrapped-lined files
-
-" Insert date in the form yyyy-mm-dd at the end of a line
-function! InsertSpaceDate()
-  let @x = " "
-  let @x = @x . strftime("%Y-%m-%d")
-  normal! "xp
-endfunction
-
-" Press F5 to insert the current date at the end of the line
-noremap <silent> <F5> $:call InsertSpaceDate()<CR>
-
 " Spellchecker: press ,s to toogle between spellchecker
 nnoremap <silent> <leader>s :set spell!<CR>
-
 
 " Folding Toggling with <space>
 nnoremap <space> za
@@ -305,6 +292,7 @@ au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
 
 runtime functions/search_for_current_selection.vim
 runtime functions/trailing_whitespaces_removal.vim
+runtime functions/insert_spacedate.vim " <F5> will insert current date (yyyy-mm-dd) at EOL with space
 
 " }}}
 " Mappings {{{
