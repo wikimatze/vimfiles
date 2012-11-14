@@ -246,9 +246,6 @@ nnoremap <leader>ba :split ~/.vim/archive.md<CR>
 nnoremap <leader>bm :split ~/.vim/mappings.md<CR>
 nnoremap <leader>br :split ~/.vim/README.md<CR>
 
-" comment in visual mode press ,c (for uncomment ,u)
-noremap <silent> ,c :<C-B>sil <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:noh<CR>
-noremap <silent> ,u :<C-B>sil <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:noh<CR>
 
 " Press \cd to change the pwd to the current file you are in
 nnoremap \cd :lcd %:h<CR>
@@ -303,6 +300,7 @@ runtime mappings/fullscreentoggle.vim         " <F12> Fullscreen-Toggle
 runtime mappings/markdown_to_html.vim         " Converting markdown to HTML (<leader>md)
 runtime mappings/moving_wrapped_lines.vim     " Use hjkl in wrapped-lined files
 runtime mappings/whitespace_jumping.vim       " Whitespace jumping with f|F<space>
+runtime mappings/commenting_and_uncommenting.vim " in visual mode press ,c (comment) and  ,u (uncomment)
 
 runtime mappings/commandline.vim
 runtime mappings/copy_paste_from_clipboard.vim
