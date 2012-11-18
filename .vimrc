@@ -101,9 +101,6 @@ set noautochdir                             " don't change the current working d
 
 let &scrolloff=999-&scrolloff " current view is always centered
 
-" when switching between windows, automatically write all buffers
-autocmd FocusLost * :silent! wall
-
 " Resize splits when the window is resized
 autocmd VimResized * :wincmd =
 autocmd BufNew * if winnr('$') == 1 | tabmove99 | endif " move tabs to the end for new, single buffers (exclude splits)

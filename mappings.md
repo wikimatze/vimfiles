@@ -101,9 +101,9 @@
 - `<C-x><C-i>` ... include file keywords
 - `<C-x><C-]>` ... tags file keywords
 - `<C-x><C-k>` ... dictionary lookup
-- `<C-x-C-l>` ... complete a whole line (good for matching complete function calls
-- `<C-x-C-f>` ... filename completion for the current directory
-- `<C-x-C-o>` ... omnicomplete with context awareness
+- `<C-x><C-l>` ... complete a whole line (good for matching complete function calls
+- `<C-x><C-f>` ... filename completion for the current directory
+- `<C-x><C-o>` ... omnicomplete with context awareness
 - `<C-e>` ... exit from autocompletion popup
 
 
