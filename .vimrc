@@ -111,19 +111,6 @@ set fillchars="" " get rid of silly characters in separators in the CMD
 " the text and replacing it
 set cpoptions+=$
 
-
-" Cursorline {{{
-
-" Only show cursorline in the current window and in normal mode.
-augroup cline
-    au!
-    au WinLeave * set nocursorline
-    au WinEnter * set cursorline
-    au InsertEnter * set nocursorline
-    au InsertLeave * set cursorline
-augroup END
-
-" }}}
 " Trailing whitespace {{{
 
 " only shown when not in insert mode
@@ -306,5 +293,6 @@ runtime settings/environmens.vim
 runtime settings/keyword_completion.vim
 
 runtime macros/matchit.vim " enable better matching for % command
+
 " }}}
 
