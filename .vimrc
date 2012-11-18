@@ -71,10 +71,10 @@ set noerrorbells                            " don't make noise on error messages
 set ttyfast                                 " fast terminal connection, more characters will be sent to the screen
 set ruler                                   " show the line and column number of the cursor position
 set backspace=indent,eol,start              " allow backspacing over everything in insert mode
-set nonumber                                " don't display line numbers (takes too much space)
+set number                                " don't display line numbers (takes too much space)
 set numberwidth=2                           " using only 2 column for numberline presentation
 set ch=1                                    " height of the command line at the bottom
-set history=5000                            " keep 5000 lines of command line history
+set history=5000                            " number of lines for command line history
 set shell=/usr/bin/zsh                      " using zsh for running Ex commands
 set lazyredraw                              " don't update the display while executing macros, registers, etc.
 set showbreak=↪                             " show the symbol for wrapped lines
