@@ -292,6 +292,9 @@ runtime settings/environmens.vim
 " Keyword completion
 runtime settings/keyword_completion.vim
 
+" Styling of statusline
+runtime settings/statusline.vim
+
 runtime macros/matchit.vim " enable better matching for % command
 
 " }}}
