@@ -59,29 +59,27 @@ endif
 " General settings ---------------------------------------------------------------{{{
 
 set encoding=utf-8                          " terminal encoding
-set modeline                                " don't look how many lines are the beginning and the end of the file
+set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
+set number                                  " display line numbers
+set modeline                                " check first lines of files for style information
+set noerrorbells                            " turn of nasty error sounds
 set autoindent                              " Copy indent from current line when starting a new line
 set autoread                                " automatically read a file that has changed on disk
-set showmode                                " show the current modal mode
-set showcmd                                 " show (partial) command in the last line of the screen
-set noerrorbells                            " don't make noise on error messages
-set ttyfast                                 " fast terminal connection, more characters will be sent to the screen
-set ruler                                   " show the line and column number of the cursor position
-set backspace=indent,eol,start              " allow backspacing over everything in insert mode
-set number                                " don't display line numbers (takes too much space)
-set numberwidth=2                           " using only 2 column for number line presentation
-set ch=1                                    " height of the command line at the bottom
+set showbreak=↪                             " show the symbol for wrapped lines
 set history=5000                            " number of lines for command line history
 set shell=/usr/bin/zsh                      " using zsh for running Ex commands
+set showmode                                " show the current modal mode
+set showcmd                                 " show (partial) command in the last line of the screen
+set nowarn                                  " do not warn, when shell command update the file you edit in Vim
+set backspace=indent,eol,start              " allow backspacing over everything in insert mode
+set ch=1                                    " height of the command line at the bottom
+set ruler                                   " show the line and column number of the cursor position
+set numberwidth=2                           " using only 2 column for number line presentation
 set lazyredraw                              " don't update the display while executing macros, registers, etc.
-set showbreak=↪                             " show the symbol for wrapped lines
+set ttyfast                                 " fast terminal connection, more characters will be sent to the screen
 set splitbelow                              " splitting a window will put the new window below the current one
 set splitright                              " splitting a window will put the new window right the current one
-set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
-set nowarn                                  " do not warn, when shell command update the file you edit in Vim
-set shell=/bin/bash                         " always use sh when executing commands with :!
 set synmaxcol=200                           " better scrolling for long lines
-set suffixesadd=.rb                         " are used when searching for files to open with 'gf'
 set spelllang=en_us                         " default language for spell checker
 set spellfile=$HOME/.vim/spell/en.utf-8.add " spell file for additional correct English words
 set spellsuggest=best,7                    " only display the 10 best suggestions
