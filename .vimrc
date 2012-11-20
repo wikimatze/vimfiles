@@ -69,7 +69,7 @@ set ttyfast                                 " fast terminal connection, more cha
 set ruler                                   " show the line and column number of the cursor position
 set backspace=indent,eol,start              " allow backspacing over everything in insert mode
 set number                                " don't display line numbers (takes too much space)
-set numberwidth=2                           " using only 2 column for numberline presentation
+set numberwidth=2                           " using only 2 column for number line presentation
 set ch=1                                    " height of the command line at the bottom
 set history=5000                            " number of lines for command line history
 set shell=/usr/bin/zsh                      " using zsh for running Ex commands
@@ -84,12 +84,11 @@ set shell=/bin/bash                         " always use sh when executing comma
 set synmaxcol=200                           " better scrolling for long lines
 set spelllang=en_us                         " default language for spell checker
 set spellfile=$HOME/.vim/spell/en.utf-8.add " spell file for additional correct English words
-set spellsuggest=best,10                    " only display the 10 best suggestions
-set suffixesadd=.rb                         " are used when searching for files to open with 'gf'
+set spellsuggest=best,7                    " only display the 10 best suggestions
 set viminfo='1000000,f1                     " save marks for 1 million files ('1000000), save global marks
 set ignorecase                              " case insensitive search
-set smartcase                               " canceling out ignorecase setting that we include an uppercase (\C) letter in the search
-set infercase                               " autocomplete in Insert Mode is not case insensitve
+set smartcase                               " canceling out ignore case setting that we include an uppercase (\C) letter in the search
+set infercase                               " autocompletion in Insert Mode is not case insensitive
 set incsearch                               " incremental searching -> highlight matches when writing starts
 set hlsearch                                " highlight all finding for a search
 set shortmess+=I                            " don't show startup message when opening Vim without a file
