@@ -88,7 +88,9 @@ set hlsearch                                " highlight all finding for a search
 set shortmess+=I                            " don't show startup message when opening Vim without a file
 set noautochdir                             " don't change the current working directory when opening a new file
 set cpoptions+=$                            " `cw` put a $ at the end instead of pure deletion
-set fillchars=                              "                                                                                          "  " get rid of silly characters in separators in the CMD
+set completeopt=longest,menuone,preview     " modes for auto completion in insert mode
+
+set fillchars=""                            " get rid of silly characters in separators in the CMD
 
 let &scrolloff=999-&scrolloff " current view is always centered
 
@@ -96,11 +98,9 @@ let &scrolloff=999-&scrolloff " current view is always centered
 autocmd VimResized * :wincmd =
 autocmd BufNew * if winnr('$') == 1 | tabmove99 | endif " move tabs to the end for new, single buffers (exclude splits)
 
-
 runtime options/wildmenu_completion.vim
 " Insert mode completion {{{
 
-set completeopt=longest,menuone,preview
 
 " }}}
 " backups {{{
