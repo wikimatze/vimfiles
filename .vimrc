@@ -2,7 +2,7 @@
 
 set nocompatible   " be iMproved
 filetype off       " required! for vundle
-filetype plugin on " Enable file type-specific plugins
+filetype plugin on " enable file type-specific plugins
 
 set runtimepath+=~/.vim/bundle/vundle/ " add vundle to runtime path
 call vundle#rc()
@@ -43,10 +43,10 @@ Bundle 'xolox/vim-shell'
 Bundle 'zaiste/tmux.vim'
 
 " }}}
-" These settings need to come after vundle
-syntax on          " Enable syntax highlighting
-filetype on        " Enable file type detection
-filetype indent on " Enable file type-specific indenting
+" these settings need to come after vundle
+syntax on          " enable syntax highlighting
+filetype on        " enable file type detection
+filetype indent on " enable file type-specific indenting
 " --------------------------------------------------------------------------------}}}
 "
 " defining custom omnicompletion functions
@@ -100,16 +100,6 @@ set fillchars="" " get rid of silly characters in separators in the CMD
 " the text and replacing it
 set cpoptions+=$
 
-" Trailing whitespace {{{
-
-" only shown when not in insert mode
-augroup trailing
-    au!
-    au InsertEnter * :set listchars-=trail:⌴
-    au InsertLeave * :set listchars+=trail:⌴
-augroup END
-
-" }}}
 " Wildmenu completion {{{
 
 if has("wildmenu")
