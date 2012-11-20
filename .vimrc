@@ -78,7 +78,7 @@ set splitright                              " splitting a window will put the ne
 set synmaxcol=200                           " better scrolling for long lines
 set spelllang=en_us                         " default language for spell checker
 set spellfile=$HOME/.vim/spell/en.utf-8.add " spell file for additional correct English words
-set spellsuggest=best,7                    " only display the 10 best suggestions
+set spellsuggest=best,7                     " only display the 10 best suggestions
 set viminfo='1000000,f1                     " save marks for 1 million files ('1000000), save global marks
 set ignorecase                              " case insensitive search
 set smartcase                               " canceling out ignore case setting that we include an uppercase (\C) letter in the search
@@ -87,6 +87,8 @@ set incsearch                               " incremental searching -> highlight
 set hlsearch                                " highlight all finding for a search
 set shortmess+=I                            " don't show startup message when opening Vim without a file
 set noautochdir                             " don't change the current working directory when opening a new file
+set cpoptions+=$                            " `cw` put a $ at the end instead of pure deletion
+set fillchars=                              "                                                                                          "  " get rid of silly characters in separators in the CMD
 
 let &scrolloff=999-&scrolloff " current view is always centered
 
@@ -94,25 +96,8 @@ let &scrolloff=999-&scrolloff " current view is always centered
 autocmd VimResized * :wincmd =
 autocmd BufNew * if winnr('$') == 1 | tabmove99 | endif " move tabs to the end for new, single buffers (exclude splits)
 
-set fillchars="" " get rid of silly characters in separators in the CMD
 
-" Make the 'cw' and like commands put a $ at the end instead of just deleting
-" the text and replacing it
-set cpoptions+=$
-
-" Wildmenu completion {{{
-
-if has("wildmenu")
-    set wildmenu " enable a navigable list of suggestions
-    set wildmode=full " zsh full-match, starts over with first match after last match reached
-    set wildignore+=.git,.hg,.svn                 " version control
-    set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png " images
-    set wildignore+=*.aux,*.out,*.toc             " LaTeX intermediate files
-    set wildignore+=.DS_Store                     " fucking Mac-Stuff
-    set wildignore+=*~,*.swp,*.tmp                " tmp and backup files
-endif
-
-" }}}
+runtime options/wildmenu_completion.vim
 " Insert mode completion {{{
 
 set completeopt=longest,menuone,preview
