@@ -78,10 +78,10 @@ set showbreak=↪                             " show the symbol for wrapped line
 set splitbelow                              " splitting a window will put the new window below the current one
 set splitright                              " splitting a window will put the new window right the current one
 set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
-set nomodeline                              " frequent security hole
 set nowarn                                  " do not warn, when shell command update the file you edit in Vim
 set shell=/bin/bash                         " always use sh when executing commands with :!
 set synmaxcol=200                           " better scrolling for long lines
+set suffixesadd=.rb                         " are used when searching for files to open with 'gf'
 set spelllang=en_us                         " default language for spell checker
 set spellfile=$HOME/.vim/spell/en.utf-8.add " spell file for additional correct English words
 set spellsuggest=best,7                    " only display the 10 best suggestions
