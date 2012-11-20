@@ -41,14 +41,11 @@ Bundle 'xolox/vim-notes'
 Bundle 'xolox/vim-shell'
 Bundle 'zaiste/tmux.vim'
 
-" --------------------------------------------------------------------------------}}}
-" File type detection ------------------------------------------------------------{{{
-
+" These settings need to come after vundle
 syntax on          " Enable syntax highlighting
 filetype on        " Enable file type detection
 filetype indent on " Enable file type-specific indenting
-
-" -------------------------------------------------------------------------------}}} "
+" --------------------------------------------------------------------------------}}}
 " Omnicompletion-----------------------------------------------------------------{{{
 
 " set omnicomplete only if a specific plugin does not exist for this filetype
@@ -245,28 +242,7 @@ runtime mappings/keep_cursor_joining_lines.vim
 " Runtime settings {{{
 
 " Plugin settings and mappings
-runtime settings/ctrlp.vim
-runtime settings/dbext.vim
-runtime settings/delimate.vim
-runtime settings/index_search.vim
-runtime settings/netrw.vim
-runtime settings/notes.vim
-runtime settings/snipmate.vim
-runtime settings/syntastic.vim
-runtime settings/tabularize.vim
-runtime settings/vim_ruby.vim
-runtime settings/vim_shell.vim
-runtime settings/vim_slime.vim
-runtime settings/yankring.vim
-
-" Environments (Mac/Unix/GUI/Console)
-runtime settings/environmens.vim
-
-" Keyword completion
-runtime settings/keyword_completion.vim
-
-" Styling of statusline
-runtime settings/statusline.vim
+runtime! settings/*.vim
 
 runtime macros/matchit.vim " enable better matching for % command
 
