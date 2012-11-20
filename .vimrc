@@ -86,13 +86,12 @@ set spelllang=en_us                         " default language for spell checker
 set spellfile=$HOME/.vim/spell/en.utf-8.add " spell file for additional correct English words
 set spellsuggest=best,10                    " only display the 10 best suggestions
 set suffixesadd=.rb                         " are used when searching for files to open with 'gf'
-set title                                   " show title in console title
 set viminfo='1000000,f1                     " save marks for 1 million files ('1000000), save global marks
 set ignorecase                              " case insensitive search
 set smartcase                               " canceling out ignorecase setting that we include an uppercase (\C) letter in the search
 set infercase                               " autocomplete in Insert Mode is not case insensitve
+set incsearch                               " incremental searching -> highlight matches when writing starts
 set hlsearch                                " highlight all finding for a search
-set incsearch                               " do incremental searching, that means search after the string when you begin writing
 set shortmess+=I                            " don't show startup message when opening Vim without a file
 set noautochdir                             " don't change the current working directory when opening a new file
 
