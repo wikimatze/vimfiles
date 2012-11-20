@@ -191,8 +191,6 @@ au! BufRead,BufNewFile *.textile set filetype=textile
 au! BufRead,BufNewFile *.tmux.conf set filetype=tmux
 au! BufRead,BufNewFile *.yml set filetype=yaml
 
-au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
-
 " --------------------------------------------------------------------------------}}}
 " Functions {{{
 
