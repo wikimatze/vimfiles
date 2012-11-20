@@ -9,7 +9,8 @@ call vundle#rc()
 
 let g:vundle_default_git_proto = 'git' " use git protocol instead of https when building absolute repo URIs
 
-" bundles
+" bundles {{{
+
 Bundle 'Raimondi/delimitMate'
 Bundle 'benmills/vimux'
 Bundle 'ecomba/vim-ruby-refactoring'
@@ -41,21 +42,16 @@ Bundle 'xolox/vim-notes'
 Bundle 'xolox/vim-shell'
 Bundle 'zaiste/tmux.vim'
 
+" }}}
 " These settings need to come after vundle
 syntax on          " Enable syntax highlighting
 filetype on        " Enable file type detection
 filetype indent on " Enable file type-specific indenting
 " --------------------------------------------------------------------------------}}}
-" Omnicompletion-----------------------------------------------------------------{{{
+"
+" defining custom omnicompletion functions
+runtime options/omnicompletion.vim
 
-" set omnicomplete only if a specific plugin does not exist for this filetype
-if has("autocmd") && exists("+omnifunc")
-autocmd Filetype *
-    \	if &omnifunc == "" |
-    \		setlocal omnifunc=syntaxcomplete#Complete |
-    \	endif
-endif
-" --------------------------------------------------------------------------------}}}
 " General settings ---------------------------------------------------------------{{{
 
 set encoding=utf-8                          " terminal encoding
