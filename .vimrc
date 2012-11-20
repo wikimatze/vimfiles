@@ -150,18 +150,6 @@ set noswapfile                  " don't save swap files
 set updatetime=2000             " Write swap files after 2 seconds of inactivity.
 
 " }}}
-" Line return {{{
-
-" When editing a file, always jump to the last known cursor position.
-augroup line_return
-    au!
-    au BufReadPost *
-        \ if line("'\"") > 0 && line("'\"") <= line("$") |
-        \     execute 'normal! g`"zvzz' |
-        \ endif
-augroup END
-
-" }}}
 " Tabs, wraps, spacing {{{
 
 set tabstop=2      " how many columns a tab counts
@@ -181,21 +169,6 @@ let mapleader = "," " change the leader to be a comma vs. backslash if not given
 
 set background=dark
 colorscheme badwolf
-
-" }}}
-" Statusline {{{
-
-" always display the statusline
-set laststatus=2
-
-"Set the status line the way i like it
-set statusline=%f                            " name of the current file
-set statusline+=\ %y                         " Filetype of the file
-set statusline+=\ %m                         " show, if the file was modified
-set statusline+=\ %r%{fugitive#statusline()} " show the current git branch
-set statusline+=\ Line:%l/%L[%p%%]           " l .. show the current line, L .. total line number, p ..  percentage
-set statusline+=\ Col:%v                     " show the current column
-set statusline+=\ Buf:#%n                    " show the current buffer
 
 " }}}
 " List char {{{
