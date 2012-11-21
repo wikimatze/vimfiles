@@ -1,3 +1,3 @@
-nnoremap <leader>f f<space>
-nnoremap <leader>F F<space>
+nn <leader>f f<space>
+nn <leader>F F<space>
 

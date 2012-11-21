@@ -1,3 +1,3 @@
-vnoremap <Tab> >gv
-vnoremap <S-Tab> <gv
+vn<Tab> >gv
+vn <S-Tab> <gv
 

@@ -1,5 +1,5 @@
-nnoremap <silent> [b :bprevious<CR>
-nnoremap <silent> ]b :bnext<CR>
-nnoremap <silent> [B :bfirst<CR>
-nnoremap <silent> ]B :blast<CR>
+nn <silent> [b :bprevious<CR>
+nn <silent> ]b :bnext<CR>
+nn <silent> [B :bfirst<CR>
+nn <silent> ]B :blast<CR>
 

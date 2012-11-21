@@ -1,3 +1,3 @@
-inoremap jk <ESC>
-cnoremap jk <C-C>
+ino jk <ESC>
+cno jk <C-C>
 
