@@ -17,6 +17,8 @@
 - `$` ... go the end of a row (the buck ends here)
 - `<C-u>` ... scroll **upper** (as a picture: scroll down half of the screen)
 - `<C-d>` ... scroll **down** (as a picture: scroll up half of the screen)
+- `<C-b>` ... scroll backwards a whole page (not only the visible part)
+- `<C-f>` ... scroll forwards a whole page (not only in the visible part)
 - `}` ... move to end of next paragraph or code block
 - `{` ... move to start of previous paragraph or code block
 - `)`... move the cursor forward to the next sentence
@@ -24,6 +26,7 @@
 - `gg` ... go to the beginning of a file (beginning of the giggle)
 - `G` ... go to the end of a file
 - `ddp` ... will switch two lines
+
 
 # Edit
 - `I` ... go to the beginning of line in edit mode
