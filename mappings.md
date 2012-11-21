@@ -17,9 +17,6 @@
 - `$` ... go the end of a row (the buck ends here)
 - `<C-u>` ... scroll **upper** (as a picture: scroll down half of the screen)
 - `<C-d>` ... scroll **down** (as a picture: scroll up half of the screen)
-- `H` ... jump to the highest visible part
-- `L` ... jump to the lowest position of the visible part
-- `M` ... jump to the middle position of the visible part
 - `}` ... move to end of next paragraph or code block
 - `{` ... move to start of previous paragraph or code block
 - `)`... move the cursor forward to the next sentence
