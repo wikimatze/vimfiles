@@ -1,6 +1,7 @@
 au! BufRead,BufNewFile *.erb set filetype=eruby
 au! BufRead,BufNewFile *.haml set filetype=haml
 au! BufNewFile,BufRead *.m*down setlocal filetype=markdown
+au! BufNewFile,BufRead *.md setlocal filetype=markdown
 au! BufRead,BufNewFile *.js set filetype=javascript
 au! BufRead,BufNewFile *.json set filetype=json
 au! BufRead,BufNewFile *.rb set filetype=ruby
