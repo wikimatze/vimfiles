@@ -4,7 +4,7 @@ set nocompatible   " be iMproved
 filetype off       " required! for vundle
 filetype plugin on " enable file type-specific plugins
 
-set runtimepath+=~/.vim/bundle/vundle/ " add vundle to runtime path
+set runtimepath+=~/.vim/bundle/vundle/ " add vundle to ru path
 call vundle#rc()
 
 let g:vundle_default_git_proto = 'git' " use git protocol instead of https when building absolute repo URIs
@@ -50,7 +50,7 @@ filetype indent on " enable file type-specific indenting
 " --------------------------------------------------------------------------------}}}
 "
 " defining custom omnicompletion functions
-runtime options/omnicompletion.vim
+ru options/omnicompletion.vim
 
 " General settings ---------------------------------------------------------------{{{
 
@@ -97,88 +97,71 @@ set wrap                                    " when lines are longer the width of
 set textwidth=100                           " maximum of text that is being inserted
 
 set fillchars=""                            " get rid of silly characters in separators in the CMD
-
-let &scrolloff=999-&scrolloff " current view is always centered
-
-
-" Resize splits when the window is resized
-autocmd VimResized * :wincmd =
-autocmd BufNew * if winnr('$') == 1 | tabmove99 | endif " move tabs to the end for new, single buffers (exclude splits)
-
-runtime options/wildmenu_completion.vim
-runtime options/backups.vim
-
-" Leader {{{
-
 let mapleader = "," " change the leader to be a comma vs. backslash if not given
 
-" }}}
-" Color scheme {{{
+let &scrolloff=999-&scrolloff " current view is always centered
 
 set background=dark
 colorscheme badwolf
 
-" }}}
-" List char {{{
+" Resize splits when the window is resized
+au VimResized * :wincmd =
+au BufNew * if winnr('$') == 1 | tabmove99 | endif " move tabs to the end for new, single buffers (exclude splits)
 
-set list " enable list mode - symbols for tabs, trails, ...
-" extends shows when a file name goes out the view (you have to scroll like in NERDTree)
-" trails - whitespaces
-set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮,trail:⌴
+ru! options/*.vim
 
-" }}}
 " --------------------------------------------------------------------------------}}}
 " Functions {{{
 
-runtime functions/search_for_current_selection.vim
-runtime functions/trailing_whitespaces_removal.vim
-runtime functions/insert_spacedate.vim " <F5> will insert current date (yyyy-mm-dd) at EOL with space
+ru functions/search_for_current_selection.vim
+ru functions/trailing_whitespaces_removal.vim
+ru functions/insert_spacedate.vim " <F5> will insert current date (yyyy-mm-dd) at EOL with space
 
 " }}}
 " Mappings {{{
 
-runtime mappings/buffer_movement.vim             " Buffer movement (common [b, ]b, [B, ]B)
-runtime mappings/c_up_c_down_to_move_text.vim    " <C-Up> and <C-Down> to move selected lines up and down
-runtime mappings/commenting_and_uncommenting.vim " in visual mode press ,c (comment) and  ,u (uncomment)
-runtime mappings/esc_with_jk.vim                 " emulare ESC with jk
-runtime mappings/fullscreentoggle.vim            " <F12> Fullscreen-Toggle
-runtime mappings/markdown_to_html.vim            " Converting markdown to HTML (<leader>md)
-runtime mappings/moving_wrapped_lines.vim        " Use hjkl in wrapped-lined files
-runtime mappings/quickediting.vim                " ,ba; ,bm; ,br; ,ev to edit files of vim repos
-runtime mappings/whitespace_jumping.vim          " Whitespace jumping with f|F<space>
-runtime mappings/tab_shifting.vim                " <Tab>|<S-Tab> in visual to tab indent right|left
+ru mappings/buffer_movement.vim             " Buffer movement (common [b, ]b, [B, ]B)
+ru mappings/c_up_c_down_to_move_text.vim    " <C-Up> and <C-Down> to move selected lines up and down
+ru mappings/commenting_and_uncommenting.vim " in visual mode press ,c (comment) and  ,u (uncomment)
+ru mappings/esc_with_jk.vim                 " emulare ESC with jk
+ru mappings/fullscreentoggle.vim            " <F12> Fullscreen-Toggle
+ru mappings/markdown_to_html.vim            " Converting markdown to HTML (<leader>md)
+ru mappings/moving_wrapped_lines.vim        " Use hjkl in wrapped-lined files
+ru mappings/quickediting.vim                " ,ba; ,bm; ,br; ,ev to edit files of vim repos
+ru mappings/whitespace_jumping.vim          " Whitespace jumping with f|F<space>
+ru mappings/tab_shifting.vim                " <Tab>|<S-Tab> in visual to tab indent right|left
 
 " Press \cd to change the pwd to the current file you are in
-nnoremap \cd :lcd %:h<CR>
+nn \cd :lcd %:h<CR>
 
 " Spellchecker: press ,s to toogle between spellchecker
-nnoremap <silent> <leader>s :set spell!<CR>
+nn <silent> <leader>s :set spell!<CR>
 
 " Folding Toggling with <space>
-nnoremap <space> za
+nn <space> za
 
 " Fixing the & command to save the flags of last substitution
-noremap & :&&<CR>
-xnoremap & :&&<CR>
+no & :&&<CR>
+xn & :&&<CR>
 
 
 " Char replacement (good for creating vocabularly)
-noremap <leader>bldots :%s/=/\& \\ldots \&/g<CR> " replace = through & \ldots &
-noremap <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of each line
-noremap <leader>_ :%s/_//g<CR>                   " delete all _
-noremap <leader>rt :%s/\\t/  /g<CR>
+no <leader>bldots :%s/=/\& \\ldots \&/g<CR> " replace = through & \ldots &
+no <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of each line
+no <leader>_ :%s/_//g<CR>                   " delete all _
+no <leader>rt :%s/\\t/  /g<CR>
 
-runtime mappings/commandline.vim
-runtime mappings/copy_paste_from_clipboard.vim
-runtime mappings/keep_cursor_joining_lines.vim
+ru mappings/commandline.vim
+ru mappings/copy_paste_from_clipboard.vim
+ru mappings/keep_cursor_joining_lines.vim
 
 " }}}
-" Runtime settings {{{
+" runtime settings {{{
 
 " Plugin settings and mappings
-runtime! settings/*.vim
+ru! settings/*.vim
 
-runtime macros/matchit.vim " enable better matching for % command
+ru macros/matchit.vim " enable better matching for % command
 
 " }}}
 
