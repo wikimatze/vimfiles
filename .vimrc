@@ -89,41 +89,25 @@ set shortmess+=I                            " don't show startup message when op
 set noautochdir                             " don't change the current working directory when opening a new file
 set cpoptions+=$                            " `cw` put a $ at the end instead of pure deletion
 set completeopt=longest,menuone,preview     " modes for auto completion in insert mode
+set tabstop=2                               " how many columns a tab counts
+set shiftwidth=2                            " how many columns text is indented with the indent operations (<< and >>)
+set softtabstop=2                           " how many columns
+set expandtab                               " hitting tab in insert mode will produce number in spaces instead of tabs
+set wrap                                    " when lines are longer the width of the window they will wrapped
+set textwidth=100                           " maximum of text that is being inserted
 
 set fillchars=""                            " get rid of silly characters in separators in the CMD
 
 let &scrolloff=999-&scrolloff " current view is always centered
+
 
 " Resize splits when the window is resized
 autocmd VimResized * :wincmd =
 autocmd BufNew * if winnr('$') == 1 | tabmove99 | endif " move tabs to the end for new, single buffers (exclude splits)
 
 runtime options/wildmenu_completion.vim
-" Insert mode completion {{{
+runtime options/backups.vim
 
-
-" }}}
-" backups {{{
-
-set backupext=~                 " backup file extension
-set backupdir=$HOME/.vim/backup " backups are written to $HOME/.backup
-set backupcopy=yes              " keep attributes of the original file
-set backup                      " save files after close
-set writebackup                 " make a backup of the original file when writing
-set noswapfile                  " don't save swap files
-set updatetime=2000             " Write swap files after 2 seconds of inactivity.
-
-" }}}
-" Tabs, wraps, spacing {{{
-
-set tabstop=2      " how many columns a tab counts
-set shiftwidth=2   " how many columns text is indented with the indent operations (<< and >>)
-set softtabstop=2  " how many columns
-set expandtab      " hitting tab in insert mode will produce number in spaces instead of tabs
-set wrap           " when lines are longer the the width of the window they will wrapped
-set textwidth=100  " maximum of text that is being inserted
-
-" }}}
 " Leader {{{
 
 let mapleader = "," " change the leader to be a comma vs. backslash if not given
