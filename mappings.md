@@ -2,37 +2,31 @@
 - `h`, `j`, `k`, `l` ...  left, below, top, right
 - `<C-o>` ... trace movements backwards in files
 - `<C-i>` ... trace movements forward in files
-- `w` ... go forward to the next word
-- `W` ... go forward to the next word via whitespace separation (no words are counted)
-- `e` ... go backwards to the end of the next word
-- `E` ... go to the previous word via whitespace separation (no words are counted)
-- `ge` ... go to the end of the previous word
-- `gE` ... go to the end of the previous word via whitespace separation (no words are counted)
-- `b` ... move backwards to the beginning of the word
-- `B` ... jump to previous word via whitespace separation (no words are counted)
+- `w` ... forwards to the next word
+- `W` ... forwards to the next word via whitespace separation (no words are counted)
+- `e` ... forwards to the end of the next word
+- `E` ... forwards to the end of the next word via whitespace separation (no words are counted)
+- `b` ... backwards to the beginning of the word
+- `B` ... backward to the beginning of the word via whitespace separation (no words are counted)
+- `ge` ... backward to the end of the previous word
+- `gE` ... backward to the end of the previous word via whitespace separation (no words are counted)
+- `%` ... jump to the fitting brackets of _(, {, [_
+- `10G` ... jump to line 10
+- `20|` ... go to column 20 of the current line
+- `^`| `0` | `_` ... go to the beginning of a line (think of anchored to the start)
+- `$` ... go the end of a row (the buck ends here)
+- `<C-u>` ... scroll **upper** (as a picture: scroll down half of the screen)
+- `<C-d>` ... scroll **down** (as a picture: scroll up half of the screen)
+- `H` ... jump to the highest visible part
+- `L` ... jump to the lowest position of the visible part
+- `M` ... jump to the middle position of the visible part
 - `}` ... move to end of next paragraph or code block
 - `{` ... move to start of previous paragraph or code block
-- `)`... move the cursor forward to the *next sentence*
-- `(` ... move the cursor forward to the *previous sentence*
-- `%` ... jump to the fitting  brackets of _(, {, [_
-- `10G` ... jump to line 10
-- `$` ... go the end of a row (the buck ends here)
-- `gg` ... go to the beginning of a file
+- `)`... move the cursor forward to the next sentence
+- `(` ... move the cursor forward to the previous sentence
+- `gg` ... go to the beginning of a file (beginning of the giggle)
 - `G` ... go to the end of a file
-- `^`| `0` | `_` ... go to the beginning of a line (think of anchored to the start)
 - `ddp` ... will switch two lines
-- `<C-U>` ... scroll upper (as a picture: scroll down half of the screen)
-- `<C-D>` ... scroll down (as a picture: scroll up half of the screen)
-- `H` ... jump to the highest visible part
-- `M` ... jump to the middle position of the visible part
-- `L` ... jump to the lowest position of the visible part
-- `<C-Left>` ... move one word back
-- `<C-Right>` ... move one word forward
-- `<C-b>` ... move to the beginning
-- `<C-e>` ... move to the end
-- `<C-c>` ... exit the command-line
-- `20|` ... go to column 20 of the current line
-
 
 # Edit
 - `I` ... go to the beginning of line in edit mode
@@ -81,6 +75,16 @@
 - `:r!` ... read the output of a command-line command and paste this in the text (e.g. `:r! ls`)
 - `sort` ... normal alphabetical
 - `sort!` ... inverse alphabetical
+
+
+# Command line
+- `<C-Left>` ... move one word back
+- `<C-Right>` ... move one word forward
+- `<C-b>` ... move one character backwards
+- `<C-f>` ... move one character forwards
+- `<C-e>` ... move to the end of the line
+- `<C-a>` ... move to the end of the line
+- `<C-c>` ... exit the command-line
 
 
 # Insert mode
