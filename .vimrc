@@ -47,11 +47,10 @@ Bundle 'zaiste/tmux.vim'
 syntax on          " enable syntax highlighting
 filetype on        " enable file type detection
 filetype indent on " enable file type-specific indenting
-" --------------------------------------------------------------------------------}}}
-"
+
 " defining custom omnicompletion functions
 ru options/omnicompletion.vim
-
+" --------------------------------------------------------------------------------}}}
 " General settings ---------------------------------------------------------------{{{
 
 set encoding=utf-8                          " terminal encoding
@@ -156,11 +155,9 @@ ru mappings/copy_paste_from_clipboard.vim
 ru mappings/keep_cursor_joining_lines.vim
 
 " }}}
-" runtime settings {{{
+" Plugin settings {{{
 
-" Plugin settings and mappings
 ru! settings/*.vim
-
 ru macros/matchit.vim " enable better matching for % command
 
 " }}}

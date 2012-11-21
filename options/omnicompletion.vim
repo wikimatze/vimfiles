@@ -1,7 +1,7 @@
 if has("autocmd") && exists("+omnifunc")
-autocmd Filetype *
+au Filetype *
     \	if &omnifunc == "" |
-    \		setlocal omnifunc=syntaxcomplete#Complete |
+    \		setl omnifunc=syntaxcomplete#Complete |
     \	endif
 endif
 
