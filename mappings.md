@@ -98,7 +98,7 @@
 - `<C-x><C-l>` ... complete a whole line (good for matching complete function calls
 - `<C-x><C-f>` ... filename completion for the current directory
 - `<C-x><C-o>` ... omnicomplete with context awareness
-- `<C-e>` ... exit from autocompletion popup
+- `<C-c> | <C-e>` ... exit from autocompletion pop up
 
 
 # Search and Replace
@@ -106,54 +106,31 @@
 - `/<CR>` ... jump forward to next match of same pattern
 - `?<pattern>` ... bottom-up search
 - `?<CR>` ... jump backward to next match of same pattern
-- `<C-r><C-w>` ... autocomplete when searching for words
-- `f{char}` ... forward to next occurrence of {char}
-- `t{char}` ... forward to the character before next occurrence of {char}
-- `F{char}` ... backward to next occurrence of {char}
-- `T{char}` ... backward to the character after the previous occurrence of {char}
-- `;` ... will run the last search command forward
-- `,` ... will run the last search command backward
-- `*` ... search after the word under the cursor (`top-down`)
-- `#` ... search after the word under the cursor (`bottom-up`)
 - `n` ... jump to the next matching (direction `forward`)
 - `N` ... jump to the previous matching (direction `backwards`)
-- single-character search:
-    - `fx` ... move forward to *first* character x inclusive (`Fx` move backwards)
-    - `tx` ... move forward to *til* character x but stops left before the sign (`Tx` move backwards)
+- `f{char}` ... move forward to *first* {char} inclusive the {char}
+- `t{char}` ... move forward to *til* {char} but stops left before the {char}
+- `F{char}` ... backward to next occurrence of {char}
+- `T{char}` ... backward to the character after the previous occurrence of {char}
+- `;` ... repeat last search command **forward** (effective with `f{char}` finding commands)
+- `,` ... repeat run last search command **backward** (effective with `f{char}` finding commands)
+- `*` ... search after the word under the cursor (`top-down`)
+- `#` ... search after the word under the cursor (`bottom-up`)
 - `%s/.../<options>` ... will start the substitute function, `%` says to run substitute through the
   whole file
   - with range: `1,5s/this/that/g`
-  - `/g` ... stands for **global** and will replace all matchings at a line
-  - `/c` ... stands for **confirm** and makes prompt for each replacement
-  - `/n` ... stands for **number** and will print the number of replacements without performing the
-    substitution
+  - `/g` ... **global** and will replace all matchings at a line
+  - `/c` ... **confirm** and makes prompt for each replacement
+  - `/n` ... **number** and will print the number of replacements without performing the substitution
   - `/e` ... stands for **error** no finding a match is no error
+- `&` ... repeats the last substitution command `%s/.../<options>`
+- `&&` ... the first `&` forms the Ex command which repeats the last :substitute command, the second
+  `&` indicates, that the flags from the previous :substitute command should be reused
 - Lazy searching:
   - mark the string in visual selection and press `*`
   - run `%s/<C-r>//g` -> the `<C-r>/` will place the last search pattern
   - alternatively, you can insert the contents of a register with `<C-r>{register}` -> remember that
     `0` stands for the last yanked line
-- `&` ... repeats the last substitution command `%s/.../<options>`
-- `&&` ... the first `&` forms the Ex command which repeats the last :substitute command, the second
-  `&` indicates, that the flags from the previous :substitute command should be reused
-
-
-- Regex:
-  - `/word$` ... search after the word at the end of each line
-  - `/^word` ... search after the word at the beginning of each line
-  - `h.l` ... match all words, which starts with `h`, then any character and an `l`
-
-
-# Close
-- `:q` ... exit Vim and don't save changes
-- `:w!` ... overwrites existing file
-- `:q!` ... exit Vim
-- `:wq` ... exit Vim and save changes
-- `:x` ... save all changes and terminate Vim
-- `:qall` ... quite all windows and will ask for unmodified changes
-- `ZZ` ... shortcut for :wq
-- `ZQ` ... shortcut for :wq!
-
 
 # Delete, Cut, and copy
 - `x` ... delete single character
@@ -174,6 +151,17 @@
 - `"+p` ... paste from clipboard when being in normal mode
 - `"f3Y` ... yanking the next three lines in register f
 - `"fp` ... paste the contents of register f
+
+
+# Close
+- `:q` ... exit Vim and don't save changes
+- `:w!` ... overwrites existing file
+- `:q!` ... exit Vim
+- `:wq` ... exit Vim and save changes
+- `:x` ... save all changes and terminate Vim
+- `:qall` ... quite all windows and will ask for unmodified changes
+- `ZZ` ... shortcut for :wq
+- `ZQ` ... shortcut for :wq!
 
 
 # Folding
@@ -371,4 +359,10 @@
 # Hacks
 - replace line ending through **\\\\:** `:%s/$/ \\\\/`
 - replace **a = b** to **b = a:** `:%s/\(.*\)=\(.*\)/\2=\1`
+
+# Regex:
+- `/word$` ... search after the word at the end of each line
+- `/^word` ... search after the word at the beginning of each line
+- `h.l` ... match all words, which starts with `h`, then any character and an `l`
+
 
