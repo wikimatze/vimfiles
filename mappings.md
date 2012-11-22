@@ -70,21 +70,23 @@
 - `<C-f>` ... move one character forwards
 - `<C-e>` ... move to the end of the line
 - `<C-a>` ... move to the end of the line
+- `<C-h>` ... delete back one character
+- `<C-w>` ... delete the previous word
 - `<C-c>` ... exit the command-line
 - `:!` ... execute any extern command (like `ls`)
 - `:r!` ... read the output of a Ex command and paste the the output in the current file (e.g. `:r! ls`)
 
 
 # Insert mode
-- `<C-h>` ... delete back one character
-- `<C-w>` ... delete the previous word
-- `<C-o>` ... go to Insert Normal mode, means that you run one normal command and after that go into insert mode
 - `<C-t>` ... add shift
 - `<C-d>` ... remove shift
+- `<C-h>` ... delete back one character
+- `<C-w>` ... delete the previous word
 - `<C-k>{char1}{char2}` ... will insert digraphs (`:h digraphs`)
 - `<C-r>+` ... paste from clipboard
 - `<C-r>u` ... paste from register `u`
 - `<C-r>/` ... insert the pattern of last search
+- `<C-o>` ... go to Insert Normal mode, means that you run one normal command and after that go into insert mode
 
 
 # Autocompletion
