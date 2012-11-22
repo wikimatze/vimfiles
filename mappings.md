@@ -31,50 +31,36 @@
 # Edit
 - `I` ... go to the beginning of line in edit mode
 - `A` ... go at the end of line in edit mode
-- `r` ... the actual position of the cursor will be replaced and go back into normal mode
-- `R` ... stay in replace mode
-- `o` ... go into a new line below the cursor in edit mode
-- `O` ... insert new line in front of the current cursor position
-- `s` ... replace the current character and stay in insert mode
+- `o` ... go into a **new line below** the cursor in edit mode
+- `O` ... insert **new line in front** of the current cursor position
+- `s` ... replace the current character and stay in insert mode - you can add as many words as you like
 - `C` ... replace the current character till the rest of the line with characters -> press ESC to go into normal mode
+- `r` ... replace only the actual char under the cursor after that back to normal mode
+- `R` ... **replace mode** - stay in this mode and all following words will be replaced
 - `u` ... undo last changes (`U` undo last changes of the last edited line)
 - `<C-R>` ... redo the last change
-- `p` ... *put* after the cursor
-- `P` ... *put *before the cursor
-- `u` | `U` ... make the selected text in visual mode small or big
-- `xp` ... transpore the next two characters ("character twiddeling")
+- `p` ... *put* after the cursor (is doing a paste)
+- `P` ... *put*before the cursor (is doing a paste)
+- `u` | `U` ... make the selected text small | big in visual mode
+- `~` ... toggle upper or lower case of character in normal mode and go to next char
+- `xp` ... transpose the next two characters ("character twiddeling")
 - `V` ... mark the whole line in visual mode
 - `gV` ... reselect the text which was marked in visual mode before
-  - `o` ... will go to the other end of the visual selection
-- `:wall` ... write all changes in all open buffers
-- `'0` ...   when opening Vim and pressing this command will bring you back to last file you changed -
-  handy if you have to shutdown and start the work again
-- `"%p` ... insert the current filename in normal mode
-- `<C-r>%` ... insert the current filename in insert mode
+  - `o` ... will go to the other end of the visual selection when using `gv`
 - `cw` ... change word
-- `ggVG` ... mark the whole text
-- `p` ... paste below the actual cursor position
-- `P` ... paste before the actual cursor position
-- `ci"` ... delete everything whats inside the special sign " (others are `"", '', (), {}, []` ) and go into the edit mode
-- `d-Shift-g` ... delete all lines below the actual line of the cursors
-- `<` ... shift right
-- `>` ... shift left
+- `ci"` ... delete everything whats inside the special sign `"` (others are `"", '', (), {}, []` ) and go into the edit mode
 - `=` ... autoindent line
 - `==` ... indent the actual line
 - `=G` ... format the whole file
 - `J` ... join two lines
 - `gJ` ... join lines without whitespace
-- `gf` ... open the file which is under the cursor
-- `@:` ... repeat any last Ex command
-- `~` ... makes upper- and lowercase of the character where the actual cursor is
-- `<C-v>` ... opens Visual Block select (when pressing `c` the selected text disappears and we go into insert mode)
+- `dd | dL` ... delete current line, no matter where the cursor is in the current line
+- `<C-v>` ... **Visual Block** select (when pressing `c` the selected text disappears and go in insert mode)
 - `<C-a>` ... will increment number by one (you can use motions, e.g. `10<C-a>`)
 - `<C-x>` ... will increment number by one
+- `<C-r>%` ... insert the current filename in insert mode
 - `.`  ... repeat the last made action
-- `:!` ... execute any extern command (like `ls`)
-- `:r!` ... read the output of a command-line command and paste this in the text (e.g. `:r! ls`)
-- `sort` ... normal alphabetical
-- `sort!` ... inverse alphabetical
+- `@:` ... repeat any last Ex command
 
 
 # Command line
@@ -85,6 +71,8 @@
 - `<C-e>` ... move to the end of the line
 - `<C-a>` ... move to the end of the line
 - `<C-c>` ... exit the command-line
+- `:!` ... execute any extern command (like `ls`)
+- `:r!` ... read the output of a Ex command and paste the the output in the current file (e.g. `:r! ls`)
 
 
 # Insert mode
@@ -270,6 +258,13 @@
 - `<C-z>` ... will background the terminal Vim session and return to bash; `fg` resume the suspended job
 - `:nohls` ... turns of highlighting words of pattern search
 - `<C-w>o` ... close all windows except the current one
+- `:wall` ... write all changes in all open buffers
+- `sort` ... normal alphabetical
+- `sort!` ... inverse alphabetical
+- `"%p` ... insert the current filename in normal mode
+- `'0` ...   when opening Vim and pressing this command will bring you back to last file you changed
+- `ggVG` ... mark the whole text
+- `gf` ... open the file which is under the cursor
 
 
 # Spellchecker
