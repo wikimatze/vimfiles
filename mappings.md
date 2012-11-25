@@ -61,6 +61,17 @@
 - `<C-r>%` ... insert the current filename in insert mode
 - `.`  ... repeat the last made action
 - `@:` ... repeat any last Ex command
+- `zR` ... `reduce` all folding (opens all foldings)
+- `zM` ... `folds more` (closes all foldings of all levels)
+- `zo` ... opens a single folding
+- `zc` ... closes a single folding
+- `:q` ... exit Vim don't save changes
+- `:q!` ... force exit without saving
+- `:wq | ZZ` ... exit Vim and save changes
+- `:w!` ... overwrites existing file
+- `:x` ... save all changes and terminate Vim
+- `:split bla.txt` ... open file via horizontal split
+- `:vsplit bla.txt` ... open file via vertical split
 
 
 # Command line
@@ -135,7 +146,7 @@
 
 # Delete, Cut, and copy
 - `x` ... delete single character
-- `dw` ... delete whole word (use motions: *2dw* will delete two words)
+- `dw` ... delete whole word (use motions: *2dw* deletes two words)
 - `dd | dL` ... cut the whole line
 - `D | d$` ... delete all characters after the cursor till EOL
 - `C` ... deletes all characters after the cursor position and will go in insert mode
@@ -153,37 +164,16 @@
 - `"fp` ... paste the contents of register f
 
 
-# Close
-- `:q` ... exit Vim and don't save changes
-- `:w!` ... overwrites existing file
-- `:q!` ... exit Vim
-- `:wq` ... exit Vim and save changes
-- `:x` ... save all changes and terminate Vim
-- `:qall` ... quite all windows and will ask for unmodified changes
-- `ZZ` ... shortcut for :wq
-- `ZQ` ... shortcut for :wq!
-
-
-# Folding
-- `zR` ... `reduce` all folding (opens all foldings)
-- `zM` ... `folds more` (closes all foldings of all levels)
-- `zo` ... opens a single folding
-- `zc` ... closes a single folding
-
-
 # Windows
-- `<C-W s>` ... split window `horizontal`
-- `<C-W v>` ... split window `vertical`
-- `<C-W c>` ... close actual window
-- `<C-W [hjkl]>` go to a specific window
-- `:only` ... close all windows except the actual one
+- `<C-w> s` ... split window `horizontal`
+- `<C-w> v` ... split window `vertical`
+- `<C-w> c` ... close actual window
+- `<C-w> [hjkl]` go to a specific window
 - `adjust windows size`
-  ... `<C-w _>` ... make the actual window horizonat max
-  ... `<C-w |>` ... make the actual window vertical max
-  ... `<C-w [+...]>` ... change the size incremental
+  ... `<C-w> _` ... the actual window horizonat max
+  ... `<C-w> |` ... the actual window vertical max
+  ... `<C-w> [+...]>` ... change the size incremental
   ... `<C-w =>` ... adjust all windows to the same size
-- `:sp bla.txt` ... open file via horizontal split
-- `:vsp bla.txt` ... open file via vertical split
 
 
 # Marks
@@ -255,7 +245,9 @@
 - `'0` ...   when opening Vim and pressing this command will bring you back to last file you changed
 - `ggVG` ... mark the whole text
 - `gf` ... open the file which is under the cursor
+- `:qall` ... quite all windows and will ask for unmodified changes
 - `:tohtml` ... will call an internal plugin to convert markdown into an HTML file in an extra window
+- `:only` ... close all windows except the actual one
 
 
 # Spellchecker
