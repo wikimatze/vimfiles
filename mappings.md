@@ -132,19 +132,19 @@
   - alternatively, you can insert the contents of a register with `<C-r>{register}` -> remember that
     `0` stands for the last yanked line
 
+
 # Delete, Cut, and copy
 - `x` ... delete single character
-- `dw` ... delete whole word (Motion: *2dw* will delete two words)
-- `dd` ... cut the whole line
-- `ce` ... delete the word and go into insert word
-- `cE` ... delete the word and go into insert word via whitespace separation (no words are counted)
-- `D` ... delete all characters after the cursor till EOL
-- `df<char>` ... press the character until which should be deleted (**inclusve** the char)
-  - `dt<char>` ... delete till a char at start right in front of it (**exclusive** the char)
-  - `d` is an operator pending operator
+- `dw` ... delete whole word (use motions: *2dw* will delete two words)
+- `dd | dL` ... cut the whole line
+- `D | d$` ... delete all characters after the cursor till EOL
 - `C` ... deletes all characters after the cursor position and will go in insert mode
-- `d$` ... delete till the EOL
 - `s` ... delete current char and go into insert mode
+- `ce` ... delete the word with going into insert mode
+- `cE` ... delete the word with going into insert mode via whitespace separation (no words are counted)
+- `d` is an operator pending operator
+- `df<char>` ... press the character until which should be deleted (**inclusve** the char)
+- `dt<char>` ... delete till a char at start right in front of it (**exclusive** the char)
 - `yy` ... copy whole line (`Y` means the same)
 - `yw` ... yank whole word
 - `"+y` ... copy to clipboard (you have to be in visual mode)
@@ -255,6 +255,7 @@
 - `'0` ...   when opening Vim and pressing this command will bring you back to last file you changed
 - `ggVG` ... mark the whole text
 - `gf` ... open the file which is under the cursor
+- `:tohtml` ... will call an internal plugin to convert markdown into an HTML file in an extra window
 
 
 # Spellchecker
@@ -364,5 +365,4 @@
 - `/word$` ... search after the word at the end of each line
 - `/^word` ... search after the word at the beginning of each line
 - `h.l` ... match all words, which starts with `h`, then any character and an `l`
-
 
