@@ -74,30 +74,32 @@
 - `:vsplit bla.txt` ... open file via vertical split
 
 
-# Command line
-- `<C-Left>` ... move one word back
-- `<C-Right>` ... move one word forward
-- `<C-b>` ... move one character backwards
-- `<C-f>` ... move one character forwards
-- `<C-e>` ... move to the end of the line
-- `<C-a>` ... move to the end of the line
-- `<C-h>` ... delete back one character
-- `<C-w>` ... delete the previous word
-- `<C-c>` ... exit the command-line
-- `:!` ... execute any extern command (like `ls`)
-- `:r!` ... read the output of a Ex command and paste the the output in the current file (e.g. `:r! ls`)
+# Delete, Cut, and copy
+- `x` ... delete single character
+- `dw` ... delete whole word (use motions: *2dw* deletes two words)
+- `dd | dL` ... cut the whole line
+- `D | d$` ... delete all characters after the cursor till EOL
+- `C` ... deletes all characters after the cursor position and will go in insert mode
+- `s` ... delete current char and go into insert mode
+- `ce` ... delete the word with going into insert mode
+- `cE` ... delete the word with going into insert mode via whitespace separation (no words are counted)
+- `d` is an operator pending operator
+- `df<char>` ... press the character until which should be deleted (**inclusve** the char)
+- `dt<char>` ... delete till a char at start right in front of it (**exclusive** the char)
+- `yy` ... copy whole line (`Y` means the same)
+- `yw` ... yank whole word
+- `"+y` ... copy to clipboard (you have to be in visual mode)
+- `"+p` ... paste from clipboard when being in normal mode
+- `"f3Y` ... yanking the next three lines in register f
+- `"fp` ... paste the contents of register f
 
 
-# Insert mode
-- `<C-t>` ... add shift
-- `<C-d>` ... remove shift
-- `<C-h>` ... delete back one character
-- `<C-w>` ... delete the previous word
-- `<C-k>{char1}{char2}` ... will insert digraphs (`:h digraphs`)
-- `<C-r>+` ... paste from clipboard
-- `<C-r>u` ... paste from register `u`
-- `<C-r>/` ... insert the pattern of last search
-- `<C-o>` ... go to Insert Normal mode, means that you run one normal command and after that go into insert mode
+# Ctags
+- `ctags -R .` ... will create a tag file
+- `:tags` ... show the list of tags you traversed through
+- `<C-]>` ... jump into the tag
+- `<C-t>` ... reverse through tag history
+- `g<C-]>` ... opens a a dialog for chosing the jump into the tag
 
 
 # Autocompletion
@@ -149,24 +151,67 @@
     `0` stands for the last yanked line
 
 
-# Delete, Cut, and copy
-- `x` ... delete single character
-- `dw` ... delete whole word (use motions: *2dw* deletes two words)
-- `dd | dL` ... cut the whole line
-- `D | d$` ... delete all characters after the cursor till EOL
-- `C` ... deletes all characters after the cursor position and will go in insert mode
-- `s` ... delete current char and go into insert mode
-- `ce` ... delete the word with going into insert mode
-- `cE` ... delete the word with going into insert mode via whitespace separation (no words are counted)
-- `d` is an operator pending operator
-- `df<char>` ... press the character until which should be deleted (**inclusve** the char)
-- `dt<char>` ... delete till a char at start right in front of it (**exclusive** the char)
-- `yy` ... copy whole line (`Y` means the same)
-- `yw` ... yank whole word
-- `"+y` ... copy to clipboard (you have to be in visual mode)
-- `"+p` ... paste from clipboard when being in normal mode
-- `"f3Y` ... yanking the next three lines in register f
-- `"fp` ... paste the contents of register f
+# Matching Patterns and literals
+- `\v` ... enables very magic search, means that in the pattern after it all ASCII characters except
+  '0'-'9', 'a'-'z', 'A'-'Z' and '_' have a special meaning.
+- `\V` ... cancel special meanings of words for pattern matching (e.g. `., *, }, ...`) -> this kind
+  of search is called verbatim searches, example: `/\Va.k.a` will match only `a.k.a`
+- `\x` ... is a shortcut for the pattern `[0-9A-Fa-f]` -> you can learn more about them under `:h character-classes`
+- use parentheses to match pattern and use them later with reference: example `/\v<(\w+)\_s+\1>`
+  with `\1` we are referencing to the first match
+- searching with word boundaries: you can use `<` for the beginning and `>` for the end
+  - `/\<word\>` ... matching only the word which stands alone with <word> - no other words in front or after the word
+  - `/<word\>` ... matching only words which ends on <word>
+  - `/\<word\>` ... matching only words which starts with <word>
+- `/word$` ... search after the word at the end of each line
+- `/^word` ... search after the word at the beginning of each line
+- `h.l` ... match all words, which starts with `h`, then any character and an `l`
+
+
+# Command line
+- `<C-Left>` ... move one word back
+- `<C-Right>` ... move one word forward
+- `<C-b>` ... move one character backwards
+- `<C-f>` ... move one character forwards
+- `<C-e>` ... move to the end of the line
+- `<C-a>` ... move to the end of the line
+- `<C-h>` ... delete back one character
+- `<C-w>` ... delete the previous word
+- `<C-c>` ... exit the command-line
+- `:!` ... execute any extern command (like `ls`)
+- `:r!` ... read the output of a Ex command and paste the the output in the current file (e.g. `:r! ls`)
+
+
+# Insert mode
+- `<C-t>` ... add shift
+- `<C-d>` ... remove shift
+- `<C-h>` ... delete back one character
+- `<C-w>` ... delete the previous word
+- `<C-k>{char1}{char2}` ... will insert digraphs (`:h digraphs`)
+- `<C-r>+` ... paste from clipboard
+- `<C-r>u` ... paste from register `u`
+- `<C-r>/` ... insert the pattern of last search
+- `<C-o>` ... go to Insert Normal mode, means that you run one normal command and after that go into insert mode
+
+
+# Buffers
+- `:ls` ... list all buffers
+  - `#a` ... a buffer with no name
+  - `%a` ... current buffer
+  - `#` ... previous buffer
+- `:b` <number>|<name> ... will open the buffer of the specified number or name (tab completion)
+- `:bn` ... go to the next buffer
+- `:bp` ... go to the previous buffer
+- `:b#` ... jump to the previous buffer (toggle function)
+- `:bd` <number>|<name> (stands for *buffer delete*)
+- `:bufdo` ... performs the following command for each opened buffer
+  - :bufdo echo “bla” ... will print “bla” in the amount of the opened buffers
+- *working with hidden buffers* - they occur if you save changes to a buffer before quitting
+ the program. There are the following strategies to get rid of this problem:
+  - `:w` - write the changes
+  - `:e!` - restore the origin file
+  - `:bd!` - remove buffer from the buffer list and revert all made changes
+  - `:q!` - force Vim to quit and discard all changes to the buffers
 
 
 # Windows
@@ -193,24 +238,36 @@
   - `>` ... end of last visual selection
 
 
-# Buffers
-- `:ls` ... list all buffers
-  - `#a` ... a buffer with no name
-  - `%a` ... current buffer
-  - `#` ... previous buffer
-- `:b` <number>|<name> ... will open the buffer of the specified number or name (tab completion)
-- `:bn` ... go to the next buffer
-- `:bp` ... go to the previous buffer
-- `:b#` ... jump to the previous buffer (toggle function)
-- `:bd` <number>|<name> (stands for *buffer delete*)
-- `:bufdo` ... performs the following command for each opened buffer
-  - :bufdo echo “bla” ... will print “bla” in the amount of the opened buffers
-- *working with hidden buffers* - they occur if you save changes to a buffer before quitting
- the program. There are the following strategies to get rid of this problem:
-  - `:w` - write the changes
-  - `:e!` - restore the origin file
-  - `:bd!` - remove buffer from the buffer list and revert all made changes
-  - `:q!` - force Vim to quit and discard all changes to the buffers
+# Text objects
+- `a) | ab` ... a pair of parentheses
+- `i) | ib` ... inside of parentheses
+- `a} | aB` ... a pair of braces
+- `i} | aB` ... inside of braces
+- `a], a>, a', a"` ... a pair of brackets, a pair of angle brackets, a pair of single quotes, a pair of double quotes
+- `i], i>, i', i"` ... inside of brackets, inside of angle brackets, inside of single quotes, inside of double quotes
+- `at` ... a pair of <xml>tags</xml>
+- `it` ... inside of <xml>tags</xml>
+- `iw | iW` ... current word|WORD
+- `aw | aW` ... current word|WORD plus one space
+- `is` ... current sentence
+- `as` ... current sentence plus one space
+- `ip` ... current paragraph (paragraph between newline separater)
+- `ap` ... current paragraph plus one blank line (paragraph between newline separater)
+- `ab` ... a block so only ( and ) parts and all whats between these delimiters
+
+
+# Operators and motions -> speak editor sentences
+- operators => motions are text objects because they move the cursor around
+  - `c{motion}` ... change
+  - `d{motion}` ... delete
+  - `y{motion}` ... yank into register
+- `cis` ... change inside sentence
+- `ci"` ... change inside quote
+- `vap` ... visual around paragraph (visually select this paragraph)
+- `yaw` ... yank around word - copy the current word, no matter where your cursor is inside the current word
+- `daw` ... deletes a word
+- `vi}` ... select visual the content inside the `}` delimiter
+- `ctX` ... change till X
 
 
 # Different Stuff
@@ -267,70 +324,7 @@
 - `:set spelling=de_19` ... setting the spell-language to 'alte deutsche Rechtschreibung'
 
 
-# Text objects
-- `a) | ab` ... a pair of parentheses
-- `i) | ib` ... inside of parentheses
-- `a} | aB` ... a pair of braces
-- `i} | aB` ... inside of braces
-- `a], a>, a', a"` ... a pair of brackets, a pair of angle brackets, a pair of single quotes, a pair of double quotes
-- `i], i>, i', i"` ... inside of brackets, inside of angle brackets, inside of single quotes, inside of double quotes
-- `at` ... a pair of <xml>tags</xml>
-- `it` ... inside of <xml>tags</xml>
-- `iw | iW` ... current word|WORD
-- `aw | aW` ... current word|WORD plus one space
-- `is` ... current sentence
-- `as` ... current sentence plus one space
-- `ip` ... current paragraph (paragraph between newline separater)
-- `ap` ... current paragraph plus one blank line (paragraph between newline separater)
-- `ab` ... a block so only ( and ) parts and all whats between these delimiters
-
-
-# Operators and motions -> speak editor sentences
-- operators => motions are text objects because they move the cursor around
-  - `c{motion}` ... change
-  - `d{motion}` ... delete
-  - `y{motion}` ... yank into register
-- `cis` ... change inside sentence
-- `ci"` ... change inside quote
-- `vap` ... visual around paragraph (visually select this paragraph)
-- `yaw` ... yank around word - copy the current word, no matter where your cursor is inside the current word
-- `daw` ... deletes a word
-- `vi}` ... select visual the content inside the `}` delimiter
-- `ctX` ... change till X
-
-
-# Ctags
-- `ctags -R .` ... will create a tag file
-- `:tags` ... show the list of tags you traversed through
-- `<C-]>` ... jump into the tag
-- `<C-t>` ... reverse through tag history
-- `g<C-]>` ... opens a a dialog for chosing the jump into the tag
-
-
-
-
-# Matching Patterns and literals
-- `\v` ... enables very magic search, means that in the pattern after it all ASCII characters except
-  '0'-'9', 'a'-'z', 'A'-'Z' and '_' have a special meaning.
-- `\V` ... cancel special meanings of words for pattern matching (e.g. `., *, }, ...`) -> this kind
-  of search is called verbatim searches, example: `/\Va.k.a` will match only `a.k.a` and no
-  `backward`
-- `\x` ... is a shortcut for the pattern `[0-9A-Fa-f]` -> you can learn more about them under `:h
-  character-classes`
-- use parentheses to match pattern and use them later with reference: example `/\v<(\w+)\_s+\1>`
-  with `\1` we are referencing to the first match
-- searching with word boundaries: you can use `<` for the beginning and `>` for the end
-  - `/\<word\>` ... matching only the word which stands alone with <word> - no other words in front or after the word
-  - `/<word\>` ... matching only words which ends on <word>
-  - `/\<word\>` ... matching only words which starts with <word>
-
-
 # Hacks
 - replace line ending through **\\\\:** `:%s/$/ \\\\/`
 - replace **a = b** to **b = a:** `:%s/\(.*\)=\(.*\)/\2=\1`
-
-# Regex:
-- `/word$` ... search after the word at the end of each line
-- `/^word` ... search after the word at the beginning of each line
-- `h.l` ... match all words, which starts with `h`, then any character and an `l`
 
