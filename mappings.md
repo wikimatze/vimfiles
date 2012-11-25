@@ -134,6 +134,11 @@
   - `/c` ... **confirm** and makes prompt for each replacement
   - `/n` ... **number** and will print the number of replacements without performing the substitution
   - `/e` ... stands for **error** no finding a match is no error
+- `:help :vglobal` ... shows us how to perform an operation on all lines that don’t match the given
+  pattern. In this case we delete lines that don’t match what we’re looking for.
+- `:help :global` ... is how we can run a given command (in this case a :normal command) for each line that
+  matches a pattern.  example :g/def/normal Ai -> will insert at the end of each line containing the
+  def word a 'i' to
 - `&` ... repeats the last substitution command `%s/.../<options>`
 - `&&` ... the first `&` forms the Ex command which repeats the last :substitute command, the second
   `&` indicates, that the flags from the previous :substitute command should be reused
@@ -240,8 +245,13 @@
 - `:tohtml` ... will call an internal plugin to convert markdown into an HTML file in an extra window
 - `:only` ... close all windows except the actual one
 - `:help` ... open the help menu (dopple click on a link will go it)
+  - `<C-]>` ... jump into the hyperlink
+  - `<C-T>` ... jump back in your search history
 - `:help <plugin-name>.txt` ... opens the documentation of a plugin
 - `:helptags` ... will regenerate the helptags
+- `:helpgrep <searchterm>` ... search all doc after the specified term (press :cwindow to see all matchings)
+- `:help ins-completion` overview of commands to start autocompletion
+- `:help 'complete'` ... specifies how keyword completion works
 - `digraphs` ...  will display list of characters that are not on the keyboard (still don't know how to use them)
 
 
@@ -297,17 +307,6 @@
 - `g<C-]>` ... opens a a dialog for chosing the jump into the tag
 
 
-# Help
-- `<C-]>` ... jump into the hyperlink
-- `<C-T>` ... jump back in your search history
-- `:helpgrep <searchterm>` ... search all doc after the specified term (press :cwindow to see all matchings)
-- `:help ins-completion` overview of commands to start autocompletion
-- `:help 'complete'` ... specifies how keyword completion works
-- `:help :vglobal` ... shows us how to perform an operation on all lines that don’t match the given
-  pattern. In this case we delete lines that don’t match what we’re looking for.
-- `:help :global` ... is how we can run a given command (in this case a :normal command) for each line that
-  matches a pattern.  example :g/def/normal Ai -> will insert at the end of each line containing the
-  def word a 'i' to
 
 
 # Matching Patterns and literals
