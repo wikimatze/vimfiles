@@ -236,4 +236,21 @@ Here is a list of plugins I used in the past and removed them due the lack of us
         let g:Tex_ViewRuleComplete_dvi = 'xdvi -editor "vim --servername xdiv --remote +\%l \%f" $* &'
         map ,lj :execute '!cd ' . expand(Tex_GetMainFileName(':p:h')) . ' && xdvi -editor "vim --servername 'v:servername' --remote-wait +\%l \%f" -sourceposition ' . line(".") . substitute(expand('%:p'),expand(Tex_GetMainFileName(':p:h')).'\/','','') . " " . expand(Tex_GetMainFileName(':p:r')) . ".dvi &" <CR><CR>
     endif</pre>
+  - custom notes
+<pre>
+  - `,ll` ... compile the actual document (normally in dvi format)
+  - `,lv` ... opens the compiled .dvi file with xdvi
+  - `,lj` ... opens the compiled .dvi file just in the place where your cursor is the tex document
+   you are compiling
+  - `Ctrl+Shift...j` ... jumps to the placeholder in the document
+  - `working with multiple files`
+    - create a empty file with the name `<yourmain>.tex`
+    - after that you can normally compile every included other tex document (if you are splitting up your tex...project)
+  - `forward search` (the shortcut for this is `,lv` ... the rest is the theoretical explanation of
+   it)
+    - compile your tex-document normally
+    - start the `\ls` mode
+    - where the cursor is, this place will be displayed in the .dvi file
+  - `inverse (reverse) search`
+    - `<C-Left>` left mouse click in the .dvi file this location will be opend in the source file</pre>
 - [vspec](https://github.com/kana/vim-vspec): Testing framework for Vimscript

@@ -257,7 +257,7 @@
 - `:set spelling=de_19` ... setting the spell-language to 'alte deutsche Rechtschreibung'
 
 
-# Text object
+# Text objects
 - `a) | ab` ... a pair of parentheses
 - `i) | ib` ... inside of parentheses
 - `a} | aB` ... a pair of braces
@@ -275,44 +275,26 @@
 - `ab` ... a block so only ( and ) parts and all whats between these delimiters
 
 
-# Operator and motions -> speak editor sentences
-- operators => motions are text objects
+# Operators and motions -> speak editor sentences
+- operators => motions are text objects because they move the cursor around
   - `c{motion}` ... change
   - `d{motion}` ... delete
   - `y{motion}` ... yank into register
-- `cis` (change inside sentence): change current sentence
-- `ci"` (change inside quote): change a string inside quotes
-- `vap` (visual around paragraph): visually select this paragraph
-- `yaw` (yank around word): copy the current word, no matter where your cursor is inside the current word
-- `ctX` change till X (any character)
+- `cis` ... change inside sentence
+- `ci"` ... change inside quote
+- `vap` ... visual around paragraph (visually select this paragraph)
+- `yaw` ... yank around word - copy the current word, no matter where your cursor is inside the current word
 - `daw` ... deletes a word
 - `vi}` ... select visual the content inside the `}` delimiter
+- `ctX` ... change till X
 
 
 # Ctags
 - `ctags -R .` ... will create a tag file
 - `:tags` ... show the list of tags you traversed through
 - `<C-]>` ... jump into the tag
-- `g<C-]>` ... opens a a dialog for chosing the jump into the tag
 - `<C-t>` ... reverse through tag history
-
-
-# LaTeX-Suite
-- `,ll` ... compile the actual document (normally in dvi format)
-- `,lv` ... opens the compiled .dvi file with xdvi
-- `,lj` ... opens the compiled .dvi file just in the place where your cursor is the tex document
- you are compiling
-- `Ctrl+Shift...j` ... jumps to the placeholder in the document
-- `working with multiple files`
-  - create a empty file with the name `<yourmain>.tex`
-  - after that you can normally compile every included other tex document (if you are splitting up your tex...project)
-- `forward search` (the shortcut for this is `,lv` ... the rest is the theoretical explanation of
- it)
-  - compile your tex-document normally
-  - start the `\ls` mode
-  - where the cursor is, this place will be displayed in the .dvi file
-- `inverse (reverse) search`
-  - `<C-Left>` left mouse click in the .dvi file this location will be opend in the source file
+- `g<C-]>` ... opens a a dialog for chosing the jump into the tag
 
 
 # Help
