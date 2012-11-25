@@ -170,17 +170,17 @@
 - `<C-w> c` ... close actual window
 - `<C-w> [hjkl]` go to a specific window
 - `adjust windows size`
-  ... `<C-w> _` ... the actual window horizonat max
-  ... `<C-w> |` ... the actual window vertical max
-  ... `<C-w> [+...]>` ... change the size incremental
-  ... `<C-w =>` ... adjust all windows to the same size
+  - `<C-w> _` ... the actual window horizonat max
+  - `<C-w> |` ... the actual window vertical max
+  - `<C-w> [+...]>` ... change the size incremental
+  - `<C-w =>` ... adjust all windows to the same size
 
 
 # Marks
 - `m{a-zA-Z}` ... create a mark with the name a (marks will be saved for every file)
 - `'a` ... jump to mark `a`
-- `local marks` ... range from `[a-z]` (volatile)
-- `global marks` ... range from `[A-Z]` (not volatile)
+- `[a-z]` ... **local marks** (volatile)
+- `[A-Z]` ... **global marks** (not volatile)
 - `:marks` ... output marks of the actual file
 - automatic marks - `.` ... location of last change
   - `^` ... location of last insertion
