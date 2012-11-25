@@ -188,18 +188,12 @@
   - `>` ... end of last visual selection
 
 
-# Help
-- **:help** - open the help menu (dopple click on a link will go it)
-- **:help <plugin-name>.txt** - opens the documentation of a plugin
-- **:helptags** - will regenerate the helptags
-
-
-# Buffer
+# Buffers
 - `:ls` ... list all buffers
-  - `#a` ... stands for a no name buffer
-  - `%a` ... stands for the current buffer
-  - `#` ... stands for the previous buffer
-- `:b` <number>|<name> ... will open the buffer of the specified number or name
+  - `#a` ... a buffer with no name
+  - `%a` ... current buffer
+  - `#` ... previous buffer
+- `:b` <number>|<name> ... will open the buffer of the specified number or name (tab completion)
 - `:bn` ... go to the next buffer
 - `:bp` ... go to the previous buffer
 - `:b#` ... jump to the previous buffer (toggle function)
@@ -207,7 +201,7 @@
 - `:bufdo` ... performs the following command for each opened buffer
   - :bufdo echo “bla” ... will print “bla” in the amount of the opened buffers
 - *working with hidden buffers* - they occur if you save changes to a buffer before quitting
- the program.  There are the following strategies to get rid of this problem:
+ the program. There are the following strategies to get rid of this problem:
   - `:w` - write the changes
   - `:e!` - restore the origin file
   - `:bd!` - remove buffer from the buffer list and revert all made changes
@@ -215,39 +209,40 @@
 
 
 # Different Stuff
+- `"%p` ... insert the current filename in normal mode
+- `'0` ...   when opening Vim and pressing this command will bring you back to last file you changed
+- `ggVG` ... mark the whole text
+- `gf` ... open the file which is under the cursor
+- `g <C-g>` ...  count the words of a file and gives extensive overview of words and chars
+- `q/` ... opens the command-line with history of searches
+- `q:` ... opens the command-line with history of Ex commands
+- `<C-w>o` ... close all windows except the current one
+- `<C-z>` ... will background the terminal Vim session and return to bash; `fg` resume the suspended job
+- `:ascii | ga` ... displays the ASCII, Hex and Octal representation of the character under the actual cursor
 - `:changes` ... shows all the changes to a local buffer
 - `:map` ... over view of all mappings of the current session
 - `:messages` ...  history of all events of the current session
-- `:ascii | ga` ... displays the ASCII, Hex and Octal representation of the character under the actual
- cursor
 - `:retab` ... re place all tabs of a file with spaces
 - `:options` ...  opens a new window with all specified options you can set in Vim (even with nice
   explanations)
 - `:args` ... prints a list of all opened files
 - `:saveas <filename>` - save the changes you made on the new text file
 - `:history` ...  print the last commands for the command-line
-- `g <C-G>` ...  count the words of a file and gives extensive overview of words and chars
-- `digraphs` ...  will display list of characters that are not on the keyboard (still don't know how
-  to use them)
 - `:redir @a> <CMD> redir END` ... will put the `<CMD>` in the register `a`
-- `v/` is the opposite of `g/` ... “I want to match what I want to keep and delete the rest
+- `v/` is the opposite of `g/` ... "I want to match what I want to keep and delete the rest"
 - `:history` print the last commands -> useful when writing a script
    `:history :-20,` will print the last 20 commands
-- `q/` ... opens the command-line with history of searches
-- `q:` ... opens the command-line with history of Ex commands
-- `<C-z>` ... will background the terminal Vim session and return to bash; `fg` resume the suspended job
 - `:nohls` ... turns of highlighting words of pattern search
-- `<C-w>o` ... close all windows except the current one
 - `:wall` ... write all changes in all open buffers
-- `sort` ... normal alphabetical
-- `sort!` ... inverse alphabetical
-- `"%p` ... insert the current filename in normal mode
-- `'0` ...   when opening Vim and pressing this command will bring you back to last file you changed
-- `ggVG` ... mark the whole text
-- `gf` ... open the file which is under the cursor
+- `:sort` ... normal alphabetical
+- `:sort!` ... inverse alphabetical
 - `:qall` ... quite all windows and will ask for unmodified changes
 - `:tohtml` ... will call an internal plugin to convert markdown into an HTML file in an extra window
 - `:only` ... close all windows except the actual one
+- `:help` ... open the help menu (dopple click on a link will go it)
+- `:help <plugin-name>.txt` ... opens the documentation of a plugin
+- `:helptags` ... will regenerate the helptags
+- `digraphs` ...  will display list of characters that are not on the keyboard (still don't know how to use them)
 
 
 # Spellchecker
@@ -258,8 +253,8 @@
 - `zw` ... remove a word from the dictionary
 - `<C-x>s` ... scan backwards from current cursor position in insert mode for errors
 - `:set spelllang` ... activate the spell checker
-- `set spelling=de_20` ... setting the spell-language to 'neue deutsche Rechtschreibung'
-- `set spelling=de_19` ... setting the spell-language to 'alte deutsche Rechtschreibung'
+- `:set spelling=de_20` ... setting the spell-language to 'neue deutsche Rechtschreibung'
+- `:set spelling=de_19` ... setting the spell-language to 'alte deutsche Rechtschreibung'
 
 
 # Text object
