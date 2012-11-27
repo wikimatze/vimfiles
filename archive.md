@@ -38,6 +38,19 @@ Here is a list of plugins I used in the past and removed them due the lack of us
 - [easymotion](https://github.com/Lokaltog/vim-easymotion): easier and faster use of motions
     - `<leader><leader>w | e | j | ..` ... jump to the matching words on the screen
     - `<leader><leader>t | T` ... search after the target character forward (`t`) and backward (`T`)
+- [easytags](https://github.com/xolox/vim-easytags): Call exuberant Ctags within vim
+  - `:UpdateTags` ... will run `ctags -R .` for the current directory but you can pass the directory you want as an argument
+  - `:HighlightTags` ... will mark the relevant tags in the current file
+  - custom settings:
+<pre>
+    set tags=./tags;                  " name of the tags files which is relative to the project
+    let g:easytags_dynamic_files = 1  " write first existing seen tag file by Vim (refer to echo &tags)
+    let g:easytags_on_cursorhold = 0  " disable automatic update
+    let g:easytags_auto_update = 0    " don't update the text, when stop working
+    let g:easytags_auto_highlight = 0 " don't highlight the text, when stop working
+    let g:easytags_autorecurse = 1    " updating files below all directories of the current one
+    let g:easytags_resolve_links = 1  " resolve symbolic links with pathnames
+    let g:easytags_python_enabled = 1 " use Python script for dynamic syntax highlighting (is faster)</pre>
 - [fuf](https://github.com/vim-scripts/FuzzyFinder): Fuzzy matching to find files recursively in the current directory
   - `<C-l>` - opens in a new tab page
   - `<C-j>` - opens in a horizontal split
@@ -53,6 +66,22 @@ Here is a list of plugins I used in the past and removed them due the lack of us
           \ . '|(^|[/\\])\.(hg|git|bzr|svn)($|[/\\])' " exclude .hg, .git files
           \ . '|(^|[/\\])_site[/\\]' " exclude _site/* stuff (mainly from jekyll
           \ . '|(^|[/\\])assets[/\\]' " exlude the assets stuff by rails</pre>
+- [gundo](http://sjl.bitbucket.org/gundo.vim): Graph the changes of your file saves in different a nice tree
+  - `k` ... move one step top
+  - `j` ... move one step below
+  - `gg` ... move to the button
+  - `G` ... move to the top
+  - `Enter or double click` ... revert the changes of the file to the current file
+  - `p` ... will open a preview to show the differences from the selected and the current version
+    (just imagine a `git diff`)
+<pre>
+    let g:gundo_width           = 45 " horizontal width
+    let g:gundo_preview_height  = 15 " vertical height
+    let g:gundo_help            = 1  " show the help in gundo window
+    let g:gundo_close_on_revert = 0  " don't close gundo after a version is selected
+    let g:gundo_right           = 0  " display gundo on the left site
+
+    nnoremap <F3> :GundoToggle<CR></pre>
 - [Gist.vim](https://github.com/mattn/gist-vim ): upload files directly as gists to github
   - first setup your git credentials `let g:github_user = 'your-name'` and `let g:github*token = 'token'`  in your *.vimrc*
       - the API Token can be found under Account Settings under Account Admin on [github](https://github.com)
@@ -73,6 +102,8 @@ Here is a list of plugins I used in the past and removed them due the lack of us
   jQuery syntax (*no doc*)
 - [l9](https://github.com/vim-scripts/L9 "l9"): Vim-script library, add functionality to program vim-files (mainly needed for
   fuzzyfinder plugin)
+- [matchit](http://www.vim.org/scripts/script.php?script_id=39): Press `%` to match tags in HTML, LaTeX and several other file
+  formats
 - [minibufexpl](https://github.com/fholgado/minibufexpl.vim): Highlighting the current active buffer in an extra window
   - `:MiniBufExplorer` ... opens the Minibuffer window
   - `:CMiniBufExplorer` ... close the Minibuffer window
@@ -135,6 +166,11 @@ Here is a list of plugins I used in the past and removed them due the lack of us
 <pre>
     let g:tagbar_compact = 1 " don't show the help in the tagbar
     nnoremap <silent> <F3> :TagbarToggle<CR></pre>
+- [supertab](https://github.com/ervandew/supertab): Word auto completion with pressing the tab key
+  - custom settings:
+<pre>
+    let g:SuperTabDefaultCompletionType = "<C-n>"
+    let g:SuperTabLongestHighlight      = 1</pre>
 - [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs "vim-nerdtree-tabs"): opens one NERDTree which is the same in
   every tab
   - own settings:
@@ -200,4 +236,21 @@ Here is a list of plugins I used in the past and removed them due the lack of us
         let g:Tex_ViewRuleComplete_dvi = 'xdvi -editor "vim --servername xdiv --remote +\%l \%f" $* &'
         map ,lj :execute '!cd ' . expand(Tex_GetMainFileName(':p:h')) . ' && xdvi -editor "vim --servername 'v:servername' --remote-wait +\%l \%f" -sourceposition ' . line(".") . substitute(expand('%:p'),expand(Tex_GetMainFileName(':p:h')).'\/','','') . " " . expand(Tex_GetMainFileName(':p:r')) . ".dvi &" <CR><CR>
     endif</pre>
+  - custom notes
+<pre>
+  - `,ll` ... compile the actual document (normally in dvi format)
+  - `,lv` ... opens the compiled .dvi file with xdvi
+  - `,lj` ... opens the compiled .dvi file just in the place where your cursor is the tex document
+   you are compiling
+  - `Ctrl+Shift...j` ... jumps to the placeholder in the document
+  - `working with multiple files`
+    - create a empty file with the name `<yourmain>.tex`
+    - after that you can normally compile every included other tex document (if you are splitting up your tex...project)
+  - `forward search` (the shortcut for this is `,lv` ... the rest is the theoretical explanation of
+   it)
+    - compile your tex-document normally
+    - start the `\ls` mode
+    - where the cursor is, this place will be displayed in the .dvi file
+  - `inverse (reverse) search`
+    - `<C-Left>` left mouse click in the .dvi file this location will be opend in the source file</pre>
 - [vspec](https://github.com/kana/vim-vspec): Testing framework for Vimscript

@@ -21,9 +21,6 @@ most important commands and settings for each plugin.
   - `<leader>sel` ... execute the query
   - `:DBResultsClose` ... close the result window
 - [delimitMate](https://github.com/Raimondi/delimitMate): Semantic autoclose brackets
-- [easytags](https://github.com/xolox/vim-easytags): Call exuberant Ctags within vim
-  - `:UpdateTags` ... will run `ctags -R .` for the current directory but you can pass the directory you want as an argument
-  - `:HighlightTags` ... will mark the relevant tags in the current file
 - [fugitive](http://github.com/tpope/vim-fugitive): Git wrapper
   - `:Gstatus` ... git status
       ... `Ctrl...n` ... go to the next file
@@ -38,22 +35,12 @@ most important commands and settings for each plugin.
   - `:Ggrep` ... does a *grep* in the tree
   - `:Gbrowse` ... opens the actual file in the browser (normally its on github)
   - `:Git` ... after this you can perform every other normal git command you want
-- [gundo](http://sjl.bitbucket.org/gundo.vim): Graph the changes of your file saves in different a nice tree
-  - `k` ... move one step top
-  - `j` ... move one step below
-  - `gg` ... move to the button
-  - `G` ... move to the top
-  - `Enter or double click` ... revert the changes of the file to the current file
-  - `p` ... will open a preview to show the differences from the selected and the current version
-    (just imagine a `git diff`)
 - [hammer](https://github.com/matthias-guenther/hammer.vim): Displays various markups (markdown, textile, rdoc, asciidoc) with one
   keystroke in the browser
 - [html5-syntax](https://github.com/othree/html5-syntax.vim): HTML5 elements syntax highlighing (*no doc*)
 - [IndexSearch](https://github.com/vim-scripts/IndexedSearch): Redefines the search `(/,?)` and creates custom messages about how many hits there are
 - [json](https://github.com/vim-scripts/JSON.vim): JSON detection and syntax-highlighting (*no doc*)
 - [markdown-folding](https://github.com/nelstrom/vim-markdown-folding): Folding by section headings
-- [matchit](http://www.vim.org/scripts/script.php?script_id=39): Press `%` to match tags in HTML, LaTeX and several other file
-  formats
 - [minibufexpl](https://github.com/fholgado/minibufexpl.vim): Highlighting the current active buffer in an extra window
   - `:MiniBufExplorer` ... opens the Minibuffer window
   - `:CMiniBufExplorer` ... close the Minibuffer window
@@ -109,7 +96,6 @@ most important commands and settings for each plugin.
   - `<C-x>` ... -- number
   - `:SpeedDatingFormat` ... shows the regular expression of possible formations
   - `:SpeedDatingFormat {}` ... here you can specify the format which can be used to be recognized by the program
-- [supertab](https://github.com/ervandew/supertab): Word auto completion with pressing the tab key
 - [syntastic](https://github.com/scrooloose/syntastic): Performs syntax check on various languages when saving
 - [surround](https://github.com/tpope/vim-surround): Change quotes and all other delimiters
   - `ds"` ... stands for delete surround and will delete the surrounds
