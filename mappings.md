@@ -95,7 +95,7 @@
 
 
 # Ctags
-- `ctags -R .` ... will create a tag file
+- `ctags -R .` ... creates a tag file
 - `:tags` ... show the list of tags you traversed through
 - `<C-]>` ... jump into the tag
 - `<C-t>` ... reverse through tag history
@@ -218,11 +218,12 @@
 - `<C-w> s` ... split window `horizontal`
 - `<C-w> v` ... split window `vertical`
 - `<C-w> c` ... close actual window
-- `<C-w> [hjkl]` go to a specific window
+- `<C-w> [hjkl]` ... go to a specific window
 - `adjust windows size`
   - `<C-w> _` ... the actual window horizonat max
   - `<C-w> |` ... the actual window vertical max
-  - `<C-w> [+...]>` ... change the size incremental
+  - `<C-w> [+...-]` ... change window size incremental (`+` for increase and `⁻` for decrease) -> command-line window will grow
+    or shrink
   - `<C-w =>` ... adjust all windows to the same size
 
 
