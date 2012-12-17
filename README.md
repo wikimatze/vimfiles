@@ -161,8 +161,9 @@ repository to get started with Vim, please perform the following tasks:
 
 - `git clone git@github.com:matthias-guenther/vim-settings.git`
 - `mkdir ~/.vim/bundle`
-- install [Vundle](https://github.com/gmarik/vundle)
-- Start Vim and type `:BundleInstall`
+- `git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
+- Start Vim and omitt the error message
+- type `:BundleInstall`
 
 
 # Contact
@@ -174,5 +175,5 @@ Feature request, bugs, questions, etc. can be send to <matthias.guenther@wikimat
 
 This software is licensed under the [MIT license](http://en.wikipedia.org/wiki/MIT_License).
 
-© 2011-2012 Matthias Günther <matthias.guenther@wikimatze.de>
+© 2011-2013 Matthias Günther <matthias.guenther@wikimatze.de>
 
