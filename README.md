@@ -41,10 +41,6 @@ most important commands and settings for each plugin.
 - [IndexSearch](https://github.com/vim-scripts/IndexedSearch): Redefines the search `(/,?)` and creates custom messages about how many hits there are
 - [json](https://github.com/vim-scripts/JSON.vim): JSON detection and syntax-highlighting (*no doc*)
 - [markdown-folding](https://github.com/nelstrom/vim-markdown-folding): Folding by section headings
-- [minibufexpl](https://github.com/fholgado/minibufexpl.vim): Highlighting the current active buffer in an extra window
-  - `:MiniBufExplorer` ... opens the Minibuffer window
-  - `:CMiniBufExplorer` ... close the Minibuffer window
-  - `:TMiniBufExplorer` ... toggle Minibuffer window
 - [netrw](http://www.vim.org/scripts/script.php?script_id=1075): Build in file browser
   - `:edit .` ... take the current directory and open the file explorer
   - `:split .` ... vertical split at current working directory
@@ -160,7 +156,7 @@ I highly not recommend you to copy my *.vimrc* because they may not fit to your 
 repository to get started with Vim, please perform the following tasks:
 
 - `git clone git@github.com:matthias-guenther/vim-settings.git`
-- `mkdir ~/.vim/bundle`
+- `mkdir ~/.vim/bundle ~/.vim/backup`
 - `git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
 - Start Vim and omitt the error message
 - type `:BundleInstall`
