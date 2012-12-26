@@ -66,6 +66,20 @@ Here is a list of plugins I used in the past and removed them due the lack of us
           \ . '|(^|[/\\])\.(hg|git|bzr|svn)($|[/\\])' " exclude .hg, .git files
           \ . '|(^|[/\\])_site[/\\]' " exclude _site/* stuff (mainly from jekyll
           \ . '|(^|[/\\])assets[/\\]' " exlude the assets stuff by rails</pre>
+- [fugitive](http://github.com/tpope/vim-fugitive): Git wrapper
+  - `:Gstatus` ... git status
+      ... `Ctrl...n` ... go to the next file
+      ... `Ctrl...p` ... go to the preview file
+  - `:Gwrite` ... git add
+  - `:Gcommit` ... git commit (press *wq* for send)
+  - `:Gblame` ... git blame
+  - `:Gmove` ... git mv
+  - `:Gremove` ... git rm
+  - `:Glog` ... git log
+  - `:Gdiff` ... split the window and display the changes
+  - `:Ggrep` ... does a *grep* in the tree
+  - `:Gbrowse` ... opens the actual file in the browser (normally its on github)
+  - `:Git` ... after this you can perform every other normal git command you want
 - [gundo](http://sjl.bitbucket.org/gundo.vim): Graph the changes of your file saves in different a nice tree
   - `k` ... move one step top
   - `j` ... move one step below
