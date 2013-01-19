@@ -12,6 +12,8 @@ let g:vundle_default_git_proto = 'git' " use git protocol instead of https when 
 " bundles {{{
 
 Bundle 'Raimondi/delimitMate'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'lukerandall/haskellmode-vim'
 Bundle 'jamessan/vim-gnupg'
 Bundle 'benmills/vimux'
 Bundle 'ecomba/vim-ruby-refactoring'

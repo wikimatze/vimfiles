@@ -10,3 +10,5 @@ au! BufRead,BufNewFile *.tex,*.latex set filetype=tex
 au! BufRead,BufNewFile *.textile set filetype=textile
 au! BufRead,BufNewFile *.tmux.conf set filetype=tmux
 au! BufRead,BufNewFile *.yml set filetype=yaml
+au! BufRead,BufNewFile *.go set filetype=go
+au! BufRead,BufNewFile *.hs set filetype=haskell
