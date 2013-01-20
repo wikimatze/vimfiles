@@ -84,7 +84,7 @@
 - `ce` ... delete the word with going into insert mode
 - `cE` ... delete the word with going into insert mode via whitespace separation (no words are counted)
 - `d` is an operator pending operator
-- `df<char>` ... press the character until which should be deleted (**inclusve** the char)
+- `df<char>` ... press the character until which should be deleted (**inclusive** the char)
 - `dt<char>` ... delete till a char at start right in front of it (**exclusive** the char)
 - `yy` ... copy whole line (`Y` means the same)
 - `yw` ... yank whole word
@@ -318,7 +318,7 @@
 - `[s` ... place the cursor on the previous error
 - `z=` ... shows all correction to a word
 - `zg` ... add a word to the dictionary
-- `zw` ... remove a word from the dictionary
+- `zuw` ... remove a word from the dictionary
 - `<C-x>s` ... scan backwards from current cursor position in insert mode for errors
 - `:set spelllang` ... activate the spell checker
 - `:set spelling=de_20` ... setting the spell-language to 'neue deutsche Rechtschreibung'
