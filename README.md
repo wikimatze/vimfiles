@@ -72,9 +72,6 @@ of the most important commands and settings for each plugin.
     variable, you can use any selection you want
   - `,rrlv`: Refactor Rename Local Variable ... mark the name you want to change and the scope within the method
   - `,rriv`: Refactor Rename Instance Variable ... mark the instance variable within a class
-- [slime](https://github.com/jpalardy/vim-slime): Sending selection in Vim directly into a tmux session
-  - `let g:slime_target = "tmux"`
-  - `C-c C-`: press Ctrl-c-c to put the actual paragraph (`vip`) in the tmux session (visual select works also)
 - [snipmate](https://github.com/msanders/snipmate.vim): Define your own snippets for different languages
 - [speedating](https://github.com/tpope/vim-speeddating): Fast way to increment all kind of numbers
   - `<C-a>` ... ++ number
@@ -122,7 +119,7 @@ of the most important commands and settings for each plugin.
     - `]]` ... move to the beginning of the **next** *module* or *class* definition
     - `[[` ... move to the beginning of the **previous** *module* or *class* definition
 - [vim-shell](https://github.com/xolox/vim-shell): Open files and web pages in associated programs out of Vim
-- [vim-slime](https://github.com/jpalardy/vim-slime): Send text to a screen/tmux session (perfect REPL abilities for
+- [slime](https://github.com/jpalardy/vim-slime): Send text to a screen/tmux session (perfect REPL abilities for
   Vim)
   - `<C>cc` ... put the curent paragraph in the predefined window (`vip`)
   - `<C>cv` ... will ask after the target pane again
@@ -131,7 +128,7 @@ of the most important commands and settings for each plugin.
     - `:` ... current window or current pane
     - `:a` ... the `a`th window in the current pane
     - `:a.b` ... the `b`th pane in window `a`
-    - `c:a.b` ... in the tmux session with the name `c` the bth pane in window `a`
+    - `c:a.b` ... in the tmux session with the name `c` the `b`th pane in window `a`
 - [vim-puppet](https://github.com/rodjek/vim-puppet): Syntax file for puppet files (*no docu*)
 - [vimux](https://github.com/benmills/vimux): Easily interact with tmux from vim
   - `:call VimuxRunCommand("ls")` ... open a split pane without losing focus of Vim
