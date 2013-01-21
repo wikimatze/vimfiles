@@ -92,6 +92,10 @@
 - `"+p` ... paste from clipboard when being in normal mode
 - `"f3Y` ... yanking the next three lines in register f
 - `"fp` ... paste the contents of register f
+- `:<range>y` ... will yank the specified lines of the range (good to prevent stupid moving just for yanking a single
+  line)
+- `:<range>copy{address}` ... copy the range and put it **below** the address (e.g. `:16copy15`); a shortcut for `copy`
+  is `t` (to)
 
 
 # Ctags
