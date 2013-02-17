@@ -3,6 +3,7 @@
 I'm always eager to learn, but I can't remember everything. Here is the list of the plugins I'm using - it is a reminder
 of the most important commands and settings for each plugin.
 
+
 - [ack.vim](https://github.com/mileszs/ack.vim): You can perform ack commands in Vim
     - `:Ack {pattern} [{directory}]` - the basic command to search after words in your project
     - shortcuts for navigation:
@@ -103,6 +104,7 @@ of the most important commands and settings for each plugin.
   - `j`, `k` for navigation and <Enter> chose your entry
 - [vim-endwise](https://github.com/tpope/vim-endwise): Automatically adds keywords like *end* to special constructs in
   ruby (*no doc*)
+- [vim-gnupg](https://github.com/jamessan/vim-gnupg):  Transparent editing of gpg encrypted files (*no doc*)
 - [vim-markdown](https://github.com/tpope/vim-markdown): Markdown-syntax highlighting (*no doc*)
 - [vim-ruby](https://github.com/vim-ruby/vim-ruby): Configuration files for editing and compiling Ruby - it even adds
   custom text-objects only for Vim
@@ -147,6 +149,7 @@ of the most important commands and settings for each plugin.
 I highly not recommend you to copy my *.vimrc* because they may not fit to your working style (see **Luca Pettes**
 [wonderful article](http://lucapette.com/vim/rails/vim-for-rails-developers-lazy-modern-configuration)). But if you
 would like to use this repository to get started with Vim, please perform the following tasks:
+
 
 - `git clone git@github.com:matthias-guenther/vim-settings.git`
 - `mkdir ~/.vim/bundle ~/.vim/backup`
