@@ -267,4 +267,5 @@ Here is a list of plugins I used in the past and removed them due the lack of us
     - where the cursor is, this place will be displayed in the .dvi file
   - `inverse (reverse) search`
     - `<C-Left>` left mouse click in the .dvi file this location will be opend in the source file</pre>
+- [vim-liquid](https://github.com/tpope/vim-liquid): Highlight liquid tags used for jekyll (*no doc*)
 - [vspec](https://github.com/kana/vim-vspec): Testing framework for Vimscript

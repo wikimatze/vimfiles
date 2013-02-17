@@ -104,7 +104,6 @@ of the most important commands and settings for each plugin.
   - `d` delete an entry from from the yankring buffer - but you barely need this function
 - [vim-endwise](https://github.com/tpope/vim-endwise): Automatically adds keywords like *end* to special constructs in
   ruby (*no doc*)
-- [vim-liquid](https://github.com/tpope/vim-liquid): Highlight liquid tags used for jekyll (*no doc*)
 - [vim-markdown](https://github.com/tpope/vim-markdown): Markdown-syntax highlighting (*no doc*)
 - [vim-ruby](https://github.com/vim-ruby/vim-ruby): Configuration files for editing and compiling Ruby - it even adds
   custom text-objects only for Vim
