@@ -110,7 +110,7 @@
 - `<C-n> | <C-p>` ... autocompletion for next|previous matching
 - `<C-x><C-n>` ... current buffer keywords
 - `<C-x><C-i>` ... include file keywords
-- `<C-x><C-]>` ... tags file keywords
+- `<C-x><C-]>` ... tags file keywords (class name completion for Ruby files)
 - `<C-x><C-k>` ... dictionary lookup
 - `<C-x><C-l>` ... complete a whole line (good for matching complete function calls
 - `<C-x><C-f>` ... filename completion for the current directory

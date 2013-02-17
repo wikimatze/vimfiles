@@ -112,6 +112,7 @@ Here is a list of plugins I used in the past and removed them due the lack of us
       elseif has("unix")
         let g:gist_clip_command = 'xclip -selection clipboard'
       endif</pre>
+- [haskellmode-vim](https://github.com/lukerandall/haskellmode-vim)
 - [jQuery](https://github.com/vim-scripts/jQuery "jQuery"): pretty colors for the
   jQuery syntax (*no doc*)
 - [l9](https://github.com/vim-scripts/L9 "l9"): Vim-script library, add functionality to program vim-files (mainly needed for
@@ -267,5 +268,6 @@ Here is a list of plugins I used in the past and removed them due the lack of us
     - where the cursor is, this place will be displayed in the .dvi file
   - `inverse (reverse) search`
     - `<C-Left>` left mouse click in the .dvi file this location will be opend in the source file</pre>
+- [vim-golang](https://github.com/jnwhiteh/vim-golang)
 - [vim-liquid](https://github.com/tpope/vim-liquid): Highlight liquid tags used for jekyll (*no doc*)
 - [vspec](https://github.com/kana/vim-vspec): Testing framework for Vimscript
