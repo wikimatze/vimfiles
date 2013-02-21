@@ -22,8 +22,6 @@ of the most important commands and settings for each plugin.
   - `<leader>sel` ... execute the query
   - `:DBResultsClose` ... close the result window
 - [delimitMate](https://github.com/Raimondi/delimitMate): Semantic autoclose brackets
-- [hammer](https://github.com/matthias-guenther/hammer.vim): Displays various markups (markdown, textile, rdoc,
-  asciidoc) with one keystroke in the browser
 - [html5-syntax](https://github.com/othree/html5-syntax.vim): HTML5 elements syntax highlighing (*no doc*)
 - [IndexSearch](https://github.com/vim-scripts/IndexedSearch): Redefines the search `(/,?)` and creates custom messages
   about how many hits there are
