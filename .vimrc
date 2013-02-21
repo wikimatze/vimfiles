@@ -41,6 +41,7 @@ Bundle 'xolox/vim-notes'
 Bundle 'xolox/vim-shell'
 Bundle 'zaiste/tmux.vim'
 Bundle 'groenewege/vim-less'
+Bundle 'hail2u/vim-css3-syntax'
 
 " }}}
 " these settings need to come after vundle

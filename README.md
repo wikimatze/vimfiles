@@ -102,6 +102,7 @@ of the most important commands and settings for each plugin.
   - `:YRClear` ... deletes the buffer
   - `:YRSearch` ... type in a word or regular expression to search the yankring after it
   - `j`, `k` for navigation and <Enter> chose your entry
+- [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax): Add CSS3 syntax support (*no doc*)
 - [vim-endwise](https://github.com/tpope/vim-endwise): Automatically adds keywords like *end* to special constructs in
   ruby (*no doc*)
 - [vim-gnupg](https://github.com/jamessan/vim-gnupg):  Transparent editing of gpg encrypted files (*no doc*)
