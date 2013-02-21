@@ -40,6 +40,7 @@ Bundle 'vim-scripts/vis'
 Bundle 'xolox/vim-notes'
 Bundle 'xolox/vim-shell'
 Bundle 'zaiste/tmux.vim'
+Bundle 'groenewege/vim-less'
 
 " }}}
 " these settings need to come after vundle
