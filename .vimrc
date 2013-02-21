@@ -129,7 +129,6 @@ ru mappings/markdown_to_html.vim            " Converting markdown to HTML (<lead
 ru mappings/moving_wrapped_lines.vim        " Use hjkl in wrapped-lined files
 ru mappings/quickediting.vim                " ,ba; ,bm; ,br; ,ev to edit files of vim repos
 ru mappings/whitespace_jumping.vim          " Whitespace jumping with f|F<space>
-ru mappings/tab_shifting.vim                " <Tab>|<S-Tab> in visual to tab indent right|left
 
 " Press \cd to change the pwd to the current file you are in
 nn \cd :lcd %:h<CR>
