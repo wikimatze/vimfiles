@@ -113,6 +113,8 @@ Here is a list of plugins I used in the past and removed them due the lack of us
         let g:gist_clip_command = 'xclip -selection clipboard'
       endif</pre>
 - [haskellmode-vim](https://github.com/lukerandall/haskellmode-vim)
+- [hammer](https://github.com/matthias-guenther/hammer.vim): Displays various markups (markdown, textile, rdoc,
+  asciidoc) with one keystroke in the browser
 - [jQuery](https://github.com/vim-scripts/jQuery "jQuery"): pretty colors for the
   jQuery syntax (*no doc*)
 - [l9](https://github.com/vim-scripts/L9 "l9"): Vim-script library, add functionality to program vim-files (mainly needed for

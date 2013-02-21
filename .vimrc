@@ -18,8 +18,7 @@ Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
 Bundle 'jamessan/vim-gnupg'
 Bundle 'jpalardy/vim-slime'
-Bundle 'kien/ctrlp.vim'
-Bundle 'matthias-guenther/hammer.vim'
+Bundle 'kien/ctrlp.vim',
 Bundle 'matthias-guenther/tocdown'
 Bundle 'mileszs/ack.vim'
 Bundle 'msanders/snipmate.vim'
@@ -97,6 +96,7 @@ set wrap                                    " when lines are longer the width of
 set textwidth=100                           " maximum of text that is being inserted
 
 set fillchars=""                            " get rid of silly characters in separators in the CMD
+
 let mapleader = "," " change the leader to be a comma vs. backslash if not given
 
 let &scrolloff=999-&scrolloff " current view is always centered
