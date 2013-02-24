@@ -102,7 +102,11 @@ let mapleader = "," " change the leader to be a comma vs. backslash if not given
 let &scrolloff=999-&scrolloff " current view is always centered
 
 set background=dark
-colorscheme badwolf
+" solarized options
+let g:solarized_termcolors = 256
+let g:solarized_visibility = "low"
+let g:solarized_contrast = "high"
+colorscheme solarized
 
 " Resize splits when the window is resized
 au VimResized * :wincmd =
