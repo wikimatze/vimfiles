@@ -132,9 +132,6 @@ of the most important commands and settings for each plugin.
   - `:call VimuxRunCommand("ls")` ... open a split pane without losing focus of Vim
   - `:VimuxRunLastCommand` ... runs the last command
   - `:VimuxClosePanes` ... close all other tmux panes in the current window
-- [vis](https://github.com/vim-scripts/vis): Execute commands only in the selected section of visual mode
-    - mark a text in visual mode, then press `:B` and then you can perform any command
-    - example: replace all `\-` through `...` => `:'<','>':B s/-/.../`
 - [vundle](https://github.com/gmarik/vundle): Plugin manager for Vim
     - `:BundleInstall` ... opens a extra window and show the files that will be installed
     - `:BundleInstall!` ... installs or updates installed bundles

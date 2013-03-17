@@ -275,3 +275,6 @@ Here is a list of plugins I used in the past and removed them due the lack of us
 - [vim-golang](https://github.com/jnwhiteh/vim-golang)
 - [vim-liquid](https://github.com/tpope/vim-liquid): Highlight liquid tags used for jekyll (*no doc*)
 - [vspec](https://github.com/kana/vim-vspec): Testing framework for Vimscript
+- [vis](https://github.com/vim-scripts/vis): Execute commands only in the selected section of visual mode
+    - mark a text in visual mode, then press `:B` and then you can perform any command
+    - example: replace all `\-` through `...` => `:'<','>':B s/-/.../`
