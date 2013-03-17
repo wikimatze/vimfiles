@@ -188,6 +188,7 @@ Here is a list of plugins I used in the past and removed them due the lack of us
 <pre>
     let g:SuperTabDefaultCompletionType = "<C-n>"
     let g:SuperTabLongestHighlight      = 1</pre>
+- [vim-css3 syntax](https://github.com/hail2u/vim-css3-syntax): add syntax support for css3 (*no doc*)
 - [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs "vim-nerdtree-tabs"): opens one NERDTree which is the same in
   every tab
   - own settings:
@@ -195,7 +196,7 @@ Here is a list of plugins I used in the past and removed them due the lack of us
       - `let g:nerdtree\_tabs\_open\_on\_gui\_startup = 1` - open NERDTree on gvim/MacVim startup
       - `let g:nerdtree\_tabs\_open\_on\_console\_startup = 0` - don't openNERDTree on vi
       - `let g:nerdtree\_tabs\_autoclose = 1` - close current tab if there is only the NERDTree left - nice
-- [vim-css3 syntax](https://github.com/hail2u/vim-css3-syntax): add syntax support for css3 (*no doc*)
+- [vim-puppet](https://github.com/rodjek/vim-puppet): Syntax file for puppet files (*no docu*)
 - [vim-less](https://github.com/groenewege/vim-less "vim-less"): syntax highlighting, indenting and auto completion for the
   dynamic style sheet language (*no docu*)
 - [vim-bundler](https://github.com/tpope/vim-bundler): wrapper for bundler in Vim

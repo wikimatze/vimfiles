@@ -24,7 +24,6 @@ Bundle 'mileszs/ack.vim'
 Bundle 'msanders/snipmate.vim'
 Bundle 'nelstrom/vim-markdown-folding'
 Bundle 'othree/html5-syntax.vim'
-Bundle 'rodjek/vim-puppet'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-markdown'
@@ -41,6 +40,7 @@ Bundle 'xolox/vim-shell'
 Bundle 'zaiste/tmux.vim'
 Bundle 'groenewege/vim-less'
 Bundle 'hail2u/vim-css3-syntax'
+Bundle 'mikewest/vimroom'
 
 " }}}
 " these settings need to come after vundle
@@ -125,8 +125,7 @@ ru functions/insert_spacedate.vim " <F5> will insert current date (yyyy-mm-dd) a
 " Mappings {{{
 
 ru mappings/buffer_movement.vim             " Buffer movement (common [b, ]b, [B, ]B)
-ru mappings/c_up_c_down_to_move_text.vim    " <C-Up> and <C-Down> to move selected lines up and down
-ru mappings/commenting_and_uncommenting.vim " in visual mode press ,c (comment) and  ,u (uncomment)
+ru mappings/commenting_and_uncommenting.vim " Press ,c (comment) and  ,u (uncomment) in visual mode
 ru mappings/esc_with_jk.vim                 " emulare ESC with jk
 ru mappings/fullscreentoggle.vim            " <F12> Fullscreen-Toggle
 ru mappings/markdown_to_html.vim            " Converting markdown to HTML (<leader>md)
@@ -146,7 +145,6 @@ nn <space> za
 " Fixing the & command to save the flags of last substitution
 no & :&&<CR>
 xn & :&&<CR>
-
 
 " Char replacement (good for creating vocabularly)
 no <leader>bldots :%s/=/\& \\ldots \&/g<CR> " replace = through & \ldots &
