@@ -115,6 +115,7 @@ Here is a list of plugins I used in the past and removed them due the lack of us
 - [haskellmode-vim](https://github.com/lukerandall/haskellmode-vim)
 - [hammer](https://github.com/matthias-guenther/hammer.vim): Displays various markups (markdown, textile, rdoc,
   asciidoc) with one keystroke in the browser
+- [json](https://github.com/vim-scripts/JSON.vim): JSON detection and syntax-highlighting (*no doc*)
 - [jQuery](https://github.com/vim-scripts/jQuery "jQuery"): pretty colors for the
   jQuery syntax (*no doc*)
 - [l9](https://github.com/vim-scripts/L9 "l9"): Vim-script library, add functionality to program vim-files (mainly needed for

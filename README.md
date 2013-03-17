@@ -25,7 +25,6 @@ of the most important commands and settings for each plugin.
 - [html5-syntax](https://github.com/othree/html5-syntax.vim): HTML5 elements syntax highlighing (*no doc*)
 - [IndexSearch](https://github.com/vim-scripts/IndexedSearch): Redefines the search `(/,?)` and creates custom messages
   about how many hits there are
-- [json](https://github.com/vim-scripts/JSON.vim): JSON detection and syntax-highlighting (*no doc*)
 - [markdown-folding](https://github.com/nelstrom/vim-markdown-folding): Folding by section headings
 - [netrw](http://www.vim.org/scripts/script.php?script_id=1075): Build in file browser
   - `:edit .` ... take the current directory and open the file explorer
@@ -129,7 +128,6 @@ of the most important commands and settings for each plugin.
     - `:a` ... the `a`th window in the current pane
     - `:a.b` ... the `b`th pane in window `a`
     - `c:a.b` ... in the tmux session with the name `c` the `b`th pane in window `a`
-- [vim-puppet](https://github.com/rodjek/vim-puppet): Syntax file for puppet files (*no docu*)
 - [vimux](https://github.com/benmills/vimux): Easily interact with tmux from vim
   - `:call VimuxRunCommand("ls")` ... open a split pane without losing focus of Vim
   - `:VimuxRunLastCommand` ... runs the last command
@@ -167,5 +165,5 @@ Feature request, bugs, questions, etc. can be send to <matthias.guenther@wikimat
 
 This software is licensed under the [MIT license](http://en.wikipedia.org/wiki/MIT_License).
 
-© 2011-2013 Matthias Günther <matthias.guenther@wikimatze.de>
+©Matthias Günther <matthias.guenther@wikimatze.de>
 
