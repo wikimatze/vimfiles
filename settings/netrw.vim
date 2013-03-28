@@ -1,5 +1,5 @@
-" :Explore will look like NERDTree
-let g:netrw_liststyle=3
+" :Explore display style
+let g:netrw_liststyle=1
 
 " Hit enter in the file browser to open the selected
 " file with :vsplit to the right of the browser.
