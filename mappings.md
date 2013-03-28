@@ -229,6 +229,8 @@
   - `<C-w> [+...-]` ... change window size incremental (`+` for increase and `⁻` for decrease) -> command-line window will grow
     or shrink
   - `<C-w =>` ... adjust all windows to the same size
+- `:ccl` ... closes the quickfix windows
+- `:lcl` ... closes the location windows (lint commands)
 
 
 # Marks
