@@ -354,3 +354,18 @@
 - replace line ending through **\\\\:** `:%s/$/ \\\\/`
 - replace **a = b** to **b = a:** `:%s/\(.*\)=\(.*\)/\2=\1`
 
+
+# Speak Vim
+- verbs:
+  v (visual),
+  c (change),
+  d (delete),
+  y (yank/copy)
+- modifiers:
+  i (inside),
+  a (around),
+  t (till..finds a character),
+  f (find..like till except including the char),
+  / (search..find a string/regex)
+- text object:
+ w (word), s (sentence) p (paragraph) b (block/parentheses), t (tag, works for html/xml)
