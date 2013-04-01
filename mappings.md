@@ -331,6 +331,25 @@
 - `:set spelling=de_19` ... setting the spell-language to 'alte deutsche Rechtschreibung'
 
 
+# vim grammar
+- repetition = 1..9 (non-zero-digit)
+- motion = w | W | b | B | e | E | ^ | $ | { | %
+- operator:
+  - d ... delete
+  - y ... yank
+  - c ... change
+- text-obj = modifier object
+- modifier = a | i
+- object = w | W | s | p | [ | ] | { | } | ( | ) | " | ' | | ` | < | >
+- rule #1 = operator motion
+  - example:
+    - d$ ... delete till end of line
+    - yW ... copy till end of WORD
+- rule #2 = [repetition] operator [repetition] (motion | text-obj)
+  - 3dw ... delete a word three times
+  - d3w ... delete forward for three words
+  - 3d5w ... delete forward for five words 3 times
+
 # Hacks
 - replace line ending through **\\\\:** `:%s/$/ \\\\/`
 - replace **a = b** to **b = a:** `:%s/\(.*\)=\(.*\)/\2=\1`
