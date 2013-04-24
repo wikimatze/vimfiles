@@ -153,6 +153,10 @@
   - run `%s/<C-r>//g` -> the `<C-r>/` will place the last search pattern
   - alternatively, you can insert the contents of a register with `<C-r>{register}` -> remember that
     `0` stands for the last yanked line
+- pasting a word from register to search for it:
+  - in normal mode press `"ayw"`
+  - go into search mode via `/`
+  - press `Ctrl-R a` to paste the contents of register `a`
 
 
 # Matching Patterns and literals
