@@ -6,6 +6,8 @@ snippet h3
 	### ${1:}
 snippet h4
 	#### ${1:}
+snippet h5
+	##### ${1:}
 snippet c
 	{% highlight ${1:n} %}
 
@@ -16,11 +18,7 @@ snippet ic
 	\`${1:}\`
 snippet lc
 	{: lang="${1:}" }
-			${2:}
-snippet sl
-	!SLIDE
-
-	${1:}
+			# ${2:}
 snippet b
 	- ${1:}
 	- ${2:}
@@ -57,10 +55,6 @@ snippet it
 	*${1:}*
 snippet lk
 	[${1:}](${2:})
-snippet hr
-	---
-
-	${1:}
 snippet table
 	<table>
 		<tr>
@@ -79,10 +73,8 @@ snippet blockquote
 		<p>${1:n}</p>
 		<strong>${2:n}</strong>
 	</blockquote>
-snippet gist
-	{% gist ${1:gist_id} ${2:gist_name} %}
 snippet fancycaption
-	<a href="${1:big_image}" title="${2:title}" class="fancybox"><img src="${3:small_image}" class="center" alt="$2"/></a>
+	<a href="${1:b_img}" title="${2:t}" class="fancybox"><img src="${3:s_img}" class="center" alt="$2"/></a>
 	<div class="$2"></div>
 snippet fancy
-	<a href="${1:big_image}" title="${2:title}" class="fancybox"><img src="${3:small_image}" class="center" alt="$2"/></a>
+	<a href="${1:b_img}" title="${2:t}" class="fancybox"><img src="${3:s_img}" class="center" alt="$2"/></a>
