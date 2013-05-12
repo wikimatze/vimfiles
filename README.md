@@ -5,26 +5,23 @@ of the most important commands and settings for each plugin.
 
 
 - [ack.vim](https://github.com/mileszs/ack.vim): You can perform ack commands in Vim
-    - `:Ack {pattern} [{directory}]` - the basic command to search after words in your project
-    - shortcuts for navigation:
-      - `:o` ... open the selected file in the current window
-      - `:go` ... open preview but will stay in the quickfix preview window
-      - `:t` ... open the selected file in a new tab
-      - `:v` ... vertical split
-      - `:q` ... quit the Ack window
+  - `:Ack {pattern} [{directory}]` - the basic command to search after words in your project
+  - shortcuts for navigation:
+    - `:o` ... open the selected file in the current window
+    - `:go` ... open preview but will stay in the quickfix preview window
+    - `:t` ... open the selected file in a new tab
+    - `:v` ... vertical split
+    - `:q` ... quit the Ack window
 - [ctrlp](http://kien.github.com/ctrlp.vim/): Full path fuzzy file, MRU, tag, and a tons of options
   - `<C-t>` ... will open the finding match in a tab
   - `<C-v>` ... will open the finding match in a vertical split
   - `<C-x>` ... will open the finding match in a horizontal split
   - `<C-f>` + `<C-b>` ... cycle between search modes (buffer, files, MRU, tags)
-  - `<C-z>` ... to mark multiple files and `<C-o>` to open them
-- [dbext](http://www.vim.org/scripts/script.php?script_id=356): Connect to your database to perform custom queries
-  - `<leader>sel` ... execute the query
-  - `:DBResultsClose` ... close the result window
+  - `<C-z>` ... to mark multiple files and `<C-o>` to open them splitted, if you press only enter it will open it
+    normally
 - [delimitMate](https://github.com/Raimondi/delimitMate): Semantic autoclose brackets
+- [gitgutter](https://github.com/akiomik/git-gutter-vim): Shows git diff in Vim's gutter
 - [html5-syntax](https://github.com/othree/html5-syntax.vim): HTML5 elements syntax highlighing (*no doc*)
-- [IndexSearch](https://github.com/vim-scripts/IndexedSearch): Redefines the search `(/,?)` and creates custom messages
-  about how many hits there are
 - [markdown-folding](https://github.com/nelstrom/vim-markdown-folding): Folding by section headings
 - [netrw](http://www.vim.org/scripts/script.php?script_id=1075): Build in file browser
   - `:edit .` ... take the current directory and open the file explorer
@@ -34,16 +31,16 @@ of the most important commands and settings for each plugin.
   - `:Sexplore ` ... horizontal split the current file in a new window
   - `:Vexplore ` ... vertical split the current file in a new window
   - inside the netrw window
-      - `v` ... vertical split of file in a new window
-      - `p` ... preview the selected file and staying in the tree-browser
-      - `P` ... preview the selected file in a big view and minimze the tree-browser to a minimum
-      - `r` ... reverse order of the file listings
-      - `<C-l>` ... refresh the view
+    - `v` ... vertical split of file in a new window
+    - `p` ... preview the selected file and staying in the tree-browser
+    - `P` ... preview the selected file in a big view and minimze the tree-browser to a minimum
+    - `r` ... reverse order of the file listings
+    - `<C-l>` ... refresh the view
   - file creation:
-      - `%` ... creates a new file
-      - `D` ... delete directory/file
-      - `d` ... create a directory
-      - `R` ... rename directory/file
+    - `%` ... creates a new file
+    - `D` ... delete directory/file
+    - `d` ... create a directory
+    - `R` ... rename directory/file
 - [notes](https://github.com/xolox/vim-notes): Perfect and easy note taking
   - `:Note` ... starts a new note (you can specify the name of the note in the header)
   - `:write or :update` save the notes
@@ -57,11 +54,17 @@ of the most important commands and settings for each plugin.
     saved
   - it is possible to open notes directly from the command-line with **vim notes:collect**
   - tags:
-      - with @tag you can define own tags (they are useful for searching)
-      - `:IndexTaggedNotes` ... creates new tags (for omnicomplete when @ is pressed)
-      - `:ShowTaggedNotes` ... will show all notes which are specified with a certain tag
-      - `autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h\*` ... path of the notes directory
-- [rubyrefactoring](https://github.com/ecomba/vim-ruby-refactoring): Wonderful refactoring for ruby
+    - with @tag you can define own tags (they are useful for searching)
+    - `:IndexTaggedNotes` ... creates new tags (for omnicomplete when @ is pressed)
+    - `:ShowTaggedNotes` ... will show all notes which are specified with a certain tag
+    - `autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h\*` ... path of the notes directory
+- [ri.vim](https://github.com/danchoi/ri.vim): Browse ri documentation offline in Vim
+  - `,r` ... opens start/autocomplete window with horizontalsplit
+  - `,R` ... open start/autocomplete window with vertical split
+  - inside documentation window
+    - `,,r` ... class/module autocompletion window
+    - `-` ... goes up from a method page into the parent class/module
+- [rubyrefactoring](https://github.com/ecomba/vim-ruby-refactoring): Refactoring for ruby
   - `,rap`: Refactor Add Parameter ... adds a parameter to a function (cursor must be somewhere in the function)
   - `,rec`: Refactor Extract Constant ... mark a number in visual mode and the one will be moved on the top of a class
     or module
@@ -79,26 +82,20 @@ of the most important commands and settings for each plugin.
 - [syntastic](https://github.com/scrooloose/syntastic): Performs syntax check on various languages when saving
 - [surround](https://github.com/tpope/vim-surround): Change quotes and all other delimiters
   - `ds"` ... stands for delete surround and will delete the surrounds
-      - example: `{ :a => 1 }` after pressing `ds{` you will get `:a => 1`
+    - example: `{ :a => 1 }` after pressing `ds{` you will get `:a => 1`
   - `cs("` ... change surroundings and will replace the first surrounding argument with the second surrounding
-      - example: `(:a => 1)` after pressing `cs({` you will get `{ :a => 1 }`
+    - example: `(:a => 1)` after pressing `cs({` you will get `{ :a => 1 }`
   - `ys` ... stands for "you surround" and the first argument specifies the scope and the second
     makes the replacement and the second using for wrapping up the first argument with the quotes
-      - `ys2w\` ... will wrapp two following words (`2w`) with underscores (`\*`)
-      - `yss{` ... wraps the whole line
+    - `ys2w\` ... will wrapp two following words (`2w`) with underscores (`\*`)
+    - `yss{` ... wraps the whole line
   - how to quote whole string?
-      - mark the string in visual mode (either normal mode with *v* or block mode with `V`), then
-        press `s` and then the quote (`"", (), {}`) you want to have and it wraps the string in this
+    - mark the string in visual mode (either normal mode with *v* or block mode with `V`), then
+      press `s` and then the quote (`"", (), {}`) you want to have and it wraps the string in this
 - [tabular](https://github.com/godlygeek/tabular): Auto indent files according to the pattern
   - `:Tabularize / {pattern}`
-- [tmux.vim](https://github.com/zaiste/tmux.vim): Syntax detection for tmux files and highlighting (*no doc*)
 - [tocdown](https://github.com/matthias-guenther/tocdown): Display the headlines of a markdown document in an extra
   window.
-- [yankring](https://github.com/vim-scripts/YankRing.vim): Better register management and saves up to 100 buffered lines
-  - `:YRShow` ... shows the actual buffer (you can use visual buttons to select more)
-  - `:YRClear` ... deletes the buffer
-  - `:YRSearch` ... type in a word or regular expression to search the yankring after it
-  - `j`, `k` for navigation and <Enter> chose your entry
 - [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax): Add CSS3 syntax support (*no doc*)
 - [vim-endwise](https://github.com/tpope/vim-endwise): Automatically adds keywords like *end* to special constructs in
   ruby (*no doc*)
@@ -117,7 +114,6 @@ of the most important commands and settings for each plugin.
     - `[m` ... move to the beginning of the *previous method*
     - `]]` ... move to the beginning of the **next** *module* or *class* definition
     - `[[` ... move to the beginning of the **previous** *module* or *class* definition
-- [vim-shell](https://github.com/xolox/vim-shell): Open files and web pages in associated programs out of Vim
 - [vim-slime](https://github.com/jpalardy/vim-slime): Send text to a screen/tmux session (perfect REPL abilities for
   Vim)
   - `<C>cc` ... put the curent paragraph in the predefined window (`vip`)
@@ -134,35 +130,33 @@ of the most important commands and settings for each plugin.
   - `:call VimuxRunCommand("ls")` ... open a split pane without losing focus of Vim
   - `:VimuxRunLastCommand` ... runs the last command
   - `:VimuxClosePanes` ... close all other tmux panes in the current window
-- [vundle](https://github.com/gmarik/vundle): Plugin manager for Vim
-    - `:BundleInstall` ... opens a extra window and show the files that will be installed
-    - `:BundleInstall!` ... installs or updates installed bundles
-    - `:BundleSearch <foo>` ... opens a window to display the matches in an extra window
-    - `:BundleClean` ... confirms removal of unused script-dirs from `.vim/bundle/`.
+- [yankring](https://github.com/vim-scripts/YankRing.vim): Better register management and saves up to 100 buffered lines
+  - `:YRShow` ... shows the actual buffer (you can use visual buttons to select more)
+  - `:YRClear` ... deletes the buffer
+  - `:YRSearch` ... type in a word or regular expression to search the yankring after it
+  - `j`, `k` for navigation and <Enter> chose your entry
 
 
-# Usage
+## Usage
 
 I highly not recommend you to copy my *.vimrc* because they may not fit to your working style (see **Luca Pettes**
 [wonderful article](http://lucapette.com/vim/rails/vim-for-rails-developers-lazy-modern-configuration)). But if you
 would like to use this repository to get started with Vim, please perform the following tasks:
 
 
-- `git clone git@github.com:matthias-guenther/vim-settings.git`
-- `mkdir ~/.vim/bundle ~/.vim/backup`
-- `git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
-- Start Vim and omitt the error message
-- type `:BundleInstall`
+- `git clone --recursive git@github.com:matthias-guenther/vim-settings.git ~/.vim`
+- `mkdir ~/.vim/backup`
+- Start Vim and be happy
 
 
-# Contact
+## Contact
 
 Feature request, bugs, questions, etc. can be send to <matthias.guenther@wikimatze.de>.
 
 
-# License
+## License
 
 This software is licensed under the [MIT license](http://en.wikipedia.org/wiki/MIT_License).
 
-©Matthias Günther <matthias.guenther@wikimatze.de>
+© Matthias Günther <matthias.guenther@wikimatze.de>
 
