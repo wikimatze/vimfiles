@@ -35,6 +35,9 @@ Here is a list of plugins I used in the past and removed them due the lack of us
       let g:CommandTAcceptSelectionTabMap = '<C-t>'       " Ctrl-t will open the file in a new tab
       set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " not matching files</pre>
 - [cucumber](https://github.com/tpope/vim-cucumber "cucumber"): syntax-highlighting for cucumber files (*no doc*)
+- [dbext](http://www.vim.org/scripts/script.php?script_id=356): Connect to your database to perform custom queries
+  - `<leader>sel` ... execute the query
+  - `:DBResultsClose` ... close the result window
 - [easymotion](https://github.com/Lokaltog/vim-easymotion): easier and faster use of motions
     - `<leader><leader>w | e | j | ..` ... jump to the matching words on the screen
     - `<leader><leader>t | T` ... search after the target character forward (`t`) and backward (`T`)
@@ -115,6 +118,8 @@ Here is a list of plugins I used in the past and removed them due the lack of us
 - [haskellmode-vim](https://github.com/lukerandall/haskellmode-vim)
 - [hammer](https://github.com/matthias-guenther/hammer.vim): Displays various markups (markdown, textile, rdoc,
   asciidoc) with one keystroke in the browser
+- [IndexSearch](https://github.com/vim-scripts/IndexedSearch): Redefines the search `(/,?)` and creates custom messages
+  about how many hits there are
 - [json](https://github.com/vim-scripts/JSON.vim): JSON detection and syntax-highlighting (*no doc*)
 - [jQuery](https://github.com/vim-scripts/jQuery "jQuery"): pretty colors for the
   jQuery syntax (*no doc*)
@@ -189,6 +194,7 @@ Here is a list of plugins I used in the past and removed them due the lack of us
 <pre>
     let g:SuperTabDefaultCompletionType = "<C-n>"
     let g:SuperTabLongestHighlight      = 1</pre>
+- [tmux.vim](https://github.com/zaiste/tmux.vim): Syntax detection for tmux files and highlighting (*no doc*)
 - [vim-css3 syntax](https://github.com/hail2u/vim-css3-syntax): add syntax support for css3 (*no doc*)
 - [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs "vim-nerdtree-tabs"): opens one NERDTree which is the same in
   every tab
@@ -274,7 +280,17 @@ Here is a list of plugins I used in the past and removed them due the lack of us
     - `<C-Left>` left mouse click in the .dvi file this location will be opend in the source file</pre>
 - [vim-golang](https://github.com/jnwhiteh/vim-golang)
 - [vim-liquid](https://github.com/tpope/vim-liquid): Highlight liquid tags used for jekyll (*no doc*)
+- [vim-shell](https://github.com/xolox/vim-shell): Open files and web pages in associated programs out of Vim
 - [vspec](https://github.com/kana/vim-vspec): Testing framework for Vimscript
 - [vis](https://github.com/vim-scripts/vis): Execute commands only in the selected section of visual mode
-    - mark a text in visual mode, then press `:B` and then you can perform any command
-    - example: replace all `\-` through `...` => `:'<','>':B s/-/.../`
+  - mark a text in visual mode, then press `:B` and then you can perform any command
+  - example: replace all `\-` through `...` => `:'<','>':B s/-/.../`
+- [vimux](https://github.com/benmills/vimux): Easily interact with tmux from vim
+  - `:call VimuxRunCommand("ls")` ... open a split pane without losing focus of Vim
+  - `:VimuxRunLastCommand` ... runs the last command
+  - `:VimuxClosePanes` ... close all other tmux panes in the current window
+- [vundle](https://github.com/gmarik/vundle): Plugin manager for Vim
+  - `:BundleInstall` ... opens a extra window and show the files that will be installed
+  - `:BundleInstall!` ... installs or updates installed bundles
+  - `:BundleSearch <foo>` ... opens a window to display the matches in an extra window
+  - `:BundleClean` ... confirms removal of unused script-dirs from `.vim/bundle/`.
