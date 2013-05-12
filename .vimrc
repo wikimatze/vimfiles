@@ -1,55 +1,15 @@
-" Preamble -----------------------------------------------------------------------{{{
+execute pathogen#infect('plugins/{}')
 
-set nocompatible   " be iMproved
-filetype off       " required! for vundle
-filetype plugin on " enable file type-specific plugins
-
-set runtimepath+=~/.vim/bundle/vundle/ " add vundle to ru path
-call vundle#rc()
-
-let g:vundle_default_git_proto = 'git' " use git protocol instead of https when building absolute repo URIs
-
-" bundles {{{
-
-Bundle 'Raimondi/delimitMate'
-Bundle 'benmills/vimux'
-Bundle 'ecomba/vim-ruby-refactoring'
-Bundle 'gmarik/vundle'
-Bundle 'godlygeek/tabular'
-Bundle 'jamessan/vim-gnupg'
-Bundle 'jpalardy/vim-slime'
-Bundle 'kien/ctrlp.vim',
-Bundle 'matthias-guenther/tocdown'
-Bundle 'mileszs/ack.vim'
-Bundle 'msanders/snipmate.vim'
-Bundle 'nelstrom/vim-markdown-folding'
-Bundle 'othree/html5-syntax.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-speeddating'
-Bundle 'tpope/vim-surround'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'vim-scripts/IndexedSearch'
-Bundle 'vim-scripts/YankRing.vim'
-Bundle 'vim-scripts/dbext.vim'
-Bundle 'xolox/vim-notes'
-Bundle 'xolox/vim-shell'
-Bundle 'zaiste/tmux.vim'
-Bundle 'groenewege/vim-less'
-Bundle 'hail2u/vim-css3-syntax'
-Bundle 'mikewest/vimroom'
-
-" }}}
-" these settings need to come after vundle
+" these settings need to come after pathogen
 syntax on          " enable syntax highlighting
 filetype on        " enable file type detection
 filetype indent on " enable file type-specific indenting
+set nocompatible   " be iMproved
+filetype plugin on " enable file type-specific plugins
 
 " defining custom omnicompletion functions
 ru options/omnicompletion.vim
-" --------------------------------------------------------------------------------}}}
-" General settings ---------------------------------------------------------------{{{
+" General settings {{{
 
 set encoding=utf-8                          " terminal encoding
 set fileencodings=utf-8,default,latin1      " the order of file encodings to try.

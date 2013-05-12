@@ -1,0 +1,66 @@
+[submodule "plugins/ack.vim"]
+	path = plugins/ack.vim
+	url = https://github.com/mileszs/ack.vim
+[submodule "plugins/ctrlp.vim"]
+	path = plugins/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "plugins/delimitMate"]
+	path = plugins/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule "plugins/html5-syntax.vim"]
+	path = plugins/html5-syntax.vim
+	url = https://github.com/othree/html5-syntax.vim.git
+[submodule "plugins/snipmate.vim"]
+	path = plugins/snipmate.vim
+	url = https://github.com/msanders/snipmate.vim.git
+[submodule "plugins/vim-markdown-folding"]
+	path = plugins/vim-markdown-folding
+	url = https://github.com/nelstrom/vim-markdown-folding.git
+[submodule "plugins/vim-notes"]
+	path = plugins/vim-notes
+	url = https://github.com/xolox/vim-notes.git
+[submodule "plugins/syntastic"]
+	path = plugins/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "plugins/vim-speeddating"]
+	path = plugins/vim-speeddating
+	url = https://github.com/tpope/vim-speeddating.git
+[submodule "plugins/vim-surround"]
+	path = plugins/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "plugins/tabular"]
+	path = plugins/tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule "plugins/tocdown"]
+	path = plugins/tocdown
+	url = https://github.com/matthias-guenther/tocdown.git
+[submodule "plugins/vim-css3-syntax"]
+	path = plugins/vim-css3-syntax
+	url = https://github.com/hail2u/vim-css3-syntax.git
+[submodule "plugins/vim-ednwise"]
+	path = plugins/vim-ednwise
+	url = https://github.com/tpope/vim-endwise.git
+[submodule "plugins/vim-less"]
+	path = plugins/vim-less
+	url = https://github.com/groenewege/vim-less
+[submodule "plugins/vim-markdown"]
+	path = plugins/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "plugins/vim-ruby"]
+	path = plugins/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby
+[submodule "plugins/vim-slime"]
+	path = plugins/vim-slime
+	url = https://github.com/jpalardy/vim-slime.git
+[submodule "plugins/vim-ruby-refactoring"]
+	path = plugins/vim-ruby-refactoring
+	url = https://github.com/ecomba/vim-ruby-refactoring.git
+[submodule "plugins/YankRing.vim"]
+	path = plugins/YankRing.vim
+	url = https://github.com/vim-scripts/YankRing.vim.git
+[submodule "plugins/ri.vim"]
+	path = plugins/ri.vim
+	url = https://github.com/danchoi/ri.vim.git
+[submodule "plugins/vim-gutter"]
+	path = plugins/vim-gutter
+	url = https://github.com/airblade/vim-gitgutter.git
