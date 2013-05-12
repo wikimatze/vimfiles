@@ -296,8 +296,7 @@
 - `:map` ... over view of all mappings of the current session
 - `:messages` ...  history of all events of the current session
 - `:retab` ... re place all tabs of a file with spaces
-- `:options` ...  opens a new window with all specified options you can set in Vim (even with nice
-  explanations)
+- `:options` ...  opens a new window with all specified options you can set in Vim (even with nice explanations)
 - `:args` ... prints a list of all opened files
 - `:saveas <filename>` - save the changes you made on the new text file
 - `:history` ...  print the last commands for the command-line
@@ -321,6 +320,7 @@
 - `:help ins-completion` overview of commands to start autocompletion
 - `:help 'complete'` ... specifies how keyword completion works
 - `digraphs` ...  will display list of characters that are not on the keyboard (still don't know how to use them)
+- `gx` ... opens the URL under the browser
 
 
 # Spellchecker
