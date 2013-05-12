@@ -31,8 +31,8 @@ if has ('gui_running')
   " }}}
   " Unix {{{
   elseif has('unix')
-    " for the ack.vim plugin
-    let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+    " for the ack.vim plugin (uses now the much faster
+    let g:ackprg="ag -H --nocolor --nogroup --column"
 
     set guifont=Inconsolata\ 11
   endif
