@@ -26,6 +26,13 @@
 - `gg` ... go to the beginning of a file (beginning of the giggle)
 - `G` ... go to the end of a file
 - `ddp` ... will switch two lines
+- in the commandline of vim
+  - `<C-a>` ... beginning of a line
+  - `<C-e>` ... go at the of a line
+  - `<C-b>` ... go one word left
+  - `<C-f>` ... go one word right
+  - `<C-p>` ... move back in the command history
+  - `<C-n>` ... move forward in the command history
 
 
 # Edit

@@ -81,6 +81,7 @@ ru functions/insert_spacedate.vim " <F5> will insert current date (yyyy-mm-dd) a
 " }}}
 " Mappings {{{
 
+ru mappings/commandline.vim                 " using bash commands in the vim commandline
 ru mappings/commenting_and_uncommenting.vim " ,c (comment) and  ,u (uncomment) in visual mode
 ru mappings/esc_with_jk.vim                 " emulare ESC with jk
 ru mappings/fullscreentoggle.vim            " <F12> Fullscreen-Toggle
