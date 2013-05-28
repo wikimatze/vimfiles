@@ -81,8 +81,7 @@ ru functions/insert_spacedate.vim " <F5> will insert current date (yyyy-mm-dd) a
 " }}}
 " Mappings {{{
 
-ru mappings/buffer_movement.vim             " Buffer movement (common [b, ]b, [B, ]B)
-ru mappings/commenting_and_uncommenting.vim " Press ,c (comment) and  ,u (uncomment) in visual mode
+ru mappings/commenting_and_uncommenting.vim " ,c (comment) and  ,u (uncomment) in visual mode
 ru mappings/esc_with_jk.vim                 " emulare ESC with jk
 ru mappings/fullscreentoggle.vim            " <F12> Fullscreen-Toggle
 ru mappings/markdown_to_html.vim            " Converting markdown to HTML (<leader>md)
