@@ -83,8 +83,8 @@ ru functions/insert_spacedate.vim " <F5> will insert current date (yyyy-mm-dd) a
 
 ru mappings/commandline.vim                 " using bash commands in the vim commandline
 ru mappings/commenting_and_uncommenting.vim " ,c (comment) and  ,u (uncomment) in visual mode
+ru mappings/copy_paste_from_clipboard.vim   "
 ru mappings/esc_with_jk.vim                 " emulare ESC with jk
-ru mappings/fullscreentoggle.vim            " <F12> Fullscreen-Toggle
 ru mappings/markdown_to_html.vim            " Converting markdown to HTML (<leader>md)
 ru mappings/moving_wrapped_lines.vim        " Use hjkl in wrapped-lined files
 ru mappings/quickediting.vim                " ,ba; ,bm; ,br; ,ev to edit files of vim repos
@@ -109,8 +109,6 @@ no <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of each lin
 no <leader>_ :%s/_//g<CR>                   " delete all _
 no <leader>rt :%s/\\t/  /g<CR>
 
-ru mappings/commandline.vim
-ru mappings/copy_paste_from_clipboard.vim
 ru mappings/keep_cursor_joining_lines.vim
 
 " }}}
