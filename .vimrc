@@ -75,7 +75,6 @@ ru! options/*.vim
 " --------------------------------------------------------------------------------}}}
 " Functions {{{
 
-ru functions/search_for_current_selection.vim
 ru functions/trailing_whitespaces_removal.vim
 ru functions/insert_spacedate.vim " <F5> will insert current date (yyyy-mm-dd) at EOL with space
 
