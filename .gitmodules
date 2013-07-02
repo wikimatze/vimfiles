@@ -67,3 +67,9 @@
 [submodule "plugins/vim-gnupg"]
 	path = plugins/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg.git
+[submodule "plugins/vim-multiple-cursors"]
+	path = plugins/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "plugins/vim-misc"]
+	path = plugins/vim-misc
+	url = https://github.com/xolox/vim-misc.git
