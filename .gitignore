@@ -2,5 +2,6 @@
 backup/
 bundle/
 sessions/
-yankring_file_v2.txt
+yankring_file*
+.netrwhist
 *.spl
