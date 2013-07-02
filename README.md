@@ -23,6 +23,11 @@ of the most important commands and settings for each plugin.
 - [gitgutter](https://github.com/akiomik/git-gutter-vim): Shows git diff in Vim's gutter
 - [html5-syntax](https://github.com/othree/html5-syntax.vim): HTML5 elements syntax highlighing (*no doc*)
 - [markdown-folding](https://github.com/nelstrom/vim-markdown-folding): Folding by section headings
+- [multiple cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style selection to replace method
+  names
+  - `<C-n>` ... the current word under the cursor will be selected
+  - `<C-x>` ... remove the current virtual cursor and skip to the next virtual cursor location
+  - `ESC` ... will leave the selection mode
 - [netrw](http://www.vim.org/scripts/script.php?script_id=1075): Build in file browser
   - `:edit .` ... take the current directory and open the file explorer
   - `:split .` ... vertical split at current working directory
