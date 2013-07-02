@@ -37,8 +37,8 @@
 [submodule "plugins/vim-css3-syntax"]
 	path = plugins/vim-css3-syntax
 	url = https://github.com/hail2u/vim-css3-syntax.git
-[submodule "plugins/vim-ednwise"]
-	path = plugins/vim-ednwise
+[submodule "plugins/vim-endwise"]
+	path = plugins/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
 [submodule "plugins/vim-less"]
 	path = plugins/vim-less
