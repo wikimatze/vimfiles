@@ -107,7 +107,7 @@ of the most important commands and settings for each plugin.
 - [vim-gnupg](https://github.com/jamessan/vim-gnupg):  Transparent editing of gpg encrypted files (*no doc*)
 - [vim-less](https://github.com/groenewege/vim-less): Syntax detection for less files (*no doc*)
 - [vim-markdown](https://github.com/tpope/vim-markdown): Markdown-syntax highlighting (*no doc*)
-- [vim-misc](https://github.com/xolox/vim-misc): Extended Vim standard library needed for vim-notes plugin
+- [vim-misc](https://github.com/xolox/vim-misc): Extended Vim standard library needed for vim-notes plugin (*doc misc*)
 - [vim-ruby](https://github.com/vim-ruby/vim-ruby): Configuration files for editing and compiling Ruby - it even adds
   custom text-objects only for Vim
   - following commands can performed in *visual mode*
@@ -152,7 +152,7 @@ would like to use this repository to get started with Vim, please perform the fo
 
 - `git clone --recursive git@github.com:matthias-guenther/vim-settings.git ~/.vim`
 - `mkdir ~/.vim/backup`
-- `mv ~/.vim/.vimrc ~/
+- `mv ~/.vim/.vimrc ~/`
 
 
 ## Contact
