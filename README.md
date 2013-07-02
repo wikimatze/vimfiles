@@ -137,7 +137,7 @@ of the most important commands and settings for each plugin.
   - `j`, `k` for navigation and <Enter> chose your entry
 
 
-## Usage
+## Installation
 
 I highly not recommend you to copy my *.vimrc* because they may not fit to your working style (see **Luca Pettes**
 [wonderful article](http://lucapette.com/vim/rails/vim-for-rails-developers-lazy-modern-configuration)). But if you
@@ -146,7 +146,7 @@ would like to use this repository to get started with Vim, please perform the fo
 
 - `git clone --recursive git@github.com:matthias-guenther/vim-settings.git ~/.vim`
 - `mkdir ~/.vim/backup`
-- Start Vim and be happy
+- `mv ~/.vim/.vimrc ~/
 
 
 ## Contact
