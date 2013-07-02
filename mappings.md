@@ -79,6 +79,8 @@
 - `:x` ... save all changes and terminate Vim
 - `:split bla.txt` ... open file via horizontal split
 - `:vsplit bla.txt` ... open file via vertical split
+- `:e!` ... reload the file
+- `vim <file> +<number>` ... open the file in the specified location
 
 
 # Delete, Cut, and copy
