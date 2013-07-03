@@ -130,8 +130,6 @@ of the most important commands and settings for each plugin.
     - `:a` ... the `a`th window in the current pane
     - `:a.b` ... the `b`th pane in window `a`
     - `c:a.b` ... in the tmux session with the name `c` the `b`th pane in window `a`
-- [vimroom](https://github.com/mikewest/vimroom/): Distraction free writing
-  - `:VimroomToggle` ... enables/disable the mode
 - [vimux](https://github.com/benmills/vimux): Easily interact with tmux from vim
   - `:call VimuxRunCommand("ls")` ... open a split pane without losing focus of Vim
   - `:VimuxRunLastCommand` ... runs the last command
