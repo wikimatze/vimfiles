@@ -20,6 +20,37 @@ of the most important commands and settings for each plugin.
   - `<C-z>` ... to mark multiple files and `<C-o>` to open them splitted, if you press only enter it will open it
     normally
 - [delimitMate](https://github.com/Raimondi/delimitMate): Semantic autoclose brackets
+- [fugitive](http://github.com/tpope/vim-fugitive): Git wrapper
+  - `:Gstatus` ... git status
+      - `<C-n>` ... go to the next file
+      - `<C-p>` ... go to the preview file
+      - `-` ... git add/git reset depending where you are in the windows (mark multiple files in visual mode)
+      - `<Enter>` ... will open the file in an extra window (use `:Gdiff` for a codereview)
+  - `:Gwrite` ... stage the current file to index
+  - `:Gcommit` ... git commit (press *wq* for send)
+  - `:Gmove` ... Rename the current file and the corresponding Vim buffer
+  - `:Gremove` ... git rm
+  - `:Gdiff` ... split the window and display the changes and for merging with vimdiff
+      - `]c` ... jump to next hunk of the merge
+      - `[c` ... jump to previous hunk of merge
+      - `p` ... run `git add -p` for the current file
+      - `:diffget` ... get the changes from the not active window
+      - `:diffput` ... put the changes from the active window to the not active window
+      - 3-way diffs:
+          - `:diffget //2` ... get the changes from left (target branch = the branch you were in when you wanted to merge),          - `:diffget //3` ... get changes from the right (merge branch = the branch you want to merge),
+          - `:diffupdate` ... clean up the views when having a file with many conflicts
+          - `dp` ... if you are not in the working copy, you can use this command to put in the changes
+          - when done with merging, run `:Gwrite` and `:only!` on the working copy to close all the other windows
+  - `:Gread` ... makes a git checkout and update vim's buffer to the content of HEAD
+  - `:Gblame` ... git blame
+  - `:Git` ... perform every other normal git command in the terminal
+  - `:Glog` ... git log
+      - `:Glog -5` ... will open the last 5 commits (`:copen` will open the quickfix window for all commits)
+      - `:Glog -- %` ... will open only the commits that touch the current file
+  - searching:
+      - search working copy files: `:Ggrep <word>`
+      - search commit messages: `:Glog --grep=fugitive`
+      - search for words added or removed: `Glog -Sadd`
 - [gitgutter](https://github.com/akiomik/git-gutter-vim): Shows git diff in Vim's gutter
 - [html5-syntax](https://github.com/othree/html5-syntax.vim): HTML5 elements syntax highlighing (*no doc*)
 - [markdown-folding](https://github.com/nelstrom/vim-markdown-folding): Folding by section headings
