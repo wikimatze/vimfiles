@@ -279,6 +279,7 @@ Here is a list of plugins I used in the past and removed them due the lack of us
     - `<C-Left>` left mouse click in the .dvi file this location will be opend in the source file</pre>
 - [vim-golang](https://github.com/jnwhiteh/vim-golang)
 - [vim-liquid](https://github.com/tpope/vim-liquid): Highlight liquid tags used for jekyll (*no doc*)
+- [vim-markdown](https://github.com/tpope/vim-markdown): Markdown-syntax highlighting (*no doc*)
 - [vim-shell](https://github.com/xolox/vim-shell): Open files and web pages in associated programs out of Vim
 - [vimroom](https://github.com/mikewest/vimroom/): Distraction free writing
   - `:VimroomToggle` ... enables/disable the mode
