@@ -1,4 +1,6 @@
 execute pathogen#infect('plugins/{}')
+" generate docs for new plugins
+execute pathogen#helptags()
 
 " these settings need to come after pathogen
 syntax on          " enable syntax highlighting
