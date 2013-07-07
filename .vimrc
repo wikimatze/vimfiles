@@ -15,7 +15,7 @@ ru options/omnicompletion.vim
 
 set encoding=utf-8                          " terminal encoding
 set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
-set number                                  " display line numbers
+set nonumber                                " display no line numbers
 set modeline                                " check first lines of files for style information
 set noerrorbells                            " turn of nasty error sounds
 set autoindent                              " Copy indent from current line when starting a new line
