@@ -142,6 +142,32 @@ Here is a list of plugins I used in the past and removed them due the lack of us
 - [MRU](https://github.com/vim-scripts/mru.vim): opens a quickfix windows which shows the last
   opens files (*no doc*)
   - `:MRU` ... opens the window
+- [netrw](http://www.vim.org/scripts/script.php?script_id=1075): Build in file browser
+  - `:edit .` ... take the current directory and open the file explorer
+  - `:split .` ... vertical split at current working directory
+  - `:vsplit .` ... horizontal split at current working directory
+  - `:Explore .` ... open the directory relative to the current file
+  - `:Sexplore ` ... horizontal split the current file in a new window
+  - `:Vexplore ` ... vertical split the current file in a new window
+  - inside the netrw window
+    - `v` ... vertical split of file in a new window
+    - `p` ... preview the selected file and staying in the tree-browser
+    - `P` ... preview the selected file in a big view and minimze the tree-browser to a minimum
+    - `r` ... reverse order of the file listings
+    - `<C-l>` ... refresh the view
+  - file creation:
+    - `%` ... creates a new file
+    - `D` ... delete directory/file
+    - `d` ... create a directory
+    - `R` ... rename directory/file
+<pre>
+      " :Explore display style
+      let g:netrw_liststyle=1
+
+      " Hit enter in the file browser to open the selected
+      " file with :vsplit to the right of the browser.
+      let g:netrw_browse_split = 4
+      let g:netrw_altv = 1</pre>
 - [NERDTree](https://github.com/scrooloose/nerdtree "NERDTree"): amazing file browser for GUI guys
   - `m` - choose whi  ch action to perform (add, move, copy, delete)
       - add / at the end to create a new directory
