@@ -2,8 +2,7 @@
 
 Here is a list of plugins I used in the past and removed them due the lack of usage.
 
-
-- [coffee-script](https://github.com/kchmck/vim-coffee-script "coffe-script"): coffee script support
+- [coffee-script](https://github.com/kchmck/vim-coffee-script): coffee script support
 - [colorv](https://github.com/Rykka/ColorV): display Hex Color with real colors in Vim
 - [command-t](https://github.com/wincent/Command-T): file search in the
   actual directory
@@ -34,7 +33,7 @@ Here is a list of plugins I used in the past and removed them due the lack of us
       let g:CommandTAcceptSelectionVSplitMap = '<C-v>'    " Ctrl-v will make a vertical split
       let g:CommandTAcceptSelectionTabMap = '<C-t>'       " Ctrl-t will open the file in a new tab
       set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " not matching files</pre>
-- [cucumber](https://github.com/tpope/vim-cucumber "cucumber"): syntax-highlighting for cucumber files (*no doc*)
+- [cucumber](https://github.com/tpope/vim-cucumber): syntax-highlighting for cucumber files (*no doc*)
 - [dbext](http://www.vim.org/scripts/script.php?script_id=356): Connect to your database to perform custom queries
   - `<leader>sel` ... execute the query
   - `:DBResultsClose` ... close the result window
@@ -281,6 +280,8 @@ Here is a list of plugins I used in the past and removed them due the lack of us
 - [vim-golang](https://github.com/jnwhiteh/vim-golang)
 - [vim-liquid](https://github.com/tpope/vim-liquid): Highlight liquid tags used for jekyll (*no doc*)
 - [vim-shell](https://github.com/xolox/vim-shell): Open files and web pages in associated programs out of Vim
+- [vimroom](https://github.com/mikewest/vimroom/): Distraction free writing
+  - `:VimroomToggle` ... enables/disable the mode
 - [vspec](https://github.com/kana/vim-vspec): Testing framework for Vimscript
 - [vis](https://github.com/vim-scripts/vis): Execute commands only in the selected section of visual mode
   - mark a text in visual mode, then press `:B` and then you can perform any command
