@@ -10,9 +10,6 @@
 [submodule "plugins/html5-syntax.vim"]
 	path = plugins/html5-syntax.vim
 	url = https://github.com/othree/html5-syntax.vim.git
-[submodule "plugins/snipmate.vim"]
-	path = plugins/snipmate.vim
-	url = https://github.com/msanders/snipmate.vim.git
 [submodule "plugins/vim-markdown-folding"]
 	path = plugins/vim-markdown-folding
 	url = https://github.com/nelstrom/vim-markdown-folding.git
@@ -76,3 +73,6 @@
 [submodule "plugins/Yankring.vim"]
 	path = plugins/Yankring.vim
 	url = https://github.com/matthias-guenther/YankRing.vim.git
+[submodule "plugins/snipmate.vim"]
+	path = plugins/snipmate.vim
+	url = https://github.com/spf13/snipmate.vim.git
