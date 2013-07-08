@@ -55,9 +55,6 @@
 [submodule "plugins/vim-ruby-refactoring"]
 	path = plugins/vim-ruby-refactoring
 	url = https://github.com/ecomba/vim-ruby-refactoring.git
-[submodule "plugins/YankRing.vim"]
-	path = plugins/YankRing.vim
-	url = https://github.com/vim-scripts/YankRing.vim.git
 [submodule "plugins/ri.vim"]
 	path = plugins/ri.vim
 	url = https://github.com/danchoi/ri.vim.git
@@ -76,3 +73,6 @@
 [submodule "plugins/vim-fugitive"]
 	path = plugins/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "plugins/Yankring.vim"]
+	path = plugins/Yankring.vim
+	url = https://github.com/matthias-guenther/YankRing.vim.git
