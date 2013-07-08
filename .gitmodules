@@ -75,4 +75,4 @@
 	url = https://github.com/matthias-guenther/YankRing.vim.git
 [submodule "plugins/snipmate.vim"]
 	path = plugins/snipmate.vim
-	url = https://github.com/spf13/snipmate.vim.git
+	url = https://github.com/matthias-guenther/snipmate.vim.git
