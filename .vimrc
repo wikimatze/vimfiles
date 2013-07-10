@@ -78,6 +78,7 @@ ru functions/insert_spacedate.vim " <F5> will insert current date (yyyy-mm-dd) a
 " }}}
 " Mappings {{{
 
+ru mappings/ctrlp.vim                       " ,. will call :CtrlPTag
 ru mappings/commandline.vim                 " using bash commands in the vim commandline
 ru mappings/commenting_and_uncommenting.vim " ,c (comment) and  ,u (uncomment) in visual mode
 ru mappings/copy_paste_from_clipboard.vim   "
