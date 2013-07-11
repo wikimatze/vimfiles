@@ -76,3 +76,6 @@
 [submodule "plugins/snipmate.vim"]
 	path = plugins/snipmate.vim
 	url = https://github.com/matthias-guenther/snipmate.vim.git
+[submodule "plugins/nerdtree"]
+	path = plugins/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git

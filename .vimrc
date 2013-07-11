@@ -85,6 +85,7 @@ ru mappings/copy_paste_from_clipboard.vim   "
 ru mappings/esc_with_jk.vim                 " emulare ESC with jk
 ru mappings/markdown_to_html.vim            " Converting markdown to HTML (<leader>md)
 ru mappings/moving_wrapped_lines.vim        " Use hjkl in wrapped-lined files
+ru mappings/nerdtree.vim                    " F2 will call NERDTreeToogle
 ru mappings/pry.vim                         " ,pi to insert/delete 'require pry; binding pry'
 ru mappings/quickediting.vim                " ,ba; ,bm; ,br; ,ev to edit files of vim repos
 ru mappings/whitespace_jumping.vim          " Whitespace jumping with f|F<space>
@@ -119,3 +120,4 @@ ru macros/matchit.vim " enable better matching for % command
 " }}}
 
 ru options/complete.vim
+

@@ -59,6 +59,20 @@ of the most important commands and settings for each plugin.
   - `<C-n>` ... the current word under the cursor will be selected
   - `<C-x>` ... remove the current virtual cursor and skip to the next virtual cursor location
   - `ESC` ... will leave the selection mode
+- [NERDTree](https://github.com/scrooloose/nerdtree "NERDTree"): amazing file browser for GUI guys
+  - `m` - choose whi  ch action to perform (add, move, copy, delete)
+      - add / at the end to create a new directory
+  - `r` - refresh the view
+  - `O` - opens the node recursive from the parent node
+  - `t` - opens th file in a new tab
+  - `p` - jumps to the root tree
+  - `T` - opens the file in a new tab and the focus will stay in the current window
+  - `x` - closed the parent node, but leave the nodes above the node open (visual close)
+  - `X` - closed all nodes which are under the actual node (physical close)
+  - `R` - update the view
+  - press `?` in the NERDTree window
+  - `:NERDTreeFind` - open the current file in the NERDTree and expand the tree to this file
+    location
 - [notes](https://github.com/xolox/vim-notes): Perfect and easy note taking
   - `:Note` ... starts a new note (you can specify the name of the note in the header)
   - `:write or :update` save the notes

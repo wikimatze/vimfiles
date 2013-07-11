@@ -154,27 +154,6 @@ Here is a list of plugins I used in the past and removed them due the lack of us
       " file with :vsplit to the right of the browser.
       let g:netrw_browse_split = 4
       let g:netrw_altv = 1</pre>
-- [NERDTree](https://github.com/scrooloose/nerdtree "NERDTree"): amazing file browser for GUI guys
-  - `m` - choose whi  ch action to perform (add, move, copy, delete)
-      - add / at the end to create a new directory
-  - `r` - refresh the view
-  - `O` - opens the node recursive from the parent node
-  - `t` - opens th file in a new tab
-  - `p` - jumps to the root tree
-  - `T` - opens the file in a new tab and the focus will stay in the current window
-  - `x` - closed the parent node, but leave the nodes above the node open (visual close)
-  - `X` - closed all nodes which are under the actual node (physical close)
-  - `R` - update the view
-  - press `?` in the NERDTree window
-  - `:NERDTreeFind` - open the current file in the NERDTree and expand the tree to this file
-    location
-  - own settings:
-      - `let g:NERDTreeDirArrows = 1` - u se arrows for the tree structure
-      - `let g:NERDChristmasTree = 0` - l ess colorful tree (save performance)
-      - `let g:NERDTreeHighlightCursorline = 0** - no cursor highlight in the tree
-      - `let g:NERDTreeMouseMode = 3` - o ne click will open the file
-      - `let g:NERDTreeWinPos = 'right'`  - display Tree in the right
-      - `let g:NERDTreeWinSize = 30` - th e width of the NERDTree when it opens
 - [powerline](https://github.com/Lokaltog/vim-powerline "powerline"): candy statusline which is high configurable
 - [session](https://github.com/xolox/vim-session): save session and to open then later
   - `:SaveSession <name>` ... save the current session under the specified name
