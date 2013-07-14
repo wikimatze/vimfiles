@@ -1,7 +1,7 @@
 # Movement
 - `h`, `j`, `k`, `l` ...  left, below, top, right
-- `<C-o>` ... trace movements backwards in files
-- `<C-i>` ... trace movements forward in files
+- `<C-i>` ... trace movements forward in files (in method)
+- `<C-o>` ... trace movements backwards in files (out method)
 - `w` ... forwards to the next word
 - `W` ... forwards to the next word via whitespace separation (no words are counted)
 - `e` ... forwards to the end of the next word
