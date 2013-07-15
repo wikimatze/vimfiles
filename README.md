@@ -12,6 +12,7 @@ of the most important commands and settings for each plugin.
     - `:t` ... open the selected file in a new tab
     - `:v` ... vertical split
     - `:q` ... quit the Ack window
+- [autotag.vim](https://github.com/vim-scripts/AutoTag): Whenever you save a file, it deletes all of its entries and invokes ctags in append mode
 - [ctrlp](http://kien.github.com/ctrlp.vim/): Full path fuzzy file, MRU, tag, and a tons of options
   - `<C-t>` ... will open the finding match in a tab
   - `<C-v>` ... will open the finding match in a vertical split
