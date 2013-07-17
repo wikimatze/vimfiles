@@ -85,3 +85,6 @@
 [submodule "plugins/l9"]
 	path = plugins/l9
 	url = https://github.com/vim-scripts/L9.git
+[submodule "plugins/vim-autocomplete"]
+	path = plugins/vim-autocomplete
+	url = https://github.com/matthias-guenther/vim-autocomplete.git

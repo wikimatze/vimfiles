@@ -54,7 +54,7 @@ of the most important commands and settings for each plugin.
       - search for words added or removed: `Glog -Sadd`
 - [gitgutter](https://github.com/akiomik/git-gutter-vim): Shows git diff in Vim's gutter
 - [html5-syntax](https://github.com/othree/html5-syntax.vim): HTML5 elements syntax highlighing (*no doc*)
-- [l9](https://github.com/vim-scripts/L9 "l9"): Vim-script library, add functionality to program vim-files
+- [l9](https://github.com/vim-scripts/L9.git): Vim-script library, add functionality to program vim-files
 (used by vim-autocomplpop plugin)
 - [markdown-folding](https://github.com/nelstrom/vim-markdown-folding): Folding by section headings
 - [multiple cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style selection to replace method
@@ -131,6 +131,10 @@ of the most important commands and settings for each plugin.
   - `:Tabularize / {pattern}`
 - [tocdown](https://github.com/matthias-guenther/tocdown): Display the headlines of a markdown document in an extra
   window.
+- [vim-autocomple](https://github.com/matthias-guenther/vim-autocomplete): Automatically opens  popup menu for
+  completion when entering characters
+  - `:AcpEnable` ... enable auto-popup
+  - `:AcpDisable` ... disable auto-popup
 - [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax): Add CSS3 syntax support (*no doc*)
 - [vim-endwise](https://github.com/tpope/vim-endwise): Automatically adds keywords like *end* to special constructs in
   ruby (*no doc*)
