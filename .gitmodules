@@ -82,3 +82,6 @@
 [submodule "plugins/autotag.vim"]
 	path = plugins/autotag.vim
 	url = https://github.com/vim-scripts/AutoTag.git
+[submodule "plugins/l9"]
+	path = plugins/l9
+	url = https://github.com/vim-scripts/L9.git

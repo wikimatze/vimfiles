@@ -54,6 +54,8 @@ of the most important commands and settings for each plugin.
       - search for words added or removed: `Glog -Sadd`
 - [gitgutter](https://github.com/akiomik/git-gutter-vim): Shows git diff in Vim's gutter
 - [html5-syntax](https://github.com/othree/html5-syntax.vim): HTML5 elements syntax highlighing (*no doc*)
+- [l9](https://github.com/vim-scripts/L9 "l9"): Vim-script library, add functionality to program vim-files
+(used by vim-autocomplpop plugin)
 - [markdown-folding](https://github.com/nelstrom/vim-markdown-folding): Folding by section headings
 - [multiple cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style selection to replace method
   names
