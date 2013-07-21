@@ -20,6 +20,7 @@ of the most important commands and settings for each plugin.
   - `<C-f>` + `<C-b>` ... cycle between search modes (buffer, files, MRU, tags)
   - `<C-z>` ... to mark multiple files and `<C-o>` to open them splitted, if you press only enter it will open it
     normally
+  - `:CtrlPTag<CR>` ... Search after the tags
 - [delimitMate](https://github.com/Raimondi/delimitMate): Semantic autoclose brackets
 - [fugitive](http://github.com/tpope/vim-fugitive): Git wrapper
   - `:Gstatus` ... git status
@@ -62,7 +63,7 @@ of the most important commands and settings for each plugin.
   - `<C-n>` ... the current word under the cursor will be selected
   - `<C-x>` ... remove the current virtual cursor and skip to the next virtual cursor location
   - `ESC` ... will leave the selection mode
-- [NERDTree](https://github.com/scrooloose/nerdtree "NERDTree"): amazing file browser for GUI guys
+- [NERDTree](https://github.com/scrooloose/nerdtree): amazing file browser for GUI guys
   - `m` - choose whi  ch action to perform (add, move, copy, delete)
       - add / at the end to create a new directory
   - `r` - refresh the view
@@ -163,10 +164,6 @@ of the most important commands and settings for each plugin.
     - `:a` ... the `a`th window in the current pane
     - `:a.b` ... the `b`th pane in window `a`
     - `c:a.b` ... in the tmux session with the name `c` the `b`th pane in window `a`
-- [vimux](https://github.com/benmills/vimux): Easily interact with tmux from vim
-  - `:call VimuxRunCommand("ls")` ... open a split pane without losing focus of Vim
-  - `:VimuxRunLastCommand` ... runs the last command
-  - `:VimuxClosePanes` ... close all other tmux panes in the current window
 - [yankring](https://github.com/vim-scripts/YankRing.vim): Better register management and saves up to 100 buffered lines
   - `:YRShow` ... shows the actual buffer (you can use visual buttons to select more)
   - `:YRClear` ... deletes the buffer
