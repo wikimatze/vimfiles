@@ -53,13 +53,14 @@ set wrap                                    " when lines are longer the width of
 set textwidth=100                           " maximum of text that is being inserted
 
 set fillchars=""                            " get rid of silly characters in separators in the CMD
-set hlsearch
+set nohlsearch
 
 let mapleader = "," " change the leader to be a comma vs. backslash if not given
 
 let &scrolloff=999-&scrolloff " current view is always centered
 
 colorscheme detailed
+set tags=tags,./tags,gems.tags,./gems.tags
 
 " Resize splits when the window is resized
 au VimResized * :wincmd =
