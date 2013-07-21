@@ -30,15 +30,14 @@ set lazyredraw                              " don't update the display while exe
 set ttyfast                                 " fast terminal connection, more characters will be sent to the screen
 set splitbelow                              " splitting a window will put the new window below the current one
 set splitright                              " splitting a window will put the new window right the current one
-set synmaxcol=0                           " better scrolling for long lines
+set synmaxcol=0                             " better scrolling for long lines
 set spelllang=en_us                         " default language for spell checker
 set spellfile=$HOME/.vim/spell/en.utf-8.add " spell file for additional correct English words
-set spellsuggest=best,7                     " only display the 10 best suggestions
+set spellsuggest=best,5                     " only display the 5 best suggestions
 set viminfo='1000000,f1                     " save marks for 1 million files ('1000000), save global marks
 set ignorecase                              " case insensitive search
 set smartcase                               " canceling out ignore case setting that we include an uppercase (\C) letter in the search
 set infercase                               " autocompletion in Insert Mode is case sensitive
-set incsearch                               " incremental searching -> highlight matches when writing starts
 set shortmess+=I                            " don't show startup message when opening Vim without a file
 set noautochdir                             " don't change the current working directory when opening a new file
 set cpoptions+=$                            " `cw` put a $ at the end instead of pure deletion
