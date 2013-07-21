@@ -1,8 +1,5 @@
 execute pathogen#infect('plugins/{}')
-" generate docs for new plugins
-execute pathogen#helptags()
 
-" these settings need to come after pathogen
 syntax on          " enable syntax highlighting
 filetype on        " enable file type detection
 filetype indent on " enable file type-specific indenting
@@ -11,6 +8,7 @@ filetype plugin on " enable file type-specific plugins
 
 " defining custom omnicompletion functions
 ru options/omnicompletion.vim
+
 " General settings {{{
 
 set encoding=utf-8                          " terminal encoding
