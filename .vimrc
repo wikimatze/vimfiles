@@ -59,10 +59,6 @@ let &scrolloff=999-&scrolloff " current view is always centered
 colorscheme detailed
 set tags=tags,./tags,gems.tags,./gems.tags
 
-" Resize splits when the window is resized
-au VimResized * :wincmd =
-au BufNew * if winnr('$') == 1 | tabmove99 | endif " move tabs to the end for new, single buffers (exclude splits)
-
 ru! options/*.vim
 
 " --------------------------------------------------------------------------------}}}
