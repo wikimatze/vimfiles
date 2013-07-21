@@ -11,8 +11,6 @@ ru options/omnicompletion.vim
 
 " General settings {{{
 
-set encoding=utf-8                          " terminal encoding
-set fileencodings=utf-8,default,latin1      " the order of file encodings to try.
 set nonumber                                " display no line numbers
 set modeline                                " check first lines of files for style information
 set noerrorbells                            " turn of nasty error sounds
