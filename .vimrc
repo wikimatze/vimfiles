@@ -70,17 +70,17 @@ ru functions/insert_spacedate.vim " <F5> will insert current date (yyyy-mm-dd) a
 " }}}
 " Mappings {{{
 
-ru mappings/ctrlp.vim                       " ,. will call :CtrlPTag
 ru mappings/commandline.vim                 " using bash commands in the vim commandline
 ru mappings/commenting_and_uncommenting.vim " ,c (comment) and  ,u (uncomment) in visual mode
-ru mappings/copy_paste_from_clipboard.vim   "
+ru mappings/copy_paste_from_clipboard.vim
+ru mappings/ctrlp.vim                       " ,. will call :CtrlPTag
 ru mappings/esc_with_jk.vim                 " emulare ESC with jk
+ru mappings/keep_cursor_joining_lines.vim   " pimped default behavior of J
 ru mappings/markdown_to_html.vim            " Converting markdown to HTML (<leader>md)
 ru mappings/moving_wrapped_lines.vim        " Use hjkl in wrapped-lined files
 ru mappings/nerdtree.vim                    " F2 will call NERDTreeToogle
 ru mappings/pry.vim                         " ,pi to insert/delete 'require pry; binding pry'
 ru mappings/quickediting.vim                " ,ba; ,bm; ,br; ,ev to edit files of vim repos
-ru mappings/whitespace_jumping.vim          " Whitespace jumping with f|F<space>
 
 " Press \cd to change the pwd to the current file you are in
 nn \cd :lcd %:h<CR>
@@ -101,7 +101,6 @@ no <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of each lin
 no <leader>_ :%s/_//g<CR>                   " delete all _
 no <leader>rt :%s/\\t/  /g<CR>
 
-ru mappings/keep_cursor_joining_lines.vim
 
 " }}}
 " Plugin settings {{{
