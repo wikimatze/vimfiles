@@ -88,3 +88,6 @@
 [submodule "plugins/vim-autocomplete"]
 	path = plugins/vim-autocomplete
 	url = https://github.com/matthias-guenther/vim-autocomplete.git
+[submodule "plugins/vim-airline"]
+	path = plugins/vim-airline
+	url = https://github.com/bling/vim-airline.git
