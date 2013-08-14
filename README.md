@@ -140,7 +140,6 @@ of the most important commands and settings for each plugin.
 - [vim-endwise](https://github.com/tpope/vim-endwise): Automatically adds keywords like *end* to special constructs in
   ruby (*no doc*)
 - [vim-gnupg](https://github.com/jamessan/vim-gnupg):  Transparent editing of gpg encrypted files (*no doc*)
-- [vim-less](https://github.com/groenewege/vim-less): Syntax detection for less files (*no doc*)
 - [vim-misc](https://github.com/xolox/vim-misc): Extended Vim standard library needed for vim-notes plugin (*doc misc*)
 - [vim-ruby](https://github.com/vim-ruby/vim-ruby): Configuration files for editing and compiling Ruby - it even adds
   custom text-objects only for Vim

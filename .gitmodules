@@ -37,9 +37,6 @@
 [submodule "plugins/vim-endwise"]
 	path = plugins/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
-[submodule "plugins/vim-less"]
-	path = plugins/vim-less
-	url = https://github.com/groenewege/vim-less
 [submodule "plugins/vim-markdown"]
 	path = plugins/vim-markdown
 	url = https://github.com/tpope/vim-markdown.git
