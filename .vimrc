@@ -35,8 +35,6 @@ set spelllang=en_us                         " default language for spell checker
 set spellfile=$HOME/.vim/spell/en.utf-8.add " spell file for additional correct English words
 set spellsuggest=best,5                     " only display the 5 best suggestions
 set viminfo='1000000,f1                     " save marks for 1 million files ('1000000), save global marks
-set ignorecase                              " case insensitive search
-set smartcase                               " canceling out ignore case setting that we include an uppercase (\C) letter in the search
 set infercase                               " autocompletion in Insert Mode is case sensitive
 set shortmess+=I                            " don't show startup message when opening Vim without a file
 set noautochdir                             " don't change the current working directory when opening a new file
@@ -50,6 +48,10 @@ set wrap                                    " when lines are longer the width of
 set textwidth=100                           " maximum of text that is being inserted
 
 set fillchars=""                            " get rid of silly characters in separators in the CMD
+set incsearch " highlight search after you type it
+" so /foo matches FOO and fOo, but /FOO only matches the former)
+set ignorecase                              " case insensitive search
+set smartcase                               " canceling out ignore for uppercase letter in search
 set nohlsearch
 
 let mapleader = "," " change the leader to be a comma vs. backslash if not given
@@ -73,7 +75,7 @@ ru functions/insert_spacedate.vim " <F5> will insert current date (yyyy-mm-dd) a
 ru mappings/commandline.vim                 " using bash commands in the vim commandline
 ru mappings/commenting_and_uncommenting.vim " ,c (comment) and  ,u (uncomment) in visual mode
 ru mappings/copy_paste_from_clipboard.vim
-ru mappings/ctrlp.vim                       " ,. will call :CtrlPTag
+ru mappings/ctrlp.vim                       " ,. calls :CtrlPTag; ,, calls :CtrlPBuffer
 ru mappings/esc_with_jk.vim                 " emulare ESC with jk
 ru mappings/keep_cursor_joining_lines.vim   " pimped default behavior of J
 ru mappings/markdown_to_html.vim            " Converting markdown to HTML (<leader>md)
