@@ -65,6 +65,7 @@
 - `<C-v>` ... **Visual Block** select (when pressing `c` the selected text disappears and go in insert mode)
 - `<C-a>` ... will increment number by one (you can use motions, e.g. `10<C-a>`)
 - `<C-x>` ... will increment number by one
+- `<C-x><C-t>` ... opens thesaurus
 - `<C-r>%` ... insert the current filename in insert mode
 - `.`  ... repeat the last made action
 - `@:` ... repeat any last Ex command

@@ -112,5 +112,3 @@ ru macros/matchit.vim " enable better matching for % command
 
 " }}}
 
-ru options/complete.vim
-
