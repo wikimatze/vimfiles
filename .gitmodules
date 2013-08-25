@@ -85,3 +85,6 @@
 [submodule "plugins/vim-autocomplete"]
 	path = plugins/vim-autocomplete
 	url = https://github.com/matthias-guenther/vim-autocomplete.git
+[submodule "plugins/vim-move"]
+	path = plugins/vim-move
+	url = https://github.com/matze/vim-move.git

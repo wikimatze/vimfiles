@@ -141,6 +141,7 @@ of the most important commands and settings for each plugin.
   ruby (*no doc*)
 - [vim-gnupg](https://github.com/jamessan/vim-gnupg):  Transparent editing of gpg encrypted files (*no doc*)
 - [vim-misc](https://github.com/xolox/vim-misc): Extended Vim standard library needed for vim-notes plugin (*doc misc*)
+- [vim-move](https://github.com/matze/vim-move): Move lines and selections up and down.
 - [vim-ruby](https://github.com/vim-ruby/vim-ruby): Configuration files for editing and compiling Ruby - it even adds
   custom text-objects only for Vim
   - following commands can performed in *visual mode*
