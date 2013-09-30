@@ -83,6 +83,9 @@
 - `:vsplit bla.txt` ... open file via vertical split
 - `:e!` ... reload the file
 - `vim <file> +<number>` ... open the file in the specified location
+- `<C-r>=system("ls")` ... will insert the terminal output in the current file
+
+
 
 
 # Delete, Cut, and copy
