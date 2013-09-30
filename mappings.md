@@ -46,11 +46,12 @@
 - `R` ... **replace mode** - stay in this mode and all following words will be replaced
 - `u` ... undo last changes (`U` undo last changes of the last edited line)
 - `<C-R>` ... redo the last change
-- `p` ... *put* after the cursor (is doing a paste)
-- `P` ... *put*before the cursor (is doing a paste)
 - `u` | `U` ... make the selected text small | big in visual mode
 - `~` ... toggle upper or lower case of character in normal mode and go to next char
+- `x` ... cut character into default register
 - `xp` ... transpose the next two characters ("character twiddeling")
+- `p` ... *put* contents of default register after the cursor (is doing a paste)
+- `P` ... *put* before the cursor (is doing a paste)
 - `V` ... mark the whole line in visual mode
 - `gV` ... reselect the text which was marked in visual mode before
   - `o` ... will go to the other end of the visual selection when using `gv`
