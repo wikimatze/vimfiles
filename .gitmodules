@@ -85,3 +85,6 @@
 [submodule "plugins/vim-move"]
 	path = plugins/vim-move
 	url = https://github.com/matze/vim-move.git
+[submodule "plugins/vim-endwise"]
+	path = plugins/vim-endwise
+	url = https://github.com/tpope/vim-endwise
