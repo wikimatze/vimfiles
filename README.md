@@ -3,14 +3,6 @@
 I'm always eager to learn, but I can't remember everything. Here is the list of the plugins I'm using - it is a reminder
 of the most important commands and settings for each plugin.
 
-- [ack.vim](https://github.com/mileszs/ack.vim): You can perform ack commands in Vim
-  - `:Ack {pattern} [{directory}]` - the basic command to search after words in your project
-  - shortcuts for navigation:
-    - `:o` ... open the selected file in the current window
-    - `:go` ... open preview but will stay in the quickfix preview window
-    - `:t` ... open the selected file in a new tab
-    - `:v` ... vertical split
-    - `:q` ... quit the Ack window
 - [autotag.vim](https://github.com/vim-scripts/AutoTag): Whenever you save a file, it deletes all of its entries and invokes ctags in append mode
 - [ctrlp](http://kien.github.com/ctrlp.vim/): Full path fuzzy file, MRU, tag, and a tons of options
   - `<C-t>` ... will open the finding match in a tab

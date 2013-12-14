@@ -1,6 +1,3 @@
-[submodule "plugins/ack.vim"]
-	path = plugins/ack.vim
-	url = https://github.com/mileszs/ack.vim
 [submodule "plugins/ctrlp.vim"]
 	path = plugins/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git

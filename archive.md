@@ -2,6 +2,14 @@
 
 Here is a list of plugins I used in the past and removed them due the lack of usage.
 
+- [ack.vim](https://github.com/mileszs/ack.vim): You can perform ack commands in Vim
+  - `:Ack {pattern} [{directory}]` - the basic command to search after words in your project
+  - shortcuts for navigation:
+    - `:o` ... open the selected file in the current window
+    - `:go` ... open preview but will stay in the quickfix preview window
+    - `:t` ... open the selected file in a new tab
+    - `:v` ... vertical split
+    - `:q` ... quit the Ack window
 - [coffee-script](https://github.com/kchmck/vim-coffee-script): coffee script support
 - [colorv](https://github.com/Rykka/ColorV): display Hex Color with real colors in Vim
 - [command-t](https://github.com/wincent/Command-T): file search in the
