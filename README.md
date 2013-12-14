@@ -3,7 +3,6 @@
 I'm always eager to learn, but I can't remember everything. Here is the list of the plugins I'm using - it is a reminder
 of the most important commands and settings for each plugin.
 
-
 - [ack.vim](https://github.com/mileszs/ack.vim): You can perform ack commands in Vim
   - `:Ack {pattern} [{directory}]` - the basic command to search after words in your project
   - shortcuts for navigation:
@@ -53,18 +52,17 @@ of the most important commands and settings for each plugin.
       - search working copy files: `:Ggrep <word>`
       - search commit messages: `:Glog --grep=fugitive`
       - search for words added or removed: `Glog -Sadd`
-- [gitgutter](https://github.com/akiomik/git-gutter-vim): Shows git diff in Vim's gutter
+- [git-gutter](https://github.com/akiomik/git-gutter-vim): Shows git diff in Vim's gutter
 - [html5-syntax](https://github.com/othree/html5-syntax.vim): HTML5 elements syntax highlighing (*no doc*)
 - [l9](https://github.com/vim-scripts/L9.git): Vim-script library, add functionality to program vim-files
 (used by vim-autocomplpop plugin)
-- [markdown-folding](https://github.com/nelstrom/vim-markdown-folding): Folding by section headings
-- [multiple cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style selection to replace method
+- [markdown-folding](https://github.com/nelstrom/vim-markdown-folding): Folding by section headings - [multiple cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style selection to replace method
   names
   - `<C-n>` ... the current word under the cursor will be selected
   - `<C-x>` ... remove the current virtual cursor and skip to the next virtual cursor location
   - `ESC` ... will leave the selection mode
 - [NERDTree](https://github.com/scrooloose/nerdtree): amazing file browser for GUI guys
-  - `m` - choose whi  ch action to perform (add, move, copy, delete)
+  - `m` - choose which action to perform (add, move, copy, delete)
       - add / at the end to create a new directory
   - `r` - refresh the view
   - `O` - opens the node recursive from the parent node
