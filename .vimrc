@@ -1,4 +1,5 @@
 execute pathogen#infect('plugins/{}')
+set number
 
 syntax on          " enable syntax highlighting
 filetype on        " enable file type detection
@@ -53,6 +54,7 @@ set incsearch " highlight search after you type it
 set ignorecase                              " case insensitive search
 set smartcase                               " canceling out ignore for uppercase letter in search
 set nohlsearch
+set cryptmethod=blowfish                    " better default encryption algorithm
 
 let mapleader = "," " change the leader to be a comma vs. backslash if not given
 
