@@ -63,9 +63,9 @@
 - `J` ... join two lines
 - `gJ` ... join lines without whitespace
 - `dd | dL` ... delete current line, no matter where the cursor is in the current line
-- `<C-v>` ... **Visual Block** select (when pressing `c` the selected text disappears and go in insert mode)
-- `<C-a>` ... will increment number by one (you can use motions, e.g. `10<C-a>`)
-- `<C-x>` ... will increment number by one
+- `<C-v>` ... **Visual block mode** select (when pressing `c` the selected text disappears and go in insert mode)
+- `<C-a>` ... incerase any number by one (you can use motions, e.g. `9<C-a>`)
+- `<C-x>` ... decrease any number by one
 - `<C-x><C-t>` ... opens thesaurus
 - `<C-r>%` ... insert the current filename in insert mode
 - `.`  ... repeat the last made action
@@ -76,9 +76,8 @@
 - `zc` ... closes a single folding
 - `:q` ... exit Vim don't save changes
 - `:q!` ... force exit without saving
-- `:wq | ZZ` ... exit Vim and save changes
+- `:wq | ZZ | :x` ... exit Vim and save changes
 - `:w!` ... overwrites existing file
-- `:x` ... save all changes and terminate Vim
 - `:split bla.txt` ... open file via horizontal split
 - `:vsplit bla.txt` ... open file via vertical split
 - `:e!` ... reload the file
@@ -137,6 +136,8 @@
 - `/<CR>` ... jump forward to next match of same pattern
 - `?<pattern>` ... bottom-up search
 - `?<CR>` ... jump backward to next match of same pattern
+- `*` ... search after the word under the cursor (`top-down`)
+- `#` ... search after the word under the cursor (`bottom-up`)
 - `n` ... jump to the next matching (direction `forward`)
 - `N` ... jump to the previous matching (direction `backwards`)
 - `f{char}` ... move forward to *first* {char} inclusive the {char}
@@ -145,15 +146,12 @@
 - `T{char}` ... backward to the character after the previous occurrence of {char}
 - `;` ... repeat last search command **forward** (effective with `f{char}` finding commands)
 - `,` ... repeat run last search command **backward** (effective with `f{char}` finding commands)
-- `*` ... search after the word under the cursor (`top-down`)
-- `#` ... search after the word under the cursor (`bottom-up`)
 - `%s/.../<options>` ... will start the substitute function, `%` says to run substitute through the
   whole file
   - with range: `1,5s/this/that/g`
   - `/g` ... **global** and will replace all matchings at a line
   - `/c` ... **confirm** and makes prompt for each replacement
   - `/n` ... **number** and will print the number of replacements without performing the substitution
-  - `/e` ... stands for **error** no finding a match is no error
 - `:help :vglobal` ... shows us how to perform an operation on all lines that don’t match the given
   pattern. In this case we delete lines that don’t match what we’re looking for.
 - `:help :global` ... is how we can run a given command (in this case a :normal command) for each line that
@@ -175,7 +173,7 @@
 
 # Matching Patterns and literals
 - `\v` ... enables very magic search, means that in the pattern after it all ASCII characters except
-  '0'-'9', 'a'-'z', 'A'-'Z' and '_' have a special meaning.
+  '0'-'9', 'a'-'z', 'A'-'Z' and underscore have a special meaning.
 - `\V` ... cancel special meanings of words for pattern matching (e.g. `., *, }, ...`) -> this kind
   of search is called verbatim searches, example: `/\Va.k.a` will match only `a.k.a`
 - `\x` ... is a shortcut for the pattern `[0-9A-Fa-f]` -> you can learn more about them under `:h character-classes`
@@ -242,7 +240,7 @@
 - `<C-w> c` ... close actual window
 - `<C-w> [hjkl]` ... go to a specific window
 - `adjust windows size`
-  - `<C-w> _` ... the actual window horizonat max
+  - `<C-w> _` ... the actual window horizontal max
   - `<C-w> |` ... the actual window vertical max
   - `<C-w> [+...-]` ... change window size incremental (`+` for increase and `⁻` for decrease) -> command-line window will grow
     or shrink
@@ -276,8 +274,8 @@
 - `aw | aW` ... current word|WORD plus one space
 - `is` ... current sentence
 - `as` ... current sentence plus one space
-- `ip` ... current paragraph (paragraph between newline separater)
-- `ap` ... current paragraph plus one blank line (paragraph between newline separater)
+- `ip` ... current paragraph between newline separator)
+- `ap` ... current paragraph plus one blank line
 - `ab` ... a block so only ( and ) parts and all whats between these delimiters
 
 
@@ -309,7 +307,7 @@
 - `:changes` ... shows all the changes to a local buffer
 - `:map` ... over view of all mappings of the current session
 - `:messages` ...  history of all events of the current session
-- `:retab` ... re place all tabs of a file with spaces
+- `:retab` ... replace all tabs of a file with spaces
 - `:options` ...  opens a new window with all specified options you can set in Vim (even with nice explanations)
 - `:args` ... prints a list of all opened files
 - `:saveas <filename>` - save the changes you made on the new text file
@@ -325,16 +323,17 @@
 - `:qall` ... quite all windows and will ask for unmodified changes
 - `:tohtml` ... will call an internal plugin to convert markdown into an HTML file in an extra window
 - `:only` ... close all windows except the actual one
+- `digraphs` ...  will display list of characters that are not on the keyboard (still don't know how to use them)
+- `gx` ... opens the URL under the browser
 - `:help` ... open the help menu (dopple click on a link will go it)
   - `<C-]>` ... jump into the hyperlink
   - `<C-T>` ... jump back in your search history
+- `:help functions-list` ... get an overview of all existing functions in Vimscript
 - `:help <plugin-name>.txt` ... opens the documentation of a plugin
 - `:helptags` ... will regenerate the helptags
 - `:helpgrep <searchterm>` ... search all doc after the specified term (press :cwindow to see all matchings)
-- `:help ins-completion` overview of commands to start autocompletion
 - `:help 'complete'` ... specifies how keyword completion works
-- `digraphs` ...  will display list of characters that are not on the keyboard (still don't know how to use them)
-- `gx` ... opens the URL under the browser
+- `:help ins-completion` overview of commands to start autocompletion
 
 
 # Spellchecker
@@ -356,9 +355,9 @@
   - d ... delete
   - y ... yank
   - c ... change
-- text-obj = modifier object
 - modifier = a | i
-- object = w | W | s | p | [ | ] | { | } | ( | ) | " | ' | | ` | < | >
+- object = w | W | s | p | [ | ] | { | } | ( | ) | " | ' | | \` | < | >
+- text-obj = modifier object
 - rule #1 = operator motion
   - example:
     - d$ ... delete till end of line
@@ -382,8 +381,8 @@
 - modifiers:
   i (inside),
   a (around),
-  t (till..finds a character),
-  f (find..like till except including the char),
+  t (till .. finds a character),
+  f (find .. like till except including the char),
   / (search..find a string/regex)
 - text object:
  w (word), s (sentence) p (paragraph) b (block/parentheses), t (tag, works for html/xml)
