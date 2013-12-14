@@ -55,7 +55,8 @@
 - `V` ... mark the whole line in visual mode
 - `gV` ... reselect the text which was marked in visual mode before
   - `o` ... will go to the other end of the visual selection when using `gv`
-- `cw` ... change word
+- `cw` | `ce` ... delete the word with going into insert mode
+- `cW` | `cE` ... delete the word with going into insert mode via whitespace separation (no words are counted)
 - `ci"` ... delete everything whats inside the special sign `"` (others are `"", '', (), {}, []` ) and go into the edit mode
 - `=` ... autoindent line
 - `==` ... indent the actual line
@@ -85,8 +86,6 @@
 - `<C-r>=system("ls")` ... will insert the terminal output in the current file
 
 
-
-
 # Delete, Cut, and copy
 - `x` ... delete single character
 - `dw` ... delete whole word (use motions: *2dw* deletes two words)
@@ -94,8 +93,6 @@
 - `D | d$` ... delete all characters after the cursor till EOL
 - `C` ... deletes all characters after the cursor position and will go in insert mode
 - `s` ... delete current char and go into insert mode
-- `ce` ... delete the word with going into insert mode
-- `cE` ... delete the word with going into insert mode via whitespace separation (no words are counted)
 - `d` is an operator pending operator
 - `df<char>` ... press the character until which should be deleted (**inclusive** the char)
 - `dt<char>` ... delete till a char at start right in front of it (**exclusive** the char)
@@ -120,13 +117,12 @@
 
 
 # Autocompletion
-- `<C-n> | <C-p>` ... autocompletion for next|previous matching
-- `<C-x><C-n>` ... current buffer keywords
+- `<C-n> | <C-p>` ... Keyword autocompletion for next|previous matching
+- `<C-x><C-n>` ... path autocompletion current buffer keywords
 - `<C-x><C-i>` ... include file keywords
 - `<C-x><C-]>` ... tags file keywords (class name completion for Ruby files)
-- `<C-x><C-k>` ... dictionary lookup
-- `<C-x><C-l>` ... complete a whole line (good for matching complete function calls
 - `<C-x><C-f>` ... filename completion for the current directory
+- `<C-x><C-l>` ... complete a whole line (good for matching complete function calls
 - `<C-x><C-o>` ... omnicomplete with context awareness
 - `<C-c> | <C-e>` ... exit from autocompletion pop up
 
@@ -262,9 +258,10 @@
 
 
 # Text objects
-- `a) | ab` ... a pair of parentheses
+
+- `a) | ab` ... a pair of parentheses (including the parentheses)
 - `i) | ib` ... inside of parentheses
-- `a} | aB` ... a pair of braces
+- `a} | aB` ... a pair of braces (including the parentheses)
 - `i} | aB` ... inside of braces
 - `a], a>, a', a"` ... a pair of brackets, a pair of angle brackets, a pair of single quotes, a pair of double quotes
 - `i], i>, i', i"` ... inside of brackets, inside of angle brackets, inside of single quotes, inside of double quotes
