@@ -146,28 +146,31 @@ of the most important commands and settings for each plugin.
     - `:a` ... the `a`th window in the current pane
     - `:a.b` ... the `b`th pane in window `a`
     - `c:a.b` ... in the tmux session with the name `c` the `b`th pane in window `a`
+- [vimproc](https://github.com/Shougo/vimproc.vim.git): For asynchronous command execution (need is used to search for
+  file in bigger projects by the unite.vim plugin)
 
 
 ## Installation
 
-I highly not recommend you to copy my *.vimrc* because they may not fit to your working style (see **Luca Pettes**
+Do not copy my *.vimrc* because they may not fit to your working style (see **Luca Pettes**
 [wonderful article](http://lucapette.com/vim/rails/vim-for-rails-developers-lazy-modern-configuration)). But if you
 would like to use this repository to get started with Vim, please perform the following tasks:
 
 
 - `git clone --recursive git@github.com:matthias-guenther/vim-settings.git ~/.vim`
+- `cd ~//.vim/plugins/vimproc.vim && make`
 - `mkdir ~/.vim/backup`
 - `mv ~/.vim/.vimrc ~/`
 
 
 ## Contact
 
-Feature request, bugs, questions, etc. can be send to <matthias.guenther@wikimatze.de>.
+Feature request, bugs, questions, etc. can be send to <matthias@wikimatze.de>.
 
 
 ## License
 
 This software is licensed under the [MIT license](http://en.wikipedia.org/wiki/MIT_License).
 
-© Matthias Günther <matthias.guenther@wikimatze.de>
+© Matthias Günther <matthias@wikimatze.de>
 

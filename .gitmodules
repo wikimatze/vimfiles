@@ -79,3 +79,6 @@
 [submodule "plugins/git-gutter.vim"]
 	path = plugins/git-gutter.vim
 	url = https://github.com/akiomik/git-gutter-vim
+[submodule "plugins/vimproc.vim"]
+	path = plugins/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim.git
