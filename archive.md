@@ -301,3 +301,8 @@ Here is a list of plugins I used in the past and removed them due the lack of us
   - `:BundleInstall!` ... installs or updates installed bundles
   - `:BundleSearch <foo>` ... opens a window to display the matches in an extra window
   - `:BundleClean` ... confirms removal of unused script-dirs from `.vim/bundle/`.
+- [yankring](https://github.com/vim-scripts/YankRing.vim): Better register management and saves up to 100 buffered lines
+  - `:YRShow` ... shows the actual buffer (you can use visual buttons to select more)
+  - `:YRClear` ... deletes the buffer
+  - `:YRSearch` ... type in a word or regular expression to search the yankring after it
+  - `j`, `k` for navigation and <Enter> chose your entry

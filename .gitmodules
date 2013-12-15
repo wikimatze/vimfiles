@@ -1,6 +1,3 @@
-[submodule "plugins/ctrlp.vim"]
-	path = plugins/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
 [submodule "plugins/delimitMate"]
 	path = plugins/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
@@ -58,9 +55,6 @@
 [submodule "plugins/vim-fugitive"]
 	path = plugins/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "plugins/Yankring.vim"]
-	path = plugins/Yankring.vim
-	url = https://github.com/matthias-guenther/YankRing.vim.git
 [submodule "plugins/snipmate.vim"]
 	path = plugins/snipmate.vim
 	url = https://github.com/matthias-guenther/snipmate.vim.git

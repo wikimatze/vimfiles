@@ -1,7 +1,5 @@
 .DS_Store
 backup/
-bundle/
 sessions/
-yankring_file*
 .netrwhist
 *.spl

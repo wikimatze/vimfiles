@@ -146,11 +146,6 @@ of the most important commands and settings for each plugin.
     - `:a` ... the `a`th window in the current pane
     - `:a.b` ... the `b`th pane in window `a`
     - `c:a.b` ... in the tmux session with the name `c` the `b`th pane in window `a`
-- [yankring](https://github.com/vim-scripts/YankRing.vim): Better register management and saves up to 100 buffered lines
-  - `:YRShow` ... shows the actual buffer (you can use visual buttons to select more)
-  - `:YRClear` ... deletes the buffer
-  - `:YRSearch` ... type in a word or regular expression to search the yankring after it
-  - `j`, `k` for navigation and <Enter> chose your entry
 
 
 ## Installation
