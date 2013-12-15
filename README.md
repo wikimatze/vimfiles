@@ -4,14 +4,6 @@ I'm always eager to learn, but I can't remember everything. Here is the list of 
 of the most important commands and settings for each plugin.
 
 - [autotag.vim](https://github.com/vim-scripts/AutoTag): Whenever you save a file, it deletes all of its entries and invokes ctags in append mode
-- [ctrlp](http://kien.github.com/ctrlp.vim/): Full path fuzzy file, MRU, tag, and a tons of options
-  - `<C-t>` ... will open the finding match in a tab
-  - `<C-v>` ... will open the finding match in a vertical split
-  - `<C-x>` ... will open the finding match in a horizontal split
-  - `<C-f>` + `<C-b>` ... cycle between search modes (buffer, files, MRU, tags)
-  - `<C-z>` ... to mark multiple files and `<C-o>` to open them splitted, if you press only enter it will open it
-    normally
-  - `:CtrlPTag<CR>` ... Search after the tags
 - [delimitMate](https://github.com/Raimondi/delimitMate): Semantic autoclose brackets
 - [fugitive](http://github.com/tpope/vim-fugitive): Git wrapper
   - `:Gstatus` ... git status

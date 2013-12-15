@@ -42,6 +42,14 @@ Here is a list of plugins I used in the past and removed them due the lack of us
       let g:CommandTAcceptSelectionTabMap = '<C-t>'       " Ctrl-t will open the file in a new tab
       set wildignore+=*.o,*.obj,.git,.svn,vendor/rails/** " not matching files</pre>
 - [cucumber](https://github.com/tpope/vim-cucumber): syntax-highlighting for cucumber files (*no doc*)
+- [ctrlp](http://kien.github.com/ctrlp.vim/): Full path fuzzy file, MRU, tag, and a tons of options
+  - `<C-t>` ... will open the finding match in a tab
+  - `<C-v>` ... will open the finding match in a vertical split
+  - `<C-x>` ... will open the finding match in a horizontal split
+  - `<C-f>` + `<C-b>` ... cycle between search modes (buffer, files, MRU, tags)
+  - `<C-z>` ... to mark multiple files and `<C-o>` to open them splitted, if you press only enter it will open it
+    normally
+  - `:CtrlPTag<CR>` ... Search after the tags
 - [dbext](http://www.vim.org/scripts/script.php?script_id=356): Connect to your database to perform custom queries
   - `<leader>sel` ... execute the query
   - `:DBResultsClose` ... close the result window
