@@ -55,6 +55,7 @@ set ignorecase                              " case insensitive search
 set smartcase                               " canceling out ignore for uppercase letter in search
 set nohlsearch
 set cryptmethod=blowfish                    " better default encryption algorithm
+set grepprg='ack'                           " default tool when using grep
 
 let mapleader = "," " change the leader to be a comma vs. backslash if not given
 
