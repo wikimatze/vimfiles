@@ -85,3 +85,6 @@
 [submodule "plugins/unite.vim"]
 	path = plugins/unite.vim
 	url = https://github.com/Shougo/unite.vim
+[submodule "plugins/undotree"]
+	path = plugins/undotree
+	url = https://github.com/mbbill/undotree

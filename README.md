@@ -114,6 +114,7 @@ of the most important commands and settings for each plugin.
   - `:Tabularize / {pattern}`
 - [tocdown](https://github.com/matthias-guenther/tocdown): Display the headlines of a markdown document in an extra
   window.
+- [undotree](https://github.com/mbbill/undotree): Display the undograph for a file
 - [unite](https://github.com/Shougo/unite.vim): A very good and flexible plugin for searching and displaying information
 - [vim-autocomplete](https://github.com/matthias-guenther/vim-autocomplete): Automatically opens  popup menu for
   completion when entering characters
