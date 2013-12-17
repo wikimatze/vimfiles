@@ -290,13 +290,13 @@
 - `ctX` ... change till X
 
 
-# Different Stuff
+# Different Things
 - `"%p` ... insert the current filename in normal mode
 - `'0` ...   when opening Vim and pressing this command will bring you back to last file you changed
 - `ggVG` ... mark the whole text
 - `gf` ... open the file which is under the cursor
 - `g<C-g>` ...  count the words of a file and gives extensive overview of words and chars
-- `q/` ... opens the command-line with history of searches
+- `q/` ... overview of all search patterns
 - `q:` ... opens the command-line with history of Ex commands
 - `<C-w>o` ... close all windows except the current one
 - `<C-z>` ... will background the terminal Vim session and return to bash; `fg` resume the suspended job

@@ -82,3 +82,6 @@
 [submodule "plugins/vimproc.vim"]
 	path = plugins/vimproc.vim
 	url = https://github.com/Shougo/vimproc.vim.git
+[submodule "plugins/unite.vim"]
+	path = plugins/unite.vim
+	url = https://github.com/Shougo/unite.vim

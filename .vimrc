@@ -72,12 +72,18 @@ ru functions/trailing_whitespaces_removal.vim
 ru functions/insert_spacedate.vim " <F5> will insert current date (yyyy-mm-dd) at EOL with space
 
 " }}}
+" Plugin settings {{{
+
+ru! settings/*.vim
+ru macros/matchit.vim " enable better matching for % command
+
+" }}}
 " Mappings {{{
 
 ru mappings/commandline.vim                 " using bash commands in the vim commandline
 ru mappings/commenting_and_uncommenting.vim " ,c (comment) and  ,u (uncomment) in visual mode
 ru mappings/copy_paste_from_clipboard.vim
-ru mappings/ctrlp.vim                       " ,. calls :CtrlPTag; ,, calls :CtrlPBuffer
+ru mappings/unite.vim
 ru mappings/esc_with_jk.vim                 " emulare ESC with jk
 ru mappings/keep_cursor_joining_lines.vim   " pimped default behavior of J
 ru mappings/markdown_to_html.vim            " Converting markdown to HTML (<leader>md)
@@ -105,12 +111,6 @@ no <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of each lin
 no <leader>_ :%s/_//g<CR>                   " delete all _
 no <leader>rt :%s/\\t/  /g<CR>
 
-
-" }}}
-" Plugin settings {{{
-
-ru! settings/*.vim
-ru macros/matchit.vim " enable better matching for % command
 
 " }}}
 

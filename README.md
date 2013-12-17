@@ -105,7 +105,7 @@ of the most important commands and settings for each plugin.
     - example: `(:a => 1)` after pressing `cs({` you will get `{ :a => 1 }`
   - `ys` ... stands for "you surround" and the first argument specifies the scope and the second
     makes the replacement and the second using for wrapping up the first argument with the quotes
-    - `ys2w\` ... will wrapp two following words (`2w`) with underscores (`\*`)
+    - `ys2w` ... will wrapp two following words (`2w`) with underscores (`\*`)
     - `yss{` ... wraps the whole line
   - how to quote whole string?
     - mark the string in visual mode (either normal mode with *v* or block mode with `V`), then
@@ -114,7 +114,8 @@ of the most important commands and settings for each plugin.
   - `:Tabularize / {pattern}`
 - [tocdown](https://github.com/matthias-guenther/tocdown): Display the headlines of a markdown document in an extra
   window.
-- [vim-autocomple](https://github.com/matthias-guenther/vim-autocomplete): Automatically opens  popup menu for
+- [unite](https://github.com/Shougo/unite.vim): A very good and flexible plugin for searching and displaying information
+- [vim-autocomplete](https://github.com/matthias-guenther/vim-autocomplete): Automatically opens  popup menu for
   completion when entering characters
   - `:AcpEnable` ... enable auto-popup
   - `:AcpDisable` ... disable auto-popup
