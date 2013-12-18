@@ -112,9 +112,10 @@ no <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of each lin
 no <leader>_ :%s/_//g<CR>                   " delete all _
 no <leader>rt :%s/\\t/  /g<CR>
 
+" ; is doing nothing in vim, that's why I remap it to colon
+nn ; :
 
 " }}}
-
 
 " Marking YAML front matter information in markdown files as comments
 autocmd BufNewFile,BufRead */_posts/*.md syntax match Comment /\%^---\_.\{-}---$/
