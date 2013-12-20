@@ -1,10 +1,23 @@
+if has('vim_starting')
+  set nocompatible               " Be iMproved
+  set runtimepath+=~/.vim/plugins/neobundle.vim/
+endif
+
+" Use git protocol.
+let g:neobundle#types#git#default_protocol = 'git'
+
+call neobundle#rc(expand('~/.vim/plugins/'))
+
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+
 execute pathogen#infect('plugins/{}')
 set number
 
 syntax on          " enable syntax highlighting
 filetype on        " enable file type detection
 filetype indent on " enable file type-specific indenting
-set nocompatible   " be iMproved
 filetype plugin on " enable file type-specific plugins
 
 " defining custom omnicompletion functions
