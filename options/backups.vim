@@ -1,3 +1,7 @@
+if !isdirectory($HOME . '/.vim/backup')
+  call mkdir($HOME . '/.vim/backup')
+endif
+
 set backupext=~                 " backup file extension
 set backupdir=$HOME/.vim/backup " directory of backups
 set backupcopy=yes              " keep attributes of the original file

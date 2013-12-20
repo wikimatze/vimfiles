@@ -162,7 +162,6 @@ would like to use this repository to get started with Vim, please perform the fo
 
 - `git clone --recursive git@github.com:matthias-guenther/vim-settings.git ~/.vim`
 - `cd ~//.vim/plugins/vimproc.vim && make`
-- `mkdir ~/.vim/backup`
 - `mv ~/.vim/.vimrc ~/`
 
 
