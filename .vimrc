@@ -8,35 +8,41 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-NeoBundle 'Raimondi/delimitMate.git'
+NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/vimproc.vim.git'
+
 NeoBundle 'akiomik/git-gutter-vim'
-NeoBundle 'danchoi/ri.vim.git'
-NeoBundle 'ecomba/vim-ruby-refactoring.git'
-NeoBundle 'godlygeek/tabular.git'
-NeoBundle 'hail2u/vim-css3-syntax.git'
-NeoBundle 'jamessan/vim-gnupg.git'
-NeoBundle 'jpalardy/vim-slime.git'
-NeoBundle 'matthias-guenther/tocdown.git'
-NeoBundle 'matze/vim-move.git'
+NeoBundle 'danchoi/ri.vim'
+NeoBundle 'ecomba/vim-ruby-refactoring'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'hail2u/vim-css3-syntax'
+NeoBundle 'jamessan/vim-gnupg'
+NeoBundle 'jpalardy/vim-slime'
+NeoBundle 'matthias-guenther/tocdown'
+NeoBundle 'matze/vim-move'
 NeoBundle 'mbbill/undotree'
 NeoBundle 'msanders/snipmate.vim'
-NeoBundle 'nelstrom/vim-markdown-folding.git'
-NeoBundle 'othree/html5-syntax.vim.git'
-NeoBundle 'scrooloose/nerdtree.git'
-NeoBundle 'scrooloose/syntastic.git'
-NeoBundle 'terryma/vim-multiple-cursors.git'
+NeoBundle 'nelstrom/vim-markdown-folding'
+NeoBundle 'othree/html5-syntax.vim'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'tpope/vim-endwise'
-NeoBundle 'tpope/vim-fugitive.git'
-NeoBundle 'tpope/vim-speeddating.git'
-NeoBundle 'tpope/vim-surround.git'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-speeddating'
+NeoBundle 'tpope/vim-surround'
 NeoBundle 'tsukkee/unite-help'
 NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'vim-scripts/AutoTag.git'
-NeoBundle 'vim-scripts/L9.git'
-NeoBundle 'xolox/vim-misc.git'
-NeoBundle 'xolox/vim-notes.git'
+NeoBundle 'vim-scripts/AutoTag'
+NeoBundle 'vim-scripts/L9'
+NeoBundle 'xolox/vim-misc'
+NeoBundle 'xolox/vim-notes'
+NeoBundle 'Shougo/vimproc.vim', {
+  \ 'build' : {
+  \     'mac' : 'make -f make_mac.mak',
+  \     'unix' : 'make -f make_unix.mak',
+  \    },
+  \ }
 
 NeoBundle 'https://bitbucket.org/ns9tks/vim-autocomplpop'
 
