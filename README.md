@@ -117,6 +117,8 @@ of the most important commands and settings for each plugin.
 - [undotree](https://github.com/mbbill/undotree): Display the undograph for a file
   - `:UndotreeToggle` ... turn on or off the toggle feature
 - [unite](https://github.com/Shougo/unite.vim): A very good and flexible plugin for searching and displaying information
+- [unite-help](https://github.com/tsukkee/unite-help): Opens unite window for searching
+  - `:Unite help` ... will open the menue where you have autocompletion for all the tags
 - [vim-autocomplete](https://github.com/matthias-guenther/vim-autocomplete): Automatically opens  popup menu for
   completion when entering characters
   - `:AcpEnable` ... enable auto-popup
