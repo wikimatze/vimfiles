@@ -41,7 +41,6 @@ NeoBundle 'Shougo/vimproc.vim', {
   \     'unix' : 'make -f make_unix.mak',
   \    },
   \ }
-NeoBundle 'https://bitbucket.org/ns9tks/vim-autocomplpop', { 'depends' : 'vim-scripts/L9' }
 
 set number
 

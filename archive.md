@@ -124,6 +124,8 @@ Here is a list of plugins I used in the past and removed them due the lack of us
 - [json](https://github.com/vim-scripts/JSON.vim): JSON detection and syntax-highlighting (*no doc*)
 - [jQuery](https://github.com/vim-scripts/jQuery "jQuery"): pretty colors for the
   jQuery syntax (*no doc*)
+- [l9](https://github.com/vim-scripts/L9.git): Vim-script library, add functionality to program vim-files
+(used by vim-autocomplpop plugin)
 - [matchit](http://www.vim.org/scripts/script.php?script_id=39): Press `%` to match tags in HTML, LaTeX and several other file
   formats
 - [minibufexpl](https://github.com/fholgado/minibufexpl.vim): Highlighting the current active buffer in an extra window
@@ -208,6 +210,10 @@ Here is a list of plugins I used in the past and removed them due the lack of us
     let g:SuperTabDefaultCompletionType = "<C-n>"
     let g:SuperTabLongestHighlight      = 1</pre>
 - [tmux.vim](https://github.com/zaiste/tmux.vim): Syntax detection for tmux files and highlighting (*no doc*)
+- [vim-autocomplete](https://github.com/vim-scripts/AutoComplPop): Automatically opens  popup menu for
+  completion when entering characters
+  - `:AcpEnable` ... enable auto-popup
+  - `:AcpDisable` ... disable auto-popup
 - [vim-css3 syntax](https://github.com/hail2u/vim-css3-syntax): add syntax support for css3 (*no doc*)
 - [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs "vim-nerdtree-tabs"): opens one NERDTree which is the same in
   every tab

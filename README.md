@@ -110,10 +110,6 @@ of the most important commands and settings for each plugin.
 - [unite](https://github.com/Shougo/unite.vim): A very good and flexible plugin for searching and displaying information
 - [unite-help](https://github.com/tsukkee/unite-help): Opens unite window for searching
   - `:Unite help` ... will open the menue where you have autocompletion for all the tags
-- [vim-autocomplete](https://github.com/matthias-guenther/vim-autocomplete): Automatically opens  popup menu for
-  completion when entering characters
-  - `:AcpEnable` ... enable auto-popup
-  - `:AcpDisable` ... disable auto-popup
 - [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax): Add CSS3 syntax support (*no doc*)
 - [vim-endwise](https://github.com/tpope/vim-endwise): Automatically adds keywords like *end* to special constructs in
   ruby (*no doc*)
