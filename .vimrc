@@ -34,17 +34,15 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'tsukkee/unite-help'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'vim-scripts/AutoTag'
-NeoBundle 'vim-scripts/L9'
-NeoBundle 'xolox/vim-misc'
-NeoBundle 'xolox/vim-notes'
+NeoBundle 'xolox/vim-notes', { 'depends' : 'xolox/vim-misc' }
+
 NeoBundle 'Shougo/vimproc.vim', {
   \ 'build' : {
   \     'mac' : 'make -f make_mac.mak',
   \     'unix' : 'make -f make_unix.mak',
   \    },
   \ }
-
-NeoBundle 'https://bitbucket.org/ns9tks/vim-autocomplpop'
+NeoBundle 'https://bitbucket.org/ns9tks/vim-autocomplpop', { 'depends' : 'vim-scripts/L9' }
 
 set number
 
