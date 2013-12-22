@@ -169,6 +169,15 @@ Here is a list of plugins I used in the past and removed them due the lack of us
       let g:netrw_browse_split = 4
       let g:netrw_altv = 1</pre>
 - [powerline](https://github.com/Lokaltog/vim-powerline "powerline"): candy statusline which is high configurable
+- [rubyrefactoring](https://github.com/ecomba/vim-ruby-refactoring): Refactoring for ruby
+  - `,rap`: Refactor Add Parameter ... adds a parameter to a function (cursor must be somewhere in the function)
+  - `,rec`: Refactor Extract Constant ... mark a number in visual mode and the one will be moved on the top of a class
+    or module
+  - `,relv`: Refactor Extract Local Variable ... if you have a longer if statement and wants to export some expression
+    into a tmp
+    variable, you can use any selection you want
+  - `,rrlv`: Refactor Rename Local Variable ... mark the name you want to change and the scope within the method
+  - `,rriv`: Refactor Rename Instance Variable ... mark the instance variable within a class
 - [session](https://github.com/xolox/vim-session): save session and to open then later
   - `:SaveSession <name>` ... save the current session under the specified name
   - `:OpenSession` ... dialog to select the section you want to open

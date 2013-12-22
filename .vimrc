@@ -13,7 +13,6 @@ NeoBundle 'Shougo/unite.vim'
 
 NeoBundle 'akiomik/git-gutter-vim'
 NeoBundle 'danchoi/ri.vim'
-NeoBundle 'ecomba/vim-ruby-refactoring'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'jamessan/vim-gnupg'
