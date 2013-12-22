@@ -6,33 +6,33 @@ endif
 call neobundle#rc(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
-NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundleFetch 'Shougo/neobundle.vim', { 'name' : 'neobundle' }
 
-NeoBundle 'Raimondi/delimitMate'
-NeoBundle 'Shougo/unite.vim'
-
-NeoBundle 'akiomik/git-gutter-vim'
-NeoBundle 'danchoi/ri.vim'
-NeoBundle 'godlygeek/tabular'
-NeoBundle 'hail2u/vim-css3-syntax'
-NeoBundle 'jamessan/vim-gnupg'
-NeoBundle 'matthias-guenther/tocdown'
-NeoBundle 'matze/vim-move'
-NeoBundle 'mbbill/undotree'
-NeoBundle 'msanders/snipmate.vim'
-NeoBundle 'nelstrom/vim-markdown-folding'
-NeoBundle 'othree/html5-syntax.vim'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'terryma/vim-multiple-cursors'
-NeoBundle 'tpope/vim-endwise'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'tpope/vim-speeddating'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'tsukkee/unite-help'
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'vim-scripts/AutoTag'
-NeoBundle 'xolox/vim-notes', { 'depends' : 'xolox/vim-misc' }
+NeoBundle 'Raimondi/delimitMate'          , { 'name' : 'delimitmate' }
+NeoBundle 'Shougo/unite.vim'              , { 'name' : 'unite' }
+NeoBundle 'akiomik/git-gutter-vim'        , { 'name' : 'git-gutter' }
+NeoBundle 'danchoi/ri.vim'                , { 'name' : 'ri' }
+NeoBundle 'godlygeek/tabular'             , { 'name' : 'tabular' }
+NeoBundle 'hail2u/vim-css3-syntax'        , { 'name' : 'css3-syntax' }
+NeoBundle 'jamessan/vim-gnupg'            , { 'name' : 'gnupg' }
+NeoBundle 'matthias-guenther/tocdown'     , { 'name' : 'tocdown' }
+NeoBundle 'matze/vim-move'                , { 'name' : 'move' }
+NeoBundle 'mbbill/undotree'               , { 'name' : 'undotree' }
+NeoBundle 'msanders/snipmate.vim'         , { 'name' : 'snipmate' }
+NeoBundle 'nelstrom/vim-markdown-folding' , { 'name' : 'markdown-folding' }
+NeoBundle 'othree/html5-syntax.vim'       , { 'name' : 'html5-syntax' }
+NeoBundle 'scrooloose/nerdtree'           , { 'name' : 'nerdtree' }
+NeoBundle 'scrooloose/syntastic'          , { 'name' : 'syntastic' }
+NeoBundle 'terryma/vim-multiple-cursors'  , { 'name' : 'multiple-cursors' }
+NeoBundle 'tpope/vim-endwise'             , { 'name' : 'endwise' }
+NeoBundle 'tpope/vim-fugitive'            , { 'name' : 'fugitive' }
+NeoBundle 'tpope/vim-speeddating'         , { 'name' : 'speeddating' }
+NeoBundle 'tpope/vim-surround'            , { 'name' : 'surround' }
+NeoBundle 'tsukkee/unite-help'            , { 'name' : 'unite-help' }
+NeoBundle 'vim-ruby/vim-ruby'             , { 'name' : 'ruby' }
+NeoBundle 'vim-scripts/AutoTag'           , { 'name' : 'autotag' }
+NeoBundle 'xolox/vim-notes'               , { 'name' : 'notes' }
+NeoBundle 'xolox/vim-misc'                , { 'name' : 'misc' }
 
 NeoBundle 'Shougo/vimproc.vim', {
   \ 'build' : {
