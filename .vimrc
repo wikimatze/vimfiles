@@ -51,6 +51,9 @@ filetype on        " enable file type detection
 filetype indent on " enable file type-specific indenting
 filetype plugin on " enable file type-specific plugins
 
+" Installation check.
+NeoBundleCheck
+
 " defining custom omnicompletion functions
 ru options/omnicompletion.vim
 
