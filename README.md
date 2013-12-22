@@ -128,16 +128,6 @@ of the most important commands and settings for each plugin.
     - `[m` ... move to the beginning of the *previous method*
     - `]]` ... move to the beginning of the **next** *module* or *class* definition
     - `[[` ... move to the beginning of the **previous** *module* or *class* definition
-- [vim-slime](https://github.com/jpalardy/vim-slime): Send text to a screen/tmux session (perfect REPL abilities for
-  Vim)
-  - `<C>cc` ... put the curent paragraph in the predefined window (`vip`)
-  - `<C>cv` ... will ask after the target pane again
-  - `:<range>SlimeSend` ... which lines should be send to the target
-  - define slime's target:
-    - `:` ... current window or current pane
-    - `:a` ... the `a`th window in the current pane
-    - `:a.b` ... the `b`th pane in window `a`
-    - `c:a.b` ... in the tmux session with the name `c` the `b`th pane in window `a`
 - [vimproc](https://github.com/Shougo/vimproc.vim.git): For asynchronous command execution (need is used to search for
   file in bigger projects by the unite.vim plugin)
 

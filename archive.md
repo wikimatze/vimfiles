@@ -307,6 +307,19 @@ Here is a list of plugins I used in the past and removed them due the lack of us
 - [vis](https://github.com/vim-scripts/vis): Execute commands only in the selected section of visual mode
   - mark a text in visual mode, then press `:B` and then you can perform any command
   - example: replace all `\-` through `...` => `:'<','>':B s/-/.../`
+- [vim-slime](https://github.com/jpalardy/vim-slime): Send text to a screen/tmux session
+  - `<C>cc` ... put the curent paragraph in the predefined window (`vip`)
+  - `<C>cv` ... will ask after the target pane again
+  - `:<range>SlimeSend` ... which lines should be send to the target
+  - define slime's target:
+    - `:` ... current window or current pane
+    - `:a` ... the `a`th window in the current pane
+    - `:a.b` ... the `b`th pane in window `a`
+    - `c:a.b` ... in the tmux session with the name `c` the `b`th pane in window `a`
+  - options:
+<pre>
+    let g:slime_target = "tmux"
+    let g:slime_paste_file = tempname()</pre>
 - [vimux](https://github.com/benmills/vimux): Easily interact with tmux from vim
   - `:call VimuxRunCommand("ls")` ... open a split pane without losing focus of Vim
   - `:VimuxRunLastCommand` ... runs the last command
