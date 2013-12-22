@@ -38,13 +38,17 @@ of the most important commands and settings for each plugin.
       - search for words added or removed: `Glog -Sadd`
 - [git-gutter](https://github.com/akiomik/git-gutter-vim): Shows git diff in Vim's gutter
 - [html5-syntax](https://github.com/othree/html5-syntax.vim): HTML5 elements syntax highlighing (*no doc*)
-- [l9](https://github.com/vim-scripts/L9.git): Vim-script library, add functionality to program vim-files
-(used by vim-autocomplpop plugin)
 - [markdown-folding](https://github.com/nelstrom/vim-markdown-folding): Folding by section headings - [multiple cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style selection to replace method
   names
   - `<C-n>` ... the current word under the cursor will be selected
   - `<C-x>` ... remove the current virtual cursor and skip to the next virtual cursor location
   - `ESC` ... will leave the selection mode
+- [neobundle](https://github.com/Shougo/neobundle.vim): A package manager for Vim
+  - `:NeoBundleInstall` ... installs all the specified
+  - `:NeoBundleClean` ... will remove all not used bundles
+  - `:NeoBundleUpdate <name>` ... will update the specified bundles
+  - `:NeoBundleDocs` ... create docs for all
+  - `:NeoBundleCheck` ... if certain plugins are not installed, it will run `:NeoBundleInstall` and will execute `:NeoBundleDocs` to create helptags
 - [NERDTree](https://github.com/scrooloose/nerdtree): amazing file browser for GUI guys
   - `m` - choose which action to perform (add, move, copy, delete)
       - add / at the end to create a new directory
@@ -140,7 +144,8 @@ would like to use this repository to get started with Vim, please perform the fo
 
 
 - `git clone --recursive git@github.com:matthias-guenther/vim-settings.git ~/.vim`
-- `cd ~//.vim/plugins/vimproc.vim && make`
+- `mkdir ~/.vim/bundle`
+- `git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim`
 - `mv ~/.vim/.vimrc ~/`
 
 
