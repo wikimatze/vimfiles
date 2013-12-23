@@ -119,6 +119,10 @@ Perfect and easy note taking.
   - `autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h\*` ... path of the notes directory
 
 
+### [open-browser](https://github.com/tyru/open-browser.vim)
+Open the URI with `<C-x>` in your default browser.
+
+
 ### [ri.vim](https://github.com/danchoi/ri.vim)
 Browse ri documentation offline in Vim.
 

@@ -29,6 +29,7 @@ NeoBundle 'tpope/vim-fugitive'            , { 'name' : 'fugitive' }
 NeoBundle 'tpope/vim-speeddating'         , { 'name' : 'speeddating' }
 NeoBundle 'tpope/vim-surround'            , { 'name' : 'surround' }
 NeoBundle 'tsukkee/unite-help'            , { 'name' : 'unite-help' }
+NeoBundle 'tyru/open-browser.vim'         , '30a558b', { 'name' : 'open-browser' }
 NeoBundle 'vim-ruby/vim-ruby'             , { 'name' : 'ruby' }
 NeoBundle 'vim-scripts/AutoTag'           , { 'name' : 'autotag' }
 NeoBundle 'xolox/vim-misc'                , { 'name' : 'misc' }
@@ -155,9 +156,6 @@ no <leader>bldots :%s/=/\& \\ldots \&/g<CR> " replace = through & \ldots &
 no <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of each line
 no <leader>_ :%s/_//g<CR>                   " delete all _
 no <leader>rt :%s/\\t/  /g<CR>
-
-" ; is doing nothing in vim, that's why I remap it to colon
-nn ; :
 
 " }}}
 
