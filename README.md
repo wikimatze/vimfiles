@@ -36,7 +36,6 @@ of the most important commands and settings for each plugin.
       - search working copy files: `:Ggrep <word>`
       - search commit messages: `:Glog --grep=fugitive`
       - search for words added or removed: `Glog -Sadd`
-- [git-gutter](https://github.com/akiomik/git-gutter-vim): Shows git diff in Vim's gutter
 - [html5-syntax](https://github.com/othree/html5-syntax.vim): HTML5 elements syntax highlighing (*no doc*)
 - [markdown-folding](https://github.com/nelstrom/vim-markdown-folding): Folding by section headings - [multiple cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style selection to replace method
   names

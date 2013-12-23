@@ -84,6 +84,7 @@ Here is a list of plugins I used in the past and removed them due the lack of us
           \ . '|(^|[/\\])\.(hg|git|bzr|svn)($|[/\\])' " exclude .hg, .git files
           \ . '|(^|[/\\])_site[/\\]' " exclude _site/* stuff (mainly from jekyll
           \ . '|(^|[/\\])assets[/\\]' " exlude the assets stuff by rails</pre>
+- [git-gutter](https://github.com/akiomik/git-gutter-vim): Shows git diff in Vim's gutter
 - [gundo](http://sjl.bitbucket.org/gundo.vim): Graph the changes of your file saves in different a nice tree
   - `k` ... move one step top
   - `j` ... move one step below
