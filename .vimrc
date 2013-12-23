@@ -11,6 +11,7 @@ NeoBundleFetch 'Shougo/neobundle.vim', { 'name' : 'neobundle' }
 NeoBundle 'Raimondi/delimitMate'          , { 'name' : 'delimitmate' }
 NeoBundle 'Shougo/unite.vim'              , { 'name' : 'unite' }
 NeoBundle 'danchoi/ri.vim'                , { 'name' : 'ri' }
+NeoBundle 'dkprice/vim-easygrep'          , '6622cd', { 'name' : 'easygrep' }
 NeoBundle 'godlygeek/tabular'             , { 'name' : 'tabular' }
 NeoBundle 'hail2u/vim-css3-syntax'        , { 'name' : 'css3-syntax' }
 NeoBundle 'jamessan/vim-gnupg'            , { 'name' : 'gnupg' }
@@ -30,8 +31,8 @@ NeoBundle 'tpope/vim-surround'            , { 'name' : 'surround' }
 NeoBundle 'tsukkee/unite-help'            , { 'name' : 'unite-help' }
 NeoBundle 'vim-ruby/vim-ruby'             , { 'name' : 'ruby' }
 NeoBundle 'vim-scripts/AutoTag'           , { 'name' : 'autotag' }
-NeoBundle 'xolox/vim-notes'               , { 'name' : 'notes' }
 NeoBundle 'xolox/vim-misc'                , { 'name' : 'misc' }
+NeoBundle 'xolox/vim-notes'               , { 'name' : 'notes' }
 
 NeoBundle 'Shougo/vimproc.vim', {
   \ 'build' : {

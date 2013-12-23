@@ -4,6 +4,9 @@ I'm always eager to learn, but I can't remember everything. Here is the list of 
 of the most important commands and settings for each plugin.
 
 - [autotag.vim](https://github.com/vim-scripts/AutoTag): Whenever you save a file, it deletes all of its entries and invokes ctags in append mode
+- [easygrep](https://github.com/dkprice/vim-easygrep): Makes search/replacing in your project a lot easier
+  - `<leader>vv|vV` ... find word/whole word under the cursor
+  - `<leader>vr|vR` ... perform global search replace of word/whole word under cursor, with confirmation
 - [delimitMate](https://github.com/Raimondi/delimitMate): Semantic autoclose brackets
 - [fugitive](http://github.com/tpope/vim-fugitive): Git wrapper
   - `:Gstatus` ... git status
