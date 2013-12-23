@@ -1,5 +1,5 @@
 # Movement
-- `h`, `j`, `k`, `l` ...  left, below, top, right
+- `h`, `j`, `k`, `l` ... left, below, top, right
 - `<C-i>` ... trace movements forward in files (in method)
 - `<C-o>` ... trace movements backwards in files (out method)
 - `w` ... forwards to the next word

@@ -1,11 +1,56 @@
-execute pathogen#infect('plugins/{}')
+if has('vim_starting')
+  set nocompatible               " Be iMproved
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+call neobundle#rc(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim', { 'name' : 'neobundle' }
+
+NeoBundle 'Raimondi/delimitMate'          , { 'name' : 'delimitmate' }
+NeoBundle 'Shougo/unite.vim'              , { 'name' : 'unite' }
+NeoBundle 'danchoi/ri.vim'                , { 'name' : 'ri' }
+NeoBundle 'dkprice/vim-easygrep'          , '6622cd', { 'name' : 'easygrep' }
+NeoBundle 'godlygeek/tabular'             , { 'name' : 'tabular' }
+NeoBundle 'hail2u/vim-css3-syntax'        , { 'name' : 'css3-syntax' }
+NeoBundle 'jamessan/vim-gnupg'            , { 'name' : 'gnupg' }
+NeoBundle 'matthias-guenther/tocdown'     , { 'name' : 'tocdown' }
+NeoBundle 'matze/vim-move'                , { 'name' : 'move' }
+NeoBundle 'mbbill/undotree'               , { 'name' : 'undotree' }
+NeoBundle 'msanders/snipmate.vim'         , { 'name' : 'snipmate' }
+NeoBundle 'nelstrom/vim-markdown-folding' , { 'name' : 'markdown-folding' }
+NeoBundle 'othree/html5-syntax.vim'       , { 'name' : 'html5-syntax' }
+NeoBundle 'scrooloose/nerdtree'           , { 'name' : 'nerdtree' }
+NeoBundle 'scrooloose/syntastic'          , { 'name' : 'syntastic' }
+NeoBundle 'terryma/vim-multiple-cursors'  , { 'name' : 'multiple-cursors' }
+NeoBundle 'tpope/vim-endwise'             , { 'name' : 'endwise' }
+NeoBundle 'tpope/vim-fugitive'            , { 'name' : 'fugitive' }
+NeoBundle 'tpope/vim-speeddating'         , { 'name' : 'speeddating' }
+NeoBundle 'tpope/vim-surround'            , { 'name' : 'surround' }
+NeoBundle 'tsukkee/unite-help'            , { 'name' : 'unite-help' }
+NeoBundle 'tyru/open-browser.vim'         , '30a558b', { 'name' : 'open-browser' }
+NeoBundle 'vim-ruby/vim-ruby'             , { 'name' : 'ruby' }
+NeoBundle 'vim-scripts/AutoTag'           , { 'name' : 'autotag' }
+NeoBundle 'xolox/vim-misc'                , { 'name' : 'misc' }
+NeoBundle 'xolox/vim-notes'               , { 'name' : 'notes' }
+
+NeoBundle 'Shougo/vimproc.vim', {
+  \ 'build' : {
+  \     'mac' : 'make -f make_mac.mak',
+  \     'unix' : 'make -f make_unix.mak',
+  \    },
+  \ }
+
 set number
 
 syntax on          " enable syntax highlighting
 filetype on        " enable file type detection
 filetype indent on " enable file type-specific indenting
-set nocompatible   " be iMproved
 filetype plugin on " enable file type-specific plugins
+
+" Installation check.
+NeoBundleCheck
 
 " defining custom omnicompletion functions
 ru options/omnicompletion.vim
@@ -111,9 +156,6 @@ no <leader>bldots :%s/=/\& \\ldots \&/g<CR> " replace = through & \ldots &
 no <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of each line
 no <leader>_ :%s/_//g<CR>                   " delete all _
 no <leader>rt :%s/\\t/  /g<CR>
-
-" ; is doing nothing in vim, that's why I remap it to colon
-nn ; :
 
 " }}}
 
