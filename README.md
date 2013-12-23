@@ -6,22 +6,22 @@ I'm always eager to learn, but I can't remember everything. Here is the list of 
 
 
 ### [autotag.vim](https://github.com/vim-scripts/AutoTag)
-Whenever you save a file, it deletes all of its entries and invokes ctags in append mode
+Whenever you save a file, it deletes all of its entries and invokes ctags in append mode.
 
 
 ### [easygrep](https://github.com/dkprice/vim-easygrep)
-Makes search/replacing in your project a lot easier
+Makes search/replacing in your project a lot easier.
 
 - `<leader>vv|vV` ... find word/whole word under the cursor
 - `<leader>vr|vR` ... perform global search replace of word/whole word under cursor, with confirmation
 
 
 ### [delimitMate](https://github.com/Raimondi/delimitMate)
-Semantic autoclose brackets
+Semantic autoclose brackets.
 
 
 ### [fugitive](http://github.com/tpope/vim-fugitive)
-Git wrapper
+Git wrapper.
 
 - `:Gstatus` ... git status
   - `<C-n>` ... go to the next file
@@ -56,15 +56,15 @@ Git wrapper
 
 
 ### [html5-syntax](https://github.com/othree/html5-syntax.vim)
-HTML5 elements syntax highlighing
+HTML5 elements syntax highlighing.
 
 
 ### [markdown-folding](https://github.com/nelstrom/vim-markdown-folding)
-Folding by section headings
+Folding by section headings.
 
 
 ### [multiple cursors](https://github.com/terryma/vim-multiple-cursors)
-Sublime Text style selection to replace method names
+Sublime Text style selection to replace method names.
 
 - `<C-n>` ... the current word under the cursor will be selected
 - `<C-x>` ... remove the current virtual cursor and skip to the next virtual cursor location
@@ -72,7 +72,7 @@ Sublime Text style selection to replace method names
 
 
 ### [neobundle](https://github.com/Shougo/neobundle.vim)
-Package manager for Vim
+Package manager for Vim.
 
 - `:NeoBundleInstall` ... installs all the specified
 - `:NeoBundleClean` ... will remove all not used bundles
@@ -82,7 +82,7 @@ Package manager for Vim
 
 
 ### [NERDTree](https://github.com/scrooloose/nerdtree)
-Amazing file browser for GUI guys
+Amazing file browser for GUI guys.
 
 - `m` - choose which action to perform (add, move, copy, delete)
   - add / at the end to create a new directory
@@ -99,7 +99,7 @@ Amazing file browser for GUI guys
 
 
 ### [notes](https://github.com/xolox/vim-notes)
-Perfect and easy note taking
+Perfect and easy note taking.
 
 - `:Note` ... starts a new note (you can specify the name of the note in the header)
 - `:write or :update` save the notes
@@ -120,7 +120,7 @@ Perfect and easy note taking
 
 
 ### [ri.vim](https://github.com/danchoi/ri.vim)
-Browse ri documentation offline in Vim
+Browse ri documentation offline in Vim.
 
 - `,r` ... opens start/autocomplete window with horizontalsplit
 - `,R` ... open start/autocomplete window with vertical split
@@ -130,11 +130,11 @@ Browse ri documentation offline in Vim
 
 
 ### [snipmate](https://github.com/msanders/snipmate.vim)
-Define your own snippets for different languages
+Define your own snippets for different languages.
 
 
 ### [speedating](https://github.com/tpope/vim-speeddating)
-Fast way to increment all kind of numbers
+Fast way to increment all kind of numbers.
 
 - `<C-a>` ... ++ number
 - `<C-x>` ... -- number
@@ -143,11 +143,11 @@ Fast way to increment all kind of numbers
 
 
 ### [syntastic](https://github.com/scrooloose/syntastic)
-Performs syntax check on various languages when saving
+Performs syntax check on various languages when saving.
 
 
 ### [surround](https://github.com/tpope/vim-surround)
-Change quotes and all other delimiters
+Change quotes and all other delimiters.
 
 - `ds"` ... stands for delete surround and will delete the surrounds
   - example: `{ :a => 1 }` after pressing `ds{` you will get `:a => 1`
@@ -169,35 +169,35 @@ Display the headlines of a markdown document in an extra window.
 
 
 ### [undotree](https://github.com/mbbill/undotree)
-Display the undograph for a file
+Display the undograph for a file.
 
 - `:UndotreeToggle` ... turn on or off the toggle feature
 
 
 ### [unite](https://github.com/Shougo/unite.vim)
-A very good and flexible plugin for searching and displaying information
+A very good and flexible plugin for searching and displaying information.
 
 
 ### [unite-help](https://github.com/tsukkee/unite-help)
-Opens unite window for searching
+Opens unite window for searching.
 
 - `:Unite help` ... will open the menue where you have autocompletion for all the tags
 
 
 ### [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax)
-Add CSS3 syntax support (*no doc*)
+Add CSS3 syntax support
 
 
 ### [vim-endwise](https://github.com/tpope/vim-endwise)
-Automatically adds keywords like *end* to special constructs in ruby (*no doc*)
+Automatically adds keywords like *end* to special constructs for all kinds of languages.
 
 
 ### [vim-gnupg](https://github.com/jamessan/vim-gnupg)
-Transparent editing of gpg encrypted files (*no doc*)
+Transparent editing of gpg encrypted files.
 
 
 ### [vim-misc](https://github.com/xolox/vim-misc)
-Extended Vim standard library needed for vim-notes plugin (*doc misc*)
+Extended Vim standard library needed for vim-notes plugin.
 
 
 ### [vim-move](https://github.com/matze/vim-move)
@@ -205,7 +205,7 @@ Move lines and selections up and down.
 
 
 ### [vim-ruby](https://github.com/vim-ruby/vim-ruby)
-Configuration files for editing and compiling Ruby - it even adds custom text-objects only for Vim
+Configuration files for editing and compiling Ruby - it even adds custom text-objects only for Vim.
 
 - following commands can performed in *visual mode*
   - `am` ... "a method" select from 'def' till 'end'
@@ -220,7 +220,7 @@ Configuration files for editing and compiling Ruby - it even adds custom text-ob
 
 
 ### [vimproc](https://github.com/Shougo/vimproc.vim.git)
-For asynchronous command execution (need is used to search for file in bigger projects by the unite.vim plugin)
+For asynchronous command execution (need is used to search for file in bigger projects by the unite.vim plugin).
 
 
 ## Installation
