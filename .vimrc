@@ -10,7 +10,6 @@ NeoBundleFetch 'Shougo/neobundle.vim', { 'name' : 'neobundle' }
 
 NeoBundle 'Raimondi/delimitMate'          , { 'name' : 'delimitmate' }
 NeoBundle 'Shougo/unite.vim'              , { 'name' : 'unite' }
-NeoBundle 'danchoi/ri.vim'                , { 'name' : 'ri' }
 NeoBundle 'dkprice/vim-easygrep'          , '6622cd', { 'name' : 'easygrep' }
 NeoBundle 'godlygeek/tabular'             , { 'name' : 'tabular' }
 NeoBundle 'hail2u/vim-css3-syntax'        , { 'name' : 'css3-syntax' }

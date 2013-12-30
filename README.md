@@ -123,16 +123,6 @@ Perfect and easy note taking.
 Open the URI with `<C-x>` in your default browser.
 
 
-### [ri.vim](https://github.com/danchoi/ri.vim)
-Browse ri documentation offline in Vim.
-
-- `,r` ... opens start/autocomplete window with horizontalsplit
-- `,R` ... open start/autocomplete window with vertical split
-- inside documentation window
-  - `,,r` ... class/module autocompletion window
-  - `-` ... goes up from a method page into the parent class/module
-
-
 ### [snipmate](https://github.com/msanders/snipmate.vim)
 Define your own snippets for different languages.
 
