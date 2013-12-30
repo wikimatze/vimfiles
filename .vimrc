@@ -10,7 +10,7 @@ NeoBundleFetch 'Shougo/neobundle.vim', { 'name' : 'neobundle' }
 
 NeoBundle 'Raimondi/delimitMate'          , { 'name' : 'delimitmate' }
 NeoBundle 'Shougo/unite.vim'              , { 'name' : 'unite' }
-NeoBundle 'dkprice/vim-easygrep'          , '6622cd', { 'name' : 'easygrep' }
+NeoBundle 'dkprice/vim-easygrep'          , { 'name' : 'easygrep' }
 NeoBundle 'godlygeek/tabular'             , { 'name' : 'tabular' }
 NeoBundle 'hail2u/vim-css3-syntax'        , { 'name' : 'css3-syntax' }
 NeoBundle 'jamessan/vim-gnupg'            , { 'name' : 'gnupg' }
@@ -98,8 +98,8 @@ set incsearch " highlight search after you type it
 set ignorecase                              " case insensitive search
 set smartcase                               " canceling out ignore for uppercase letter in search
 set nohlsearch
-set cryptmethod=blowfish                    " better default encryption algorithm
-set grepprg='ack'                           " default tool when using grep
+set cryptmethod=blowfish                    " encryption algorithm
+set grepprg=ag                              " tool when using grep
 
 let mapleader = "," " change the leader to be a comma vs. backslash if not given
 
