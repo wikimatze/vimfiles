@@ -17,6 +17,7 @@ NeoBundle 'jamessan/vim-gnupg'            , { 'name' : 'gnupg' }
 NeoBundle 'matthias-guenther/tocdown'     , { 'name' : 'tocdown' }
 NeoBundle 'matze/vim-move'                , { 'name' : 'move' }
 NeoBundle 'mbbill/undotree'               , { 'name' : 'undotree' }
+NeoBundle 'mhinz/vim-signify'             , { 'name' : 'signify' }
 NeoBundle 'msanders/snipmate.vim'         , { 'name' : 'snipmate' }
 NeoBundle 'nelstrom/vim-markdown-folding' , { 'name' : 'markdown-folding' }
 NeoBundle 'othree/html5-syntax.vim'       , { 'name' : 'html5-syntax' }

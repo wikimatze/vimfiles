@@ -217,6 +217,15 @@ Configuration files for editing and compiling Ruby - it even adds custom text-ob
   - `[[` ... move to the beginning of the **previous** *module* or *class* definition
 
 
+### [vim-signify](https://github.com/mhinz/vim-signify)
+Indicates added, removed, or modified lines of files which are under version control.
+
+- **mappings**
+  - `<leader>gj` ... go to the next hunk
+  - `<leader>gk` ... go to the previous hunk
+  - `<leader>gh` ... toggle higlight of the current line
+
+
 ### [vimproc](https://github.com/Shougo/vimproc.vim.git)
 For asynchronous command execution (need is used to search for file in bigger projects by the unite.vim plugin).
 
