@@ -103,6 +103,9 @@ set nohlsearch
 set cryptmethod=blowfish                    " encryption algorithm
 set grepprg=ag                              " tool when using grep
 
+" Remove Vim' automatic comment prefixing (http://tilvim.com/2013/12/30/remove-comment-prefix-2.html)
+autocmd FileType * setlocal formatoptions-=r formatoptions-=o
+
 let mapleader = "," " change the leader to be a comma vs. backslash if not given
 
 let &scrolloff=999-&scrolloff " current view is always centered
