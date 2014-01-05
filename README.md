@@ -186,6 +186,10 @@ Opens unite window for searching.
 Add CSS3 syntax support
 
 
+### [vim-detailed](https://github.com/rking/vim-detailed)
+My prefered color scheme in Vim.
+
+
 ### [vim-endwise](https://github.com/tpope/vim-endwise)
 Automatically adds keywords like *end* to special constructs for all kinds of languages.
 

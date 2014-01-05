@@ -21,6 +21,7 @@ NeoBundle 'mhinz/vim-signify'             , { 'name' : 'signify' }
 NeoBundle 'msanders/snipmate.vim'         , { 'name' : 'snipmate' }
 NeoBundle 'nelstrom/vim-markdown-folding' , { 'name' : 'markdown-folding' }
 NeoBundle 'othree/html5-syntax.vim'       , { 'name' : 'html5-syntax' }
+NeoBundle 'rking/vim-detailed'            , { 'name' : 'detailed-colorscheme'}
 NeoBundle 'scrooloose/nerdtree'           , { 'name' : 'nerdtree' }
 NeoBundle 'scrooloose/syntastic'          , { 'name' : 'syntastic' }
 NeoBundle 'terryma/vim-multiple-cursors'  , { 'name' : 'multiple-cursors' }
@@ -107,6 +108,8 @@ let mapleader = "," " change the leader to be a comma vs. backslash if not given
 let &scrolloff=999-&scrolloff " current view is always centered
 
 colorscheme detailed
+
+
 set tags=tags,./tags,gems.tags,./gems.tags
 
 ru! options/*.vim
