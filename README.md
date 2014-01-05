@@ -139,6 +139,10 @@ Fast way to increment all kind of numbers.
 ### [syntastic](https://github.com/scrooloose/syntastic)
 Performs syntax check on various languages when saving.
 
+- **Options**
+  - `:SyntasticCheck` ... runs the syntax checker
+  - `:SyntasticInfo` ... information about the current used syntax checkers and filetypes
+
 
 ### [surround](https://github.com/tpope/vim-surround)
 Change quotes and all other delimiters.
