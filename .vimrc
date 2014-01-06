@@ -165,3 +165,12 @@ no <leader>rt :%s/\\t/  /g<CR>
 
 " }}}
 
+" Always go at the beginning of git commit message
+augroup gitCommitEditMsg
+  autocmd!
+  autocmd BufReadPost *
+    \ if @% == '.git/COMMIT_EDITMSG' |
+    \   exe "normal gg" |
+    \ endif
+augroup END
+
