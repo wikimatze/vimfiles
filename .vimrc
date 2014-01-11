@@ -35,6 +35,7 @@ NeoBundle 'vim-ruby/vim-ruby'             , { 'name' : 'ruby' }
 NeoBundle 'vim-scripts/AutoTag'           , { 'name' : 'autotag' }
 NeoBundle 'xolox/vim-misc'                , { 'name' : 'misc' }
 NeoBundle 'xolox/vim-notes'               , { 'name' : 'notes' }
+NeoBundle 'mattn/calendar-vim'
 
 NeoBundle 'Shougo/vimproc.vim', {
   \ 'build' : {

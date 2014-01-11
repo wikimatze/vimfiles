@@ -8,6 +8,13 @@ I'm always eager to learn, but I can't remember everything. Here is the list of 
 ### [autotag.vim](https://github.com/vim-scripts/AutoTag)
 Whenever you save a file, it deletes all of its entries and invokes ctags in append mode.
 
+### [calendar.vim](https://github.com/mattn/calendar-vim)
+Opens a split with a calendar inside
+
+- `:Calendar` ... opens a vertical split
+- `<arrow-keys>` ... move around in the calendar
+- `q` ... will close the calendar
+
 
 ### [easygrep](https://github.com/dkprice/vim-easygrep)
 Makes search/replacing in your project a lot easier.
