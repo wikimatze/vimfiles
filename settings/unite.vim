@@ -1,4 +1,7 @@
-let g:unite_source_history_yank_enable = 1       " but this doesn't seem to work :(
+let g:unite_source_history_yank_enable=1
+let g:unite_source_history_yank_limit=10000
+let g:unite_source_history_yank_file=$HOME.'/.vim/yankring.txt'
+
 let g:unite_enable_start_insert = 1              " start in insert mode
 let g:unite_update_time = 200                    " shorten the default update date to 200ms
 let g:unite_cursor_line_highlight = 'TabLineSel' " mark matches in buffer as bold

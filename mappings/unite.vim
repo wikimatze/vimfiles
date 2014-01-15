@@ -6,3 +6,4 @@ nnoremap <leader>o :<C-u>Unite -no-split -start-insert file_mru<CR>
 nnoremap <leader>y :Unite history/yank<CR>
 nnoremap <leader>h :<C-u>Unite -no-split help<CR>
 nnoremap <leader>c :<C-u>Unite -no-split command<CR>
+nnoremap <leader>y :<C-u>Unite history/yank<CR>
