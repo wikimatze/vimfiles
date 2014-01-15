@@ -54,9 +54,6 @@ filetype plugin on " enable file type-specific plugins
 " Installation check.
 NeoBundleCheck
 
-" defining custom omnicompletion functions
-ru options/omnicompletion.vim
-
 " General settings {{{
 
 set nonumber                                " display no line numbers
@@ -116,9 +113,66 @@ colorscheme detailed
 
 set tags=tags,./tags,gems.tags,./gems.tags
 
-ru! options/*.vim
+" }}}
+" Settings for backups {{{
 
-" --------------------------------------------------------------------------------}}}
+if !isdirectory($HOME . '/.vim/backup')
+  call mkdir($HOME . '/.vim/backup')
+endif
+
+set backupext=~                 " backup file extension
+set backupdir=$HOME/.vim/backup " directory of backups
+set backupcopy=yes              " keep attributes of the original file
+set backup                      " save files after close
+set writebackup                 " make a backup of the original file when writing
+set noswapfile                  " don't save swap files
+
+" }}}
+" Settings for my blog with jekyll {{{
+
+" Marking YAML front matter information in markdown files as comments
+autocmd BufNewFile,BufRead */_posts/*.md syntax match Comment /\%^---\_.\{-}---$/
+
+" }}}
+" Settings for autocmpletion in insert mode <C-n> {{{
+
+" set autocompletion when CTRL-P or CTRL-N are used.
+" It is also used for whole-line
+" . ... scan the current buffer
+" b ... scan other loaded buffers that are in the buffer list
+" w ... buffers from other windows
+" u ... scan unloaded buffers that are in the buffer list
+" U ... scan buffers that are not in the buffer list
+" ] ... tag completion
+" i ... scan current and included files
+set complete=i,.,b,w,u,U,]
+
+" }}}
+" Settings for displaying list chars {{{
+
+" trails - white spaces
+" extends: shows when a file name goes out the view (you have to scroll right in NERDTree)
+" precedes: shows when a file name goes out the view (you have to scroll left like in NERDTree)
+" nbsp: character to show for a non-breakable space
+set listchars=tab:▸\ ,extends:❯,precedes:❮,trail:.,nbsp:~
+set list             " enable predefined symbols for tabs, trails, ...
+
+" }}}
+" Settings for wildmenu completion {{{
+
+if has("wildmenu")
+  set wildmenu                           " enable a navigable list of suggestions
+  set wildmode=full                      " zsh full-match, starts over with first match after last match reached
+  set wig+=.git,.hg,.svn                 " version control
+  set wig+=*.bmp,*.gif,*.ico,*.jpg,*.png " images
+  set wig+=*.aux,*.out,*.toc             " LaTeX intermediate files
+  set wig+=.DS_Store                     " Mac
+  set wig+=*~,*.swp,*.tmp                " tmp and backup files
+endif
+
+
+" }}}
+
 " Functions {{{
 
 ru functions/trailing_whitespaces_removal.vim
