@@ -9,6 +9,7 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim', { 'name' : 'neobundle' }
 
 NeoBundle 'Raimondi/delimitMate'          , { 'name' : 'delimitmate' }
+NeoBundle 'Shougo/neocomplete.vim'        , { 'name' : 'neocomplete' }
 NeoBundle 'Shougo/unite.vim'              , { 'name' : 'unite' }
 NeoBundle 'dkprice/vim-easygrep'          , { 'name' : 'easygrep' }
 NeoBundle 'godlygeek/tabular'             , { 'name' : 'tabular' }

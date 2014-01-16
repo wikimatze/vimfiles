@@ -88,6 +88,10 @@ Package manager for Vim.
 - `:NeoBundleCheck` ... if certain plugins are not installed, it will run `:NeoBundleInstall` and will execute `:NeoBundleDocs` to create helptags
 
 
+### [neocomplete](https://github.com/Shougo/neocomplete.vim)
+An amazing tool for keyword completion.
+
+
 ### [NERDTree](https://github.com/scrooloose/nerdtree)
 Amazing file browser for GUI guys.
 
