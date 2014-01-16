@@ -32,12 +32,14 @@ NeoBundle 'tpope/vim-fugitive'            , { 'name' : 'fugitive' }
 NeoBundle 'tpope/vim-speeddating'         , { 'name' : 'speeddating' }
 NeoBundle 'tpope/vim-surround'            , { 'name' : 'surround' }
 NeoBundle 'tsukkee/unite-help'            , { 'name' : 'unite-help' }
-NeoBundle 'tsukkee/unite-tag'             , { 'name': 'unite-tag' }
+NeoBundle 'tsukkee/unite-tag'             , { 'name' : 'unite-tag' }
 NeoBundle 'tyru/open-browser.vim'         , '30a558b', { 'name' : 'open-browser' }
 NeoBundle 'vim-ruby/vim-ruby'             , { 'name' : 'ruby' }
 NeoBundle 'vim-scripts/AutoTag'           , { 'name' : 'autotag' }
 NeoBundle 'xolox/vim-misc'                , { 'name' : 'misc' }
 NeoBundle 'xolox/vim-notes'               , { 'name' : 'notes' }
+
+NeoBundle 'vim-scripts/louver.vim'        , { 'name' : 'color-louver' }
 
 NeoBundle 'Shougo/vimproc.vim', {
   \ 'build' : {
