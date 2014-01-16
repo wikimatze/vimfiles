@@ -48,8 +48,6 @@ NeoBundle 'Shougo/vimproc.vim', {
   \    },
   \ }
 
-set number
-
 syntax on          " enable syntax highlighting
 filetype on        " enable file type detection
 filetype indent on " enable file type-specific indenting
@@ -60,14 +58,13 @@ NeoBundleCheck
 
 " General settings {{{
 
-set nonumber                                " display no line numbers
+set number                                  " display line numbers
 set modeline                                " check first lines of files for style information
 set noerrorbells                            " turn of nasty error sounds
 set autoindent                              " Copy indent from current line when starting a new line
 set autoread                                " automatically read a file that has changed on disk
 set showbreak=↪                             " show the symbol for wrapped lines
 set history=5000                            " number of lines for command line history
-set shell=/usr/bin/zsh                      " using zsh for running Ex commands
 set showmode                                " show the current modal mode
 set showcmd                                 " show (partial) command in the last line of the screen
 set nowarn                                  " do not warn, when shell command update the file you edit in Vim
