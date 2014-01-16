@@ -120,10 +120,11 @@
 - `<C-n> | <C-p>` ... Keyword autocompletion for next|previous matching
 - `<C-x><C-n>` ... path autocompletion current buffer keywords
 - `<C-x><C-i>` ... include file keywords
-- `<C-x><C-]>` ... tags file keywords (class name completion for Ruby files)
+- `<C-x><C-o>` ... omnicomplete with context awareness
+- `<C-x><C-k>` ... autocompletion from dictionary
 - `<C-x><C-f>` ... filename completion for the current directory
 - `<C-x><C-l>` ... complete a whole line (good for matching complete function calls
-- `<C-x><C-o>` ... omnicomplete with context awareness
+- `<C-x><C-]>` ... tags file keywords (class name completion for Ruby files)
 - `<C-c> | <C-e>` ... exit from autocompletion pop up
 
 
@@ -258,7 +259,6 @@
 
 
 # Text objects
-
 - `a) | ab` ... a pair of parentheses (including the parentheses)
 - `i) | ib` ... inside of parentheses
 - `a} | aB` ... a pair of braces (including the parentheses)
