@@ -183,6 +183,13 @@ Display the undograph for a file.
 A very good and flexible plugin for searching and displaying information.
 
 
+### [unite-tag](https://github.com/tsukkee/unite-tag)
+Selecting and searching tags
+
+- `:Unite tag` ... search name for all tags
+- `:Unite tag/file` ... select files including tags
+
+
 ### [unite-help](https://github.com/tsukkee/unite-help)
 Opens unite window for searching.
 

@@ -15,6 +15,7 @@ NeoBundle 'godlygeek/tabular'             , { 'name' : 'tabular' }
 NeoBundle 'hail2u/vim-css3-syntax'        , { 'name' : 'css3-syntax' }
 NeoBundle 'jamessan/vim-gnupg'            , { 'name' : 'gnupg' }
 NeoBundle 'matthias-guenther/tocdown'     , { 'name' : 'tocdown' }
+NeoBundle 'mattn/calendar-vim'            , { 'name' : 'calendar' }
 NeoBundle 'matze/vim-move'                , { 'name' : 'move' }
 NeoBundle 'mbbill/undotree'               , { 'name' : 'undotree' }
 NeoBundle 'mhinz/vim-signify'             , { 'name' : 'signify' }
@@ -30,12 +31,12 @@ NeoBundle 'tpope/vim-fugitive'            , { 'name' : 'fugitive' }
 NeoBundle 'tpope/vim-speeddating'         , { 'name' : 'speeddating' }
 NeoBundle 'tpope/vim-surround'            , { 'name' : 'surround' }
 NeoBundle 'tsukkee/unite-help'            , { 'name' : 'unite-help' }
+NeoBundle 'tsukkee/unite-tag'             , { 'name': 'unite-tag' }
 NeoBundle 'tyru/open-browser.vim'         , '30a558b', { 'name' : 'open-browser' }
 NeoBundle 'vim-ruby/vim-ruby'             , { 'name' : 'ruby' }
 NeoBundle 'vim-scripts/AutoTag'           , { 'name' : 'autotag' }
 NeoBundle 'xolox/vim-misc'                , { 'name' : 'misc' }
 NeoBundle 'xolox/vim-notes'               , { 'name' : 'notes' }
-NeoBundle 'mattn/calendar-vim'
 
 NeoBundle 'Shougo/vimproc.vim', {
   \ 'build' : {
