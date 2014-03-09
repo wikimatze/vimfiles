@@ -33,7 +33,7 @@ NeoBundle 'tpope/vim-speeddating'         , { 'name' : 'speeddating' }
 NeoBundle 'tpope/vim-surround'            , { 'name' : 'surround' }
 NeoBundle 'tsukkee/unite-help'            , { 'name' : 'unite-help' }
 NeoBundle 'tsukkee/unite-tag'             , { 'name' : 'unite-tag' }
-NeoBundle 'tyru/open-browser.vim'         , '30a558b', { 'name' : 'open-browser' }
+NeoBundle 'tyru/open-browser.vim'         , { 'name' : 'open-browser' }
 NeoBundle 'vim-ruby/vim-ruby'             , { 'name' : 'ruby' }
 NeoBundle 'vim-scripts/AutoTag'           , { 'name' : 'autotag' }
 NeoBundle 'xolox/vim-misc'                , { 'name' : 'misc' }
