@@ -99,8 +99,11 @@ set incsearch " highlight search after you type it
 set ignorecase                              " case insensitive search
 set smartcase                               " canceling out ignore for uppercase letter in search
 set nohlsearch
-set cryptmethod=blowfish                    " encryption algorithm
 set grepprg=ag                              " tool when using grep
+
+if has('cryptmethod')
+  set cryptmethod=blowfish                    " encryption algorithm
+endif
 
 " Remove Vim' automatic comment prefixing (http://tilvim.com/2013/12/30/remove-comment-prefix-2.html)
 autocmd FileType * setlocal formatoptions-=r formatoptions-=o
