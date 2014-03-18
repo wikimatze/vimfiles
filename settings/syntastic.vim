@@ -7,8 +7,11 @@ let tex_no_error = 1                         " underscores are not displayed as 
 let loaded_tex_syntax_checker = 0            " turn of lacheck of the syntastic plugin
 set statusline+=%#warningmsg#                " show warning messages
 set statusline+=%{SyntasticStatuslineFlag()} " show message in quick fix
+
 let g:syntastic_sh_checkers = ['checkbashisms']
 let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
+let g:syntastic_ruby_checkers = ['rubocop', 'rubylint']
+
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': ['eruby', 'javascript', 'ruby', 'puppet', 'sass'],
                            \ 'passive_filetypes': ['html', 'php', 'sh'] }
