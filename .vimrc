@@ -8,40 +8,39 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim', { 'name' : 'neobundle' }
 
-NeoBundle 'Raimondi/delimitMate'          , { 'name' : 'delimitmate' }
-NeoBundle 'Shougo/neocomplete.vim'        , { 'name' : 'neocomplete' }
-NeoBundle 'Shougo/unite.vim'              , { 'name' : 'unite' }
-NeoBundle 'dkprice/vim-easygrep'          , { 'name' : 'easygrep' }
-NeoBundle 'godlygeek/tabular'             , { 'name' : 'tabular' }
-NeoBundle 'hail2u/vim-css3-syntax'        , { 'name' : 'css3-syntax' }
-NeoBundle 'jamessan/vim-gnupg'            , { 'name' : 'gnupg' }
-NeoBundle 'matthias-guenther/tocdown'     , { 'name' : 'tocdown' }
-NeoBundle 'mattn/calendar-vim'            , { 'name' : 'calendar' }
-NeoBundle 'matze/vim-move'                , { 'name' : 'move' }
-NeoBundle 'mbbill/undotree'               , { 'name' : 'undotree' }
-NeoBundle 'mhinz/vim-signify'             , { 'name' : 'signify' }
-NeoBundle 'msanders/snipmate.vim'         , { 'name' : 'snipmate' }
-NeoBundle 'nelstrom/vim-markdown-folding' , { 'name' : 'markdown-folding' }
-NeoBundle 'othree/html5-syntax.vim'       , { 'name' : 'html5-syntax' }
-NeoBundle 'rking/vim-detailed'            , { 'name' : 'detailed-colorscheme'}
-NeoBundle 'scrooloose/nerdtree'           , { 'name' : 'nerdtree' }
-NeoBundle 'scrooloose/syntastic'          , { 'name' : 'syntastic' }
-NeoBundle 'terryma/vim-multiple-cursors'  , { 'name' : 'multiple-cursors' }
-NeoBundle 'tpope/vim-endwise'             , { 'name' : 'endwise' }
-NeoBundle 'tpope/vim-fugitive'            , { 'name' : 'fugitive' }
-NeoBundle 'tpope/vim-speeddating'         , { 'name' : 'speeddating' }
-NeoBundle 'tpope/vim-surround'            , { 'name' : 'surround' }
-NeoBundle 'tsukkee/unite-help'            , { 'name' : 'unite-help' }
-NeoBundle 'tsukkee/unite-tag'             , { 'name' : 'unite-tag' }
-NeoBundle 'tyru/open-browser.vim'         , { 'name' : 'open-browser' }
-NeoBundle 'vim-ruby/vim-ruby'             , { 'name' : 'ruby' }
-NeoBundle 'vim-scripts/AutoTag'           , { 'name' : 'autotag' }
-NeoBundle 'xolox/vim-misc'                , { 'name' : 'misc' }
-NeoBundle 'xolox/vim-notes'               , { 'name' : 'notes' }
+NeoBundle 'Raimondi/delimitMate'          , { 'rev': '38487b', 'name' : 'delimitmate' }
+NeoBundle 'Shougo/neocomplete.vim'        , { 'rev': '0b1e06', 'name' : 'neocomplete' }
+NeoBundle 'Shougo/unite.vim'              , { 'rev': '70bb85', 'name' : 'unite' }
+NeoBundle 'dkprice/vim-easygrep'          , { 'rev': 'df9fad', 'name' : 'easygrep' }
+NeoBundle 'godlygeek/tabular'             , { 'rev': '60f256', 'name' : 'tabular' }
+NeoBundle 'hail2u/vim-css3-syntax'        , { 'rev': 'd2ce74', 'name' : 'css3-syntax' }
+NeoBundle 'jamessan/vim-gnupg'            , { 'rev': '6e9f52', 'name' : 'gnupg' }
+NeoBundle 'matthias-guenther/tocdown'     , { 'rev': '10b6cb', 'name' : 'tocdown' }
+NeoBundle 'mattn/calendar-vim'            , { 'rev': 'b340c4', 'name' : 'calendar' }
+NeoBundle 'matze/vim-move'                , { 'rev': '477bfb', 'name' : 'move' }
+NeoBundle 'mbbill/undotree'               , { 'rev': 'db4db7', 'name' : 'undotree' }
+NeoBundle 'mhinz/vim-signify'             , { 'rev': '2b05c7', 'name' : 'signify' }
+NeoBundle 'msanders/snipmate.vim'         , { 'rev': 'f5a75d', 'name' : 'snipmate' }
+NeoBundle 'nelstrom/vim-markdown-folding' , { 'rev': '3e84f2', 'name' : 'markdown-folding' }
+NeoBundle 'othree/html5-syntax.vim'       , { 'rev': 'fdbd5b', 'name' : 'html5-syntax' }
+NeoBundle 'rking/vim-detailed'            , { 'rev': '5096fc', 'name' : 'detailed-colorscheme'}
+NeoBundle 'scrooloose/nerdtree'           , { 'rev': 'b0bb78', 'name' : 'nerdtree' }
+NeoBundle 'scrooloose/syntastic'          , { 'rev': 'f6d584', 'name' : 'syntastic' }
+NeoBundle 'terryma/vim-multiple-cursors'  , { 'rev': '35028b', 'name' : 'multiple-cursors' }
+NeoBundle 'tpope/vim-endwise'             , { 'rev': 'c3d8fe', 'name' : 'endwise' }
+NeoBundle 'tpope/vim-fugitive'            , { 'rev': 'd6f176', 'name' : 'fugitive' }
+NeoBundle 'tpope/vim-speeddating'         , { 'rev': '9dc081', 'name' : 'speeddating' }
+NeoBundle 'tpope/vim-surround'            , { 'rev': '42e9b4', 'name' : 'surround' }
+NeoBundle 'tsukkee/unite-help'            , { 'rev': '5a8dc6', 'name' : 'unite-help' }
+NeoBundle 'tsukkee/unite-tag'             , { 'rev': '26d672', 'name' : 'unite-tag' }
+NeoBundle 'tyru/open-browser.vim'         , { 'rev': '54e758', 'name' : 'open-browser' }
+NeoBundle 'vim-ruby/vim-ruby'             , { 'rev': '3ffc0a', 'name' : 'ruby' }
+NeoBundle 'vim-scripts/AutoTag'           , { 'rev': 'ef0a37', 'name' : 'autotag' }
+NeoBundle 'xolox/vim-misc'                , { 'rev': '8551f2', 'name' : 'misc' }
+NeoBundle 'xolox/vim-notes'               , { 'rev': '14838b', 'name' : 'notes' }
+NeoBundle 'vim-scripts/louver.vim'        , { 'rev': 'f40d70', 'name' : 'color-louver' }
 
-NeoBundle 'vim-scripts/louver.vim'        , { 'name' : 'color-louver' }
-
-NeoBundle 'Shougo/vimproc.vim', {
+NeoBundle 'Shougo/vimproc.vim', { 'rev': '92b34f',
   \ 'build' : {
   \     'mac' : 'make -f make_mac.mak',
   \     'unix' : 'make -f make_unix.mak',
