@@ -39,6 +39,7 @@ NeoBundle 'vim-scripts/AutoTag'           , { 'rev': 'ef0a37', 'name' : 'autotag
 NeoBundle 'xolox/vim-misc'                , { 'rev': '8551f2', 'name' : 'misc' }
 NeoBundle 'xolox/vim-notes'               , { 'rev': '14838b', 'name' : 'notes' }
 NeoBundle 'vim-scripts/louver.vim'        , { 'rev': 'f40d70', 'name' : 'color-louver' }
+NeoBundle 't9md/vim-choosewin'            , { 'rev': '68a0ec', 'name' : 'choosewin' }
 
 NeoBundle 'Shougo/vimproc.vim', { 'rev': '92b34f',
   \ 'build' : {
