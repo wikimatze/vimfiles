@@ -52,6 +52,7 @@ Git wrapper.
     - when done with merging, run `:Gwrite` and `:only!` on the working copy to close all the other windows
 - `:Gread` ... makes a git checkout and update vim's buffer to the content of HEAD
 - `:Gblame` ... git blame
+  - `o` ... to open a split showing the commit currently selected in the blame pane.
 - `:Git` ... perform every other normal git command in the terminal
 - `:Glog` ... git log
   - `:Glog -5` ... will open the last 5 commits (`:copen` will open the quickfix window for all commits)
@@ -133,7 +134,6 @@ Perfect and easy note taking.
 ### [open-browser](https://github.com/tyru/open-browser.vim)
 Open the URI with `<C-x>` in your default browser.
 
-
 ### [snipmate](https://github.com/msanders/snipmate.vim)
 Define your own snippets for different languages.
 
@@ -169,7 +169,8 @@ Change quotes and all other delimiters.
 - how to quote whole string?
   - mark the string in visual mode (either normal mode with *v* or block mode with `V`), then
     press `s` and then the quote (`"", (), {}`) you want to have and it wraps the string in this
-- [tabular](https://github.com/godlygeek/tabular): Auto indent files according to the pattern
+### [tabular](https://github.com/godlygeek/tabular):
+Auto indent files according to the pattern
   - `:Tabularize / {pattern}`
 
 
@@ -202,6 +203,10 @@ Opens unite window for searching.
 
 ### [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax)
 Add CSS3 syntax support
+
+
+### [vim-choosewin](https://github.com/t9md/vim-choosewin)
+Cycle around in Vim panes the tmux style:
 
 
 ### [vim-detailed](https://github.com/rking/vim-detailed)
