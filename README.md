@@ -209,10 +209,6 @@ Add CSS3 syntax support
 Cycle around in Vim panes the tmux style:
 
 
-### [vim-detailed](https://github.com/rking/vim-detailed)
-My prefered color scheme in Vim.
-
-
 ### [vim-endwise](https://github.com/tpope/vim-endwise)
 Automatically adds keywords like *end* to special constructs for all kinds of languages.
 

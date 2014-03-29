@@ -23,7 +23,6 @@ NeoBundle 'mhinz/vim-signify'             , { 'rev': '2b05c7', 'name' : 'signify
 NeoBundle 'msanders/snipmate.vim'         , { 'rev': 'f5a75d', 'name' : 'snipmate' }
 NeoBundle 'nelstrom/vim-markdown-folding' , { 'rev': '3e84f2', 'name' : 'markdown-folding' }
 NeoBundle 'othree/html5-syntax.vim'       , { 'rev': 'fdbd5b', 'name' : 'html5-syntax' }
-NeoBundle 'rking/vim-detailed'            , { 'rev': '5096fc', 'name' : 'detailed-colorscheme'}
 NeoBundle 'scrooloose/nerdtree'           , { 'rev': 'b0bb78', 'name' : 'nerdtree' }
 NeoBundle 'scrooloose/syntastic'          , { 'rev': 'f6d584', 'name' : 'syntastic' }
 NeoBundle 'terryma/vim-multiple-cursors'  , { 'rev': '35028b', 'name' : 'multiple-cursors' }
@@ -38,8 +37,9 @@ NeoBundle 'vim-ruby/vim-ruby'             , { 'rev': '3ffc0a', 'name' : 'ruby' }
 NeoBundle 'vim-scripts/AutoTag'           , { 'rev': 'ef0a37', 'name' : 'autotag' }
 NeoBundle 'xolox/vim-misc'                , { 'rev': '8551f2', 'name' : 'misc' }
 NeoBundle 'xolox/vim-notes'               , { 'rev': '14838b', 'name' : 'notes' }
-NeoBundle 'vim-scripts/louver.vim'        , { 'rev': 'f40d70', 'name' : 'color-louver' }
 NeoBundle 't9md/vim-choosewin'            , { 'rev': '68a0ec', 'name' : 'choosewin' }
+
+NeoBundle 'itchyny/landscape.vim'         , { 'rev': 'bb79a1', 'name' : 'color-landscape' }
 
 NeoBundle 'Shougo/vimproc.vim', { 'rev': '92b34f',
   \ 'build' : {
@@ -112,7 +112,7 @@ let mapleader = "," " change the leader to be a comma vs. backslash if not given
 
 let &scrolloff=999-&scrolloff " current view is always centered
 
-colorscheme detailed
+colorscheme landscape
 
 
 set tags=tags,./tags,gems.tags,./gems.tags
