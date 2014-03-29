@@ -8,38 +8,39 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim', { 'name' : 'neobundle' }
 
-NeoBundle 'Raimondi/delimitMate'          , { 'rev': '38487b', 'name' : 'delimitmate' }
-NeoBundle 'Shougo/neocomplete.vim'        , { 'rev': '0b1e06', 'name' : 'neocomplete' }
-NeoBundle 'Shougo/unite.vim'              , { 'rev': '70bb85', 'name' : 'unite' }
-NeoBundle 'dkprice/vim-easygrep'          , { 'rev': 'df9fad', 'name' : 'easygrep' }
-NeoBundle 'godlygeek/tabular'             , { 'rev': '60f256', 'name' : 'tabular' }
-NeoBundle 'hail2u/vim-css3-syntax'        , { 'rev': 'd2ce74', 'name' : 'css3-syntax' }
-NeoBundle 'itchyny/lightline.vim'         , { 'rev': '147cfb', 'name' : 'lightline' }
-NeoBundle 'jamessan/vim-gnupg'            , { 'rev': '6e9f52', 'name' : 'gnupg' }
-NeoBundle 'matthias-guenther/tocdown'     , { 'rev': '10b6cb', 'name' : 'tocdown' }
-NeoBundle 'mattn/calendar-vim'            , { 'rev': 'b340c4', 'name' : 'calendar' }
-NeoBundle 'matze/vim-move'                , { 'rev': '477bfb', 'name' : 'move' }
-NeoBundle 'mbbill/undotree'               , { 'rev': 'db4db7', 'name' : 'undotree' }
-NeoBundle 'mhinz/vim-signify'             , { 'rev': '2b05c7', 'name' : 'signify' }
-NeoBundle 'msanders/snipmate.vim'         , { 'rev': 'f5a75d', 'name' : 'snipmate' }
-NeoBundle 'nelstrom/vim-markdown-folding' , { 'rev': '3e84f2', 'name' : 'markdown-folding' }
-NeoBundle 'othree/html5-syntax.vim'       , { 'rev': 'fdbd5b', 'name' : 'html5-syntax' }
-NeoBundle 'scrooloose/nerdtree'           , { 'rev': 'b0bb78', 'name' : 'nerdtree' }
-NeoBundle 'scrooloose/syntastic'          , { 'rev': 'f6d584', 'name' : 'syntastic' }
-NeoBundle 'sk1418/blockit'                , { 'rev': 'da53b6', 'name' : 'blockit' }
-NeoBundle 't9md/vim-choosewin'            , { 'rev': '68a0ec', 'name' : 'choosewin' }
-NeoBundle 'terryma/vim-multiple-cursors'  , { 'rev': '35028b', 'name' : 'multiple-cursors' }
-NeoBundle 'tpope/vim-endwise'             , { 'rev': 'c3d8fe', 'name' : 'endwise' }
-NeoBundle 'tpope/vim-fugitive'            , { 'rev': 'd6f176', 'name' : 'fugitive' }
-NeoBundle 'tpope/vim-speeddating'         , { 'rev': '9dc081', 'name' : 'speeddating' }
-NeoBundle 'tpope/vim-surround'            , { 'rev': '42e9b4', 'name' : 'surround' }
-NeoBundle 'tsukkee/unite-help'            , { 'rev': '5a8dc6', 'name' : 'unite-help' }
-NeoBundle 'tsukkee/unite-tag'             , { 'rev': '26d672', 'name' : 'unite-tag' }
-NeoBundle 'tyru/open-browser.vim'         , { 'rev': '54e758', 'name' : 'open-browser' }
-NeoBundle 'vim-ruby/vim-ruby'             , { 'rev': '3ffc0a', 'name' : 'ruby' }
-NeoBundle 'vim-scripts/AutoTag'           , { 'rev': 'ef0a37', 'name' : 'autotag' }
-NeoBundle 'xolox/vim-misc'                , { 'rev': '8551f2', 'name' : 'misc' }
-NeoBundle 'xolox/vim-notes'               , { 'rev': '14838b', 'name' : 'notes' }
+NeoBundle 'AndrewRadev/switch.vim'        , { 'rev': 'd81c8a', 'name': 'switch' }
+NeoBundle 'Raimondi/delimitMate'          , { 'rev': '38487b', 'name': 'delimitmate' }
+NeoBundle 'Shougo/neocomplete.vim'        , { 'rev': '0b1e06', 'name': 'neocomplete' }
+NeoBundle 'Shougo/unite.vim'              , { 'rev': '70bb85', 'name': 'unite' }
+NeoBundle 'dkprice/vim-easygrep'          , { 'rev': 'df9fad', 'name': 'easygrep' }
+NeoBundle 'godlygeek/tabular'             , { 'rev': '60f256', 'name': 'tabular' }
+NeoBundle 'hail2u/vim-css3-syntax'        , { 'rev': 'd2ce74', 'name': 'css3-syntax' }
+NeoBundle 'itchyny/lightline.vim'         , { 'rev': '147cfb', 'name': 'lightline' }
+NeoBundle 'jamessan/vim-gnupg'            , { 'rev': '6e9f52', 'name': 'gnupg' }
+NeoBundle 'matthias-guenther/tocdown'     , { 'rev': '10b6cb', 'name': 'tocdown' }
+NeoBundle 'mattn/calendar-vim'            , { 'rev': 'b340c4', 'name': 'calendar' }
+NeoBundle 'matze/vim-move'                , { 'rev': '477bfb', 'name': 'move' }
+NeoBundle 'mbbill/undotree'               , { 'rev': 'db4db7', 'name': 'undotree' }
+NeoBundle 'mhinz/vim-signify'             , { 'rev': '2b05c7', 'name': 'signify' }
+NeoBundle 'msanders/snipmate.vim'         , { 'rev': 'f5a75d', 'name': 'snipmate' }
+NeoBundle 'nelstrom/vim-markdown-folding' , { 'rev': '3e84f2', 'name': 'markdown-folding' }
+NeoBundle 'othree/html5-syntax.vim'       , { 'rev': 'fdbd5b', 'name': 'html5-syntax' }
+NeoBundle 'scrooloose/nerdtree'           , { 'rev': 'b0bb78', 'name': 'nerdtree' }
+NeoBundle 'scrooloose/syntastic'          , { 'rev': 'f6d584', 'name': 'syntastic' }
+NeoBundle 'sk1418/blockit'                , { 'rev': 'da53b6', 'name': 'blockit' }
+NeoBundle 't9md/vim-choosewin'            , { 'rev': '68a0ec', 'name': 'choosewin' }
+NeoBundle 'terryma/vim-multiple-cursors'  , { 'rev': '35028b', 'name': 'multiple-cursors' }
+NeoBundle 'tpope/vim-endwise'             , { 'rev': 'c3d8fe', 'name': 'endwise' }
+NeoBundle 'tpope/vim-fugitive'            , { 'rev': 'd6f176', 'name': 'fugitive' }
+NeoBundle 'tpope/vim-speeddating'         , { 'rev': '9dc081', 'name': 'speeddating' }
+NeoBundle 'tpope/vim-surround'            , { 'rev': '42e9b4', 'name': 'surround' }
+NeoBundle 'tsukkee/unite-help'            , { 'rev': '5a8dc6', 'name': 'unite-help' }
+NeoBundle 'tsukkee/unite-tag'             , { 'rev': '26d672', 'name': 'unite-tag' }
+NeoBundle 'tyru/open-browser.vim'         , { 'rev': '54e758', 'name': 'open-browser' }
+NeoBundle 'vim-ruby/vim-ruby'             , { 'rev': '3ffc0a', 'name': 'ruby' }
+NeoBundle 'vim-scripts/AutoTag'           , { 'rev': 'ef0a37', 'name': 'autotag' }
+NeoBundle 'xolox/vim-misc'                , { 'rev': '8551f2', 'name': 'misc' }
+NeoBundle 'xolox/vim-notes'               , { 'rev': '14838b', 'name': 'notes' }
 
 
 NeoBundle 'itchyny/landscape.vim'         , { 'rev': 'bb79a1', 'name' : 'color-landscape' }
@@ -235,4 +236,24 @@ augroup gitCommitEditMsg
     \   exe "normal gg" |
     \ endif
 augroup END
+
+" Highlight words to avoid in tech writing
+" =======================================
+"
+" obviously, basically, simply, of course, clearly,
+" just, everyone knows, However, So, easy
+
+" http://css-tricks.com/words-avoid-educational-writing/
+
+highlight TechWordsToAvoid ctermbg=red ctermfg=white
+
+function MatchTechWordsToAvoid()
+  match TechWordsToAvoid /\c\<\(obviously\|basically\|simply\|of\scourse\|clearly\|just\|everyone\sknows\|however\|so\|easy\)\>/
+endfunction
+
+autocmd FileType markdown call MatchTechWordsToAvoid()
+autocmd BufWinEnter *.md call MatchTechWordsToAvoid()
+autocmd InsertEnter *.md call MatchTechWordsToAvoid()
+autocmd InsertLeave *.md call MatchTechWordsToAvoid()
+autocmd BufWinLeave *.md call clearmatches()
 

@@ -180,6 +180,12 @@ Change quotes and all other delimiters.
 - how to quote whole string?
   - mark the string in visual mode (either normal mode with *v* or block mode with `V`), then
     press `s` and then the quote (`"", (), {}`) you want to have and it wraps the string in this
+### [switch](https://github.com/AndrewRadev/switch.vim)
+Switch segments of text with predefined definitions - good for changing values in tests.
+
+- `:Switch` ... step on the predicate you want to change
+
+
 ### [tabular](https://github.com/godlygeek/tabular):
 Auto indent files according to the pattern
   - `:Tabularize / {pattern}`
