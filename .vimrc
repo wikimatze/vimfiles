@@ -14,6 +14,7 @@ NeoBundle 'Shougo/unite.vim'              , { 'rev': '70bb85', 'name' : 'unite' 
 NeoBundle 'dkprice/vim-easygrep'          , { 'rev': 'df9fad', 'name' : 'easygrep' }
 NeoBundle 'godlygeek/tabular'             , { 'rev': '60f256', 'name' : 'tabular' }
 NeoBundle 'hail2u/vim-css3-syntax'        , { 'rev': 'd2ce74', 'name' : 'css3-syntax' }
+NeoBundle 'itchyny/lightline.vim'         , { 'rev': '147cfb', 'name' : 'lightline' }
 NeoBundle 'jamessan/vim-gnupg'            , { 'rev': '6e9f52', 'name' : 'gnupg' }
 NeoBundle 'matthias-guenther/tocdown'     , { 'rev': '10b6cb', 'name' : 'tocdown' }
 NeoBundle 'mattn/calendar-vim'            , { 'rev': 'b340c4', 'name' : 'calendar' }
@@ -25,6 +26,8 @@ NeoBundle 'nelstrom/vim-markdown-folding' , { 'rev': '3e84f2', 'name' : 'markdow
 NeoBundle 'othree/html5-syntax.vim'       , { 'rev': 'fdbd5b', 'name' : 'html5-syntax' }
 NeoBundle 'scrooloose/nerdtree'           , { 'rev': 'b0bb78', 'name' : 'nerdtree' }
 NeoBundle 'scrooloose/syntastic'          , { 'rev': 'f6d584', 'name' : 'syntastic' }
+NeoBundle 'sk1418/blockit'                , { 'rev': 'da53b6', 'name' : 'blockit' }
+NeoBundle 't9md/vim-choosewin'            , { 'rev': '68a0ec', 'name' : 'choosewin' }
 NeoBundle 'terryma/vim-multiple-cursors'  , { 'rev': '35028b', 'name' : 'multiple-cursors' }
 NeoBundle 'tpope/vim-endwise'             , { 'rev': 'c3d8fe', 'name' : 'endwise' }
 NeoBundle 'tpope/vim-fugitive'            , { 'rev': 'd6f176', 'name' : 'fugitive' }
@@ -37,8 +40,7 @@ NeoBundle 'vim-ruby/vim-ruby'             , { 'rev': '3ffc0a', 'name' : 'ruby' }
 NeoBundle 'vim-scripts/AutoTag'           , { 'rev': 'ef0a37', 'name' : 'autotag' }
 NeoBundle 'xolox/vim-misc'                , { 'rev': '8551f2', 'name' : 'misc' }
 NeoBundle 'xolox/vim-notes'               , { 'rev': '14838b', 'name' : 'notes' }
-NeoBundle 't9md/vim-choosewin'            , { 'rev': '68a0ec', 'name' : 'choosewin' }
-NeoBundle 'itchyny/lightline.vim'         , { 'rev': '147cfb', 'name' : 'lightline' }
+
 
 NeoBundle 'itchyny/landscape.vim'         , { 'rev': 'bb79a1', 'name' : 'color-landscape' }
 
