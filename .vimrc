@@ -38,6 +38,7 @@ NeoBundle 'vim-scripts/AutoTag'           , { 'rev': 'ef0a37', 'name' : 'autotag
 NeoBundle 'xolox/vim-misc'                , { 'rev': '8551f2', 'name' : 'misc' }
 NeoBundle 'xolox/vim-notes'               , { 'rev': '14838b', 'name' : 'notes' }
 NeoBundle 't9md/vim-choosewin'            , { 'rev': '68a0ec', 'name' : 'choosewin' }
+NeoBundle 'itchyny/lightline.vim'         , { 'rev': '147cfb', 'name' : 'lightline' }
 
 NeoBundle 'itchyny/landscape.vim'         , { 'rev': 'bb79a1', 'name' : 'color-landscape' }
 

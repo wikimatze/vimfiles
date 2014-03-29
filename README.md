@@ -71,6 +71,10 @@ HTML5 elements syntax highlighing.
 Folding by section headings.
 
 
+### [lightline vim](https://github.com/itchyny/lightline.vim)
+Awesome way to create a custom status line
+
+
 ### [multiple cursors](https://github.com/terryma/vim-multiple-cursors)
 Sublime Text style selection to replace method names.
 
