@@ -70,6 +70,12 @@ Git wrapper.
   - search for words added or removed: `Glog -Sadd`
 
 
+### [github-issues](https://github.com/jaxbot/github-issues.vim)
+GitHub issue lookup support, press # to enable omnicompletion
+
+- `:Gissues` ... will open a window with issues and you can browse the descriptions
+
+
 ### [html5-syntax](https://github.com/othree/html5-syntax.vim)
 HTML5 elements syntax highlighing.
 

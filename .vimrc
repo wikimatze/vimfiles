@@ -17,6 +17,7 @@ NeoBundle 'godlygeek/tabular'             , { 'rev': '60f256', 'name': 'tabular'
 NeoBundle 'hail2u/vim-css3-syntax'        , { 'rev': 'd2ce74', 'name': 'css3-syntax' }
 NeoBundle 'itchyny/lightline.vim'         , { 'rev': '147cfb', 'name': 'lightline' }
 NeoBundle 'jamessan/vim-gnupg'            , { 'rev': '6e9f52', 'name': 'gnupg' }
+NeoBundle 'jaxbot/github-issues.vim'      , { 'rev': 'cf133d', 'name': 'github-issues' }
 NeoBundle 'matthias-guenther/tocdown'     , { 'rev': '10b6cb', 'name': 'tocdown' }
 NeoBundle 'mattn/calendar-vim'            , { 'rev': 'b340c4', 'name': 'calendar' }
 NeoBundle 'matze/vim-move'                , { 'rev': '477bfb', 'name': 'move' }
