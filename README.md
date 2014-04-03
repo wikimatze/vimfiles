@@ -243,6 +243,10 @@ Transparent editing of gpg encrypted files.
 Extended Vim standard library needed for vim-notes plugin.
 
 
+### [vim-poylglot](https://github.com/sheerun/vim-polyglot)
+Loading language packs on demand - saves a lot of startup time.
+
+
 ### [vim-move](https://github.com/matze/vim-move)
 Move lines and selections up and down.
 
@@ -268,7 +272,7 @@ Indicates added, removed, or modified lines of files which are under version con
 - **mappings**
   - `<leader>gj` ... go to the next hunk
   - `<leader>gk` ... go to the previous hunk
-  - `<leader>gh` ... toggle higlight of the current line
+  - `<leader>gh` ... toggle highlight of the current line
 
 
 ### [vimproc](https://github.com/Shougo/vimproc.vim.git)

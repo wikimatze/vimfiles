@@ -28,6 +28,7 @@ NeoBundle 'nelstrom/vim-markdown-folding' , { 'rev': '3e84f2', 'name': 'markdown
 NeoBundle 'othree/html5-syntax.vim'       , { 'rev': 'fdbd5b', 'name': 'html5-syntax' }
 NeoBundle 'scrooloose/nerdtree'           , { 'rev': 'b0bb78', 'name': 'nerdtree' }
 NeoBundle 'scrooloose/syntastic'          , { 'rev': 'f6d584', 'name': 'syntastic' }
+NeoBundle 'sheerun/vim-polyglot'          , { 'rev': 'f3833f', 'name': 'polyglot' }
 NeoBundle 'sk1418/blockit'                , { 'rev': 'da53b6', 'name': 'blockit' }
 NeoBundle 't9md/vim-choosewin'            , { 'rev': '68a0ec', 'name': 'choosewin' }
 NeoBundle 'tommcdo/vim-exchange'          , { 'rev': '771336', 'name': 'exchange' }
