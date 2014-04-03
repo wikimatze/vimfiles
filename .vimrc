@@ -29,7 +29,6 @@ NeoBundle 'scrooloose/nerdtree'           , { 'rev': 'b0bb78', 'name': 'nerdtree
 NeoBundle 'scrooloose/syntastic'          , { 'rev': 'f6d584', 'name': 'syntastic' }
 NeoBundle 'sk1418/blockit'                , { 'rev': 'da53b6', 'name': 'blockit' }
 NeoBundle 't9md/vim-choosewin'            , { 'rev': '68a0ec', 'name': 'choosewin' }
-NeoBundle 'terryma/vim-multiple-cursors'  , { 'rev': '35028b', 'name': 'multiple-cursors' }
 NeoBundle 'tommcdo/vim-exchange'          , { 'rev': '771336', 'name': 'exchange' }
 NeoBundle 'tpope/vim-endwise'             , { 'rev': 'c3d8fe', 'name': 'endwise' }
 NeoBundle 'tpope/vim-fugitive'            , { 'rev': 'd6f176', 'name': 'fugitive' }

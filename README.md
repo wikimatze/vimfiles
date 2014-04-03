@@ -82,14 +82,6 @@ Folding by section headings.
 Awesome way to create a custom status line
 
 
-### [multiple cursors](https://github.com/terryma/vim-multiple-cursors)
-Sublime Text style selection to replace method names.
-
-- `<C-n>` ... the current word under the cursor will be selected
-- `<C-x>` ... remove the current virtual cursor and skip to the next virtual cursor location
-- `ESC` ... will leave the selection mode
-
-
 ### [neobundle](https://github.com/Shougo/neobundle.vim)
 Package manager for Vim.
 
