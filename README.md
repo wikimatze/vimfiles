@@ -226,6 +226,13 @@ Add CSS3 syntax support
 Cycle around in Vim panes the tmux style:
 
 
+### [vim-exchange](https://github.com/tommcdo/vim-exchange)
+Text exchange operator which can be combined with any motions.
+
+- `cx{motion}` ... cx is the operator
+- example: `cxiw` marks the word, pressing `.` will repeat the last command and exchange the word
+
+
 ### [vim-endwise](https://github.com/tpope/vim-endwise)
 Automatically adds keywords like *end* to special constructs for all kinds of languages.
 

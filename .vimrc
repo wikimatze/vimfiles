@@ -30,6 +30,7 @@ NeoBundle 'scrooloose/syntastic'          , { 'rev': 'f6d584', 'name': 'syntasti
 NeoBundle 'sk1418/blockit'                , { 'rev': 'da53b6', 'name': 'blockit' }
 NeoBundle 't9md/vim-choosewin'            , { 'rev': '68a0ec', 'name': 'choosewin' }
 NeoBundle 'terryma/vim-multiple-cursors'  , { 'rev': '35028b', 'name': 'multiple-cursors' }
+NeoBundle 'tommcdo/vim-exchange'          , { 'rev': '771336', 'name': 'exchange' }
 NeoBundle 'tpope/vim-endwise'             , { 'rev': 'c3d8fe', 'name': 'endwise' }
 NeoBundle 'tpope/vim-fugitive'            , { 'rev': 'd6f176', 'name': 'fugitive' }
 NeoBundle 'tpope/vim-speeddating'         , { 'rev': '9dc081', 'name': 'speeddating' }
@@ -41,7 +42,6 @@ NeoBundle 'vim-ruby/vim-ruby'             , { 'rev': '3ffc0a', 'name': 'ruby' }
 NeoBundle 'vim-scripts/AutoTag'           , { 'rev': 'ef0a37', 'name': 'autotag' }
 NeoBundle 'xolox/vim-misc'                , { 'rev': '8551f2', 'name': 'misc' }
 NeoBundle 'xolox/vim-notes'               , { 'rev': '14838b', 'name': 'notes' }
-
 
 NeoBundle 'itchyny/landscape.vim'         , { 'rev': 'bb79a1', 'name' : 'color-landscape' }
 
