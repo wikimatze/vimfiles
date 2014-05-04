@@ -166,6 +166,10 @@
   - in normal mode press `"ayw"`
   - go into search mode via `/`
   - press `Ctrl-R a` to paste the contents of register `a`
+- open files of a certain type and do a replacement:
+  - `args **/*.md` ... open all markdown files
+  - `argdo :%s/test/blaaa/gc | update` ... run the replacement to all files in the buffer, `updates` writes the file
+    only if changes were made
 
 
 # Matching Patterns and literals
