@@ -9,8 +9,8 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim', { 'name' : 'neobundle' }
 
 NeoBundle 'AndrewRadev/switch.vim'        , { 'rev': 'd81c8a', 'name': 'switch' }
+NeoBundle 'Eckankar/vim-latex-folding'    , { 'rev': 'c207ff', 'name': 'latex-folding' }
 NeoBundle 'Raimondi/delimitMate'          , { 'rev': '38487b', 'name': 'delimitmate' }
-
 NeoBundle 'Shougo/unite.vim'              , { 'rev': '70bb85', 'name': 'unite' }
 NeoBundle 'dkprice/vim-easygrep'          , { 'rev': 'df9fad', 'name': 'easygrep' }
 NeoBundle 'godlygeek/tabular'             , { 'rev': '60f256', 'name': 'tabular' }
@@ -63,6 +63,7 @@ syntax on          " enable syntax highlighting
 filetype on        " enable file type detection
 filetype indent on " enable file type-specific indenting
 filetype plugin on " enable file type-specific plugins
+
 
 " Installation check.
 NeoBundleCheck

@@ -246,6 +246,10 @@ Automatically adds keywords like *end* to special constructs for all kinds of la
 Transparent editing of gpg encrypted files.
 
 
+### [vim-latex-folding](https://github.com/Eckankar/vim-latex-folding)
+The only plugin you need when you are working with LaTeX.
+
+
 ### [vim-misc](https://github.com/xolox/vim-misc)
 Extended Vim standard library needed for vim-notes plugin.
 
