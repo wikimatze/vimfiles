@@ -4,6 +4,8 @@ let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 " Set minimum syntax keyword length.
 let g:neocomplete#sources#syntax#min_keyword_length = 3
+" Fixing an autocomplete bug with vim-notes
+let g:neocomplete#force_overwrite_completefunc=1
 
 " Define keyword.
 if !exists('g:neocomplete#keyword_patterns')

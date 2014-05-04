@@ -13,5 +13,5 @@ let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
 let g:syntastic_ruby_checkers = ['rubocop', 'rubylint']
 
 let g:syntastic_mode_map = { 'mode': 'active',
-                           \ 'active_filetypes': ['eruby', 'javascript', 'ruby', 'puppet', 'sass'],
-                           \ 'passive_filetypes': ['html', 'php', 'sh'] }
+                           \ 'active_filetypes': ['eruby', 'javascript', 'puppet', 'sass'],
+                           \ 'passive_filetypes': ['ruby', 'html', 'php', 'sh', 'css'] }

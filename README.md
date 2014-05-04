@@ -137,7 +137,6 @@ Perfect and easy note taking.
   - with @tag you can define own tags (they are useful for searching)
   - `:IndexTaggedNotes` ... creates new tags (for omnicomplete when @ is pressed)
   - `:ShowTaggedNotes` ... will show all notes which are specified with a certain tag
-  - `autocmd BufEnter ~/Dropbox/notes/* silent! lcd %:p:h\*` ... path of the notes directory
 
 
 ### [open-browser](https://github.com/tyru/open-browser.vim)
