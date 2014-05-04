@@ -10,7 +10,7 @@ NeoBundleFetch 'Shougo/neobundle.vim', { 'name' : 'neobundle' }
 
 NeoBundle 'AndrewRadev/switch.vim'        , { 'rev': 'd81c8a', 'name': 'switch' }
 NeoBundle 'Raimondi/delimitMate'          , { 'rev': '38487b', 'name': 'delimitmate' }
-NeoBundle 'Shougo/neocomplete.vim'        , { 'rev': '0b1e06', 'name': 'neocomplete' }
+
 NeoBundle 'Shougo/unite.vim'              , { 'rev': '70bb85', 'name': 'unite' }
 NeoBundle 'dkprice/vim-easygrep'          , { 'rev': 'df9fad', 'name': 'easygrep' }
 NeoBundle 'godlygeek/tabular'             , { 'rev': '60f256', 'name': 'tabular' }
@@ -44,6 +44,11 @@ NeoBundle 'vim-ruby/vim-ruby'             , { 'rev': '3ffc0a', 'name': 'ruby' }
 NeoBundle 'vim-scripts/AutoTag'           , { 'rev': 'ef0a37', 'name': 'autotag' }
 NeoBundle 'xolox/vim-misc'                , { 'rev': '8551f2', 'name': 'misc' }
 NeoBundle 'xolox/vim-notes'               , { 'rev': '14838b', 'name': 'notes' }
+
+if has('lua')
+  NeoBundle 'Shougo/neocomplete.vim'      , { 'rev': '0b1e06', 'name': 'neocomplete' }
+endif
+
 
 NeoBundle 'itchyny/landscape.vim'         , { 'rev': 'bb79a1', 'name' : 'color-landscape' }
 
@@ -106,6 +111,7 @@ set ignorecase                              " case insensitive search
 set smartcase                               " canceling out ignore for uppercase letter in search
 set nohlsearch
 set grepprg=ag                              " tool when using grep
+set noswapfile                              " don't save swap files
 
 if has('cryptmethod')
   set cryptmethod=blowfish                    " encryption algorithm
@@ -120,11 +126,10 @@ let &scrolloff=999-&scrolloff " current view is always centered
 
 colorscheme landscape
 
-
 set tags=tags,./tags,gems.tags,./gems.tags
 
 " }}}
-" Settings for backups {{{
+" Backups {{{
 
 if !isdirectory($HOME . '/.vim/backup')
   call mkdir($HOME . '/.vim/backup')
@@ -135,7 +140,6 @@ set backupdir=$HOME/.vim/backup " directory of backups
 set backupcopy=yes              " keep attributes of the original file
 set backup                      " save files after close
 set writebackup                 " make a backup of the original file when writing
-set noswapfile                  " don't save swap files
 
 " }}}
 " Settings for my blog with jekyll {{{
