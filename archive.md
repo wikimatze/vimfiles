@@ -429,6 +429,15 @@ Markdown-syntax highlighting.
 Open files and web pages in associated programs out of Vim.
 
 
+### [vim-signify](https://github.com/mhinz/vim-signify)
+Indicates added, removed, or modified lines of files which are under version control.
+
+- **mappings**
+  - `<leader>gj` ... go to the next hunk
+  - `<leader>gk` ... go to the previous hunk
+  - `<leader>gh` ... toggle highlight of the current line
+
+
 ## [vimroom](https://github.com/mikewest/vimroom/)
 Distraction free writing.
 

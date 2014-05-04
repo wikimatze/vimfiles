@@ -2,6 +2,7 @@
 
 I'm always eager to learn, but I can't remember everything. Here is the list of the plugins I'm using - it is a reminder of the most important commands and settings for each plugin.
 
+
 ## Installation
 
 Do not copy my *.vimrc* because they may not fit to your working style (see **Luca Pettes**
@@ -14,6 +15,7 @@ would like to use this repository run the `install.sh` script.
 
 ### [autotag.vim](https://github.com/vim-scripts/AutoTag)
 Whenever you save a file, it deletes all of its entries and invokes ctags in append mode.
+
 
 ### [blockit](https://github.com/sk1418/blockit)
 Wrap text in block
@@ -92,7 +94,7 @@ Folding by section headings.
 
 
 ### [lightline vim](https://github.com/itchyny/lightline.vim)
-Awesome way to create a custom status line
+Awesome way to create a custom status line.
 
 
 ### [neobundle](https://github.com/Shougo/neobundle.vim)
@@ -127,7 +129,7 @@ Amazing file browser for GUI guys.
 
 
 ### [notes](https://github.com/xolox/vim-notes)
-Perfect and easy note taking.
+Perfect note taking.
 
 - `:Note` ... starts a new note (you can specify the name of the note in the header)
 - `:write or :update` save the notes
@@ -148,6 +150,7 @@ Perfect and easy note taking.
 
 ### [open-browser](https://github.com/tyru/open-browser.vim)
 Open the URI with `<C-x>` in your default browser.
+
 
 ### [snipmate](https://github.com/msanders/snipmate.vim)
 Define your own snippets for different languages.
@@ -184,6 +187,8 @@ Change quotes and all other delimiters.
 - how to quote whole string?
   - mark the string in visual mode (either normal mode with *v* or block mode with `V`), then
     press `s` and then the quote (`"", (), {}`) you want to have and it wraps the string in this
+
+
 ### [switch](https://github.com/AndrewRadev/switch.vim)
 Switch segments of text with predefined definitions - good for changing values in tests.
 
@@ -210,7 +215,7 @@ A very good and flexible plugin for searching and displaying information.
 
 
 ### [unite-radio](https://github.com/klen/unite-radio.vim)
-Playing sounds in Vim
+Playing sounds in Vim.
 
 - `:Unite radio <CR>` ... will open the predefined stations
 - `:MStop` ... will stop the currently played song
@@ -218,7 +223,7 @@ Playing sounds in Vim
 
 
 ### [unite-tag](https://github.com/tsukkee/unite-tag)
-Selecting and searching tags
+Selecting and searching tags.
 
 - `:Unite tag` ... search name for all tags
 - `:Unite tag/file` ... select files including tags
@@ -231,7 +236,7 @@ Opens unite window for searching.
 
 
 ### [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax)
-Add CSS3 syntax support
+Add CSS3 syntax support.
 
 
 ### [vim-choosewin](https://github.com/t9md/vim-choosewin)
@@ -284,22 +289,8 @@ Configuration files for editing and compiling Ruby - it even adds custom text-ob
   - `[[` ... move to the beginning of the **previous** *module* or *class* definition
 
 
-### [vim-signify](https://github.com/mhinz/vim-signify)
-Indicates added, removed, or modified lines of files which are under version control.
-
-- **mappings**
-  - `<leader>gj` ... go to the next hunk
-  - `<leader>gk` ... go to the previous hunk
-  - `<leader>gh` ... toggle highlight of the current line
-
-
 ### [vimproc](https://github.com/Shougo/vimproc.vim.git)
 For asynchronous command execution (need is used to search for file in bigger projects by the unite.vim plugin).
-
-
-## Contact
-
-Feature request, bugs, questions, etc. can be send to <matthias@wikimatze.de>.
 
 
 ## License
