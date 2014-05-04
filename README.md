@@ -2,6 +2,13 @@
 
 I'm always eager to learn, but I can't remember everything. Here is the list of the plugins I'm using - it is a reminder of the most important commands and settings for each plugin.
 
+## Installation
+
+Do not copy my *.vimrc* because they may not fit to your working style (see **Luca Pettes**
+[wonderful article](http://lucapette.com/vim/rails/vim-for-rails-developers-lazy-modern-configuration)). But if you
+would like to use this repository run the `install.sh` script.
+
+
 ## Plugins
 
 
@@ -288,19 +295,6 @@ Indicates added, removed, or modified lines of files which are under version con
 
 ### [vimproc](https://github.com/Shougo/vimproc.vim.git)
 For asynchronous command execution (need is used to search for file in bigger projects by the unite.vim plugin).
-
-
-## Installation
-
-Do not copy my *.vimrc* because they may not fit to your working style (see **Luca Pettes**
-[wonderful article](http://lucapette.com/vim/rails/vim-for-rails-developers-lazy-modern-configuration)). But if you
-would like to use this repository to get started with Vim, please perform the following tasks:
-
-
-- `git clone --recursive git@github.com:matthias-guenther/vim-settings.git ~/.vim`
-- `mkdir ~/.vim/bundle`
-- `git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim`
-- `mv ~/.vim/.vimrc ~/`
 
 
 ## Contact
