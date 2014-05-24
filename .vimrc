@@ -8,51 +8,50 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim', { 'name' : 'neobundle' }
 
-NeoBundle 'AndrewRadev/switch.vim'        , { 'rev': 'd81c8a', 'name': 'switch' }
-NeoBundle 'Eckankar/vim-latex-folding'    , { 'rev': 'c207ff', 'name': 'latex-folding' }
-NeoBundle 'Raimondi/delimitMate'          , { 'rev': '38487b', 'name': 'delimitmate' }
-NeoBundle 'Shougo/neosnippet.vim'         , { 'rev': '578530', 'name': 'neosnippet' }
-NeoBundle 'Shougo/unite.vim'              , { 'rev': '70bb85', 'name': 'unite' }
-NeoBundle 'dkprice/vim-easygrep'          , { 'rev': 'df9fad', 'name': 'easygrep' }
-NeoBundle 'godlygeek/tabular'             , { 'rev': '60f256', 'name': 'tabular' }
-NeoBundle 'hail2u/vim-css3-syntax'        , { 'rev': 'd2ce74', 'name': 'css3-syntax' }
-NeoBundle 'itchyny/lightline.vim'         , { 'rev': '147cfb', 'name': 'lightline' }
-NeoBundle 'jamessan/vim-gnupg'            , { 'rev': '6e9f52', 'name': 'gnupg' }
-NeoBundle 'jaxbot/github-issues.vim'      , { 'rev': 'cf133d', 'name': 'github-issues' }
-NeoBundle 'justinmk/vim-sneak'            , { 'rev': 'd45ceb', 'name': 'sneak' }
-NeoBundle 'klen/unite-radio.vim'          , { 'rev': 'da5f11', 'name': 'unite-radio' }
-NeoBundle 'matthias-guenther/tocdown'     , { 'rev': '10b6cb', 'name': 'tocdown' }
-NeoBundle 'mattn/calendar-vim'            , { 'rev': 'b340c4', 'name': 'calendar' }
-NeoBundle 'matze/vim-move'                , { 'rev': '477bfb', 'name': 'move' }
-NeoBundle 'mbbill/undotree'               , { 'rev': 'db4db7', 'name': 'undotree' }
-NeoBundle 'nelstrom/vim-markdown-folding' , { 'rev': '3e84f2', 'name': 'markdown-folding' }
-NeoBundle 'othree/html5-syntax.vim'       , { 'rev': 'fdbd5b', 'name': 'html5-syntax' }
-NeoBundle 'scrooloose/nerdtree'           , { 'rev': 'b0bb78', 'name': 'nerdtree' }
-NeoBundle 'scrooloose/syntastic'          , { 'rev': 'f6d584', 'name': 'syntastic' }
-NeoBundle 'sheerun/vim-polyglot'          , { 'rev': 'f3833f', 'name': 'polyglot' }
-NeoBundle 'sk1418/blockit'                , { 'rev': 'da53b6', 'name': 'blockit' }
-NeoBundle 't9md/vim-choosewin'            , { 'rev': '68a0ec', 'name': 'choosewin' }
-NeoBundle 'tommcdo/vim-exchange'          , { 'rev': '771336', 'name': 'exchange' }
-NeoBundle 'tpope/vim-endwise'             , { 'rev': 'c3d8fe', 'name': 'endwise' }
-NeoBundle 'tpope/vim-fugitive'            , { 'rev': 'd6f176', 'name': 'fugitive' }
-NeoBundle 'tpope/vim-speeddating'         , { 'rev': '9dc081', 'name': 'speeddating' }
-NeoBundle 'tpope/vim-surround'            , { 'rev': '42e9b4', 'name': 'surround' }
-NeoBundle 'tsukkee/unite-help'            , { 'rev': '5a8dc6', 'name': 'unite-help' }
-NeoBundle 'tsukkee/unite-tag'             , { 'rev': '26d672', 'name': 'unite-tag' }
-NeoBundle 'tyru/open-browser.vim'         , { 'rev': '54e758', 'name': 'open-browser' }
-NeoBundle 'vim-ruby/vim-ruby'             , { 'rev': '3ffc0a', 'name': 'ruby' }
-NeoBundle 'vim-scripts/AutoTag'           , { 'rev': 'ef0a37', 'name': 'autotag' }
-NeoBundle 'xolox/vim-misc'                , { 'rev': '8551f2', 'name': 'misc' }
-NeoBundle 'xolox/vim-notes'               , { 'rev': '14838b', 'name': 'notes' }
+NeoBundle 'AndrewRadev/switch.vim'        , { 'rev': '1bce', 'name': 'switch' }
+NeoBundle 'Eckankar/vim-latex-folding'    , { 'rev': 'c207', 'name': 'latex-folding' }
+NeoBundle 'Raimondi/delimitMate'          , { 'rev': '3848', 'name': 'delimitmate' }
+NeoBundle 'Shougo/neosnippet.vim'         , { 'rev': '5785', 'name': 'neosnippet' }
+NeoBundle 'Shougo/unite.vim'              , { 'rev': '5b4e', 'name': 'unite' }
+NeoBundle 'dkprice/vim-easygrep'          , { 'rev': 'df9f', 'name': 'easygrep' }
+NeoBundle 'godlygeek/tabular'             , { 'rev': '60f2', 'name': 'tabular' }
+NeoBundle 'hail2u/vim-css3-syntax'        , { 'rev': '324b', 'name': 'css3-syntax' }
+NeoBundle 'itchyny/lightline.vim'         , { 'rev': '9a86', 'name': 'lightline' }
+NeoBundle 'jamessan/vim-gnupg'            , { 'rev': '6e9f', 'name': 'gnupg' }
+NeoBundle 'jaxbot/github-issues.vim'      , { 'rev': 'ff85', 'name': 'github-issues' }
+NeoBundle 'justinmk/vim-sneak'            , { 'rev': 'd45c', 'name': 'sneak' }
+NeoBundle 'klen/unite-radio.vim'          , { 'rev': '39bf', 'name': 'unite-radio' }
+NeoBundle 'matthias-guenther/tocdown'     , { 'rev': '10b6', 'name': 'tocdown' }
+NeoBundle 'mattn/calendar-vim'            , { 'rev': 'b340', 'name': 'calendar' }
+NeoBundle 'matze/vim-move'                , { 'rev': '477b', 'name': 'move' }
+NeoBundle 'mbbill/undotree'               , { 'rev': '7e52', 'name': 'undotree' }
+NeoBundle 'nelstrom/vim-markdown-folding' , { 'rev': '3e84', 'name': 'markdown-folding' }
+NeoBundle 'othree/html5-syntax.vim'       , { 'rev': 'fdbd', 'name': 'html5-syntax' }
+NeoBundle 'scrooloose/nerdtree'           , { 'rev': 'b0bb', 'name': 'nerdtree' }
+NeoBundle 'scrooloose/syntastic'          , { 'rev': '5051', 'name': 'syntastic' }
+NeoBundle 'sheerun/vim-polyglot'          , { 'rev': 'e961', 'name': 'polyglot' }
+NeoBundle 'sk1418/blockit'                , { 'rev': '2617', 'name': 'blockit' }
+NeoBundle 't9md/vim-choosewin'            , { 'rev': '6e53', 'name': 'choosewin' }
+NeoBundle 'tommcdo/vim-exchange'          , { 'rev': 'c83b', 'name': 'exchange' }
+NeoBundle 'tpope/vim-endwise'             , { 'rev': '3854', 'name': 'endwise' }
+NeoBundle 'tpope/vim-fugitive'            , { 'rev': 'f8bf', 'name': 'fugitive' }
+NeoBundle 'tpope/vim-speeddating'         , { 'rev': '2321', 'name': 'speeddating' }
+NeoBundle 'tpope/vim-surround'            , { 'rev': '42e9', 'name': 'surround' }
+NeoBundle 'tsukkee/unite-help'            , { 'rev': '5a8d', 'name': 'unite-help' }
+NeoBundle 'tsukkee/unite-tag'             , { 'rev': 'd65d', 'name': 'unite-tag' }
+NeoBundle 'tyru/open-browser.vim'         , { 'rev': 'ee7a', 'name': 'open-browser' }
+NeoBundle 'vim-ruby/vim-ruby'             , { 'rev': 'e9a7', 'name': 'ruby' }
+NeoBundle 'vim-scripts/AutoTag'           , { 'rev': 'ef0a', 'name': 'autotag' }
+NeoBundle 'xolox/vim-misc'                , { 'rev': '8551', 'name': 'misc' }
+NeoBundle 'xolox/vim-notes'               , { 'rev': '1483', 'name': 'notes' }
 
 if has('lua')
-  NeoBundle 'Shougo/neocomplete.vim'      , { 'rev': '0b1e06', 'name': 'neocomplete' }
+  NeoBundle 'Shougo/neocomplete.vim'      , { 'rev': '56fe', 'name': 'neocomplete' }
 endif
 
+NeoBundle 'itchyny/landscape.vim'         , { 'rev': '18b9', 'name' : 'color-landscape' }
 
-NeoBundle 'itchyny/landscape.vim'         , { 'rev': 'bb79a1', 'name' : 'color-landscape' }
-
-NeoBundle 'Shougo/vimproc.vim', { 'rev': '92b34f',
+NeoBundle 'Shougo/vimproc.vim', { 'rev': '309b',
   \ 'build' : {
   \     'mac' : 'make -f make_mac.mak',
   \     'unix' : 'make -f make_unix.mak',
