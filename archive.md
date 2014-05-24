@@ -281,6 +281,10 @@ Save session and to open then later.
   let g:session_autoload = 'no' " disable asking to load the previous session</pre>
 
 
+### [snipmate](https://github.com/msanders/snipmate.vim)
+Define your own snippets for different languages.
+
+
 ## [tagbar](http://majutsushi.github.com/tagbar)
 Display the structure of the code.
 

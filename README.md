@@ -2,7 +2,6 @@
 
 I'm always eager to learn, but I can't remember everything. Here is the list of the plugins I'm using - it is a reminder of the most important commands and settings for each plugin.
 
-
 ## Installation
 
 Do not copy my *.vimrc* because they may not fit to your working style (see **Luca Pettes**
@@ -152,10 +151,6 @@ Perfect note taking.
 Open the URI with `<C-x>` in your default browser.
 
 
-### [snipmate](https://github.com/msanders/snipmate.vim)
-Define your own snippets for different languages.
-
-
 ### [speedating](https://github.com/tpope/vim-speeddating)
 Fast way to increment all kind of numbers.
 
@@ -276,6 +271,7 @@ Loading language packs on demand - saves a lot of startup time.
 
 ### [vim-ruby](https://github.com/vim-ruby/vim-ruby)
 Configuration files for editing and compiling Ruby - it even adds custom text-objects only for Vim.
+
 
 - following commands can performed in *visual mode*
   - `am` ... "a method" select from 'def' till 'end'

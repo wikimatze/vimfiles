@@ -24,7 +24,6 @@ NeoBundle 'matthias-guenther/tocdown'     , { 'rev': '10b6cb', 'name': 'tocdown'
 NeoBundle 'mattn/calendar-vim'            , { 'rev': 'b340c4', 'name': 'calendar' }
 NeoBundle 'matze/vim-move'                , { 'rev': '477bfb', 'name': 'move' }
 NeoBundle 'mbbill/undotree'               , { 'rev': 'db4db7', 'name': 'undotree' }
-NeoBundle 'msanders/snipmate.vim'         , { 'rev': 'f5a75d', 'name': 'snipmate' }
 NeoBundle 'nelstrom/vim-markdown-folding' , { 'rev': '3e84f2', 'name': 'markdown-folding' }
 NeoBundle 'othree/html5-syntax.vim'       , { 'rev': 'fdbd5b', 'name': 'html5-syntax' }
 NeoBundle 'scrooloose/nerdtree'           , { 'rev': 'b0bb78', 'name': 'nerdtree' }
