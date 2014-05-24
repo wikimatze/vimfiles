@@ -11,6 +11,7 @@ NeoBundleFetch 'Shougo/neobundle.vim', { 'name' : 'neobundle' }
 NeoBundle 'AndrewRadev/switch.vim'        , { 'rev': 'd81c8a', 'name': 'switch' }
 NeoBundle 'Eckankar/vim-latex-folding'    , { 'rev': 'c207ff', 'name': 'latex-folding' }
 NeoBundle 'Raimondi/delimitMate'          , { 'rev': '38487b', 'name': 'delimitmate' }
+NeoBundle 'Shougo/neosnippet.vim'         , { 'rev': '578530', 'name': 'neosnippet' }
 NeoBundle 'Shougo/unite.vim'              , { 'rev': '70bb85', 'name': 'unite' }
 NeoBundle 'dkprice/vim-easygrep'          , { 'rev': 'df9fad', 'name': 'easygrep' }
 NeoBundle 'godlygeek/tabular'             , { 'rev': '60f256', 'name': 'tabular' }

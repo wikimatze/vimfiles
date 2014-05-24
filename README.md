@@ -2,6 +2,7 @@
 
 I'm always eager to learn, but I can't remember everything. Here is the list of the plugins I'm using - it is a reminder of the most important commands and settings for each plugin.
 
+
 ## Installation
 
 Do not copy my *.vimrc* because they may not fit to your working style (see **Luca Pettes**
@@ -108,6 +109,12 @@ Package manager for Vim.
 
 ### [neocomplete](https://github.com/Shougo/neocomplete.vim)
 An amazing tool for keyword completion.
+
+
+### [neosnippet](https://github.com/Shougo/neosnippet.vim)
+Adds snippet support for Vim and makes use of neocomplete plugin.
+
+- `NeoSnippetEdit` ... lets you edit the snippets of the current filetype
 
 
 ### [NERDTree](https://github.com/scrooloose/nerdtree)
