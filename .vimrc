@@ -18,6 +18,7 @@ NeoBundle 'hail2u/vim-css3-syntax'        , { 'rev': 'd2ce74', 'name': 'css3-syn
 NeoBundle 'itchyny/lightline.vim'         , { 'rev': '147cfb', 'name': 'lightline' }
 NeoBundle 'jamessan/vim-gnupg'            , { 'rev': '6e9f52', 'name': 'gnupg' }
 NeoBundle 'jaxbot/github-issues.vim'      , { 'rev': 'cf133d', 'name': 'github-issues' }
+NeoBundle 'justinmk/vim-sneak'            , { 'rev': 'd45ceb', 'name': 'sneak' }
 NeoBundle 'klen/unite-radio.vim'          , { 'rev': 'da5f11', 'name': 'unite-radio' }
 NeoBundle 'matthias-guenther/tocdown'     , { 'rev': '10b6cb', 'name': 'tocdown' }
 NeoBundle 'mattn/calendar-vim'            , { 'rev': 'b340c4', 'name': 'calendar' }

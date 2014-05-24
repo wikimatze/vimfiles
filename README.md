@@ -266,12 +266,12 @@ The only plugin you need when you are working with LaTeX.
 Extended Vim standard library needed for vim-notes plugin.
 
 
-### [vim-poylglot](https://github.com/sheerun/vim-polyglot)
-Loading language packs on demand - saves a lot of startup time.
-
-
 ### [vim-move](https://github.com/matze/vim-move)
 Move lines and selections up and down.
+
+
+### [vim-poylglot](https://github.com/sheerun/vim-polyglot)
+Loading language packs on demand - saves a lot of startup time.
 
 
 ### [vim-ruby](https://github.com/vim-ruby/vim-ruby)
@@ -287,6 +287,12 @@ Configuration files for editing and compiling Ruby - it even adds custom text-ob
   - `[m` ... move to the beginning of the *previous method*
   - `]]` ... move to the beginning of the **next** *module* or *class* definition
   - `[[` ... move to the beginning of the **previous** *module* or *class* definition
+
+
+### [vim-sneak](https://github.com/justinmk/vim-sneak)
+Motion plugin to reach certain pieces of the text in no time.
+
+- `s{char}{char}` ... and you can reach the piece of text you want (forward, and `S` for backward search)
 
 
 ### [vimproc](https://github.com/Shougo/vimproc.vim.git)
