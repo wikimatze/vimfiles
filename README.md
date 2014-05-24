@@ -108,13 +108,13 @@ Package manager for Vim.
 
 
 ### [neocomplete](https://github.com/Shougo/neocomplete.vim)
-An amazing tool for keyword completion.
+Amazing tool for keyword completion.
 
 
 ### [neosnippet](https://github.com/Shougo/neosnippet.vim)
 Adds snippet support for Vim and makes use of neocomplete plugin.
 
-- `NeoSnippetEdit` ... lets you edit the snippets of the current filetype
+- `NeoSnippetEdit` ... edit snippets of the current filetype
 
 
 ### [NERDTree](https://github.com/scrooloose/nerdtree)
@@ -155,7 +155,7 @@ Perfect note taking.
 
 
 ### [open-browser](https://github.com/tyru/open-browser.vim)
-Open the URI with `<C-x>` in your default browser.
+Open the URI with `gx` (my custom mapping) in your default browser.
 
 
 ### [speedating](https://github.com/tpope/vim-speeddating)
