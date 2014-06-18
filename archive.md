@@ -281,7 +281,7 @@ Save session and to open then later.
   let g:session_autoload = 'no' " disable asking to load the previous session</pre>
 
 
-### [snipmate](https://github.com/msanders/snipmate.vim)
+## [snipmate](https://github.com/msanders/snipmate.vim)
 Define your own snippets for different languages.
 
 
@@ -433,7 +433,7 @@ Markdown-syntax highlighting.
 Open files and web pages in associated programs out of Vim.
 
 
-### [vim-signify](https://github.com/mhinz/vim-signify)
+## [vim-signify](https://github.com/mhinz/vim-signify)
 Indicates added, removed, or modified lines of files which are under version control.
 
 - **mappings**

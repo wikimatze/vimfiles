@@ -9,7 +9,7 @@ let g:neocomplete#force_overwrite_completefunc=1
 
 " Define keyword.
 if !exists('g:neocomplete#keyword_patterns')
- let g:neocomplete#keyword_patterns = {}
+  let g:neocomplete#keyword_patterns = {}
 endif
 let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 
@@ -25,9 +25,13 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " Enable heavy omni completion.
 if !exists('g:neocomplete#sources#omni#input_patterns')
- let g:neocomplete#sources#omni#input_patterns = {}
+  let g:neocomplete#sources#omni#input_patterns = {}
 endif
+
 if !exists('g:neocomplete#force_omni_input_patterns')
- let g:neocomplete#force_omni_input_patterns = {}
+  let g:neocomplete#force_omni_input_patterns = {}
 endif
+
+" Prevent from pressing <C-x><C-o> for file aware autocompletion in ruby
+let g:neocomplete#force_omni_input_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 
