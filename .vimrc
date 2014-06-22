@@ -1,7 +1,9 @@
 if has('vim_starting')
   set nocompatible               " Be iMproved
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
+  set runtimepath+=~/.vim/bundle/neobundle
 endif
+
+let g:neosnippet#expand_word_boundary = 1
 
 call neobundle#rc(expand('~/.vim/bundle/'))
 
