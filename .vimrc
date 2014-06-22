@@ -49,7 +49,7 @@ if has('lua')
   NeoBundle 'Shougo/neocomplete.vim'      , { 'rev': '56fe', 'name': 'neocomplete' }
 endif
 
-NeoBundle 'itchyny/landscape.vim'         , { 'rev': '18b9', 'name' : 'color-landscape' }
+NeoBundle 'wikimatze/vim-github-theme'
 
 NeoBundle 'Shougo/vimproc.vim', { 'rev': '309b',
   \ 'build' : {
@@ -62,7 +62,6 @@ syntax on          " enable syntax highlighting
 filetype on        " enable file type detection
 filetype indent on " enable file type-specific indenting
 filetype plugin on " enable file type-specific plugins
-
 
 " Installation check.
 NeoBundleCheck
@@ -124,7 +123,7 @@ let mapleader = "," " change the leader to be a comma vs. backslash if not given
 
 let &scrolloff=999-&scrolloff " current view is always centered
 
-colorscheme landscape
+colorscheme github
 
 set tags=tags,./tags,gems.tags,./gems.tags
 

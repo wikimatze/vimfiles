@@ -1,6 +1,7 @@
 # Vim settings
 
-I'm always eager to learn, but I can't remember everything. Here is the list of the plugins I'm using - it is a reminder of the most important commands and settings for each plugin.
+I'm always eager to learn, but I can't remember everything. Here is the list of the plugins I'm using - it is a reminder
+of the most important commands and settings for each plugin.
 
 
 ## Installation
@@ -91,10 +92,6 @@ HTML5 elements syntax highlighing.
 
 ### [markdown-folding](https://github.com/nelstrom/vim-markdown-folding)
 Folding by section headings.
-
-
-### [lightline vim](https://github.com/itchyny/lightline.vim)
-Awesome way to create a custom status line.
 
 
 ### [neobundle](https://github.com/Shougo/neobundle.vim)
@@ -254,6 +251,10 @@ Text exchange operator which can be combined with any motions.
 
 ### [vim-endwise](https://github.com/tpope/vim-endwise)
 Automatically adds keywords like *end* to special constructs for all kinds of languages.
+
+
+### [vim github theme](https://github.com/wikimatze/vim-github-theme)
+My first light colorscheme for vim.
 
 
 ### [vim-gnupg](https://github.com/jamessan/vim-gnupg)

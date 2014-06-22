@@ -183,6 +183,10 @@ Pretty colors for the jQuery syntax.
 Vim-script library, add functionality to program vim-files (used by vim-autocomplpop plugin).
 
 
+## [lightline vim](https://github.com/itchyny/lightline.vim)
+Awesome way to create a custom status line.
+
+
 ## [matchit](http://www.vim.org/scripts/script.php?script_id=39)
 Press `%` to match tags in HTML, LaTeX and several other file formats.
 
