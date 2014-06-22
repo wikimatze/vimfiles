@@ -1,72 +1,61 @@
-if has('vim_starting')
-  set nocompatible               " Be iMproved
-  set runtimepath+=~/.vim/bundle/neobundle
-endif
+set nocompatible " Be iMproved
 
-let g:neosnippet#expand_word_boundary = 1
+call plug#begin('~/.vim/plugged/')
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+Plug 'AndrewRadev/switch.vim', 'v0.2.0'
+Plug 'Eckankar/vim-latex-folding'
+Plug 'Raimondi/delimitMate'
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/unite.vim', 'ver.6.0'
+Plug 'dkprice/vim-easygrep'
+Plug 'godlygeek/tabular'
+Plug 'hail2u/vim-css3-syntax', 'v0.12.0'
+Plug 'jamessan/vim-gnupg'
+Plug 'jaxbot/github-issues.vim'
+Plug 'justinmk/vim-sneak', '1.7.3'
+Plug 'klen/unite-radio.vim'
+Plug 'matthias-guenther/tocdown', 'v.1.0.1'
+Plug 'mattn/calendar-vim'
+Plug 'matze/vim-move', 'v1.3'
+Plug 'mbbill/undotree'
+Plug 'nelstrom/vim-markdown-folding'
+Plug 'othree/html5-syntax.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic', '3.4.0'
+Plug 'sheerun/vim-polyglot', '1.9.1'
+Plug 'sk1418/blockit'
+Plug 't9md/vim-choosewin', 'v1.3'
+Plug 'tommcdo/vim-exchange'
+Plug 'tpope/vim-endwise', 'v1.2'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-speeddating'
+Plug 'tpope/vim-surround'
+Plug 'tsukkee/unite-help'
+Plug 'tsukkee/unite-tag'
+Plug 'tyru/open-browser.vim'
+Plug 'vim-ruby/vim-ruby'
+Plug 'vim-scripts/AutoTag', '1.13'
+Plug 'xolox/vim-misc', '1.11'
+Plug 'xolox/vim-notes', '0.23.10'
+Plug 'wikimatze/vim-github-theme'
+Plug 'itchyny/lightline.vim'
+Plug 'itchyny/landscape.vim'
 
 " Let NeoBundle manage NeoBundle
-NeoBundleFetch 'Shougo/neobundle.vim', { 'name' : 'neobundle' }
-
-NeoBundle 'AndrewRadev/switch.vim'        , { 'rev': '1bce', 'name': 'switch' }
-NeoBundle 'Eckankar/vim-latex-folding'    , { 'rev': 'c207', 'name': 'latex-folding' }
-NeoBundle 'Raimondi/delimitMate'          , { 'rev': '3848', 'name': 'delimitmate' }
-NeoBundle 'Shougo/neosnippet.vim'         , { 'rev': '5785', 'name': 'neosnippet' }
-NeoBundle 'Shougo/unite.vim'              , { 'rev': '5b4e', 'name': 'unite' }
-NeoBundle 'dkprice/vim-easygrep'          , { 'rev': 'df9f', 'name': 'easygrep' }
-NeoBundle 'godlygeek/tabular'             , { 'rev': '60f2', 'name': 'tabular' }
-NeoBundle 'hail2u/vim-css3-syntax'        , { 'rev': '324b', 'name': 'css3-syntax' }
-NeoBundle 'itchyny/lightline.vim'         , { 'rev': '9a86', 'name': 'lightline' }
-NeoBundle 'jamessan/vim-gnupg'            , { 'rev': '6e9f', 'name': 'gnupg' }
-NeoBundle 'jaxbot/github-issues.vim'      , { 'rev': 'ff85', 'name': 'github-issues' }
-NeoBundle 'justinmk/vim-sneak'            , { 'rev': 'd45c', 'name': 'sneak' }
-NeoBundle 'klen/unite-radio.vim'          , { 'rev': '39bf', 'name': 'unite-radio' }
-NeoBundle 'matthias-guenther/tocdown'     , { 'rev': '10b6', 'name': 'tocdown' }
-NeoBundle 'mattn/calendar-vim'            , { 'rev': 'b340', 'name': 'calendar' }
-NeoBundle 'matze/vim-move'                , { 'rev': '477b', 'name': 'move' }
-NeoBundle 'mbbill/undotree'               , { 'rev': '7e52', 'name': 'undotree' }
-NeoBundle 'nelstrom/vim-markdown-folding' , { 'rev': '3e84', 'name': 'markdown-folding' }
-NeoBundle 'othree/html5-syntax.vim'       , { 'rev': 'fdbd', 'name': 'html5-syntax' }
-NeoBundle 'scrooloose/nerdtree'           , { 'rev': 'b0bb', 'name': 'nerdtree' }
-NeoBundle 'scrooloose/syntastic'          , { 'rev': '5051', 'name': 'syntastic' }
-NeoBundle 'sheerun/vim-polyglot'          , { 'rev': 'e961', 'name': 'polyglot' }
-NeoBundle 'sk1418/blockit'                , { 'rev': '2617', 'name': 'blockit' }
-NeoBundle 't9md/vim-choosewin'            , { 'rev': '6e53', 'name': 'choosewin' }
-NeoBundle 'tommcdo/vim-exchange'          , { 'rev': 'c83b', 'name': 'exchange' }
-NeoBundle 'tpope/vim-endwise'             , { 'rev': '3854', 'name': 'endwise' }
-NeoBundle 'tpope/vim-fugitive'            , { 'rev': 'f8bf', 'name': 'fugitive' }
-NeoBundle 'tpope/vim-speeddating'         , { 'rev': '2321', 'name': 'speeddating' }
-NeoBundle 'tpope/vim-surround'            , { 'rev': '42e9', 'name': 'surround' }
-NeoBundle 'tsukkee/unite-help'            , { 'rev': '5a8d', 'name': 'unite-help' }
-NeoBundle 'tsukkee/unite-tag'             , { 'rev': 'd65d', 'name': 'unite-tag' }
-NeoBundle 'tyru/open-browser.vim'         , { 'rev': 'ee7a', 'name': 'open-browser' }
-NeoBundle 'vim-ruby/vim-ruby'             , { 'rev': 'e9a7', 'name': 'ruby' }
-NeoBundle 'vim-scripts/AutoTag'           , { 'rev': 'ef0a', 'name': 'autotag' }
-NeoBundle 'xolox/vim-misc'                , { 'rev': '8551', 'name': 'misc' }
-NeoBundle 'xolox/vim-notes'               , { 'rev': '1483', 'name': 'notes' }
+"Plug 'Shougo/neobundle.vim'
 
 if has('lua')
-  NeoBundle 'Shougo/neocomplete.vim'      , { 'rev': '56fe', 'name': 'neocomplete' }
+  Plug 'Shougo/neocomplete.vim'
 endif
 
-NeoBundle 'wikimatze/vim-github-theme'
+Plug 'Shougo/vimproc.vim'
 
-NeoBundle 'Shougo/vimproc.vim', { 'rev': '309b',
-  \ 'build' : {
-  \     'mac' : 'make -f make_mac.mak',
-  \     'unix' : 'make -f make_unix.mak',
-  \    },
-  \ }
+call plug#end()
 
+filetype indent on " enable file type-specific indenting
 syntax on          " enable syntax highlighting
 filetype on        " enable file type detection
-filetype indent on " enable file type-specific indenting
-filetype plugin on " enable file type-specific plugins
 
-" Installation check.
-NeoBundleCheck
 
 " General settings {{{
 
