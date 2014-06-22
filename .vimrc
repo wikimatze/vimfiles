@@ -1,5 +1,7 @@
 set nocompatible " Be iMproved
 
+let g:neosnippet#expand_word_boundary = 1
+
 call plug#begin('~/.vim/plugged/')
 
 Plug 'AndrewRadev/switch.vim', 'v0.2.0'
@@ -252,4 +254,5 @@ autocmd BufWinEnter *.md call MatchTechWordsToAvoid()
 autocmd InsertEnter *.md call MatchTechWordsToAvoid()
 autocmd InsertLeave *.md call MatchTechWordsToAvoid()
 autocmd BufWinLeave *.md call clearmatches()
+
 
