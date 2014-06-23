@@ -1,6 +1,7 @@
 set nocompatible " Be iMproved
 
 let g:neosnippet#expand_word_boundary = 1
+let g:plug_threads = 40
 
 call plug#begin('~/.vim/plugged/')
 
@@ -53,10 +54,6 @@ endif
 Plug 'Shougo/vimproc.vim'
 
 call plug#end()
-
-filetype indent on " enable file type-specific indenting
-syntax on          " enable syntax highlighting
-filetype on        " enable file type detection
 
 
 " General settings {{{
