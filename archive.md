@@ -298,6 +298,11 @@ Save session and to open then later.
 Define your own snippets for different languages.
 
 
+## [tabular](https://github.com/godlygeek/tabular):
+Auto indent files according to the pattern
+  - `:Tabularize / {pattern}`
+
+
 ## [tagbar](http://majutsushi.github.com/tagbar)
 Display the structure of the code.
 

@@ -6,15 +6,16 @@ let g:plug_threads = 40
 call plug#begin('~/.vim/plugged/')
 
 Plug 'AndrewRadev/switch.vim', 'v0.2.0'
-Plug 'Eckankar/vim-latex-folding'
+Plug 'Eckankar/vim-latex-folding', { 'for': 'tex' }
 Plug 'Raimondi/delimitMate'
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/unite.vim', 'ver.6.0'
 Plug 'dkprice/vim-easygrep'
-Plug 'godlygeek/tabular'
 Plug 'hail2u/vim-css3-syntax', 'v0.12.0'
+Plug 'itchyny/lightline.vim'
 Plug 'jamessan/vim-gnupg'
 Plug 'jaxbot/github-issues.vim'
+Plug 'junegunn/vim-easy-align', '2.9.3'
 Plug 'justinmk/vim-sneak', '1.7.3'
 Plug 'klen/unite-radio.vim'
 Plug 'matthias-guenther/tocdown', 'v.1.0.1'
@@ -22,8 +23,8 @@ Plug 'mattn/calendar-vim'
 Plug 'matze/vim-move', 'v1.3'
 Plug 'mbbill/undotree'
 Plug 'nelstrom/vim-markdown-folding'
-Plug 'othree/html5-syntax.vim'
-Plug 'scrooloose/nerdtree'
+Plug 'othree/html5-syntax.vim', { 'for': ['html', 'md'] }
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/syntastic', '3.4.0'
 Plug 'sheerun/vim-polyglot', '1.9.1'
 Plug 'sk1418/blockit'
@@ -38,14 +39,9 @@ Plug 'tsukkee/unite-tag'
 Plug 'tyru/open-browser.vim'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/AutoTag', '1.13'
+Plug 'wikimatze/vim-github-theme'
 Plug 'xolox/vim-misc', '1.11'
 Plug 'xolox/vim-notes', '0.23.10'
-Plug 'wikimatze/vim-github-theme'
-Plug 'itchyny/lightline.vim'
-Plug 'itchyny/landscape.vim'
-
-" Let NeoBundle manage NeoBundle
-"Plug 'Shougo/neobundle.vim'
 
 if has('lua')
   Plug 'Shougo/neocomplete.vim'
@@ -194,6 +190,7 @@ ru mappings/commandline.vim                 " using bash commands in the vim com
 ru mappings/commenting_and_uncommenting.vim " ,c (comment) and  ,u (uncomment) in visual mode
 ru mappings/copy_paste_from_clipboard.vim
 ru mappings/unite.vim
+ru mappings/vim_easy_align.vim              " press <CR> to start the completion
 ru mappings/esc_with_jk.vim                 " emulare ESC with jk
 ru mappings/keep_cursor_joining_lines.vim   " pimped default behavior of J
 ru mappings/markdown_to_html.vim            " Converting markdown to HTML (<leader>md)
@@ -251,5 +248,4 @@ autocmd BufWinEnter *.md call MatchTechWordsToAvoid()
 autocmd InsertEnter *.md call MatchTechWordsToAvoid()
 autocmd InsertLeave *.md call MatchTechWordsToAvoid()
 autocmd BufWinLeave *.md call clearmatches()
-
 

@@ -187,11 +187,6 @@ Switch segments of text with predefined definitions - good for changing values i
 - `:Switch` ... step on the predicate you want to change
 
 
-### [tabular](https://github.com/godlygeek/tabular):
-Auto indent files according to the pattern
-  - `:Tabularize / {pattern}`
-
-
 ### [tocdown](https://github.com/matthias-guenther/tocdown)
 Display the headlines of a markdown document in an extra window.
 
@@ -233,6 +228,11 @@ Add CSS3 syntax support.
 
 ### [vim-choosewin](https://github.com/t9md/vim-choosewin)
 Cycle around in Vim panes the tmux style:
+
+
+### [vim-easy-align](https://github.com/junegunn/vim-easy-align)
+Auto indent files according to the pattern
+  - Mark the area and press `Enter` => possible patterns are `<Space>`, `=`, `:`, `.`, `|`, `&`, and `,`
 
 
 ### [vim-exchange](https://github.com/tommcdo/vim-exchange)
