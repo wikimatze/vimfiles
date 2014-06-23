@@ -211,6 +211,16 @@ Opens a quickfix windows which shows the last opens files.
 
 - `:MRU` ... opens the window
 
+## [neobundle](https://github.com/Shougo/neobundle.vim)
+Package manager for Vim.
+
+- `:NeoBundleInstall` ... installs all the specified
+- `:NeoBundleClean` ... will remove all not used bundles
+- `:NeoBundleUpdate <name>` ... will update the specified bundles
+- `:NeoBundleDocs` ... create docs for all
+- `:NeoBundleCheck` ... if certain plugins are not installed, it will run `:NeoBundleInstall` and will execute `:NeoBundleDocs` to create helptags
+
+
 
 ## [netrw](http://www.vim.org/scripts/script.php?script_id=1075)
 Build in file browser.

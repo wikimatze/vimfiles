@@ -97,16 +97,6 @@ Awesome way to create a custom status line.
 Folding by section headings.
 
 
-### [neobundle](https://github.com/Shougo/neobundle.vim)
-Package manager for Vim.
-
-- `:NeoBundleInstall` ... installs all the specified
-- `:NeoBundleClean` ... will remove all not used bundles
-- `:NeoBundleUpdate <name>` ... will update the specified bundles
-- `:NeoBundleDocs` ... create docs for all
-- `:NeoBundleCheck` ... if certain plugins are not installed, it will run `:NeoBundleInstall` and will execute `:NeoBundleDocs` to create helptags
-
-
 ### [neocomplete](https://github.com/Shougo/neocomplete.vim)
 Amazing tool for keyword completion.
 
@@ -274,6 +264,13 @@ Extended Vim standard library needed for vim-notes plugin.
 
 ### [vim-move](https://github.com/matze/vim-move)
 Move lines and selections up and down.
+
+
+### [vim-plug](https://github.com/sheerun/vim-polyglot)
+Package manager for Vim.
+
+- `:PlugInstall` ... installs all the specified
+- `:PlugClean` ... will remove all not used bundles
 
 
 ### [vim-poylglot](https://github.com/sheerun/vim-polyglot)
