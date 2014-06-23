@@ -95,8 +95,14 @@ set incsearch " highlight search after you type it
 set ignorecase                              " case insensitive search
 set smartcase                               " canceling out ignore for uppercase letter in search
 set nohlsearch
-set grepprg=ag                              " tool when using grep
 set noswapfile                              " don't save swap files
+
+" external tool when using grep
+if executable('pt')
+  set grepprg=pt
+elseif executable('ag')
+  set grepprg=ag
+endif
 
 if has('cryptmethod')
   set cryptmethod=blowfish                    " encryption algorithm
