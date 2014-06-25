@@ -144,6 +144,13 @@ Perfect note taking.
   - `:ShowTaggedNotes` ... will show all notes which are specified with a certain tag
 
 
+### [nyancat-vim](https://github.com/koron/nyancat-vim)
+Nyancat rocks vim
+
+- `:Nyancat` ... runs first version of it.
+- `:Nyancat2` ... runs the second version.
+
+
 ### [open-browser](https://github.com/tyru/open-browser.vim)
 Open the URI with `gx` (my custom mapping) in your default browser.
 
