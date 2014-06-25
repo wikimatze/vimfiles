@@ -4,28 +4,28 @@ I'm always eager to learn, but I can't remember everything. Here is the list of 
 of the most important commands and settings for each plugin.
 
 
-## Installation
+# Installation
 
 Do not copy my *.vimrc* because they may not fit to your working style (see **Luca Pettes**
 [wonderful article](http://lucapette.com/vim/rails/vim-for-rails-developers-lazy-modern-configuration)). But if you
 would like to use this repository run the `install.sh` script.
 
 
-## Plugins
+# Plugins
 
 
-### [autotag.vim](https://github.com/vim-scripts/AutoTag)
+## [autotag.vim](https://github.com/vim-scripts/AutoTag)
 Whenever you save a file, it deletes all of its entries and invokes ctags in append mode.
 
 
-### [blockit](https://github.com/sk1418/blockit)
+## [blockit](https://github.com/sk1418/blockit)
 Wrap text in block
 
 - `'<,'>Block` ... works even in visual mode
 - `..,..Block` ...  define a range where you want to have the block
 
 
-### [calendar.vim](https://github.com/mattn/calendar-vim)
+## [calendar.vim](https://github.com/mattn/calendar-vim)
 Opens a split with a calendar inside
 
 - `:Calendar` ... opens a vertical split
@@ -33,18 +33,18 @@ Opens a split with a calendar inside
 - `q` ... will close the calendar
 
 
-### [easygrep](https://github.com/dkprice/vim-easygrep)
+## [easygrep](https://github.com/dkprice/vim-easygrep)
 Makes search/replacing in your project a lot easier.
 
 - `<leader>vv|vV` ... find word/whole word under the cursor
 - `<leader>vr|vR` ... perform global search replace of word/whole word under cursor, with confirmation
 
 
-### [delimitMate](https://github.com/Raimondi/delimitMate)
+## [delimitMate](https://github.com/Raimondi/delimitMate)
 Semantic autoclose brackets.
 
 
-### [fugitive](http://github.com/tpope/vim-fugitive)
+## [fugitive](http://github.com/tpope/vim-fugitive)
 Git wrapper.
 
 - `:Gstatus` ... git status
@@ -80,34 +80,34 @@ Git wrapper.
   - search for words added or removed: `Glog -Sadd`
 
 
-### [github-issues](https://github.com/jaxbot/github-issues.vim)
+## [github-issues](https://github.com/jaxbot/github-issues.vim)
 GitHub issue lookup support, press # to enable omnicompletion
 
 - `:Gissues` ... will open a window with issues and you can browse the descriptions
 
 
-### [html5-syntax](https://github.com/othree/html5-syntax.vim)
+## [html5-syntax](https://github.com/othree/html5-syntax.vim)
 HTML5 elements syntax highlighing.
 
 
-### [lightline vim](https://github.com/itchyny/lightline.vim)
+## [lightline vim](https://github.com/itchyny/lightline.vim)
 Awesome way to create a custom status line.
 
-### [markdown-folding](https://github.com/nelstrom/vim-markdown-folding)
+## [markdown-folding](https://github.com/nelstrom/vim-markdown-folding)
 Folding by section headings.
 
 
-### [neocomplete](https://github.com/Shougo/neocomplete.vim)
+## [neocomplete](https://github.com/Shougo/neocomplete.vim)
 Amazing tool for keyword completion.
 
 
-### [neosnippet](https://github.com/Shougo/neosnippet.vim)
+## [neosnippet](https://github.com/Shougo/neosnippet.vim)
 Adds snippet support for Vim and makes use of neocomplete plugin.
 
 - `NeoSnippetEdit` ... edit snippets of the current filetype
 
 
-### [NERDTree](https://github.com/scrooloose/nerdtree)
+## [NERDTree](https://github.com/scrooloose/nerdtree)
 Amazing file browser for GUI guys.
 
 - `m` - choose which action to perform (add, move, copy, delete)
@@ -124,7 +124,7 @@ Amazing file browser for GUI guys.
 - `:NERDTreeFind` - open the current file in the NERDTree and expand the tree to this file location
 
 
-### [notes](https://github.com/xolox/vim-notes)
+## [notes](https://github.com/xolox/vim-notes)
 Perfect note taking.
 
 - `:Note` ... starts a new note (you can specify the name of the note in the header)
@@ -144,18 +144,18 @@ Perfect note taking.
   - `:ShowTaggedNotes` ... will show all notes which are specified with a certain tag
 
 
-### [nyancat-vim](https://github.com/koron/nyancat-vim)
+## [nyancat-vim](https://github.com/koron/nyancat-vim)
 Nyancat rocks vim
 
 - `:Nyancat` ... runs first version of it.
 - `:Nyancat2` ... runs the second version.
 
 
-### [open-browser](https://github.com/tyru/open-browser.vim)
+## [open-browser](https://github.com/tyru/open-browser.vim)
 Open the URI with `gx` (my custom mapping) in your default browser.
 
 
-### [speedating](https://github.com/tpope/vim-speeddating)
+## [speedating](https://github.com/tpope/vim-speeddating)
 Fast way to increment all kind of numbers.
 
 - `<C-a>` ... ++ number
@@ -164,7 +164,7 @@ Fast way to increment all kind of numbers.
 - `:SpeedDatingFormat {}` ... here you can specify the format which can be used to be recognized by the program
 
 
-### [syntastic](https://github.com/scrooloose/syntastic)
+## [syntastic](https://github.com/scrooloose/syntastic)
 Performs syntax check on various languages when saving.
 
 - **Options**
@@ -172,7 +172,7 @@ Performs syntax check on various languages when saving.
   - `:SyntasticInfo` ... information about the current used syntax checkers and filetypes
 
 
-### [surround](https://github.com/tpope/vim-surround)
+## [surround](https://github.com/tpope/vim-surround)
 Change quotes and all other delimiters.
 
 - `ds"` ... stands for delete surround and will delete the surrounds
@@ -188,27 +188,27 @@ Change quotes and all other delimiters.
     press `s` and then the quote (`"", (), {}`) you want to have and it wraps the string in this
 
 
-### [switch](https://github.com/AndrewRadev/switch.vim)
+## [switch](https://github.com/AndrewRadev/switch.vim)
 Switch segments of text with predefined definitions - good for changing values in tests.
 
 - `:Switch` ... step on the predicate you want to change
 
 
-### [tocdown](https://github.com/matthias-guenther/tocdown)
+## [tocdown](https://github.com/matthias-guenther/tocdown)
 Display the headlines of a markdown document in an extra window.
 
 
-### [undotree](https://github.com/mbbill/undotree)
+## [undotree](https://github.com/mbbill/undotree)
 Display the undograph for a file.
 
 - `:UndotreeToggle` ... turn on or off the toggle feature
 
 
-### [unite](https://github.com/Shougo/unite.vim)
+## [unite](https://github.com/Shougo/unite.vim)
 A very good and flexible plugin for searching and displaying information.
 
 
-### [unite-radio](https://github.com/klen/unite-radio.vim)
+## [unite-radio](https://github.com/klen/unite-radio.vim)
 Playing sounds in Vim.
 
 - `:Unite radio <CR>` ... will open the predefined stations
@@ -216,75 +216,77 @@ Playing sounds in Vim.
 - `:MPlay <url>` ... play the specified url
 
 
-### [unite-tag](https://github.com/tsukkee/unite-tag)
+## [unite-tag](https://github.com/tsukkee/unite-tag)
 Selecting and searching tags.
 
 - `:Unite tag` ... search name for all tags
 - `:Unite tag/file` ... select files including tags
 
 
-### [unite-help](https://github.com/tsukkee/unite-help)
+## [unite-help](https://github.com/tsukkee/unite-help)
 Opens unite window for searching.
 
 - `:Unite help` ... will open the menue where you have autocompletion for all the tags
 
 
-### [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax)
+## [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax)
 Add CSS3 syntax support.
 
 
-### [vim-choosewin](https://github.com/t9md/vim-choosewin)
-Cycle around in Vim panes the tmux style:
+## [vim-choosewin](https://github.com/t9md/vim-choosewin)
+Cycle around in Vim panes the tmux style.
+
+- `-` ... will call the choose-pane dialog
 
 
-### [vim-easy-align](https://github.com/junegunn/vim-easy-align)
+## [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 Auto indent files according to the pattern
   - Mark the area and press `Enter` => possible patterns are `<Space>`, `=`, `:`, `.`, `|`, `&`, and `,`
 
 
-### [vim-exchange](https://github.com/tommcdo/vim-exchange)
+## [vim-exchange](https://github.com/tommcdo/vim-exchange)
 Text exchange operator which can be combined with any motions.
 
 - `cx{motion}` ... cx is the operator
 - example: `cxiw` marks the word, pressing `.` will repeat the last command and exchange the word
 
 
-### [vim-endwise](https://github.com/tpope/vim-endwise)
+## [vim-endwise](https://github.com/tpope/vim-endwise)
 Automatically adds keywords like *end* to special constructs for all kinds of languages.
 
 
-### [vim github theme](https://github.com/wikimatze/vim-github-theme)
+## [vim github theme](https://github.com/wikimatze/vim-github-theme)
 My first light colorscheme for vim.
 
 
-### [vim-gnupg](https://github.com/jamessan/vim-gnupg)
+## [vim-gnupg](https://github.com/jamessan/vim-gnupg)
 Transparent editing of gpg encrypted files.
 
 
-### [vim-latex-folding](https://github.com/Eckankar/vim-latex-folding)
+## [vim-latex-folding](https://github.com/Eckankar/vim-latex-folding)
 The only plugin you need when you are working with LaTeX.
 
 
-### [vim-misc](https://github.com/xolox/vim-misc)
+## [vim-misc](https://github.com/xolox/vim-misc)
 Extended Vim standard library needed for vim-notes plugin.
 
 
-### [vim-move](https://github.com/matze/vim-move)
+## [vim-move](https://github.com/matze/vim-move)
 Move lines and selections up and down.
 
 
-### [vim-plug](https://github.com/sheerun/vim-polyglot)
+## [vim-plug](https://github.com/sheerun/vim-polyglot)
 Package manager for Vim.
 
 - `:PlugInstall` ... installs all the specified
 - `:PlugClean` ... will remove all not used bundles
 
 
-### [vim-poylglot](https://github.com/sheerun/vim-polyglot)
+## [vim-poylglot](https://github.com/sheerun/vim-polyglot)
 Loading language packs on demand - saves a lot of startup time.
 
 
-### [vim-ruby](https://github.com/vim-ruby/vim-ruby)
+## [vim-ruby](https://github.com/vim-ruby/vim-ruby)
 Configuration files for editing and compiling Ruby - it even adds custom text-objects only for Vim.
 
 
@@ -300,17 +302,17 @@ Configuration files for editing and compiling Ruby - it even adds custom text-ob
   - `[[` ... move to the beginning of the **previous** *module* or *class* definition
 
 
-### [vim-sneak](https://github.com/justinmk/vim-sneak)
+## [vim-sneak](https://github.com/justinmk/vim-sneak)
 Motion plugin to reach certain pieces of the text in no time.
 
 - `s{char}{char}` ... and you can reach the piece of text you want (forward, and `S` for backward search)
 
 
-### [vimproc](https://github.com/Shougo/vimproc.vim.git)
+## [vimproc](https://github.com/Shougo/vimproc.vim.git)
 For asynchronous command execution (need is used to search for file in bigger projects by the unite.vim plugin).
 
 
-## License
+# License
 
 This software is licensed under the [MIT license](http://en.wikipedia.org/wiki/MIT_License).
 
