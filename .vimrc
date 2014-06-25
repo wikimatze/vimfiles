@@ -31,6 +31,7 @@ Plug 'sheerun/vim-polyglot', '1.9.1'
 Plug 'sk1418/blockit'
 Plug 't9md/vim-choosewin', 'v1.3'
 Plug 'tommcdo/vim-exchange'
+Plug 'tomtom/tcomment_vim', '3.03'
 Plug 'tpope/vim-endwise', 'v1.2'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-speeddating'
@@ -194,7 +195,6 @@ ru macros/matchit.vim " enable better matching for % command
 " Mappings {{{
 
 ru mappings/commandline.vim                 " using bash commands in the vim commandline
-ru mappings/commenting_and_uncommenting.vim " ,c (comment) and  ,u (uncomment) in visual mode
 ru mappings/copy_paste_from_clipboard.vim
 ru mappings/unite.vim
 ru mappings/vim_easy_align.vim              " press <CR> to start the completion

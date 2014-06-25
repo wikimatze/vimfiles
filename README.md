@@ -198,6 +198,13 @@ Switch segments of text with predefined definitions - good for changing values i
 Display the headlines of a markdown document in an extra window.
 
 
+## [tcomment_vim](https://github.com/tomtom/tcomment_vim)
+An universable comment tool plugin.
+
+- `gcc` ... toogles current line (work the same way in Visual mode)
+- `gc{motion}` ... toogles comment with the specified motion
+
+
 ## [undotree](https://github.com/mbbill/undotree)
 Display the undograph for a file.
 
