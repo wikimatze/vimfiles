@@ -179,12 +179,34 @@ endif
 
 
 " }}}
-
 " Functions {{{
+" Trailing whitespace removal {{{
+fu! <SID>StripTrailingWhitespaces()
+  " preparation: save last search, and cursor position.
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " do the business:
+  %s/\s\+$//e
+  " Clean up: restore previous search history, and cursor position
+  let @/=_s
+  call cursor(l, c)
+endf
 
-ru functions/trailing_whitespaces_removal.vim
-ru functions/insert_spacedate.vim " <F5> will insert current date (yyyy-mm-dd) at EOL with space
+" when file is saved, call the function to remove trailing whitespace
+au BufWritePre * :call <SID>StripTrailingWhitespaces()
+" }}}
+" Insert date in the form yyyy-mm-dd at the end of a line, <F5> {{{
+fu! InsertSpaceDate()
+  let @x = " "
+  let @x = @x . strftime("%Y-%m-%d")
+  normal! "xp
+  silent exec line(".") . "s/TODO/DONE"
+endf
 
+no <silent> <F5> $:call InsertSpaceDate() <CR>
+ru functions/insert_spacedate.vim
+" }}}
 " }}}
 " Plugin settings {{{
 
