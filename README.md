@@ -155,6 +155,17 @@ Nyancat rocks vim
 Open the URI with `gx` (my custom mapping) in your default browser.
 
 
+## [ri.vim](https://github.com/danchoi/ri.vim)
+Browse ri documentation of Ruby files offline.
+
+- `,r|,R` ... opens start/autocomplete window with horizontal|vertical split
+- `K|,K` ... opens the search/autocomplete window and prefills it with the keyword under the cursor
+- inside documentation window
+  - `,,r` ... class/module/autocompletion window
+  - `-` ... goes up from a method page into the parent class/module
+  - `,G` ... brings you to the README of the Gem if it exists
+
+
 ## [speedating](https://github.com/tpope/vim-speeddating)
 Fast way to increment all kind of numbers.
 

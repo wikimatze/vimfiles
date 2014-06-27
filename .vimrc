@@ -10,6 +10,7 @@ Plug 'Eckankar/vim-latex-folding', { 'for': 'tex' }
 Plug 'Raimondi/delimitMate'
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/unite.vim', 'ver.6.0'
+Plug 'danchoi/ri.vim', 'v1.1'
 Plug 'dkprice/vim-easygrep'
 Plug 'hail2u/vim-css3-syntax', 'v0.12.0'
 Plug 'itchyny/lightline.vim'

@@ -256,16 +256,6 @@ Build in file browser.
 Candy statusline which is high configurable.
 
 
-## [ri.vim](https://github.com/danchoi/ri.vim)
-Browse ri documentation offline in Vim.
-
-- `,r` ... opens start/autocomplete window with horizontalsplit
-- `,R` ... open start/autocomplete window with vertical split
-- inside documentation window
-  - `,,r` ... class/module autocompletion window
-  - `-` ... goes up from a method page into the parent class/module
-
-
 ## [rubyrefactoring](https://github.com/ecomba/vim-ruby-refactoring)
 Refactoring for ruby.
 
