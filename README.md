@@ -84,6 +84,7 @@ Git wrapper.
 GitHub issue lookup support, press # to enable omnicompletion
 
 - `:Gissues` ... will open a window with issues and you can browse the descriptions
+- `:Giadd` ... add an issue to github
 
 
 ## [html5-syntax](https://github.com/othree/html5-syntax.vim)
