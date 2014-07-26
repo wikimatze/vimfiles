@@ -349,6 +349,11 @@ Syntax file for puppet files.
 Syntax highlighting, indenting and auto completion for the dynamic style sheet language.
 
 
+## [vim-sneak](https://github.com/justinmk/vim-sneak)
+Motion plugin to reach certain pieces of the text in no time.
+
+- `s{char}{char}` ... and you can reach the piece of text you want (forward, and `S` for backward search)
+
 ## [vim-bundler](https://github.com/tpope/vim-bundler)
 Wrapper for bundler in Vim.
 

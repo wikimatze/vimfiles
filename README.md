@@ -320,10 +320,6 @@ Configuration files for editing and compiling Ruby - it even adds custom text-ob
   - `[[` ... move to the beginning of the **previous** *module* or *class* definition
 
 
-## [vim-sneak](https://github.com/justinmk/vim-sneak)
-Motion plugin to reach certain pieces of the text in no time.
-
-- `s{char}{char}` ... and you can reach the piece of text you want (forward, and `S` for backward search)
 
 
 ## [vimproc](https://github.com/Shougo/vimproc.vim.git)
