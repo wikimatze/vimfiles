@@ -7,12 +7,14 @@ let g:unite_update_time = 200                    " shorten the default update da
 let g:unite_cursor_line_highlight = 'TabLineSel' " mark matches in buffer as bold
 
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
+call unite#custom#source('file_rec,file_rec/async', 'ignore_pattern', '\(\.cache$\|\.sty$\|epub\/*\|generated_polytex\/*\|tmp\/*\)')
 
 if executable('ack-grep')
   let g:unite_source_grep_command = 'ack-grep'
   let g:unite_source_grep_default_opts = '--no-heading --no-color -a -H'
   let g:unite_source_grep_recursive_opt = ''
 endif
+
 
 " custom mappings for the unite buffer
 autocmd FileType unite call s:unite_settings()
