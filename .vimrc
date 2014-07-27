@@ -88,7 +88,6 @@ set tabstop=2                               " how many columns a tab counts
 set shiftwidth=2                            " how many columns text is indented with the indent operations (<< and >>)
 set softtabstop=2                           " how many columns
 set expandtab                               " hitting tab in insert mode will produce number in spaces instead of tabs
-set wrap                                    " when lines are longer the width of the window they will wrapped
 set textwidth=100                           " maximum of text that is being inserted
 
 set fillchars=""                            " get rid of silly characters in separators in the CMD
@@ -98,6 +97,9 @@ set ignorecase                              " case insensitive search
 set smartcase                               " canceling out ignore for uppercase letter in search
 set nohlsearch
 set noswapfile                              " don't save swap files
+
+set wrap      " when lines are longer the width of the window they will wrapped
+set linebreak " wrap at a character in the breakat option
 
 " external tool when using grep
 if executable('pt')
