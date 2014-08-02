@@ -80,6 +80,15 @@ Git wrapper.
   - search for words added or removed: `Glog -Sadd`
 
 
+## [gitv](https://github.com/gregsexton/gitv)
+gitk direclty in Vim
+
+- `:Gitv` ... opens only gitv
+- `:Gitv!` ... opens only commits which affects the current file
+- `yc` ... yanks the SHA of the commit
+- `co` ... performs a checkout of the commit on the currently focused commit
+  - `D` ... diff the current open file with the focused file focused under the cursor
+
 ## [github-issues](https://github.com/jaxbot/github-issues.vim)
 GitHub issue lookup support, press # to enable omnicompletion
 

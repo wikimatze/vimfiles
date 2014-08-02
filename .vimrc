@@ -12,6 +12,7 @@ Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/unite.vim', 'ver.6.0'
 Plug 'danchoi/ri.vim', 'v1.1'
 Plug 'dkprice/vim-easygrep'
+Plug 'gregsexton/gitv'
 Plug 'hail2u/vim-css3-syntax', 'v0.12.0'
 Plug 'itchyny/lightline.vim'
 Plug 'jamessan/vim-gnupg'
@@ -70,7 +71,7 @@ set backspace=indent,eol,start              " allow backspacing over everything 
 set ch=1                                    " height of the command line at the bottom
 set ruler                                   " show the line and column number of the cursor position
 set numberwidth=2                           " using only 2 column for number line presentation
-set lazyredraw                              " don't update the display while executing macros, registers, etc.
+set lazyredraw                              " no window redrawing during operations like macros, registers, ...
 set ttyfast                                 " fast terminal connection, more characters will be sent to the screen
 set splitbelow                              " splitting a window will put the new window below the current one
 set splitright                              " splitting a window will put the new window right the current one
