@@ -9,16 +9,11 @@ snippet h4
 snippet h5
   ##### ${1:}
 snippet c
-  \`\`\` ${1:n}
-
+  \`\`\`${1:n}
   ${2:}
-
   \`\`\`
 snippet ic
   \`${1:}\`
-snippet lc
-  {: lang="${1:}" }
-      # ${2:}
 snippet b
   - ${1:}
   - ${2:}
@@ -75,6 +70,6 @@ snippet blockquote
   </blockquote>
 snippet fancycaption
   <a href="${1:}" title="${2:t}" class="fancybox"><img src="${3:}" class="big center" alt="$2"/></a>
-  <div class="$2"></div>
+  <div class="caption">$2</div>
 snippet fancy
   <a href="${1:}" title="${2:t}" class="fancybox"><img src="${3:}" class="big center" alt="$2"/></a>

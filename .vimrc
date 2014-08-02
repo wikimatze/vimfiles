@@ -219,17 +219,17 @@ ru macros/matchit.vim " enable better matching for % command
 " }}}
 " Mappings {{{
 
-ru mappings/commandline.vim                 " using bash commands in the vim commandline
-ru mappings/copy_paste_from_clipboard.vim
+ru mappings/commandline.vim                " using bash commands in the vim commandline
+ru mappings/copy_paste_from_clipboard.vim  " <C-c> for copy, <leader><C-v> for paste
+ru mappings/esc_with_jk.vim                " emulare ESC with jk
+ru mappings/gitv.vim                       " ,gv and ,gV for stating the browser
+ru mappings/keep_cursor_joining_lines.vim  " indent joining lines the right way
+ru mappings/moving_wrapped_lines.vim       " Use hjkl in wrapped-lined files
+ru mappings/nerdtree.vim                   " F2 will call NERDTreeToogle
+ru mappings/pry.vim                        " ,pi to insert/delete 'require pry; binding pry'
+ru mappings/quickediting.vim               " ,ba; ,bm; ,br; ,ev to edit files of vim repos
 ru mappings/unite.vim
-ru mappings/vim_easy_align.vim              " press <CR> to start the completion
-ru mappings/esc_with_jk.vim                 " emulare ESC with jk
-ru mappings/keep_cursor_joining_lines.vim   " pimped default behavior of J
-ru mappings/markdown_to_html.vim            " Converting markdown to HTML (<leader>md)
-ru mappings/moving_wrapped_lines.vim        " Use hjkl in wrapped-lined files
-ru mappings/nerdtree.vim                    " F2 will call NERDTreeToogle
-ru mappings/pry.vim                         " ,pi to insert/delete 'require pry; binding pry'
-ru mappings/quickediting.vim                " ,ba; ,bm; ,br; ,ev to edit files of vim repos
+ru mappings/vim_easy_align.vim             " press <CR> to start aligning
 
 " Press \cd to change the pwd to the current file you are in
 nn \cd :lcd %:h<CR>
