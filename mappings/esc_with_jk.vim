@@ -1,3 +1,2 @@
-ino jk <ESC>
-cno jk <C-C>
+ino jk <C-C>`^
 
