@@ -232,6 +232,9 @@ ru mappings/quickediting.vim               " ,ba; ,bm; ,br; ,ev to edit files of
 ru mappings/unite.vim
 ru mappings/vim_easy_align.vim             " press <CR> to start aligning
 
+" ,d to copy the file path to clipboard, very handy for file name completion for vimbook
+nmap <leader>d :call system("xclip -i -selection clipboard", expand("%"))<CR>
+
 " Press \cd to change the pwd to the current file you are in
 nn \cd :lcd %:h<CR>
 
