@@ -96,6 +96,7 @@
 - `d` is an operator pending operator
 - `df<char>` ... press the character until which should be deleted (**inclusive** the char)
 - `dt<char>` ... delete till a char at start right in front of it (**exclusive** the char)
+- `dst` ... deletes surrounding tag (good for HTML working)
 - `yy` ... copy whole line (`Y` means the same)
 - `yw` ... yank whole word
 - `"+y` ... copy to clipboard (you have to be in visual mode)

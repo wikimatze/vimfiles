@@ -204,6 +204,7 @@ Change quotes and all other delimiters.
   makes the replacement and the second using for wrapping up the first argument with the quotes
   - `ys2w` ... will wrapp two following words (`2w`) with underscores (`\*`)
   - `yss{` ... wraps the whole line
+  - `ysiw` ... yank the inner word and in the command window add the tag you want to add
 - how to quote whole string?
   - mark the string in visual mode (either normal mode with *v* or block mode with `V`), then
     press `s` and then the quote (`"", (), {}`) you want to have and it wraps the string in this
