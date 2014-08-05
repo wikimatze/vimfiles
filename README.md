@@ -330,6 +330,14 @@ Configuration files for editing and compiling Ruby - it even adds custom text-ob
   - `[[` ... move to the beginning of the **previous** *module* or *class* definition
 
 
+## [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
+Switch seamlessly between tmux panes and Vim splits.
+
+
+- `<Ctrl-h>` ... Left
+- `<Ctrl-j>` ... Down
+- `<Ctrl-k>` ... Up
+- `<Ctrl-l>` ... Right
 
 
 ## [vimproc](https://github.com/Shougo/vimproc.vim.git)
