@@ -27,6 +27,7 @@ Plug 'matze/vim-move', 'v1.3'
 Plug 'mbbill/undotree'
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'othree/html5-syntax.vim', { 'for': ['html', 'md'] }
+Plug 'reedes/vim-lexical'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/syntastic', '3.4.0'
 Plug 'sheerun/vim-polyglot', '1.9.1'

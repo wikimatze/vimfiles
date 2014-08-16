@@ -296,6 +296,10 @@ Transparent editing of gpg encrypted files.
 The only plugin you need when you are working with LaTeX.
 
 
+## [vim-lexical](https://github.com/reedes/vim-lexical)
+Custom dictionary, thesaurus, and spellchecking options for files or when calling a command.
+
+
 ## [vim-misc](https://github.com/xolox/vim-misc)
 Extended Vim standard library needed for vim-notes plugin.
 
