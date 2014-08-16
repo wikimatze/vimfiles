@@ -127,6 +127,8 @@
 - `<C-x><C-l>` ... complete a whole line (good for matching complete function calls
 - `<C-x><C-]>` ... tags file keywords (class name completion for Ruby files)
 - `<C-c> | <C-e>` ... exit from autocompletion pop up
+- `<C-x><C-t>` ... thesaurus lookup (only in insert mode)
+- `<C-x><C-k>` ... dictionary lookup (only in insert mode)
 
 
 # Search and Replace
