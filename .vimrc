@@ -17,7 +17,6 @@ Plug 'gregsexton/gitv'
 Plug 'hail2u/vim-css3-syntax', 'v0.12.0'
 Plug 'itchyny/lightline.vim'
 Plug 'jamessan/vim-gnupg'
-Plug 'jaxbot/github-issues.vim'
 Plug 'junegunn/vim-easy-align', '2.9.6'
 Plug 'klen/unite-radio.vim'
 Plug 'koron/nyancat-vim'
@@ -51,6 +50,10 @@ Plug 'xolox/vim-notes', '0.26'
 
 if has('lua')
   Plug 'Shougo/neocomplete.vim'
+endif
+
+if has('python')
+  Plug 'jaxbot/github-issues.vim'
 endif
 
 Plug 'Shougo/vimproc.vim'
