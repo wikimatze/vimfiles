@@ -54,7 +54,9 @@ Git wrapper.
   - `<Enter>` ... will open the file in an extra window (use `:Gdiff` for a codereview)
 - `:Gwrite` ... stage the current file to index
 - `:Gcommit` ... git commit (press *wq* for send)
+- `:Gpush` ... performs a git push
 - `:Gmove` ... Rename the current file and the corresponding Vim buffer
+- `:Gread` ... makes a git checkout and update vim's buffer to the content of HEAD
 - `:Gremove` ... git rm
 - `:Gdiff` ... split the window and display the changes and for merging with vimdiff
   - `]c` ... jump to next hunk of the merge
@@ -67,7 +69,6 @@ Git wrapper.
     - `:diffupdate` ... clean up the views when having a file with many conflicts
     - `dp` ... if you are not in the working copy, you can use this command to put in the changes
     - when done with merging, run `:Gwrite` and `:only!` on the working copy to close all the other windows
-- `:Gread` ... makes a git checkout and update vim's buffer to the content of HEAD
 - `:Gblame` ... git blame
   - `o` ... to open a split showing the commit currently selected in the blame pane.
 - `:Git` ... perform every other normal git command in the terminal
