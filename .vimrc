@@ -28,6 +28,7 @@ Plug 'nelstrom/vim-markdown-folding'
 Plug 'othree/html5-syntax.vim', { 'for': ['html', 'md'] }
 Plug 'reedes/vim-lexical'
 Plug 'reedes/vim-litecorrect'
+Plug 'reedes/vim-wordy'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/syntastic', '3.4.0'
 Plug 'sheerun/vim-polyglot', 'v1.10.0'
