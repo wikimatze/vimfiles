@@ -88,7 +88,6 @@ gitk direclty in Vim
 - `:Gitv!` ... opens only commits which affects the current file
 - `yc` ... yanks the SHA of the commit
 - `co` ... performs a checkout of the commit on the currently focused commit
-  - `D` ... diff the current open file with the focused file focused under the cursor
 
 ## [github-issues](https://github.com/jaxbot/github-issues.vim)
 GitHub issue lookup support, press # to enable omnicompletion
@@ -124,9 +123,14 @@ Even Vim needs a file browser
 - `m` ... choose which action to perform (add, move, copy, delete)
   - add / at the end to create a new directory
 - `r` ... refresh the view
+- `o` ... opens the directory
 - `O` ... opens the node recursive from the parent node
 - `t` ... opens th file in a new tab
 - `p` ... jumps to the root tree
+- `C` ... change the directory to the current mode
+- `U` ... go up to the directory
+- `p` ... go up to parent direcory
+- `P` ... go up to root directory
 - `T` ... opens the file in a new tab and the focus will stay in the current window
 - `x` ... closed the parent node, but leave the nodes above the node open (visual close)
 - `X` ... closed all nodes which are under the actual node (physical close)
@@ -302,7 +306,11 @@ Custom dictionary, thesaurus, and spellchecking options for files or when callin
 
 
 ## [vim-litecorrect](https://github.com/reedes/vim-litecorrect)
-Lightweight auto correction for words.
+Lightweight auto correction for 300 words.
+
+    Im -> I'm
+    shouldnt -> shouldn't
+    thats -> that's
 
 
 ## [vim-misc](https://github.com/xolox/vim-misc)
@@ -320,7 +328,7 @@ Package manager for Vim.
 - `:PlugClean` ... will remove all not used bundles
 
 
-## [vim-poylglot](https://github.com/sheerun/vim-polyglot)
+## [vim-polyglot](https://github.com/sheerun/vim-polyglot)
 Loading language packs on demand - saves a lot of startup time.
 
 
@@ -351,11 +359,12 @@ Switch seamlessly between tmux panes and Vim splits.
 
 
 ## [vim-wordy](https://github.com/reedes/vim-wordy)
-Uncover usage problems with your writing with marvelous commands
+Uncover usage problems with your writing with marvelous commands.
 
 
 - `WeakWordy` ... starts the mode for showing weak words like "of course", "however"
 - `WordWordy` ... shows redundant words
+- `Wordy <Tab>` ... cycle through the different mody
 - `NextWordy` ... goes to the next mode
 - `PrevWordy` ... goes to the next mode
 - `NoWordy` ... will turn of the plugin
