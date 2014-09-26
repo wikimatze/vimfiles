@@ -11,3 +11,6 @@ cno <C-p> <Up>
 " move forward in the command history
 cno <C-n> <Down>
 
+" Command-line completion
+cno <C-j> <Up>
+cno <C-k> <Down>
