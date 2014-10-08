@@ -171,7 +171,7 @@
   - press `Ctrl-R a` to paste the contents of register `a`
 - open files of a certain type and do a replacement:
   - `args **/*.md` ... open all markdown files
-  - `argdo :%s/test/blaaa/gce | update` ... run the replacement to all files in the buffer, `updates` writes the file
+  - `argdo :%s/test/bla/gce | update` ... run the replacement to all files in the buffer, `update` writes the file
     only if changes were made, the `e` silence errors from the substitution command
 
 
