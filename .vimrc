@@ -275,8 +275,8 @@ augroup gitCommitEditMsg
     \ endif
 augroup END
 
-" get erb, bash, javascript and other things running running
-let g:markdown_fenced_languages = ['ruby', 'vim', 'html', 'sh']
+let g:markdown_fenced_languages = ['ruby', 'vim', 'html', 'sh', 'erb=eruby']
 
 " vim_markdown_fenced code block => cooles greift aber nur, wenn man Tim Popes Syntaxhighlighting verwendet
 " check nerdtree_plugins: https://github.com/AndrewRadev/Vimfiles/tree/master/nerdtree_plugin
+
