@@ -261,7 +261,11 @@ no <leader>_ :%s/_//g<CR>                   " delete all _
 no <leader>rt :%s/\\t/  /g<CR>
 
 " }}}
+" Functions {{{
 
+ru functions/highlight_81_characters.vim " call Highlight81Characters to see the highlighted text
+
+" }}}
 " Always go at the beginning of git commit message
 augroup gitCommitEditMsg
   autocmd!
