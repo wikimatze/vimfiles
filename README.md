@@ -65,7 +65,8 @@ Git wrapper.
   - `:diffget` ... get the changes from the not active window
   - `:diffput` ... put the changes from the active window to the not active window
   - 3-way diffs:
-    - `:diffget //2` ... get the changes from left (target branch = the branch you were in when you wanted to merge),          - `:diffget //3` ... get changes from the right (merge branch = the branch you want to merge),
+    - `:diffget //2` ... get the changes from left (target branch = the branch you were in when you wanted to merge),
+    - `:diffget //3` ... get changes from the right (merge branch = the branch you want to merge),
     - `:diffupdate` ... clean up the views when having a file with many conflicts
     - `dp` ... if you are not in the working copy, you can use this command to put in the changes
     - when done with merging, run `:Gwrite` and `:only!` on the working copy to close all the other windows
@@ -230,6 +231,14 @@ An universable comment tool plugin.
 
 - `gcc` ... toogles current line (work the same way in Visual mode)
 - `gc{motion}` ... toogles comment with the specified motion
+
+
+## [tmux-complete-vim](https://github.com/wellle/tmux-complete.vim)
+Insert mode completion for neighbor tmux windows.
+
+- `:Unite tmuxcomplete` ... opens a unite menu listing all entries or words from other tmux windows
+- `:Unite tmuxcomplete/lines` ... opens a unite menu listing all entries or words from other tmux windows with their
+  lines
 
 
 ## [undotree](https://github.com/mbbill/undotree)
