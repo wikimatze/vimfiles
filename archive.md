@@ -106,17 +106,6 @@ Fuzzy matching to find files recursively in the current directory.
 - `<C-l>` - opens in a new tab page
 - `<C-j>` - opens in a horizontal split
 - `<C-k>` - opens in a vertical-split window.
-- custom settings:
-<pre>
-  let g:fuf_coveragefile_globPattern = ['**/*'] " List of glob pattern to get file paths to be searched
-  nnoremap <Leader>t :FufCoverageFile <CR>
-
-  " regex for stuff to ignore for searching files
-  let g:fuf_coveragefile_exclude = '\v\~$'
-        \ . '|\.(gitignore|dropbox|.DS\_Store|exe|bak|orig|swp)$' " many different dot-files
-        \ . '|(^|[/\\])\.(hg|git|bzr|svn)($|[/\\])' " exclude .hg, .git files
-        \ . '|(^|[/\\])_site[/\\]' " exclude _site/* stuff (mainly from jekyll
-        \ . '|(^|[/\\])assets[/\\]' " exlude the assets stuff by rails</pre>
 
 
 ## [git-gutter](https://github.com/akiomik/git-gutter-vim)
@@ -183,9 +172,6 @@ Pretty colors for the jQuery syntax.
 Vim-script library, add functionality to program vim-files (used by vim-autocomplpop plugin).
 
 
-Awesome way to create a custom status line.
-
-
 ## [matchit](http://www.vim.org/scripts/script.php?script_id=39)
 Press `%` to match tags in HTML, LaTeX and several other file formats.
 
@@ -211,6 +197,7 @@ Opens a quickfix windows which shows the last opens files.
 
 - `:MRU` ... opens the window
 
+
 ## [neobundle](https://github.com/Shougo/neobundle.vim)
 Package manager for Vim.
 
@@ -219,7 +206,6 @@ Package manager for Vim.
 - `:NeoBundleUpdate <name>` ... will update the specified bundles
 - `:NeoBundleDocs` ... create docs for all
 - `:NeoBundleCheck` ... if certain plugins are not installed, it will run `:NeoBundleInstall` and will execute `:NeoBundleDocs` to create helptags
-
 
 
 ## [netrw](http://www.vim.org/scripts/script.php?script_id=1075)
@@ -361,7 +347,7 @@ Wrapper for bundler in Vim.
 - `:Bopen` ... opens the Gemfile for editing
 
 
-## [vim-rails](http://github.com/tpope/vim-rails "vim-rails")
+## [vim-rails](http://github.com/tpope/vim-rails)
 Rails support in Vim.
 
 - `:RDoc` ... browse the rails api
@@ -513,3 +499,4 @@ Better register management and saves up to 100 buffered lines.
 - `:YRClear` ... deletes the buffer
 - `:YRSearch` ... type in a word or regular expression to search the yankring after it
 - `j`, `k` for navigation and <Enter> chose your entry
+
