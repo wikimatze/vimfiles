@@ -85,10 +85,13 @@ Git wrapper.
 ## [gitv](https://github.com/gregsexton/gitv)
 gitk direclty in Vim
 
-- `:Gitv` ... opens only gitv
-- `:Gitv!` ... opens only commits which affects the current file
+- `:gitv` ... opens only gitv
+- `:gitv!` ... opens only commits which affects the current file
 - `yc` ... yanks the SHA of the commit
 - `co` ... performs a checkout of the commit on the currently focused commit
+- `q` ... quits the window
+- `:gitv -S<string>` ... look for differences that introduce or remove an instance of <string>
+
 
 ## [github-issues](https://github.com/jaxbot/github-issues.vim)
 GitHub issue lookup support, press # to enable omnicompletion
