@@ -439,6 +439,8 @@ Indicates added, removed, or modified lines of files which are under version con
   - `<leader>gj` ... go to the next hunk
   - `<leader>gk` ... go to the previous hunk
   - `<leader>gh` ... toggle highlight of the current line
+- options:
+  - `let g:signify_vcs_list = [ 'git', 'svn' ]` " only run those checkers
 
 
 ## [vimroom](https://github.com/mikewest/vimroom/)
