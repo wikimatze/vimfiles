@@ -49,33 +49,36 @@ Git wrapper.
 
 - `:Gstatus` ... git status
   - `<C-n>` ... go to the next file
-  - `<C-p>` ... go to the preview file
+  - `<C-p>` ... go to the previous file
   - `-` ... git add/git reset depending where you are in the windows (mark multiple files in visual mode)
-  - `<Enter>` ... will open the file in an extra window (use `:Gdiff` for a codereview)
+  - `ca` ... makes git commit ammend
+  - `D` ... makes diff
+  - `ds` ... makes a horizontal
+  - `dv` ... makes a vertical diff
+  - `q` ... close :Gstatus
 - `:Gwrite` ... stage the current file to index
 - `:Gcommit` ... git commit (press *wq* for send)
-- `:Gpush` ... performs a git push
-- `:Gmove` ... Rename the current file and the corresponding Vim buffer
-- `:Gread` ... makes a git checkout and update vim's buffer to the content of HEAD
 - `:Gremove` ... git rm
-- `:Gdiff` ... split the window and display the changes and for merging with vimdiff
+- `:Gmove` ... rename the current file and add change to index
+- `:Gpush` ... performs a git push
+- `:Gread` ... makes will load the previous file status on the current file buffer
+- `:Gdiff` ... split the window to see diff
   - `]c` ... jump to next hunk of the merge
   - `[c` ... jump to previous hunk of merge
   - `p` ... run `git add -p` for the current file
   - `:diffget` ... get the changes from the not active window
   - `:diffput` ... put the changes from the active window to the not active window
   - 3-way diffs:
-    - `:diffget //2` ... get the changes from left (target branch = the branch you were in when you wanted to merge),
-    - `:diffget //3` ... get changes from the right (merge branch = the branch you want to merge),
+    - `:diffget //LO` ... get the changes from left LOCAL (the file from the current branch)
+    - `:diffget //RE` ... get changes from the right REMOTE (the file you are merging into your branch),
     - `:diffupdate` ... clean up the views when having a file with many conflicts
     - `dp` ... if you are not in the working copy, you can use this command to put in the changes
     - when done with merging, run `:Gwrite` and `:only!` on the working copy to close all the other windows
 - `:Gblame` ... git blame
-  - `o` ... to open a split showing the commit currently selected in the blame pane.
+  - `q` ... close blame and return to blamed window
+  - `o` ... opens commit horizontally, leaving blame window open
+  - `<CR>` ... opens commit for currently blame commit, blame window is closed
 - `:Git` ... perform every other normal git command in the terminal
-- `:Glog` ... git log
-  - `:Glog -5` ... will open the last 5 commits (`:copen` will open the quickfix window for all commits)
-  - `:Glog -- %` ... will open only the commits that touch the current file
 - searching:
   - search working copy files: `:Ggrep <word>`
   - search commit messages: `:Glog --grep=fugitive`
