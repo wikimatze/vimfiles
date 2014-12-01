@@ -235,7 +235,7 @@ Switch segments of text with predefined definitions - good for changing values i
 - `:Switch` ... step on the predicate you want to change
 
 
-## [tocdown](https://github.com/matthias-guenther/tocdown)
+## [tocdown](https://github.com/wikimatze/tocdown)
 Display the headlines of a markdown document in an extra window.
 
 
