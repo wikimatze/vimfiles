@@ -343,11 +343,12 @@ Extended Vim standard library needed for vim-notes plugin.
 Move lines and selections up and down.
 
 
-## [vim-plug](https://github.com/sheerun/vim-polyglot)
+## [vim-plug](https://github.com/junegunn/vim-plug)
 Package manager for Vim.
 
 - `:PlugInstall` ... installs all the specified
 - `:PlugClean` ... will remove all not used bundles
+- `:PlugUpgrade` ... upgrade vim-plug automatically
 
 
 ## [vim-polyglot](https://github.com/sheerun/vim-polyglot)
