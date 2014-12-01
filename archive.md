@@ -168,6 +168,10 @@ JSON detection and syntax-highlighting.
 Pretty colors for the jQuery syntax.
 
 
+## [lightline](https://github.com/itchyny/lightline.vim)
+Awesome way to create a custom status line.
+
+
 ## [l9](https://github.com/vim-scripts/L9.git)
 Vim-script library, add functionality to program vim-files (used by vim-autocomplpop plugin).
 

@@ -104,8 +104,7 @@ GitHub issue lookup support, press # to enable omnicompletion
 HTML5 elements syntax highlighing.
 
 
-## [lightline vim](https://github.com/itchyny/lightline.vim)
-Awesome way to create a custom status line.
+
 
 ## [markdown-folding](https://github.com/nelstrom/vim-markdown-folding)
 Folding by section headings.
