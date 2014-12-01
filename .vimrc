@@ -50,6 +50,7 @@ Plug 'wikimatze/vim-github-theme'
 Plug 'xolox/vim-misc', '1.15'
 Plug 'xolox/vim-notes', '0.26'
 
+
 if has('lua')
   Plug 'Shougo/neocomplete.vim'
 endif
@@ -277,6 +278,10 @@ augroup gitCommitEditMsg
 augroup END
 
 let g:markdown_fenced_languages = ['ruby', 'vim', 'html', 'sh', 'erb=eruby']
+
+" Textwrapping for commit messages
+" Credit http://stackoverflow.com/questions/11023194/git-vim-automatically-wrap-long-commit-messages
+autocmd Filetype gitcommit set textwidth=60
 
 " vim_markdown_fenced code block => cooles greift aber nur, wenn man Tim Popes Syntaxhighlighting verwendet
 " check nerdtree_plugins: https://github.com/AndrewRadev/Vimfiles/tree/master/nerdtree_plugin
