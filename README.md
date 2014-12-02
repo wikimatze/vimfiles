@@ -304,14 +304,8 @@ Cycle around in Vim panes the tmux style.
 
 ## [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 Auto indent files according to the pattern
-  - Mark the area and press `Enter` => possible patterns are `<Space>`, `=`, `:`, `.`, `|`, `&`, and `,`
 
-
-## [vim-exchange](https://github.com/tommcdo/vim-exchange)
-Text exchange operator which can be combined with any motions.
-
-- `cx{motion}` ... cx is the operator
-- example: `cxiw` marks the word, pressing `.` will repeat the last command and exchange the word
+- Mark the area and press `Enter` => possible patterns are `<Space>`, `=`, `:`, `.`, `|`, `&`, and `,`
 
 
 ## [vim-endwise](https://github.com/tpope/vim-endwise)

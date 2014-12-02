@@ -321,6 +321,13 @@ Automatically opens popup menu for completion when entering characters.
 Add syntax support for css3.
 
 
+## [vim-exchange](https://github.com/tommcdo/vim-exchange)
+Text exchange operator which can be combined with any motions.
+
+- `cx{motion}` ... cx is the operator
+- example: `cxiw` marks the word, pressing `.` will repeat the last command and exchange the word
+
+
 ## [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs "vim-nerdtree-tabs")
 Opens one NERDTree which is the same in every tab.
 
