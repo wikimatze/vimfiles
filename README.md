@@ -288,6 +288,10 @@ Opens unite window for searching.
 - `:Unite help` ... will open the menue where you have autocompletion for all the tags
 
 
+## [vim-airline](https://github.com/bling/vim-airline)
+Beautiful status and tabline.
+
+
 ## [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax)
 Add CSS3 syntax support.
 

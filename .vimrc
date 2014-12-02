@@ -10,6 +10,7 @@ Plug 'Eckankar/vim-latex-folding', { 'for': 'tex' }
 Plug 'Raimondi/delimitMate'
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/unite.vim', 'ver.6.1'
+Plug 'bling/vim-airline'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'danchoi/ri.vim', 'v1.1'
 Plug 'dkprice/vim-easygrep'
@@ -66,6 +67,7 @@ call plug#end()
 
 " General settings {{{
 
+set laststatus=2
 set number                                  " display line numbers
 set modeline                                " check first lines of files for style information
 set noerrorbells                            " turn of nasty error sounds
