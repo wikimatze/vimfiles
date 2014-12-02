@@ -9,7 +9,7 @@ Plug 'AndrewRadev/switch.vim', 'v0.2.0'
 Plug 'Eckankar/vim-latex-folding', { 'for': 'tex' }
 Plug 'Raimondi/delimitMate'
 Plug 'Shougo/neosnippet.vim'
-Plug 'Shougo/unite.vim', 'ver.6.0'
+Plug 'Shougo/unite.vim', 'ver.6.1'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'danchoi/ri.vim', 'v1.1'
 Plug 'dkprice/vim-easygrep'
@@ -49,6 +49,7 @@ Plug 'wikimatze/tocdown', { 'tag': 'v.1.0.1', 'on': 'TocdownToggle' }
 Plug 'wikimatze/vim-github-theme'
 Plug 'xolox/vim-misc', '1.17.1'
 Plug 'xolox/vim-notes', '0.29'
+
 
 if has('lua')
   Plug 'Shougo/neocomplete.vim'
