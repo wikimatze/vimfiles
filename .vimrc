@@ -29,6 +29,7 @@ Plug 'othree/html5-syntax.vim', { 'for': ['html', 'md'] }
 Plug 'reedes/vim-lexical'
 Plug 'reedes/vim-litecorrect'
 Plug 'reedes/vim-wordy'
+Plug 'ryanoasis/vim-webdevicons', 'v0.1.3'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/syntastic', '3.5.0'
 Plug 'sheerun/vim-polyglot', 'v1.10.0'
@@ -283,7 +284,4 @@ let g:markdown_fenced_languages = ['ruby', 'vim', 'html', 'sh', 'erb=eruby']
 " Textwrapping for commit messages
 " Credit http://stackoverflow.com/questions/11023194/git-vim-automatically-wrap-long-commit-messages
 autocmd Filetype gitcommit set textwidth=60
-
-" vim_markdown_fenced code block => cooles greift aber nur, wenn man Tim Popes Syntaxhighlighting verwendet
-" check nerdtree_plugins: https://github.com/AndrewRadev/Vimfiles/tree/master/nerdtree_plugin
 
