@@ -232,12 +232,6 @@ Change quotes and all other delimiters.
     press `s` and then the quote (`"", (), {}`) you want to have and it wraps the string in this
 
 
-## [switch](https://github.com/AndrewRadev/switch.vim)
-Switch segments of text with predefined definitions - good for changing values in tests.
-
-- `:Switch` ... step on the predicate you want to change
-
-
 ## [tocdown](https://github.com/wikimatze/tocdown)
 Display the headlines of a markdown document in an extra window.
 

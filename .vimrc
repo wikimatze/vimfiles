@@ -5,7 +5,6 @@ let g:plug_threads = 40
 
 call plug#begin('~/.vim/plugged/')
 
-Plug 'AndrewRadev/switch.vim', 'v0.2.0'
 Plug 'Eckankar/vim-latex-folding', { 'for': 'tex' }
 Plug 'Raimondi/delimitMate'
 Plug 'Shougo/neosnippet.vim'

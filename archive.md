@@ -274,6 +274,10 @@ Save session and to open then later.
   let g:session_autoload = 'no' " disable asking to load the previous session</pre>
 
 
+## [switch](https://github.com/AndrewRadev/switch.vim)
+Switch segments of text with predefined definitions - good for changing values in tests.
+
+- `:Switch` ... step on the predicate you want to change
 ## [snipmate](https://github.com/msanders/snipmate.vim)
 Define your own snippets for different languages.
 
