@@ -314,6 +314,13 @@ My first light colorscheme for vim.
 Transparent editing of gpg encrypted files.
 
 
+## [vim-interestingwords](https://github.com/vasconcelloslf/vim-interestingwords)
+Highlight all occurences of the word under the cursor.
+
+- `,k` ... highlight/unhighlight the the word under cursor
+- `,K` ... clear all highlights
+
+
 ## [vim-latex-folding](https://github.com/Eckankar/vim-latex-folding)
 The only plugin you need when you are working with LaTeX.
 
