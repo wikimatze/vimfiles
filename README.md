@@ -135,24 +135,24 @@ Adds snippet support for Vim and makes use of neocomplete plugin.
 
 
 ## [NERDTree](https://github.com/scrooloose/nerdtree)
-Even Vim needs a file browser
+Perfect file browser for vim
 
 - `m` ... choose which action to perform (add, move, copy, delete)
   - add / at the end to create a new directory
 - `r` ... refresh the view
-- `o` ... opens the directory
+- `o|<Enter>` ... opens the directory (has toggle function)
 - `O` ... opens the node recursive from the parent node
-- `t` ... opens th file in a new tab
-- `p` ... jumps to the root tree
+- `x` ... closed the parent node, but leave the nodes above the node open (visual close)
+- `X` ... closed all nodes which are under the actual node (physical close) - `p` ... jumps to the root tree
 - `C` ... change the directory to the current mode
 - `U` ... go up to the directory
 - `p` ... go up to parent direcory
 - `P` ... go up to root directory
-- `T` ... opens the file in a new tab and the focus will stay in the current window
-- `x` ... closed the parent node, but leave the nodes above the node open (visual close)
-- `X` ... closed all nodes which are under the actual node (physical close)
+- `i` ... opens the file in a new split
+- `t` ... opens th file in a new tab
 - `R` ... update the view
-- press `?` in the NERDTree window
+- `?` ... opens help with all shortcuts
+- `cd` ... change directories
 - `:NERDTreeFind` ... open the current file in the NERDTree and expand the tree to this file location
 
 
