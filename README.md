@@ -374,7 +374,7 @@ Configuration files for editing and compiling Ruby - it even adds custom text-ob
 
 
 ## [vim-testkey](https://github.com/botandrose/vim-testkey)
-Press `Enter` to run tests.
+Press `Enter` to run tests. I've mapped the `Enter` into `<leader>t`.
 
 
 ## [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)

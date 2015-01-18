@@ -241,6 +241,7 @@ ru mappings/nerdtree.vim                   " F2 will call NERDTreeToogle
 ru mappings/pry.vim                        " ,pi to insert/delete 'require pry; binding pry'
 ru mappings/quickediting.vim               " ,ba; ,bm; ,br; ,ev to edit files of vim repos
 ru mappings/unite.vim
+ru mappings/vim_testkeys.vim               " <leader>t run the test
 ru mappings/vim_easy_align.vim             " press <CR> to start aligning
 
 " ,d to copy the file path to clipboard, very handy for file name completion for vimbook
