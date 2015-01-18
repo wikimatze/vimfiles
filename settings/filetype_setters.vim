@@ -1,4 +1,5 @@
 au! BufRead,BufNewFile *.erb set filetype=eruby
+au! BufRead,BufNewFile *.fish set filetype=go
 au! BufRead,BufNewFile *.go set filetype=go
 au! BufRead,BufNewFile *.haml set filetype=haml
 au! BufRead,BufNewFile *.hs set filetype=haskell
@@ -15,3 +16,5 @@ au! BufRead,BufNewFile *.tmux.conf set filetype=tmux
 au! BufRead,BufNewFile *.yml set filetype=yaml
 au! BufRead,BufNewFile *conf set filetype=conf
 
+" All plugin doc file should be the 'help' filetype
+au! BufRead,BufNewFile plugged/**/*.txt set filetype=help
