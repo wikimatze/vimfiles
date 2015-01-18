@@ -6,10 +6,10 @@ let g:plug_threads = 40
 call plug#begin('~/.vim/plugged/')
 
 Plug 'Eckankar/vim-latex-folding', { 'for': 'tex' }
-Plug 'Raimondi/delimitMate'
-Plug 'Shougo/neosnippet.vim'
+Plug 'Raimondi/delimitMate', '2.7'
+Plug 'Shougo/neosnippet.vim', 'ver.4.0'
 Plug 'Shougo/unite.vim', 'ver.6.1'
-Plug 'bling/vim-airline'
+Plug 'bling/vim-airline' , 'v0.7'
 Plug 'botandrose/vim-testkey'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'danchoi/ri.vim', 'v1.1'
