@@ -274,14 +274,23 @@ Save session and to open then later.
   let g:session_autoload = 'no' " disable asking to load the previous session</pre>
 
 
-## [switch](https://github.com/AndrewRadev/switch.vim)
-Switch segments of text with predefined definitions - good for changing values in tests.
-
-- `:Switch` ... step on the predicate you want to change
 ## [snipmate](https://github.com/msanders/snipmate.vim)
 Define your own snippets for different languages.
 
 
+## [supertab](https://github.com/ervandew/supertab)
+Word auto completion with pressing the tab key.
+
+- custom settings:
+<pre>
+  let g:SuperTabDefaultCompletionType = "<C-n>"
+  let g:SuperTabLongestHighlight      = 1</pre>
+
+
+## [switch](https://github.com/AndrewRadev/switch.vim)
+Switch segments of text with predefined definitions - good for changing values in tests.
+
+- `:Switch` ... step on the predicate you want to change
 ## [tabular](https://github.com/godlygeek/tabular):
 Auto indent files according to the pattern
   - `:Tabularize / {pattern}`
@@ -299,15 +308,6 @@ Display the structure of the code.
 <pre>
   let g:tagbar_compact = 1 " don't show the help in the tagbar
   nnoremap <silent> <F3> :TagbarToggle<CR></pre>
-
-
-## [supertab](https://github.com/ervandew/supertab)
-Word auto completion with pressing the tab key.
-
-- custom settings:
-<pre>
-  let g:SuperTabDefaultCompletionType = "<C-n>"
-  let g:SuperTabLongestHighlight      = 1</pre>
 
 
 ## [tmux.vim](https://github.com/zaiste/tmux.vim)
@@ -516,4 +516,5 @@ Better register management and saves up to 100 buffered lines.
 - `:YRClear` ... deletes the buffer
 - `:YRSearch` ... type in a word or regular expression to search the yankring after it
 - `j`, `k` for navigation and <Enter> chose your entry
+
 

@@ -261,6 +261,12 @@ Display the undograph for a file.
 A very good and flexible plugin for searching and displaying information.
 
 
+## [unite-help](https://github.com/tsukkee/unite-help)
+Opens unite window for searching.
+
+- `:Unite help` ... will open the menue where you have autocompletion for all the tags
+
+
 ## [unite-radio](https://github.com/klen/unite-radio.vim)
 Playing sounds in Vim.
 
@@ -276,14 +282,8 @@ Selecting and searching tags.
 - `:Unite tag/file` ... select files including tags
 
 
-## [unite-help](https://github.com/tsukkee/unite-help)
-Opens unite window for searching.
-
-- `:Unite help` ... will open the menue where you have autocompletion for all the tags
-
-
 ## [vim-airline](https://github.com/bling/vim-airline)
-Beautiful status and tabline.
+Beautiful status and tab line.
 
 
 ## [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax)
@@ -379,7 +379,6 @@ Press `Enter` to run tests.
 
 ## [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
 Switch seamlessly between tmux panes and Vim splits.
-
 
 - `<Ctrl-h>` ... Left
 - `<Ctrl-j>` ... Down
