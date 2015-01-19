@@ -23,15 +23,15 @@ Plug 'klen/unite-radio.vim'
 Plug 'koron/nyancat-vim'
 Plug 'mattn/calendar-vim', 'vim7ish'
 Plug 'matze/vim-move', 'v1.3'
-Plug 'mbbill/undotree'
+Plug 'mbbill/undotree', 'rel_5.0'
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'othree/html5-syntax.vim', { 'for': ['html', 'md'] }
 Plug 'reedes/vim-lexical'
-Plug 'reedes/vim-litecorrect'
-Plug 'reedes/vim-wordy'
+Plug 'reedes/vim-litecorrect', 'v1.0'
+Plug 'reedes/vim-wordy', 'v1.0'
 Plug 'ryanoasis/vim-webdevicons', 'v0.1.3'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'scrooloose/syntastic', '3.5.0'
+Plug 'scrooloose/syntastic', '3.6.0'
 Plug 'sheerun/vim-polyglot', 'v1.11.1'
 Plug 'sk1418/blockit'
 Plug 't9md/vim-choosewin', 'v1.3'
@@ -50,7 +50,7 @@ Plug 'wellle/tmux-complete.vim', 'v0.0.7'
 Plug 'wikimatze/tocdown', { 'tag': 'v.1.0.1', 'on': 'TocdownToggle' }
 Plug 'wikimatze/vim-github-theme'
 Plug 'xolox/vim-misc', '1.17.1'
-Plug 'xolox/vim-notes', '0.29'
+Plug 'xolox/vim-notes', '0.31'
 
 
 if has('lua')
