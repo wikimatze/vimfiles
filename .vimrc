@@ -8,7 +8,7 @@ call plug#begin('~/.vim/plugged/')
 Plug 'Eckankar/vim-latex-folding', { 'for': 'tex' }
 Plug 'Raimondi/delimitMate', '2.7'
 Plug 'Shougo/neosnippet.vim', 'ver.4.0'
-Plug 'Shougo/unite.vim', 'ver.6.1'
+Plug 'Shougo/unite.vim'
 Plug 'bling/vim-airline' , 'v0.7'
 Plug 'botandrose/vim-testkey', 'v0.3.2'
 Plug 'christoomey/vim-tmux-navigator', 'v1.0'
