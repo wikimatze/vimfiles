@@ -48,7 +48,6 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/AutoTag', '1.13'
 Plug 'wellle/tmux-complete.vim', 'v0.0.7'
 Plug 'wikimatze/tocdown', { 'tag': 'v.1.0.1', 'on': 'TocdownToggle' }
-Plug 'wikimatze/vim-github-theme'
 Plug 'xolox/vim-misc', '1.17.1'
 Plug 'xolox/vim-notes', '0.31'
 
