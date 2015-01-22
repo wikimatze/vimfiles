@@ -118,14 +118,16 @@ Folding by section headings.
 
 
 ## [vim-merginal](https://github.com/idanarye/vim-merginal)
-Git branch management
+Git branch management.
 
 - `:Merginal` ... opens the extra window
 - `C` ... checkout branch under the cursor
 - `A` ... add a branch from the current checked out branch under the cursor
 - `D` ... delete branch under the cursor
 - `ps` ... push the current master on the branch under the cursor
+- `pS` ... force git push
 - `rn` ... prompt to rename the branch under the cursor
+- `rb` ... starting rebase
 
 
 ## [neocomplete](https://github.com/Shougo/neocomplete.vim)
