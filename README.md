@@ -94,6 +94,10 @@ gitk direclty in Vim
 - `co` ... performs a checkout of the commit on the currently focused commit
 - `q` ... quits the window
 - `:gitv -S<string>` ... look for differences that introduce or remove an instance of <string>
+- custom mappings:
+  - `nmap <leader>gv :Gitv --all<cr>`
+  - `nmap <leader>gV :Gitv! --all<cr>`
+  - `vmap <leader>gV :Gitv! --all<cr>`
 
 
 ## [github-issues](https://github.com/jaxbot/github-issues.vim)
