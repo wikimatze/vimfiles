@@ -1,3 +1,3 @@
-nmap <leader>gv :Gitv --all<cr>
-nmap <leader>gV :Gitv! --all<cr>
-vmap <leader>gV :Gitv! --all<cr>
+nmap <leader>gv :Gitv --all<CR>
+nmap <leader>gV :Gitv! --all<CR>
+vmap <leader>gV :Gitv! --all<CR>
