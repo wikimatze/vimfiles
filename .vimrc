@@ -221,6 +221,30 @@ endf
 no <silent> <F5> $:call InsertSpaceDate() <CR>
 ru functions/insert_spacedate.vim
 " }}}
+" Close all buffers except the current one :Bdeleteonly {{{
+" Found solution under
+" http://vim.1045645.n5.nabble.com/Close-all-buffers-except-the-one-you-re-in-td1183357.html
+function! Buflist()
+    redir => bufnames
+    silent ls
+    redir END
+    let list = []
+    for i in split(bufnames, "\n")
+        let buf = split(i, '"' )
+        call add(list, buf[-2])
+    endfor
+    return list
+endfunction
+
+function! Bdeleteonly()
+    let list = filter(Buflist(), 'v:val != bufname("%")')
+    for buffer in list
+        exec "bdelete ".buffer
+    endfor
+endfunction
+
+command! BdelOnly :silent call Bdeleteonly()
+" }}}
 " }}}
 " Plugin settings {{{
 
