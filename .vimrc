@@ -26,7 +26,7 @@ Plug 'matze/vim-move', 'v1.3'
 Plug 'mbbill/undotree', 'rel_5.0'
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'othree/html5-syntax.vim', { 'for': ['html', 'md'] }
-Plug 'reedes/vim-lexical'
+Plug 'reedes/vim-lexical', 'v1.0'
 Plug 'reedes/vim-litecorrect', 'v1.0'
 Plug 'reedes/vim-wordy', 'v1.0'
 Plug 'ryanoasis/vim-webdevicons', 'v0.1.3'
