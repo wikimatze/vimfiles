@@ -19,14 +19,14 @@ Whenever you save a file, it deletes all of its entries and invokes ctags in app
 
 
 ## [blockit](https://github.com/sk1418/blockit)
-Wrap text in block
+Wrap text in block.
 
 - `'<,'>Block` ... works even in visual mode
 - `..,..Block` ...  define a range where you want to have the block
 
 
 ## [calendar.vim](https://github.com/mattn/calendar-vim)
-Opens a split with a calendar inside
+Opens a split with a calendar inside.
 
 - `:Calendar` ... opens a vertical split
 - `<arrow-keys>` ... move around in the calendar
@@ -86,7 +86,7 @@ Git wrapper.
 
 
 ## [gitv](https://github.com/gregsexton/gitv)
-gitk direclty in Vim
+A gitk/tig like git browser.
 
 - `:gitv` ... opens only gitv
 - `:gitv!` ... opens only commits which affects the current file
