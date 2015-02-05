@@ -296,12 +296,6 @@ Beautiful status and tab line.
 Add CSS3 syntax support.
 
 
-## [vim-choosewin](https://github.com/t9md/vim-choosewin)
-Cycle around in Vim panes the tmux style.
-
-- `-` ... will call the choose-pane dialog
-
-
 ## [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 Auto indent files according to the pattern
 

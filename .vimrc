@@ -34,7 +34,6 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/syntastic', '3.6.0'
 Plug 'sheerun/vim-polyglot', 'v1.11.1'
 Plug 'sk1418/blockit', 'v1.0.0'
-Plug 't9md/vim-choosewin', 'v1.5'
 Plug 'tomtom/tcomment_vim', '3.04'
 Plug 'tpope/vim-endwise', 'v1.2'
 Plug 'tpope/vim-fugitive', 'v2.2'

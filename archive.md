@@ -321,6 +321,37 @@ Automatically opens popup menu for completion when entering characters.
 - `:AcpDisable` ... disable auto-popup
 
 
+## [vim-choosewin](https://github.com/t9md/vim-choosewin)
+Cycle around in Vim panes the tmux style.
+
+- `-` ... will call the choose-pane dialog
+- custom settings:
+<pre>
+  " invoke with '-'
+  nmap - <Plug>(choosewin)
+
+  " Use overlay feature
+  let g:choosewin_overlay_enable = 1
+
+  " Workaround for overlay font broken on mutibyte buffer.
+  let g:choosewin_overlay_clear_multibyte = 1
+
+  " tmux like overlay color
+  let g:choosewin_color_overlay = {
+  \ 'gui': ['DodgerBlue3', 'DodgerBlue3' ],
+  \ 'cterm': [ 25, 25 ]
+  \ }
+  let g:choosewin_color_overlay_current = {
+  \ 'gui': ['firebrick1', 'firebrick1' ],
+  \ 'cterm': [ 124, 124 ]
+  \ }
+
+  " No blinking when window was chose
+  let g:choosewin_blink_on_land = 0
+  " Don't display char in statusline
+  let g:choosewin_statusline_replace = 0</pre>
+
+
 ## [vim-css3 syntax](https://github.com/hail2u/vim-css3-syntax)
 Add syntax support for css3.
 
