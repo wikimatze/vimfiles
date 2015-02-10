@@ -59,7 +59,7 @@ if has('python')
   Plug 'jaxbot/github-issues.vim'
 endif
 
-Plug 'Shougo/vimproc.vim'
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 
 call plug#end()
 
