@@ -363,6 +363,18 @@ Text exchange operator which can be combined with any motions.
 - example: `cxiw` marks the word, pressing `.` will repeat the last command and exchange the word
 
 
+## [vim-interestingwords](https://github.com/vasconcelloslf/vim-interestingwords)
+Highlight all occurences of the word under the cursor. hello
+hello
+
+- `,k` ... highlight/unhighlight the the word under cursor
+- `,K` ... clear all highlights
+- settings:
+<pre>let g:interestingWordsTermColors = ['154', '121', '211', '137', '214', '222']
+let g:interestingWordsRandomiseColors = 1</pre>
+
+
+
 ## [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs "vim-nerdtree-tabs")
 Opens one NERDTree which is the same in every tab.
 
