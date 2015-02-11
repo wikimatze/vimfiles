@@ -108,6 +108,10 @@ Fuzzy matching to find files recursively in the current directory.
 - `<C-k>` - opens in a vertical-split window.
 
 
+## [IndexSearch](https://github.com/vim-scripts/IndexedSearch)
+Redefines the search `(/,?)` and creates custom messages about how many hits there are.
+
+
 ## [git-gutter](https://github.com/akiomik/git-gutter-vim)
 Shows git diff in Vim's gutter.
 
@@ -156,10 +160,8 @@ upload files directly as gists to GitHub.
 Displays various markups (markdown, textile, rdoc, asciidoc) with one keystroke in the browser.
 
 
-## [IndexSearch](https://github.com/vim-scripts/IndexedSearch)
-Redefines the search `(/,?)` and creates custom messages about how many hits there are.
-
-
+## [html5-syntax](https://github.com/othree/html5-syntax.vim)
+HTML5 elements syntax highlighing.
 ## [json](https://github.com/vim-scripts/JSON.vim)
 JSON detection and syntax-highlighting.
 
@@ -372,7 +374,6 @@ hello
 - settings:
 <pre>let g:interestingWordsTermColors = ['154', '121', '211', '137', '214', '222']
 let g:interestingWordsRandomiseColors = 1</pre>
-
 
 
 ## [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs "vim-nerdtree-tabs")

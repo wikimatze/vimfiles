@@ -107,12 +107,6 @@ GitHub issue lookup support, press # to enable omnicompletion
 - `:Giadd` ... add an issue to github
 
 
-## [html5-syntax](https://github.com/othree/html5-syntax.vim)
-HTML5 elements syntax highlighing.
-
-
-
-
 ## [markdown-folding](https://github.com/nelstrom/vim-markdown-folding)
 Folding by section headings.
 
