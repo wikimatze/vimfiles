@@ -3,6 +3,10 @@
 git clone https://github.com/matthias-guenther/vimfiles.git ~/.vim
 ln -sf ~/.vim/.vimrc ~/.vimrc
 
+echo "Grab mthes10 thesaurus ..."
+cd /tmp && wget http://www.gutenberg.org/dirs/etext02/mthes10.zip -O mthesaur.zip && unzip mthesaur.zip && mv mthesaur.txt ~/.vim/thesaurus/
+echo "Done!"
+
 echo "To have python and ruby installed, run `sudo apt-get build-dep vim`"
 echo "Start vim and run :PlugInstall"
 
