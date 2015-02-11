@@ -5,7 +5,7 @@ let g:plug_threads = 40
 
 call plug#begin('~/.vim/plugged/')
 
-Plug 'Eckankar/vim-latex-folding', { 'for': 'tex' }
+Plug 'Eckankar/vim-latex-folding'
 Plug 'Raimondi/delimitMate', '2.7'
 Plug 'Shougo/neosnippet.vim', 'ver.4.0'
 Plug 'Shougo/unite.vim'
@@ -16,7 +16,6 @@ Plug 'christoomey/vim-tmux-navigator', 'v1.0'
 Plug 'danchoi/ri.vim', 'v1.1'
 Plug 'dkprice/vim-easygrep', 'unstable'
 Plug 'gregsexton/gitv'
-Plug 'hail2u/vim-css3-syntax', 'v0.13.0'
 Plug 'idanarye/vim-merginal', '1.4.0'
 Plug 'jamessan/vim-gnupg'
 Plug 'junegunn/vim-easy-align', '2.9.6'

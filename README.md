@@ -286,10 +286,6 @@ Selecting and searching tags.
 Beautiful status and tab line.
 
 
-## [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax)
-Add CSS3 syntax support.
-
-
 ## [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 Auto indent files according to the pattern
 
