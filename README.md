@@ -198,15 +198,6 @@ Browse ri documentation of Ruby files offline.
   - `,G` ... brings you to the README of the Gem if it exists
 
 
-## [speedating](https://github.com/tpope/vim-speeddating)
-Fast way to increment all kind of numbers.
-
-- `<C-a>` ... ++ number
-- `<C-x>` ... -- number
-- `:SpeedDatingFormat` ... shows the regular expression of possible formations
-- `:SpeedDatingFormat {}` ... here you can specify the format which can be used to be recognized by the program
-
-
 ## [syntastic](https://github.com/scrooloose/syntastic)
 Performs syntax check on various languages when saving.
 

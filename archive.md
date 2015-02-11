@@ -280,6 +280,13 @@ Save session and to open then later.
 Define your own snippets for different languages.
 
 
+## [speedating](https://github.com/tpope/vim-speeddating)
+Fast way to increment all kind of numbers.
+
+- `<C-a>` ... ++ number
+- `<C-x>` ... -- number
+- `:SpeedDatingFormat` ... shows the regular expression of possible formations
+- `:SpeedDatingFormat {}` ... here you can specify the format which can be used to be recognized by the program
 ## [supertab](https://github.com/ervandew/supertab)
 Word auto completion with pressing the tab key.
 
