@@ -321,6 +321,11 @@ The only plugin you need when you are working with LaTeX.
 ## [vim-lexical](https://github.com/reedes/vim-lexical)
 Custom dictionary, thesaurus, and spellchecking options for files or when calling a command.
 
+- `<C-x> <C-k>` ... opens the dictionary
+- `<C-x> <C-t>` ... opens the thesaurus
+- `<C-n>|<C-p>` ... navigate to the next or previous matching
+- custom commands: `:BookGerman|:BookEnglish` ... will load my customized settings
+
 
 ## [vim-litecorrect](https://github.com/reedes/vim-litecorrect)
 Lightweight auto correction for 300 words.

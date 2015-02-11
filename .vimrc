@@ -9,6 +9,7 @@ Plug 'Eckankar/vim-latex-folding', { 'for': 'tex' }
 Plug 'Raimondi/delimitMate', '2.7'
 Plug 'Shougo/neosnippet.vim', 'ver.4.0'
 Plug 'Shougo/unite.vim'
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'bling/vim-airline' , 'v0.7'
 Plug 'botandrose/vim-testkey', 'v0.3.2'
 Plug 'christoomey/vim-tmux-navigator', 'v1.0'
@@ -58,7 +59,6 @@ if has('python')
   Plug 'jaxbot/github-issues.vim'
 endif
 
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 
 call plug#end()
 
