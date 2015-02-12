@@ -13,7 +13,7 @@ Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'bling/vim-airline' , 'v0.7'
 Plug 'botandrose/vim-testkey', 'v0.3.2'
 Plug 'christoomey/vim-tmux-navigator', 'v1.0'
-Plug 'danchoi/ri.vim', 'v1.1'
+Plug 'danchoi/ri.vim', { 'tag': 'v1.1', 'for': 'ruby' }
 Plug 'dkprice/vim-easygrep', 'unstable'
 Plug 'gregsexton/gitv'
 Plug 'idanarye/vim-merginal', '1.4.0'
@@ -40,7 +40,7 @@ Plug 'tpope/vim-surround'
 Plug 'tsukkee/unite-help', '0.0.3'
 Plug 'tsukkee/unite-tag', '0.2.0'
 Plug 'tyru/open-browser.vim'
-Plug 'vim-ruby/vim-ruby'
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'vim-scripts/AutoTag', '1.13'
 Plug 'wellle/tmux-complete.vim', 'v0.0.7'
 Plug 'wikimatze/tocdown', { 'tag': 'v.1.0.1', 'on': 'TocdownToggle' }
