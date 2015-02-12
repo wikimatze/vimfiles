@@ -191,7 +191,7 @@ Open the URI with `gx` (my custom mapping) in your default browser.
 Browse ri documentation of Ruby files offline.
 
 - `,r|,R` ... opens start/autocomplete window with horizontal|vertical split
-- `K|,K` ... opens the search/autocomplete window and prefills it with the keyword under the cursor
+- `,K|K` ... opens the search/autocomplete window and prefills it with the keyword under the cursor
 - inside documentation window
   - `,,r` ... class/module/autocompletion window
   - `-` ... goes up from a method page into the parent class/module
@@ -287,7 +287,7 @@ Auto indent files according to the pattern
 Automatically adds keywords like *end* to special constructs for all kinds of languages.
 
 
-## [vim github theme](https://github.com/wikimatze/vim-github-theme)
+## [vim-github-theme](https://github.com/wikimatze/vim-github-theme)
 My first light colorscheme for vim.
 
 

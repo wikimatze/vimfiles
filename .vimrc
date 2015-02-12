@@ -13,7 +13,7 @@ Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'bling/vim-airline' , 'v0.7'
 Plug 'botandrose/vim-testkey', 'v0.3.2'
 Plug 'christoomey/vim-tmux-navigator', 'v1.0'
-Plug 'danchoi/ri.vim', { 'tag': 'v1.1', 'for': 'ruby' }
+Plug 'danchoi/ri.vim', { 'tag': 'v1.2', 'for': 'ruby' }
 Plug 'dkprice/vim-easygrep', 'unstable'
 Plug 'gregsexton/gitv'
 Plug 'idanarye/vim-merginal', '1.4.0'
