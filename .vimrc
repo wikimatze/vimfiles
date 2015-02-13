@@ -25,7 +25,7 @@ Plug 'mattn/calendar-vim', 'vim7ish'
 Plug 'matze/vim-move', 'v1.3'
 Plug 'mbbill/undotree', 'rel_5.0'
 Plug 'nelstrom/vim-markdown-folding'
-Plug 'reedes/vim-lexical', 'v1.0'
+Plug 'reedes/vim-lexical', 'v1.1'
 Plug 'reedes/vim-litecorrect', 'v1.0'
 Plug 'reedes/vim-wordy', 'v1.0'
 Plug 'ryanoasis/vim-webdevicons', 'v0.1.3'
@@ -46,7 +46,6 @@ Plug 'wellle/tmux-complete.vim', 'v0.0.7'
 Plug 'wikimatze/tocdown', { 'tag': 'v.1.0.1', 'on': 'TocdownToggle' }
 Plug 'xolox/vim-misc', '1.17.1'
 Plug 'xolox/vim-notes', '0.31'
-
 
 if has('lua')
   Plug 'Shougo/neocomplete.vim'
