@@ -3,6 +3,12 @@ set nocompatible " Be iMproved
 let g:neosnippet#expand_word_boundary = 1
 let g:plug_threads = 40
 
+" Grab plug.vim if it does not exist
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+
 call plug#begin('~/.vim/plugged/')
 
 Plug 'Eckankar/vim-latex-folding'
