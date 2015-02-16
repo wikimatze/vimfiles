@@ -15,7 +15,7 @@ Plug 'Eckankar/vim-latex-folding'
 Plug 'Raimondi/delimitMate', '2.7'
 Plug 'Shougo/neosnippet.vim', 'ver.4.0'
 Plug 'Shougo/unite.vim'
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+Plug 'Shougo/vimproc.vim', { 'tag': 'ver.8.0', 'do': 'make' }
 Plug 'bling/vim-airline' , 'v0.7'
 Plug 'botandrose/vim-testkey', 'v0.3.2'
 Plug 'christoomey/vim-tmux-navigator', 'v1.0'
