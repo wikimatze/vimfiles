@@ -53,6 +53,9 @@ Plug 'wikimatze/tocdown', { 'tag': 'v.1.0.1', 'on': 'TocdownToggle' }
 Plug 'xolox/vim-misc', '1.17.1'
 Plug 'xolox/vim-notes', '0.31'
 
+Plug 'junegunn/fzf', { 'tag': '0.9.3', 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+
+
 if has('lua')
   Plug 'Shougo/neocomplete.vim'
 endif
@@ -263,7 +266,8 @@ ru mappings/moving_wrapped_lines.vim       " Use hjkl in wrapped-lined files
 ru mappings/nerdtree.vim                   " F2 will call NERDTreeToogle
 ru mappings/pry.vim                        " ,pi to insert/delete 'require pry; binding pry'
 ru mappings/quickediting.vim               " ,ba; ,bm; ,br; ,ev to edit files of vim repos
-ru mappings/unite.vim
+ru mappings/unite.vim                      " <leader>y search the yank history
+ru mappings/fzf.vim                        " <C-p> start file search
 ru mappings/vim_testkeys.vim               " <leader>t run the test
 ru mappings/vim_easy_align.vim             " press <CR> to start aligning
 

@@ -44,6 +44,10 @@ Makes search/replacing in your project a lot easier.
 Semantic autoclose brackets.
 
 
+## [fzf](https://github.com/junegunn/fzf)
+Fuzzy finder for your shell as a Vim plugin
+
+
 ## [fugitive](http://github.com/tpope/vim-fugitive)
 Git wrapper.
 
@@ -109,19 +113,6 @@ GitHub issue lookup support, press # to enable omnicompletion
 
 ## [markdown-folding](https://github.com/nelstrom/vim-markdown-folding)
 Folding by section headings.
-
-
-## [vim-merginal](https://github.com/idanarye/vim-merginal)
-Git branch management.
-
-- `:Merginal` ... opens the extra window
-- `C` ... checkout branch under the cursor
-- `A` ... add a branch from the current checked out branch under the cursor
-- `D` ... delete branch under the cursor
-- `ps` ... push the current master on the branch under the cursor
-- `pS` ... force git push
-- `rn` ... prompt to rename the branch under the cursor
-- `rb` ... starting rebase
 
 
 ## [neocomplete](https://github.com/Shougo/neocomplete.vim)
@@ -314,6 +305,19 @@ Lightweight auto correction for 300 words.
     Im -> I'm
     shouldnt -> shouldn't
     thats -> that's
+
+
+## [vim-merginal](https://github.com/idanarye/vim-merginal)
+Git branch management.
+
+- `:Merginal` ... opens the extra window
+- `C` ... checkout branch under the cursor
+- `A` ... add a branch from the current checked out branch under the cursor
+- `D` ... delete branch under the cursor
+- `ps` ... push the current master on the branch under the cursor
+- `pS` ... force git push
+- `rn` ... prompt to rename the branch under the cursor
+- `rb` ... starting rebase
 
 
 ## [vim-misc](https://github.com/xolox/vim-misc)
