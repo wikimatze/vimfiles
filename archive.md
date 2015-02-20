@@ -319,6 +319,12 @@ Display the structure of the code.
   nnoremap <silent> <F3> :TagbarToggle<CR></pre>
 
 
+## [unite-help](https://github.com/tsukkee/unite-help)
+Opens unite window for searching.
+
+- `:Unite help` ... will open the menue where you have autocompletion for all the tags
+
+
 ## [tmux.vim](https://github.com/zaiste/tmux.vim)
 Syntax detection for tmux files and highlighting.
 

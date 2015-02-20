@@ -243,12 +243,6 @@ Display the undograph for a file.
 A very good and flexible plugin for searching and displaying information.
 
 
-## [unite-help](https://github.com/tsukkee/unite-help)
-Opens unite window for searching.
-
-- `:Unite help` ... will open the menue where you have autocompletion for all the tags
-
-
 ## [unite-radio](https://github.com/klen/unite-radio.vim)
 Playing sounds in Vim.
 

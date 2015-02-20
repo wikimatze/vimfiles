@@ -43,7 +43,6 @@ Plug 'tomtom/tcomment_vim', '3.04'
 Plug 'tpope/vim-endwise', 'v1.2'
 Plug 'tpope/vim-fugitive', 'v2.2'
 Plug 'tpope/vim-surround'
-Plug 'tsukkee/unite-help', '0.0.3'
 Plug 'tsukkee/unite-tag', '0.2.0'
 Plug 'tyru/open-browser.vim'
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
