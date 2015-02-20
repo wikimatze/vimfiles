@@ -51,6 +51,7 @@ Plug 'wikimatze/tocdown', { 'tag': 'v.1.0.1', 'on': 'TocdownToggle' }
 Plug 'xolox/vim-misc', '1.17.1'
 Plug 'xolox/vim-notes', '0.31'
 
+Plug 'jez/vim-superman'
 Plug 'junegunn/fzf', { 'tag': '0.9.3', 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 
 

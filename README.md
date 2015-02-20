@@ -343,6 +343,10 @@ Configuration files for editing and compiling Ruby - it even adds custom text-ob
   - `[[` ... move to the beginning of the **previous** *module* or *class* definition
 
 
+## [vim-superman](https://github.com/jez/vim-superman)
+Read man pages in Vim. Press `vman <Tab>` to get it working.
+
+
 ## [vim-testkey](https://github.com/botandrose/vim-testkey)
 Press `Enter` to run tests. I've mapped the `Enter` into `<leader>t`.
 
