@@ -43,7 +43,6 @@ Plug 'tomtom/tcomment_vim', '3.04'
 Plug 'tpope/vim-endwise', 'v1.2'
 Plug 'tpope/vim-fugitive', 'v2.2'
 Plug 'tpope/vim-surround'
-Plug 'tsukkee/unite-tag', '0.2.0'
 Plug 'tyru/open-browser.vim'
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'vim-scripts/AutoTag', '1.13'
@@ -256,19 +255,19 @@ ru macros/matchit.vim " enable better matching for % command
 " }}}
 " Mappings {{{
 
-ru mappings/commandline.vim                " using bash commands in the vim commandline
-ru mappings/copy_paste_from_clipboard.vim  " <C-c> for copy, <leader><C-v> for paste
-ru mappings/esc_with_jk.vim                " emulare ESC with jk
-ru mappings/gitv.vim                       " ,gv and ,gV for stating the browser
-ru mappings/keep_cursor_joining_lines.vim  " indent joining lines the right way
-ru mappings/moving_wrapped_lines.vim       " Use hjkl in wrapped-lined files
-ru mappings/nerdtree.vim                   " F2 will call NERDTreeToogle
-ru mappings/pry.vim                        " ,pi to insert/delete 'require pry; binding pry'
-ru mappings/quickediting.vim               " ,ba; ,bm; ,br; ,ev to edit files of vim repos
-ru mappings/unite.vim                      " <leader>y search the yank history
-ru mappings/fzf.vim                        " <C-p> start file search
-ru mappings/vim_testkeys.vim               " <leader>t run the test
-ru mappings/vim_easy_align.vim             " press <CR> to start aligning
+ru mappings/commandline.vim               " using bash commands in the vim commandline
+ru mappings/copy_paste_from_clipboard.vim " <C-c> for copy, <leader><C-v> for paste
+ru mappings/esc_with_jk.vim               " emulare ESC with jk
+ru mappings/fzf.vim                       " <C-p> start file search
+ru mappings/gitv.vim                      " ,gv and ,gV for stating the browser
+ru mappings/keep_cursor_joining_lines.vim " indent joining lines the right way
+ru mappings/moving_wrapped_lines.vim      " Use hjkl in wrapped-lined files
+ru mappings/nerdtree.vim                  " F2 will call NERDTreeToogle
+ru mappings/pry.vim                       " ,pi to insert/delete 'require pry; binding pry'
+ru mappings/quickediting.vim              " ,ba; ,bm; ,br; ,ev to edit files of vim repos
+ru mappings/unite.vim                     " <leader>y search the yank history
+ru mappings/vim_easy_align.vim            " press <CR> to start aligning
+ru mappings/vim_testkeys.vim              " <leader>t run the test
 
 " ,d to copy the file path to clipboard, very handy for file name completion for vimbook
 nmap <leader>d :call system("xclip -i -selection clipboard", expand("%"))<CR>

@@ -325,6 +325,13 @@ Opens unite window for searching.
 - `:Unite help` ... will open the menue where you have autocompletion for all the tags
 
 
+## [unite-tag](https://github.com/tsukkee/unite-tag)
+Selecting and searching tags.
+
+- `:Unite tag` ... search name for all tags
+- `:Unite tag/file` ... select files including tags
+
+
 ## [tmux.vim](https://github.com/zaiste/tmux.vim)
 Syntax detection for tmux files and highlighting.
 

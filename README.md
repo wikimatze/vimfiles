@@ -251,13 +251,6 @@ Playing sounds in Vim.
 - `:MPlay <url>` ... play the specified url
 
 
-## [unite-tag](https://github.com/tsukkee/unite-tag)
-Selecting and searching tags.
-
-- `:Unite tag` ... search name for all tags
-- `:Unite tag/file` ... select files including tags
-
-
 ## [vim-airline](https://github.com/bling/vim-airline)
 Beautiful status and tab line.
 
