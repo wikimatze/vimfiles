@@ -12,44 +12,44 @@ endif
 call plug#begin('~/.vim/plugged/')
 
 Plug 'Eckankar/vim-latex-folding'
-Plug 'Raimondi/delimitMate', '2.7'
-Plug 'Shougo/neosnippet.vim', 'ver.4.0'
+Plug 'Raimondi/delimitMate', { 'tag': '2.7' }
+Plug 'Shougo/neosnippet.vim', { 'tag': 'ver.4.0' }
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimproc.vim', { 'tag': 'ver.8.0', 'do': 'make' }
-Plug 'bling/vim-airline' , 'v0.7'
-Plug 'botandrose/vim-testkey', 'v0.3.2'
-Plug 'christoomey/vim-tmux-navigator', 'v1.0'
+Plug 'bling/vim-airline' , { 'tag': 'v0.7' }
+Plug 'botandrose/vim-testkey', { 'tag': 'v0.3.2' }
+Plug 'christoomey/vim-tmux-navigator', { 'tag': 'v1.0' }
 Plug 'danchoi/ri.vim', { 'tag': 'v1.2', 'for': 'ruby' }
-Plug 'dkprice/vim-easygrep', 'unstable'
+Plug 'dkprice/vim-easygrep', { 'branch': 'unstable'}
 Plug 'gregsexton/gitv'
-Plug 'idanarye/vim-merginal', '1.4.0'
+Plug 'idanarye/vim-merginal', { 'tag': '1.4.0' }
 Plug 'jamessan/vim-gnupg'
-Plug 'junegunn/vim-easy-align', '2.9.6'
+Plug 'junegunn/vim-easy-align', { 'tag': '2.9.6'}
 Plug 'klen/unite-radio.vim'
 Plug 'koron/nyancat-vim'
-Plug 'mattn/calendar-vim', 'vim7ish'
-Plug 'matze/vim-move', 'v1.3'
-Plug 'mbbill/undotree', 'rel_5.0'
+Plug 'mattn/calendar-vim',{ 'tag': 'vim7ish' }
+Plug 'matze/vim-move', { 'tag': 'v1.3'}
+Plug 'mbbill/undotree',{ 'tag':  'rel_5.0' }
 Plug 'nelstrom/vim-markdown-folding'
-Plug 'reedes/vim-lexical', 'v1.1'
-Plug 'reedes/vim-litecorrect', 'v1.0'
-Plug 'reedes/vim-wordy', 'v1.0'
-Plug 'ryanoasis/vim-webdevicons', 'v0.1.3'
+Plug 'reedes/vim-lexical', { 'tag': 'v1.1' }
+Plug 'reedes/vim-litecorrect', { 'tag': 'v1.0' }
+Plug 'reedes/vim-wordy', { 'tag': 'v1.0' }
+Plug 'ryanoasis/vim-webdevicons', { 'tag': 'v0.1.3'}
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'scrooloose/syntastic', '3.6.0'
-Plug 'sheerun/vim-polyglot', 'v1.11.1'
-Plug 'sk1418/blockit', 'v1.0.0'
-Plug 'tomtom/tcomment_vim', '3.04'
-Plug 'tpope/vim-endwise', 'v1.2'
-Plug 'tpope/vim-fugitive', 'v2.2'
+Plug 'scrooloose/syntastic', { 'tag': '3.6.0' }
+Plug 'sheerun/vim-polyglot', { 'tag': 'v1.11.1' }
+Plug 'sk1418/blockit', { 'tag': 'v1.0.0' }
+Plug 'tomtom/tcomment_vim', { 'tag': '3.04' }
+Plug 'tpope/vim-endwise', { 'tag': 'v1.2' }
+Plug 'tpope/vim-fugitive', { 'tag': 'v2.2' }
 Plug 'tpope/vim-surround'
 Plug 'tyru/open-browser.vim'
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
-Plug 'vim-scripts/AutoTag', '1.13'
+Plug 'vim-scripts/AutoTag', { 'tag': '1.13' }
 Plug 'wellle/tmux-complete.vim', 'v0.0.7'
 Plug 'wikimatze/tocdown', { 'tag': 'v.1.0.1', 'on': 'TocdownToggle' }
-Plug 'xolox/vim-misc', '1.17.1'
-Plug 'xolox/vim-notes', '0.31'
+Plug 'xolox/vim-misc', { 'tag': '1.17.1' }
+Plug 'xolox/vim-notes', { 'tag': '0.31' }
 
 Plug 'jez/vim-superman'
 Plug 'junegunn/fzf', { 'tag': '0.9.3', 'dir': '~/.fzf', 'do': 'yes \| ./install' }
