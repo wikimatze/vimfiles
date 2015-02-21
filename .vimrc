@@ -34,7 +34,7 @@ Plug 'nelstrom/vim-markdown-folding'
 Plug 'reedes/vim-lexical', { 'tag': 'v1.1' }
 Plug 'reedes/vim-litecorrect', { 'tag': 'v1.0' }
 Plug 'reedes/vim-wordy', { 'tag': 'v1.0' }
-Plug 'ryanoasis/vim-webdevicons', { 'tag': 'v0.1.3'}
+Plug 'ryanoasis/vim-webdevicons', { 'tag': 'v0.3.3'}
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/syntastic', { 'tag': '3.6.0' }
 Plug 'sheerun/vim-polyglot', { 'tag': 'v1.11.1' }
