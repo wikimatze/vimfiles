@@ -24,6 +24,7 @@ Plug 'dkprice/vim-easygrep'
 Plug 'gregsexton/gitv'
 Plug 'idanarye/vim-merginal', { 'tag': '1.4.0' }
 Plug 'jamessan/vim-gnupg'
+Plug 'jez/vim-superman'
 Plug 'junegunn/vim-easy-align', { 'tag': '2.9.6'}
 Plug 'klen/unite-radio.vim'
 Plug 'koron/nyancat-vim'
@@ -41,6 +42,7 @@ Plug 'sheerun/vim-polyglot', { 'tag': 'v1.11.1' }
 Plug 'sk1418/blockit', { 'tag': 'v1.0.0' }
 Plug 'tomtom/tcomment_vim', { 'tag': '3.04' }
 Plug 'tpope/vim-endwise', { 'tag': 'v1.2' }
+Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive', { 'tag': 'v2.2' }
 Plug 'tpope/vim-surround'
 Plug 'tyru/open-browser.vim'
@@ -51,7 +53,6 @@ Plug 'wikimatze/tocdown', { 'tag': 'v.1.0.1', 'on': 'TocdownToggle' }
 Plug 'xolox/vim-misc', { 'tag': '1.17.1' }
 Plug 'xolox/vim-notes', { 'tag': '0.31' }
 
-Plug 'jez/vim-superman'
 Plug 'junegunn/fzf', { 'tag': '0.9.3', 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 
 

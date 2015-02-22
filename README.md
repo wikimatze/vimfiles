@@ -265,6 +265,12 @@ Auto indent files according to the pattern
 Automatically adds keywords like *end* to special constructs for all kinds of languages.
 
 
+## [vim-eunuch](https://github.com/tpope/vim-eunuch)
+Useful Unix helper.
+
+- `:SudoWrite` ... good when you want to save root files
+
+
 ## [vim-github-theme](https://github.com/wikimatze/vim-github-theme)
 My first light colorscheme for vim.
 
