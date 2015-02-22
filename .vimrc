@@ -44,7 +44,7 @@ Plug 'tomtom/tcomment_vim', { 'tag': '3.04' }
 Plug 'tpope/vim-endwise', { 'tag': 'v1.2' }
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive', { 'tag': 'v2.2' }
-Plug 'tpope/vim-surround'
+Plug 'tpope/vim-surround', { 'tag': 'v2.1' }
 Plug 'tyru/open-browser.vim'
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'vim-scripts/AutoTag', { 'tag': '1.13' }
