@@ -21,11 +21,11 @@ Plug 'botandrose/vim-testkey', { 'tag': 'v0.3.2' }
 Plug 'christoomey/vim-tmux-navigator', { 'tag': 'v1.0' }
 Plug 'danchoi/ri.vim', { 'tag': 'v1.2', 'for': 'ruby' }
 Plug 'dkprice/vim-easygrep'
-Plug 'gregsexton/gitv'
+Plug 'gregsexton/gitv', { 'tag': 'v1.3' }
 Plug 'idanarye/vim-merginal', { 'tag': '1.4.0' }
 Plug 'jamessan/vim-gnupg'
 Plug 'jez/vim-superman'
-Plug 'junegunn/vim-easy-align', { 'tag': '2.9.6'}
+Plug 'junegunn/vim-easy-align', { 'tag': '2.9.6' }
 Plug 'klen/unite-radio.vim'
 Plug 'koron/nyancat-vim'
 Plug 'mattn/calendar-vim',{ 'tag': 'vim7ish' }
