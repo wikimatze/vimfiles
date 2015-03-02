@@ -40,7 +40,7 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/syntastic', { 'tag': '3.6.0' }
 Plug 'sheerun/vim-polyglot', { 'tag': 'v1.11.1' }
 Plug 'sk1418/blockit', { 'tag': 'v1.0.0' }
-Plug 'tomtom/tcomment_vim', { 'tag': '3.04' }
+Plug 'tomtom/tcomment_vim', { 'tag': '3.05' }
 Plug 'tpope/vim-endwise', { 'tag': 'v1.2' }
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive', { 'tag': 'v2.2' }
