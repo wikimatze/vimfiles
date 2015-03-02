@@ -45,7 +45,7 @@ Plug 'tpope/vim-endwise', { 'tag': 'v1.2' }
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive', { 'tag': 'v2.2' }
 Plug 'tpope/vim-surround', { 'tag': 'v2.1' }
-Plug 'tyru/open-browser.vim'
+Plug 'tyru/open-browser.vim', { 'tag': 'v0.1.1' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'vim-scripts/AutoTag', { 'tag': '1.13' }
 Plug 'wellle/tmux-complete.vim', 'v0.0.7'
