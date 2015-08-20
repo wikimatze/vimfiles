@@ -4,6 +4,8 @@ I'm always eager to learn, but I can't remember everything. Here is the list of 
 of the most important commands and settings for each plugin.
 
 
+
+
 # Installation
 
 Do not copy my *.vimrc* because they may not fit to your working style (see **Luca Pettes**
@@ -304,13 +306,14 @@ Lightweight auto correction for 300 words.
 Git branch management.
 
 - `:Merginal` ... opens the extra window
-- `C` ... checkout branch under the cursor
+- `C|cc` ... checkout branch under the cursor
 - `A` ... add a branch from the current checked out branch under the cursor
-- `D` ... delete branch under the cursor
+- `D|dd` ... delete branch under the cursor
+- `rn` ... prompt to rename the branch under the cursor
 - `ps` ... push the current master on the branch under the cursor
 - `pS` ... force git push
-- `rn` ... prompt to rename the branch under the cursor
 - `rb` ... starting rebase
+- `q` ... will close buffer
 
 
 ## [vim-misc](https://github.com/xolox/vim-misc)
