@@ -13,7 +13,7 @@ call plug#begin('~/.vim/plugged/')
 
 Plug 'Eckankar/vim-latex-folding'
 Plug 'Raimondi/delimitMate', { 'tag': '2.7' }
-Plug 'Shougo/neosnippet.vim', { 'tag': 'ver.4.0' }
+Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimproc.vim', { 'tag': 'ver.8.0', 'do': 'make' }
 Plug 'bling/vim-airline' , { 'tag': 'v0.7' }
@@ -22,23 +22,23 @@ Plug 'christoomey/vim-tmux-navigator', { 'tag': 'v1.0' }
 Plug 'danchoi/ri.vim', { 'tag': 'v1.2', 'for': 'ruby' }
 Plug 'dkprice/vim-easygrep'
 Plug 'gregsexton/gitv', { 'tag': 'v1.3' }
-Plug 'idanarye/vim-merginal', { 'tag': '1.4.0' }
+Plug 'idanarye/vim-merginal', { 'tag': '1.5.0' }
 Plug 'jamessan/vim-gnupg'
-Plug 'jez/vim-superman'
-Plug 'junegunn/vim-easy-align', { 'tag': '2.9.6' }
+Plug 'jez/vim-superman', { 'tag': '0.9.0' }
+Plug 'junegunn/vim-easy-align', { 'tag': '2.9.7' }
 Plug 'klen/unite-radio.vim'
-Plug 'koron/nyancat-vim'
+Plug 'koron/nyancat-vim', { 'tag': 'v1.0' }
 Plug 'mattn/calendar-vim',{ 'tag': 'vim7ish' }
 Plug 'matze/vim-move', { 'tag': 'v1.3'}
 Plug 'mbbill/undotree',{ 'tag':  'rel_5.0' }
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'reedes/vim-lexical', { 'tag': 'v1.1' }
-Plug 'reedes/vim-litecorrect', { 'tag': 'v1.0' }
-Plug 'reedes/vim-wordy', { 'tag': 'v1.0' }
-Plug 'ryanoasis/vim-webdevicons', { 'tag': 'v0.3.3'}
+Plug 'reedes/vim-litecorrect', { 'tag': 'v1.1' }
+Plug 'reedes/vim-wordy', { 'tag': 'v1.1' }
+Plug 'ryanoasis/vim-webdevicons', { 'tag': 'v0.5.4'}
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/syntastic', { 'tag': '3.6.0' }
-Plug 'sheerun/vim-polyglot', { 'tag': 'v1.11.1' }
+Plug 'sheerun/vim-polyglot', { 'tag': 'v2.1.1' }
 Plug 'sk1418/blockit', { 'tag': 'v1.0.0' }
 Plug 'tomtom/tcomment_vim', { 'tag': '3.05' }
 Plug 'tpope/vim-endwise', { 'tag': 'v1.2' }
@@ -50,11 +50,10 @@ Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'vim-scripts/AutoTag', { 'tag': '1.13' }
 Plug 'wellle/tmux-complete.vim', 'v0.0.7'
 Plug 'wikimatze/tocdown', { 'tag': 'v.1.0.1', 'on': 'TocdownToggle' }
-Plug 'xolox/vim-misc', { 'tag': '1.17.1' }
-Plug 'xolox/vim-notes', { 'tag': '0.31' }
+Plug 'xolox/vim-misc', { 'tag': '1.17.6' }
+Plug 'xolox/vim-notes', { 'tag': '0.33' }
 
-Plug 'junegunn/fzf', { 'tag': '0.9.3', 'dir': '~/.fzf', 'do': 'yes \| ./install' }
-
+Plug 'junegunn/fzf', { 'tag': '0.10.3', 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 
 if has('lua')
   Plug 'Shougo/neocomplete.vim'
