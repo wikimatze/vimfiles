@@ -47,7 +47,7 @@ Semantic autoclose brackets.
 
 
 ## [fzf](https://github.com/junegunn/fzf)
-Fuzzy finder for your shell as a Vim plugin
+Fuzzy finder for your shell as a Vim plugin.
 
 
 ## [fugitive](http://github.com/tpope/vim-fugitive)
@@ -57,11 +57,13 @@ Git wrapper.
   - `<C-n>` ... go to the next file
   - `<C-p>` ... go to the previous file
   - `-` ... git add/git reset depending where you are in the windows (mark multiple files in visual mode)
+  - `cc` ... make git commit
   - `ca` ... makes git commit ammend
   - `D` ... makes diff
   - `ds` ... makes a horizontal
   - `dv` ... makes a vertical diff
   - `q` ... close :Gstatus
+  - `p` ... run `git add -p` for the current file
 - `:Gwrite` ... stage the current file to index
 - `:Gcommit` ... git commit (press *wq* for send)
 - `:Gremove` ... git rm
@@ -71,7 +73,6 @@ Git wrapper.
 - `:Gdiff` ... split the window to see diff
   - `]c` ... jump to next hunk of the merge
   - `[c` ... jump to previous hunk of merge
-  - `p` ... run `git add -p` for the current file
   - `:diffget` ... get the changes from the not active window
   - `:diffput` ... put the changes from the active window to the not active window
   - 3-way diffs:
@@ -307,6 +308,7 @@ Git branch management.
 
 - `:Merginal` ... opens the extra window
 - `C|cc` ... checkout branch under the cursor
+- `M|mm` ...
 - `A` ... add a branch from the current checked out branch under the cursor
 - `D|dd` ... delete branch under the cursor
 - `rn` ... prompt to rename the branch under the cursor
@@ -322,6 +324,10 @@ Extended Vim standard library needed for vim-notes plugin.
 
 ## [vim-move](https://github.com/matze/vim-move)
 Move lines and selections up and down.
+
+
+## [vim-notes](https://github.com/xolox/vim-notes)
+The notes plugin for vim.
 
 
 ## [vim-plug](https://github.com/junegunn/vim-plug)

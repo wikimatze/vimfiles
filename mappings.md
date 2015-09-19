@@ -212,7 +212,7 @@
 - `<C-h>` ... delete back one character
 - `<C-w>` ... delete the previous word
 - `<C-k>{char1}{char2}` ... will insert digraphs (`:h digraphs`)
-- `<C-r>+` ... paste from clipboard
+- `<C-r>+` ... paste from clipboard while in insert mode
 - `<C-r>u` ... paste from register `u`
 - `<C-r>/` ... insert the pattern of last search
 - `<C-o>` ... go to Insert Normal mode, means that you run one normal command and after that go into insert mode
