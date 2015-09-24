@@ -308,14 +308,15 @@ Git branch management.
 
 - `:Merginal` ... opens the extra window
 - `C|cc` ... checkout branch under the cursor
-- `M|mm` ...
+- `M|mm` ... does a normal merge
+- `mn` ...merge the branch under the cursor with --no-ff and a merge commit
 - `A` ... add a branch from the current checked out branch under the cursor
 - `D|dd` ... delete branch under the cursor
 - `rn` ... prompt to rename the branch under the cursor
 - `ps` ... push the current master on the branch under the cursor
 - `pS` ... force git push
 - `rb` ... starting rebase
-- `q` ... will close buffer
+- `q` ... will merging window
 
 
 ## [vim-misc](https://github.com/xolox/vim-misc)

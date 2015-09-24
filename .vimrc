@@ -22,7 +22,7 @@ Plug 'christoomey/vim-tmux-navigator', { 'tag': 'v1.0' }
 Plug 'danchoi/ri.vim', { 'tag': 'v1.2', 'for': 'ruby' }
 Plug 'dkprice/vim-easygrep'
 Plug 'gregsexton/gitv', { 'tag': 'v1.3' }
-Plug 'idanarye/vim-merginal', { 'tag': '1.5.0' }
+Plug 'idanarye/vim-merginal', { 'tag': '1.6.0' }
 Plug 'jamessan/vim-gnupg'
 Plug 'jez/vim-superman', { 'tag': '0.9.0' }
 Plug 'junegunn/vim-easy-align', { 'tag': '2.9.7' }
