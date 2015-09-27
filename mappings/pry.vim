@@ -1,6 +1,6 @@
 " pry calling -> thanks https://twitter.com/_zph
 fu! PryToggle()
-    let @a = "require 'pry'; binding.pry"
+    let @a = "binding.pry"
     let wordsFromLine = getline('.')
     if @a ==? wordsFromLine
       normal dd
