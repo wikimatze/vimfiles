@@ -1,4 +1,4 @@
-command -nargs=0 BookEnglisch call lexical#init({
+command -nargs=0 English call lexical#init({
                     \ 'spell': 1,
                     \ 'spelllang':  ['en'],
                     \ 'dictionary': ['/usr/share/dict/words'],
@@ -6,7 +6,7 @@ command -nargs=0 BookEnglisch call lexical#init({
                     \ 'spellfile':  ['~/.vim/spell/en.utf-8.add'],
                     \ })
 
-command -nargs=0 BookGerman call lexical#init({
+command -nargs=0 German call lexical#init({
                     \ 'spell': 1,
                     \ 'spelllang':  ['de_20'],
                     \ 'dictionary': ['~/.vim/spell/gerspchk.dict'],
