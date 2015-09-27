@@ -2,6 +2,7 @@
 git clone https://github.com/wikimatze/vimfiles.git ~/.vim
 ln -sf ~/.vim/.vimrc ~/.vimrc
 mkdir -p ~/.fonts
+mkdir ~/.vim/thesaurus
 
 echo "Grab german openthesaurus ..."
 cd /tmp && wget https://www.openthesaurus.de/export/OpenThesaurus-Textversion.zip -O mthesaur.zip && unzip mthesaur.zip && mv openthesaurus.txt ~/.vim/thesaurus/
