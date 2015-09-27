@@ -374,6 +374,9 @@
 # Hacks
 - replace line ending through **\\\\:** `:%s/$/ \\\\/`
 - replace **a = b** to **b = a:** `:%s/\(.*\)=\(.*\)/\2=\1`
+- capture-group: :%s/(#\d\+)/http\1/gc
+- replace number to certain URL: %s/\(#\d\+\)/\[\1\]\(http:\/\/github.com\/padrino\/padrino-framework\/issues\/\1\)/gc
+- link to github URL: %s/\(@\w\+\)/\[\1\]\(http:\/\/github.com\/\1\)/gc
 
 
 # Speak Vim
