@@ -28,7 +28,6 @@ Plug 'jez/vim-superman', { 'tag': '0.9.0' }
 Plug 'junegunn/vim-easy-align', { 'tag': '2.9.7' }
 Plug 'klen/unite-radio.vim'
 Plug 'koron/nyancat-vim', { 'tag': 'v1.0' }
-Plug 'mattn/calendar-vim',{ 'tag': 'vim7ish' }
 Plug 'matze/vim-move', { 'tag': 'v1.3'}
 Plug 'mbbill/undotree',{ 'tag':  'rel_5.0' }
 Plug 'nelstrom/vim-markdown-folding'

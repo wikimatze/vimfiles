@@ -13,6 +13,14 @@ You can perform ack commands in Vim.
   - `:v` ... vertical split
   - `:q` ... quit the Ack window
 
+## [calendar.vim](https://github.com/mattn/calendar-vim)
+Opens a split with a calendar inside.
+
+- `:Calendar` ... opens a vertical split
+- `<arrow-keys>` ... move around in the calendar
+- `q` ... will close the calendar
+
+
 ## [coffee-script](https://github.com/kchmck/vim-coffee-script)
 coffee script support.
 
@@ -580,5 +588,4 @@ Better register management and saves up to 100 buffered lines.
 - `:YRClear` ... deletes the buffer
 - `:YRSearch` ... type in a word or regular expression to search the yankring after it
 - `j`, `k` for navigation and <Enter> chose your entry
-
 

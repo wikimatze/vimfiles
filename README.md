@@ -4,8 +4,6 @@ I'm always eager to learn, but I can't remember everything. Here is the list of 
 of the most important commands and settings for each plugin.
 
 
-
-
 # Installation
 
 Do not copy my *.vimrc* because they may not fit to your working style (see **Luca Pettes**
@@ -25,14 +23,6 @@ Wrap text in block.
 
 - `'<,'>Block` ... works even in visual mode
 - `..,..Block` ...  define a range where you want to have the block
-
-
-## [calendar.vim](https://github.com/mattn/calendar-vim)
-Opens a split with a calendar inside.
-
-- `:Calendar` ... opens a vertical split
-- `<arrow-keys>` ... move around in the calendar
-- `q` ... will close the calendar
 
 
 ## [easygrep](https://github.com/dkprice/vim-easygrep)
