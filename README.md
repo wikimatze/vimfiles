@@ -227,7 +227,7 @@ Insert mode completion for neighbor tmux windows.
 
 
 ## [undotree](https://github.com/mbbill/undotree)
-Display the undograph for a file.
+Display the undo graph for a file.
 
 - `:UndotreeToggle` ... turn on or off the toggle feature
 
@@ -246,6 +246,10 @@ Playing sounds in Vim.
 
 ## [vim-airline](https://github.com/bling/vim-airline)
 Beautiful status and tab line.
+
+
+## [vim-devicons](https://github.com/ryanoasis/vim-devicons)
+Filetype icons for vim.
 
 
 ## [vim-easy-align](https://github.com/junegunn/vim-easy-align)
@@ -277,7 +281,7 @@ The only plugin you need when you are working with LaTeX.
 
 
 ## [vim-lexical](https://github.com/reedes/vim-lexical)
-Custom dictionary, thesaurus, and spellchecking options for files or when calling a command.
+Custom dictionary, thesaurus, and spell checking options for files or when calling a command.
 
 - `<C-x> <C-k>` ... opens the dictionary
 - `<C-x> <C-t>` ... opens the thesaurus
