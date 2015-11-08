@@ -24,8 +24,8 @@ Plug 'dkprice/vim-easygrep'
 Plug 'gregsexton/gitv', { 'tag': 'v1.3' }
 Plug 'idanarye/vim-merginal', { 'tag': '1.6.0' }
 Plug 'jamessan/vim-gnupg'
-Plug 'jez/vim-superman', { 'tag': '0.9.0' }
-Plug 'junegunn/vim-easy-align', { 'tag': '2.9.7' }
+Plug 'jez/vim-superman', { 'tag': '0.9.1' }
+Plug 'junegunn/vim-easy-align', { 'tag': '2.10.0' }
 Plug 'klen/unite-radio.vim'
 Plug 'koron/nyancat-vim', { 'tag': 'v1.0' }
 Plug 'matze/vim-move', { 'tag': 'v1.3'}
