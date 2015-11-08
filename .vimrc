@@ -37,7 +37,7 @@ Plug 'reedes/vim-wordy', { 'tag': 'v1.1' }
 Plug 'ryanoasis/vim-devicons', { 'tag': 'v0.6.1'}
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/syntastic', { 'tag': '3.7.0' }
-Plug 'sheerun/vim-polyglot', { 'tag': 'v2.1.1' }
+Plug 'sheerun/vim-polyglot', { 'tag': 'v2.2.0' }
 Plug 'sk1418/blockit', { 'tag': 'v1.0.0' }
 Plug 'tomtom/tcomment_vim', { 'tag': '3.05' }
 Plug 'tpope/vim-endwise', { 'tag': 'v1.2' }
