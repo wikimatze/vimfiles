@@ -13,7 +13,7 @@ call plug#begin('~/.vim/plugged/')
 
 Plug 'Eckankar/vim-latex-folding'
 Plug 'Raimondi/delimitMate', { 'tag': '2.7' }
-Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet.vim', { 'tag': 'ver.4.2' }
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimproc.vim', { 'tag': 'ver.9.2', 'do': 'make' }
 Plug 'bling/vim-airline' , { 'tag': 'v0.7' }
@@ -41,7 +41,7 @@ Plug 'sheerun/vim-polyglot', { 'tag': 'v2.2.0' }
 Plug 'sk1418/blockit', { 'tag': 'v1.0.0' }
 Plug 'tomtom/tcomment_vim', { 'tag': '3.08' }
 Plug 'tpope/vim-endwise', { 'tag': 'v1.2' }
-Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-eunuch', { 'tag': 'v.1.1' }
 Plug 'tpope/vim-fugitive', { 'tag': 'v2.2' }
 Plug 'tpope/vim-surround', { 'tag': 'v2.1' }
 Plug 'tyru/open-browser.vim', { 'tag': 'v0.1.1' }
@@ -52,7 +52,7 @@ Plug 'wikimatze/tocdown', { 'tag': 'v.1.0.1', 'on': 'TocdownToggle' }
 Plug 'xolox/vim-misc', { 'tag': '1.17.6' }
 Plug 'xolox/vim-notes', { 'tag': '0.33.4' }
 
-Plug 'junegunn/fzf', { 'tag': '0.10.3', 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+Plug 'junegunn/fzf', { 'tag': '0.10.9', 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 
 if has('lua')
   Plug 'Shougo/neocomplete.vim'
