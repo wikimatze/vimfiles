@@ -50,7 +50,7 @@ Plug 'vim-scripts/AutoTag', { 'tag': '1.13' }
 Plug 'wellle/tmux-complete.vim', 'v0.0.7'
 Plug 'wikimatze/tocdown', { 'tag': 'v.1.0.1', 'on': 'TocdownToggle' }
 Plug 'xolox/vim-misc', { 'tag': '1.17.6' }
-Plug 'xolox/vim-notes', { 'tag': '0.33' }
+Plug 'xolox/vim-notes', { 'tag': '0.33.4' }
 
 Plug 'junegunn/fzf', { 'tag': '0.10.3', 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 
