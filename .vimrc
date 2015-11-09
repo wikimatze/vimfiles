@@ -58,11 +58,6 @@ if has('lua')
   Plug 'Shougo/neocomplete.vim'
 endif
 
-if has('python')
-  Plug 'jaxbot/github-issues.vim'
-endif
-
-
 call plug#end()
 
 

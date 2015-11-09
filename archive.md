@@ -124,6 +124,13 @@ Redefines the search `(/,?)` and creates custom messages about how many hits the
 Shows git diff in Vim's gutter.
 
 
+## [github-issues](https://github.com/jaxbot/github-issues.vim)
+GitHub issue lookup support, press # to enable omnicompletion
+
+- `:Gissues` ... will open a window with issues and you can browse the descriptions
+- `:Giadd` ... add an issue to github
+
+
 ## [gundo](http://sjl.bitbucket.org/gundo.vim)
 Graph the changes of your file saves in different a nice tree.
 

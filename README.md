@@ -97,13 +97,6 @@ A gitk/tig like git browser.
   - `vmap <leader>gV :Gitv! --all<cr>`
 
 
-## [github-issues](https://github.com/jaxbot/github-issues.vim)
-GitHub issue lookup support, press # to enable omnicompletion
-
-- `:Gissues` ... will open a window with issues and you can browse the descriptions
-- `:Giadd` ... add an issue to github
-
-
 ## [markdown-folding](https://github.com/nelstrom/vim-markdown-folding)
 Folding by section headings.
 
@@ -212,7 +205,7 @@ Display the headlines of a markdown document in an extra window.
 
 
 ## [tcomment_vim](https://github.com/tomtom/tcomment_vim)
-An universable comment tool plugin.
+An universal comment tool plugin.
 
 - `gcc` ... toogles current line (work the same way in Visual mode)
 - `gc{motion}` ... toogles comment with the specified motion
@@ -323,6 +316,8 @@ Move lines and selections up and down.
 
 ## [vim-notes](https://github.com/xolox/vim-notes)
 The notes plugin for vim.
+
+- `:SearchNotes` ... search after the string
 
 
 ## [vim-plug](https://github.com/junegunn/vim-plug)

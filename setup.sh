@@ -10,8 +10,7 @@ echo "... done!"
 
 echo "Start vim and run :PlugInstall"
 
-echo "Next run \`cd ~/.fonts && curl -fLo DroidSansMonoForPowerlinePlusNerdFileTypes.otf https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/Droid%20Sans%20Mono%20for%20Powerline%20Plus%20Nerd%20File%20Types.otf && sudo chmod 777 DroidSansMonoForPowerlinePlusNerdFileTypes.otf\` to install fonts"
+echo "Install the Powerline-Plus-Nerd-File-Types font"
 
-
-echo "Go to ~/.vim/settings/github_issues.vim and set the optionlet g:github_access_token"
+cd ~/.fonts && curl -fLo DroidSansMonoForPowerlinePlusNerdFileTypes.otf https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/Droid%20Sans%20Mono%20for%20Powerline%20Plus%20Nerd%20File%20Types.otf && sudo chmod 777 DroidSansMonoForPowerlinePlusNerdFileTypes.otf
 
