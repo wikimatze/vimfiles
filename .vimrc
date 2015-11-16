@@ -47,7 +47,7 @@ Plug 'tpope/vim-surround', { 'tag': 'v2.1' }
 Plug 'tyru/open-browser.vim', { 'tag': 'v0.1.1' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'vim-scripts/AutoTag', { 'tag': '1.13' }
-Plug 'wellle/tmux-complete.vim', 'v0.0.7'
+Plug 'wellle/tmux-complete.vim', 'v0.1.1'
 Plug 'wikimatze/tocdown', { 'tag': 'v.1.0.1', 'on': 'TocdownToggle' }
 Plug 'xolox/vim-misc', { 'tag': '1.17.6' }
 Plug 'xolox/vim-notes', { 'tag': '0.33.4' }
@@ -59,7 +59,6 @@ if has('lua')
 endif
 
 call plug#end()
-
 
 " General settings {{{
 
