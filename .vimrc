@@ -20,7 +20,7 @@ Plug 'bling/vim-airline' , { 'tag': 'v0.7' }
 Plug 'botandrose/vim-testkey', { 'tag': 'v0.3.2' }
 Plug 'christoomey/vim-tmux-navigator', { 'tag': 'v1.0' }
 Plug 'danchoi/ri.vim', { 'tag': 'v1.2', 'for': 'ruby' }
-Plug 'dkprice/vim-easygrep'
+Plug 'dkprice/vim-easygrep', 'v2.0'
 Plug 'gregsexton/gitv', { 'tag': 'v1.3' }
 Plug 'idanarye/vim-merginal', { 'tag': '1.6.0' }
 Plug 'jamessan/vim-gnupg'
