@@ -411,6 +411,10 @@ hello
 let g:interestingWordsRandomiseColors = 1</pre>
 
 
+## [vim-latex-folding](https://github.com/Eckankar/vim-latex-folding)
+The only plugin you need when you are working with LaTeX.
+
+
 ## [vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs "vim-nerdtree-tabs")
 Opens one NERDTree which is the same in every tab.
 

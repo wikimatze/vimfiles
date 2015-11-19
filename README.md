@@ -269,10 +269,6 @@ My first light colorscheme for vim.
 Transparent editing of gpg encrypted files.
 
 
-## [vim-latex-folding](https://github.com/Eckankar/vim-latex-folding)
-The only plugin you need when you are working with LaTeX.
-
-
 ## [vim-lexical](https://github.com/reedes/vim-lexical)
 Custom dictionary, thesaurus, and spell checking options for files or when calling a command.
 
@@ -350,6 +346,10 @@ Configuration files for editing and compiling Ruby - it even adds custom text-ob
 
 ## [vim-superman](https://github.com/jez/vim-superman)
 Read man pages in Vim. Press `vman <Tab>` to get it working.
+
+
+## [vim-tex-folding](https://github.com/matze/vim-tex-fold/releases)
+Very fast folding for LaTeX documents.
 
 
 ## [vim-testkey](https://github.com/botandrose/vim-testkey)

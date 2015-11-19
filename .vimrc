@@ -11,7 +11,7 @@ endif
 
 call plug#begin('~/.vim/plugged/')
 
-Plug 'Eckankar/vim-latex-folding'
+Plug 'matze/vim-tex-fold', 'v1.3'
 Plug 'Raimondi/delimitMate', { 'tag': '2.7' }
 Plug 'Shougo/neosnippet.vim', { 'tag': 'ver.4.2' }
 Plug 'Shougo/unite.vim'
