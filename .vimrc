@@ -41,7 +41,7 @@ Plug 'sheerun/vim-polyglot', { 'tag': 'v2.2.0' }
 Plug 'sk1418/blockit', { 'tag': 'v1.0.0' }
 Plug 'tomtom/tcomment_vim', { 'tag': '3.08' }
 Plug 'tpope/vim-endwise', { 'tag': 'v1.2' }
-Plug 'tpope/vim-eunuch', { 'tag': 'v.1.1' }
+Plug 'tpope/vim-eunuch', { 'tag': 'v1.1' }
 Plug 'tpope/vim-fugitive', { 'tag': 'v2.2' }
 Plug 'tpope/vim-surround', { 'tag': 'v2.1' }
 Plug 'tyru/open-browser.vim', { 'tag': 'v0.1.1' }
