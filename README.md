@@ -111,6 +111,12 @@ Adds snippet support for Vim and makes use of neocomplete plugin.
 - `NeoSnippetEdit` ... edit snippets of the current filetype
 
 
+## [neoyank](https://github.com/Shougo/neoyank.vim)
+Saves yank history includes unite.vim history/yank source.
+
+- `<leader>y` ... call the yank window
+
+
 ## [NERDTree](https://github.com/scrooloose/nerdtree)
 Perfect file browser for vim
 

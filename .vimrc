@@ -11,10 +11,10 @@ endif
 
 call plug#begin('~/.vim/plugged/')
 
-Plug 'matze/vim-tex-fold', 'v1.3'
 Plug 'Raimondi/delimitMate', { 'tag': '2.7' }
 Plug 'Shougo/neosnippet.vim', { 'tag': 'ver.4.2' }
 Plug 'Shougo/unite.vim'
+Plug 'Shougo/neoyank.vim'
 Plug 'Shougo/vimproc.vim', { 'tag': 'ver.9.2', 'do': 'make' }
 Plug 'bling/vim-airline' , { 'tag': 'v0.7' }
 Plug 'botandrose/vim-testkey', { 'tag': 'v0.3.2' }
@@ -29,6 +29,7 @@ Plug 'junegunn/vim-easy-align', { 'tag': '2.10.0' }
 Plug 'klen/unite-radio.vim'
 Plug 'koron/nyancat-vim', { 'tag': 'v1.0' }
 Plug 'matze/vim-move', { 'tag': 'v1.3'}
+Plug 'matze/vim-tex-fold', 'v1.3'
 Plug 'mbbill/undotree',{ 'tag':  'rel_5.0' }
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'reedes/vim-lexical', { 'tag': 'v1.1' }
