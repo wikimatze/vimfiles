@@ -260,7 +260,7 @@ ru mappings/moving_wrapped_lines.vim      " Use hjkl in wrapped-lined files
 ru mappings/nerdtree.vim                  " F2 will call NERDTreeToogle
 ru mappings/pry.vim                       " ,pi to insert/delete 'require pry; binding pry'
 ru mappings/quickediting.vim              " ,ba; ,bm; ,br; ,ev to edit files of vim repos
-ru mappings/unite.vim                     " <leader>y search the yank history
+ru mappings/neoyank.vim                   " <leader>y search the yank history
 ru mappings/vim_easy_align.vim            " press <CR> to start aligning
 ru mappings/vim_testkeys.vim              " <leader>t run the test
 
