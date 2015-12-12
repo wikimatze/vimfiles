@@ -7,15 +7,11 @@ of the most important commands and settings for each plugin.
 # Installation
 
 Do not copy my *.vimrc* because they may not fit to your working style (see **Luca Pettes**
-[wonderful article](http://lucapette.com/vim/rails/vim-for-rails-developers-lazy-modern-configuration)). But if you
+[wonderful article](http://lucapette.me/vim-for-rails-developers-lazy-modern-configuration/)). But if you
 would like to use this repository run the `install.sh` script.
 
 
 # Plugins
-
-
-## [autotag.vim](https://github.com/vim-scripts/AutoTag)
-Whenever you save a file, it deletes all of its entries and invokes ctags in append mode.
 
 
 ## [blockit](https://github.com/sk1418/blockit)
@@ -261,18 +257,16 @@ Auto indent files according to the pattern
 Automatically adds keywords like *end* to special constructs for all kinds of languages.
 
 
-## [vim-eunuch](https://github.com/tpope/vim-eunuch)
-Useful Unix helper.
-
-- `:SudoWrite` ... good when you want to save root files
-
-
 ## [vim-github-theme](https://github.com/wikimatze/vim-github-theme)
 My first light colorscheme for vim.
 
 
 ## [vim-gnupg](https://github.com/jamessan/vim-gnupg)
 Transparent editing of gpg encrypted files.
+
+
+## [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags)
+Updates tags file whenever you save a file.
 
 
 ## [vim-lexical](https://github.com/reedes/vim-lexical)

@@ -13,8 +13,8 @@ call plug#begin('~/.vim/plugged/')
 
 Plug 'Raimondi/delimitMate', { 'tag': '2.7' }
 Plug 'Shougo/neosnippet.vim', { 'tag': 'ver.4.2' }
-Plug 'Shougo/unite.vim'
 Plug 'Shougo/neoyank.vim'
+Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimproc.vim', { 'tag': 'ver.9.2', 'do': 'make' }
 Plug 'bling/vim-airline' , { 'tag': 'v0.7' }
 Plug 'botandrose/vim-testkey', { 'tag': 'v0.3.2' }
@@ -28,6 +28,7 @@ Plug 'jez/vim-superman', { 'tag': '0.9.1' }
 Plug 'junegunn/vim-easy-align', { 'tag': '2.10.0' }
 Plug 'klen/unite-radio.vim'
 Plug 'koron/nyancat-vim', { 'tag': 'v1.0' }
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'matze/vim-move', { 'tag': 'v1.3'}
 Plug 'matze/vim-tex-fold', 'v1.3'
 Plug 'mbbill/undotree',{ 'tag':  'rel_5.0' }
@@ -47,7 +48,6 @@ Plug 'tpope/vim-fugitive', { 'tag': 'v2.2' }
 Plug 'tpope/vim-surround', { 'tag': 'v2.1' }
 Plug 'tyru/open-browser.vim', { 'tag': 'v0.1.1' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
-Plug 'vim-scripts/AutoTag', { 'tag': '1.13' }
 Plug 'wellle/tmux-complete.vim', 'v0.1.1'
 Plug 'wikimatze/tocdown', { 'tag': 'v.1.0.1', 'on': 'TocdownToggle' }
 Plug 'xolox/vim-misc', { 'tag': '1.17.6' }

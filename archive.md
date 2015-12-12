@@ -2,6 +2,10 @@
 
 Here is a list of plugins I used in the past and removed them due the lack of usage.
 
+## [autotag.vim](https://github.com/vim-scripts/AutoTag)
+Whenever you save a file, it deletes all of its entries and invokes ctags in append mode.
+
+
 ## [ack.vim](https://github.com/mileszs/ack.vim)
 You can perform ack commands in Vim.
 
