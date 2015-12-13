@@ -239,6 +239,17 @@ Playing sounds in Vim.
 - `:MPlay <url>` ... play the specified url
 
 
+## [vim-ags](https://github.com/gabesoft/vim-ags)
+Using ag in Vim.
+
+- `:Ags` ... search after the word/term
+- `:AgsAdd` ... like like :Ags but append the results to the window
+- `E` ...  go into edit mode
+- `p|P` ... jump to the next/previous match
+- `oa|ob` ... open file above/beyond the result window
+- `q` ... closes the result window
+
+
 ## [vim-airline](https://github.com/bling/vim-airline)
 Beautiful status and tab line.
 
