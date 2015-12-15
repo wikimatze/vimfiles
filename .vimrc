@@ -21,9 +21,11 @@ Plug 'botandrose/vim-testkey', { 'tag': 'v0.3.2' }
 Plug 'christoomey/vim-tmux-navigator', { 'tag': 'v1.0' }
 Plug 'danchoi/ri.vim', { 'tag': 'v1.2', 'for': 'ruby' }
 Plug 'dkprice/vim-easygrep', 'v2.0'
+Plug 'gabesoft/vim-ags'
 Plug 'gregsexton/gitv', { 'tag': 'v1.3' }
 Plug 'idanarye/vim-merginal', { 'tag': '1.6.0' }
 Plug 'jamessan/vim-gnupg'
+Plug 'jbgutierrez/vim-partial'
 Plug 'jez/vim-superman', { 'tag': '0.9.1' }
 Plug 'junegunn/vim-easy-align', { 'tag': '2.10.0' }
 Plug 'klen/unite-radio.vim'
@@ -52,7 +54,6 @@ Plug 'wellle/tmux-complete.vim', 'v0.1.1'
 Plug 'wikimatze/tocdown', { 'tag': 'v.1.0.1', 'on': 'TocdownToggle' }
 Plug 'xolox/vim-misc', { 'tag': '1.17.6' }
 Plug 'xolox/vim-notes', { 'tag': '0.33.4' }
-Plug 'gabesoft/vim-ags'
 
 
 Plug 'junegunn/fzf', { 'tag': '0.10.9', 'dir': '~/.fzf', 'do': 'yes \| ./install' }

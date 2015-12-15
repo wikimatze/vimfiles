@@ -335,6 +335,13 @@ Package manager for Vim.
 - `:PlugUpgrade` ... upgrade vim-plug automatically
 
 
+## [vim-partial](https://github.com/jbgutierrez/vim-partial)
+Extract partials for several languages with one keystroke.
+
+- `<leader>x|:PlugExtract` ... will move the selected text to the selected
+- `:PartialDispose` ... will put the contents of the partial in the text and will remove the partial
+
+
 ## [vim-polyglot](https://github.com/sheerun/vim-polyglot)
 Loading language packs on demand - saves a lot of startup time.
 
