@@ -13,7 +13,7 @@ call plug#begin('~/.vim/plugged/')
 
 Plug 'Raimondi/delimitMate', { 'tag': '2.7' }
 Plug 'Shougo/neosnippet.vim', { 'tag': 'ver.4.2' }
-Plug 'Shougo/neoyank.vim'
+Plug 'Shougo/neoyank.vim', 'master'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimproc.vim', { 'tag': 'ver.9.2', 'do': 'make' }
 Plug 'bling/vim-airline' , { 'tag': 'v0.7' }
@@ -46,7 +46,7 @@ Plug 'sk1418/blockit', { 'tag': 'v1.0.0' }
 Plug 'tomtom/tcomment_vim', { 'tag': '3.08' }
 Plug 'tpope/vim-endwise', { 'tag': 'v1.2' }
 Plug 'tpope/vim-eunuch', { 'tag': 'v1.1' }
-Plug 'tpope/vim-fugitive', { 'tag': 'v2.2' }
+Plug 'tpope/vim-fugitive', 'master'
 Plug 'tpope/vim-surround', { 'tag': 'v2.1' }
 Plug 'tyru/open-browser.vim', { 'tag': 'v0.1.1' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
@@ -158,14 +158,14 @@ autocmd BufNewFile,BufRead */_posts/*.md syntax match Comment /\%^---\_.\{-}---$
 
 " set autocompletion when CTRL-P or CTRL-N are used.
 " It is also used for whole-line
-" . ... scan the current buffer
-" b ... scan other loaded buffers that are in the buffer list
+" . ... current buffer
+" i ... current and included files
+" b ... other loaded buffers that are in the buffer list
 " w ... buffers from other windows
 " u ... scan unloaded buffers that are in the buffer list
 " U ... scan buffers that are not in the buffer list
 " ] ... tag completion
-" i ... scan current and included files
-set complete=i,.,b,w,u,U,]
+set complete=.,i,b,w,u,U,]
 
 " }}}
 " Settings for displaying list chars {{{
