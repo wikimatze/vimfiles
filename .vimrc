@@ -16,7 +16,7 @@ Plug 'Shougo/neosnippet.vim', { 'tag': 'ver.4.2' }
 Plug 'Shougo/neoyank.vim', 'master'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimproc.vim', { 'tag': 'ver.9.2', 'do': 'make' }
-Plug 'bling/vim-airline' , { 'tag': 'v0.7' }
+Plug 'bling/vim-airline', { 'tag': 'v0.7' }
 Plug 'botandrose/vim-testkey', { 'tag': 'v0.3.2' }
 Plug 'christoomey/vim-tmux-navigator', { 'tag': 'v1.0' }
 Plug 'danchoi/ri.vim', { 'tag': 'v1.2', 'for': 'ruby' }
@@ -44,12 +44,12 @@ Plug 'scrooloose/syntastic', { 'tag': '3.7.0' }
 Plug 'sheerun/vim-polyglot', { 'tag': 'v2.6.0' }
 Plug 'sk1418/blockit', { 'tag': 'v1.0.0' }
 Plug 'tomtom/tcomment_vim', { 'tag': '3.08' }
-Plug 'tpope/vim-endwise',
+Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-eunuch', { 'tag': 'v1.1' }
 Plug 'tpope/vim-fugitive', 'master'
 Plug 'tpope/vim-surround', { 'tag': 'v2.1' }
 Plug 'tyru/open-browser.vim', { 'tag': 'v0.1.1' }
-Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
+Plug 'vim-ruby/vim-ruby'
 Plug 'wellle/tmux-complete.vim', 'v0.1.1'
 Plug 'wikimatze/tocdown', { 'tag': 'v.1.0.1', 'on': 'TocdownToggle' }
 Plug 'xolox/vim-misc', { 'tag': '1.17.6' }
