@@ -56,7 +56,7 @@ Plug 'xolox/vim-misc', { 'tag': '1.17.6' }
 Plug 'xolox/vim-notes', { 'tag': '0.33.4' }
 
 
-Plug 'junegunn/fzf', { 'tag': '0.10.9', 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+Plug 'junegunn/fzf', { 'tag': '0.11.2', 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 
 if has('lua')
   Plug 'Shougo/neocomplete.vim'
