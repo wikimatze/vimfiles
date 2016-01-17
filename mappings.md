@@ -118,7 +118,7 @@
 
 
 # Autocompletion
-- `<C-n> | <C-p>` ... Keyword autocompletion for next|previous matching
+- `<C-n>|<C-p>` ... Keyword autocompletion for next|previous matching
 - `<C-x><C-n>` ... path autocompletion current buffer keywords
 - `<C-x><C-i>` ... include file keywords
 - `<C-x><C-o>` ... omnicomplete with context awareness

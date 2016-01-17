@@ -333,6 +333,7 @@ Package manager for Vim.
 - `:PlugInstall` ... installs all the specified
 - `:PlugClean` ... will remove all not used bundles
 - `:PlugUpgrade` ... upgrade vim-plug automatically
+- `:PlugDiff` ... show the latest change commits for your installed plugins
 
 
 ## [vim-partial](https://github.com/jbgutierrez/vim-partial)
