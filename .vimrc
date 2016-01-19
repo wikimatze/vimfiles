@@ -30,6 +30,7 @@ Plug 'jez/vim-superman', { 'tag': '0.9.1' }
 Plug 'junegunn/vim-easy-align', { 'tag': '2.10.0' }
 Plug 'klen/unite-radio.vim'
 Plug 'koron/nyancat-vim', { 'tag': 'v1.0' }
+Plug 'lervag/vimtex', { 'commit': '1aedd5a' }
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'matze/vim-move', { 'tag': 'v1.3'}
 Plug 'matze/vim-tex-fold', 'v1.3'

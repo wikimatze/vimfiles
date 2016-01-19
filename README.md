@@ -400,6 +400,10 @@ Uncover usage problems with your writing with marvelous commands.
 For asynchronous command execution (need is used to search for file in bigger projects by the unite.vim plugin).
 
 
+## [vimtex](https://github.com/lervag/vimtex)
+A very good tool to manage LaTeX files as well as the compilation.
+
+
 # License
 
 This software is licensed under the [MIT license](http://en.wikipedia.org/wiki/MIT_License).
