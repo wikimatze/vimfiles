@@ -139,26 +139,6 @@ Perfect file browser for vim
 - `:NERDTreeFind` ... open the current file in the NERDTree and expand the tree to this file location
 
 
-## [notes](https://github.com/xolox/vim-notes)
-Perfect note taking.
-
-- `:Note` ... starts a new note (you can specify the name of the note in the header)
-- `:write or :update` save the notes
-- `:RecentNotes` ... overview of the last created changes
-- `:RelatedNotes` ... shows all notes according to actual heading in the note
-- `:SearchNotes <pattern>` ... search after all notes containing the specified pattern/word
-- `:edit note:<name-of-note>` ... you can edit notes (other commands: `:split`, `:tabedit`)
-- `:NoteFromSelectedText` ... create a new node from the selected text
-- `:DeleteNote` ... deletes the actual note
-- `let g:notes_directory = '~/Documents/Notes'` ... define the directory where files should be
-  saved
-- it is possible to open notes directly from the command-line with **vim notes:collect**
-- tags:
-  - with @tag you can define own tags (they are useful for searching)
-  - `:IndexTaggedNotes` ... creates new tags (for omnicomplete when @ is pressed)
-  - `:ShowTaggedNotes` ... will show all notes which are specified with a certain tag
-
-
 ## [nyancat-vim](https://github.com/koron/nyancat-vim)
 Nyancat rocks vim
 
@@ -326,9 +306,23 @@ Move lines and selections up and down.
 
 
 ## [vim-notes](https://github.com/xolox/vim-notes)
-The notes plugin for vim.
+Perfect note taking.
 
-- `:SearchNotes` ... search after the string
+- `:Note` ... starts a new note (you can specify the name of the note in the header)
+- `:write or :update` save the notes
+- `:RecentNotes` ... overview of the last created changes
+- `:RelatedNotes` ... shows all notes according to actual heading in the note
+- `:SearchNotes <pattern>` ... search after all notes containing the specified pattern/word
+- `:edit note:<name-of-note>` ... you can edit notes (other commands: `:split`, `:tabedit`)
+- `:NoteFromSelectedText` ... create a new node from the selected text
+- `:DeleteNote` ... deletes the actual note
+- `let g:notes_directory = '~/Documents/Notes'` ... define the directory where files should be
+  saved
+- it is possible to open notes directly from the command-line with **vim notes:collect**
+- tags:
+  - with @tag you can define own tags (they are useful for searching)
+  - `:IndexTaggedNotes` ... creates new tags (for omnicomplete when @ is pressed)
+  - `:ShowTaggedNotes` ... will show all notes which are specified with a certain tag
 
 
 ## [vim-plug](https://github.com/junegunn/vim-plug)
