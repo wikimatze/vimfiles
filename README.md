@@ -238,6 +238,10 @@ Using ag in Vim.
 Beautiful status and tab line.
 
 
+## [vim-closetag](https://github.com/alvan/vim-closetag)
+Auto close (X)HTML tags.
+
+
 ## [vim-devicons](https://github.com/ryanoasis/vim-devicons)
 Filetype icons for vim.
 

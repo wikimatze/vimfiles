@@ -16,6 +16,7 @@ Plug 'Shougo/neosnippet.vim', { 'tag': 'ver.4.2' }
 Plug 'Shougo/neoyank.vim', 'master'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimproc.vim', { 'tag': 'ver.9.2', 'do': 'make' }
+Plug 'alvan/vim-closetag'
 Plug 'bling/vim-airline', { 'tag': 'v0.8' }
 Plug 'botandrose/vim-testkey', { 'tag': 'v0.3.2' }
 Plug 'christoomey/vim-tmux-navigator', { 'tag': 'v1.0' }
