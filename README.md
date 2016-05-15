@@ -401,6 +401,9 @@ For asynchronous command execution (need is used to search for file in bigger pr
 ## [vimtex](https://github.com/lervag/vimtex)
 A very good tool to manage LaTeX files as well as the compilation.
 
+- `\ll` ... compiles the tex-file
+- `\lv` ... opens the document with the specified pdf-viewer
+
 
 # License
 
