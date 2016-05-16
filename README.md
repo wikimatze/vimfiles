@@ -395,6 +395,8 @@ A very good tool to manage LaTeX files as well as the compilation.
 
 - `\ll` ... compiles the tex-file
 - `\lv` ... opens the document with the specified pdf-viewer
+- `:VimtexTocOpen` ... will open a clickable toc in the left pane (`q` will close the window)
+-
 
 
 # License
