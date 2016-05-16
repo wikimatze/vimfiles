@@ -386,18 +386,6 @@ Switch seamlessly between tmux panes and Vim splits.
 - `<Ctrl-l>` ... Right
 
 
-## [vim-wordy](https://github.com/reedes/vim-wordy)
-Uncover usage problems with your writing with marvelous commands.
-
-
-- `WeakWordy` ... starts the mode for showing weak words like "of course", "however"
-- `WordWordy` ... shows redundant words
-- `Wordy <Tab>` ... cycle through the different mody
-- `NextWordy` ... goes to the next mode
-- `PrevWordy` ... goes to the next mode
-- `NoWordy` ... will turn of the plugin
-
-
 ## [vimproc](https://github.com/Shougo/vimproc.vim.git)
 For asynchronous command execution (need is used to search for file in bigger projects by the unite.vim plugin).
 

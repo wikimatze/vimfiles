@@ -39,7 +39,6 @@ Plug 'mbbill/undotree',{ 'tag':  'rel_5.0' }
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'reedes/vim-lexical', { 'tag': 'v1.1' }
 Plug 'reedes/vim-litecorrect', { 'tag': 'v1.1' }
-Plug 'reedes/vim-wordy', { 'tag': 'v1.1' }
 Plug 'rhysd/clever-f.vim', { 'commit': '1f22df' }
 Plug 'ryanoasis/vim-devicons', { 'tag': 'v0.7.1'}
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }

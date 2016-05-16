@@ -545,6 +545,18 @@ Indicates added, removed, or modified lines of files which are under version con
   - `let g:signify_vcs_list = [ 'git', 'svn' ]` " only run those checkers
 
 
+## [vim-wordy](https://github.com/reedes/vim-wordy)
+Uncover usage problems with your writing with marvelous commands.
+
+
+- `WeakWordy` ... starts the mode for showing weak words like "of course", "however"
+- `WordWordy` ... shows redundant words
+- `Wordy <Tab>` ... cycle through the different mode
+- `NextWordy` ... goes to the next mode
+- `PrevWordy` ... goes to the next mode
+- `NoWordy` ... will turn of the plugin
+
+
 ## [vimroom](https://github.com/mikewest/vimroom/)
 Distraction free writing.
 
