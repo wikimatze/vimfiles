@@ -9,6 +9,16 @@ if empty(glob('~/.vim/autoload/plug.vim'))
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 endif
 
+" Get thesaurus
+if empty(glob('~/.vim/thesaurus'))
+  silent !mkdir ~/.vim/thesaurus && cd /tmp && wget https://www.openthesaurus.de/export/OpenThesaurus-Textversion.zip -O mthesaur.zip && unzip mthesaur.zip && mv openthesaurus.txt ~/.vim/thesaurus/
+endif
+
+" Get font
+if empty(glob('~/.fonts'))
+  silent !mkdir ~/.fonts && cd ~/.fonts && curl -fLo DroidSansMonoForPowerlinePlusNerdFileTypes.otf https://raw.githubusercontent.com/ryanoasis/nerd-fonts/0.6.0/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete.otf && sudo chmod 777 DroidSansMonoForPowerlinePlusNerdFileTypes.otf
+endif
+
 call plug#begin('~/.vim/plugged/')
 
 Plug 'Raimondi/delimitMate', { 'tag': '2.7' }
