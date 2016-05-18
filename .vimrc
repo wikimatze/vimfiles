@@ -268,7 +268,7 @@ ru mappings/commandline.vim               " using bash commands in the vim comma
 ru mappings/copy_paste_from_clipboard.vim " <C-c> for copy, <leader><C-v> for paste
 ru mappings/esc_with_jk.vim               " emulare ESC with jk
 ru mappings/fzf.vim                       " <C-p> start file search
-ru mappings/gitv.vim                      " ,gv and ,gV for stating the browser
+ru mappings/gitv.vim                      " ,gv (global view) and ,gV (file specific commits) for starting the browser
 ru mappings/keep_cursor_joining_lines.vim " indent joining lines the right way
 ru mappings/moving_wrapped_lines.vim      " Use hjkl in wrapped-lined files
 ru mappings/nerdtree.vim                  " F2 will call NERDTreeToogle
