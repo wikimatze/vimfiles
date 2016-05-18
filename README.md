@@ -83,18 +83,17 @@ Git wrapper.
 
 
 ## [gitv](https://github.com/gregsexton/gitv)
-A gitk/tig like git browser.
+A gitk/tig like git browser. It's not maintained anymore.
 
 - `:gitv` ... opens only gitv
 - `:gitv!` ... opens only commits which affects the current file
-- `yc` ... yanks the SHA of the commit
 - `co` ... performs a checkout of the commit on the currently focused commit
-- `q` ... quits the window
-- `:gitv -S<string>` ... look for differences that introduce or remove an instance of <string>
+- `yc` ... yanks the SHA of the commit
+- `q` ... quits gitv
+- `:Gitv -S<string>` ... look for differences that introduce or remove an instance of <string>
 - custom mappings:
   - `nmap <leader>gv :Gitv --all<cr>`
   - `nmap <leader>gV :Gitv! --all<cr>`
-  - `vmap <leader>gV :Gitv! --all<cr>`
 
 
 ## [markdown-folding](https://github.com/nelstrom/vim-markdown-folding)
