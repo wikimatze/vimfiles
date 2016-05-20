@@ -53,7 +53,6 @@ Plug 'rhysd/clever-f.vim', { 'commit': '1f22df' }
 Plug 'ryanoasis/vim-devicons', { 'tag': 'v0.7.1'}
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/syntastic', { 'tag': '3.7.0' }
-Plug 'sheerun/vim-polyglot', { 'tag': 'v2.6.0' }
 Plug 'sk1418/blockit', { 'tag': 'v1.0.0' }
 Plug 'tomtom/tcomment_vim', { 'tag': '3.08' }
 Plug 'tpope/vim-endwise'

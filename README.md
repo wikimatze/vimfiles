@@ -344,10 +344,6 @@ Extract partials for several languages with one keystroke.
 - `:PartialDispose` ... will put the contents of the partial in the text and will remove the partial
 
 
-## [vim-polyglot](https://github.com/sheerun/vim-polyglot)
-Loading language packs on demand - saves a lot of startup time.
-
-
 ## [vim-ruby](https://github.com/vim-ruby/vim-ruby)
 Configuration files for editing and compiling Ruby - it even adds custom text-objects only for Vim.
 

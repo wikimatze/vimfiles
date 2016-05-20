@@ -267,6 +267,10 @@ Build in file browser.
 Candy statusline which is high configurable.
 
 
+## [vim-polyglot](https://github.com/sheerun/vim-polyglot)
+Loading language packs on demand - saves a lot of startup time.
+
+
 ## [rubyrefactoring](https://github.com/ecomba/vim-ruby-refactoring)
 Refactoring for ruby.
 
