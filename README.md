@@ -222,6 +222,22 @@ Playing sounds in Vim.
 - `:MPlay <url>` ... play the specified url
 
 
+## [vimagit](https://github.com/jreybert/vimagit)
+A new way to use git in Vim.
+
+- `:Magit` ... opens the window
+- `N` ... jumps to the next hunk
+- `S` ... stage the current selected hunk
+  - works even in visual mode
+- `L` ... stage the current line
+- `F` ... stage/unstage the whole file at cursor position
+- `E` ... will open the file in
+- `R` ... will refresh the magit window
+- `M` ... mark the current line for staging and press `S` to chunk all marked files
+- `CC` ... prepare for commit
+- `q` ... quit magit
+
+
 ## [vim-ags](https://github.com/gabesoft/vim-ags)
 Using ag in Vim.
 
