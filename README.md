@@ -226,15 +226,17 @@ Playing sounds in Vim.
 A new way to use git in Vim.
 
 - `:Magit` ... opens the window
-- `N` ... jumps to the next hunk
+- `N|P` ... jumps to the next/previous hunk
 - `S` ... stage the current selected hunk
-  - works even in visual mode
+  - works even in visual mode!
 - `L` ... stage the current line
 - `F` ... stage/unstage the whole file at cursor position
 - `E` ... will open the file in
 - `R` ... will refresh the magit window
 - `M` ... mark the current line for staging and press `S` to chunk all marked files
-- `CC` ... prepare for commit
+- `CC` ... prepare for commit and pressing `CC` again will make the commit
+- `CA` ... do a amend where you can change the commit message
+- `CF` ... will append the staged files to the previous commit without changing commit message
 - `q` ... quit magit
 
 
