@@ -273,6 +273,7 @@ ru mappings/keep_cursor_joining_lines.vim " indent joining lines the right way
 ru mappings/moving_wrapped_lines.vim      " Use hjkl in wrapped-lined files
 ru mappings/nerdtree.vim                  " F2 will call NERDTreeToogle
 ru mappings/pry.vim                       " ,pi to insert/delete 'require pry; binding pry'
+ru mappings/vim_agsv.vim                  " <C-n>|<C-p> to jump to next/previous result
 ru mappings/quickediting.vim              " ,ba; ,bm; ,br; ,ev to edit files of vim repos
 ru mappings/neoyank.vim                   " <leader>y search the yank history
 ru mappings/vim_easy_align.vim            " press <CR> to start aligning

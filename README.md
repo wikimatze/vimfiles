@@ -241,14 +241,17 @@ A new way to use git in Vim.
 
 
 ## [vim-ags](https://github.com/gabesoft/vim-ags)
-Using ag in Vim.
+Using ag (silver-searcher) in Vim.
 
 - `:Ags` ... search after the word/term
+- `<C-n>|<C-p>` ... jump to the next/previous match
+- `oa|ob` ... opens file above/beyond
+- `r|R` ... jump direct to the next/previous matching
+- `q` ... closes window
+- `u` ... print help
+- `E` ...  go into edit mode, but you cannot add lines
 - `:AgsAdd` ... like like :Ags but append the results to the window
-- `E` ...  go into edit mode
-- `p|P` ... jump to the next/previous match
-- `oa|ob` ... open file above/beyond the result window
-- `q` ... closes the result window
+- `:AgsLast` ... run the last search
 
 
 ## [vim-airline](https://github.com/bling/vim-airline)
