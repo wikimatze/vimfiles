@@ -446,6 +446,16 @@ Motion plugin to reach certain pieces of the text in no time.
 
 - `s{char}{char}` ... and you can reach the piece of text you want (forward, and `S` for backward search)
 
+
+## [vim-testkey](https://github.com/botandrose/vim-testkey)
+Press `Enter` to run tests.
+
+- custom settings:
+<pre>
+" If not it gives a conflict with quickfix window and <Enter>
+let g:TestKey.testkey = '<leader>t'</pre>
+
+
 ## [vim-bundler](https://github.com/tpope/vim-bundler)
 Wrapper for bundler in Vim.
 

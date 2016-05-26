@@ -389,10 +389,6 @@ Read man pages in Vim. Press `vman <Tab>` to get it working.
 Very fast folding for LaTeX documents.
 
 
-## [vim-testkey](https://github.com/botandrose/vim-testkey)
-Press `Enter` to run tests. I've mapped the `Enter` into `<leader>t`.
-
-
 ## [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
 Switch seamlessly between tmux panes and Vim splits.
 
