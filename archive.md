@@ -25,6 +25,10 @@ Opens a split with a calendar inside.
 - `q` ... will close the calendar
 
 
+## [clever-f.vim](https://github.com/rhysd/clever-f.vim)
+Extended f, F, t, and T mappings - results will be highlighted and press the buttons again to repeat the search
+
+
 ## [coffee-script](https://github.com/kchmck/vim-coffee-script)
 coffee script support.
 

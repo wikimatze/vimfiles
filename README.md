@@ -25,8 +25,6 @@ Wrap text in block.
 - `..,..Block` ...  define a range where you want to have the block
 
 
-## [clever-f.vim](https://github.com/rhysd/clever-f.vim)
-Extended f, F, t, and T mappings - results will be highlighted and press the buttons again to repeat the search
 
 
 ## [easygrep](https://github.com/dkprice/vim-easygrep)
