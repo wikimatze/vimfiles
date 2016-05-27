@@ -14,6 +14,10 @@ would like to use this repository run the `install.sh` script.
 # Plugins
 
 
+## [auto_mkdir](https://github.com/DataWraith/auto_mkdir)
+Create directories that do not exists yet when creating new files (e.g. with `e`)
+
+
 ## [blockit](https://github.com/sk1418/blockit)
 Wrap text in block.
 

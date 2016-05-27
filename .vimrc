@@ -65,6 +65,7 @@ Plug 'wellle/tmux-complete.vim', 'v0.1.1'
 Plug 'wikimatze/tocdown', { 'tag': 'v.1.0.1', 'on': 'TocdownToggle' }
 Plug 'xolox/vim-misc', { 'tag': '1.17.6' }
 Plug 'xolox/vim-notes', { 'tag': '0.33.4' }
+Plug 'DataWraith/auto_mkdir', { 'tag': '0.33.4' }
 
 Plug 'junegunn/fzf', { 'tag': '0.12.1', 'dir': '~/.fzf', 'do': './install --all' }
 
