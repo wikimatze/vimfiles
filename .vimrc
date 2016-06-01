@@ -31,6 +31,7 @@ Plug 'bling/vim-airline', { 'tag': 'v0.8' }
 Plug 'christoomey/vim-tmux-navigator', { 'tag': 'v1.0' }
 Plug 'danchoi/ri.vim', { 'tag': 'v1.2', 'for': 'ruby' }
 Plug 'dkprice/vim-easygrep', 'v2.0'
+Plug 'francoiscabrol/ranger.vim', { 'tag': '1.0' }
 Plug 'gabesoft/vim-ags'
 Plug 'gregsexton/gitv', { 'tag': 'v1.3' }
 Plug 'idanarye/vim-merginal', { 'tag': '1.6.0' }
@@ -50,7 +51,6 @@ Plug 'nelstrom/vim-markdown-folding'
 Plug 'reedes/vim-lexical', { 'tag': 'v1.1' }
 Plug 'reedes/vim-litecorrect', { 'tag': 'v1.1' }
 Plug 'ryanoasis/vim-devicons', { 'tag': 'v0.7.1'}
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/syntastic', { 'tag': '3.7.0' }
 Plug 'sk1418/blockit', { 'tag': 'v1.0.0' }
 Plug 'tomtom/tcomment_vim', { 'tag': '3.08' }
@@ -272,7 +272,7 @@ ru mappings/fzf.vim                       " <C-p> start file search
 ru mappings/gitv.vim                      " ,gv (global view) and ,gV (file specific commits) for starting the browser
 ru mappings/keep_cursor_joining_lines.vim " indent joining lines the right way
 ru mappings/moving_wrapped_lines.vim      " Use hjkl in wrapped-lined files
-ru mappings/nerdtree.vim                  " F2 will call NERDTreeToogle
+ru mappings/ranger.vim                    " F2 will call :Ranger
 ru mappings/pry.vim                       " ,pi to insert/delete 'require pry; binding pry'
 ru mappings/vim_agsv.vim                  " <C-n>|<C-p> to jump to next/previous result
 ru mappings/quickediting.vim              " ,ba; ,bm; ,br; ,ev to edit files of vim repos

@@ -227,6 +227,38 @@ Opens a quickfix windows which shows the last opens files.
 - `:MRU` ... opens the window
 
 
+
+
+## [NERDTree](https://github.com/scrooloose/nerdtree)
+Perfect file browser for vim
+
+- `m` ... choose which action to perform (add, move, copy, delete)
+  - add / at the end to create a new directory
+- `r` ... refresh the view
+- `o|<Enter>` ... opens the directory (has toggle function)
+- `O` ... opens the node recursive from the parent node
+- `x` ... closed the parent node, but leave the nodes above the node open (visual close)
+- `X` ... closed all nodes which are under the actual node (physical close) - `p` ... jumps to the root tree
+- `C` ... change the directory to the current mode
+- `U` ... go up to the directory
+- `p` ... go up to parent direcory
+- `P` ... go up to root directory
+- `i` ... opens the file in a new split
+- `t` ... opens th file in a new tab
+- `R` ... update the view
+- `?` ... opens help with all shortcuts
+- `cd` ... change directories
+- `:NERDTreeFind` ... open the current file in the NERDTree and expand the tree to this file location
+
+- custom settings:
+<pre>
+  let g:NERDTreeWinSize = 30             " the width of the NERDTree when it opens
+  let g:NERDTreeDirArrows = 1            " use arrows for the tree structure
+  let g:NERDChristmasTree = 0            " less colorful tree (save performance)
+  let g:NERDTreeHighlightCursorline = 0  " no cursor highlight in the tree
+  let g:NERDTreeMouseMode = 3            " one click will open the file
+  let g:NERDTreeWinPos = 'right'         " display Tree in the right
+  let g:NERDTreeWinSize = 30             " the width of the NERDTree when it opens</pre>
 ## [neobundle](https://github.com/Shougo/neobundle.vim)
 Package manager for Vim.
 
