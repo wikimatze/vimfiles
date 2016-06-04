@@ -131,6 +131,12 @@ Nyancat rocks vim
 Open the URI with `gx` (my custom mapping) in your default browser.
 
 
+## [previm](https://github.com/kannokanno/previm)
+Realtime preview for Markdown, rst, and textile files in your browser while editing.
+
+- `:PrevimOpen` ... opens the current file on the browser.
+
+
 ## [ri.vim](https://github.com/danchoi/ri.vim)
 Browse ri documentation of Ruby files offline.
 
