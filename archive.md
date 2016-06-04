@@ -314,6 +314,10 @@ An universal comment tool plugin.
 Loading language packs on demand - saves a lot of startup time.
 
 
+## [tocdown](https://github.com/wikimatze/tocdown)
+Display the headlines of a markdown document in an extra window.
+
+
 ## [rubyrefactoring](https://github.com/ecomba/vim-ruby-refactoring)
 Refactoring for ruby.
 

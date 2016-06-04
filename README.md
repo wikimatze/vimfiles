@@ -167,10 +167,6 @@ Change quotes and all other delimiters.
     press `s` and then the quote (`"", (), {}`) you want to have and it wraps the string in this
 
 
-## [tocdown](https://github.com/wikimatze/tocdown)
-Display the headlines of a markdown document in an extra window.
-
-
 ## [caw.vim](https://github.com/tyru/caw.vim)
 Vim comment plugin.
 
