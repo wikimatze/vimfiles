@@ -53,11 +53,11 @@ Plug 'reedes/vim-litecorrect', { 'tag': 'v1.1' }
 Plug 'ryanoasis/vim-devicons', { 'tag': 'v0.7.1'}
 Plug 'scrooloose/syntastic', { 'tag': '3.7.0' }
 Plug 'sk1418/blockit', { 'tag': 'v1.0.0' }
-Plug 'tomtom/tcomment_vim', { 'tag': '3.08' }
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-eunuch', { 'tag': 'v1.1' }
 Plug 'tpope/vim-fugitive', 'master'
 Plug 'tpope/vim-surround', { 'tag': 'v2.1' }
+Plug 'tyru/caw.vim'
 Plug 'tyru/open-browser.vim', { 'tag': 'v0.1.1' }
 Plug 'vim-ruby/vim-ruby'
 Plug 'wellle/tmux-complete.vim', 'v0.1.1'

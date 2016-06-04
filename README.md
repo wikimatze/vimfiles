@@ -171,11 +171,11 @@ Change quotes and all other delimiters.
 Display the headlines of a markdown document in an extra window.
 
 
-## [tcomment_vim](https://github.com/tomtom/tcomment_vim)
-An universal comment tool plugin.
+## [caw.vim](https://github.com/tyru/caw.vim)
+Vim comment plugin.
 
-- `gcc` ... toogles current line (work the same way in Visual mode)
-- `gc{motion}` ... toogles comment with the specified motion
+- `gcc` ... toogles current line
+- `gca` ... at comment at end of the line
 
 
 ## [tmux-complete-vim](https://github.com/wellle/tmux-complete.vim)

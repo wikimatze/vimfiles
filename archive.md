@@ -303,6 +303,13 @@ Build in file browser.
 Candy statusline which is high configurable.
 
 
+## [tcomment_vim](https://github.com/tomtom/tcomment_vim)
+An universal comment tool plugin.
+
+- `gcc` ... toogles current line
+- `gc{motion}` ... toogles comment with the specified motion
+
+
 ## [vim-polyglot](https://github.com/sheerun/vim-polyglot)
 Loading language packs on demand - saves a lot of startup time.
 
