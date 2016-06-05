@@ -6,9 +6,12 @@ of the most important commands and settings for each plugin.
 
 # Installation
 
-Do not copy my *.vimrc* because they may not fit to your working style (see **Luca Pettes**
-[wonderful article](http://lucapette.me/vim-for-rails-developers-lazy-modern-configuration/)). But if you
-would like to use this repository run the `install.sh` script.
+```sh
+$ git clone https://github.com/wikimatze/vimfiles.git ~/.vim
+$ bash ~/.vim/install.sh
+```
+
+Next, start vim and run `:PlugInstall` - happy vimming!
 
 
 # Plugins
@@ -23,8 +26,6 @@ Wrap text in block.
 
 - `'<,'>Block` ... works even in visual mode
 - `..,..Block` ...  define a range where you want to have the block
-
-
 
 
 ## [easygrep](https://github.com/dkprice/vim-easygrep)
@@ -116,8 +117,6 @@ Adds snippet support for Vim and makes use of neocomplete plugin.
 Saves yank history includes unite.vim history/yank source.
 
 - `<leader>y` ... call the yank window
-
-
 
 
 ## [nyancat-vim](https://github.com/koron/nyancat-vim)

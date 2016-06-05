@@ -1,14 +1,17 @@
 #!/bin/bash
-git clone https://github.com/wikimatze/vimfiles.git ~/.vim
 ln -sf ~/.vim/.vimrc ~/.vimrc
-mkdir ~/.fonts
-mkdir ~/.vim/thesaurus
+if [[ ! -e ~/.fonts ]]; then
+  echo "Creating ~/.fonts folder"
+  mkdir ~/.fonts
+fi
+if [[ ! -e ~/.vim/thesaurus ]]; then
+  echo "Creating ~/.vim/thesaurus folder"
+  mkdir ~/.vim/thesaurus
+fi
 
 echo "Grab german openthesaurus ..."
 cd /tmp && wget https://www.openthesaurus.de/export/OpenThesaurus-Textversion.zip -O mthesaur.zip && unzip mthesaur.zip && mv openthesaurus.txt ~/.vim/thesaurus/
 echo "... done!"
-
-echo "Start vim and run :PlugInstall"
 
 echo "Install the Powerline-Plus-Nerd-File-Types font"
 
