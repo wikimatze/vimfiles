@@ -259,6 +259,8 @@ Perfect file browser for vim
   let g:NERDTreeMouseMode = 3            " one click will open the file
   let g:NERDTreeWinPos = 'right'         " display Tree in the right
   let g:NERDTreeWinSize = 30             " the width of the NERDTree when it opens</pre>
+
+
 ## [neobundle](https://github.com/Shougo/neobundle.vim)
 Package manager for Vim.
 

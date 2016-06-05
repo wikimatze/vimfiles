@@ -15,7 +15,7 @@ would like to use this repository run the `install.sh` script.
 
 
 ## [auto_mkdir](https://github.com/DataWraith/auto_mkdir)
-Create directories that do not exists yet when creating new files (e.g. with `e`)
+Create directories that do not exists yet when creating new files (e.g. with `e`).
 
 
 ## [blockit](https://github.com/sk1418/blockit)
@@ -395,8 +395,7 @@ A very good tool to manage LaTeX files as well as the compilation.
 
 - `\ll` ... compiles the tex-file
 - `\lv` ... opens the document with the specified pdf-viewer
-- `:VimtexTocOpen` ... will open a clickable toc in the left pane (`q` will close the window)
--
+- `:VimtexTocOpen|:VimtexTocToggle` ... will open a clickable toc in the left pane (`q` will close the window)
 
 
 # License
