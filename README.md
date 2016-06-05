@@ -137,6 +137,10 @@ Realtime preview for Markdown, rst, and textile files in your browser while edit
 - `:PrevimOpen` ... opens the current file on the browser.
 
 
+## [ranger.vim](https://github.com/francoiscabrol/ranger.vim)
+Ranger intergration for vim and neovim.
+
+
 ## [ri.vim](https://github.com/danchoi/ri.vim)
 Browse ri documentation of Ruby files offline.
 
@@ -163,7 +167,7 @@ Change quotes and all other delimiters.
   - example: `{ :a => 1 }` after pressing `ds{` you will get `:a => 1`
 - `cs("` ... change surroundings and will replace the first surrounding argument with the second surrounding
   - example: `(:a => 1)` after pressing `cs({` you will get `{ :a => 1 }`
-- `ys` ... stands for "you surround" and the first argument specifies the scope and the second
+- `ys` ... "you surround" and the first argument specifies the scope (can be a motion) and the second
   makes the replacement and the second using for wrapping up the first argument with the quotes
   - `ys2w` ... will wrapp two following words (`2w`) with underscores (`\*`)
   - `yss{` ... wraps the whole line
@@ -219,8 +223,8 @@ A new way to use git in Vim.
 - `R` ... will refresh the magit window
 - `M` ... mark the current line for staging and press `S` to chunk all marked files
 - `CC` ... prepare for commit and pressing `CC` again will make the commit
-- `CA` ... do a amend where you can change the commit message
 - `CF` ... will append the staged files to the previous commit without changing commit message
+- `CA` ... do a amend where you can change the commit message
 - `q` ... quit magit
 
 
