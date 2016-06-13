@@ -44,10 +44,9 @@ Plug 'junegunn/vim-easy-align', { 'tag': '2.10.0' }
 Plug 'kannokanno/previm'
 Plug 'klen/unite-radio.vim'
 Plug 'koron/nyancat-vim', { 'tag': 'v1.0' }
-Plug 'lervag/vimtex', { 'commit': '1aedd5a' }
+Plug 'lervag/vimtex'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'matze/vim-move', { 'tag': 'v1.3'}
-Plug 'matze/vim-tex-fold', 'v1.3'
 Plug 'mbbill/undotree',{ 'tag':  'rel_5.0' }
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'reedes/vim-lexical', { 'tag': 'v1.1' }

@@ -372,8 +372,6 @@ Configuration files for editing and compiling Ruby - it even adds custom text-ob
 Read man pages in Vim. Press `vman <Tab>` to get it working.
 
 
-## [vim-tex-folding](https://github.com/matze/vim-tex-fold/releases)
-Very fast folding for LaTeX documents.
 
 
 ## [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)

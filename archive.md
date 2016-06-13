@@ -391,7 +391,7 @@ Display the structure of the code.
   nnoremap <silent> <F3> :TagbarToggle<CR></pre>
 
 
-## [vim-tex-folding](https://github.com/matze/vim-tex-fold/releases)
+## [vim-tex-fold](https://github.com/matze/vim-tex-fold/releases)
 Very fast folding for LaTeX documents.
 
 
