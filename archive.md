@@ -391,6 +391,10 @@ Display the structure of the code.
   nnoremap <silent> <F3> :TagbarToggle<CR></pre>
 
 
+## [vim-tex-folding](https://github.com/matze/vim-tex-fold/releases)
+Very fast folding for LaTeX documents.
+
+
 ## [unite-help](https://github.com/tsukkee/unite-help)
 Opens unite window for searching.
 
