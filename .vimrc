@@ -60,6 +60,7 @@ Plug 'tpope/vim-fugitive', 'master'
 Plug 'tpope/vim-surround', { 'tag': 'v2.1' }
 Plug 'tyru/caw.vim'
 Plug 'tyru/open-browser.vim', { 'tag': 'v0.1.1' }
+Plug 'unblevable/quick-scope'
 Plug 'vim-ruby/vim-ruby'
 Plug 'wellle/tmux-complete.vim', 'v0.1.1'
 Plug 'xolox/vim-misc', { 'tag': '1.17.6' }
