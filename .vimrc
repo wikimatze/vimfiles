@@ -21,7 +21,7 @@ endif
 
 call plug#begin('~/.vim/plugged/')
 
-Plug 'DataWraith/auto_mkdir', { 'tag': '0.33.4' }
+Plug 'DataWraith/auto_mkdir', { 'tag': 'v1.0.0' }
 Plug 'Raimondi/delimitMate', { 'tag': '2.7' }
 Plug 'Shougo/neosnippet.vim', { 'tag': 'ver.4.2' }
 Plug 'Shougo/neoyank.vim', 'master'
@@ -32,7 +32,7 @@ Plug 'bling/vim-airline', { 'tag': 'v0.8' }
 Plug 'christoomey/vim-tmux-navigator', { 'tag': 'v1.0' }
 Plug 'danchoi/ri.vim', { 'tag': 'v1.2', 'for': 'ruby' }
 Plug 'dkprice/vim-easygrep', 'v2.0'
-Plug 'francoiscabrol/ranger.vim', { 'tag': '1.0' }
+Plug 'francoiscabrol/ranger.vim'
 Plug 'gabesoft/vim-ags'
 Plug 'gregsexton/gitv', { 'tag': 'v1.3' }
 Plug 'idanarye/vim-merginal', { 'tag': '1.6.0' }
