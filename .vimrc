@@ -38,7 +38,6 @@ Plug 'gregsexton/gitv', { 'tag': 'v1.3' }
 Plug 'idanarye/vim-merginal', { 'tag': '1.6.0' }
 Plug 'jamessan/vim-gnupg'
 Plug 'jbgutierrez/vim-partial'
-Plug 'jez/vim-superman', { 'tag': '0.9.1' }
 Plug 'jreybert/vimagit', { 'tag': '1.6.0' }
 Plug 'junegunn/vim-easy-align', { 'tag': '2.10.0' }
 Plug 'kannokanno/previm'

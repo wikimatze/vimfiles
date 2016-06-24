@@ -683,3 +683,6 @@ Better register management and saves up to 100 buffered lines.
 - `:YRSearch` ... type in a word or regular expression to search the yankring after it
 - `j`, `k` for navigation and <Enter> chose your entry
 
+## [vim-superman](https://github.com/jez/vim-superman)
+Read man pages in Vim. Press `vman <Tab>` to get it working.
+
