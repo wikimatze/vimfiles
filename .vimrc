@@ -203,6 +203,11 @@ endif
 
 
 " }}}
+" Enable manpage.vim {{{
+
+runtime! ftplugin/man.vim
+
+" }}}
 " Functions {{{
 " Trailing whitespace removal {{{
 fu! <SID>StripTrailingWhitespaces()
