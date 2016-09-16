@@ -30,7 +30,7 @@ Plug 'Shougo/vimproc.vim', { 'tag': 'ver.9.2', 'do': 'make' }
 Plug 'alvan/vim-closetag'
 Plug 'bling/vim-airline', { 'tag': 'v0.8' }
 Plug 'christoomey/vim-tmux-navigator', { 'tag': 'v1.0' }
-Plug 'danchoi/ri.vim', { 'tag': 'v1.2', 'for': 'ruby' }
+" Plug 'danchoi/ri.vim', { 'tag': 'v1.2', 'for': 'ruby' }
 Plug 'dkprice/vim-easygrep', 'v2.0'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'gabesoft/vim-ags'
@@ -60,10 +60,17 @@ Plug 'tpope/vim-surround', { 'tag': 'v2.1' }
 Plug 'tyru/caw.vim'
 Plug 'tyru/open-browser.vim', { 'tag': 'v0.1.1' }
 Plug 'unblevable/quick-scope'
-Plug 'vim-ruby/vim-ruby'
+" Plug 'vim-ruby/vim-ruby'
 Plug 'wellle/tmux-complete.vim', 'v0.1.1'
 Plug 'xolox/vim-misc', { 'tag': '1.17.6' }
 Plug 'xolox/vim-notes', { 'tag': '0.33.4' }
+Plug 'junegunn/vader.vim'
+
+" Plug 'janko-m/vim-test'
+" Plug 'tpope/vim-dispatch'
+
+Plug 'mustache/vim-mustache-handlebars'
+
 
 Plug 'junegunn/fzf', { 'tag': '0.12.1', 'dir': '~/.fzf', 'do': './install --all' }
 
