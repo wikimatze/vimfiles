@@ -334,3 +334,14 @@ let g:markdown_fenced_languages = ['ruby', 'vim', 'html', 'sh', 'erb=eruby']
 " Credit http://stackoverflow.com/questions/11023194/git-vim-automatically-wrap-long-commit-messages
 autocmd Filetype gitcommit set textwidth=60
 
+let test#ruby#bundle_exec = 1
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
+
+"let test#ruby#minitest#file_pattern = 'test_*\.rb' " the default is '_test\.rb'
+let test#ruby#minitest#executable = 'bundle exec ruby'
+let g:mustache_abbreviations = 1
+
