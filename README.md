@@ -176,6 +176,10 @@ Change quotes and all other delimiters.
     press `s` and then the quote (`"", (), {}`) you want to have and it wraps the string in this
 
 
+## [quick-scope](https://github.com/tpope/vim-surround)
+Lightning fast left-right movement (enhances the `f` and `F` command)
+
+
 ## [caw.vim](https://github.com/tyru/caw.vim)
 Vim comment plugin.
 
@@ -368,8 +372,13 @@ Configuration files for editing and compiling Ruby - it even adds custom text-ob
   - `[[` ... move to the beginning of the **previous** *module* or *class* definition
 
 
+## [vim-test](https://github.com/janko-m/vim-test)
+Easy run your test for various programming languages.
 
-
+- `:TestNearest` ... will only run where cursor location is
+- `:TestFile` ... will run all tests of the current file
+- `:TestLast` ... will run the last test again
+- `:TestVisit` ... jumps to the last executed test
 
 
 ## [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
@@ -391,6 +400,7 @@ A very good tool to manage LaTeX files as well as the compilation.
 - `\ll` ... compiles the tex-file
 - `\lv` ... opens the document with the specified pdf-viewer
 - `:VimtexTocOpen|:VimtexTocToggle` ... will open a clickable toc in the left pane (`q` will close the window)
+
 
 
 # License
