@@ -70,7 +70,7 @@
 - `<C-x><C-t>` ... opens thesaurus
 - `<C-r>%` ... insert the current filename in insert mode
 - `.`  ... repeat the last made action
-- `@:` ... repeat any last Ex command
+- `@:` ... repeat any last Ex command (pressing `@@` will repeat then the last command)
 - `zR` ... `reduce` all folding (opens all foldings)
 - `zM` ... `folds more` (closes all foldings of all levels)
 - `zo` ... opens a single folding
