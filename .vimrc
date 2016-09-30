@@ -36,7 +36,7 @@ Plug 'dkprice/vim-easygrep', { 'commit': 'e4aa13d' }
 Plug 'francoiscabrol/ranger.vim'
 Plug 'gabesoft/vim-ags'
 Plug 'gregsexton/gitv', { 'commit': '1690471' }
-Plug 'jamessan/vim-gnupg'
+Plug 'jamessan/vim-gnupg', { 'tag': 'v2.6' }
 Plug 'janko-m/vim-test', { 'tag': 'v2.1.0' }
 Plug 'jbgutierrez/vim-partial'
 Plug 'jreybert/vimagit', { 'tag': '1.6.0' }
