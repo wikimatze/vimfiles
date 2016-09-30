@@ -193,8 +193,8 @@ JSON detection and syntax-highlighting.
 Pretty colors for the jQuery syntax.
 
 
-## [lightline](https://github.com/itchyny/lightline.vim)
-Awesome way to create a custom status line.
+## [vim-airline](https://github.com/vim-airline/vim-airline)
+Beautiful status and tab line.
 
 
 ## [l9](https://github.com/vim-scripts/L9.git)

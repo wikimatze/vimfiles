@@ -251,8 +251,8 @@ Using ag (silver-searcher) in Vim.
 - `:AgsLast` ... run the last search
 
 
-## [vim-airline](https://github.com/bling/vim-airline)
-Beautiful status and tab line.
+## [lightline](https://github.com/itchyny/lightline.vim)
+Awesome way to create a custom status line.
 
 
 ## [vim-bracketed-paste](https://github.com/ConradIrwin/vim-bracketed-paste)
