@@ -25,7 +25,7 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'DataWraith/auto_mkdir', { 'tag': 'v1.0.0' }
 Plug 'Raimondi/delimitMate', { 'tag': '2.7' }
 Plug 'Shougo/neosnippet.vim', { 'commit': 'a1508f8' }
-Plug 'Shougo/neoyank.vim', 'master'
+Plug 'Shougo/neoyank.vim', { 'commit': 'c116537' }
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimproc.vim', { 'tag': 'ver.9.2', 'do': 'make' }
 Plug 'alvan/vim-closetag'
