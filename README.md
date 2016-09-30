@@ -253,6 +253,10 @@ Beautiful status and tab line.
 Auto close (X)HTML tags.
 
 
+## [vim-dispatch](https://github.com/tpope/vim-dispatch)
+Run commands asynchronous.
+
+
 ## [vim-devicons](https://github.com/ryanoasis/vim-devicons)
 Filetype icons for vim.
 

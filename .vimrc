@@ -53,6 +53,7 @@ Plug 'reedes/vim-litecorrect', { 'tag': 'v1.1' }
 Plug 'ryanoasis/vim-devicons', { 'tag': 'v0.7.1'}
 Plug 'scrooloose/syntastic', { 'tag': '3.7.0' }
 Plug 'sk1418/blockit', { 'tag': 'v1.0.0' }
+Plug 'tpope/vim-dispatch', 'master'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-eunuch', { 'tag': 'v1.1' }
 Plug 'tpope/vim-fugitive', 'master'
@@ -67,7 +68,6 @@ Plug 'xolox/vim-notes', { 'tag': '0.33.4' }
 Plug 'junegunn/vader.vim'
 
 " Plug 'janko-m/vim-test'
-" Plug 'tpope/vim-dispatch'
 
 Plug 'mustache/vim-mustache-handlebars'
 
