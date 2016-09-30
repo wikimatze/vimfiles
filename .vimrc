@@ -37,6 +37,7 @@ Plug 'gabesoft/vim-ags'
 Plug 'gregsexton/gitv', { 'tag': 'v1.3' }
 Plug 'idanarye/vim-merginal', { 'tag': '1.6.0' }
 Plug 'jamessan/vim-gnupg'
+Plug 'janko-m/vim-test', { 'tag': 'v2.1.0' }
 Plug 'jbgutierrez/vim-partial'
 Plug 'jreybert/vimagit', { 'tag': '1.6.0' }
 Plug 'junegunn/vim-easy-align', { 'tag': '2.10.0' }
@@ -67,7 +68,6 @@ Plug 'xolox/vim-misc', { 'tag': '1.17.6' }
 Plug 'xolox/vim-notes', { 'tag': '0.33.4' }
 Plug 'junegunn/vader.vim'
 
-" Plug 'janko-m/vim-test'
 
 Plug 'mustache/vim-mustache-handlebars'
 
@@ -289,7 +289,7 @@ ru mappings/vim_agsv.vim                  " <C-n>|<C-p> to jump to next/previous
 ru mappings/quickediting.vim              " ,ba; ,bm; ,br; ,ev to edit files of vim repos
 ru mappings/neoyank.vim                   " <leader>y search the yank history
 ru mappings/vim_easy_align.vim            " press <CR> to start aligning
-ru mappings/vim_testkeys.vim              " <leader>t run the test
+ru mappings/vim_test.vim                  " <leader>t :TestNearest, <leader>T :TestFile, <leader>a :TestSuite, <leader>l :TestLastVisit, <leader>g :TestVisit
 
 " ,d to copy the file path to clipboard, very handy for file name completion for vimbook
 nmap <leader>d :call system("xclip -i -selection clipboard", expand("%"))<CR>
@@ -334,14 +334,5 @@ let g:markdown_fenced_languages = ['ruby', 'vim', 'html', 'sh', 'erb=eruby']
 " Credit http://stackoverflow.com/questions/11023194/git-vim-automatically-wrap-long-commit-messages
 autocmd Filetype gitcommit set textwidth=60
 
-let test#ruby#bundle_exec = 1
-nmap <silent> <leader>t :TestNearest<CR>
-nmap <silent> <leader>T :TestFile<CR>
-nmap <silent> <leader>a :TestSuite<CR>
-nmap <silent> <leader>l :TestLast<CR>
-nmap <silent> <leader>g :TestVisit<CR>
-
-"let test#ruby#minitest#file_pattern = 'test_*\.rb' " the default is '_test\.rb'
-let test#ruby#minitest#executable = 'bundle exec ruby'
 let g:mustache_abbreviations = 1
 
