@@ -27,7 +27,7 @@ Plug 'Raimondi/delimitMate', { 'tag': '2.7' }
 Plug 'Shougo/neosnippet.vim', { 'commit': 'a1508f8' }
 Plug 'Shougo/neoyank.vim', { 'commit': 'c116537' }
 Plug 'Shougo/unite.vim', { 'commit': '504edce' }
-Plug 'Shougo/vimproc.vim', { 'tag': 'ver.9.2', 'do': 'make' }
+Plug 'Shougo/vimproc.vim', { 'commit': '25cb83f', 'do': 'make' }
 Plug 'alvan/vim-closetag'
 Plug 'bling/vim-airline', { 'tag': 'v0.8' }
 Plug 'christoomey/vim-tmux-navigator', { 'tag': 'v1.0' }
