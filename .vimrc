@@ -21,6 +21,7 @@ endif
 
 call plug#begin('~/.vim/plugged/')
 
+Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'DataWraith/auto_mkdir', { 'tag': 'v1.0.0' }
 Plug 'Raimondi/delimitMate', { 'tag': '2.7' }
 Plug 'Shougo/neosnippet.vim', { 'tag': 'ver.4.2' }

@@ -255,6 +255,10 @@ Using ag (silver-searcher) in Vim.
 Beautiful status and tab line.
 
 
+## [vim-bracketed-paste](https://github.com/ConradIrwin/vim-bracketed-paste)
+Solves the issue with `:set paste` for vim when pasting with `<C-v>`.
+
+
 ## [vim-closetag](https://github.com/alvan/vim-closetag)
 Auto close (X)HTML tags.
 
