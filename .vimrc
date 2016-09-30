@@ -28,7 +28,7 @@ Plug 'Shougo/neosnippet.vim', { 'commit': 'a1508f8' }
 Plug 'Shougo/neoyank.vim', { 'commit': 'c116537' }
 Plug 'Shougo/unite.vim', { 'commit': '504edce' }
 Plug 'Shougo/vimproc.vim', { 'commit': '25cb83f', 'do': 'make' }
-Plug 'alvan/vim-closetag'
+Plug 'alvan/vim-closetag', { 'commit': 'e7e6cb9' }
 Plug 'bling/vim-airline', { 'tag': 'v0.8' }
 Plug 'christoomey/vim-tmux-navigator', { 'tag': 'v1.0' }
 " Plug 'danchoi/ri.vim', { 'tag': 'v1.2', 'for': 'ruby' }
