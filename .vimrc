@@ -35,7 +35,7 @@ Plug 'christoomey/vim-tmux-navigator', { 'commit': 'e79d4c0' }
 Plug 'dkprice/vim-easygrep', { 'commit': 'e4aa13d' }
 Plug 'francoiscabrol/ranger.vim'
 Plug 'gabesoft/vim-ags'
-Plug 'gregsexton/gitv', { 'tag': 'v1.3' }
+Plug 'gregsexton/gitv', { 'commit': '1690471' }
 Plug 'idanarye/vim-merginal', { 'tag': '1.6.0' }
 Plug 'jamessan/vim-gnupg'
 Plug 'janko-m/vim-test', { 'tag': 'v2.1.0' }

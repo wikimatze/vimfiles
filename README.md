@@ -86,7 +86,7 @@ Git wrapper.
 
 
 ## [gitv](https://github.com/gregsexton/gitv)
-A gitk/tig like git browser. It's not maintained anymore.
+A gitk/tig like git browser.
 
 - `:gitv` ... opens only gitv
 - `:gitv!` ... opens only commits which affects the current file
