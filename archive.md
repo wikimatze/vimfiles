@@ -506,7 +506,13 @@ Press `Enter` to run tests.
 - custom settings:
 <pre>
 " If not it gives a conflict with quickfix window and <Enter>
-let g:TestKey.testkey = '<leader>t'</pre>
+let g:TestKey.testkey = '<leader>t'
+let g:TestKey = { 'runners': {} }
+
+let g:TestKey.runners.rspec = { 'match': '_spec.rb$' }
+function g:TestKey.runners.rspec.run(file, line)
+  return ':!clear && bundle exec rspec '.a:file
+endfunction</pre>
 
 
 ## [vim-bundler](https://github.com/tpope/vim-bundler)
