@@ -310,22 +310,6 @@ Lightweight auto correction for 300 words.
     thats -> that's
 
 
-## [vim-merginal](https://github.com/idanarye/vim-merginal)
-Git branch management.
-
-- `:Merginal` ... opens the extra window
-- `C|cc` ... checkout branch under the cursor
-- `M|mm` ... does a normal merge
-- `mn` ...merge the branch under the cursor with --no-ff and a merge commit
-- `A` ... add a branch from the current checked out branch under the cursor
-- `D|dd` ... delete branch under the cursor
-- `rn` ... prompt to rename the branch under the cursor
-- `ps` ... push the current master on the branch under the cursor
-- `pS` ... force git push
-- `rb` ... starting rebase
-- `q` ... will merging window
-
-
 ## [vim-misc](https://github.com/xolox/vim-misc)
 Extended Vim standard library needed for vim-notes plugin.
 

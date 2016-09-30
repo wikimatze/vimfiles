@@ -197,6 +197,22 @@ Pretty colors for the jQuery syntax.
 Beautiful status and tab line.
 
 
+## [vim-merginal](https://github.com/idanarye/vim-merginal)
+Git branch management.
+
+- `:Merginal` ... opens the extra window
+- `A|aa` ... add a branch from the current checked out branch under the cursor
+- `C|cc` ... checkout branch under the cursor
+- `M|mm` ... does a normal merge
+- `mn` ...merge the branch under the cursor with --no-ff and a merge commit
+- `D|dd` ... delete branch under the cursor
+- `rn` ... prompt to rename the branch under the cursor
+- `ps` ... push the current master on the branch under the cursor
+- `pS` ... force git push
+- `rb` ... starting rebase
+- `q` ... will merging window
+
+
 ## [l9](https://github.com/vim-scripts/L9.git)
 Vim-script library, add functionality to program vim-files (used by vim-autocomplpop plugin).
 
