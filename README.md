@@ -231,6 +231,12 @@ A new way to use git in Vim.
 - `q` ... quit magit
 
 
+## [vader.vim](https://github.com/junegunn/vader.vim)
+Testframework for Vimscript.
+
+- `:Vader` ... runs the current test file
+
+
 ## [vim-ags](https://github.com/gabesoft/vim-ags)
 Using ag (silver-searcher) in Vim.
 

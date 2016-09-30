@@ -40,6 +40,7 @@ Plug 'jamessan/vim-gnupg'
 Plug 'janko-m/vim-test', { 'tag': 'v2.1.0' }
 Plug 'jbgutierrez/vim-partial'
 Plug 'jreybert/vimagit', { 'tag': '1.6.0' }
+Plug 'junegunn/vader.vim', 'master'
 Plug 'junegunn/vim-easy-align', { 'tag': '2.10.0' }
 Plug 'kannokanno/previm'
 Plug 'klen/unite-radio.vim'
@@ -66,7 +67,6 @@ Plug 'unblevable/quick-scope'
 Plug 'wellle/tmux-complete.vim', 'v0.1.1'
 Plug 'xolox/vim-misc', { 'tag': '1.17.6' }
 Plug 'xolox/vim-notes', { 'tag': '0.33.4' }
-Plug 'junegunn/vader.vim'
 
 
 Plug 'mustache/vim-mustache-handlebars'
@@ -118,7 +118,6 @@ set shiftwidth=2                            " how many columns text is indented 
 set softtabstop=2                           " how many columns
 set expandtab                               " hitting tab in insert mode will produce number in spaces instead of tabs
 set textwidth=100                           " maximum of text that is being inserted
-
 set fillchars=""                            " get rid of silly characters in separators in the CMD
 set incsearch " highlight search after you type it
 " so /foo matches FOO and fOo, but /FOO only matches the former)
