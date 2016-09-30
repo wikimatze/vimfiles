@@ -347,13 +347,6 @@ Package manager for Vim.
 - `:PlugDiff` ... show the latest change commits for your installed plugins
 
 
-## [vim-partial](https://github.com/jbgutierrez/vim-partial)
-Extract partials for several languages with one keystroke.
-
-- `<leader>x|:PlugExtract` ... will move the selected text to the selected
-- `:PartialDispose` ... will put the contents of the partial in the text and will remove the partial
-
-
 ## [vim-ruby](https://github.com/vim-ruby/vim-ruby)
 Configuration files for editing and compiling Ruby - it even adds custom text-objects only for Vim.
 

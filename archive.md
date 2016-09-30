@@ -197,6 +197,13 @@ Pretty colors for the jQuery syntax.
 Beautiful status and tab line.
 
 
+## [vim-partial](https://github.com/jbgutierrez/vim-partial)
+Extract partials for several languages with one keystroke.
+
+- `<leader>x|:PlugExtract` ... will move the selected text to the selected
+- `:PartialDispose` ... will put the contents of the partial in the text and will remove the partial
+
+
 ## [vim-merginal](https://github.com/idanarye/vim-merginal)
 Git branch management.
 
