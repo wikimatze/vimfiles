@@ -30,8 +30,8 @@ Plug 'Shougo/unite.vim', { 'commit': '504edce' }
 Plug 'Shougo/vimproc.vim', { 'commit': '25cb83f', 'do': 'make' }
 Plug 'alvan/vim-closetag', { 'commit': 'e7e6cb9' }
 Plug 'itchyny/lightline.vim', { 'commit': ' 0f2a262' }
-Plug 'christoomey/vim-tmux-navigator', { 'tag': 'v1.0' }
 " Plug 'danchoi/ri.vim', { 'tag': 'v1.2', 'for': 'ruby' }
+Plug 'christoomey/vim-tmux-navigator', { 'commit': 'e79d4c0' }
 Plug 'dkprice/vim-easygrep', 'v2.0'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'gabesoft/vim-ags'
