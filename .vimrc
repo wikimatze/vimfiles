@@ -32,7 +32,7 @@ Plug 'alvan/vim-closetag', { 'commit': 'e7e6cb9' }
 Plug 'itchyny/lightline.vim', { 'commit': ' 0f2a262' }
 " Plug 'danchoi/ri.vim', { 'tag': 'v1.2', 'for': 'ruby' }
 Plug 'christoomey/vim-tmux-navigator', { 'commit': 'e79d4c0' }
-Plug 'dkprice/vim-easygrep', 'v2.0'
+Plug 'dkprice/vim-easygrep', { 'commit': 'e4aa13d' }
 Plug 'francoiscabrol/ranger.vim'
 Plug 'gabesoft/vim-ags'
 Plug 'gregsexton/gitv', { 'tag': 'v1.3' }
