@@ -42,8 +42,8 @@ Plug 'jreybert/vimagit', { 'tag': '1.6.0' }
 Plug 'junegunn/vader.vim', { 'commit': '7d755e2' }
 Plug 'kannokanno/previm', { 'commit': 'b5dba08' }
 Plug 'lervag/vimtex', { 'commit': '86eac00' }
-Plug 'ludovicchabant/vim-gutentags'
-Plug 'matze/vim-move', { 'tag': 'v1.3'}
+Plug 'ludovicchabant/vim-gutentags', { 'commit': '803e5a3' }
+Plug 'matze/vim-move', { 'commit': 'fd60f3f'}
 Plug 'mbbill/undotree',{ 'tag':  'rel_5.0' }
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'reedes/vim-lexical', { 'tag': 'v1.1' }
