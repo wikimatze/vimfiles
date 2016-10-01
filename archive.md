@@ -210,6 +210,23 @@ let g:easy_align_delimiters = {
 vmap <Enter> <Plug>(EasyAlign)</pre>
 
 
+## [unite-radio](https://github.com/klen/unite-radio.vim)
+Playing sounds in Vim.
+
+- `:Unite radio <CR>` ... will open the predefined stations
+- `:MStop` ... will stop the currently played song
+- `:MPlay <url>` ... play the specified url
+<pre>
+let g:unite_source_radio_stations = [
+    \ ['Streamingsoundtracks', 'http://www.streamingsoundtracks.com/modules/Listen/MP3-hi.pls' ],
+    \ ['Groovesalad', 'http://somafm.com/groovesalad.pls' ],
+    \ ['Dronezone', 'http://somafm.com/dronezone.pls' ],
+    \ ['Cliqhop' , 'http://somafm.com/cliqhop.pls' ],
+    \ ['Beatblender' , 'http://somafm.com/beatblender.pls' ],
+    \ ['Tranceponder' , 'http://ubuntu.hbr1.com:19800/trance.ogg' ],
+    \ ['Dream Factory Ambient' , 'http://ubuntu.hbr1.com:19800/ambient.ogg' ] ]</pre>
+
+
 ## [vim-partial](https://github.com/jbgutierrez/vim-partial)
 Extract partials for several languages with one keystroke.
 
@@ -261,8 +278,6 @@ Highlighting the current active buffer in an extra window.
 Opens a quickfix windows which shows the last opens files.
 
 - `:MRU` ... opens the window
-
-
 
 
 ## [NERDTree](https://github.com/scrooloose/nerdtree)
@@ -395,6 +410,8 @@ Fast way to increment all kind of numbers.
 - `<C-x>` ... -- number
 - `:SpeedDatingFormat` ... shows the regular expression of possible formations
 - `:SpeedDatingFormat {}` ... here you can specify the format which can be used to be recognized by the program
+
+
 ## [supertab](https://github.com/ervandew/supertab)
 Word auto completion with pressing the tab key.
 
@@ -408,6 +425,8 @@ Word auto completion with pressing the tab key.
 Switch segments of text with predefined definitions - good for changing values in tests.
 
 - `:Switch` ... step on the predicate you want to change
+
+
 ## [tabular](https://github.com/godlygeek/tabular):
 Auto indent files according to the pattern
   - `:Tabularize / {pattern}`

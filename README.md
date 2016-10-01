@@ -205,12 +205,6 @@ Display the undo graph for a file.
 A very good and flexible plugin for searching and displaying information.
 
 
-## [unite-radio](https://github.com/klen/unite-radio.vim)
-Playing sounds in Vim.
-
-- `:Unite radio <CR>` ... will open the predefined stations
-- `:MStop` ... will stop the currently played song
-- `:MPlay <url>` ... play the specified url
 
 
 ## [vimagit](https://github.com/jreybert/vimagit)
