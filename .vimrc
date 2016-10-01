@@ -33,13 +33,13 @@ Plug 'itchyny/lightline.vim', { 'commit': ' 0f2a262' }
 " Plug 'danchoi/ri.vim', { 'tag': 'v1.2', 'for': 'ruby' }
 Plug 'christoomey/vim-tmux-navigator', { 'commit': 'e79d4c0' }
 Plug 'dkprice/vim-easygrep', { 'commit': 'e4aa13d' }
-Plug 'francoiscabrol/ranger.vim'
-Plug 'gabesoft/vim-ags'
+Plug 'francoiscabrol/ranger.vim', { 'commit': 'a192864' }
+Plug 'gabesoft/vim-ags', { 'commit': '182c472' }
 Plug 'gregsexton/gitv', { 'commit': '1690471' }
 Plug 'jamessan/vim-gnupg', { 'tag': 'v2.6' }
 Plug 'janko-m/vim-test', { 'tag': 'v2.1.0' }
 Plug 'jreybert/vimagit', { 'tag': '1.6.0' }
-Plug 'junegunn/vader.vim', 'master'
+Plug 'junegunn/vader.vim', { 'commit': '7d755e2' }
 Plug 'kannokanno/previm'
 Plug 'klen/unite-radio.vim'
 Plug 'koron/nyancat-vim', { 'tag': 'v1.0' }
@@ -285,7 +285,6 @@ ru mappings/pry.vim                       " ,pi to insert/delete 'require pry; b
 ru mappings/vim_agsv.vim                  " <C-n>|<C-p> to jump to next/previous result
 ru mappings/quickediting.vim              " ,ba; ,bm; ,br; ,ev to edit files of vim repos
 ru mappings/neoyank.vim                   " <leader>y search the yank history
-ru mappings/vim_easy_align.vim            " press <CR> to start aligning
 ru mappings/vim_test.vim                  " <leader>t :TestNearest, <leader>T :TestFile, <leader>a :TestSuite, <leader>l :TestLastVisit, <leader>g :TestVisit
 
 " ,d to copy the file path to clipboard, very handy for file name completion for vimbook
