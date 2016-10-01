@@ -40,8 +40,8 @@ Plug 'jamessan/vim-gnupg', { 'tag': 'v2.6' }
 Plug 'janko-m/vim-test', { 'tag': 'v2.1.0' }
 Plug 'jreybert/vimagit', { 'tag': '1.6.0' }
 Plug 'junegunn/vader.vim', { 'commit': '7d755e2' }
-Plug 'kannokanno/previm'
-Plug 'lervag/vimtex'
+Plug 'kannokanno/previm', { 'commit': 'b5dba08' }
+Plug 'lervag/vimtex', { 'commit': '86eac00' }
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'matze/vim-move', { 'tag': 'v1.3'}
 Plug 'mbbill/undotree',{ 'tag':  'rel_5.0' }
