@@ -197,6 +197,19 @@ Pretty colors for the jQuery syntax.
 Beautiful status and tab line.
 
 
+## [vim-easy-align](https://github.com/junegunn/vim-easy-align)
+Auto indent files according to the pattern
+
+- Mark the area and press `Enter` => possible patterns are `<Space>`, `=`, `:`, `.`, `|`, `&`, and `,`
+
+<pre>
+" According to https://github.com/junegunn/vim-easy-align/issues/31
+let g:easy_align_delimiters = {
+\ '"': { 'pattern': '"', 'ignore_groups': ['!Comment'], 'ignore_unmatched': 0 } }
+" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
+vmap <Enter> <Plug>(EasyAlign)</pre>
+
+
 ## [vim-partial](https://github.com/jbgutierrez/vim-partial)
 Extract partials for several languages with one keystroke.
 

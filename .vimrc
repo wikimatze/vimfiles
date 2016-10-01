@@ -40,7 +40,6 @@ Plug 'jamessan/vim-gnupg', { 'tag': 'v2.6' }
 Plug 'janko-m/vim-test', { 'tag': 'v2.1.0' }
 Plug 'jreybert/vimagit', { 'tag': '1.6.0' }
 Plug 'junegunn/vader.vim', 'master'
-Plug 'junegunn/vim-easy-align', { 'tag': '2.10.0' }
 Plug 'kannokanno/previm'
 Plug 'klen/unite-radio.vim'
 Plug 'koron/nyancat-vim', { 'tag': 'v1.0' }

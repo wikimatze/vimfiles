@@ -271,12 +271,6 @@ Run commands asynchronous.
 Filetype icons for vim.
 
 
-## [vim-easy-align](https://github.com/junegunn/vim-easy-align)
-Auto indent files according to the pattern
-
-- Mark the area and press `Enter` => possible patterns are `<Space>`, `=`, `:`, `.`, `|`, `&`, and `,`
-
-
 ## [vim-endwise](https://github.com/tpope/vim-endwise)
 Automatically adds keywords like *end* to special constructs for all kinds of languages.
 
