@@ -322,6 +322,13 @@ Package manager for Vim.
 - `:NeoBundleCheck` ... if certain plugins are not installed, it will run `:NeoBundleInstall` and will execute `:NeoBundleDocs` to create helptags
 
 
+## [nyancat-vim](https://github.com/koron/nyancat-vim)
+Nyancat rocks vim
+
+- `:Nyancat` ... runs first version of it.
+- `:Nyancat2` ... runs the second version.
+
+
 ## [netrw](http://www.vim.org/scripts/script.php?script_id=1075)
 Build in file browser.
 

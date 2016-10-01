@@ -119,13 +119,6 @@ Saves yank history includes unite.vim history/yank source.
 - `<leader>y` ... call the yank window
 
 
-## [nyancat-vim](https://github.com/koron/nyancat-vim)
-Nyancat rocks vim
-
-- `:Nyancat` ... runs first version of it.
-- `:Nyancat2` ... runs the second version.
-
-
 ## [open-browser](https://github.com/tyru/open-browser.vim)
 Open the URI with `gx` (my custom mapping) in your default browser.
 
@@ -203,8 +196,6 @@ Display the undo graph for a file.
 
 ## [unite](https://github.com/Shougo/unite.vim)
 A very good and flexible plugin for searching and displaying information.
-
-
 
 
 ## [vimagit](https://github.com/jreybert/vimagit)
@@ -379,7 +370,6 @@ A very good tool to manage LaTeX files as well as the compilation.
 - `\ll` ... compiles the tex-file
 - `\lv` ... opens the document with the specified pdf-viewer
 - `:VimtexTocOpen|:VimtexTocToggle` ... will open a clickable toc in the left pane (`q` will close the window)
-
 
 
 # License

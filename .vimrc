@@ -41,7 +41,6 @@ Plug 'janko-m/vim-test', { 'tag': 'v2.1.0' }
 Plug 'jreybert/vimagit', { 'tag': '1.6.0' }
 Plug 'junegunn/vader.vim', { 'commit': '7d755e2' }
 Plug 'kannokanno/previm'
-Plug 'koron/nyancat-vim', { 'tag': 'v1.0' }
 Plug 'lervag/vimtex'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'matze/vim-move', { 'tag': 'v1.3'}
