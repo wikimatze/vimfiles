@@ -59,7 +59,7 @@ Plug 'tpope/vim-endwise', { 'commit': '0067ced' }
 Plug 'tpope/vim-fugitive', { 'commit': 'aac85a2' }
 Plug 'tpope/vim-surround', { 'commit': 'e49d6c2' }
 Plug 'tyru/caw.vim'
-Plug 'tyru/open-browser.vim', { 'tag': 'v0.1.1' }
+Plug 'tyru/open-browser.vim', { 'commit': 'e2bfabf' }
 Plug 'unblevable/quick-scope'
 " Plug 'vim-ruby/vim-ruby'
 Plug 'wellle/tmux-complete.vim', 'v0.1.1'
