@@ -65,9 +65,6 @@ Plug 'wellle/tmux-complete.vim', '5d371f2'
 Plug 'xolox/vim-misc', '1.17.6'
 Plug 'xolox/vim-notes', '0.33.4'
 
-
-Plug 'mustache/vim-mustache-handlebars'
-
 Plug 'junegunn/fzf', { 'tag': '0.12.1', 'dir': '~/.fzf', 'do': './install --all' }
 
 if has('lua')
