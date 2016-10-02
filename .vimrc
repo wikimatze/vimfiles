@@ -34,12 +34,12 @@ Plug 'Shougo/neoyank.vim', 'c116537'
 Plug 'Shougo/unite.vim', '504edce'
 Plug 'Shougo/vimproc.vim', { 'commit': '25cb83f', 'do': 'make' }
 Plug 'alvan/vim-closetag', 'e7e6cb9'
-Plug 'itchyny/lightline.vim', '0f2a262'
 Plug 'christoomey/vim-tmux-navigator', 'e79d4c0'
 Plug 'dkprice/vim-easygrep', 'e4aa13d'
 Plug 'francoiscabrol/ranger.vim', 'a192864'
 Plug 'gabesoft/vim-ags', '182c472'
 Plug 'gregsexton/gitv', '1690471'
+Plug 'itchyny/lightline.vim', '0f2a262'
 Plug 'jamessan/vim-gnupg', 'v2.6'
 Plug 'janko-m/vim-test', 'v2.1.0'
 Plug 'jreybert/vimagit', '1.6.0'
@@ -67,7 +67,6 @@ Plug 'xolox/vim-notes', '0.33.4'
 
 
 Plug 'mustache/vim-mustache-handlebars'
-
 
 Plug 'junegunn/fzf', { 'tag': '0.12.1', 'dir': '~/.fzf', 'do': './install --all' }
 

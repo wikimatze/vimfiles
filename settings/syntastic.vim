@@ -15,5 +15,5 @@ if !empty(glob('~/.vim/plugged/syntastic'))
 
   let g:syntastic_mode_map = { 'mode': 'active',
                              \ 'active_filetypes': ['eruby', 'javascript', 'puppet', 'sass'],
-                             \ 'passive_filetypes': ['ruby', 'html', 'php', 'sh', 'css'] }
+                             \ 'passive_filetypes': ['ruby', 'html', 'php', 'sh', 'css', 'tex'] }
 endif
