@@ -252,10 +252,6 @@ Auto close (X)HTML tags.
 Run commands asynchronous.
 
 
-## [vim-devicons](https://github.com/ryanoasis/vim-devicons)
-Filetype icons for vim.
-
-
 ## [vim-endwise](https://github.com/tpope/vim-endwise)
 Automatically adds keywords like *end* to special constructs for all kinds of languages.
 

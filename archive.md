@@ -227,6 +227,10 @@ let g:unite_source_radio_stations = [
     \ ['Dream Factory Ambient' , 'http://ubuntu.hbr1.com:19800/ambient.ogg' ] ]</pre>
 
 
+## [vim-devicons](https://github.com/ryanoasis/vim-devicons)
+Filetype icons for vim.
+
+
 ## [vim-partial](https://github.com/jbgutierrez/vim-partial)
 Extract partials for several languages with one keystroke.
 
