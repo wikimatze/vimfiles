@@ -11,7 +11,12 @@ endif
 
 " Get thesaurus
 if empty(glob('~/.vim/thesaurus'))
-  silent !mkdir ~/.vim/thesaurus && cd /tmp && wget https://www.openthesaurus.de/export/OpenThesaurus-Textversion.zip -O mthesaur.zip && unzip mthesaur.zip && mv openthesaurus.txt ~/.vim/thesaurus/
+  " create directory
+  silent !mkdir ~/.vim/thesaurus
+  " get german thesaurus
+  silent !wget https://www.openthesaurus.de/export/OpenThesaurus-Textversion.zip -O ~/.vim/thesaurus/mthesaur.zip && unzip ~/.vim/thesaurus/mthesaur.zip -d ~/.vim/thesaurus/
+  " get english thesaurus
+  silent !wget https://raw.githubusercontent.com/statico/dotfiles/master/.vim/mthes10/mthesaur.txt -O ~/.vim/thesaurus/mthesaur.txt && sed -i 's/,/;/g' ~/.vim/thesaurus/mthesaur.txt
 endif
 
 " Get font

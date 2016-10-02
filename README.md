@@ -274,7 +274,7 @@ Custom dictionary, thesaurus, and spell checking options for files or when calli
 - `<C-x> <C-k>` ... opens the dictionary
 - `<C-x> <C-t>` ... opens the thesaurus
 - `<C-n>|<C-p>` ... navigate to the next or previous matching
-- custom commands: `:BookGerman|:BookEnglish` ... will load my customized settings
+- custom commands: `:German|:English` ... will load my customized settings
 
 
 ## [vim-litecorrect](https://github.com/reedes/vim-litecorrect)
