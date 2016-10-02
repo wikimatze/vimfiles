@@ -326,7 +326,6 @@ augroup gitCommitEditMsg
     \ endif
 augroup END
 
-let g:markdown_fenced_languages = ['ruby', 'vim', 'html', 'sh', 'erb=eruby']
 
 " Textwrapping for commit messages
 " Credit http://stackoverflow.com/questions/11023194/git-vim-automatically-wrap-long-commit-messages
