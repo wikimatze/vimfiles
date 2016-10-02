@@ -54,10 +54,10 @@ Plug 'plasticboy/vim-markdown', { 'commit': 'a316954' }
 Plug 'reedes/vim-lexical', { 'commit': '3e1fdc6' }
 Plug 'reedes/vim-litecorrect', { 'tag': '1.2' }
 Plug 'scrooloose/syntastic', { 'commit': '59cc80a' }
-Plug 'tpope/vim-dispatch', 'master'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-fugitive', 'master'
-Plug 'tpope/vim-surround', { 'tag': 'v2.1' }
+Plug 'tpope/vim-dispatch', { 'commit': 'a54f2c5' }
+Plug 'tpope/vim-endwise', { 'commit': '0067ced' }
+Plug 'tpope/vim-fugitive', { 'commit': 'aac85a2' }
+Plug 'tpope/vim-surround', { 'commit': 'e49d6c2' }
 Plug 'tyru/caw.vim'
 Plug 'tyru/open-browser.vim', { 'tag': 'v0.1.1' }
 Plug 'unblevable/quick-scope'
