@@ -99,8 +99,8 @@ A gitk/tig like git browser.
   - `nmap <leader>gV :Gitv! --all<cr>`
 
 
-## [markdown-folding](https://github.com/nelstrom/vim-markdown-folding)
-Folding by section headings.
+## [vim-markdown](https://github.com/plasticboy/vim-markdown)
+Perfect managing markdown file.
 
 
 ## [neocomplete](https://github.com/Shougo/neocomplete.vim)

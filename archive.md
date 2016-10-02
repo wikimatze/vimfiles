@@ -363,6 +363,10 @@ Build in file browser.
 Candy statusline which is high configurable.
 
 
+## [markdown-folding](https://github.com/nelstrom/vim-markdown-folding)
+Folding by section headings.
+
+
 ## [tcomment_vim](https://github.com/tomtom/tcomment_vim)
 An universal comment tool plugin.
 

@@ -45,7 +45,7 @@ Plug 'lervag/vimtex', { 'commit': '86eac00' }
 Plug 'ludovicchabant/vim-gutentags', { 'commit': '803e5a3' }
 Plug 'matze/vim-move', { 'commit': 'fd60f3f'}
 Plug 'mbbill/undotree',{ 'commit':  '17dfeb6' }
-Plug 'nelstrom/vim-markdown-folding'
+Plug 'plasticboy/vim-markdown', { 'commit': 'a316954' }
 Plug 'reedes/vim-lexical', { 'tag': 'v1.1' }
 Plug 'reedes/vim-litecorrect', { 'tag': 'v1.1' }
 Plug 'ryanoasis/vim-devicons', { 'tag': 'v0.7.1'}
