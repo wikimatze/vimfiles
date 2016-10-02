@@ -162,7 +162,7 @@ Change quotes and all other delimiters.
     press `s` and then the quote (`"", (), {}`) you want to have and it wraps the string in this
 
 
-## [quick-scope](https://github.com/tpope/vim-surround)
+## [quick-scope](https://github.com/unblevable/quick-scope)
 Lightning fast left-right movement (enhances the `f` and `F` command)
 
 
