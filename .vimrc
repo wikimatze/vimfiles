@@ -53,7 +53,7 @@ Plug 'mbbill/undotree',{ 'commit':  '17dfeb6' }
 Plug 'plasticboy/vim-markdown', { 'commit': 'a316954' }
 Plug 'reedes/vim-lexical', { 'commit': '3e1fdc6' }
 Plug 'reedes/vim-litecorrect', { 'tag': '1.2' }
-Plug 'scrooloose/syntastic', { 'tag': '3.7.0' }
+Plug 'scrooloose/syntastic', { 'commit': '59cc80a' }
 Plug 'sk1418/blockit', { 'tag': 'v1.0.0' }
 Plug 'tpope/vim-dispatch', 'master'
 Plug 'tpope/vim-endwise'
