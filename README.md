@@ -126,17 +126,6 @@ Realtime preview for Markdown, rst, and textile files in your browser while edit
 Ranger intergration for vim and neovim.
 
 
-## [ri.vim](https://github.com/danchoi/ri.vim)
-Browse ri documentation of Ruby files offline.
-
-- `,r|,R` ... opens start/autocomplete window with horizontal|vertical split
-- `,K|K` ... opens the search/autocomplete window and prefills it with the keyword under the cursor
-- inside documentation window
-  - `,,r` ... class/module/autocompletion window
-  - `-` ... goes up from a method page into the parent class/module
-  - `,G` ... brings you to the README of the Gem if it exists
-
-
 ## [syntastic](https://github.com/scrooloose/syntastic)
 Performs syntax check on various languages when saving.
 

@@ -33,7 +33,6 @@ Plug 'Shougo/neosnippet.vim', 'a1508f8'
 Plug 'Shougo/neoyank.vim', 'c116537'
 Plug 'Shougo/unite.vim', '504edce'
 Plug 'Shougo/vimproc.vim', { 'commit': '25cb83f', 'do': 'make' }
-" Plug 'danchoi/ri.vim', { 'tag': 'v1.2', 'for': 'ruby' }
 Plug 'alvan/vim-closetag', 'e7e6cb9'
 Plug 'itchyny/lightline.vim', '0f2a262'
 Plug 'christoomey/vim-tmux-navigator', 'e79d4c0'
