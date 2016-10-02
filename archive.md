@@ -231,6 +231,13 @@ let g:unite_source_radio_stations = [
 Filetype icons for vim.
 
 
+## [blockit](https://github.com/sk1418/blockit)
+Wrap text in block.
+
+- `'<,'>Block` ... works even in visual mode
+- `..,..Block` ...  define a range where you want to have the block
+
+
 ## [vim-partial](https://github.com/jbgutierrez/vim-partial)
 Extract partials for several languages with one keystroke.
 

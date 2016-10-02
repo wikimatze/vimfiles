@@ -21,13 +21,6 @@ Next, start vim and run `:PlugInstall` - happy vimming!
 Create directories that do not exists yet when creating new files (e.g. with `e`).
 
 
-## [blockit](https://github.com/sk1418/blockit)
-Wrap text in block.
-
-- `'<,'>Block` ... works even in visual mode
-- `..,..Block` ...  define a range where you want to have the block
-
-
 ## [easygrep](https://github.com/dkprice/vim-easygrep)
 Makes search/replacing in your project a lot easier.
 
