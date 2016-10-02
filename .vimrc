@@ -56,7 +56,6 @@ Plug 'reedes/vim-litecorrect', { 'tag': '1.2' }
 Plug 'scrooloose/syntastic', { 'commit': '59cc80a' }
 Plug 'tpope/vim-dispatch', 'master'
 Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-eunuch', { 'tag': 'v1.1' }
 Plug 'tpope/vim-fugitive', 'master'
 Plug 'tpope/vim-surround', { 'tag': 'v2.1' }
 Plug 'tyru/caw.vim'
