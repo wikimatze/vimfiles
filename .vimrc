@@ -62,7 +62,7 @@ Plug 'tyru/caw.vim'
 Plug 'tyru/open-browser.vim', { 'commit': 'e2bfabf' }
 Plug 'unblevable/quick-scope'
 " Plug 'vim-ruby/vim-ruby'
-Plug 'wellle/tmux-complete.vim', 'v0.1.1'
+Plug 'wellle/tmux-complete.vim', '5d371f2'
 Plug 'xolox/vim-misc', { 'tag': '1.17.6' }
 Plug 'xolox/vim-notes', { 'tag': '0.33.4' }
 
