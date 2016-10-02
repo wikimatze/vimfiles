@@ -26,45 +26,45 @@ endif
 
 call plug#begin('~/.vim/plugged/')
 
-Plug 'ConradIrwin/vim-bracketed-paste', { 'commit': 'd26cf23' }
-Plug 'DataWraith/auto_mkdir', { 'tag': 'v1.0.0' }
-Plug 'Raimondi/delimitMate', { 'tag': '2.7' }
-Plug 'Shougo/neosnippet.vim', { 'commit': 'a1508f8' }
-Plug 'Shougo/neoyank.vim', { 'commit': 'c116537' }
-Plug 'Shougo/unite.vim', { 'commit': '504edce' }
+Plug 'ConradIrwin/vim-bracketed-paste', 'd26cf23'
+Plug 'DataWraith/auto_mkdir', 'v1.0.0'
+Plug 'Raimondi/delimitMate', '2.7'
+Plug 'Shougo/neosnippet.vim', 'a1508f8'
+Plug 'Shougo/neoyank.vim', 'c116537'
+Plug 'Shougo/unite.vim', '504edce'
 Plug 'Shougo/vimproc.vim', { 'commit': '25cb83f', 'do': 'make' }
-Plug 'alvan/vim-closetag', { 'commit': 'e7e6cb9' }
-Plug 'itchyny/lightline.vim', { 'commit': ' 0f2a262' }
 " Plug 'danchoi/ri.vim', { 'tag': 'v1.2', 'for': 'ruby' }
-Plug 'christoomey/vim-tmux-navigator', { 'commit': 'e79d4c0' }
-Plug 'dkprice/vim-easygrep', { 'commit': 'e4aa13d' }
-Plug 'francoiscabrol/ranger.vim', { 'commit': 'a192864' }
-Plug 'gabesoft/vim-ags', { 'commit': '182c472' }
-Plug 'gregsexton/gitv', { 'commit': '1690471' }
-Plug 'jamessan/vim-gnupg', { 'tag': 'v2.6' }
-Plug 'janko-m/vim-test', { 'tag': 'v2.1.0' }
-Plug 'jreybert/vimagit', { 'tag': '1.6.0' }
-Plug 'junegunn/vader.vim', { 'commit': '7d755e2' }
-Plug 'kannokanno/previm', { 'commit': 'b5dba08' }
-Plug 'lervag/vimtex', { 'commit': '86eac00' }
-Plug 'ludovicchabant/vim-gutentags', { 'commit': '803e5a3' }
-Plug 'matze/vim-move', { 'commit': 'fd60f3f'}
-Plug 'mbbill/undotree',{ 'commit':  '17dfeb6' }
-Plug 'plasticboy/vim-markdown', { 'commit': 'a316954' }
-Plug 'reedes/vim-lexical', { 'commit': '3e1fdc6' }
-Plug 'reedes/vim-litecorrect', { 'tag': '1.2' }
-Plug 'scrooloose/syntastic', { 'commit': '59cc80a' }
-Plug 'tpope/vim-dispatch', { 'commit': 'a54f2c5' }
-Plug 'tpope/vim-endwise', { 'commit': '0067ced' }
-Plug 'tpope/vim-fugitive', { 'commit': 'aac85a2' }
-Plug 'tpope/vim-surround', { 'commit': 'e49d6c2' }
+Plug 'alvan/vim-closetag', 'e7e6cb9'
+Plug 'itchyny/lightline.vim', '0f2a262'
+Plug 'christoomey/vim-tmux-navigator', 'e79d4c0'
+Plug 'dkprice/vim-easygrep', 'e4aa13d'
+Plug 'francoiscabrol/ranger.vim', 'a192864'
+Plug 'gabesoft/vim-ags', '182c472'
+Plug 'gregsexton/gitv', '1690471'
+Plug 'jamessan/vim-gnupg', 'v2.6'
+Plug 'janko-m/vim-test', 'v2.1.0'
+Plug 'jreybert/vimagit', '1.6.0'
+Plug 'junegunn/vader.vim', '7d755e2'
+Plug 'kannokanno/previm', 'b5dba08'
+Plug 'lervag/vimtex', '86eac00'
+Plug 'ludovicchabant/vim-gutentags', '803e5a3'
+Plug 'matze/vim-move', 'fd60f3f'
+Plug 'mbbill/undotree', '17dfeb6'
+Plug 'plasticboy/vim-markdown', 'a316954'
+Plug 'reedes/vim-lexical', '3e1fdc6'
+Plug 'reedes/vim-litecorrect', '1.2'
+Plug 'scrooloose/syntastic', '59cc80a'
+Plug 'tpope/vim-dispatch', 'a54f2c5'
+Plug 'tpope/vim-endwise', '0067ced'
+Plug 'tpope/vim-fugitive', 'aac85a2'
+Plug 'tpope/vim-surround', 'e49d6c2'
 Plug 'tyru/caw.vim'
-Plug 'tyru/open-browser.vim', { 'commit': 'e2bfabf' }
+Plug 'tyru/open-browser.vim', 'e2bfabf'
 Plug 'unblevable/quick-scope'
 " Plug 'vim-ruby/vim-ruby'
 Plug 'wellle/tmux-complete.vim', '5d371f2'
-Plug 'xolox/vim-misc', { 'tag': '1.17.6' }
-Plug 'xolox/vim-notes', { 'tag': '0.33.4' }
+Plug 'xolox/vim-misc', '1.17.6'
+Plug 'xolox/vim-notes', '0.33.4'
 
 
 Plug 'mustache/vim-mustache-handlebars'
