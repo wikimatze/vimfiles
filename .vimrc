@@ -47,7 +47,7 @@ Plug 'matze/vim-move', { 'commit': 'fd60f3f'}
 Plug 'mbbill/undotree',{ 'commit':  '17dfeb6' }
 Plug 'plasticboy/vim-markdown', { 'commit': 'a316954' }
 Plug 'reedes/vim-lexical', { 'commit': '3e1fdc6' }
-Plug 'reedes/vim-litecorrect', { 'tag': 'v1.1' }
+Plug 'reedes/vim-litecorrect', { 'tag': '1.2' }
 Plug 'ryanoasis/vim-devicons', { 'tag': 'v0.7.1'}
 Plug 'scrooloose/syntastic', { 'tag': '3.7.0' }
 Plug 'sk1418/blockit', { 'tag': 'v1.0.0' }

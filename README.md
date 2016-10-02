@@ -284,9 +284,10 @@ Custom dictionary, thesaurus, and spell checking options for files or when calli
 ## [vim-litecorrect](https://github.com/reedes/vim-litecorrect)
 Lightweight auto correction for 300 words.
 
-    Im -> I'm
-    shouldnt -> shouldn't
-    thats -> that's
+    e.g:
+      Im -> I'm
+      shouldnt -> shouldn't
+      thats -> that's
 
 
 ## [vim-misc](https://github.com/xolox/vim-misc)
