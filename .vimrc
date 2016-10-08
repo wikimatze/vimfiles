@@ -47,6 +47,7 @@ Plug 'junegunn/vader.vim', '7d755e2'
 Plug 'kannokanno/previm', 'b5dba08'
 Plug 'lervag/vimtex', '86eac00'
 Plug 'ludovicchabant/vim-gutentags', '803e5a3'
+Plug 'majutsushi/tagbar', 'd1c42db'
 Plug 'matze/vim-move', 'fd60f3f'
 Plug 'mbbill/undotree', '17dfeb6'
 Plug 'plasticboy/vim-markdown', 'a316954'
@@ -277,6 +278,7 @@ ru mappings/keep_cursor_joining_lines.vim " indent joining lines the right way
 ru mappings/moving_wrapped_lines.vim      " Use hjkl in wrapped-lined files
 ru mappings/ranger.vim                    " F2 will call :Ranger
 ru mappings/pry.vim                       " ,pi to insert/delete 'require pry; binding pry'
+ru mappings/tagbar.vim                    " F3 will call :TagbarToggle
 ru mappings/vim_agsv.vim                  " <C-n>|<C-p> to jump to next/previous result
 ru mappings/quickediting.vim              " ,ba; ,bm; ,br; ,ev to edit files of vim repos
 ru mappings/neoyank.vim                   " <leader>y search the yank history

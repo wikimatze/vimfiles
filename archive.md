@@ -485,18 +485,6 @@ nnoremap <leader>t" :Tabularize /"<CR>
 vnoremap <leader>t" :Tabularize /"<CR></pre>
 
 
-## [tagbar](http://majutsushi.github.com/tagbar)
-Display the structure of the code.
-
-- `:TagbarOpen` ... open view tagbar
-- `:TagbarToggle` ... opens or close the tagbar whether it was closed or open
-- `:TagbarOpenAutoClose` ... opens the tagbar and close it after a tag was selected
-- `s` ... search for specified regex
-- `q` ... quit yankring window
-- custom settings:
-<pre>
-  let g:tagbar_compact = 1 " don't show the help in the tagbar
-  nnoremap <silent> <F3> :TagbarToggle<CR></pre>
 
 
 ## [vim-tex-fold](https://github.com/matze/vim-tex-fold/releases)

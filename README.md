@@ -180,6 +180,18 @@ Display the undo graph for a file.
 A very good and flexible plugin for searching and displaying information.
 
 
+
+## [tagbar](http://majutsushi.github.com/tagbar)
+Display the structure of the code.
+
+- `:TagbarToggle` ... opens or close the tagbar whether it was closed or open
+- `:TagbarOpen` ... open view tagbar
+- `:TagbarOpenAutoClose` ... opens the tagbar and close it after a tag was selected
+- `x` ... will zoom in/out the tagbar window
+- `q` ... quit yankring window
+- `?` ... will print help
+
+
 ## [vimagit](https://github.com/jreybert/vimagit)
 A new way to use git in Vim.
 
