@@ -21,11 +21,6 @@ Next, start vim and run `:PlugInstall` - happy vimming!
 Create directories that do not exists yet when creating new files (e.g. with `e`).
 
 
-## [easygrep](https://github.com/dkprice/vim-easygrep)
-Makes search/replacing in your project a lot easier.
-
-- `<leader>vv|vV` ... find word/whole word under the cursor
-- `<leader>vr|vR` ... perform global search replace of word/whole word under cursor, with confirmation
 
 
 ## [delimitMate](https://github.com/Raimondi/delimitMate)

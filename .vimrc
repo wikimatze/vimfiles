@@ -35,7 +35,6 @@ Plug 'Shougo/unite.vim', '504edce'
 Plug 'Shougo/vimproc.vim', { 'commit': '25cb83f', 'do': 'make' }
 Plug 'alvan/vim-closetag', 'e7e6cb9'
 Plug 'christoomey/vim-tmux-navigator', 'e79d4c0'
-Plug 'dkprice/vim-easygrep', 'e4aa13d'
 Plug 'francoiscabrol/ranger.vim', 'a192864'
 Plug 'gabesoft/vim-ags', '182c472'
 Plug 'gregsexton/gitv', '1690471'

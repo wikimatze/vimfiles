@@ -99,6 +99,15 @@ Easier and faster use of motions.
 - `<leader><leader>t | T` ... search after the target character forward (`t`) and backward (`T`)
 
 
+
+
+## [easygrep](https://github.com/dkprice/vim-easygrep)
+Makes search/replacing in your project a lot easier.
+
+- `<leader>vv|vV` ... find word/whole word under the cursor
+- `<leader>vr|vR` ... perform global search replace of word/whole word under cursor, with confirmation
+
+
 ## [easytags](https://github.com/xolox/vim-easytags)
 Call exuberant Ctags within Vim.
 
