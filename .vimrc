@@ -17,6 +17,7 @@ if empty(glob('~/.vim/thesaurus'))
   silent !wget https://www.openthesaurus.de/export/OpenThesaurus-Textversion.zip -O ~/.vim/thesaurus/mthesaur.zip && unzip ~/.vim/thesaurus/mthesaur.zip -d ~/.vim/thesaurus/
   " get english thesaurus
   silent !wget https://raw.githubusercontent.com/statico/dotfiles/master/.vim/mthes10/mthesaur.txt -O ~/.vim/thesaurus/mthesaur.txt && sed -i 's/,/;/g' ~/.vim/thesaurus/mthesaur.txt
+  silent !rm ~/.vim/thesaurus/mthesaur.zip ~/.vim/thesaurus/LICENSE.txt
 endif
 
 " Get font
