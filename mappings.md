@@ -124,7 +124,6 @@
 - `<C-x><C-o>` ... omnicomplete with context awareness
 - `<C-x><C-k>` ... autocompletion from dictionary
 - `<C-x><C-f>` ... filename completion for the current directory
-- `<C-x><C-l>` ... complete a whole line (good for matching complete function calls
 - `<C-x><C-]>` ... tags file keywords (class name completion for Ruby files)
 - `<C-c> | <C-e>` ... exit from autocompletion pop up
 - `<C-x><C-t>` ... thesaurus lookup (only in insert mode)
@@ -210,6 +209,7 @@
 - `<C-t>` ... add shift
 - `<C-d>` ... remove shift
 - `<C-h>` ... delete back one character
+- `<C-x-l>` ... line completion
 - `<C-w>` ... delete the previous word
 - `<C-k>{char1}{char2}` ... will insert digraphs (`:h digraphs`)
 - `<C-r>+` ... paste from clipboard while in insert mode
