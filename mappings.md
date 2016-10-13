@@ -124,7 +124,7 @@
 - `<C-x><C-o>` ... omnicomplete with context awareness
 - `<C-x><C-k>` ... autocompletion from dictionary
 - `<C-x><C-f>` ... filename completion for the current directory
-- `<C-x><C-]>` ... tags file keywords (class name completion for Ruby files)
+- `<C-x><C-]>` ... tags file keywords (either in normal mode to search after all tags or in insert mode for
 - `<C-c> | <C-e>` ... exit from autocompletion pop up
 - `<C-x><C-t>` ... thesaurus lookup (only in insert mode)
 - `<C-x><C-k>` ... dictionary lookup (only in insert mode)
