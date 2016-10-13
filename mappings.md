@@ -125,6 +125,7 @@
 - `<C-x><C-k>` ... autocompletion from dictionary
 - `<C-x><C-f>` ... filename completion for the current directory
 - `<C-x><C-]>` ... tags file keywords (either in normal mode to search after all tags or in insert mode for
+completion)
 - `<C-c> | <C-e>` ... exit from autocompletion pop up
 - `<C-x><C-t>` ... thesaurus lookup (only in insert mode)
 - `<C-x><C-k>` ... dictionary lookup (only in insert mode)
@@ -209,6 +210,7 @@
 - `<C-t>` ... add shift
 - `<C-d>` ... remove shift
 - `<C-h>` ... delete back one character
+- `<C-u>` ... delete all characters left from the cursor
 - `<C-x-l>` ... line completion
 - `<C-w>` ... delete the previous word
 - `<C-k>{char1}{char2}` ... will insert digraphs (`:h digraphs`)
