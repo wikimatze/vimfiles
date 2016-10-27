@@ -21,10 +21,8 @@ Next, start vim and run `:PlugInstall` - happy vimming!
 Create directories that do not exists yet when creating new files (e.g. with `e`).
 
 
-
-
-## [delimitMate](https://github.com/Raimondi/delimitMate)
-Semantic autoclose brackets.
+## [auto-pairs ](https://github.com/jiangmiao/auto-pairs)
+Semantic autoclose, delete brackets.
 
 
 ## [fzf](https://github.com/junegunn/fzf)

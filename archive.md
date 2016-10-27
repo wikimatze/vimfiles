@@ -108,6 +108,15 @@ Makes search/replacing in your project a lot easier.
 - `<leader>vr|vR` ... perform global search replace of word/whole word under cursor, with confirmation
 
 
+## [delimitMate](https://github.com/Raimondi/delimitMate)
+Semantic autoclose brackets.
+- custom settings:
+<pre>
+  au FileType vim let b:loaded_delimitMate = 0 " no autoclose brackets for Vim files
+  au FileType html let b:loaded_delimitMate = 0 " no autoclose brackets for Vim files</pre>
+
+
+
 ## [easytags](https://github.com/xolox/vim-easytags)
 Call exuberant Ctags within Vim.
 
