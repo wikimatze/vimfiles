@@ -7,8 +7,7 @@ of the most important commands and settings for each plugin.
 # Installation
 
 ```sh
-$ git clone https://github.com/wikimatze/vimfiles.git ~/.vim
-$ bash ~/.vim/install.sh
+$ git clone https://github.com/wikimatze/vimfiles.git ~/.vim && ln -sf ~/.vim/.vimrc ~/.vimrc
 ```
 
 Next, start vim and run `:PlugInstall` - happy vimming!
