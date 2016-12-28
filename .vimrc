@@ -141,7 +141,13 @@ let mapleader = "," " change the leader to be a comma vs. backslash if not given
 
 let &scrolloff=999-&scrolloff " current view is always centered
 
-colorscheme github
+
+let file = expand("%")
+if file=~"padrinocasts.md"
+    colorscheme delek
+else
+    colorscheme github
+endif
 
 set tags=tags,./tags,gems.tags,./gems.tags
 
