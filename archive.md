@@ -531,6 +531,20 @@ Selecting and searching tags.
 Syntax detection for tmux files and highlighting.
 
 
+## [vim-ags](https://github.com/gabesoft/vim-ags)
+Using ag (silver-searcher) in Vim.
+
+- `:Ags` ... search after the word/term
+- `<C-n>|<C-p>` ... jump to the next/previous match
+- `oa|ob` ... opens file above/beyond
+- `r|R` ... jump direct to the next/previous matching
+- `q` ... closes window
+- `u` ... print help
+- `E` ...  go into edit mode, but you cannot add lines
+- `:AgsAdd` ... like like :Ags but append the results to the window
+- `:AgsLast` ... run the last search
+
+
 ## [vim-autocomplete](https://github.com/vim-scripts/AutoComplPop)
 Automatically opens popup menu for completion when entering characters.
 

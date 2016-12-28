@@ -208,18 +208,6 @@ Testframework for Vimscript.
 - `:Vader` ... runs the current test file
 
 
-## [vim-ags](https://github.com/gabesoft/vim-ags)
-Using ag (silver-searcher) in Vim.
-
-- `:Ags` ... search after the word/term
-- `<C-n>|<C-p>` ... jump to the next/previous match
-- `oa|ob` ... opens file above/beyond
-- `r|R` ... jump direct to the next/previous matching
-- `q` ... closes window
-- `u` ... print help
-- `E` ...  go into edit mode, but you cannot add lines
-- `:AgsAdd` ... like like :Ags but append the results to the window
-- `:AgsLast` ... run the last search
 
 
 ## [lightline](https://github.com/itchyny/lightline.vim)
@@ -240,6 +228,12 @@ Run commands asynchronous.
 
 ## [vim-endwise](https://github.com/tpope/vim-endwise)
 Automatically adds keywords like *end* to special constructs for all kinds of languages.
+
+
+
+
+## [vim-grepper](https://github.com/mhinz/vim-grepper "vim-grepper")
+Use grep to find anything.
 
 
 ## [vim-github-theme](https://github.com/wikimatze/vim-github-theme)
