@@ -69,9 +69,7 @@ Plug 'xolox/vim-notes', '0.33.4'
 Plug 'junegunn/fzf', { 'tag': '0.15.3', 'dir': '~/.fzf', 'do': './install --all' }
 
 if has('lua')
-  " https://github.com/Shougo/neocomplete.vim/issues/536
-  Plug 'Konfekt/FastFold'
-  Plug 'Shougo/neocomplete.vim', '16d6503'
+  Plug 'Shougo/neocomplete.vim', '9af19a78'
 endif
 
 call plug#end()
