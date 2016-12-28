@@ -20,10 +20,6 @@ Next, start vim and run `:PlugInstall` - happy vimming!
 Create directories that do not exists yet when creating new files (e.g. with `e`).
 
 
-## [auto-pairs ](https://github.com/jiangmiao/auto-pairs)
-Semantic autoclose, delete brackets.
-
-
 ## [fzf](https://github.com/junegunn/fzf)
 Fuzzy finder for your shell as a Vim plugin.
 
@@ -86,6 +82,10 @@ A gitk/tig like git browser.
 
 ## [vim-markdown](https://github.com/plasticboy/vim-markdown)
 Perfect managing markdown file.
+
+
+## [lexima](https://github.com/cohama/lexima.vim)
+Semantic autoclose, delete brackets, ...
 
 
 ## [neocomplete](https://github.com/Shougo/neocomplete.vim)

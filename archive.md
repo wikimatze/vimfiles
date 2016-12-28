@@ -2,6 +2,11 @@
 
 Here is a list of plugins I used in the past and removed them due the lack of usage.
 
+
+## [auto-pairs](https://github.com/jiangmiao/auto-pairs)
+Semantic autoclose, delete brackets.
+
+
 ## [autotag.vim](https://github.com/vim-scripts/AutoTag)
 Whenever you save a file, it deletes all of its entries and invokes ctags in append mode.
 
