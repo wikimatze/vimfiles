@@ -104,7 +104,10 @@ set infercase                               " autocompletion in Insert Mode is c
 set shortmess+=I                            " don't show startup message when opening Vim without a file
 set noautochdir                             " don't change the current working directory when opening a new file
 set cpoptions+=$                            " `cw` put a $ at the end instead of pure deletion
-set completeopt=longest,menuone,preview     " modes for auto completion in insert mode
+set completeopt=longest,menuone,preview,    " modes for auto completion popup
+                                            " longest - only insert the longest common text of the matches.
+                                            " menuone - use the popup menu also when there is only one match.
+                                            " preview - show extra information about the currently selected
 set tabstop=2                               " how many columns a tab counts
 set shiftwidth=2                            " how many columns text is indented with the indent operations (<< and >>)
 set softtabstop=2                           " how many columns
