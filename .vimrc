@@ -163,6 +163,15 @@ set backup                      " save files after close
 set writebackup                 " make a backup of the original file when writing
 
 " }}}
+" Settings to let netrw looks like a project file brower {{{
+" Inspiration from https://shapeshed.com/vim-netrw/
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+
+" }}}
 " Settings for my blog with jekyll {{{
 
 " Marking YAML front matter information in markdown files as comments
