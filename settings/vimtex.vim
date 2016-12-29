@@ -9,8 +9,8 @@ let g:vimtex_fold_sections = [
       \ ]
 let g:vimtex_fold_comments = 0 " don't fold comments
 
-" no indentation
-let g:vimtex_indent_enabled = 0
+" indentation
+let g:vimtex_indent_enabled = 1
 
 " toc: don't show preample and number
 "let g:vimtex_toc_show_preamble = 0
