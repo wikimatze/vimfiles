@@ -1,1 +1,1 @@
-map <F2> :Ranger<CR>
+map <F2> :RangerWorkingDirectory<CR>
