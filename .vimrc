@@ -119,7 +119,6 @@ set smartcase                               " canceling out ignore for uppercase
 set nohlsearch
 set noswapfile                              " don't save swap files
 
-set wrap      " when lines are longer the width of the window they will wrapped
 set linebreak " wrap at a character in the breakat option
 
 " external tool when using grep
