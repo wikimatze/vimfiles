@@ -75,7 +75,7 @@ endif
 call plug#end()
 
 " General settings {{{
-
+set laststatus=2
 set number                                  " display line numbers
 set modeline                                " check first lines of files for style information
 set noerrorbells                            " turn of nasty error sounds
@@ -88,7 +88,6 @@ set showmode                                " show the current modal mode
 set showcmd                                 " show (partial) command in the last line of the screen
 set nowarn                                  " do not warn, when shell command update the file you edit in Vim
 set backspace=indent,eol,start              " allow backspacing over everything in insert mode
-set ch=1                                    " height of the command line at the bottom
 set ruler                                   " show the line and column number of the cursor position
 set numberwidth=2                           " using only 2 column for number line presentation
 set lazyredraw                              " no window redrawing during operations like macros, registers, ...
