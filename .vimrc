@@ -94,7 +94,6 @@ set lazyredraw                              " no window redrawing during operati
 set ttyfast                                 " fast terminal connection, more characters will be sent to the screen
 set splitbelow                              " splitting a window will put the new window below the current one
 set splitright                              " splitting a window will put the new window right the current one
-set synmaxcol=0                             " better scrolling for long lines
 set spelllang=en_us                         " default language for spell checker
 set spellfile=$HOME/.vim/spell/en.utf-8.add " spell file for additional correct English words
 set spellsuggest=best,5                     " only display the 5 best suggestions
