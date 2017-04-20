@@ -61,13 +61,13 @@ Plug 'tpope/vim-fugitive', 'aac85a2'
 Plug 'tpope/vim-surround', 'e49d6c2'
 Plug 'tyru/caw.vim'
 Plug 'tyru/open-browser.vim', 'e2bfabf'
-Plug 'unblevable/quick-scope'
+Plug 'unblevable/quick-scope', 'd5882cb'
 Plug 'vim-ruby/vim-ruby', 'fc992fd'
 Plug 'wellle/tmux-complete.vim', '5d371f2'
 Plug 'xolox/vim-misc', '1.17.6'
 Plug 'xolox/vim-notes', '0.33.4'
 
-Plug 'junegunn/fzf', { 'tag': '0.15.3', 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'tag': '0.16.6', 'dir': '~/.fzf', 'do': './install --all' }
 
 if has('lua')
   Plug 'Shougo/neocomplete.vim', '9af19a78'
