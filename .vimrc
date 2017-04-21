@@ -41,7 +41,6 @@ Plug 'itchyny/lightline.vim', '0f2a262'
 Plug 'jamessan/vim-gnupg', 'v2.6'
 Plug 'janko-m/vim-test', 'v2.1.0'
 Plug 'jreybert/vimagit', '1.7.1'
-
 Plug 'junegunn/vader.vim', '7d755e2'
 Plug 'lervag/vimtex', '86eac00'
 Plug 'ludovicchabant/vim-gutentags', '803e5a3'
@@ -173,7 +172,7 @@ let g:netrw_altv = 1
 let g:netrw_winsize = 25
 
 " }}}
-" Settings for my blog with jekyll {{{
+" Detect YAML front matter parts in markdown files as comments {{{
 
 " Marking YAML front matter information in markdown files as comments
 autocmd BufNewFile,BufRead */_posts/*.md syntax match Comment /\%^---\_.\{-}---$/
@@ -189,8 +188,9 @@ autocmd BufNewFile,BufRead */_posts/*.md syntax match Comment /\%^---\_.\{-}---$
 " w ... buffers from other windows
 " u ... scan unloaded buffers that are in the buffer list
 " U ... scan buffers that are not in the buffer list
-" ] ... tag completion
-set complete=.,i,b,w,u,U,]
+" t ... tag completion
+set complete=.,i,b,w,u,U,t
+set showfulltag " when completing by tag, show the whole tag, not just the function name
 
 " }}}
 " Settings for displaying list chars {{{
@@ -214,7 +214,6 @@ if has("wildmenu")
   set wig+=.DS_Store                     " Mac
   set wig+=*~,*.swp,*.tmp                " tmp and backup files
 endif
-
 
 " }}}
 " Enable manpage.vim {{{
@@ -283,7 +282,7 @@ ru macros/matchit.vim " enable better matching for % command
 " }}}
 " Mappings {{{
 
-ru mappings/commandline.vim               " using bash commands in the vim commandline
+ru mappings/commandline.vim               " <C-b> go char left, <C-f> go char right, <C-p> go previews command, <C-n> go next command
 ru mappings/copy_paste_from_clipboard.vim " <C-c> for copy, <leader><C-v> for paste
 ru mappings/esc_with_jk.vim               " emulare ESC with jk
 ru mappings/fzf.vim                       " <C-p> start file search
@@ -291,11 +290,10 @@ ru mappings/gitv.vim                      " ,gv (global view) and ,gV (file spec
 ru mappings/keep_cursor_joining_lines.vim " indent joining lines the right way
 ru mappings/moving_wrapped_lines.vim      " Use hjkl in wrapped-lined files
 ru mappings/neoyank.vim                   " <leader>y search the yank history
-ru mappings/pry.vim                       " ,pi to insert/delete 'require pry; binding pry'
+ru mappings/pry.vim                       " ,pi toggles 'require pry; binding pry'
 ru mappings/quickediting.vim              " ,ba; ,bm; ,br; ,ev to edit files of vim repos
 ru mappings/ranger.vim                    " F2 will call :Ranger
 ru mappings/tagbar.vim                    " F3 will call :TagbarToggle
-ru mappings/vimagit.vim                   " <C-n>|<C-p> to jump to next/previous result
 ru mappings/vim_test.vim                  " <leader>t :TestNearest, <leader>T :TestFile, <leader>a :TestSuite, <leader>l :TestLastVisit, <leader>g :TestVisit
 
 " ,d to copy the file path to clipboard, very handy for file name completion for vimbook
@@ -306,11 +304,6 @@ nn <silent> <leader>s :set spell!<CR>
 
 " Folding Toggling with <space>
 nn <space> za
-
-" }}}
-" Functions {{{
-
-ru functions/highlight_81_characters.vim " call Highlight81Characters to see the highlighted text
 
 " }}}
 " Always go at the beginning of git commit message
