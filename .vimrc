@@ -295,7 +295,6 @@ ru mappings/pry.vim                       " ,pi to insert/delete 'require pry; b
 ru mappings/quickediting.vim              " ,ba; ,bm; ,br; ,ev to edit files of vim repos
 ru mappings/ranger.vim                    " F2 will call :Ranger
 ru mappings/tagbar.vim                    " F3 will call :TagbarToggle
-ru mappings/vim_agsv.vim                  " <C-n>|<C-p> to jump to next/previous result
 ru mappings/vimagit.vim                   " <C-n>|<C-p> to jump to next/previous result
 ru mappings/vim_test.vim                  " <leader>t :TestNearest, <leader>T :TestFile, <leader>a :TestSuite, <leader>l :TestLastVisit, <leader>g :TestVisit
 
