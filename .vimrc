@@ -307,16 +307,6 @@ nn <silent> <leader>s :set spell!<CR>
 " Folding Toggling with <space>
 nn <space> za
 
-" Fixing the & command to save the flags of last substitution
-no & :&&<CR>
-xn & :&&<CR>
-
-" Char replacement (good for creating vocabularly)
-no <leader>bldots :%s/=/\& \\ldots \&/g<CR> " replace = through & \ldots &
-no <leader>bendbackslashes :%s/$/ \\\\/<CR> " will add \\ to the end of each line
-no <leader>_ :%s/_//g<CR>                   " delete all _
-no <leader>rt :%s/\\t/  /g<CR>
-
 " }}}
 " Functions {{{
 
