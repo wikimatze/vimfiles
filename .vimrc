@@ -302,9 +302,6 @@ ru mappings/vim_test.vim                  " <leader>t :TestNearest, <leader>T :T
 " ,d to copy the file path to clipboard, very handy for file name completion for vimbook
 nmap <leader>d :call system("xclip -i -selection clipboard", expand("%"))<CR>
 
-" Press \cd to change the pwd to the current file you are in
-nn \cd :lcd %:h<CR>
-
 " Spellchecker: press ,s to toogle between spellchecker
 nn <silent> <leader>s :set spell!<CR>
 
