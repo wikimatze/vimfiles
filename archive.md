@@ -295,6 +295,40 @@ Git branch management.
 - `q` ... will merging window
 
 
+## [unite](https://github.com/Shougo/unite.vim)
+A very good and flexible plugin for searching and displaying information.
+- configuration:
+<pre>
+if !empty(glob('~/.vim/plugged/unite.vim'))
+  let g:unite_enable_start_insert = 1              " start in insert mode
+  let g:unite_update_time = 200                    " shorten the default update date to 200ms
+  let g:unite_cursor_line_highlight = 'TabLineSel' " mark matches in buffer as bold
+
+  call unite#filters#matcher_default#use(['matcher_fuzzy'])
+  call unite#custom#source('file_rec,file_rec/async', 'ignore_pattern', '\(\.cache$\|\.sty$\|epub\/*\|generated_polytex\/*\|tmp\/*\)')
+
+  if executable('ag')
+    let g:unite_source_grep_command = 'ag'
+    let g:unite_source_grep_default_opts = '--nogroup --nocolor --column'
+    let g:unite_source_grep_recursive_opt = ''
+  elseif executable('ack-grep')
+    let g:unite_source_grep_command = 'ack-grep'
+    let g:unite_source_grep_default_opts = '--no-heading --no-color -a -H'
+    let g:unite_source_grep_recursive_opt = ''
+  endif
+
+  " custom mappings for the unite buffer
+  autocmd FileType unite call s:unite_settings()
+  function! s:unite_settings()
+    imap <buffer> <C-k> <Plug>(unite_select_previous_line)
+    imap <buffer> <C-j> <Plug>(unite_select_next_line)
+    imap <buffer> <C-c> <Plug>(unite_exit)
+    nmap <buffer> <C-c> <Plug>(unite_exit)
+  endfunction
+endif
+</pre>
+
+
 ## [l9](https://github.com/vim-scripts/L9.git)
 Vim-script library, add functionality to program vim-files (used by vim-autocomplpop plugin).
 
@@ -824,4 +858,10 @@ Better register management and saves up to 100 buffered lines.
 
 ## [vim-superman](https://github.com/jez/vim-superman)
 Read man pages in Vim. Press `vman <Tab>` to get it working.
+
+
+## [vimproc](https://github.com/Shougo/vimproc.vim.git)
+For asynchronous command execution (need is used to search for file in bigger projects by the unite.vim plugin).
+
+
 

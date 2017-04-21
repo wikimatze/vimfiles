@@ -168,11 +168,6 @@ Display the undo graph for a file.
 - `:UndotreeToggle` ... turn on or off the toggle feature
 
 
-## [unite](https://github.com/Shougo/unite.vim)
-A very good and flexible plugin for searching and displaying information.
-
-
-
 ## [tagbar](http://majutsushi.github.com/tagbar)
 Display the structure of the code.
 
@@ -335,10 +330,6 @@ Switch seamlessly between tmux panes and Vim splits.
 - `<Ctrl-j>` ... Down
 - `<Ctrl-k>` ... Up
 - `<Ctrl-l>` ... Right
-
-
-## [vimproc](https://github.com/Shougo/vimproc.vim.git)
-For asynchronous command execution (need is used to search for file in bigger projects by the unite.vim plugin).
 
 
 ## [vimtex](https://github.com/lervag/vimtex)
