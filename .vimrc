@@ -43,7 +43,6 @@ Plug 'janko-m/vim-test', 'v2.1.0'
 Plug 'jreybert/vimagit', '1.7.1'
 
 Plug 'junegunn/vader.vim', '7d755e2'
-Plug 'kannokanno/previm', 'b5dba08'
 Plug 'lervag/vimtex', '86eac00'
 Plug 'ludovicchabant/vim-gutentags', '803e5a3'
 Plug 'majutsushi/tagbar', 'd1c42db'
@@ -65,6 +64,8 @@ Plug 'vim-ruby/vim-ruby', 'fc992fd'
 Plug 'wellle/tmux-complete.vim', '5d371f2'
 Plug 'xolox/vim-misc', '1.17.6'
 Plug 'xolox/vim-notes', '0.33.4'
+
+Plug 'shime/vim-livedown', { 'tag': 'v1.0.4', 'do': 'sudo npm install -g livedown' }
 
 Plug 'junegunn/fzf', { 'tag': '0.16.6', 'dir': '~/.fzf', 'do': './install --all' }
 
