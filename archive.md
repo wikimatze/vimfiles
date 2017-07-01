@@ -6,6 +6,10 @@ Here is a list of plugins I used in the past and removed them due the lack of us
 Create directories that do not exists yet when creating new files (e.g. with `e`).
 
 
+## [vim-bracketed-paste](https://github.com/ConradIrwin/vim-bracketed-paste)
+Solves the issue with `:set paste` for vim when pasting with `<C-v>`.
+
+
 ## [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 Semantic autoclose, delete brackets.
 
@@ -913,4 +917,5 @@ if !empty(glob('~/.vim/plugged/syntastic'))
                              \ 'passive_filetypes': ['ruby', 'html', 'php', 'sh', 'css', 'tex'] }
 endif
 </pre>
+
 

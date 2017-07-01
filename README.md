@@ -185,14 +185,8 @@ Testframework for Vimscript.
 - `:Vader` ... runs the current test file
 
 
-
-
 ## [lightline](https://github.com/itchyny/lightline.vim)
 Awesome way to create a custom status line.
-
-
-## [vim-bracketed-paste](https://github.com/ConradIrwin/vim-bracketed-paste)
-Solves the issue with `:set paste` for vim when pasting with `<C-v>`.
 
 
 ## [vim-closetag](https://github.com/alvan/vim-closetag)
