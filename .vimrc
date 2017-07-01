@@ -50,7 +50,6 @@ Plug 'mhinz/vim-grepper', 'v.1.4'
 Plug 'plasticboy/vim-markdown', 'a316954'
 Plug 'reedes/vim-lexical', '3e1fdc6'
 Plug 'reedes/vim-litecorrect', '1.2'
-Plug 'scrooloose/syntastic', '3.8.0'
 Plug 'tpope/vim-dispatch', 'a54f2c5'
 Plug 'tpope/vim-endwise', '0067ced'
 Plug 'tpope/vim-fugitive', 'aac85a2'
@@ -62,6 +61,8 @@ Plug 'vim-ruby/vim-ruby', 'fc992fd'
 Plug 'wellle/tmux-complete.vim', '5d371f2'
 Plug 'xolox/vim-misc', '1.17.6'
 Plug 'xolox/vim-notes', '0.33.4'
+Plug 'w0rp/ale', '5d5ba2a'
+
 
 Plug 'shime/vim-livedown', { 'tag': 'v1.0.4', 'do': 'sudo npm install -g livedown' }
 

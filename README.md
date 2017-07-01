@@ -16,6 +16,8 @@ Next, start vim and run `:PlugInstall` - happy vimming!
 # Plugins
 
 
+## [ale](https://github.com/w0rp/ale "ale")
+Asynchronous Lint Engine.
 
 
 ## [fzf](https://github.com/junegunn/fzf)
@@ -116,12 +118,6 @@ Realtime preview for Markdown, rst, and textile files in your browser while edit
 Ranger intergration for vim and neovim.
 
 
-## [syntastic](https://github.com/scrooloose/syntastic)
-Performs syntax check on various languages when saving.
-
-- **Options**
-  - `:SyntasticCheck` ... runs the syntax checker
-  - `:SyntasticInfo` ... information about the current used syntax checkers and filetypes
 
 
 ## [surround](https://github.com/tpope/vim-surround)
@@ -141,15 +137,15 @@ Change quotes and all other delimiters.
     press `s` and then the quote (`"", (), {}`) you want to have and it wraps the string in this
 
 
-## [quick-scope](https://github.com/unblevable/quick-scope)
-Lightning fast left-right movement (enhances the `f` and `F` command)
-
-
 ## [caw.vim](https://github.com/tyru/caw.vim)
 Vim comment plugin.
 
 - `gcc` ... toogles current line
 - `gca` ... at comment at end of the line
+
+
+## [quick-scope](https://github.com/unblevable/quick-scope "quick-scope")
+Lightning fast left-right movement in Vim
 
 
 ## [tmux-complete-vim](https://github.com/wellle/tmux-complete.vim)
