@@ -34,11 +34,11 @@ Plug 'cohama/lexima.vim', '85cfff9'
 Plug 'francoiscabrol/ranger.vim', 'b77a534 '
 Plug 'gregsexton/gitv', { 'commit': '14fcbf5', 'on': ['Gitv'] }
 Plug 'itchyny/lightline.vim', 'ff74d65'
-Plug 'jamessan/vim-gnupg', 'v2.6'
-Plug 'janko-m/vim-test', 'v2.1.0'
-Plug 'jreybert/vimagit', '1.7.1'
-Plug 'junegunn/vader.vim', '7d755e2'
-Plug 'lervag/vimtex', '86eac00'
+Plug 'jamessan/vim-gnupg', 'e7b6648'
+Plug 'janko-m/vim-test', '1edd7be'
+Plug 'jreybert/vimagit', {'commit': '595af14', 'on': ['Magit'] }
+Plug 'junegunn/vader.vim', { 'commit': '654bbf7', 'for': 'vim' }
+Plug 'lervag/vimtex', {'commit': 'c7a6d2e', 'for': 'tex' }
 Plug 'ludovicchabant/vim-gutentags', '803e5a3'
 Plug 'majutsushi/tagbar', 'd1c42db'
 Plug 'matze/vim-move', 'fd60f3f'

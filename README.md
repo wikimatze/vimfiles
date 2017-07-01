@@ -20,6 +20,10 @@ Next, start vim and run `:PlugInstall` - happy vimming!
 Asynchronous Lint Engine.
 
 
+## [bclose.vim](https://github.com/rbgrouleff/bclose.vim "bclose.vim")
+Need this plugin to close the ranger window with `q`.
+
+
 ## [far.vim](https://github.com/brooth/far.vim)
 A find and replace plugin.
 
