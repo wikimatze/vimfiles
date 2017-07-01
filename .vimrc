@@ -1,4 +1,4 @@
-set nocompatible " Be iMproved
+scriptencoding utf-8
 
 let g:neosnippet#expand_word_boundary = 1
 let g:plug_threads = 40
