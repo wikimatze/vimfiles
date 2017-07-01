@@ -218,6 +218,12 @@ JSON detection and syntax-highlighting.
 Pretty colors for the jQuery syntax.
 
 
+## [previm](https://github.com/kannokanno/previm)
+Realtime preview for Markdown, rst, and textile files in your browser while editing.
+
+- `:PrevimOpen` ... opens the current file on the browser.
+
+
 ## [vim-airline](https://github.com/vim-airline/vim-airline)
 Beautiful status and tab line.
 

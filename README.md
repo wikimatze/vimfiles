@@ -98,20 +98,8 @@ Adds snippet support for Vim and makes use of neocomplete plugin.
 - `NeoSnippetEdit` ... edit snippets of the current filetype
 
 
-## [neoyank](https://github.com/Shougo/neoyank.vim)
-Saves yank history includes unite.vim history/yank source.
-
-- `<leader>y` ... call the yank window
-
-
 ## [open-browser](https://github.com/tyru/open-browser.vim)
 Open the URI with `gx` (my custom mapping) in your default browser.
-
-
-## [previm](https://github.com/kannokanno/previm)
-Realtime preview for Markdown, rst, and textile files in your browser while editing.
-
-- `:PrevimOpen` ... opens the current file on the browser.
 
 
 ## [ranger.vim](https://github.com/francoiscabrol/ranger.vim)
@@ -332,6 +320,12 @@ A very good tool to manage LaTeX files as well as the compilation.
 - `\ll` ... compiles the tex-file
 - `\lv` ... opens the document with the specified pdf-viewer
 - `:VimtexTocOpen|:VimtexTocToggle` ... will open a clickable toc in the left pane (`q` will close the window)
+
+
+## [neoyank](https://github.com/Shougo/neoyank.vim)
+Saves yank history includes unite.vim history/yank source.
+
+- `<leader>y` ... call the yank window
 
 
 ## [denite.vim](https://github.com/Shougo/denite.nvim "denite.vim")
