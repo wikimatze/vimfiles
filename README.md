@@ -190,7 +190,7 @@ Awesome way to create a custom status line.
 
 
 ## [vim-closetag](https://github.com/alvan/vim-closetag)
-Auto close (X)HTML tags.
+Auto close (X)HTML tags. Press `<` again will do the intendation.
 
 
 ## [vim-dispatch](https://github.com/tpope/vim-dispatch)
