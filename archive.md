@@ -2,6 +2,8 @@
 
 Here is a list of plugins I used in the past and removed them due the lack of usage.
 
+## [auto_mkdir](https://github.com/DataWraith/auto_mkdir)
+Create directories that do not exists yet when creating new files (e.g. with `e`).
 
 ## [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 Semantic autoclose, delete brackets.

@@ -28,7 +28,6 @@ endif
 call plug#begin('~/.vim/plugged/')
 
 Plug 'ConradIrwin/vim-bracketed-paste', 'd26cf23'
-Plug 'DataWraith/auto_mkdir', 'v1.0.0'
 Plug 'cohama/lexima.vim', '0aa05cb'
 Plug 'Shougo/neosnippet.vim', 'a1508f8'
 Plug 'Shougo/neoyank.vim', 'ad56eca'

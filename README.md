@@ -16,8 +16,6 @@ Next, start vim and run `:PlugInstall` - happy vimming!
 # Plugins
 
 
-## [auto_mkdir](https://github.com/DataWraith/auto_mkdir)
-Create directories that do not exists yet when creating new files (e.g. with `e`).
 
 
 ## [fzf](https://github.com/junegunn/fzf)
