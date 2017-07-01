@@ -29,7 +29,7 @@ call plug#begin('~/.vim/plugged/')
 
 Plug 'ConradIrwin/vim-bracketed-paste', 'd26cf23'
 Plug 'cohama/lexima.vim', '0aa05cb'
-Plug 'Shougo/neosnippet.vim', 'a1508f8'
+Plug 'Shougo/neosnippet.vim', '867149c'
 Plug 'Shougo/neoyank.vim', 'ad56eca'
 Plug 'Shougo/denite.nvim', '807c952'
 Plug 'alvan/vim-closetag', 'e7e6cb9'
