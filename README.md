@@ -20,6 +20,23 @@ Next, start vim and run `:PlugInstall` - happy vimming!
 Asynchronous Lint Engine.
 
 
+## [far.vim](https://github.com/brooth/far.vim)
+A find and replace plugin.
+
+- `:Far <word> <replace-with> **/*.<filetype> [params]` ... will start the replacement for the given filetype
+- `:F* {pattern} {file-mask} [params]` ... will just search after the word without the replacement part
+- `:Fardo` ... will do the replacement
+- `:Farundo` ... undo the last `:Fardo` replacement.
+- `:Refar` ... do the used replacement again with the chance to change option's
+- `:Farp` ... will ask questions for interactive replacement
+- in Far buffer the following shortcuts are active
+  - `x|X` ... will exclude the/all file(s) under the cursor
+  - `i|I` ... will include the/all file(s) under the cursor
+  - `t` ... will toggle exclude/include file under the cursor
+  - `<CR>` ... jump to the source of the match
+  - `<CR-j>|<CR-k>` ... scroll down/up the preview window
+
+
 ## [fzf](https://github.com/junegunn/fzf)
 Fuzzy finder for your shell as a Vim plugin.
 

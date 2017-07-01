@@ -28,6 +28,7 @@ endif
 call plug#begin('~/.vim/plugged/')
 
 Plug 'alvan/vim-closetag', 'f9fd067'
+Plug 'brooth/far.vim', 'e6b298d'
 Plug 'christoomey/vim-tmux-navigator', '3e83ddc'
 Plug 'cohama/lexima.vim', '85cfff9'
 Plug 'francoiscabrol/ranger.vim', 'b77a534 '
