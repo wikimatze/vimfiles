@@ -5,6 +5,7 @@ Here is a list of plugins I used in the past and removed them due the lack of us
 ## [auto_mkdir](https://github.com/DataWraith/auto_mkdir)
 Create directories that do not exists yet when creating new files (e.g. with `e`).
 
+
 ## [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 Semantic autoclose, delete brackets.
 
@@ -106,13 +107,22 @@ Easier and faster use of motions.
 - `<leader><leader>t | T` ... search after the target character forward (`t`) and backward (`T`)
 
 
-
-
 ## [easygrep](https://github.com/dkprice/vim-easygrep)
 Makes search/replacing in your project a lot easier.
 
 - `<leader>vv|vV` ... find word/whole word under the cursor
 - `<leader>vr|vR` ... perform global search replace of word/whole word under cursor, with confirmation
+- custom settings:
+<pre>
+  let g:EasyGrepAllOptionsInExplorer=0 " don't show advanced greping options
+  let g:EasyGrepFilesToExclude="tags"  " not usable if I use ag for searching
+  let g:EasyGrepInvertWholeWord=0      " <Leader>vv matches word, and <Leader>vV matches whole word
+
+  let g:EasyGrepReplaceWindowMode=2      " autowriteall all changes during a search and replace session
+  let g:EasyGrepOptionPrefix='<leader>e' " shortcut to turn on and off certain grepoptions
+  let g:EasyGrepRecursive=1              " turn on recurse option for replacement
+  let g:EasyGrepCommand=1                " using system 'grepprg' instead of 'vimgrep
+</pre>
 
 
 ## [delimitMate](https://github.com/Raimondi/delimitMate)
@@ -585,6 +595,9 @@ Using ag (silver-searcher) in Vim.
 - `E` ...  go into edit mode, but you cannot add lines
 - `:AgsAdd` ... like like :Ags but append the results to the window
 - `:AgsLast` ... run the last search
+- mappings:
+  - `autocmd FileType agsv nnoremap <silent><buffer> <C-n> :AgsNextFile<CR>`
+  - `autocmd FileType agsv nnoremap <silent><buffer> <C-p> :AgsPrevFile<CR>`
 
 
 ## [vim-autocomplete](https://github.com/vim-scripts/AutoComplPop)
@@ -774,8 +787,8 @@ LaTeX suite for Vim.
     - `<C-Left>` left mouse click in the .dvi file this location will be opend in the source file
 
 
-## [vim-markdown](https://github.com/tpope/vim-markdown)
-Markdown-syntax highlighting.
+## [vim-markdown](https://github.com/plasticboy/vim-markdown)
+Perfect managing markdown file.
 
 
 ## [vim-shell](https://github.com/xolox/vim-shell)
