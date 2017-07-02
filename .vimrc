@@ -28,10 +28,10 @@ endif
 call plug#begin('~/.vim/plugged/')
 
 Plug 'alvan/vim-closetag', 'f9fd067'
-Plug 'brooth/far.vim', 'e6b298d'
+Plug 'brooth/far.vim', '3376dc5'
 Plug 'christoomey/vim-tmux-navigator', '3e83ddc'
 Plug 'cohama/lexima.vim', '85cfff9'
-Plug 'francoiscabrol/ranger.vim', 'b77a534 '
+Plug 'francoiscabrol/ranger.vim', 'b77a534'
 Plug 'gregsexton/gitv', { 'commit': '14fcbf5', 'on': ['Gitv'] }
 Plug 'itchyny/lightline.vim', 'ff74d65'
 Plug 'jamessan/vim-gnupg', 'e7b6648'
@@ -39,22 +39,24 @@ Plug 'janko-m/vim-test', '1edd7be'
 Plug 'jreybert/vimagit', {'commit': '595af14', 'on': ['Magit'] }
 Plug 'junegunn/vader.vim', { 'commit': '654bbf7', 'for': 'vim' }
 Plug 'lervag/vimtex', {'commit': 'c7a6d2e', 'for': 'tex' }
-Plug 'ludovicchabant/vim-gutentags', '803e5a3'
-Plug 'majutsushi/tagbar', 'd1c42db'
-Plug 'matze/vim-move', 'fd60f3f'
-Plug 'mbbill/undotree', '17dfeb6'
-Plug 'mhinz/vim-grepper', 'v.1.4'
+Plug 'ludovicchabant/vim-gutentags', 'c400613'
+Plug 'majutsushi/tagbar', 'f579273'
+Plug 'matze/vim-move', '3409db6'
+Plug 'mbbill/undotree', 'ad08a88'
+Plug 'mhinz/vim-grepper', 'a534baf'
 Plug 'plasticboy/vim-markdown', 'a316954'
-Plug 'reedes/vim-lexical', '3e1fdc6'
-Plug 'reedes/vim-litecorrect', '1.2'
-Plug 'tpope/vim-dispatch', 'a54f2c5'
-Plug 'tpope/vim-endwise', '0067ced'
+Plug 'reedes/vim-lexical', 'fb42333'
+Plug 'reedes/vim-litecorrect', '8d5f233'
+Plug 'shime/vim-livedown', { 'tag': 'v1.0.4', 'do': 'sudo npm install -g livedown' }
+Plug 'tpope/vim-dispatch', 'ca10dc1'
+Plug 'tpope/vim-endwise', 'd565526'
 Plug 'tpope/vim-fugitive', 'be2ff98'
 Plug 'tpope/vim-surround', 'e49d6c2'
-Plug 'tyru/caw.vim'
+Plug 'tyru/caw.vim', 'd4a4a73'
+Plug 'vim-ruby/vim-ruby', { 'commit': '074200f', 'for': 'ruby' }
 Plug 'tyru/open-browser.vim', 'e2bfabf'
 Plug 'unblevable/quick-scope', 'd5882cb'
-Plug 'vim-ruby/vim-ruby', 'fc992fd'
+Plug 'vim-scripts/IndexedSearch', '500a64a'
 Plug 'w0rp/ale', '5d5ba2a'
 Plug 'wellle/tmux-complete.vim', '5d371f2'
 Plug 'xolox/vim-misc', '1.17.6'
@@ -63,10 +65,7 @@ Plug 'Shougo/denite.nvim', '6ba9a00'
 Plug 'Shougo/neosnippet.vim', '867149c'
 Plug 'Shougo/neoyank.vim', 'ad56eca'
 
-
-Plug 'shime/vim-livedown', { 'tag': 'v1.0.4', 'do': 'sudo npm install -g livedown' }
-
-Plug 'junegunn/fzf', { 'tag': '0.16.6', 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'tag': '0.16.8', 'dir': '~/.fzf', 'do': './install --all' }
 
 if has('lua')
   Plug 'Shougo/neocomplete.vim', '9af19a78'
