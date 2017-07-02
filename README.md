@@ -101,6 +101,10 @@ A gitk/tig like git browser.
   - `nmap <leader>gV :Gitv! --all<cr>`
 
 
+## [IndexSearch](https://github.com/vim-scripts/IndexedSearch)
+Redefines the search `(/,?)` and creates custom messages about how many hits there are.
+
+
 ## [vim-markdown](https://github.com/plasticboy/vim-markdown)
 Perfect managing markdown file.
 
@@ -220,8 +224,6 @@ Run commands asynchronous.
 
 ## [vim-endwise](https://github.com/tpope/vim-endwise)
 Automatically adds keywords like *end* to special constructs for all kinds of languages.
-
-
 
 
 ## [vim-grepper](https://github.com/mhinz/vim-grepper "vim-grepper")
