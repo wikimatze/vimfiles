@@ -47,7 +47,6 @@ Plug 'mhinz/vim-grepper', 'a534baf'
 Plug 'plasticboy/vim-markdown', 'a316954'
 Plug 'reedes/vim-lexical', 'fb42333'
 Plug 'reedes/vim-litecorrect', '8d5f233'
-Plug 'shime/vim-livedown', { 'tag': 'v1.0.4', 'do': 'sudo npm install -g livedown' }
 Plug 'tpope/vim-dispatch', 'ca10dc1'
 Plug 'tpope/vim-endwise', 'd565526'
 Plug 'tpope/vim-fugitive', 'be2ff98'

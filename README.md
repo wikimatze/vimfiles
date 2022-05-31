@@ -349,14 +349,6 @@ Saves yank history includes unite.vim history/yank source.
 Asynchronous unite all interfaces for Neovim/Vim8.
 
 
-## [vim-livedown](https://github.com/shime/vim-livedown "vim-livedown")
-Vim plugin for livedown to preview markdown files.
-
-- `:LivedownPreview` ... launch the livedown server and preview your markdown file
-- `:LivedownKill` ... kills the livedown server
-- `:LivedownToggle` ... start/kills the livedown server
-
-
 # License
 
 This software is licensed under the [MIT license](http://en.wikipedia.org/wiki/MIT_License).
